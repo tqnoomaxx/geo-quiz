@@ -1,0 +1,4955 @@
+[
+ {
+  "id": "af",
+  "name": "Afghanistan",
+  "flag": "🇦🇫",
+  "continent": "Asien",
+  "capital": [
+   "Kabul"
+  ],
+  "peak": [
+   "Noschak",
+   "Noshaq"
+  ],
+  "river": [
+   "Amudarja",
+   "Amudarya"
+  ],
+  "languages": [
+   "Paschtu",
+   "Dari"
+  ],
+  "currency": [
+   "Afghani",
+   "AFN"
+  ]
+ },
+ {
+  "id": "eg",
+  "name": "Ägypten",
+  "flag": "🇪🇬",
+  "continent": "Afrika",
+  "capital": [
+   "Kairo",
+   "Cairo"
+  ],
+  "peak": [
+   "Katharinenberg",
+   "Gebel Katharina",
+   "Mount Catherine"
+  ],
+  "river": [
+   "Nil"
+  ],
+  "languages": [
+   "Arabisch"
+  ],
+  "currency": [
+   "Ägyptisches Pfund",
+   "Pfund",
+   "EGP"
+  ]
+ },
+ {
+  "id": "al",
+  "name": "Albanien",
+  "flag": "🇦🇱",
+  "continent": "Europa",
+  "capital": [
+   "Tirana"
+  ],
+  "peak": [
+   "Korab",
+   "Golem Korab",
+   "Maja e Korabit"
+  ],
+  "river": [
+   "Drin",
+   "Drini"
+  ],
+  "languages": [
+   "Albanisch"
+  ],
+  "currency": [
+   "Lek",
+   "ALL"
+  ]
+ },
+ {
+  "id": "dz",
+  "name": "Algerien",
+  "flag": "🇩🇿",
+  "continent": "Afrika",
+  "capital": [
+   "Algier",
+   "Alger"
+  ],
+  "peak": [
+   "Tahat",
+   "Mount Tahat"
+  ],
+  "river": [
+   "Cheliff",
+   "Chelif"
+  ],
+  "languages": [
+   "Arabisch",
+   "Berberisch",
+   "Tamazight"
+  ],
+  "currency": [
+   "Algerischer Dinar",
+   "Dinar",
+   "DZD"
+  ]
+ },
+ {
+  "id": "ad",
+  "name": "Andorra",
+  "flag": "🇦🇩",
+  "continent": "Europa",
+  "capital": [
+   "Andorra la Vella",
+   "Andorra la Vieja"
+  ],
+  "peak": [
+   "Coma Pedrosa",
+   "Pic de Coma Pedrosa"
+  ],
+  "river": [
+   "Valira",
+   "Gran Valira"
+  ],
+  "languages": [
+   "Katalanisch"
+  ],
+  "currency": [
+   "Euro",
+   "EUR"
+  ]
+ },
+ {
+  "id": "ao",
+  "name": "Angola",
+  "flag": "🇦🇴",
+  "continent": "Afrika",
+  "capital": [
+   "Luanda"
+  ],
+  "peak": [
+   "Morro de Moco",
+   "Moco"
+  ],
+  "river": [
+   "Cuanza",
+   "Kwanza"
+  ],
+  "languages": [
+   "Portugiesisch"
+  ],
+  "currency": [
+   "Kwanza",
+   "AOA"
+  ]
+ },
+ {
+  "id": "ag",
+  "name": "Antigua und Barbuda",
+  "flag": "🇦🇬",
+  "continent": "Nordamerika",
+  "capital": [
+   "St. John's",
+   "Saint John's"
+  ],
+  "peak": [
+   "Boggy Peak",
+   "Mount Obama"
+  ],
+  "river": [],
+  "languages": [
+   "Englisch"
+  ],
+  "currency": [
+   "Ostkaribischer Dollar",
+   "XCD"
+  ]
+ },
+ {
+  "id": "gq",
+  "name": "Äquatorialguinea",
+  "flag": "🇬🇶",
+  "continent": "Afrika",
+  "capital": [
+   "Malabo"
+  ],
+  "peak": [
+   "Pico Basile",
+   "Pico Basilé"
+  ],
+  "river": [
+   "Mbini",
+   "Río Benito"
+  ],
+  "languages": [
+   "Spanisch",
+   "Französisch",
+   "Portugiesisch"
+  ],
+  "currency": [
+   "CFA-Franc",
+   "Zentralafrikanischer CFA-Franc",
+   "XAF"
+  ]
+ },
+ {
+  "id": "ar",
+  "name": "Argentinien",
+  "flag": "🇦🇷",
+  "continent": "Südamerika",
+  "capital": [
+   "Buenos Aires"
+  ],
+  "peak": [
+   "Aconcagua"
+  ],
+  "river": [
+   "Paraná"
+  ],
+  "languages": [
+   "Spanisch"
+  ],
+  "currency": [
+   "Argentinischer Peso",
+   "Peso",
+   "ARS"
+  ]
+ },
+ {
+  "id": "am",
+  "name": "Armenien",
+  "flag": "🇦🇲",
+  "continent": "Asien",
+  "capital": [
+   "Eriwan",
+   "Jerewan",
+   "Yerevan"
+  ],
+  "peak": [
+   "Aragaz",
+   "Aragats"
+  ],
+  "river": [
+   "Aras",
+   "Araks"
+  ],
+  "languages": [
+   "Armenisch"
+  ],
+  "currency": [
+   "Dram",
+   "AMD"
+  ]
+ },
+ {
+  "id": "az",
+  "name": "Aserbaidschan",
+  "flag": "🇦🇿",
+  "continent": "Asien",
+  "capital": [
+   "Baku",
+   "Bakı"
+  ],
+  "peak": [
+   "Basardüzü",
+   "Bazardüzü"
+  ],
+  "river": [
+   "Kura"
+  ],
+  "languages": [
+   "Aserbaidschanisch"
+  ],
+  "currency": [
+   "Aserbaidschanischer Manat",
+   "Manat",
+   "AZN"
+  ]
+ },
+ {
+  "id": "et",
+  "name": "Äthiopien",
+  "flag": "🇪🇹",
+  "continent": "Afrika",
+  "capital": [
+   "Addis Abeba",
+   "Addis Ababa"
+  ],
+  "peak": [
+   "Ras Daschän",
+   "Ras Dashen",
+   "Ras Dejen"
+  ],
+  "river": [
+   "Blauer Nil",
+   "Abbai"
+  ],
+  "languages": [
+   "Amharisch"
+  ],
+  "currency": [
+   "Birr",
+   "Äthiopischer Birr",
+   "ETB"
+  ]
+ },
+ {
+  "id": "au",
+  "name": "Australien",
+  "flag": "🇦🇺",
+  "continent": "Ozeanien",
+  "capital": [
+   "Canberra"
+  ],
+  "peak": [
+   "Mount Kosciuszko",
+   "Kosciuszko"
+  ],
+  "river": [
+   "Murray"
+  ],
+  "languages": [
+   "Englisch"
+  ],
+  "currency": [
+   "Australischer Dollar",
+   "AUD"
+  ]
+ },
+ {
+  "id": "bs",
+  "name": "Bahamas",
+  "flag": "🇧🇸",
+  "continent": "Nordamerika",
+  "capital": [
+   "Nassau"
+  ],
+  "peak": [
+   "Mount Alvernia",
+   "Como Hill"
+  ],
+  "river": [],
+  "languages": [
+   "Englisch"
+  ],
+  "currency": [
+   "Bahama-Dollar",
+   "BSD"
+  ]
+ },
+ {
+  "id": "bh",
+  "name": "Bahrain",
+  "flag": "🇧🇭",
+  "continent": "Asien",
+  "capital": [
+   "Manama"
+  ],
+  "peak": [
+   "Dschabal ad-Duchan",
+   "Jabal ad Dukhan"
+  ],
+  "river": [],
+  "languages": [
+   "Arabisch"
+  ],
+  "currency": [
+   "Bahrain-Dinar",
+   "Dinar",
+   "BHD"
+  ]
+ },
+ {
+  "id": "bd",
+  "name": "Bangladesch",
+  "flag": "🇧🇩",
+  "continent": "Asien",
+  "capital": [
+   "Dhaka",
+   "Dacca"
+  ],
+  "peak": [
+   "Saka Haphong",
+   "Mowdok Mual"
+  ],
+  "river": [
+   "Brahmaputra",
+   "Jamuna"
+  ],
+  "languages": [
+   "Bengalisch"
+  ],
+  "currency": [
+   "Taka",
+   "BDT"
+  ]
+ },
+ {
+  "id": "bb",
+  "name": "Barbados",
+  "flag": "🇧🇧",
+  "continent": "Nordamerika",
+  "capital": [
+   "Bridgetown"
+  ],
+  "peak": [
+   "Mount Hillaby"
+  ],
+  "river": [],
+  "languages": [
+   "Englisch"
+  ],
+  "currency": [
+   "Barbados-Dollar",
+   "BBD"
+  ]
+ },
+ {
+  "id": "by",
+  "name": "Belarus",
+  "flag": "🇧🇾",
+  "continent": "Europa",
+  "capital": [
+   "Minsk"
+  ],
+  "peak": [
+   "Dsjarschynskaja Hara",
+   "Dzyarzhynskaya Hara",
+   "Gora Dzerzhinskaya"
+  ],
+  "river": [
+   "Dnepr",
+   "Dnjepr",
+   "Dnyapro"
+  ],
+  "languages": [
+   "Belarussisch",
+   "Russisch"
+  ],
+  "currency": [
+   "Belarussischer Rubel",
+   "BYN"
+  ]
+ },
+ {
+  "id": "be",
+  "name": "Belgien",
+  "flag": "🇧🇪",
+  "continent": "Europa",
+  "capital": [
+   "Brüssel",
+   "Bruessel",
+   "Brussel"
+  ],
+  "peak": [
+   "Signal de Botrange",
+   "Botrange"
+  ],
+  "river": [
+   "Maas",
+   "Meuse"
+  ],
+  "languages": [
+   "Niederländisch",
+   "Französisch",
+   "Deutsch"
+  ],
+  "currency": [
+   "Euro",
+   "EUR"
+  ]
+ },
+ {
+  "id": "bz",
+  "name": "Belize",
+  "flag": "🇧🇿",
+  "continent": "Nordamerika",
+  "capital": [
+   "Belmopan"
+  ],
+  "peak": [
+   "Doyle's Delight"
+  ],
+  "river": [
+   "Belize River",
+   "Belize-Fluss"
+  ],
+  "languages": [
+   "Englisch"
+  ],
+  "currency": [
+   "Belize-Dollar",
+   "BZD"
+  ]
+ },
+ {
+  "id": "bj",
+  "name": "Benin",
+  "flag": "🇧🇯",
+  "continent": "Afrika",
+  "capital": [
+   "Porto-Novo",
+   "Porto Novo",
+   "Cotonou"
+  ],
+  "peak": [
+   "Mont Sokbaro",
+   "Sokbaro"
+  ],
+  "river": [
+   "Ouémé",
+   "Oueme"
+  ],
+  "languages": [
+   "Französisch"
+  ],
+  "currency": [
+   "CFA-Franc",
+   "Westafrikanischer CFA-Franc",
+   "XOF"
+  ]
+ },
+ {
+  "id": "bt",
+  "name": "Bhutan",
+  "flag": "🇧🇹",
+  "continent": "Asien",
+  "capital": [
+   "Thimphu"
+  ],
+  "peak": [
+   "Gangkhar Puensum"
+  ],
+  "river": [
+   "Manas",
+   "Drangme Chhu"
+  ],
+  "languages": [
+   "Dzongkha"
+  ],
+  "currency": [
+   "Ngultrum",
+   "BTN"
+  ]
+ },
+ {
+  "id": "bo",
+  "name": "Bolivien",
+  "flag": "🇧🇴",
+  "continent": "Südamerika",
+  "capital": [
+   "Sucre",
+   "La Paz"
+  ],
+  "peak": [
+   "Sajama",
+   "Nevado Sajama"
+  ],
+  "river": [
+   "Mamoré",
+   "Río Mamoré"
+  ],
+  "languages": [
+   "Spanisch",
+   "Quechua",
+   "Aymara"
+  ],
+  "currency": [
+   "Boliviano",
+   "BOB"
+  ]
+ },
+ {
+  "id": "ba",
+  "name": "Bosnien und Herzegowina",
+  "flag": "🇧🇦",
+  "continent": "Europa",
+  "capital": [
+   "Sarajevo",
+   "Sarajewo"
+  ],
+  "peak": [
+   "Maglić",
+   "Maglic"
+  ],
+  "river": [
+   "Save",
+   "Sava"
+  ],
+  "languages": [
+   "Bosnisch",
+   "Kroatisch",
+   "Serbisch"
+  ],
+  "currency": [
+   "Konvertible Mark",
+   "BAM"
+  ]
+ },
+ {
+  "id": "bw",
+  "name": "Botswana",
+  "flag": "🇧🇼",
+  "continent": "Afrika",
+  "capital": [
+   "Gaborone"
+  ],
+  "peak": [
+   "Monalanong Hill",
+   "Otse Hill"
+  ],
+  "river": [
+   "Limpopo"
+  ],
+  "languages": [
+   "Englisch",
+   "Setswana",
+   "Tswana"
+  ],
+  "currency": [
+   "Pula",
+   "BWP"
+  ]
+ },
+ {
+  "id": "br",
+  "name": "Brasilien",
+  "flag": "🇧🇷",
+  "continent": "Südamerika",
+  "capital": [
+   "Brasília",
+   "Brasilia"
+  ],
+  "peak": [
+   "Pico da Neblina"
+  ],
+  "river": [
+   "Amazonas"
+  ],
+  "languages": [
+   "Portugiesisch"
+  ],
+  "currency": [
+   "Real",
+   "BRL"
+  ]
+ },
+ {
+  "id": "bn",
+  "name": "Brunei",
+  "flag": "🇧🇳",
+  "continent": "Asien",
+  "capital": [
+   "Bandar Seri Begawan"
+  ],
+  "peak": [
+   "Bukit Pagon"
+  ],
+  "river": [
+   "Belait",
+   "Sungai Belait"
+  ],
+  "languages": [
+   "Malaiisch"
+  ],
+  "currency": [
+   "Brunei-Dollar",
+   "BND"
+  ]
+ },
+ {
+  "id": "bg",
+  "name": "Bulgarien",
+  "flag": "🇧🇬",
+  "continent": "Europa",
+  "capital": [
+   "Sofia",
+   "Sofija"
+  ],
+  "peak": [
+   "Musala"
+  ],
+  "river": [
+   "Iskar",
+   "Iskăr"
+  ],
+  "languages": [
+   "Bulgarisch"
+  ],
+  "currency": [
+   "Lew",
+   "BGN"
+  ]
+ },
+ {
+  "id": "bf",
+  "name": "Burkina Faso",
+  "flag": "🇧🇫",
+  "continent": "Afrika",
+  "capital": [
+   "Ouagadougou"
+  ],
+  "peak": [
+   "Ténakourou",
+   "Tenakourou",
+   "Mont Ténakourou"
+  ],
+  "river": [
+   "Mouhoun",
+   "Schwarzer Volta",
+   "Black Volta"
+  ],
+  "languages": [
+   "Französisch"
+  ],
+  "currency": [
+   "CFA-Franc",
+   "Westafrikanischer CFA-Franc",
+   "XOF"
+  ]
+ },
+ {
+  "id": "bi",
+  "name": "Burundi",
+  "flag": "🇧🇮",
+  "continent": "Afrika",
+  "capital": [
+   "Gitega",
+   "Bujumbura"
+  ],
+  "peak": [
+   "Mont Heha",
+   "Heha"
+  ],
+  "river": [
+   "Ruvubu",
+   "Ruvuvu"
+  ],
+  "languages": [
+   "Kirundi",
+   "Französisch",
+   "Englisch"
+  ],
+  "currency": [
+   "Burundi-Franc",
+   "Franc",
+   "BIF"
+  ]
+ },
+ {
+  "id": "cl",
+  "name": "Chile",
+  "flag": "🇨🇱",
+  "continent": "Südamerika",
+  "capital": [
+   "Santiago",
+   "Santiago de Chile"
+  ],
+  "peak": [
+   "Ojos del Salado"
+  ],
+  "river": [
+   "Loa",
+   "Río Loa"
+  ],
+  "languages": [
+   "Spanisch"
+  ],
+  "currency": [
+   "Chilenischer Peso",
+   "Peso",
+   "CLP"
+  ]
+ },
+ {
+  "id": "cn",
+  "name": "China",
+  "flag": "🇨🇳",
+  "continent": "Asien",
+  "capital": [
+   "Peking",
+   "Beijing"
+  ],
+  "peak": [
+   "Mount Everest",
+   "Chomolungma",
+   "Qomolangma"
+  ],
+  "river": [
+   "Jangtsekiang",
+   "Jangtse",
+   "Yangtze"
+  ],
+  "languages": [
+   "Chinesisch",
+   "Mandarin"
+  ],
+  "currency": [
+   "Renminbi",
+   "Yuan",
+   "CNY"
+  ]
+ },
+ {
+  "id": "cr",
+  "name": "Costa Rica",
+  "flag": "🇨🇷",
+  "continent": "Nordamerika",
+  "capital": [
+   "San José"
+  ],
+  "peak": [
+   "Cerro Chirripó",
+   "Chirripó"
+  ],
+  "river": [
+   "Río Grande de Térraba",
+   "Térraba"
+  ],
+  "languages": [
+   "Spanisch"
+  ],
+  "currency": [
+   "Costa-Rica-Colón",
+   "CRC"
+  ]
+ },
+ {
+  "id": "dk",
+  "name": "Dänemark",
+  "flag": "🇩🇰",
+  "continent": "Europa",
+  "capital": [
+   "Kopenhagen",
+   "København",
+   "Copenhagen"
+  ],
+  "peak": [
+   "Møllehøj",
+   "Mollehoj"
+  ],
+  "river": [
+   "Gudenå",
+   "Gudenau",
+   "Gudenaa"
+  ],
+  "languages": [
+   "Dänisch"
+  ],
+  "currency": [
+   "Dänische Krone",
+   "DKK"
+  ]
+ },
+ {
+  "id": "cd",
+  "name": "Demokratische Republik Kongo",
+  "flag": "🇨🇩",
+  "continent": "Afrika",
+  "capital": [
+   "Kinshasa"
+  ],
+  "peak": [
+   "Margherita Peak",
+   "Mont Stanley",
+   "Ruwenzori"
+  ],
+  "river": [
+   "Kongo",
+   "Congo"
+  ],
+  "languages": [
+   "Französisch"
+  ],
+  "currency": [
+   "Kongo-Franc",
+   "Congo-Franc",
+   "Franc",
+   "CDF"
+  ]
+ },
+ {
+  "id": "de",
+  "name": "Deutschland",
+  "flag": "🇩🇪",
+  "continent": "Europa",
+  "capital": [
+   "Berlin"
+  ],
+  "peak": [
+   "Zugspitze"
+  ],
+  "river": [
+   "Rhein"
+  ],
+  "languages": [
+   "Deutsch"
+  ],
+  "currency": [
+   "Euro",
+   "EUR"
+  ]
+ },
+ {
+  "id": "dm",
+  "name": "Dominica",
+  "flag": "🇩🇲",
+  "continent": "Nordamerika",
+  "capital": [
+   "Roseau"
+  ],
+  "peak": [
+   "Morne Diablotins"
+  ],
+  "river": [
+   "Layou",
+   "Layou River"
+  ],
+  "languages": [
+   "Englisch"
+  ],
+  "currency": [
+   "Ostkaribischer Dollar",
+   "XCD"
+  ]
+ },
+ {
+  "id": "do",
+  "name": "Dominikanische Republik",
+  "flag": "🇩🇴",
+  "continent": "Nordamerika",
+  "capital": [
+   "Santo Domingo"
+  ],
+  "peak": [
+   "Pico Duarte"
+  ],
+  "river": [
+   "Yaque del Norte",
+   "Río Yaque del Norte"
+  ],
+  "languages": [
+   "Spanisch"
+  ],
+  "currency": [
+   "Dominikanischer Peso",
+   "DOP"
+  ]
+ },
+ {
+  "id": "dj",
+  "name": "Dschibuti",
+  "flag": "🇩🇯",
+  "continent": "Afrika",
+  "capital": [
+   "Dschibuti",
+   "Djibouti"
+  ],
+  "peak": [
+   "Mousa Ali",
+   "Moussa Ali"
+  ],
+  "river": [],
+  "languages": [
+   "Französisch",
+   "Arabisch"
+  ],
+  "currency": [
+   "Dschibuti-Franc",
+   "Franc",
+   "DJF"
+  ]
+ },
+ {
+  "id": "ec",
+  "name": "Ecuador",
+  "flag": "🇪🇨",
+  "continent": "Südamerika",
+  "capital": [
+   "Quito"
+  ],
+  "peak": [
+   "Chimborazo"
+  ],
+  "river": [
+   "Napo",
+   "Río Napo"
+  ],
+  "languages": [
+   "Spanisch"
+  ],
+  "currency": [
+   "US-Dollar",
+   "Dollar",
+   "USD"
+  ]
+ },
+ {
+  "id": "sv",
+  "name": "El Salvador",
+  "flag": "🇸🇻",
+  "continent": "Nordamerika",
+  "capital": [
+   "San Salvador"
+  ],
+  "peak": [
+   "Cerro El Pital",
+   "El Pital"
+  ],
+  "river": [
+   "Lempa",
+   "Río Lempa"
+  ],
+  "languages": [
+   "Spanisch"
+  ],
+  "currency": [
+   "US-Dollar",
+   "USD"
+  ]
+ },
+ {
+  "id": "ci",
+  "name": "Elfenbeinküste",
+  "flag": "🇨🇮",
+  "continent": "Afrika",
+  "capital": [
+   "Yamoussoukro",
+   "Abidjan"
+  ],
+  "peak": [
+   "Mont Nimba",
+   "Nimba"
+  ],
+  "river": [
+   "Bandama"
+  ],
+  "languages": [
+   "Französisch"
+  ],
+  "currency": [
+   "CFA-Franc",
+   "Westafrikanischer CFA-Franc",
+   "XOF"
+  ]
+ },
+ {
+  "id": "er",
+  "name": "Eritrea",
+  "flag": "🇪🇷",
+  "continent": "Afrika",
+  "capital": [
+   "Asmara"
+  ],
+  "peak": [
+   "Emba Soira"
+  ],
+  "river": [
+   "Gash",
+   "Mareb"
+  ],
+  "languages": [
+   "Tigrinya",
+   "Arabisch"
+  ],
+  "currency": [
+   "Nakfa",
+   "ERN"
+  ]
+ },
+ {
+  "id": "ee",
+  "name": "Estland",
+  "flag": "🇪🇪",
+  "continent": "Europa",
+  "capital": [
+   "Tallinn",
+   "Reval"
+  ],
+  "peak": [
+   "Suur Munamägi",
+   "Suur Munamagi"
+  ],
+  "river": [
+   "Võhandu",
+   "Vohandu"
+  ],
+  "languages": [
+   "Estnisch"
+  ],
+  "currency": [
+   "Euro",
+   "EUR"
+  ]
+ },
+ {
+  "id": "sz",
+  "name": "Eswatini",
+  "flag": "🇸🇿",
+  "continent": "Afrika",
+  "capital": [
+   "Mbabane",
+   "Lobamba"
+  ],
+  "peak": [
+   "Emlembe"
+  ],
+  "river": [
+   "Lusutfu",
+   "Great Usutu",
+   "Usutu"
+  ],
+  "languages": [
+   "Siswati",
+   "Swasi",
+   "Englisch"
+  ],
+  "currency": [
+   "Lilangeni",
+   "SZL"
+  ]
+ },
+ {
+  "id": "fj",
+  "name": "Fidschi",
+  "flag": "🇫🇯",
+  "continent": "Ozeanien",
+  "capital": [
+   "Suva"
+  ],
+  "peak": [
+   "Mount Tomanivi",
+   "Tomanivi"
+  ],
+  "river": [
+   "Rewa"
+  ],
+  "languages": [
+   "Englisch",
+   "Fidschianisch",
+   "Hindi"
+  ],
+  "currency": [
+   "Fidschi-Dollar",
+   "FJD"
+  ]
+ },
+ {
+  "id": "fi",
+  "name": "Finnland",
+  "flag": "🇫🇮",
+  "continent": "Europa",
+  "capital": [
+   "Helsinki",
+   "Helsingfors"
+  ],
+  "peak": [
+   "Halti",
+   "Haltitunturi",
+   "Halditšohkka"
+  ],
+  "river": [
+   "Kemijoki",
+   "Kemi"
+  ],
+  "languages": [
+   "Finnisch",
+   "Schwedisch"
+  ],
+  "currency": [
+   "Euro",
+   "EUR"
+  ]
+ },
+ {
+  "id": "fr",
+  "name": "Frankreich",
+  "flag": "🇫🇷",
+  "continent": "Europa",
+  "capital": [
+   "Paris"
+  ],
+  "peak": [
+   "Mont Blanc",
+   "Montblanc"
+  ],
+  "river": [
+   "Loire"
+  ],
+  "languages": [
+   "Französisch"
+  ],
+  "currency": [
+   "Euro",
+   "EUR"
+  ]
+ },
+ {
+  "id": "ga",
+  "name": "Gabun",
+  "flag": "🇬🇦",
+  "continent": "Afrika",
+  "capital": [
+   "Libreville"
+  ],
+  "peak": [
+   "Mont Iboundji",
+   "Iboundji"
+  ],
+  "river": [
+   "Ogooué",
+   "Ogowe"
+  ],
+  "languages": [
+   "Französisch"
+  ],
+  "currency": [
+   "CFA-Franc",
+   "Zentralafrikanischer CFA-Franc",
+   "XAF"
+  ]
+ },
+ {
+  "id": "gm",
+  "name": "Gambia",
+  "flag": "🇬🇲",
+  "continent": "Afrika",
+  "capital": [
+   "Banjul"
+  ],
+  "peak": [
+   "Red Rock"
+  ],
+  "river": [
+   "Gambia",
+   "Gambia-Fluss"
+  ],
+  "languages": [
+   "Englisch"
+  ],
+  "currency": [
+   "Dalasi",
+   "GMD"
+  ]
+ },
+ {
+  "id": "ge",
+  "name": "Georgien",
+  "flag": "🇬🇪",
+  "continent": "Asien",
+  "capital": [
+   "Tiflis",
+   "Tbilissi",
+   "Tbilisi"
+  ],
+  "peak": [
+   "Schchara",
+   "Shkhara"
+  ],
+  "river": [
+   "Kura",
+   "Mtkwari"
+  ],
+  "languages": [
+   "Georgisch"
+  ],
+  "currency": [
+   "Lari",
+   "GEL"
+  ]
+ },
+ {
+  "id": "gh",
+  "name": "Ghana",
+  "flag": "🇬🇭",
+  "continent": "Afrika",
+  "capital": [
+   "Accra",
+   "Akkra"
+  ],
+  "peak": [
+   "Mount Afadja",
+   "Afadjato",
+   "Afadja"
+  ],
+  "river": [
+   "Volta"
+  ],
+  "languages": [
+   "Englisch"
+  ],
+  "currency": [
+   "Cedi",
+   "Ghanaischer Cedi",
+   "GHS"
+  ]
+ },
+ {
+  "id": "gd",
+  "name": "Grenada",
+  "flag": "🇬🇩",
+  "continent": "Nordamerika",
+  "capital": [
+   "St. George's",
+   "Saint George's"
+  ],
+  "peak": [
+   "Mount Saint Catherine",
+   "Mount St. Catherine"
+  ],
+  "river": [],
+  "languages": [
+   "Englisch"
+  ],
+  "currency": [
+   "Ostkaribischer Dollar",
+   "XCD"
+  ]
+ },
+ {
+  "id": "gr",
+  "name": "Griechenland",
+  "flag": "🇬🇷",
+  "continent": "Europa",
+  "capital": [
+   "Athen",
+   "Athina",
+   "Athens"
+  ],
+  "peak": [
+   "Olymp",
+   "Olympos",
+   "Mytikas"
+  ],
+  "river": [
+   "Aliakmonas",
+   "Aliakmon",
+   "Haliacmon"
+  ],
+  "languages": [
+   "Griechisch"
+  ],
+  "currency": [
+   "Euro",
+   "EUR"
+  ]
+ },
+ {
+  "id": "gt",
+  "name": "Guatemala",
+  "flag": "🇬🇹",
+  "continent": "Nordamerika",
+  "capital": [
+   "Guatemala-Stadt",
+   "Ciudad de Guatemala",
+   "Guatemala City"
+  ],
+  "peak": [
+   "Tajumulco",
+   "Volcán Tajumulco"
+  ],
+  "river": [
+   "Motagua",
+   "Río Motagua"
+  ],
+  "languages": [
+   "Spanisch"
+  ],
+  "currency": [
+   "Quetzal",
+   "GTQ"
+  ]
+ },
+ {
+  "id": "gn",
+  "name": "Guinea",
+  "flag": "🇬🇳",
+  "continent": "Afrika",
+  "capital": [
+   "Conakry"
+  ],
+  "peak": [
+   "Mont Nimba",
+   "Nimba"
+  ],
+  "river": [
+   "Niger"
+  ],
+  "languages": [
+   "Französisch"
+  ],
+  "currency": [
+   "Guinea-Franc",
+   "Franc",
+   "GNF"
+  ]
+ },
+ {
+  "id": "gw",
+  "name": "Guinea-Bissau",
+  "flag": "🇬🇼",
+  "continent": "Afrika",
+  "capital": [
+   "Bissau"
+  ],
+  "peak": [
+   "Monte Torin",
+   "Dongol Ronde"
+  ],
+  "river": [
+   "Corubal",
+   "Rio Corubal"
+  ],
+  "languages": [
+   "Portugiesisch"
+  ],
+  "currency": [
+   "CFA-Franc",
+   "Westafrikanischer CFA-Franc",
+   "XOF"
+  ]
+ },
+ {
+  "id": "gy",
+  "name": "Guyana",
+  "flag": "🇬🇾",
+  "continent": "Südamerika",
+  "capital": [
+   "Georgetown"
+  ],
+  "peak": [
+   "Roraima",
+   "Mount Roraima",
+   "Monte Roraima"
+  ],
+  "river": [
+   "Essequibo"
+  ],
+  "languages": [
+   "Englisch"
+  ],
+  "currency": [
+   "Guyana-Dollar",
+   "Dollar",
+   "GYD"
+  ]
+ },
+ {
+  "id": "ht",
+  "name": "Haiti",
+  "flag": "🇭🇹",
+  "continent": "Nordamerika",
+  "capital": [
+   "Port-au-Prince"
+  ],
+  "peak": [
+   "Pic la Selle",
+   "Pic La Selle"
+  ],
+  "river": [
+   "Artibonite",
+   "Fleuve Artibonite"
+  ],
+  "languages": [
+   "Französisch",
+   "Haitianisch-Kreolisch"
+  ],
+  "currency": [
+   "Gourde",
+   "HTG"
+  ]
+ },
+ {
+  "id": "hn",
+  "name": "Honduras",
+  "flag": "🇭🇳",
+  "continent": "Nordamerika",
+  "capital": [
+   "Tegucigalpa"
+  ],
+  "peak": [
+   "Cerro Las Minas",
+   "Cerro Celaque"
+  ],
+  "river": [
+   "Patuca",
+   "Río Patuca"
+  ],
+  "languages": [
+   "Spanisch"
+  ],
+  "currency": [
+   "Lempira",
+   "HNL"
+  ]
+ },
+ {
+  "id": "in",
+  "name": "Indien",
+  "flag": "🇮🇳",
+  "continent": "Asien",
+  "capital": [
+   "Neu Delhi",
+   "Neu-Delhi",
+   "New Delhi"
+  ],
+  "peak": [
+   "Kangchendzönga",
+   "Kangchenjunga"
+  ],
+  "river": [
+   "Ganges",
+   "Ganga"
+  ],
+  "languages": [
+   "Hindi",
+   "Englisch"
+  ],
+  "currency": [
+   "Indische Rupie",
+   "Rupie",
+   "INR"
+  ]
+ },
+ {
+  "id": "id",
+  "name": "Indonesien",
+  "flag": "🇮🇩",
+  "continent": "Asien",
+  "capital": [
+   "Jakarta",
+   "Nusantara"
+  ],
+  "peak": [
+   "Puncak Jaya",
+   "Carstensz-Pyramide"
+  ],
+  "river": [
+   "Kapuas"
+  ],
+  "languages": [
+   "Indonesisch",
+   "Bahasa Indonesia"
+  ],
+  "currency": [
+   "Rupiah",
+   "IDR"
+  ]
+ },
+ {
+  "id": "iq",
+  "name": "Irak",
+  "flag": "🇮🇶",
+  "continent": "Asien",
+  "capital": [
+   "Bagdad",
+   "Baghdad"
+  ],
+  "peak": [
+   "Cheekha Dar",
+   "Cheekah Dar"
+  ],
+  "river": [
+   "Euphrat",
+   "Euphrates"
+  ],
+  "languages": [
+   "Arabisch",
+   "Kurdisch"
+  ],
+  "currency": [
+   "Irakischer Dinar",
+   "Dinar",
+   "IQD"
+  ]
+ },
+ {
+  "id": "ir",
+  "name": "Iran",
+  "flag": "🇮🇷",
+  "continent": "Asien",
+  "capital": [
+   "Teheran",
+   "Tehran"
+  ],
+  "peak": [
+   "Damavand",
+   "Demawend"
+  ],
+  "river": [
+   "Karun"
+  ],
+  "languages": [
+   "Persisch",
+   "Farsi"
+  ],
+  "currency": [
+   "Iranischer Rial",
+   "Rial",
+   "IRR"
+  ]
+ },
+ {
+  "id": "ie",
+  "name": "Irland",
+  "flag": "🇮🇪",
+  "continent": "Europa",
+  "capital": [
+   "Dublin",
+   "Baile Átha Cliath"
+  ],
+  "peak": [
+   "Carrauntoohil",
+   "Carrauntoohill",
+   "Corrán Tuathail"
+  ],
+  "river": [
+   "Shannon"
+  ],
+  "languages": [
+   "Irisch",
+   "Englisch"
+  ],
+  "currency": [
+   "Euro",
+   "EUR"
+  ]
+ },
+ {
+  "id": "is",
+  "name": "Island",
+  "flag": "🇮🇸",
+  "continent": "Europa",
+  "capital": [
+   "Reykjavík",
+   "Reykjavik"
+  ],
+  "peak": [
+   "Hvannadalshnúkur",
+   "Hvannadalshnukur"
+  ],
+  "river": [
+   "Þjórsá",
+   "Thjorsa",
+   "Thjórsá"
+  ],
+  "languages": [
+   "Isländisch"
+  ],
+  "currency": [
+   "Isländische Krone",
+   "ISK"
+  ]
+ },
+ {
+  "id": "il",
+  "name": "Israel",
+  "flag": "🇮🇱",
+  "continent": "Asien",
+  "capital": [
+   "Jerusalem"
+  ],
+  "peak": [
+   "Har Meron",
+   "Berg Meron"
+  ],
+  "river": [
+   "Jordan"
+  ],
+  "languages": [
+   "Hebräisch",
+   "Arabisch"
+  ],
+  "currency": [
+   "Schekel",
+   "Neuer Schekel",
+   "ILS"
+  ]
+ },
+ {
+  "id": "it",
+  "name": "Italien",
+  "flag": "🇮🇹",
+  "continent": "Europa",
+  "capital": [
+   "Rom",
+   "Roma",
+   "Rome"
+  ],
+  "peak": [
+   "Mont Blanc de Courmayeur",
+   "Monte Bianco di Courmayeur",
+   "Montblanc"
+  ],
+  "river": [
+   "Po"
+  ],
+  "languages": [
+   "Italienisch"
+  ],
+  "currency": [
+   "Euro",
+   "EUR"
+  ]
+ },
+ {
+  "id": "jm",
+  "name": "Jamaika",
+  "flag": "🇯🇲",
+  "continent": "Nordamerika",
+  "capital": [
+   "Kingston"
+  ],
+  "peak": [
+   "Blue Mountain Peak"
+  ],
+  "river": [
+   "Rio Minho",
+   "Río Minho"
+  ],
+  "languages": [
+   "Englisch"
+  ],
+  "currency": [
+   "Jamaika-Dollar",
+   "JMD"
+  ]
+ },
+ {
+  "id": "jp",
+  "name": "Japan",
+  "flag": "🇯🇵",
+  "continent": "Asien",
+  "capital": [
+   "Tokio",
+   "Tokyo"
+  ],
+  "peak": [
+   "Fuji",
+   "Fujisan",
+   "Mount Fuji"
+  ],
+  "river": [
+   "Shinano",
+   "Shinanogawa"
+  ],
+  "languages": [
+   "Japanisch"
+  ],
+  "currency": [
+   "Yen",
+   "JPY"
+  ]
+ },
+ {
+  "id": "ye",
+  "name": "Jemen",
+  "flag": "🇾🇪",
+  "continent": "Asien",
+  "capital": [
+   "Sanaa",
+   "Sana'a"
+  ],
+  "peak": [
+   "Jabal an-Nabi Schuʿaib",
+   "Nabi Shuayb"
+  ],
+  "river": [],
+  "languages": [
+   "Arabisch"
+  ],
+  "currency": [
+   "Jemen-Rial",
+   "Rial",
+   "YER"
+  ]
+ },
+ {
+  "id": "jo",
+  "name": "Jordanien",
+  "flag": "🇯🇴",
+  "continent": "Asien",
+  "capital": [
+   "Amman"
+  ],
+  "peak": [
+   "Jabal Umm ad Dami",
+   "Umm ad Dami"
+  ],
+  "river": [
+   "Jordan"
+  ],
+  "languages": [
+   "Arabisch"
+  ],
+  "currency": [
+   "Jordanischer Dinar",
+   "Dinar",
+   "JOD"
+  ]
+ },
+ {
+  "id": "kh",
+  "name": "Kambodscha",
+  "flag": "🇰🇭",
+  "continent": "Asien",
+  "capital": [
+   "Phnom Penh"
+  ],
+  "peak": [
+   "Phnom Aural"
+  ],
+  "river": [
+   "Mekong"
+  ],
+  "languages": [
+   "Khmer"
+  ],
+  "currency": [
+   "Riel",
+   "KHR"
+  ]
+ },
+ {
+  "id": "cm",
+  "name": "Kamerun",
+  "flag": "🇨🇲",
+  "continent": "Afrika",
+  "capital": [
+   "Yaoundé",
+   "Yaounde"
+  ],
+  "peak": [
+   "Kamerunberg",
+   "Mount Cameroon",
+   "Fako"
+  ],
+  "river": [
+   "Sanaga"
+  ],
+  "languages": [
+   "Französisch",
+   "Englisch"
+  ],
+  "currency": [
+   "CFA-Franc",
+   "Zentralafrikanischer CFA-Franc",
+   "XAF"
+  ]
+ },
+ {
+  "id": "ca",
+  "name": "Kanada",
+  "flag": "🇨🇦",
+  "continent": "Nordamerika",
+  "capital": [
+   "Ottawa"
+  ],
+  "peak": [
+   "Mount Logan",
+   "Logan"
+  ],
+  "river": [
+   "Mackenzie",
+   "Mackenzie River"
+  ],
+  "languages": [
+   "Englisch",
+   "Französisch"
+  ],
+  "currency": [
+   "Kanadischer Dollar",
+   "CAD"
+  ]
+ },
+ {
+  "id": "cv",
+  "name": "Kap Verde",
+  "flag": "🇨🇻",
+  "continent": "Afrika",
+  "capital": [
+   "Praia"
+  ],
+  "peak": [
+   "Pico do Fogo",
+   "Pico de Fogo"
+  ],
+  "river": [],
+  "languages": [
+   "Portugiesisch"
+  ],
+  "currency": [
+   "Kap-Verde-Escudo",
+   "Escudo",
+   "CVE"
+  ]
+ },
+ {
+  "id": "kz",
+  "name": "Kasachstan",
+  "flag": "🇰🇿",
+  "continent": "Asien",
+  "capital": [
+   "Astana",
+   "Nur-Sultan"
+  ],
+  "peak": [
+   "Chan Tengri",
+   "Khan Tengri"
+  ],
+  "river": [
+   "Irtysch",
+   "Irtysh"
+  ],
+  "languages": [
+   "Kasachisch",
+   "Russisch"
+  ],
+  "currency": [
+   "Tenge",
+   "KZT"
+  ]
+ },
+ {
+  "id": "qa",
+  "name": "Katar",
+  "flag": "🇶🇦",
+  "continent": "Asien",
+  "capital": [
+   "Doha",
+   "Ad-Dawha"
+  ],
+  "peak": [
+   "Qurayn Abu al-Bawl",
+   "Tuwayyir al Hamir"
+  ],
+  "river": [],
+  "languages": [
+   "Arabisch"
+  ],
+  "currency": [
+   "Katar-Riyal",
+   "Riyal",
+   "QAR"
+  ]
+ },
+ {
+  "id": "ke",
+  "name": "Kenia",
+  "flag": "🇰🇪",
+  "continent": "Afrika",
+  "capital": [
+   "Nairobi"
+  ],
+  "peak": [
+   "Mount Kenya",
+   "Batian"
+  ],
+  "river": [
+   "Tana"
+  ],
+  "languages": [
+   "Swahili",
+   "Suaheli",
+   "Englisch"
+  ],
+  "currency": [
+   "Kenia-Schilling",
+   "Schilling",
+   "KES"
+  ]
+ },
+ {
+  "id": "kg",
+  "name": "Kirgisistan",
+  "flag": "🇰🇬",
+  "continent": "Asien",
+  "capital": [
+   "Bischkek",
+   "Bishkek"
+  ],
+  "peak": [
+   "Pik Pobeda",
+   "Jengish Chokusu"
+  ],
+  "river": [
+   "Naryn"
+  ],
+  "languages": [
+   "Kirgisisch",
+   "Russisch"
+  ],
+  "currency": [
+   "Som",
+   "KGS"
+  ]
+ },
+ {
+  "id": "ki",
+  "name": "Kiribati",
+  "flag": "🇰🇮",
+  "continent": "Ozeanien",
+  "capital": [
+   "Tarawa",
+   "South Tarawa"
+  ],
+  "peak": [
+   "Unbenannte Erhebung",
+   "Banaba"
+  ],
+  "river": [
+   "Keiner"
+  ],
+  "languages": [
+   "Englisch",
+   "Gilbertesisch"
+  ],
+  "currency": [
+   "Australischer Dollar",
+   "AUD"
+  ]
+ },
+ {
+  "id": "co",
+  "name": "Kolumbien",
+  "flag": "🇨🇴",
+  "continent": "Südamerika",
+  "capital": [
+   "Bogotá",
+   "Bogota"
+  ],
+  "peak": [
+   "Pico Cristóbal Colón",
+   "Cristóbal Colón"
+  ],
+  "river": [
+   "Magdalena",
+   "Río Magdalena"
+  ],
+  "languages": [
+   "Spanisch"
+  ],
+  "currency": [
+   "Kolumbianischer Peso",
+   "Peso",
+   "COP"
+  ]
+ },
+ {
+  "id": "km",
+  "name": "Komoren",
+  "flag": "🇰🇲",
+  "continent": "Afrika",
+  "capital": [
+   "Moroni"
+  ],
+  "peak": [
+   "Karthala",
+   "Mont Karthala"
+  ],
+  "river": [],
+  "languages": [
+   "Komorisch",
+   "Arabisch",
+   "Französisch"
+  ],
+  "currency": [
+   "Komoren-Franc",
+   "Franc",
+   "KMF"
+  ]
+ },
+ {
+  "id": "xk",
+  "name": "Kosovo",
+  "flag": "🇽🇰",
+  "continent": "Europa",
+  "capital": [
+   "Pristina",
+   "Priština",
+   "Prishtina"
+  ],
+  "peak": [
+   "Đeravica",
+   "Gjeravica",
+   "Deravica"
+  ],
+  "river": [
+   "Weißer Drin",
+   "Beli Drim",
+   "Drini i Bardhë"
+  ],
+  "languages": [
+   "Albanisch",
+   "Serbisch"
+  ],
+  "currency": [
+   "Euro",
+   "EUR"
+  ]
+ },
+ {
+  "id": "hr",
+  "name": "Kroatien",
+  "flag": "🇭🇷",
+  "continent": "Europa",
+  "capital": [
+   "Zagreb",
+   "Agram"
+  ],
+  "peak": [
+   "Dinara"
+  ],
+  "river": [
+   "Save",
+   "Sava"
+  ],
+  "languages": [
+   "Kroatisch"
+  ],
+  "currency": [
+   "Euro",
+   "EUR"
+  ]
+ },
+ {
+  "id": "cu",
+  "name": "Kuba",
+  "flag": "🇨🇺",
+  "continent": "Nordamerika",
+  "capital": [
+   "Havanna",
+   "La Habana"
+  ],
+  "peak": [
+   "Pico Turquino",
+   "Turquino"
+  ],
+  "river": [
+   "Cauto",
+   "Río Cauto"
+  ],
+  "languages": [
+   "Spanisch"
+  ],
+  "currency": [
+   "Kubanischer Peso",
+   "CUP"
+  ]
+ },
+ {
+  "id": "kw",
+  "name": "Kuwait",
+  "flag": "🇰🇼",
+  "continent": "Asien",
+  "capital": [
+   "Kuwait-Stadt",
+   "Kuwait"
+  ],
+  "peak": [
+   "Mutla Ridge",
+   "Jal az-Zor"
+  ],
+  "river": [],
+  "languages": [
+   "Arabisch"
+  ],
+  "currency": [
+   "Kuwait-Dinar",
+   "Dinar",
+   "KWD"
+  ]
+ },
+ {
+  "id": "la",
+  "name": "Laos",
+  "flag": "🇱🇦",
+  "continent": "Asien",
+  "capital": [
+   "Vientiane",
+   "Vientian"
+  ],
+  "peak": [
+   "Phou Bia",
+   "Phu Bia"
+  ],
+  "river": [
+   "Mekong"
+  ],
+  "languages": [
+   "Laotisch",
+   "Lao"
+  ],
+  "currency": [
+   "Kip",
+   "LAK"
+  ]
+ },
+ {
+  "id": "ls",
+  "name": "Lesotho",
+  "flag": "🇱🇸",
+  "continent": "Afrika",
+  "capital": [
+   "Maseru"
+  ],
+  "peak": [
+   "Thabana Ntlenyana"
+  ],
+  "river": [
+   "Oranje",
+   "Senqu",
+   "Orange"
+  ],
+  "languages": [
+   "Sesotho",
+   "Sotho",
+   "Englisch"
+  ],
+  "currency": [
+   "Loti",
+   "LSL"
+  ]
+ },
+ {
+  "id": "lv",
+  "name": "Lettland",
+  "flag": "🇱🇻",
+  "continent": "Europa",
+  "capital": [
+   "Riga",
+   "Rīga"
+  ],
+  "peak": [
+   "Gaiziņkalns",
+   "Gaizinkalns",
+   "Gaiziņa kalns"
+  ],
+  "river": [
+   "Düna",
+   "Daugava",
+   "Westliche Dwina"
+  ],
+  "languages": [
+   "Lettisch"
+  ],
+  "currency": [
+   "Euro",
+   "EUR"
+  ]
+ },
+ {
+  "id": "lb",
+  "name": "Libanon",
+  "flag": "🇱🇧",
+  "continent": "Asien",
+  "capital": [
+   "Beirut"
+  ],
+  "peak": [
+   "Qornet es-Saouda",
+   "Qurnat as Sawda"
+  ],
+  "river": [
+   "Litani"
+  ],
+  "languages": [
+   "Arabisch"
+  ],
+  "currency": [
+   "Libanesisches Pfund",
+   "Pfund",
+   "LBP"
+  ]
+ },
+ {
+  "id": "lr",
+  "name": "Liberia",
+  "flag": "🇱🇷",
+  "continent": "Afrika",
+  "capital": [
+   "Monrovia"
+  ],
+  "peak": [
+   "Mount Wuteve",
+   "Wuteve"
+  ],
+  "river": [
+   "Cavalla",
+   "Cavally"
+  ],
+  "languages": [
+   "Englisch"
+  ],
+  "currency": [
+   "Liberianischer Dollar",
+   "Dollar",
+   "LRD"
+  ]
+ },
+ {
+  "id": "ly",
+  "name": "Libyen",
+  "flag": "🇱🇾",
+  "continent": "Afrika",
+  "capital": [
+   "Tripolis",
+   "Tripoli"
+  ],
+  "peak": [
+   "Bikku Bitti",
+   "Bette",
+   "Bikku Butti"
+  ],
+  "river": [],
+  "languages": [
+   "Arabisch"
+  ],
+  "currency": [
+   "Libyscher Dinar",
+   "Dinar",
+   "LYD"
+  ]
+ },
+ {
+  "id": "li",
+  "name": "Liechtenstein",
+  "flag": "🇱🇮",
+  "continent": "Europa",
+  "capital": [
+   "Vaduz"
+  ],
+  "peak": [
+   "Vordere Grauspitz",
+   "Vorder Grauspitz",
+   "Grauspitz"
+  ],
+  "river": [
+   "Rhein"
+  ],
+  "languages": [
+   "Deutsch"
+  ],
+  "currency": [
+   "Schweizer Franken",
+   "CHF"
+  ]
+ },
+ {
+  "id": "lt",
+  "name": "Litauen",
+  "flag": "🇱🇹",
+  "continent": "Europa",
+  "capital": [
+   "Vilnius",
+   "Wilna"
+  ],
+  "peak": [
+   "Aukštojas",
+   "Aukstojas",
+   "Aukštojo kalva"
+  ],
+  "river": [
+   "Memel",
+   "Nemunas",
+   "Njemen"
+  ],
+  "languages": [
+   "Litauisch"
+  ],
+  "currency": [
+   "Euro",
+   "EUR"
+  ]
+ },
+ {
+  "id": "lu",
+  "name": "Luxemburg",
+  "flag": "🇱🇺",
+  "continent": "Europa",
+  "capital": [
+   "Luxemburg",
+   "Luxemburg-Stadt",
+   "Luxembourg"
+  ],
+  "peak": [
+   "Kneiff",
+   "Kneiff bei Wilwerdange"
+  ],
+  "river": [
+   "Mosel",
+   "Moselle"
+  ],
+  "languages": [
+   "Luxemburgisch",
+   "Französisch",
+   "Deutsch"
+  ],
+  "currency": [
+   "Euro",
+   "EUR"
+  ]
+ },
+ {
+  "id": "mg",
+  "name": "Madagaskar",
+  "flag": "🇲🇬",
+  "continent": "Afrika",
+  "capital": [
+   "Antananarivo"
+  ],
+  "peak": [
+   "Maromokotro"
+  ],
+  "river": [
+   "Mangoky"
+  ],
+  "languages": [
+   "Malagasy",
+   "Madagassisch",
+   "Französisch"
+  ],
+  "currency": [
+   "Ariary",
+   "MGA"
+  ]
+ },
+ {
+  "id": "mw",
+  "name": "Malawi",
+  "flag": "🇲🇼",
+  "continent": "Afrika",
+  "capital": [
+   "Lilongwe"
+  ],
+  "peak": [
+   "Sapitwa",
+   "Mulanje",
+   "Mount Mulanje"
+  ],
+  "river": [
+   "Shire"
+  ],
+  "languages": [
+   "Chichewa",
+   "Englisch"
+  ],
+  "currency": [
+   "Malawi-Kwacha",
+   "Kwacha",
+   "MWK"
+  ]
+ },
+ {
+  "id": "my",
+  "name": "Malaysia",
+  "flag": "🇲🇾",
+  "continent": "Asien",
+  "capital": [
+   "Kuala Lumpur",
+   "Putrajaya"
+  ],
+  "peak": [
+   "Mount Kinabalu",
+   "Kinabalu"
+  ],
+  "river": [
+   "Rajang",
+   "Batang Rajang"
+  ],
+  "languages": [
+   "Malaiisch",
+   "Bahasa Malaysia"
+  ],
+  "currency": [
+   "Ringgit",
+   "MYR"
+  ]
+ },
+ {
+  "id": "mv",
+  "name": "Malediven",
+  "flag": "🇲🇻",
+  "continent": "Asien",
+  "capital": [
+   "Malé",
+   "Male"
+  ],
+  "peak": [
+   "Villingili",
+   "Wilingili"
+  ],
+  "river": [],
+  "languages": [
+   "Dhivehi"
+  ],
+  "currency": [
+   "Rufiyaa",
+   "MVR"
+  ]
+ },
+ {
+  "id": "ml",
+  "name": "Mali",
+  "flag": "🇲🇱",
+  "continent": "Afrika",
+  "capital": [
+   "Bamako"
+  ],
+  "peak": [
+   "Hombori Tondo"
+  ],
+  "river": [
+   "Niger"
+  ],
+  "languages": [
+   "Französisch",
+   "Bambara"
+  ],
+  "currency": [
+   "CFA-Franc",
+   "Westafrikanischer CFA-Franc",
+   "XOF"
+  ]
+ },
+ {
+  "id": "mt",
+  "name": "Malta",
+  "flag": "🇲🇹",
+  "continent": "Europa",
+  "capital": [
+   "Valletta",
+   "La Valletta"
+  ],
+  "peak": [
+   "Ta' Dmejrek",
+   "Ta Dmejrek",
+   "Dingli Cliffs"
+  ],
+  "river": [
+   "Wied il-Baħar",
+   "Wied il-Bahar"
+  ],
+  "languages": [
+   "Maltesisch",
+   "Englisch"
+  ],
+  "currency": [
+   "Euro",
+   "EUR"
+  ]
+ },
+ {
+  "id": "ma",
+  "name": "Marokko",
+  "flag": "🇲🇦",
+  "continent": "Afrika",
+  "capital": [
+   "Rabat"
+  ],
+  "peak": [
+   "Toubkal",
+   "Jbel Toubkal",
+   "Djebel Toubkal"
+  ],
+  "river": [
+   "Draa",
+   "Oued Draa"
+  ],
+  "languages": [
+   "Arabisch",
+   "Berberisch",
+   "Tamazight"
+  ],
+  "currency": [
+   "Marokkanischer Dirham",
+   "Dirham",
+   "MAD"
+  ]
+ },
+ {
+  "id": "mh",
+  "name": "Marshallinseln",
+  "flag": "🇲🇭",
+  "continent": "Ozeanien",
+  "capital": [
+   "Majuro"
+  ],
+  "peak": [
+   "Unbenannte Erhebung"
+  ],
+  "river": [
+   "Keiner"
+  ],
+  "languages": [
+   "Marshallesisch",
+   "Englisch"
+  ],
+  "currency": [
+   "US-Dollar",
+   "USD"
+  ]
+ },
+ {
+  "id": "mr",
+  "name": "Mauretanien",
+  "flag": "🇲🇷",
+  "continent": "Afrika",
+  "capital": [
+   "Nouakchott"
+  ],
+  "peak": [
+   "Kediet ej Jill",
+   "Kediet Ijill"
+  ],
+  "river": [
+   "Senegal"
+  ],
+  "languages": [
+   "Arabisch"
+  ],
+  "currency": [
+   "Ouguiya",
+   "MRU"
+  ]
+ },
+ {
+  "id": "mu",
+  "name": "Mauritius",
+  "flag": "🇲🇺",
+  "continent": "Afrika",
+  "capital": [
+   "Port Louis"
+  ],
+  "peak": [
+   "Piton de la Petite Rivière Noire",
+   "Petite Rivière Noire"
+  ],
+  "river": [
+   "Grand River South East",
+   "Grande Rivière Sud Est"
+  ],
+  "languages": [
+   "Englisch"
+  ],
+  "currency": [
+   "Mauritius-Rupie",
+   "Rupie",
+   "MUR"
+  ]
+ },
+ {
+  "id": "mx",
+  "name": "Mexiko",
+  "flag": "🇲🇽",
+  "continent": "Nordamerika",
+  "capital": [
+   "Mexiko-Stadt",
+   "Ciudad de México",
+   "Mexico City"
+  ],
+  "peak": [
+   "Pico de Orizaba",
+   "Citlaltépetl"
+  ],
+  "river": [
+   "Río Bravo",
+   "Rio Grande",
+   "Río Bravo del Norte"
+  ],
+  "languages": [
+   "Spanisch"
+  ],
+  "currency": [
+   "Mexikanischer Peso",
+   "MXN"
+  ]
+ },
+ {
+  "id": "fm",
+  "name": "Mikronesien",
+  "flag": "🇫🇲",
+  "continent": "Ozeanien",
+  "capital": [
+   "Palikir"
+  ],
+  "peak": [
+   "Nahnalaud",
+   "Dolohmwar"
+  ],
+  "river": [
+   "Keiner"
+  ],
+  "languages": [
+   "Englisch"
+  ],
+  "currency": [
+   "US-Dollar",
+   "USD"
+  ]
+ },
+ {
+  "id": "md",
+  "name": "Moldau",
+  "flag": "🇲🇩",
+  "continent": "Europa",
+  "capital": [
+   "Chișinău",
+   "Chisinau",
+   "Kischinau"
+  ],
+  "peak": [
+   "Bălănești",
+   "Balanesti",
+   "Dealul Bălănești"
+  ],
+  "river": [
+   "Dnjestr",
+   "Nistru",
+   "Dniester"
+  ],
+  "languages": [
+   "Rumänisch",
+   "Moldauisch"
+  ],
+  "currency": [
+   "Moldauischer Leu",
+   "MDL"
+  ]
+ },
+ {
+  "id": "mc",
+  "name": "Monaco",
+  "flag": "🇲🇨",
+  "continent": "Europa",
+  "capital": [
+   "Monaco",
+   "Monaco-Ville"
+  ],
+  "peak": [
+   "Chemin des Révoires",
+   "Chemin des Revoires"
+  ],
+  "river": [
+   "Vallon de Sainte-Dévote",
+   "Sainte-Dévote"
+  ],
+  "languages": [
+   "Französisch"
+  ],
+  "currency": [
+   "Euro",
+   "EUR"
+  ]
+ },
+ {
+  "id": "mn",
+  "name": "Mongolei",
+  "flag": "🇲🇳",
+  "continent": "Asien",
+  "capital": [
+   "Ulaanbaatar",
+   "Ulan Bator"
+  ],
+  "peak": [
+   "Chüiten",
+   "Khüiten",
+   "Khuiten"
+  ],
+  "river": [
+   "Orchon",
+   "Orkhon"
+  ],
+  "languages": [
+   "Mongolisch"
+  ],
+  "currency": [
+   "Tögrög",
+   "Tugrik",
+   "MNT"
+  ]
+ },
+ {
+  "id": "me",
+  "name": "Montenegro",
+  "flag": "🇲🇪",
+  "continent": "Europa",
+  "capital": [
+   "Podgorica"
+  ],
+  "peak": [
+   "Zla Kolata",
+   "Kolata"
+  ],
+  "river": [
+   "Tara"
+  ],
+  "languages": [
+   "Montenegrinisch"
+  ],
+  "currency": [
+   "Euro",
+   "EUR"
+  ]
+ },
+ {
+  "id": "mz",
+  "name": "Mosambik",
+  "flag": "🇲🇿",
+  "continent": "Afrika",
+  "capital": [
+   "Maputo"
+  ],
+  "peak": [
+   "Monte Binga",
+   "Binga"
+  ],
+  "river": [
+   "Sambesi",
+   "Zambezi"
+  ],
+  "languages": [
+   "Portugiesisch"
+  ],
+  "currency": [
+   "Metical",
+   "MZN"
+  ]
+ },
+ {
+  "id": "mm",
+  "name": "Myanmar",
+  "flag": "🇲🇲",
+  "continent": "Asien",
+  "capital": [
+   "Naypyidaw",
+   "Nay Pyi Taw"
+  ],
+  "peak": [
+   "Hkakabo Razi",
+   "Khakaborazi"
+  ],
+  "river": [
+   "Irrawaddy",
+   "Ayeyarwady"
+  ],
+  "languages": [
+   "Birmanisch"
+  ],
+  "currency": [
+   "Kyat",
+   "MMK"
+  ]
+ },
+ {
+  "id": "na",
+  "name": "Namibia",
+  "flag": "🇳🇦",
+  "continent": "Afrika",
+  "capital": [
+   "Windhoek",
+   "Windhuk"
+  ],
+  "peak": [
+   "Königstein",
+   "Brandberg"
+  ],
+  "river": [
+   "Oranje",
+   "Orange"
+  ],
+  "languages": [
+   "Englisch"
+  ],
+  "currency": [
+   "Namibia-Dollar",
+   "Dollar",
+   "NAD"
+  ]
+ },
+ {
+  "id": "nr",
+  "name": "Nauru",
+  "flag": "🇳🇷",
+  "continent": "Ozeanien",
+  "capital": [
+   "Yaren"
+  ],
+  "peak": [
+   "Command Ridge"
+  ],
+  "river": [
+   "Keiner"
+  ],
+  "languages": [
+   "Nauruisch",
+   "Englisch"
+  ],
+  "currency": [
+   "Australischer Dollar",
+   "AUD"
+  ]
+ },
+ {
+  "id": "np",
+  "name": "Nepal",
+  "flag": "🇳🇵",
+  "continent": "Asien",
+  "capital": [
+   "Kathmandu",
+   "Kathmandu"
+  ],
+  "peak": [
+   "Mount Everest",
+   "Sagarmatha",
+   "Chomolungma"
+  ],
+  "river": [
+   "Karnali"
+  ],
+  "languages": [
+   "Nepali"
+  ],
+  "currency": [
+   "Nepalesische Rupie",
+   "Rupie",
+   "NPR"
+  ]
+ },
+ {
+  "id": "nz",
+  "name": "Neuseeland",
+  "flag": "🇳🇿",
+  "continent": "Ozeanien",
+  "capital": [
+   "Wellington"
+  ],
+  "peak": [
+   "Aoraki",
+   "Mount Cook"
+  ],
+  "river": [
+   "Waikato"
+  ],
+  "languages": [
+   "Englisch",
+   "Maori",
+   "Neuseeländische Gebärdensprache"
+  ],
+  "currency": [
+   "Neuseeland-Dollar",
+   "NZD"
+  ]
+ },
+ {
+  "id": "ni",
+  "name": "Nicaragua",
+  "flag": "🇳🇮",
+  "continent": "Nordamerika",
+  "capital": [
+   "Managua"
+  ],
+  "peak": [
+   "Mogotón",
+   "Cerro Mogotón"
+  ],
+  "river": [
+   "Coco",
+   "Río Coco",
+   "Segovia"
+  ],
+  "languages": [
+   "Spanisch"
+  ],
+  "currency": [
+   "Córdoba",
+   "NIO"
+  ]
+ },
+ {
+  "id": "nl",
+  "name": "Niederlande",
+  "flag": "🇳🇱",
+  "continent": "Europa",
+  "capital": [
+   "Amsterdam"
+  ],
+  "peak": [
+   "Vaalserberg"
+  ],
+  "river": [
+   "Rhein",
+   "Rijn"
+  ],
+  "languages": [
+   "Niederländisch"
+  ],
+  "currency": [
+   "Euro",
+   "EUR"
+  ]
+ },
+ {
+  "id": "ne",
+  "name": "Niger",
+  "flag": "🇳🇪",
+  "continent": "Afrika",
+  "capital": [
+   "Niamey"
+  ],
+  "peak": [
+   "Mont Idoukal-n-Taghès",
+   "Idoukal-n-Taghes",
+   "Bagzane"
+  ],
+  "river": [
+   "Niger"
+  ],
+  "languages": [
+   "Französisch"
+  ],
+  "currency": [
+   "CFA-Franc",
+   "Westafrikanischer CFA-Franc",
+   "XOF"
+  ]
+ },
+ {
+  "id": "ng",
+  "name": "Nigeria",
+  "flag": "🇳🇬",
+  "continent": "Afrika",
+  "capital": [
+   "Abuja"
+  ],
+  "peak": [
+   "Chappal Waddi",
+   "Gangirwal"
+  ],
+  "river": [
+   "Niger"
+  ],
+  "languages": [
+   "Englisch"
+  ],
+  "currency": [
+   "Naira",
+   "NGN"
+  ]
+ },
+ {
+  "id": "kp",
+  "name": "Nordkorea",
+  "flag": "🇰🇵",
+  "continent": "Asien",
+  "capital": [
+   "Pjöngjang",
+   "Pyongyang"
+  ],
+  "peak": [
+   "Paektusan",
+   "Baekdu",
+   "Paektu"
+  ],
+  "river": [
+   "Yalu",
+   "Amnok",
+   "Amnokgang"
+  ],
+  "languages": [
+   "Koreanisch"
+  ],
+  "currency": [
+   "Nordkoreanischer Won",
+   "Won",
+   "KPW"
+  ]
+ },
+ {
+  "id": "mk",
+  "name": "Nordmazedonien",
+  "flag": "🇲🇰",
+  "continent": "Europa",
+  "capital": [
+   "Skopje",
+   "Üsküb"
+  ],
+  "peak": [
+   "Korab",
+   "Golem Korab",
+   "Maja e Korabit"
+  ],
+  "river": [
+   "Vardar",
+   "Axios"
+  ],
+  "languages": [
+   "Mazedonisch",
+   "Albanisch"
+  ],
+  "currency": [
+   "Mazedonischer Denar",
+   "MKD"
+  ]
+ },
+ {
+  "id": "no",
+  "name": "Norwegen",
+  "flag": "🇳🇴",
+  "continent": "Europa",
+  "capital": [
+   "Oslo"
+  ],
+  "peak": [
+   "Galdhøpiggen",
+   "Galdhopiggen"
+  ],
+  "river": [
+   "Glomma",
+   "Glåma"
+  ],
+  "languages": [
+   "Norwegisch"
+  ],
+  "currency": [
+   "Norwegische Krone",
+   "NOK"
+  ]
+ },
+ {
+  "id": "om",
+  "name": "Oman",
+  "flag": "🇴🇲",
+  "continent": "Asien",
+  "capital": [
+   "Maskat",
+   "Muscat"
+  ],
+  "peak": [
+   "Jabal Schams",
+   "Jebel Shams"
+  ],
+  "river": [],
+  "languages": [
+   "Arabisch"
+  ],
+  "currency": [
+   "Omanischer Rial",
+   "Rial",
+   "OMR"
+  ]
+ },
+ {
+  "id": "at",
+  "name": "Österreich",
+  "flag": "🇦🇹",
+  "continent": "Europa",
+  "capital": [
+   "Wien",
+   "Vienna"
+  ],
+  "peak": [
+   "Großglockner",
+   "Grossglockner"
+  ],
+  "river": [
+   "Donau"
+  ],
+  "languages": [
+   "Deutsch"
+  ],
+  "currency": [
+   "Euro",
+   "EUR"
+  ]
+ },
+ {
+  "id": "tl",
+  "name": "Osttimor",
+  "flag": "🇹🇱",
+  "continent": "Asien",
+  "capital": [
+   "Dili"
+  ],
+  "peak": [
+   "Tatamailau",
+   "Ramelau"
+  ],
+  "river": [
+   "Loes",
+   "Nördlicher Laclo"
+  ],
+  "languages": [
+   "Tetum",
+   "Portugiesisch"
+  ],
+  "currency": [
+   "US-Dollar",
+   "Dollar",
+   "USD"
+  ]
+ },
+ {
+  "id": "pk",
+  "name": "Pakistan",
+  "flag": "🇵🇰",
+  "continent": "Asien",
+  "capital": [
+   "Islamabad"
+  ],
+  "peak": [
+   "K2",
+   "Chogori"
+  ],
+  "river": [
+   "Indus"
+  ],
+  "languages": [
+   "Urdu",
+   "Englisch"
+  ],
+  "currency": [
+   "Pakistanische Rupie",
+   "Rupie",
+   "PKR"
+  ]
+ },
+ {
+  "id": "ps",
+  "name": "Palästina",
+  "flag": "🇵🇸",
+  "continent": "Asien",
+  "capital": [
+   "Ostjerusalem",
+   "Ramallah"
+  ],
+  "peak": [
+   "Tall Asur",
+   "Baal Hazor"
+  ],
+  "river": [
+   "Jordan"
+  ],
+  "languages": [
+   "Arabisch"
+  ],
+  "currency": [
+   "Neuer Schekel",
+   "Schekel",
+   "ILS"
+  ]
+ },
+ {
+  "id": "pw",
+  "name": "Palau",
+  "flag": "🇵🇼",
+  "continent": "Ozeanien",
+  "capital": [
+   "Ngerulmud"
+  ],
+  "peak": [
+   "Mount Ngerchelchuus",
+   "Ngerchelchuus"
+  ],
+  "river": [
+   "Keiner"
+  ],
+  "languages": [
+   "Palauisch",
+   "Englisch"
+  ],
+  "currency": [
+   "US-Dollar",
+   "USD"
+  ]
+ },
+ {
+  "id": "pa",
+  "name": "Panama",
+  "flag": "🇵🇦",
+  "continent": "Nordamerika",
+  "capital": [
+   "Panama-Stadt",
+   "Ciudad de Panamá",
+   "Panama City"
+  ],
+  "peak": [
+   "Volcán Barú",
+   "Barú"
+  ],
+  "river": [
+   "Chucunaque",
+   "Río Chucunaque"
+  ],
+  "languages": [
+   "Spanisch"
+  ],
+  "currency": [
+   "Balboa",
+   "PAB"
+  ]
+ },
+ {
+  "id": "pg",
+  "name": "Papua-Neuguinea",
+  "flag": "🇵🇬",
+  "continent": "Ozeanien",
+  "capital": [
+   "Port Moresby"
+  ],
+  "peak": [
+   "Mount Wilhelm"
+  ],
+  "river": [
+   "Sepik"
+  ],
+  "languages": [
+   "Tok Pisin",
+   "Englisch",
+   "Hiri Motu"
+  ],
+  "currency": [
+   "Kina",
+   "PGK"
+  ]
+ },
+ {
+  "id": "py",
+  "name": "Paraguay",
+  "flag": "🇵🇾",
+  "continent": "Südamerika",
+  "capital": [
+   "Asunción",
+   "Asuncion"
+  ],
+  "peak": [
+   "Cerro Tres Kandú",
+   "Cerro Tres Kandu"
+  ],
+  "river": [
+   "Paraguay",
+   "Río Paraguay"
+  ],
+  "languages": [
+   "Spanisch",
+   "Guaraní"
+  ],
+  "currency": [
+   "Guaraní",
+   "Guarani",
+   "PYG"
+  ]
+ },
+ {
+  "id": "pe",
+  "name": "Peru",
+  "flag": "🇵🇪",
+  "continent": "Südamerika",
+  "capital": [
+   "Lima"
+  ],
+  "peak": [
+   "Huascarán"
+  ],
+  "river": [
+   "Ucayali",
+   "Río Ucayali"
+  ],
+  "languages": [
+   "Spanisch",
+   "Quechua",
+   "Aymara"
+  ],
+  "currency": [
+   "Sol",
+   "Nuevo Sol",
+   "PEN"
+  ]
+ },
+ {
+  "id": "ph",
+  "name": "Philippinen",
+  "flag": "🇵🇭",
+  "continent": "Asien",
+  "capital": [
+   "Manila"
+  ],
+  "peak": [
+   "Mount Apo",
+   "Apo"
+  ],
+  "river": [
+   "Cagayan",
+   "Rio Grande de Cagayan"
+  ],
+  "languages": [
+   "Filipino",
+   "Englisch"
+  ],
+  "currency": [
+   "Philippinischer Peso",
+   "Peso",
+   "PHP"
+  ]
+ },
+ {
+  "id": "pl",
+  "name": "Polen",
+  "flag": "🇵🇱",
+  "continent": "Europa",
+  "capital": [
+   "Warschau",
+   "Warszawa",
+   "Warsaw"
+  ],
+  "peak": [
+   "Rysy"
+  ],
+  "river": [
+   "Weichsel",
+   "Wisła",
+   "Wisla"
+  ],
+  "languages": [
+   "Polnisch"
+  ],
+  "currency": [
+   "Złoty",
+   "Zloty",
+   "PLN"
+  ]
+ },
+ {
+  "id": "pt",
+  "name": "Portugal",
+  "flag": "🇵🇹",
+  "continent": "Europa",
+  "capital": [
+   "Lissabon",
+   "Lisboa",
+   "Lisbon"
+  ],
+  "peak": [
+   "Ponta do Pico",
+   "Pico",
+   "Montanha do Pico"
+  ],
+  "river": [
+   "Tejo",
+   "Tajo",
+   "Tagus"
+  ],
+  "languages": [
+   "Portugiesisch"
+  ],
+  "currency": [
+   "Euro",
+   "EUR"
+  ]
+ },
+ {
+  "id": "cg",
+  "name": "Republik Kongo",
+  "flag": "🇨🇬",
+  "continent": "Afrika",
+  "capital": [
+   "Brazzaville"
+  ],
+  "peak": [
+   "Mont Nabemba",
+   "Nabemba"
+  ],
+  "river": [
+   "Kongo",
+   "Congo"
+  ],
+  "languages": [
+   "Französisch",
+   "Lingala",
+   "Kituba"
+  ],
+  "currency": [
+   "CFA-Franc",
+   "Zentralafrikanischer CFA-Franc",
+   "XAF"
+  ]
+ },
+ {
+  "id": "rw",
+  "name": "Ruanda",
+  "flag": "🇷🇼",
+  "continent": "Afrika",
+  "capital": [
+   "Kigali"
+  ],
+  "peak": [
+   "Karisimbi",
+   "Mount Karisimbi"
+  ],
+  "river": [
+   "Nyabarongo"
+  ],
+  "languages": [
+   "Kinyarwanda",
+   "Ruandisch",
+   "Französisch",
+   "Englisch",
+   "Swahili"
+  ],
+  "currency": [
+   "Ruanda-Franc",
+   "Franc",
+   "RWF"
+  ]
+ },
+ {
+  "id": "ro",
+  "name": "Rumänien",
+  "flag": "🇷🇴",
+  "continent": "Europa",
+  "capital": [
+   "Bukarest",
+   "București",
+   "Bucuresti"
+  ],
+  "peak": [
+   "Moldoveanu",
+   "Vârful Moldoveanu"
+  ],
+  "river": [
+   "Donau",
+   "Dunărea",
+   "Dunarea"
+  ],
+  "languages": [
+   "Rumänisch"
+  ],
+  "currency": [
+   "Rumänischer Leu",
+   "RON"
+  ]
+ },
+ {
+  "id": "ru",
+  "name": "Russland",
+  "flag": "🇷🇺",
+  "continent": "Asien",
+  "capital": [
+   "Moskau",
+   "Moskwa",
+   "Moscow"
+  ],
+  "peak": [
+   "Elbrus"
+  ],
+  "river": [
+   "Wolga",
+   "Volga"
+  ],
+  "languages": [
+   "Russisch"
+  ],
+  "currency": [
+   "Russischer Rubel",
+   "Rubel",
+   "RUB"
+  ]
+ },
+ {
+  "id": "sb",
+  "name": "Salomonen",
+  "flag": "🇸🇧",
+  "continent": "Ozeanien",
+  "capital": [
+   "Honiara"
+  ],
+  "peak": [
+   "Mount Popomanaseu",
+   "Popomanaseu"
+  ],
+  "river": [
+   "Lungga"
+  ],
+  "languages": [
+   "Englisch"
+  ],
+  "currency": [
+   "Salomonen-Dollar",
+   "SBD"
+  ]
+ },
+ {
+  "id": "zm",
+  "name": "Sambia",
+  "flag": "🇿🇲",
+  "continent": "Afrika",
+  "capital": [
+   "Lusaka"
+  ],
+  "peak": [
+   "Mafinga Central",
+   "Mafinga Hills"
+  ],
+  "river": [
+   "Sambesi",
+   "Zambezi"
+  ],
+  "languages": [
+   "Englisch"
+  ],
+  "currency": [
+   "Sambischer Kwacha",
+   "Kwacha",
+   "ZMW"
+  ]
+ },
+ {
+  "id": "ws",
+  "name": "Samoa",
+  "flag": "🇼🇸",
+  "continent": "Ozeanien",
+  "capital": [
+   "Apia"
+  ],
+  "peak": [
+   "Mount Silisili",
+   "Silisili"
+  ],
+  "river": [
+   "Keiner"
+  ],
+  "languages": [
+   "Samoanisch",
+   "Englisch"
+  ],
+  "currency": [
+   "Tala",
+   "WST"
+  ]
+ },
+ {
+  "id": "sm",
+  "name": "San Marino",
+  "flag": "🇸🇲",
+  "continent": "Europa",
+  "capital": [
+   "San Marino",
+   "Città di San Marino"
+  ],
+  "peak": [
+   "Monte Titano"
+  ],
+  "river": [
+   "Marano",
+   "Ausa"
+  ],
+  "languages": [
+   "Italienisch"
+  ],
+  "currency": [
+   "Euro",
+   "EUR"
+  ]
+ },
+ {
+  "id": "st",
+  "name": "São Tomé und Príncipe",
+  "flag": "🇸🇹",
+  "continent": "Afrika",
+  "capital": [
+   "São Tomé",
+   "Sao Tome"
+  ],
+  "peak": [
+   "Pico de São Tomé",
+   "Pico de Sao Tome"
+  ],
+  "river": [],
+  "languages": [
+   "Portugiesisch"
+  ],
+  "currency": [
+   "Dobra",
+   "STN"
+  ]
+ },
+ {
+  "id": "sa",
+  "name": "Saudi-Arabien",
+  "flag": "🇸🇦",
+  "continent": "Asien",
+  "capital": [
+   "Riad",
+   "Riyadh"
+  ],
+  "peak": [
+   "Dschabal Sauda",
+   "Jabal Sawda"
+  ],
+  "river": [],
+  "languages": [
+   "Arabisch"
+  ],
+  "currency": [
+   "Saudi-Riyal",
+   "Riyal",
+   "SAR"
+  ]
+ },
+ {
+  "id": "se",
+  "name": "Schweden",
+  "flag": "🇸🇪",
+  "continent": "Europa",
+  "capital": [
+   "Stockholm"
+  ],
+  "peak": [
+   "Kebnekaise"
+  ],
+  "river": [
+   "Klarälven",
+   "Klaralven",
+   "Klarelven"
+  ],
+  "languages": [
+   "Schwedisch"
+  ],
+  "currency": [
+   "Schwedische Krone",
+   "SEK"
+  ]
+ },
+ {
+  "id": "ch",
+  "name": "Schweiz",
+  "flag": "🇨🇭",
+  "continent": "Europa",
+  "capital": [
+   "Bern",
+   "Berne"
+  ],
+  "peak": [
+   "Dufourspitze",
+   "Monte Rosa"
+  ],
+  "river": [
+   "Rhein"
+  ],
+  "languages": [
+   "Deutsch",
+   "Französisch",
+   "Italienisch",
+   "Rätoromanisch"
+  ],
+  "currency": [
+   "Schweizer Franken",
+   "CHF"
+  ]
+ },
+ {
+  "id": "sn",
+  "name": "Senegal",
+  "flag": "🇸🇳",
+  "continent": "Afrika",
+  "capital": [
+   "Dakar"
+  ],
+  "peak": [
+   "Sambadian",
+   "Nepen Diakha"
+  ],
+  "river": [
+   "Senegal"
+  ],
+  "languages": [
+   "Französisch"
+  ],
+  "currency": [
+   "CFA-Franc",
+   "Westafrikanischer CFA-Franc",
+   "XOF"
+  ]
+ },
+ {
+  "id": "rs",
+  "name": "Serbien",
+  "flag": "🇷🇸",
+  "continent": "Europa",
+  "capital": [
+   "Belgrad",
+   "Beograd"
+  ],
+  "peak": [
+   "Midžor",
+   "Midzor",
+   "Miđor"
+  ],
+  "river": [
+   "Donau",
+   "Dunav"
+  ],
+  "languages": [
+   "Serbisch"
+  ],
+  "currency": [
+   "Serbischer Dinar",
+   "RSD"
+  ]
+ },
+ {
+  "id": "sc",
+  "name": "Seychellen",
+  "flag": "🇸🇨",
+  "continent": "Afrika",
+  "capital": [
+   "Victoria"
+  ],
+  "peak": [
+   "Morne Seychellois"
+  ],
+  "river": [],
+  "languages": [
+   "Seychellenkreol",
+   "Kreol",
+   "Englisch",
+   "Französisch"
+  ],
+  "currency": [
+   "Seychellen-Rupie",
+   "Rupie",
+   "SCR"
+  ]
+ },
+ {
+  "id": "sl",
+  "name": "Sierra Leone",
+  "flag": "🇸🇱",
+  "continent": "Afrika",
+  "capital": [
+   "Freetown"
+  ],
+  "peak": [
+   "Loma Mansa",
+   "Bintumani"
+  ],
+  "river": [
+   "Sewa"
+  ],
+  "languages": [
+   "Englisch"
+  ],
+  "currency": [
+   "Leone",
+   "SLL"
+  ]
+ },
+ {
+  "id": "zw",
+  "name": "Simbabwe",
+  "flag": "🇿🇼",
+  "continent": "Afrika",
+  "capital": [
+   "Harare"
+  ],
+  "peak": [
+   "Inyangani",
+   "Nyangani",
+   "Mount Nyangani"
+  ],
+  "river": [
+   "Sambesi",
+   "Zambezi"
+  ],
+  "languages": [
+   "Englisch",
+   "Shona",
+   "Ndebele"
+  ],
+  "currency": [
+   "Simbabwe-Dollar",
+   "ZWL"
+  ]
+ },
+ {
+  "id": "sg",
+  "name": "Singapur",
+  "flag": "🇸🇬",
+  "continent": "Asien",
+  "capital": [
+   "Singapur",
+   "Singapore"
+  ],
+  "peak": [
+   "Bukit Timah",
+   "Bukit-Timah-Hügel"
+  ],
+  "river": [
+   "Singapore River",
+   "Singapur-Fluss"
+  ],
+  "languages": [
+   "Malaiisch",
+   "Englisch",
+   "Chinesisch",
+   "Tamil"
+  ],
+  "currency": [
+   "Singapur-Dollar",
+   "SGD"
+  ]
+ },
+ {
+  "id": "sk",
+  "name": "Slowakei",
+  "flag": "🇸🇰",
+  "continent": "Europa",
+  "capital": [
+   "Bratislava",
+   "Pressburg"
+  ],
+  "peak": [
+   "Gerlachovský štít",
+   "Gerlachovsky stit",
+   "Gerlsdorfer Spitze"
+  ],
+  "river": [
+   "Waag",
+   "Váh",
+   "Vah"
+  ],
+  "languages": [
+   "Slowakisch"
+  ],
+  "currency": [
+   "Euro",
+   "EUR"
+  ]
+ },
+ {
+  "id": "si",
+  "name": "Slowenien",
+  "flag": "🇸🇮",
+  "continent": "Europa",
+  "capital": [
+   "Ljubljana",
+   "Laibach"
+  ],
+  "peak": [
+   "Triglav"
+  ],
+  "river": [
+   "Save",
+   "Sava"
+  ],
+  "languages": [
+   "Slowenisch"
+  ],
+  "currency": [
+   "Euro",
+   "EUR"
+  ]
+ },
+ {
+  "id": "so",
+  "name": "Somalia",
+  "flag": "🇸🇴",
+  "continent": "Afrika",
+  "capital": [
+   "Mogadischu",
+   "Mogadishu"
+  ],
+  "peak": [
+   "Shimbiris",
+   "Mount Shimbiris"
+  ],
+  "river": [
+   "Jubba",
+   "Juba"
+  ],
+  "languages": [
+   "Somali",
+   "Arabisch"
+  ],
+  "currency": [
+   "Somalia-Schilling",
+   "Schilling",
+   "SOS"
+  ]
+ },
+ {
+  "id": "es",
+  "name": "Spanien",
+  "flag": "🇪🇸",
+  "continent": "Europa",
+  "capital": [
+   "Madrid"
+  ],
+  "peak": [
+   "Teide",
+   "Pico del Teide"
+  ],
+  "river": [
+   "Tajo",
+   "Tejo",
+   "Tagus"
+  ],
+  "languages": [
+   "Spanisch"
+  ],
+  "currency": [
+   "Euro",
+   "EUR"
+  ]
+ },
+ {
+  "id": "lk",
+  "name": "Sri Lanka",
+  "flag": "🇱🇰",
+  "continent": "Asien",
+  "capital": [
+   "Sri Jayawardenepura Kotte",
+   "Colombo"
+  ],
+  "peak": [
+   "Pidurutalagala",
+   "Pedro"
+  ],
+  "river": [
+   "Mahaweli",
+   "Mahaweli Ganga"
+  ],
+  "languages": [
+   "Singhalesisch",
+   "Tamil"
+  ],
+  "currency": [
+   "Sri-Lanka-Rupie",
+   "Rupie",
+   "LKR"
+  ]
+ },
+ {
+  "id": "kn",
+  "name": "St. Kitts und Nevis",
+  "flag": "🇰🇳",
+  "continent": "Nordamerika",
+  "capital": [
+   "Basseterre"
+  ],
+  "peak": [
+   "Mount Liamuiga",
+   "Liamuiga"
+  ],
+  "river": [],
+  "languages": [
+   "Englisch"
+  ],
+  "currency": [
+   "Ostkaribischer Dollar",
+   "XCD"
+  ]
+ },
+ {
+  "id": "lc",
+  "name": "St. Lucia",
+  "flag": "🇱🇨",
+  "continent": "Nordamerika",
+  "capital": [
+   "Castries"
+  ],
+  "peak": [
+   "Mount Gimie"
+  ],
+  "river": [],
+  "languages": [
+   "Englisch"
+  ],
+  "currency": [
+   "Ostkaribischer Dollar",
+   "XCD"
+  ]
+ },
+ {
+  "id": "vc",
+  "name": "St. Vincent und die Grenadinen",
+  "flag": "🇻🇨",
+  "continent": "Nordamerika",
+  "capital": [
+   "Kingstown"
+  ],
+  "peak": [
+   "La Soufrière",
+   "Soufrière"
+  ],
+  "river": [],
+  "languages": [
+   "Englisch"
+  ],
+  "currency": [
+   "Ostkaribischer Dollar",
+   "XCD"
+  ]
+ },
+ {
+  "id": "za",
+  "name": "Südafrika",
+  "flag": "🇿🇦",
+  "continent": "Afrika",
+  "capital": [
+   "Pretoria",
+   "Kapstadt",
+   "Bloemfontein"
+  ],
+  "peak": [
+   "Mafadi"
+  ],
+  "river": [
+   "Oranje",
+   "Orange"
+  ],
+  "languages": [
+   "Englisch",
+   "Afrikaans",
+   "Zulu",
+   "Xhosa"
+  ],
+  "currency": [
+   "Rand",
+   "Südafrikanischer Rand",
+   "ZAR"
+  ]
+ },
+ {
+  "id": "sd",
+  "name": "Sudan",
+  "flag": "🇸🇩",
+  "continent": "Afrika",
+  "capital": [
+   "Khartum",
+   "Khartoum"
+  ],
+  "peak": [
+   "Deriba Caldera",
+   "Jebel Marra",
+   "Dschebel Marra"
+  ],
+  "river": [
+   "Nil"
+  ],
+  "languages": [
+   "Arabisch",
+   "Englisch"
+  ],
+  "currency": [
+   "Sudanesisches Pfund",
+   "Pfund",
+   "SDG"
+  ]
+ },
+ {
+  "id": "kr",
+  "name": "Südkorea",
+  "flag": "🇰🇷",
+  "continent": "Asien",
+  "capital": [
+   "Seoul"
+  ],
+  "peak": [
+   "Hallasan",
+   "Halla"
+  ],
+  "river": [
+   "Nakdong",
+   "Nakdonggang"
+  ],
+  "languages": [
+   "Koreanisch"
+  ],
+  "currency": [
+   "Südkoreanischer Won",
+   "Won",
+   "KRW"
+  ]
+ },
+ {
+  "id": "ss",
+  "name": "Südsudan",
+  "flag": "🇸🇸",
+  "continent": "Afrika",
+  "capital": [
+   "Juba"
+  ],
+  "peak": [
+   "Kinyeti",
+   "Mount Kinyeti"
+  ],
+  "river": [
+   "Nil",
+   "Weißer Nil"
+  ],
+  "languages": [
+   "Englisch"
+  ],
+  "currency": [
+   "Südsudanesisches Pfund",
+   "Pfund",
+   "SSP"
+  ]
+ },
+ {
+  "id": "sr",
+  "name": "Suriname",
+  "flag": "🇸🇷",
+  "continent": "Südamerika",
+  "capital": [
+   "Paramaribo"
+  ],
+  "peak": [
+   "Julianatop",
+   "Juliana Top"
+  ],
+  "river": [
+   "Suriname",
+   "Surinamefluss"
+  ],
+  "languages": [
+   "Niederländisch"
+  ],
+  "currency": [
+   "Surinamischer Dollar",
+   "Dollar",
+   "SRD"
+  ]
+ },
+ {
+  "id": "sy",
+  "name": "Syrien",
+  "flag": "🇸🇾",
+  "continent": "Asien",
+  "capital": [
+   "Damaskus",
+   "Damascus"
+  ],
+  "peak": [
+   "Hermon",
+   "Dschabal asch-Schaich"
+  ],
+  "river": [
+   "Euphrat",
+   "Euphrates"
+  ],
+  "languages": [
+   "Arabisch"
+  ],
+  "currency": [
+   "Syrisches Pfund",
+   "Pfund",
+   "SYP"
+  ]
+ },
+ {
+  "id": "tj",
+  "name": "Tadschikistan",
+  "flag": "🇹🇯",
+  "continent": "Asien",
+  "capital": [
+   "Duschanbe",
+   "Dushanbe"
+  ],
+  "peak": [
+   "Ismoil-Somoni-Spitze",
+   "Pik Ismoil Somoni",
+   "Ismoil Somoni"
+  ],
+  "river": [
+   "Amudarja",
+   "Amudarya"
+  ],
+  "languages": [
+   "Tadschikisch"
+  ],
+  "currency": [
+   "Somoni",
+   "TJS"
+  ]
+ },
+ {
+  "id": "tw",
+  "name": "Taiwan",
+  "flag": "🇹🇼",
+  "continent": "Asien",
+  "capital": [
+   "Taipeh",
+   "Taipei"
+  ],
+  "peak": [
+   "Yu Shan",
+   "Jadeberg",
+   "Yushan"
+  ],
+  "river": [
+   "Zhuoshui",
+   "Zhuoshui Xi"
+  ],
+  "languages": [
+   "Chinesisch",
+   "Mandarin"
+  ],
+  "currency": [
+   "Neuer Taiwan-Dollar",
+   "TWD"
+  ]
+ },
+ {
+  "id": "tz",
+  "name": "Tansania",
+  "flag": "🇹🇿",
+  "continent": "Afrika",
+  "capital": [
+   "Dodoma",
+   "Daressalam",
+   "Dar es Salaam"
+  ],
+  "peak": [
+   "Kilimandscharo",
+   "Kilimanjaro",
+   "Uhuru Peak"
+  ],
+  "river": [
+   "Rufiji"
+  ],
+  "languages": [
+   "Swahili",
+   "Suaheli",
+   "Englisch"
+  ],
+  "currency": [
+   "Tansania-Schilling",
+   "Schilling",
+   "TZS"
+  ]
+ },
+ {
+  "id": "th",
+  "name": "Thailand",
+  "flag": "🇹🇭",
+  "continent": "Asien",
+  "capital": [
+   "Bangkok",
+   "Krung Thep"
+  ],
+  "peak": [
+   "Doi Inthanon"
+  ],
+  "river": [
+   "Mekong"
+  ],
+  "languages": [
+   "Thailändisch",
+   "Thai"
+  ],
+  "currency": [
+   "Baht",
+   "THB"
+  ]
+ },
+ {
+  "id": "tg",
+  "name": "Togo",
+  "flag": "🇹🇬",
+  "continent": "Afrika",
+  "capital": [
+   "Lomé",
+   "Lome"
+  ],
+  "peak": [
+   "Mont Agou",
+   "Agou",
+   "Baumann-Spitze"
+  ],
+  "river": [
+   "Mono"
+  ],
+  "languages": [
+   "Französisch"
+  ],
+  "currency": [
+   "CFA-Franc",
+   "Westafrikanischer CFA-Franc",
+   "XOF"
+  ]
+ },
+ {
+  "id": "to",
+  "name": "Tonga",
+  "flag": "🇹🇴",
+  "continent": "Ozeanien",
+  "capital": [
+   "Nukuʻalofa",
+   "Nukualofa"
+  ],
+  "peak": [
+   "Kao"
+  ],
+  "river": [
+   "Keiner"
+  ],
+  "languages": [
+   "Tongaisch",
+   "Englisch"
+  ],
+  "currency": [
+   "Paʻanga",
+   "Paanga",
+   "TOP"
+  ]
+ },
+ {
+  "id": "tt",
+  "name": "Trinidad und Tobago",
+  "flag": "🇹🇹",
+  "continent": "Nordamerika",
+  "capital": [
+   "Port of Spain",
+   "Port-of-Spain"
+  ],
+  "peak": [
+   "El Cerro del Aripo",
+   "Cerro del Aripo"
+  ],
+  "river": [
+   "Ortoire",
+   "Ortoire River"
+  ],
+  "languages": [
+   "Englisch"
+  ],
+  "currency": [
+   "Trinidad-und-Tobago-Dollar",
+   "TTD"
+  ]
+ },
+ {
+  "id": "td",
+  "name": "Tschad",
+  "flag": "🇹🇩",
+  "continent": "Afrika",
+  "capital": [
+   "N'Djamena",
+   "Ndjamena"
+  ],
+  "peak": [
+   "Emi Koussi"
+  ],
+  "river": [
+   "Chari",
+   "Schari"
+  ],
+  "languages": [
+   "Französisch",
+   "Arabisch"
+  ],
+  "currency": [
+   "CFA-Franc",
+   "Zentralafrikanischer CFA-Franc",
+   "XAF"
+  ]
+ },
+ {
+  "id": "cz",
+  "name": "Tschechien",
+  "flag": "🇨🇿",
+  "continent": "Europa",
+  "capital": [
+   "Prag",
+   "Praha"
+  ],
+  "peak": [
+   "Schneekoppe",
+   "Sněžka",
+   "Snezka"
+  ],
+  "river": [
+   "Moldau",
+   "Vltava"
+  ],
+  "languages": [
+   "Tschechisch"
+  ],
+  "currency": [
+   "Tschechische Krone",
+   "CZK"
+  ]
+ },
+ {
+  "id": "tn",
+  "name": "Tunesien",
+  "flag": "🇹🇳",
+  "continent": "Afrika",
+  "capital": [
+   "Tunis"
+  ],
+  "peak": [
+   "Djebel Chambi",
+   "Jebel ech Chambi",
+   "Chambi"
+  ],
+  "river": [
+   "Medjerda",
+   "Medscherda"
+  ],
+  "languages": [
+   "Arabisch"
+  ],
+  "currency": [
+   "Tunesischer Dinar",
+   "Dinar",
+   "TND"
+  ]
+ },
+ {
+  "id": "tr",
+  "name": "Türkei",
+  "flag": "🇹🇷",
+  "continent": "Asien",
+  "capital": [
+   "Ankara"
+  ],
+  "peak": [
+   "Ararat",
+   "Ağrı Dağı",
+   "Großer Ararat"
+  ],
+  "river": [
+   "Kızılırmak",
+   "Kizilirmak"
+  ],
+  "languages": [
+   "Türkisch"
+  ],
+  "currency": [
+   "Türkische Lira",
+   "Lira",
+   "TRY"
+  ]
+ },
+ {
+  "id": "tm",
+  "name": "Turkmenistan",
+  "flag": "🇹🇲",
+  "continent": "Asien",
+  "capital": [
+   "Aschgabat",
+   "Ashgabat"
+  ],
+  "peak": [
+   "Aýrybaba",
+   "Ayrybaba"
+  ],
+  "river": [
+   "Amudarja",
+   "Amudarya"
+  ],
+  "languages": [
+   "Turkmenisch"
+  ],
+  "currency": [
+   "Manat",
+   "TMT"
+  ]
+ },
+ {
+  "id": "tv",
+  "name": "Tuvalu",
+  "flag": "🇹🇻",
+  "continent": "Ozeanien",
+  "capital": [
+   "Funafuti"
+  ],
+  "peak": [
+   "Unbenannte Erhebung"
+  ],
+  "river": [
+   "Keiner"
+  ],
+  "languages": [
+   "Tuvaluisch",
+   "Englisch"
+  ],
+  "currency": [
+   "Australischer Dollar",
+   "AUD"
+  ]
+ },
+ {
+  "id": "ug",
+  "name": "Uganda",
+  "flag": "🇺🇬",
+  "continent": "Afrika",
+  "capital": [
+   "Kampala"
+  ],
+  "peak": [
+   "Margherita Peak",
+   "Mount Stanley",
+   "Ruwenzori"
+  ],
+  "river": [
+   "Nil",
+   "Victoria-Nil",
+   "Weißer Nil"
+  ],
+  "languages": [
+   "Englisch",
+   "Swahili"
+  ],
+  "currency": [
+   "Uganda-Schilling",
+   "Schilling",
+   "UGX"
+  ]
+ },
+ {
+  "id": "ua",
+  "name": "Ukraine",
+  "flag": "🇺🇦",
+  "continent": "Europa",
+  "capital": [
+   "Kiew",
+   "Kyjiw",
+   "Kyiv",
+   "Kiev"
+  ],
+  "peak": [
+   "Howerla",
+   "Hoverla",
+   "Goverla"
+  ],
+  "river": [
+   "Dnepr",
+   "Dnipro",
+   "Dnjepr"
+  ],
+  "languages": [
+   "Ukrainisch"
+  ],
+  "currency": [
+   "Hrywnja",
+   "Griwna",
+   "UAH"
+  ]
+ },
+ {
+  "id": "hu",
+  "name": "Ungarn",
+  "flag": "🇭🇺",
+  "continent": "Europa",
+  "capital": [
+   "Budapest"
+  ],
+  "peak": [
+   "Kékes",
+   "Kekes"
+  ],
+  "river": [
+   "Donau",
+   "Duna"
+  ],
+  "languages": [
+   "Ungarisch"
+  ],
+  "currency": [
+   "Forint",
+   "HUF"
+  ]
+ },
+ {
+  "id": "uy",
+  "name": "Uruguay",
+  "flag": "🇺🇾",
+  "continent": "Südamerika",
+  "capital": [
+   "Montevideo"
+  ],
+  "peak": [
+   "Cerro Catedral"
+  ],
+  "river": [
+   "Río Negro",
+   "Rio Negro"
+  ],
+  "languages": [
+   "Spanisch"
+  ],
+  "currency": [
+   "Uruguayischer Peso",
+   "Peso",
+   "UYU"
+  ]
+ },
+ {
+  "id": "uz",
+  "name": "Usbekistan",
+  "flag": "🇺🇿",
+  "continent": "Asien",
+  "capital": [
+   "Taschkent",
+   "Tashkent"
+  ],
+  "peak": [
+   "Chazret Sultan",
+   "Hazrat Sultan"
+  ],
+  "river": [
+   "Amudarja",
+   "Amudarya"
+  ],
+  "languages": [
+   "Usbekisch"
+  ],
+  "currency": [
+   "Soʻm",
+   "Som",
+   "UZS"
+  ]
+ },
+ {
+  "id": "vu",
+  "name": "Vanuatu",
+  "flag": "🇻🇺",
+  "continent": "Ozeanien",
+  "capital": [
+   "Port Vila"
+  ],
+  "peak": [
+   "Mount Tabwemasana",
+   "Tabwemasana"
+  ],
+  "river": [
+   "Sarakata"
+  ],
+  "languages": [
+   "Bislama",
+   "Englisch",
+   "Französisch"
+  ],
+  "currency": [
+   "Vatu",
+   "VUV"
+  ]
+ },
+ {
+  "id": "va",
+  "name": "Vatikanstadt",
+  "flag": "🇻🇦",
+  "continent": "Europa",
+  "capital": [
+   "Vatikanstadt",
+   "Vatikan",
+   "Città del Vaticano"
+  ],
+  "peak": [
+   "Vatikanischer Hügel",
+   "Vatikanhügel",
+   "Vatican Hill"
+  ],
+  "river": [
+   "Kein Fluss",
+   "Tiber"
+  ],
+  "languages": [
+   "Italienisch",
+   "Latein"
+  ],
+  "currency": [
+   "Euro",
+   "EUR"
+  ]
+ },
+ {
+  "id": "ve",
+  "name": "Venezuela",
+  "flag": "🇻🇪",
+  "continent": "Südamerika",
+  "capital": [
+   "Caracas"
+  ],
+  "peak": [
+   "Pico Bolívar",
+   "Pico Bolivar"
+  ],
+  "river": [
+   "Orinoco",
+   "Río Orinoco"
+  ],
+  "languages": [
+   "Spanisch"
+  ],
+  "currency": [
+   "Bolívar",
+   "Bolivar",
+   "VES"
+  ]
+ },
+ {
+  "id": "ae",
+  "name": "Vereinigte Arabische Emirate",
+  "flag": "🇦🇪",
+  "continent": "Asien",
+  "capital": [
+   "Abu Dhabi",
+   "Abu Zabi"
+  ],
+  "peak": [
+   "Jabal Jais",
+   "Jebel Jais"
+  ],
+  "river": [],
+  "languages": [
+   "Arabisch"
+  ],
+  "currency": [
+   "VAE-Dirham",
+   "Dirham",
+   "AED"
+  ]
+ },
+ {
+  "id": "us",
+  "name": "Vereinigte Staaten",
+  "flag": "🇺🇸",
+  "continent": "Nordamerika",
+  "capital": [
+   "Washington D.C.",
+   "Washington DC",
+   "Washington"
+  ],
+  "peak": [
+   "Denali",
+   "Mount McKinley"
+  ],
+  "river": [
+   "Missouri",
+   "Missouri River"
+  ],
+  "languages": [
+   "Englisch"
+  ],
+  "currency": [
+   "US-Dollar",
+   "USD"
+  ]
+ },
+ {
+  "id": "gb",
+  "name": "Vereinigtes Königreich",
+  "flag": "🇬🇧",
+  "continent": "Europa",
+  "capital": [
+   "London"
+  ],
+  "peak": [
+   "Ben Nevis"
+  ],
+  "river": [
+   "Severn"
+  ],
+  "languages": [
+   "Englisch"
+  ],
+  "currency": [
+   "Pfund Sterling",
+   "Britisches Pfund",
+   "GBP"
+  ]
+ },
+ {
+  "id": "vn",
+  "name": "Vietnam",
+  "flag": "🇻🇳",
+  "continent": "Asien",
+  "capital": [
+   "Hanoi",
+   "Ha Noi"
+  ],
+  "peak": [
+   "Fansipan",
+   "Phan Xi Păng"
+  ],
+  "river": [
+   "Mekong"
+  ],
+  "languages": [
+   "Vietnamesisch"
+  ],
+  "currency": [
+   "Đồng",
+   "Dong",
+   "VND"
+  ]
+ },
+ {
+  "id": "cf",
+  "name": "Zentralafrikanische Republik",
+  "flag": "🇨🇫",
+  "continent": "Afrika",
+  "capital": [
+   "Bangui"
+  ],
+  "peak": [
+   "Mont Ngaoui",
+   "Ngaoui"
+  ],
+  "river": [
+   "Ubangi",
+   "Oubangui"
+  ],
+  "languages": [
+   "Französisch",
+   "Sango"
+  ],
+  "currency": [
+   "CFA-Franc",
+   "Zentralafrikanischer CFA-Franc",
+   "XAF"
+  ]
+ },
+ {
+  "id": "cy",
+  "name": "Zypern",
+  "flag": "🇨🇾",
+  "continent": "Europa",
+  "capital": [
+   "Nikosia",
+   "Nicosia",
+   "Lefkosia"
+  ],
+  "peak": [
+   "Olympos",
+   "Chionistra",
+   "Mount Olympus"
+  ],
+  "river": [
+   "Pedieos",
+   "Pediaios"
+  ],
+  "languages": [
+   "Griechisch",
+   "Türkisch"
+  ],
+  "currency": [
+   "Euro",
+   "EUR"
+  ]
+ }
+]

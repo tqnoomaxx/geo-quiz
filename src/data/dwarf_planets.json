@@ -1,0 +1,7 @@
+[
+ {"id":"ceres","name":"Ceres","symbol":"⚳","type":["Zwergplanet"],"region":["Asteroidengürtel","Hauptgürtel"],"largestMoon":["Keiner","Keine"],"orbit":["4,6 Jahre"],"diameter":["940 km"],"temperature":["-105 °C"],"moons":[],"fact":"Größtes Objekt im Asteroidengürtel zwischen Mars und Jupiter."},
+ {"id":"pluto","name":"Pluto","symbol":"♇","type":["Zwergplanet"],"region":["Kuipergürtel"],"largestMoon":["Charon"],"orbit":["248 Jahre"],"diameter":["2377 km"],"temperature":["-229 °C"],"moons":["Charon","Nix","Hydra","Kerberos","Styx"],"fact":"Bis 2006 galt Pluto als neunter Planet."},
+ {"id":"haumea","name":"Haumea","symbol":"🝻","type":["Zwergplanet"],"region":["Kuipergürtel"],"largestMoon":["Hiʻiaka","Hiiaka"],"orbit":["284 Jahre"],"diameter":["1560 km"],"temperature":["-241 °C"],"moons":["Hiʻiaka","Namaka"],"fact":"Rotiert extrem schnell und ist deshalb eiförmig."},
+ {"id":"makemake","name":"Makemake","symbol":"🝼","type":["Zwergplanet"],"region":["Kuipergürtel"],"largestMoon":["S/2015 (136472) 1","MK2"],"orbit":["306 Jahre"],"diameter":["1430 km"],"temperature":["-243 °C"],"moons":["MK2"],"fact":"Benannt nach dem Schöpfergott der Osterinsel."},
+ {"id":"eris","name":"Eris","symbol":"⯰","type":["Zwergplanet"],"region":["Streuscheibe","Kuipergürtel"],"largestMoon":["Dysnomia"],"orbit":["557 Jahre"],"diameter":["2326 km"],"temperature":["-231 °C"],"moons":["Dysnomia"],"fact":"Ihre Entdeckung führte zur Neudefinition des Planetenbegriffs."}
+]
