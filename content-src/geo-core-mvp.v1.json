@@ -1,0 +1,8430 @@
+{
+  "datasetId": "geo-core-mvp",
+  "version": "2026-08-03.phase7-ranked-physical1",
+  "schemaVersion": 4,
+  "builtAt": "2026-07-30T00:52:13.953Z",
+  "localeCoverage": [
+    "de"
+  ],
+  "scopePolicy": {
+    "id": "un-193-plus-observers-v1",
+    "labelDe": "195 Staaten: 193 UN-Mitglieder plus Palästina und Vatikanstadt"
+  },
+  "sources": [
+    {
+      "id": "world-countries",
+      "sourceVersion": "5.1.0",
+      "retrievedAt": "2026-07-30",
+      "url": "https://github.com/mledoze/countries",
+      "license": "ODbL-1.0"
+    },
+    {
+      "id": "wikidata-capital-snapshot",
+      "sourceVersion": "2026-07-30",
+      "retrievedAt": "2026-07-30",
+      "url": "https://query.wikidata.org/",
+      "license": "CC0-1.0"
+    }
+  ],
+  "countries": [
+    {
+      "id": "country:ad",
+      "iso2": "AD",
+      "iso3": "AND",
+      "numericCode": "020",
+      "nameDe": "Andorra",
+      "aliasesDe": [
+        "AD",
+        "Furstentum Andorra",
+        "Fürstentum Andorra",
+        "Principality of Andorra",
+        "Principat d'Andorra"
+      ],
+      "centroid": [
+        1.5,
+        42.5
+      ],
+      "mapFeatureId": "020",
+      "mapMarker": true,
+      "difficulty": 5,
+      "continentIds": [
+        "continent:europe"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q1863",
+          "wikidataId": "Q1863",
+          "nameDe": "Andorra la Vella",
+          "aliasesDe": [],
+          "centroid": [
+            1.522222222,
+            42.507222222
+          ],
+          "difficulty": 5,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:ae",
+      "iso2": "AE",
+      "iso3": "ARE",
+      "numericCode": "784",
+      "nameDe": "Vereinigte Arabische Emirate",
+      "aliasesDe": [
+        "AE",
+        "Emirates",
+        "UAE",
+        "United Arab Emirates"
+      ],
+      "centroid": [
+        54,
+        24
+      ],
+      "mapFeatureId": "784",
+      "mapMarker": false,
+      "difficulty": 3,
+      "continentIds": [
+        "continent:asia"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q1519",
+          "wikidataId": "Q1519",
+          "nameDe": "Abu Dhabi",
+          "aliasesDe": [],
+          "centroid": [
+            54.396944444,
+            24.451111111
+          ],
+          "difficulty": 3,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:af",
+      "iso2": "AF",
+      "iso3": "AFG",
+      "numericCode": "004",
+      "nameDe": "Afghanistan",
+      "aliasesDe": [
+        "AF",
+        "Afganistan",
+        "Afġānistān",
+        "Islamic Republic of Afghanistan",
+        "Islamische Republik Afghanistan"
+      ],
+      "centroid": [
+        65,
+        33
+      ],
+      "mapFeatureId": "004",
+      "mapMarker": false,
+      "difficulty": 2,
+      "continentIds": [
+        "continent:asia"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q5838",
+          "wikidataId": "Q5838",
+          "nameDe": "Kabul",
+          "aliasesDe": [],
+          "centroid": [
+            69.165833333,
+            34.532777777
+          ],
+          "difficulty": 2,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:ag",
+      "iso2": "AG",
+      "iso3": "ATG",
+      "numericCode": "028",
+      "nameDe": "Antigua und Barbuda",
+      "aliasesDe": [
+        "AG",
+        "Antigua and Barbuda"
+      ],
+      "centroid": [
+        -61.8,
+        17.05
+      ],
+      "mapFeatureId": "028",
+      "mapMarker": true,
+      "difficulty": 5,
+      "continentIds": [
+        "continent:north-america"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q36262",
+          "wikidataId": "Q36262",
+          "nameDe": "Saint John's",
+          "aliasesDe": [],
+          "centroid": [
+            -61.844722222,
+            17.121111111
+          ],
+          "difficulty": 5,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:al",
+      "iso2": "AL",
+      "iso3": "ALB",
+      "numericCode": "008",
+      "nameDe": "Albanien",
+      "aliasesDe": [
+        "AL",
+        "Albania",
+        "Republic of Albania",
+        "Republik Albanien",
+        "Shqiperi",
+        "Shqipëri",
+        "Shqiperia",
+        "Shqipëria",
+        "Shqipnia"
+      ],
+      "centroid": [
+        20,
+        41
+      ],
+      "mapFeatureId": "008",
+      "mapMarker": false,
+      "difficulty": 4,
+      "continentIds": [
+        "continent:europe"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q19689",
+          "wikidataId": "Q19689",
+          "nameDe": "Tirana",
+          "aliasesDe": [],
+          "centroid": [
+            19.818055555,
+            41.328333333
+          ],
+          "difficulty": 4,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:am",
+      "iso2": "AM",
+      "iso3": "ARM",
+      "numericCode": "051",
+      "nameDe": "Armenien",
+      "aliasesDe": [
+        "AM",
+        "Armenia",
+        "Hayastan",
+        "Republic of Armenia",
+        "Republik Armenien",
+        "Հայաստանի Հանրապետություն"
+      ],
+      "centroid": [
+        45,
+        40
+      ],
+      "mapFeatureId": "051",
+      "mapMarker": false,
+      "difficulty": 4,
+      "continentIds": [
+        "continent:europe",
+        "continent:asia"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q1953",
+          "wikidataId": "Q1953",
+          "nameDe": "Jerewan",
+          "aliasesDe": [
+            "Yerevan"
+          ],
+          "centroid": [
+            44.514444444,
+            40.181388888
+          ],
+          "difficulty": 4,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:ao",
+      "iso2": "AO",
+      "iso3": "AGO",
+      "numericCode": "024",
+      "nameDe": "Angola",
+      "aliasesDe": [
+        "AO",
+        "Republic of Angola",
+        "Republica de Angola",
+        "República de Angola",
+        "Republik Angola",
+        "ʁɛpublika de an'ɡɔla"
+      ],
+      "centroid": [
+        18.5,
+        -12.5
+      ],
+      "mapFeatureId": "024",
+      "mapMarker": false,
+      "difficulty": 1,
+      "continentIds": [
+        "continent:africa"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q3897",
+          "wikidataId": "Q3897",
+          "nameDe": "Luanda",
+          "aliasesDe": [],
+          "centroid": [
+            13.234444444,
+            -8.838333333
+          ],
+          "difficulty": 1,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:ar",
+      "iso2": "AR",
+      "iso3": "ARG",
+      "numericCode": "032",
+      "nameDe": "Argentinien",
+      "aliasesDe": [
+        "AR",
+        "Argentina",
+        "Argentine Republic",
+        "Argentinische Republik",
+        "Republica Argentina",
+        "República Argentina"
+      ],
+      "centroid": [
+        -64,
+        -34
+      ],
+      "mapFeatureId": "032",
+      "mapMarker": false,
+      "difficulty": 1,
+      "continentIds": [
+        "continent:south-america"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q1486",
+          "wikidataId": "Q1486",
+          "nameDe": "Buenos Aires",
+          "aliasesDe": [],
+          "centroid": [
+            -58.381944444,
+            -34.599722222
+          ],
+          "difficulty": 1,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:at",
+      "iso2": "AT",
+      "iso3": "AUT",
+      "numericCode": "040",
+      "nameDe": "Österreich",
+      "aliasesDe": [
+        "AT",
+        "Austria",
+        "Oesterreich",
+        "Osterreich",
+        "Republic of Austria",
+        "Republik Osterreich",
+        "Republik Österreich"
+      ],
+      "centroid": [
+        13.33333333,
+        47.33333333
+      ],
+      "mapFeatureId": "040",
+      "mapMarker": false,
+      "difficulty": 3,
+      "continentIds": [
+        "continent:europe"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q1741",
+          "wikidataId": "Q1741",
+          "nameDe": "Wien",
+          "aliasesDe": [
+            "Vienna"
+          ],
+          "centroid": [
+            16.3725,
+            48.208333333
+          ],
+          "difficulty": 3,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:au",
+      "iso2": "AU",
+      "iso3": "AUS",
+      "numericCode": "036",
+      "nameDe": "Australien",
+      "aliasesDe": [
+        "AU",
+        "Australia",
+        "Commonwealth Australien",
+        "Commonwealth of Australia"
+      ],
+      "centroid": [
+        133,
+        -27
+      ],
+      "mapFeatureId": "036",
+      "mapMarker": false,
+      "difficulty": 1,
+      "continentIds": [
+        "continent:oceania"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q3114",
+          "wikidataId": "Q3114",
+          "nameDe": "Canberra",
+          "aliasesDe": [],
+          "centroid": [
+            149.126944444,
+            -35.293055555
+          ],
+          "difficulty": 1,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:az",
+      "iso2": "AZ",
+      "iso3": "AZE",
+      "numericCode": "031",
+      "nameDe": "Aserbaidschan",
+      "aliasesDe": [
+        "AZ",
+        "Azerbaijan",
+        "Azərbaycan Respublikası",
+        "Republic of Azerbaijan",
+        "Republik Aserbaidschan"
+      ],
+      "centroid": [
+        47.5,
+        40.5
+      ],
+      "mapFeatureId": "031",
+      "mapMarker": false,
+      "difficulty": 3,
+      "continentIds": [
+        "continent:europe",
+        "continent:asia"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q9248",
+          "wikidataId": "Q9248",
+          "nameDe": "Baku",
+          "aliasesDe": [],
+          "centroid": [
+            49.835183333,
+            40.366655555
+          ],
+          "difficulty": 3,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:ba",
+      "iso2": "BA",
+      "iso3": "BIH",
+      "numericCode": "070",
+      "nameDe": "Bosnien und Herzegowina",
+      "aliasesDe": [
+        "BA",
+        "Bosnia and Herzegovina",
+        "Bosnia-Herzegovina",
+        "Босна и Херцеговина"
+      ],
+      "centroid": [
+        18,
+        44
+      ],
+      "mapFeatureId": "070",
+      "mapMarker": false,
+      "difficulty": 3,
+      "continentIds": [
+        "continent:europe"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q11194",
+          "wikidataId": "Q11194",
+          "nameDe": "Sarajevo",
+          "aliasesDe": [],
+          "centroid": [
+            18.413055555,
+            43.856388888
+          ],
+          "difficulty": 3,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:bb",
+      "iso2": "BB",
+      "iso3": "BRB",
+      "numericCode": "052",
+      "nameDe": "Barbados",
+      "aliasesDe": [
+        "BB"
+      ],
+      "centroid": [
+        -59.53333333,
+        13.16666666
+      ],
+      "mapFeatureId": "052",
+      "mapMarker": true,
+      "difficulty": 5,
+      "continentIds": [
+        "continent:north-america"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q36168",
+          "wikidataId": "Q36168",
+          "nameDe": "Bridgetown",
+          "aliasesDe": [],
+          "centroid": [
+            -59.616666666,
+            13.0975
+          ],
+          "difficulty": 5,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:bd",
+      "iso2": "BD",
+      "iso3": "BGD",
+      "numericCode": "050",
+      "nameDe": "Bangladesch",
+      "aliasesDe": [
+        "Bangladesh",
+        "BD",
+        "Gonoprojatontri Bangladesh",
+        "Gônôprôjatôntri Bangladesh",
+        "People's Republic of Bangladesh",
+        "Volksrepublik Bangladesch"
+      ],
+      "centroid": [
+        90,
+        24
+      ],
+      "mapFeatureId": "050",
+      "mapMarker": false,
+      "difficulty": 3,
+      "continentIds": [
+        "continent:asia"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q1354",
+          "wikidataId": "Q1354",
+          "nameDe": "Dhaka",
+          "aliasesDe": [],
+          "centroid": [
+            90.394444444,
+            23.728888888
+          ],
+          "difficulty": 3,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:be",
+      "iso2": "BE",
+      "iso3": "BEL",
+      "numericCode": "056",
+      "nameDe": "Belgien",
+      "aliasesDe": [
+        "BE",
+        "Belgie",
+        "België",
+        "Belgique",
+        "Belgium",
+        "Kingdom of Belgium",
+        "Konigreich Belgien",
+        "Königreich Belgien",
+        "Koninkrijk Belgie",
+        "Koninkrijk België",
+        "Royaume de Belgique"
+      ],
+      "centroid": [
+        4,
+        50.83333333
+      ],
+      "mapFeatureId": "056",
+      "mapMarker": false,
+      "difficulty": 4,
+      "continentIds": [
+        "continent:europe"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q239",
+          "wikidataId": "Q239",
+          "nameDe": "Brüssel",
+          "aliasesDe": [
+            "Brussel",
+            "Brussels"
+          ],
+          "centroid": [
+            4.351666666,
+            50.846666666
+          ],
+          "difficulty": 4,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:bf",
+      "iso2": "BF",
+      "iso3": "BFA",
+      "numericCode": "854",
+      "nameDe": "Burkina Faso",
+      "aliasesDe": [
+        "BF"
+      ],
+      "centroid": [
+        -2,
+        13
+      ],
+      "mapFeatureId": "854",
+      "mapMarker": false,
+      "difficulty": 2,
+      "continentIds": [
+        "continent:africa"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q3777",
+          "wikidataId": "Q3777",
+          "nameDe": "Ouagadougou",
+          "aliasesDe": [],
+          "centroid": [
+            -1.5275,
+            12.368611111
+          ],
+          "difficulty": 2,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:bg",
+      "iso2": "BG",
+      "iso3": "BGR",
+      "numericCode": "100",
+      "nameDe": "Bulgarien",
+      "aliasesDe": [
+        "BG",
+        "Bulgaria",
+        "Republic of Bulgaria",
+        "Republik Bulgarien",
+        "Република България"
+      ],
+      "centroid": [
+        25,
+        43
+      ],
+      "mapFeatureId": "100",
+      "mapMarker": false,
+      "difficulty": 3,
+      "continentIds": [
+        "continent:europe"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q472",
+          "wikidataId": "Q472",
+          "nameDe": "Sofia",
+          "aliasesDe": [],
+          "centroid": [
+            23.321726,
+            42.697886
+          ],
+          "difficulty": 3,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:bh",
+      "iso2": "BH",
+      "iso3": "BHR",
+      "numericCode": "048",
+      "nameDe": "Bahrain",
+      "aliasesDe": [
+        "BH",
+        "Kingdom of Bahrain",
+        "Konigreich Bahrain",
+        "Königreich Bahrain",
+        "Mamlakat al-Bahrayn",
+        "Mamlakat al-Baḥrayn"
+      ],
+      "centroid": [
+        50.55,
+        26
+      ],
+      "mapFeatureId": "048",
+      "mapMarker": true,
+      "difficulty": 5,
+      "continentIds": [
+        "continent:asia"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q3882",
+          "wikidataId": "Q3882",
+          "nameDe": "Manama",
+          "aliasesDe": [],
+          "centroid": [
+            50.583333333,
+            26.216666666
+          ],
+          "difficulty": 5,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:bi",
+      "iso2": "BI",
+      "iso3": "BDI",
+      "numericCode": "108",
+      "nameDe": "Burundi",
+      "aliasesDe": [
+        "BI",
+        "Republic of Burundi",
+        "Republik Burundi",
+        "Republika y'Uburundi",
+        "Republique du Burundi",
+        "République du Burundi"
+      ],
+      "centroid": [
+        30,
+        -3.5
+      ],
+      "mapFeatureId": "108",
+      "mapMarker": false,
+      "difficulty": 4,
+      "continentIds": [
+        "continent:africa"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q167551",
+          "wikidataId": "Q167551",
+          "nameDe": "Gitega",
+          "aliasesDe": [],
+          "centroid": [
+            29.925,
+            -3.428333333
+          ],
+          "difficulty": 4,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:bj",
+      "iso2": "BJ",
+      "iso3": "BEN",
+      "numericCode": "204",
+      "nameDe": "Benin",
+      "aliasesDe": [
+        "BJ",
+        "Republic of Benin",
+        "Republik Benin",
+        "Republique du Benin",
+        "République du Bénin"
+      ],
+      "centroid": [
+        2.25,
+        9.5
+      ],
+      "mapFeatureId": "204",
+      "mapMarker": false,
+      "difficulty": 3,
+      "continentIds": [
+        "continent:africa"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q3799",
+          "wikidataId": "Q3799",
+          "nameDe": "Porto-Novo",
+          "aliasesDe": [],
+          "centroid": [
+            2.616666666,
+            6.483333333
+          ],
+          "difficulty": 3,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:bn",
+      "iso2": "BN",
+      "iso3": "BRN",
+      "numericCode": "096",
+      "nameDe": "Brunei",
+      "aliasesDe": [
+        "BN",
+        "Brunei Darussalam",
+        "Nation of Brunei",
+        "Nation of Brunei, Abode of Peace",
+        "Sultanat Brunei Darussalam",
+        "the Abode of Peace"
+      ],
+      "centroid": [
+        114.66666666,
+        4.5
+      ],
+      "mapFeatureId": "096",
+      "mapMarker": false,
+      "difficulty": 4,
+      "continentIds": [
+        "continent:asia"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q9279",
+          "wikidataId": "Q9279",
+          "nameDe": "Bandar Seri Begawan",
+          "aliasesDe": [],
+          "centroid": [
+            114.916666666,
+            4.916666666
+          ],
+          "difficulty": 4,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:bo",
+      "iso2": "BO",
+      "iso3": "BOL",
+      "numericCode": "068",
+      "nameDe": "Bolivien",
+      "aliasesDe": [
+        "BO",
+        "Bolivia",
+        "Bolivia, Plurinational State of",
+        "Buliwya",
+        "Buliwya Mamallaqta",
+        "Estado Plurinacional de Bolivia",
+        "Plurinational State of Bolivia",
+        "Plurinationaler Staat Bolivien",
+        "Teta Volivia",
+        "Tetã Volívia",
+        "Wuliwya",
+        "Wuliwya Suyu"
+      ],
+      "centroid": [
+        -65,
+        -17
+      ],
+      "mapFeatureId": "068",
+      "mapMarker": false,
+      "difficulty": 1,
+      "continentIds": [
+        "continent:south-america"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q1491",
+          "wikidataId": "Q1491",
+          "nameDe": "La Paz",
+          "aliasesDe": [],
+          "centroid": [
+            -68.133333333,
+            -16.495833333
+          ],
+          "difficulty": 1,
+          "role": "seat_of_government",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        },
+        {
+          "id": "city:wd-q2907",
+          "wikidataId": "Q2907",
+          "nameDe": "Sucre",
+          "aliasesDe": [],
+          "centroid": [
+            -65.26,
+            -19.0475
+          ],
+          "difficulty": 1,
+          "role": "constitutional_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:br",
+      "iso2": "BR",
+      "iso3": "BRA",
+      "numericCode": "076",
+      "nameDe": "Brasilien",
+      "aliasesDe": [
+        "BR",
+        "Brasil",
+        "Brazil",
+        "Federative Republic of Brazil",
+        "Foderative Republik Brasilien",
+        "Föderative Republik Brasilien",
+        "Republica Federativa do Brasil",
+        "República Federativa do Brasil"
+      ],
+      "centroid": [
+        -55,
+        -10
+      ],
+      "mapFeatureId": "076",
+      "mapMarker": false,
+      "difficulty": 1,
+      "continentIds": [
+        "continent:south-america"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q2844",
+          "wikidataId": "Q2844",
+          "nameDe": "Brasília",
+          "aliasesDe": [
+            "Brasilia"
+          ],
+          "centroid": [
+            -47.882777777,
+            -15.793888888
+          ],
+          "difficulty": 1,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:bs",
+      "iso2": "BS",
+      "iso3": "BHS",
+      "numericCode": "044",
+      "nameDe": "Bahamas",
+      "aliasesDe": [
+        "BS",
+        "Commonwealth der Bahamas",
+        "Commonwealth of the Bahamas"
+      ],
+      "centroid": [
+        -76,
+        24.25
+      ],
+      "mapFeatureId": "044",
+      "mapMarker": false,
+      "difficulty": 4,
+      "continentIds": [
+        "continent:north-america"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q2467",
+          "wikidataId": "Q2467",
+          "nameDe": "Nassau",
+          "aliasesDe": [],
+          "centroid": [
+            -77.338611111,
+            25.078055555
+          ],
+          "difficulty": 4,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:bt",
+      "iso2": "BT",
+      "iso3": "BTN",
+      "numericCode": "064",
+      "nameDe": "Bhutan",
+      "aliasesDe": [
+        "BT",
+        "Kingdom of Bhutan",
+        "Konigreich Bhutan",
+        "Königreich Bhutan"
+      ],
+      "centroid": [
+        90.5,
+        27.5
+      ],
+      "mapFeatureId": "064",
+      "mapMarker": false,
+      "difficulty": 4,
+      "continentIds": [
+        "continent:asia"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q9270",
+          "wikidataId": "Q9270",
+          "nameDe": "Thimphu",
+          "aliasesDe": [],
+          "centroid": [
+            89.63367,
+            27.47135
+          ],
+          "difficulty": 4,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:bw",
+      "iso2": "BW",
+      "iso3": "BWA",
+      "numericCode": "072",
+      "nameDe": "Botswana",
+      "aliasesDe": [
+        "BW",
+        "Lefatshe la Botswana",
+        "Republic of Botswana",
+        "Republik Botsuana"
+      ],
+      "centroid": [
+        24,
+        -22
+      ],
+      "mapFeatureId": "072",
+      "mapMarker": false,
+      "difficulty": 2,
+      "continentIds": [
+        "continent:africa"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q3919",
+          "wikidataId": "Q3919",
+          "nameDe": "Gaborone",
+          "aliasesDe": [],
+          "centroid": [
+            25.908611111,
+            -24.656944444
+          ],
+          "difficulty": 2,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:by",
+      "iso2": "BY",
+      "iso3": "BLR",
+      "numericCode": "112",
+      "nameDe": "Belarus",
+      "aliasesDe": [
+        "Bielarus",
+        "Bielaruś",
+        "BY",
+        "Republic of Belarus",
+        "Republik Belarus",
+        "Белоруссия",
+        "Республика Белоруссия"
+      ],
+      "centroid": [
+        28,
+        53
+      ],
+      "mapFeatureId": "112",
+      "mapMarker": false,
+      "difficulty": 3,
+      "continentIds": [
+        "continent:europe"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q2280",
+          "wikidataId": "Q2280",
+          "nameDe": "Minsk",
+          "aliasesDe": [],
+          "centroid": [
+            27.561837,
+            53.902246
+          ],
+          "difficulty": 3,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:bz",
+      "iso2": "BZ",
+      "iso3": "BLZ",
+      "numericCode": "084",
+      "nameDe": "Belize",
+      "aliasesDe": [
+        "BZ"
+      ],
+      "centroid": [
+        -88.75,
+        17.25
+      ],
+      "mapFeatureId": "084",
+      "mapMarker": false,
+      "difficulty": 4,
+      "continentIds": [
+        "continent:north-america"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q3043",
+          "wikidataId": "Q3043",
+          "nameDe": "Belmopan",
+          "aliasesDe": [],
+          "centroid": [
+            -88.7675,
+            17.25
+          ],
+          "difficulty": 4,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:ca",
+      "iso2": "CA",
+      "iso3": "CAN",
+      "numericCode": "124",
+      "nameDe": "Kanada",
+      "aliasesDe": [
+        "CA",
+        "Canada"
+      ],
+      "centroid": [
+        -95,
+        60
+      ],
+      "mapFeatureId": "124",
+      "mapMarker": false,
+      "difficulty": 1,
+      "continentIds": [
+        "continent:north-america"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q1930",
+          "wikidataId": "Q1930",
+          "nameDe": "Ottawa",
+          "aliasesDe": [],
+          "centroid": [
+            -75.695,
+            45.424722222
+          ],
+          "difficulty": 1,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:cd",
+      "iso2": "CD",
+      "iso3": "COD",
+      "numericCode": "180",
+      "nameDe": "Demokratische Republik Kongo",
+      "aliasesDe": [
+        "CD",
+        "Congo-Kinshasa",
+        "Congo, the Democratic Republic of the",
+        "Democratic Republic of Congo",
+        "Democratic Republic of the Congo",
+        "DR Congo",
+        "DRC",
+        "Kongo (Dem. Rep.)"
+      ],
+      "centroid": [
+        25,
+        0
+      ],
+      "mapFeatureId": "180",
+      "mapMarker": false,
+      "difficulty": 1,
+      "continentIds": [
+        "continent:africa"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q3838",
+          "wikidataId": "Q3838",
+          "nameDe": "Kinshasa",
+          "aliasesDe": [],
+          "centroid": [
+            15.311944444,
+            -4.321944444
+          ],
+          "difficulty": 1,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:cf",
+      "iso2": "CF",
+      "iso3": "CAF",
+      "numericCode": "140",
+      "nameDe": "Zentralafrikanische Republik",
+      "aliasesDe": [
+        "Central African Republic",
+        "CF",
+        "Republique centrafricaine",
+        "République centrafricaine"
+      ],
+      "centroid": [
+        21,
+        7
+      ],
+      "mapFeatureId": "140",
+      "mapMarker": false,
+      "difficulty": 2,
+      "continentIds": [
+        "continent:africa"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q3832",
+          "wikidataId": "Q3832",
+          "nameDe": "Bangui",
+          "aliasesDe": [],
+          "centroid": [
+            18.562833333,
+            4.37325
+          ],
+          "difficulty": 2,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:cg",
+      "iso2": "CG",
+      "iso3": "COG",
+      "numericCode": "178",
+      "nameDe": "Republik Kongo",
+      "aliasesDe": [
+        "CG",
+        "Congo",
+        "Congo-Brazzaville",
+        "Kongo",
+        "Republic of the Congo"
+      ],
+      "centroid": [
+        15,
+        -1
+      ],
+      "mapFeatureId": "178",
+      "mapMarker": false,
+      "difficulty": 2,
+      "continentIds": [
+        "continent:africa"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q3844",
+          "wikidataId": "Q3844",
+          "nameDe": "Brazzaville",
+          "aliasesDe": [],
+          "centroid": [
+            15.271111111,
+            -4.269444444
+          ],
+          "difficulty": 2,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:ch",
+      "iso2": "CH",
+      "iso3": "CHE",
+      "numericCode": "756",
+      "nameDe": "Schweiz",
+      "aliasesDe": [
+        "CH",
+        "Schweizerische Eidgenossenschaft",
+        "Suisse",
+        "Svizra",
+        "Svizzera",
+        "Swiss Confederation",
+        "Switzerland"
+      ],
+      "centroid": [
+        8,
+        47
+      ],
+      "mapFeatureId": "756",
+      "mapMarker": false,
+      "difficulty": 4,
+      "continentIds": [
+        "continent:europe"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q70",
+          "wikidataId": "Q70",
+          "nameDe": "Bern",
+          "aliasesDe": [],
+          "centroid": [
+            7.44743,
+            46.94798
+          ],
+          "difficulty": 4,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:ci",
+      "iso2": "CI",
+      "iso3": "CIV",
+      "numericCode": "384",
+      "nameDe": "Elfenbeinküste",
+      "aliasesDe": [
+        "CI",
+        "Cote d'Ivoire",
+        "Côte d'Ivoire",
+        "Elfenbeinkuste",
+        "Ivory Coast",
+        "Republic of Cote d'Ivoire",
+        "Republic of Côte d'Ivoire",
+        "Republik Cote d'Ivoire",
+        "Republik Côte d'Ivoire",
+        "Republique de Cote d'Ivoire",
+        "République de Côte d'Ivoire"
+      ],
+      "centroid": [
+        -5,
+        8
+      ],
+      "mapFeatureId": "384",
+      "mapMarker": false,
+      "difficulty": 2,
+      "continentIds": [
+        "continent:africa"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q3768",
+          "wikidataId": "Q3768",
+          "nameDe": "Yamoussoukro",
+          "aliasesDe": [],
+          "centroid": [
+            -5.274166666,
+            6.816111111
+          ],
+          "difficulty": 2,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:cl",
+      "iso2": "CL",
+      "iso3": "CHL",
+      "numericCode": "152",
+      "nameDe": "Chile",
+      "aliasesDe": [
+        "CL",
+        "Republic of Chile",
+        "Republica de Chile",
+        "República de Chile",
+        "Republik Chile"
+      ],
+      "centroid": [
+        -71,
+        -30
+      ],
+      "mapFeatureId": "152",
+      "mapMarker": false,
+      "difficulty": 2,
+      "continentIds": [
+        "continent:south-america"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q2887",
+          "wikidataId": "Q2887",
+          "nameDe": "Santiago de Chile",
+          "aliasesDe": [
+            "Santiago"
+          ],
+          "centroid": [
+            -70.65,
+            -33.4375
+          ],
+          "difficulty": 2,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:cm",
+      "iso2": "CM",
+      "iso3": "CMR",
+      "numericCode": "120",
+      "nameDe": "Kamerun",
+      "aliasesDe": [
+        "Cameroon",
+        "CM",
+        "Republic of Cameroon",
+        "Republik Kamerun",
+        "Republique du Cameroun",
+        "République du Cameroun"
+      ],
+      "centroid": [
+        12,
+        6
+      ],
+      "mapFeatureId": "120",
+      "mapMarker": false,
+      "difficulty": 2,
+      "continentIds": [
+        "continent:africa"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q3808",
+          "wikidataId": "Q3808",
+          "nameDe": "Yaoundé",
+          "aliasesDe": [
+            "Yaounde"
+          ],
+          "centroid": [
+            11.518055555,
+            3.857777777
+          ],
+          "difficulty": 2,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:cn",
+      "iso2": "CN",
+      "iso3": "CHN",
+      "numericCode": "156",
+      "nameDe": "Volksrepublik China",
+      "aliasesDe": [
+        "China",
+        "CN",
+        "People's Republic of China",
+        "Zhongguo",
+        "Zhōngguó",
+        "Zhonghua",
+        "Zhonghua Renmin Gongheguo",
+        "Zhōnghuá Rénmín Gònghéguó",
+        "中华人民共和国"
+      ],
+      "centroid": [
+        105,
+        35
+      ],
+      "mapFeatureId": "156",
+      "mapMarker": false,
+      "difficulty": 1,
+      "continentIds": [
+        "continent:asia"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q956",
+          "wikidataId": "Q956",
+          "nameDe": "Peking",
+          "aliasesDe": [
+            "Beijing"
+          ],
+          "centroid": [
+            116.407526,
+            39.90403
+          ],
+          "difficulty": 1,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:co",
+      "iso2": "CO",
+      "iso3": "COL",
+      "numericCode": "170",
+      "nameDe": "Kolumbien",
+      "aliasesDe": [
+        "CO",
+        "Colombia",
+        "Republic of Colombia",
+        "Republica de Colombia",
+        "República de Colombia",
+        "Republik Kolumbien"
+      ],
+      "centroid": [
+        -72,
+        4
+      ],
+      "mapFeatureId": "170",
+      "mapMarker": false,
+      "difficulty": 1,
+      "continentIds": [
+        "continent:south-america"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q2841",
+          "wikidataId": "Q2841",
+          "nameDe": "Bogotá",
+          "aliasesDe": [
+            "Bogota"
+          ],
+          "centroid": [
+            -74.08175,
+            4.60971
+          ],
+          "difficulty": 1,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:cr",
+      "iso2": "CR",
+      "iso3": "CRI",
+      "numericCode": "188",
+      "nameDe": "Costa Rica",
+      "aliasesDe": [
+        "CR",
+        "Republic of Costa Rica",
+        "Republica de Costa Rica",
+        "República de Costa Rica",
+        "Republik Costa Rica"
+      ],
+      "centroid": [
+        -84,
+        10
+      ],
+      "mapFeatureId": "188",
+      "mapMarker": false,
+      "difficulty": 3,
+      "continentIds": [
+        "continent:north-america"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q3070",
+          "wikidataId": "Q3070",
+          "nameDe": "San José",
+          "aliasesDe": [
+            "San Jose"
+          ],
+          "centroid": [
+            -84.079613888,
+            9.932738888
+          ],
+          "difficulty": 3,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:cu",
+      "iso2": "CU",
+      "iso3": "CUB",
+      "numericCode": "192",
+      "nameDe": "Kuba",
+      "aliasesDe": [
+        "CU",
+        "Cuba",
+        "Republic of Cuba",
+        "Republica de Cuba",
+        "República de Cuba",
+        "Republik Kuba"
+      ],
+      "centroid": [
+        -80,
+        21.5
+      ],
+      "mapFeatureId": "192",
+      "mapMarker": false,
+      "difficulty": 3,
+      "continentIds": [
+        "continent:north-america"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q1563",
+          "wikidataId": "Q1563",
+          "nameDe": "Havanna",
+          "aliasesDe": [
+            "Havana"
+          ],
+          "centroid": [
+            -82.358888888,
+            23.136666666
+          ],
+          "difficulty": 3,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:cv",
+      "iso2": "CV",
+      "iso3": "CPV",
+      "numericCode": "132",
+      "nameDe": "Kap Verde",
+      "aliasesDe": [
+        "Cape Verde",
+        "CV",
+        "Republic of Cabo Verde",
+        "Republica de Cabo Verde",
+        "República de Cabo Verde",
+        "Republik Cabo Verde"
+      ],
+      "centroid": [
+        -24,
+        16
+      ],
+      "mapFeatureId": "132",
+      "mapMarker": true,
+      "difficulty": 5,
+      "continentIds": [
+        "continent:africa"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q3751",
+          "wikidataId": "Q3751",
+          "nameDe": "Praia",
+          "aliasesDe": [],
+          "centroid": [
+            -23.509155555,
+            14.917719444
+          ],
+          "difficulty": 5,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:cy",
+      "iso2": "CY",
+      "iso3": "CYP",
+      "numericCode": "196",
+      "nameDe": "Zypern",
+      "aliasesDe": [
+        "CY",
+        "Cyprus",
+        "Kıbrıs",
+        "Kıbrıs Cumhuriyeti",
+        "Kypros",
+        "Kýpros",
+        "Republic of Cyprus",
+        "Republik Zypern",
+        "Κυπριακη Δημοκρατια",
+        "Κυπριακή Δημοκρατία"
+      ],
+      "centroid": [
+        33,
+        35
+      ],
+      "mapFeatureId": "196",
+      "mapMarker": false,
+      "difficulty": 4,
+      "continentIds": [
+        "continent:europe",
+        "continent:asia"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q3856",
+          "wikidataId": "Q3856",
+          "nameDe": "Nikosia",
+          "aliasesDe": [
+            "Nicosia"
+          ],
+          "centroid": [
+            33.365,
+            35.1725
+          ],
+          "difficulty": 4,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:cz",
+      "iso2": "CZ",
+      "iso3": "CZE",
+      "numericCode": "203",
+      "nameDe": "Tschechien",
+      "aliasesDe": [
+        "Ceska republika",
+        "Česká republika",
+        "Cesko",
+        "Česko",
+        "CZ",
+        "Czech Republic",
+        "Czechia",
+        "Tschechische Republik"
+      ],
+      "centroid": [
+        15.5,
+        49.75
+      ],
+      "mapFeatureId": "203",
+      "mapMarker": false,
+      "difficulty": 3,
+      "continentIds": [
+        "continent:europe"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q1085",
+          "wikidataId": "Q1085",
+          "nameDe": "Prag",
+          "aliasesDe": [
+            "Prague"
+          ],
+          "centroid": [
+            14.421388888,
+            50.0875
+          ],
+          "difficulty": 3,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:de",
+      "iso2": "DE",
+      "iso3": "DEU",
+      "numericCode": "276",
+      "nameDe": "Deutschland",
+      "aliasesDe": [
+        "Bundesrepublik Deutschland",
+        "DE",
+        "Federal Republic of Germany",
+        "Germany"
+      ],
+      "centroid": [
+        9,
+        51
+      ],
+      "mapFeatureId": "276",
+      "mapMarker": false,
+      "difficulty": 2,
+      "continentIds": [
+        "continent:europe"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q64",
+          "wikidataId": "Q64",
+          "nameDe": "Berlin",
+          "aliasesDe": [],
+          "centroid": [
+            13.383333333,
+            52.516666666
+          ],
+          "difficulty": 2,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:dj",
+      "iso2": "DJ",
+      "iso3": "DJI",
+      "numericCode": "262",
+      "nameDe": "Dschibuti",
+      "aliasesDe": [
+        "DJ",
+        "Djibouti",
+        "Gabuuti",
+        "Gabuutih Ummuuno",
+        "Jabuuti",
+        "Jamhuuriyadda Jabuuti",
+        "Republic of Djibouti",
+        "Republik Dschibuti",
+        "Republique de Djibouti",
+        "République de Djibouti"
+      ],
+      "centroid": [
+        43,
+        11.5
+      ],
+      "mapFeatureId": "262",
+      "mapMarker": false,
+      "difficulty": 4,
+      "continentIds": [
+        "continent:africa"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q3604",
+          "wikidataId": "Q3604",
+          "nameDe": "Dschibuti",
+          "aliasesDe": [
+            "Djibouti"
+          ],
+          "centroid": [
+            43.148055555,
+            11.595
+          ],
+          "difficulty": 4,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:dk",
+      "iso2": "DK",
+      "iso3": "DNK",
+      "numericCode": "208",
+      "nameDe": "Dänemark",
+      "aliasesDe": [
+        "Danemark",
+        "Danmark",
+        "Denmark",
+        "DK",
+        "Kingdom of Denmark",
+        "Kongeriget Danmark",
+        "Konigreich Danemark",
+        "Königreich Dänemark"
+      ],
+      "centroid": [
+        10,
+        56
+      ],
+      "mapFeatureId": "208",
+      "mapMarker": false,
+      "difficulty": 4,
+      "continentIds": [
+        "continent:europe"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q1748",
+          "wikidataId": "Q1748",
+          "nameDe": "Kopenhagen",
+          "aliasesDe": [
+            "Copenhagen"
+          ],
+          "centroid": [
+            12.568888888,
+            55.676111111
+          ],
+          "difficulty": 4,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:dm",
+      "iso2": "DM",
+      "iso3": "DMA",
+      "numericCode": "212",
+      "nameDe": "Dominica",
+      "aliasesDe": [
+        "Commonwealth of Dominica",
+        "Commonwealth von Dominica",
+        "DM",
+        "Dominique",
+        "Wai‘tu kubuli"
+      ],
+      "centroid": [
+        -61.33333333,
+        15.41666666
+      ],
+      "mapFeatureId": "212",
+      "mapMarker": true,
+      "difficulty": 5,
+      "continentIds": [
+        "continent:north-america"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q36281",
+          "wikidataId": "Q36281",
+          "nameDe": "Roseau",
+          "aliasesDe": [],
+          "centroid": [
+            -61.383333333,
+            15.3
+          ],
+          "difficulty": 5,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:do",
+      "iso2": "DO",
+      "iso3": "DOM",
+      "numericCode": "214",
+      "nameDe": "Dominikanische Republik",
+      "aliasesDe": [
+        "DO",
+        "Dominican Republic"
+      ],
+      "centroid": [
+        -70.66666666,
+        19
+      ],
+      "mapFeatureId": "214",
+      "mapMarker": false,
+      "difficulty": 4,
+      "continentIds": [
+        "continent:north-america"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q34820",
+          "wikidataId": "Q34820",
+          "nameDe": "Santo Domingo",
+          "aliasesDe": [],
+          "centroid": [
+            -69.936111111,
+            18.4625
+          ],
+          "difficulty": 4,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:dz",
+      "iso2": "DZ",
+      "iso3": "DZA",
+      "numericCode": "012",
+      "nameDe": "Algerien",
+      "aliasesDe": [
+        "Algeria",
+        "Algerie",
+        "Algérie",
+        "Demokratische Volksrepublik Algerien",
+        "DZ",
+        "Dzayer",
+        "People's Democratic Republic of Algeria"
+      ],
+      "centroid": [
+        3,
+        28
+      ],
+      "mapFeatureId": "012",
+      "mapMarker": false,
+      "difficulty": 1,
+      "continentIds": [
+        "continent:africa"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q3561",
+          "wikidataId": "Q3561",
+          "nameDe": "Algier",
+          "aliasesDe": [
+            "Algiers"
+          ],
+          "centroid": [
+            3.058611111,
+            36.776388888
+          ],
+          "difficulty": 1,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:ec",
+      "iso2": "EC",
+      "iso3": "ECU",
+      "numericCode": "218",
+      "nameDe": "Ecuador",
+      "aliasesDe": [
+        "EC",
+        "Republic of Ecuador",
+        "Republica del Ecuador",
+        "República del Ecuador",
+        "Republik Ecuador"
+      ],
+      "centroid": [
+        -77.5,
+        -2
+      ],
+      "mapFeatureId": "218",
+      "mapMarker": false,
+      "difficulty": 2,
+      "continentIds": [
+        "continent:south-america"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q2900",
+          "wikidataId": "Q2900",
+          "nameDe": "Quito",
+          "aliasesDe": [],
+          "centroid": [
+            -78.5125,
+            -0.22
+          ],
+          "difficulty": 2,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:ee",
+      "iso2": "EE",
+      "iso3": "EST",
+      "numericCode": "233",
+      "nameDe": "Estland",
+      "aliasesDe": [
+        "EE",
+        "Eesti",
+        "Eesti Vabariik",
+        "Estonia",
+        "Republic of Estonia",
+        "Republik Estland"
+      ],
+      "centroid": [
+        26,
+        59
+      ],
+      "mapFeatureId": "233",
+      "mapMarker": false,
+      "difficulty": 4,
+      "continentIds": [
+        "continent:europe"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q1770",
+          "wikidataId": "Q1770",
+          "nameDe": "Tallinn",
+          "aliasesDe": [],
+          "centroid": [
+            24.745,
+            59.437222222
+          ],
+          "difficulty": 4,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:eg",
+      "iso2": "EG",
+      "iso3": "EGY",
+      "numericCode": "818",
+      "nameDe": "Ägypten",
+      "aliasesDe": [
+        "Agypten",
+        "Arab Republic of Egypt",
+        "Arabische Republik Agypten",
+        "Arabische Republik Ägypten",
+        "EG",
+        "Egypt"
+      ],
+      "centroid": [
+        30,
+        27
+      ],
+      "mapFeatureId": "818",
+      "mapMarker": false,
+      "difficulty": 1,
+      "continentIds": [
+        "continent:africa",
+        "continent:asia"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q85",
+          "wikidataId": "Q85",
+          "nameDe": "Kairo",
+          "aliasesDe": [
+            "Cairo"
+          ],
+          "centroid": [
+            31.235833333,
+            30.044444444
+          ],
+          "difficulty": 1,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:er",
+      "iso2": "ER",
+      "iso3": "ERI",
+      "numericCode": "232",
+      "nameDe": "Eritrea",
+      "aliasesDe": [
+        "Dawlat Iritriya",
+        "Dawlat Iritriyá",
+        "ER",
+        "Ertra",
+        "Iritriya",
+        "Iritriyā",
+        "Staat Eritrea",
+        "State of Eritrea",
+        "ʾErtrā",
+        "ሃገረ ኤርትራ"
+      ],
+      "centroid": [
+        39,
+        15
+      ],
+      "mapFeatureId": "232",
+      "mapMarker": false,
+      "difficulty": 3,
+      "continentIds": [
+        "continent:africa"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q3642",
+          "wikidataId": "Q3642",
+          "nameDe": "Asmara",
+          "aliasesDe": [],
+          "centroid": [
+            38.916666666,
+            15.333333333
+          ],
+          "difficulty": 3,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:es",
+      "iso2": "ES",
+      "iso3": "ESP",
+      "numericCode": "724",
+      "nameDe": "Spanien",
+      "aliasesDe": [
+        "ES",
+        "Kingdom of Spain",
+        "Konigreich Spanien",
+        "Königreich Spanien",
+        "Reino de Espana",
+        "Reino de España",
+        "Spain"
+      ],
+      "centroid": [
+        -4,
+        40
+      ],
+      "mapFeatureId": "724",
+      "mapMarker": false,
+      "difficulty": 2,
+      "continentIds": [
+        "continent:europe"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q2807",
+          "wikidataId": "Q2807",
+          "nameDe": "Madrid",
+          "aliasesDe": [],
+          "centroid": [
+            -3.703333333,
+            40.416944444
+          ],
+          "difficulty": 2,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:et",
+      "iso2": "ET",
+      "iso3": "ETH",
+      "numericCode": "231",
+      "nameDe": "Äthiopien",
+      "aliasesDe": [
+        "Athiopien",
+        "Demokratische Bundesrepublik Athiopien",
+        "Demokratische Bundesrepublik Äthiopien",
+        "ET",
+        "Ethiopia",
+        "Federal Democratic Republic of Ethiopia",
+        "Ityoppya",
+        "ʾĪtyōṗṗyā",
+        "የኢትዮጵያ ፌዴራላዊ ዲሞክራሲያዊ ሪፐብሊክ"
+      ],
+      "centroid": [
+        38,
+        8
+      ],
+      "mapFeatureId": "231",
+      "mapMarker": false,
+      "difficulty": 1,
+      "continentIds": [
+        "continent:africa"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q3624",
+          "wikidataId": "Q3624",
+          "nameDe": "Addis Abeba",
+          "aliasesDe": [
+            "Addis Ababa"
+          ],
+          "centroid": [
+            38.7525,
+            9.035833333
+          ],
+          "difficulty": 1,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:fi",
+      "iso2": "FI",
+      "iso3": "FIN",
+      "numericCode": "246",
+      "nameDe": "Finnland",
+      "aliasesDe": [
+        "FI",
+        "Finland",
+        "Republic of Finland",
+        "Republik Finnland",
+        "Republiken Finland",
+        "Suomen tasavalta",
+        "Suomi"
+      ],
+      "centroid": [
+        26,
+        64
+      ],
+      "mapFeatureId": "246",
+      "mapMarker": false,
+      "difficulty": 2,
+      "continentIds": [
+        "continent:europe"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q1757",
+          "wikidataId": "Q1757",
+          "nameDe": "Helsinki",
+          "aliasesDe": [],
+          "centroid": [
+            24.9375,
+            60.170833333
+          ],
+          "difficulty": 2,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:fj",
+      "iso2": "FJ",
+      "iso3": "FJI",
+      "numericCode": "242",
+      "nameDe": "Fidschi",
+      "aliasesDe": [
+        "Fiji",
+        "Fiji Ganarajya",
+        "Fijī Gaṇarājya",
+        "FJ",
+        "Matanitu ko Viti",
+        "Republic of Fiji",
+        "Republik Fidschi",
+        "Viti"
+      ],
+      "centroid": [
+        175,
+        -18
+      ],
+      "mapFeatureId": "242",
+      "mapMarker": false,
+      "difficulty": 4,
+      "continentIds": [
+        "continent:oceania"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q38807",
+          "wikidataId": "Q38807",
+          "nameDe": "Suva",
+          "aliasesDe": [],
+          "centroid": [
+            178.433333333,
+            -18.133333333
+          ],
+          "difficulty": 4,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:fm",
+      "iso2": "FM",
+      "iso3": "FSM",
+      "numericCode": "583",
+      "nameDe": "Föderierte Staaten von Mikronesien",
+      "aliasesDe": [
+        "Federated States of Micronesia",
+        "FM",
+        "Foderierte Staaten von Mikronesien",
+        "Micronesia",
+        "Micronesia, Federated States of",
+        "Mikronesien"
+      ],
+      "centroid": [
+        158.25,
+        6.91666666
+      ],
+      "mapFeatureId": "583",
+      "mapMarker": true,
+      "difficulty": 5,
+      "continentIds": [
+        "continent:oceania"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q42751",
+          "wikidataId": "Q42751",
+          "nameDe": "Palikir",
+          "aliasesDe": [],
+          "centroid": [
+            158.185,
+            6.917777777
+          ],
+          "difficulty": 5,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:fr",
+      "iso2": "FR",
+      "iso3": "FRA",
+      "numericCode": "250",
+      "nameDe": "Frankreich",
+      "aliasesDe": [
+        "FR",
+        "France",
+        "Franzosische Republik",
+        "Französische Republik",
+        "French Republic",
+        "Republique francaise",
+        "République française"
+      ],
+      "centroid": [
+        2,
+        46
+      ],
+      "mapFeatureId": "250",
+      "mapMarker": false,
+      "difficulty": 2,
+      "continentIds": [
+        "continent:europe"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q90",
+          "wikidataId": "Q90",
+          "nameDe": "Paris",
+          "aliasesDe": [],
+          "centroid": [
+            2.352222222,
+            48.856666666
+          ],
+          "difficulty": 2,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:ga",
+      "iso2": "GA",
+      "iso3": "GAB",
+      "numericCode": "266",
+      "nameDe": "Gabun",
+      "aliasesDe": [
+        "GA",
+        "Gabon",
+        "Gabonese Republic",
+        "Gabunische Republik",
+        "Republique Gabonaise",
+        "République Gabonaise"
+      ],
+      "centroid": [
+        11.75,
+        -1
+      ],
+      "mapFeatureId": "266",
+      "mapMarker": false,
+      "difficulty": 2,
+      "continentIds": [
+        "continent:africa"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q3825",
+          "wikidataId": "Q3825",
+          "nameDe": "Libreville",
+          "aliasesDe": [],
+          "centroid": [
+            9.440277777,
+            0.407777777
+          ],
+          "difficulty": 2,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:gb",
+      "iso2": "GB",
+      "iso3": "GBR",
+      "numericCode": "826",
+      "nameDe": "Vereinigtes Königreich",
+      "aliasesDe": [
+        "GB",
+        "Great Britain",
+        "UK",
+        "United Kingdom",
+        "United Kingdom of Great Britain and Northern Ireland",
+        "Vereinigtes Konigreich",
+        "Vereinigtes Konigreich Großbritannien und Nordirland",
+        "Vereinigtes Königreich Großbritannien und Nordirland"
+      ],
+      "centroid": [
+        -2,
+        54
+      ],
+      "mapFeatureId": "826",
+      "mapMarker": false,
+      "difficulty": 3,
+      "continentIds": [
+        "continent:europe"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q84",
+          "wikidataId": "Q84",
+          "nameDe": "London",
+          "aliasesDe": [],
+          "centroid": [
+            -0.1275,
+            51.507222222
+          ],
+          "difficulty": 3,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:gd",
+      "iso2": "GD",
+      "iso3": "GRD",
+      "numericCode": "308",
+      "nameDe": "Grenada",
+      "aliasesDe": [
+        "GD"
+      ],
+      "centroid": [
+        -61.66666666,
+        12.11666666
+      ],
+      "mapFeatureId": "308",
+      "mapMarker": true,
+      "difficulty": 5,
+      "continentIds": [
+        "continent:north-america"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q41547",
+          "wikidataId": "Q41547",
+          "nameDe": "St. George’s",
+          "aliasesDe": [
+            "St. George's"
+          ],
+          "centroid": [
+            -61.753055555,
+            12.0525
+          ],
+          "difficulty": 5,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:ge",
+      "iso2": "GE",
+      "iso3": "GEO",
+      "numericCode": "268",
+      "nameDe": "Georgien",
+      "aliasesDe": [
+        "GE",
+        "Georgia",
+        "Sakartvelo"
+      ],
+      "centroid": [
+        43.5,
+        42
+      ],
+      "mapFeatureId": "268",
+      "mapMarker": false,
+      "difficulty": 3,
+      "continentIds": [
+        "continent:europe",
+        "continent:asia"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q994",
+          "wikidataId": "Q994",
+          "nameDe": "Tiflis",
+          "aliasesDe": [
+            "Tbilisi"
+          ],
+          "centroid": [
+            44.7925,
+            41.7225
+          ],
+          "difficulty": 3,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:gh",
+      "iso2": "GH",
+      "iso3": "GHA",
+      "numericCode": "288",
+      "nameDe": "Ghana",
+      "aliasesDe": [
+        "GH",
+        "Republic of Ghana",
+        "Republik Ghana"
+      ],
+      "centroid": [
+        -2,
+        8
+      ],
+      "mapFeatureId": "288",
+      "mapMarker": false,
+      "difficulty": 3,
+      "continentIds": [
+        "continent:africa"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q3761",
+          "wikidataId": "Q3761",
+          "nameDe": "Accra",
+          "aliasesDe": [],
+          "centroid": [
+            -0.1969,
+            5.55602
+          ],
+          "difficulty": 3,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:gm",
+      "iso2": "GM",
+      "iso3": "GMB",
+      "numericCode": "270",
+      "nameDe": "Gambia",
+      "aliasesDe": [
+        "GM",
+        "Republic of the Gambia",
+        "Republik Gambia"
+      ],
+      "centroid": [
+        -16.56666666,
+        13.46666666
+      ],
+      "mapFeatureId": "270",
+      "mapMarker": false,
+      "difficulty": 4,
+      "continentIds": [
+        "continent:africa"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q3726",
+          "wikidataId": "Q3726",
+          "nameDe": "Banjul",
+          "aliasesDe": [],
+          "centroid": [
+            -16.5775,
+            13.453055555
+          ],
+          "difficulty": 4,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:gn",
+      "iso2": "GN",
+      "iso3": "GIN",
+      "numericCode": "324",
+      "nameDe": "Guinea",
+      "aliasesDe": [
+        "GN",
+        "Republic of Guinea",
+        "Republik Guinea",
+        "Republique de Guinee",
+        "République de Guinée"
+      ],
+      "centroid": [
+        -10,
+        11
+      ],
+      "mapFeatureId": "324",
+      "mapMarker": false,
+      "difficulty": 3,
+      "continentIds": [
+        "continent:africa"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q3733",
+          "wikidataId": "Q3733",
+          "nameDe": "Conakry",
+          "aliasesDe": [],
+          "centroid": [
+            -13.712222222,
+            9.509166666
+          ],
+          "difficulty": 3,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:gq",
+      "iso2": "GQ",
+      "iso3": "GNQ",
+      "numericCode": "226",
+      "nameDe": "Äquatorialguinea",
+      "aliasesDe": [
+        "Aquatorialguinea",
+        "Equatorial Guinea",
+        "GQ",
+        "Republic of Equatorial Guinea",
+        "Republica da Guine Equatorial",
+        "República da Guiné Equatorial",
+        "Republica de Guinea Ecuatorial",
+        "República de Guinea Ecuatorial",
+        "Republik Aquatorialguinea",
+        "Republik Äquatorialguinea",
+        "Republique de Guinee equatoriale",
+        "République de Guinée équatoriale"
+      ],
+      "centroid": [
+        10,
+        2
+      ],
+      "mapFeatureId": "226",
+      "mapMarker": false,
+      "difficulty": 4,
+      "continentIds": [
+        "continent:africa"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q1140136",
+          "wikidataId": "Q1140136",
+          "nameDe": "Ciudad de la Paz",
+          "aliasesDe": [
+            "Malabo"
+          ],
+          "centroid": [
+            10.822222222,
+            1.591666666
+          ],
+          "difficulty": 4,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:gr",
+      "iso2": "GR",
+      "iso3": "GRC",
+      "numericCode": "300",
+      "nameDe": "Griechenland",
+      "aliasesDe": [
+        "Ellada",
+        "Elláda",
+        "GR",
+        "Greece",
+        "Hellenic Republic",
+        "Hellenische Republik",
+        "Ελληνικη Δημοκρατια",
+        "Ελληνική Δημοκρατία"
+      ],
+      "centroid": [
+        22,
+        39
+      ],
+      "mapFeatureId": "300",
+      "mapMarker": false,
+      "difficulty": 3,
+      "continentIds": [
+        "continent:europe"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q1524",
+          "wikidataId": "Q1524",
+          "nameDe": "Athen",
+          "aliasesDe": [
+            "Athens"
+          ],
+          "centroid": [
+            23.728055555,
+            37.984166666
+          ],
+          "difficulty": 3,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:gt",
+      "iso2": "GT",
+      "iso3": "GTM",
+      "numericCode": "320",
+      "nameDe": "Guatemala",
+      "aliasesDe": [
+        "GT",
+        "Republic of Guatemala",
+        "Republik Guatemala"
+      ],
+      "centroid": [
+        -90.25,
+        15.5
+      ],
+      "mapFeatureId": "320",
+      "mapMarker": false,
+      "difficulty": 3,
+      "continentIds": [
+        "continent:north-america"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q1555",
+          "wikidataId": "Q1555",
+          "nameDe": "Guatemala-Stadt",
+          "aliasesDe": [
+            "Guatemala City"
+          ],
+          "centroid": [
+            -90.513333333,
+            14.641666666
+          ],
+          "difficulty": 3,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:gw",
+      "iso2": "GW",
+      "iso3": "GNB",
+      "numericCode": "624",
+      "nameDe": "Guinea-Bissau",
+      "aliasesDe": [
+        "GW",
+        "Republic of Guinea-Bissau",
+        "Republica da Guine-Bissau",
+        "República da Guiné-Bissau",
+        "Republik Guinea-Bissau"
+      ],
+      "centroid": [
+        -15,
+        12
+      ],
+      "mapFeatureId": "624",
+      "mapMarker": false,
+      "difficulty": 4,
+      "continentIds": [
+        "continent:africa"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q3739",
+          "wikidataId": "Q3739",
+          "nameDe": "Bissau",
+          "aliasesDe": [],
+          "centroid": [
+            -15.583333333,
+            11.86
+          ],
+          "difficulty": 4,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:gy",
+      "iso2": "GY",
+      "iso3": "GUY",
+      "numericCode": "328",
+      "nameDe": "Guyana",
+      "aliasesDe": [
+        "Co-operative Republic of Guyana",
+        "GY",
+        "Kooperative Republik Guyana"
+      ],
+      "centroid": [
+        -59,
+        5
+      ],
+      "mapFeatureId": "328",
+      "mapMarker": false,
+      "difficulty": 3,
+      "continentIds": [
+        "continent:south-america"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q10717",
+          "wikidataId": "Q10717",
+          "nameDe": "Georgetown",
+          "aliasesDe": [],
+          "centroid": [
+            -58.150833333,
+            6.805833333
+          ],
+          "difficulty": 3,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:hn",
+      "iso2": "HN",
+      "iso3": "HND",
+      "numericCode": "340",
+      "nameDe": "Honduras",
+      "aliasesDe": [
+        "HN",
+        "Republic of Honduras",
+        "Republica de Honduras",
+        "República de Honduras",
+        "Republik Honduras"
+      ],
+      "centroid": [
+        -86.5,
+        15
+      ],
+      "mapFeatureId": "340",
+      "mapMarker": false,
+      "difficulty": 3,
+      "continentIds": [
+        "continent:north-america"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q3238",
+          "wikidataId": "Q3238",
+          "nameDe": "Tegucigalpa",
+          "aliasesDe": [],
+          "centroid": [
+            -87.204705555,
+            14.105783333
+          ],
+          "difficulty": 3,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:hr",
+      "iso2": "HR",
+      "iso3": "HRV",
+      "numericCode": "191",
+      "nameDe": "Kroatien",
+      "aliasesDe": [
+        "Croatia",
+        "HR",
+        "Hrvatska",
+        "Republic of Croatia",
+        "Republik Kroatien",
+        "Republika Hrvatska"
+      ],
+      "centroid": [
+        15.5,
+        45.16666666
+      ],
+      "mapFeatureId": "191",
+      "mapMarker": false,
+      "difficulty": 3,
+      "continentIds": [
+        "continent:europe"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q1435",
+          "wikidataId": "Q1435",
+          "nameDe": "Zagreb",
+          "aliasesDe": [],
+          "centroid": [
+            15.977222222,
+            45.813055555
+          ],
+          "difficulty": 3,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:ht",
+      "iso2": "HT",
+      "iso3": "HTI",
+      "numericCode": "332",
+      "nameDe": "Haiti",
+      "aliasesDe": [
+        "HT",
+        "Repiblik Ayiti",
+        "Republic of Haiti",
+        "Republik Haiti",
+        "Republique d'Haiti",
+        "République d'Haïti"
+      ],
+      "centroid": [
+        -72.41666666,
+        19
+      ],
+      "mapFeatureId": "332",
+      "mapMarker": false,
+      "difficulty": 4,
+      "continentIds": [
+        "continent:north-america"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q34261",
+          "wikidataId": "Q34261",
+          "nameDe": "Port-au-Prince",
+          "aliasesDe": [],
+          "centroid": [
+            -72.340277777,
+            18.546944444
+          ],
+          "difficulty": 4,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:hu",
+      "iso2": "HU",
+      "iso3": "HUN",
+      "numericCode": "348",
+      "nameDe": "Ungarn",
+      "aliasesDe": [
+        "HU",
+        "Hungary"
+      ],
+      "centroid": [
+        20,
+        47
+      ],
+      "mapFeatureId": "348",
+      "mapMarker": false,
+      "difficulty": 3,
+      "continentIds": [
+        "continent:europe"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q1781",
+          "wikidataId": "Q1781",
+          "nameDe": "Budapest",
+          "aliasesDe": [],
+          "centroid": [
+            19.040833333,
+            47.498333333
+          ],
+          "difficulty": 3,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:id",
+      "iso2": "ID",
+      "iso3": "IDN",
+      "numericCode": "360",
+      "nameDe": "Indonesien",
+      "aliasesDe": [
+        "ID",
+        "Indonesia",
+        "Republic of Indonesia",
+        "Republik Indonesia",
+        "Republik Indonesien"
+      ],
+      "centroid": [
+        120,
+        -5
+      ],
+      "mapFeatureId": "360",
+      "mapMarker": false,
+      "difficulty": 1,
+      "continentIds": [
+        "continent:asia"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q3630",
+          "wikidataId": "Q3630",
+          "nameDe": "Jakarta",
+          "aliasesDe": [],
+          "centroid": [
+            106.826944444,
+            -6.175277777
+          ],
+          "difficulty": 1,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:ie",
+      "iso2": "IE",
+      "iso3": "IRL",
+      "numericCode": "372",
+      "nameDe": "Irland",
+      "aliasesDe": [
+        "Eire",
+        "Éire",
+        "IE",
+        "Ireland",
+        "Poblacht na hEireann",
+        "Poblacht na hÉireann",
+        "Republic of Ireland",
+        "Republik Irland"
+      ],
+      "centroid": [
+        -8,
+        53
+      ],
+      "mapFeatureId": "372",
+      "mapMarker": false,
+      "difficulty": 3,
+      "continentIds": [
+        "continent:europe"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q1761",
+          "wikidataId": "Q1761",
+          "nameDe": "Dublin",
+          "aliasesDe": [],
+          "centroid": [
+            -6.260277777,
+            53.349722222
+          ],
+          "difficulty": 3,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:il",
+      "iso2": "IL",
+      "iso3": "ISR",
+      "numericCode": "376",
+      "nameDe": "Israel",
+      "aliasesDe": [
+        "IL",
+        "Medinat Yisra'el",
+        "Medīnat Yisrā'el",
+        "Staat Israel",
+        "State of Israel"
+      ],
+      "centroid": [
+        35.13,
+        31.47
+      ],
+      "mapFeatureId": "376",
+      "mapMarker": false,
+      "difficulty": 4,
+      "continentIds": [
+        "continent:asia"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q1218",
+          "wikidataId": "Q1218",
+          "nameDe": "Jerusalem",
+          "aliasesDe": [],
+          "centroid": [
+            35.234156,
+            31.776679
+          ],
+          "difficulty": 4,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:in",
+      "iso2": "IN",
+      "iso3": "IND",
+      "numericCode": "356",
+      "nameDe": "Indien",
+      "aliasesDe": [
+        "Bharat",
+        "Bhārat",
+        "Bharat Ganrajya",
+        "IN",
+        "India",
+        "Republic of India",
+        "Republik Indien",
+        "இநதியா",
+        "இந்தியா"
+      ],
+      "centroid": [
+        77,
+        20
+      ],
+      "mapFeatureId": "356",
+      "mapMarker": false,
+      "difficulty": 1,
+      "continentIds": [
+        "continent:asia"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q987",
+          "wikidataId": "Q987",
+          "nameDe": "Neu-Delhi",
+          "aliasesDe": [
+            "New Delhi"
+          ],
+          "centroid": [
+            77.208888888,
+            28.613888888
+          ],
+          "difficulty": 1,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:iq",
+      "iso2": "IQ",
+      "iso3": "IRQ",
+      "numericCode": "368",
+      "nameDe": "Irak",
+      "aliasesDe": [
+        "IQ",
+        "Iraq",
+        "Jumhuriyyat al-‘Iraq",
+        "Jumhūriyyat al-‘Irāq",
+        "Republic of Iraq",
+        "Republik Irak"
+      ],
+      "centroid": [
+        44,
+        33
+      ],
+      "mapFeatureId": "368",
+      "mapMarker": false,
+      "difficulty": 2,
+      "continentIds": [
+        "continent:asia"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q1530",
+          "wikidataId": "Q1530",
+          "nameDe": "Bagdad",
+          "aliasesDe": [
+            "Baghdad"
+          ],
+          "centroid": [
+            44.366111111,
+            33.315277777
+          ],
+          "difficulty": 2,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:ir",
+      "iso2": "IR",
+      "iso3": "IRN",
+      "numericCode": "364",
+      "nameDe": "Iran",
+      "aliasesDe": [
+        "IR",
+        "Iran, Islamic Republic of",
+        "Islamic Republic of Iran",
+        "Islamische Republik Iran",
+        "Jomhuri-ye Eslami-ye Iran",
+        "Jomhuri-ye Eslāmi-ye Irān"
+      ],
+      "centroid": [
+        53,
+        32
+      ],
+      "mapFeatureId": "364",
+      "mapMarker": false,
+      "difficulty": 1,
+      "continentIds": [
+        "continent:asia"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q3616",
+          "wikidataId": "Q3616",
+          "nameDe": "Teheran",
+          "aliasesDe": [
+            "Tehran"
+          ],
+          "centroid": [
+            51.389722222,
+            35.688888888
+          ],
+          "difficulty": 1,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:is",
+      "iso2": "IS",
+      "iso3": "ISL",
+      "numericCode": "352",
+      "nameDe": "Island",
+      "aliasesDe": [
+        "Iceland",
+        "IS",
+        "Lyðveldið Island",
+        "Lýðveldið Ísland",
+        "Republic of Iceland"
+      ],
+      "centroid": [
+        -18,
+        65
+      ],
+      "mapFeatureId": "352",
+      "mapMarker": false,
+      "difficulty": 3,
+      "continentIds": [
+        "continent:europe"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q1764",
+          "wikidataId": "Q1764",
+          "nameDe": "Reykjavík",
+          "aliasesDe": [
+            "Reykjavik"
+          ],
+          "centroid": [
+            -21.935,
+            64.1475
+          ],
+          "difficulty": 3,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:it",
+      "iso2": "IT",
+      "iso3": "ITA",
+      "numericCode": "380",
+      "nameDe": "Italien",
+      "aliasesDe": [
+        "IT",
+        "Italian Republic",
+        "Italienische Republik",
+        "Italy",
+        "Repubblica italiana"
+      ],
+      "centroid": [
+        12.83333333,
+        42.83333333
+      ],
+      "mapFeatureId": "380",
+      "mapMarker": false,
+      "difficulty": 2,
+      "continentIds": [
+        "continent:europe"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q220",
+          "wikidataId": "Q220",
+          "nameDe": "Rom",
+          "aliasesDe": [
+            "Rome"
+          ],
+          "centroid": [
+            12.482777777,
+            41.893055555
+          ],
+          "difficulty": 2,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:jm",
+      "iso2": "JM",
+      "iso3": "JAM",
+      "numericCode": "388",
+      "nameDe": "Jamaika",
+      "aliasesDe": [
+        "Jamaica",
+        "JM"
+      ],
+      "centroid": [
+        -77.5,
+        18.25
+      ],
+      "mapFeatureId": "388",
+      "mapMarker": false,
+      "difficulty": 4,
+      "continentIds": [
+        "continent:north-america"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q34692",
+          "wikidataId": "Q34692",
+          "nameDe": "Kingston",
+          "aliasesDe": [],
+          "centroid": [
+            -76.793055555,
+            17.971388888
+          ],
+          "difficulty": 4,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:jo",
+      "iso2": "JO",
+      "iso3": "JOR",
+      "numericCode": "400",
+      "nameDe": "Jordanien",
+      "aliasesDe": [
+        "al-Mamlakah al-Urduniyah al-Hashimiyah",
+        "al-Mamlakah al-Urdunīyah al-Hāshimīyah",
+        "Haschemitisches Konigreich Jordanien",
+        "Haschemitisches Königreich Jordanien",
+        "Hashemite Kingdom of Jordan",
+        "JO",
+        "Jordan"
+      ],
+      "centroid": [
+        36,
+        31
+      ],
+      "mapFeatureId": "400",
+      "mapMarker": false,
+      "difficulty": 3,
+      "continentIds": [
+        "continent:asia"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q3805",
+          "wikidataId": "Q3805",
+          "nameDe": "Amman",
+          "aliasesDe": [],
+          "centroid": [
+            35.926084,
+            31.930983
+          ],
+          "difficulty": 3,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:jp",
+      "iso2": "JP",
+      "iso3": "JPN",
+      "numericCode": "392",
+      "nameDe": "Japan",
+      "aliasesDe": [
+        "JP",
+        "Nihon",
+        "Nippon"
+      ],
+      "centroid": [
+        138,
+        36
+      ],
+      "mapFeatureId": "392",
+      "mapMarker": false,
+      "difficulty": 2,
+      "continentIds": [
+        "continent:asia"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q1490",
+          "wikidataId": "Q1490",
+          "nameDe": "Tokio",
+          "aliasesDe": [
+            "Tokyo"
+          ],
+          "centroid": [
+            139.691666666,
+            35.689444444
+          ],
+          "difficulty": 2,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:ke",
+      "iso2": "KE",
+      "iso3": "KEN",
+      "numericCode": "404",
+      "nameDe": "Kenia",
+      "aliasesDe": [
+        "Jamhuri ya Kenya",
+        "KE",
+        "Kenya",
+        "Republic of Kenya",
+        "Republik Kenia"
+      ],
+      "centroid": [
+        38,
+        1
+      ],
+      "mapFeatureId": "404",
+      "mapMarker": false,
+      "difficulty": 2,
+      "continentIds": [
+        "continent:africa"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q3870",
+          "wikidataId": "Q3870",
+          "nameDe": "Nairobi",
+          "aliasesDe": [],
+          "centroid": [
+            36.817222222,
+            -1.286388888
+          ],
+          "difficulty": 2,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:kg",
+      "iso2": "KG",
+      "iso3": "KGZ",
+      "numericCode": "417",
+      "nameDe": "Kirgisistan",
+      "aliasesDe": [
+        "KG",
+        "Kirgisische Republik",
+        "Kyrgyz Republic",
+        "Kyrgyz Respublikasy",
+        "Kyrgyzstan",
+        "Киргизия",
+        "Кыргыз Республикасы"
+      ],
+      "centroid": [
+        75,
+        41
+      ],
+      "mapFeatureId": "417",
+      "mapMarker": false,
+      "difficulty": 3,
+      "continentIds": [
+        "continent:asia"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q9361",
+          "wikidataId": "Q9361",
+          "nameDe": "Bischkek",
+          "aliasesDe": [
+            "Bishkek"
+          ],
+          "centroid": [
+            74.566666666,
+            42.866666666
+          ],
+          "difficulty": 3,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:kh",
+      "iso2": "KH",
+      "iso3": "KHM",
+      "numericCode": "116",
+      "nameDe": "Kambodscha",
+      "aliasesDe": [
+        "Cambodia",
+        "KH",
+        "Kingdom of Cambodia",
+        "Konigreich Kambodscha",
+        "Königreich Kambodscha"
+      ],
+      "centroid": [
+        105,
+        13
+      ],
+      "mapFeatureId": "116",
+      "mapMarker": false,
+      "difficulty": 3,
+      "continentIds": [
+        "continent:asia"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q1850",
+          "wikidataId": "Q1850",
+          "nameDe": "Phnom Penh",
+          "aliasesDe": [],
+          "centroid": [
+            104.921027777,
+            11.569583333
+          ],
+          "difficulty": 3,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:ki",
+      "iso2": "KI",
+      "iso3": "KIR",
+      "numericCode": "296",
+      "nameDe": "Kiribati",
+      "aliasesDe": [
+        "Independent and Sovereign Republic of Kiribati",
+        "KI",
+        "Republic of Kiribati",
+        "Republik Kiribati",
+        "Ribaberiki Kiribati"
+      ],
+      "centroid": [
+        173,
+        1.41666666
+      ],
+      "mapFeatureId": "296",
+      "mapMarker": true,
+      "difficulty": 5,
+      "continentIds": [
+        "continent:oceania"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q131233",
+          "wikidataId": "Q131233",
+          "nameDe": "South Tarawa",
+          "aliasesDe": [],
+          "centroid": [
+            172.966666666,
+            1.333333333
+          ],
+          "difficulty": 5,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:km",
+      "iso2": "KM",
+      "iso3": "COM",
+      "numericCode": "174",
+      "nameDe": "Komoren",
+      "aliasesDe": [
+        "al-Ittihad al-Qumuri",
+        "al-Ittiḥād al-Qumurī",
+        "Comoros",
+        "KM",
+        "Udzima wa Komori",
+        "Union der Komoren",
+        "Union des Comores",
+        "Union of the Comoros"
+      ],
+      "centroid": [
+        44.25,
+        -12.16666666
+      ],
+      "mapFeatureId": "174",
+      "mapMarker": true,
+      "difficulty": 5,
+      "continentIds": [
+        "continent:africa"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q3901",
+          "wikidataId": "Q3901",
+          "nameDe": "Moroni",
+          "aliasesDe": [],
+          "centroid": [
+            43.253611111,
+            -11.703611111
+          ],
+          "difficulty": 5,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:kn",
+      "iso2": "KN",
+      "iso3": "KNA",
+      "numericCode": "659",
+      "nameDe": "St. Kitts und Nevis",
+      "aliasesDe": [
+        "Federation of Saint Christopher and Nevis",
+        "Foderation von St. Kitts und Nevis",
+        "Föderation von St. Kitts und Nevis",
+        "KN",
+        "Saint Kitts and Nevis"
+      ],
+      "centroid": [
+        -62.75,
+        17.33333333
+      ],
+      "mapFeatureId": "659",
+      "mapMarker": true,
+      "difficulty": 5,
+      "continentIds": [
+        "continent:north-america"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q41295",
+          "wikidataId": "Q41295",
+          "nameDe": "Basseterre",
+          "aliasesDe": [],
+          "centroid": [
+            -62.734166666,
+            17.298333333
+          ],
+          "difficulty": 5,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:kp",
+      "iso2": "KP",
+      "iso3": "PRK",
+      "numericCode": "408",
+      "nameDe": "Nordkorea",
+      "aliasesDe": [
+        "Choson Minjujuui Inmin Konghwaguk",
+        "Chosŏn Minjujuŭi Inmin Konghwaguk",
+        "Democratic People's Republic of Korea",
+        "Demokratische Volksrepublik Korea",
+        "DPRK",
+        "Korea, Democratic People's Republic of",
+        "KP",
+        "North Korea",
+        "북조선",
+        "북조선",
+        "북한",
+        "북한",
+        "조선민주주의인민공화국",
+        "조선민주주의인민공화국"
+      ],
+      "centroid": [
+        127,
+        40
+      ],
+      "mapFeatureId": "408",
+      "mapMarker": false,
+      "difficulty": 3,
+      "continentIds": [
+        "continent:asia"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q18808",
+          "wikidataId": "Q18808",
+          "nameDe": "Pjöngjang",
+          "aliasesDe": [
+            "Pjongjang",
+            "Pyongyang"
+          ],
+          "centroid": [
+            125.7475,
+            39.016666666
+          ],
+          "difficulty": 3,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:kr",
+      "iso2": "KR",
+      "iso3": "KOR",
+      "numericCode": "410",
+      "nameDe": "Südkorea",
+      "aliasesDe": [
+        "Korea, Republic of",
+        "KR",
+        "Republic of Korea",
+        "Republik Korea",
+        "South Korea",
+        "Sudkorea",
+        "남조선",
+        "남조선",
+        "남한",
+        "남한"
+      ],
+      "centroid": [
+        127.5,
+        37
+      ],
+      "mapFeatureId": "410",
+      "mapMarker": false,
+      "difficulty": 3,
+      "continentIds": [
+        "continent:asia"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q8684",
+          "wikidataId": "Q8684",
+          "nameDe": "Seoul",
+          "aliasesDe": [],
+          "centroid": [
+            126.99,
+            37.56
+          ],
+          "difficulty": 3,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:kw",
+      "iso2": "KW",
+      "iso3": "KWT",
+      "numericCode": "414",
+      "nameDe": "Kuwait",
+      "aliasesDe": [
+        "Dawlat al-Kuwait",
+        "KW",
+        "Staat Kuwait",
+        "State of Kuwait"
+      ],
+      "centroid": [
+        45.75,
+        29.5
+      ],
+      "mapFeatureId": "414",
+      "mapMarker": false,
+      "difficulty": 4,
+      "continentIds": [
+        "continent:asia"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q35178",
+          "wikidataId": "Q35178",
+          "nameDe": "Kuweit-Stadt",
+          "aliasesDe": [
+            "Kuwait City"
+          ],
+          "centroid": [
+            47.98,
+            29.375
+          ],
+          "difficulty": 4,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:kz",
+      "iso2": "KZ",
+      "iso3": "KAZ",
+      "numericCode": "398",
+      "nameDe": "Kasachstan",
+      "aliasesDe": [
+        "Kazakhstan",
+        "KZ",
+        "Qazaqstan",
+        "Qazaqstan Respublikası",
+        "Qazaqstan Respublïkası",
+        "Republic of Kazakhstan",
+        "Republik Kasachstan",
+        "Respublika Kazakhstan",
+        "Казахстан",
+        "Қазақстан Республикасы",
+        "Республика Казахстан"
+      ],
+      "centroid": [
+        68,
+        48
+      ],
+      "mapFeatureId": "398",
+      "mapMarker": false,
+      "difficulty": 1,
+      "continentIds": [
+        "continent:europe",
+        "continent:asia"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q1520",
+          "wikidataId": "Q1520",
+          "nameDe": "Astana",
+          "aliasesDe": [],
+          "centroid": [
+            71.433333333,
+            51.133333333
+          ],
+          "difficulty": 1,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:la",
+      "iso2": "LA",
+      "iso3": "LAO",
+      "numericCode": "418",
+      "nameDe": "Laos",
+      "aliasesDe": [
+        "Demokratische Volksrepublik Laos",
+        "LA",
+        "Lao",
+        "Lao People's Democratic Republic",
+        "Sathalanalat Paxathipatai Paxaxon Lao"
+      ],
+      "centroid": [
+        105,
+        18
+      ],
+      "mapFeatureId": "418",
+      "mapMarker": false,
+      "difficulty": 3,
+      "continentIds": [
+        "continent:asia"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q9326",
+          "wikidataId": "Q9326",
+          "nameDe": "Vientiane",
+          "aliasesDe": [],
+          "centroid": [
+            102.63,
+            17.98
+          ],
+          "difficulty": 3,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:lb",
+      "iso2": "LB",
+      "iso3": "LBN",
+      "numericCode": "422",
+      "nameDe": "Libanon",
+      "aliasesDe": [
+        "Al-Jumhuriyah Al-Libnaniyah",
+        "Al-Jumhūrīyah Al-Libnānīyah",
+        "LB",
+        "Lebanese Republic",
+        "Lebanon",
+        "Libanesische Republik"
+      ],
+      "centroid": [
+        35.83333333,
+        33.83333333
+      ],
+      "mapFeatureId": "422",
+      "mapMarker": false,
+      "difficulty": 4,
+      "continentIds": [
+        "continent:asia"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q3820",
+          "wikidataId": "Q3820",
+          "nameDe": "Beirut",
+          "aliasesDe": [],
+          "centroid": [
+            35.513055555,
+            33.886944444
+          ],
+          "difficulty": 4,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:lc",
+      "iso2": "LC",
+      "iso3": "LCA",
+      "numericCode": "662",
+      "nameDe": "St. Lucia",
+      "aliasesDe": [
+        "LC",
+        "Saint Lucia"
+      ],
+      "centroid": [
+        -60.96666666,
+        13.88333333
+      ],
+      "mapFeatureId": "662",
+      "mapMarker": true,
+      "difficulty": 5,
+      "continentIds": [
+        "continent:north-america"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q41699",
+          "wikidataId": "Q41699",
+          "nameDe": "Castries",
+          "aliasesDe": [],
+          "centroid": [
+            -60.989444444,
+            14.010833333
+          ],
+          "difficulty": 5,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:li",
+      "iso2": "LI",
+      "iso3": "LIE",
+      "numericCode": "438",
+      "nameDe": "Liechtenstein",
+      "aliasesDe": [
+        "Furstentum Liechtenstein",
+        "Fürstentum Liechtenstein",
+        "LI",
+        "Principality of Liechtenstein"
+      ],
+      "centroid": [
+        9.53333333,
+        47.26666666
+      ],
+      "mapFeatureId": "438",
+      "mapMarker": true,
+      "difficulty": 5,
+      "continentIds": [
+        "continent:europe"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q1844",
+          "wikidataId": "Q1844",
+          "nameDe": "Vaduz",
+          "aliasesDe": [],
+          "centroid": [
+            9.522222222,
+            47.140555555
+          ],
+          "difficulty": 5,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:lk",
+      "iso2": "LK",
+      "iso3": "LKA",
+      "numericCode": "144",
+      "nameDe": "Sri Lanka",
+      "aliasesDe": [
+        "Democratic Socialist Republic of Sri Lanka",
+        "Demokratische Sozialistische Republik Sri Lanka",
+        "ilankai",
+        "ilaṅkai",
+        "LK"
+      ],
+      "centroid": [
+        81,
+        7
+      ],
+      "mapFeatureId": "144",
+      "mapMarker": false,
+      "difficulty": 3,
+      "continentIds": [
+        "continent:asia"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q35381",
+          "wikidataId": "Q35381",
+          "nameDe": "Colombo",
+          "aliasesDe": [],
+          "centroid": [
+            79.860555555,
+            6.926666666
+          ],
+          "difficulty": 3,
+          "role": "executive_and_judicial_seat",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        },
+        {
+          "id": "city:wd-q41963",
+          "wikidataId": "Q41963",
+          "nameDe": "Sri Jayewardenepura Kotte",
+          "aliasesDe": [],
+          "centroid": [
+            79.916388888,
+            6.9
+          ],
+          "difficulty": 3,
+          "role": "legislative_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:lr",
+      "iso2": "LR",
+      "iso3": "LBR",
+      "numericCode": "430",
+      "nameDe": "Liberia",
+      "aliasesDe": [
+        "LR",
+        "Republic of Liberia",
+        "Republik Liberia"
+      ],
+      "centroid": [
+        -9.5,
+        6.5
+      ],
+      "mapFeatureId": "430",
+      "mapMarker": false,
+      "difficulty": 3,
+      "continentIds": [
+        "continent:africa"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q3748",
+          "wikidataId": "Q3748",
+          "nameDe": "Monrovia",
+          "aliasesDe": [],
+          "centroid": [
+            -10.804722222,
+            6.310555555
+          ],
+          "difficulty": 3,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:ls",
+      "iso2": "LS",
+      "iso3": "LSO",
+      "numericCode": "426",
+      "nameDe": "Lesotho",
+      "aliasesDe": [
+        "Kingdom of Lesotho",
+        "Konigreich Lesotho",
+        "Königreich Lesotho",
+        "LS",
+        "Muso oa Lesotho"
+      ],
+      "centroid": [
+        28.5,
+        -29.5
+      ],
+      "mapFeatureId": "426",
+      "mapMarker": false,
+      "difficulty": 4,
+      "continentIds": [
+        "continent:africa"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q3909",
+          "wikidataId": "Q3909",
+          "nameDe": "Maseru",
+          "aliasesDe": [],
+          "centroid": [
+            27.48,
+            -29.31
+          ],
+          "difficulty": 4,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:lt",
+      "iso2": "LT",
+      "iso3": "LTU",
+      "numericCode": "440",
+      "nameDe": "Litauen",
+      "aliasesDe": [
+        "Lietuvos Respublika",
+        "Lithuania",
+        "LT",
+        "Republic of Lithuania",
+        "Republik Litauen"
+      ],
+      "centroid": [
+        24,
+        56
+      ],
+      "mapFeatureId": "440",
+      "mapMarker": false,
+      "difficulty": 3,
+      "continentIds": [
+        "continent:europe"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q216",
+          "wikidataId": "Q216",
+          "nameDe": "Vilnius",
+          "aliasesDe": [],
+          "centroid": [
+            25.28,
+            54.687222222
+          ],
+          "difficulty": 3,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:lu",
+      "iso2": "LU",
+      "iso3": "LUX",
+      "numericCode": "442",
+      "nameDe": "Luxemburg",
+      "aliasesDe": [
+        "Grand Duchy of Luxembourg",
+        "Grand-Duche de Luxembourg",
+        "Grand-Duché de Luxembourg",
+        "Großherzogtum Luxemburg",
+        "Großherzogtum Luxemburg,",
+        "Groussherzogtum Letzebuerg",
+        "Groussherzogtum Lëtzebuerg",
+        "LU",
+        "Luxembourg"
+      ],
+      "centroid": [
+        6.16666666,
+        49.75
+      ],
+      "mapFeatureId": "442",
+      "mapMarker": true,
+      "difficulty": 5,
+      "continentIds": [
+        "continent:europe"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q1842",
+          "wikidataId": "Q1842",
+          "nameDe": "Luxemburg",
+          "aliasesDe": [
+            "Luxembourg"
+          ],
+          "centroid": [
+            6.13,
+            49.611388888
+          ],
+          "difficulty": 5,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:lv",
+      "iso2": "LV",
+      "iso3": "LVA",
+      "numericCode": "428",
+      "nameDe": "Lettland",
+      "aliasesDe": [
+        "Latvia",
+        "Latvijas Republika",
+        "LV",
+        "Republic of Latvia",
+        "Republik Lettland"
+      ],
+      "centroid": [
+        25,
+        57
+      ],
+      "mapFeatureId": "428",
+      "mapMarker": false,
+      "difficulty": 3,
+      "continentIds": [
+        "continent:europe"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q1773",
+          "wikidataId": "Q1773",
+          "nameDe": "Riga",
+          "aliasesDe": [],
+          "centroid": [
+            24.106944444,
+            56.9475
+          ],
+          "difficulty": 3,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:ly",
+      "iso2": "LY",
+      "iso3": "LBY",
+      "numericCode": "434",
+      "nameDe": "Libyen",
+      "aliasesDe": [
+        "Dawlat Libya",
+        "Libya",
+        "LY",
+        "Staat Libyen",
+        "State of Libya"
+      ],
+      "centroid": [
+        17,
+        25
+      ],
+      "mapFeatureId": "434",
+      "mapMarker": false,
+      "difficulty": 1,
+      "continentIds": [
+        "continent:africa"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q3579",
+          "wikidataId": "Q3579",
+          "nameDe": "Tripolis",
+          "aliasesDe": [
+            "Tripoli"
+          ],
+          "centroid": [
+            13.1875,
+            32.8875
+          ],
+          "difficulty": 1,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:ma",
+      "iso2": "MA",
+      "iso3": "MAR",
+      "numericCode": "504",
+      "nameDe": "Marokko",
+      "aliasesDe": [
+        "Al-Mamlakah al-Magribiyah",
+        "Al-Mamlakah al-Maġribiyah",
+        "Kingdom of Morocco",
+        "Konigreich Marokko",
+        "Königreich Marokko",
+        "MA",
+        "Morocco"
+      ],
+      "centroid": [
+        -5,
+        32
+      ],
+      "mapFeatureId": "504",
+      "mapMarker": false,
+      "difficulty": 2,
+      "continentIds": [
+        "continent:africa"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q3551",
+          "wikidataId": "Q3551",
+          "nameDe": "Rabat",
+          "aliasesDe": [],
+          "centroid": [
+            -6.841388888,
+            34.021111111
+          ],
+          "difficulty": 2,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:mc",
+      "iso2": "MC",
+      "iso3": "MCO",
+      "numericCode": "492",
+      "nameDe": "Monaco",
+      "aliasesDe": [
+        "Furstentum Monaco",
+        "Fürstentum Monaco",
+        "MC",
+        "Principality of Monaco",
+        "Principaute de Monaco",
+        "Principauté de Monaco"
+      ],
+      "centroid": [
+        7.4,
+        43.73333333
+      ],
+      "mapFeatureId": "492",
+      "mapMarker": true,
+      "difficulty": 5,
+      "continentIds": [
+        "continent:europe"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q235",
+          "wikidataId": "Q235",
+          "nameDe": "Monaco",
+          "aliasesDe": [],
+          "centroid": [
+            7.42,
+            43.731111111
+          ],
+          "difficulty": 5,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:md",
+      "iso2": "MD",
+      "iso3": "MDA",
+      "numericCode": "498",
+      "nameDe": "Moldau",
+      "aliasesDe": [
+        "MD",
+        "Moldawien",
+        "Moldova",
+        "Moldova, Republic of",
+        "Republic of Moldova",
+        "Republica Moldova",
+        "Republik Moldau"
+      ],
+      "centroid": [
+        29,
+        47
+      ],
+      "mapFeatureId": "498",
+      "mapMarker": false,
+      "difficulty": 4,
+      "continentIds": [
+        "continent:europe"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q21197",
+          "wikidataId": "Q21197",
+          "nameDe": "Chișinău / Kischinjow",
+          "aliasesDe": [
+            "Chisinau",
+            "Chișinău",
+            "Chisinau / Kischinjow"
+          ],
+          "centroid": [
+            28.835277777,
+            47.022777777
+          ],
+          "difficulty": 4,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:me",
+      "iso2": "ME",
+      "iso3": "MNE",
+      "numericCode": "499",
+      "nameDe": "Montenegro",
+      "aliasesDe": [
+        "Crna Gora",
+        "ME"
+      ],
+      "centroid": [
+        19.3,
+        42.5
+      ],
+      "mapFeatureId": "499",
+      "mapMarker": false,
+      "difficulty": 4,
+      "continentIds": [
+        "continent:europe"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q23564",
+          "wikidataId": "Q23564",
+          "nameDe": "Podgorica",
+          "aliasesDe": [],
+          "centroid": [
+            19.262777777,
+            42.441388888
+          ],
+          "difficulty": 4,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:mg",
+      "iso2": "MG",
+      "iso3": "MDG",
+      "numericCode": "450",
+      "nameDe": "Madagaskar",
+      "aliasesDe": [
+        "Madagascar",
+        "MG",
+        "Repoblikan'i Madagasikara",
+        "Republic of Madagascar",
+        "Republik Madagaskar",
+        "Republique de Madagascar",
+        "République de Madagascar"
+      ],
+      "centroid": [
+        47,
+        -20
+      ],
+      "mapFeatureId": "450",
+      "mapMarker": false,
+      "difficulty": 2,
+      "continentIds": [
+        "continent:africa"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q3915",
+          "wikidataId": "Q3915",
+          "nameDe": "Antananarivo",
+          "aliasesDe": [],
+          "centroid": [
+            47.525,
+            -18.91
+          ],
+          "difficulty": 2,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:mh",
+      "iso2": "MH",
+      "iso3": "MHL",
+      "numericCode": "584",
+      "nameDe": "Marshallinseln",
+      "aliasesDe": [
+        "Aolepan Aorokin Majel",
+        "Aolepān Aorōkin M̧ajeļ",
+        "Marshall Islands",
+        "MH",
+        "Republic of the Marshall Islands",
+        "Republik Marshallinseln"
+      ],
+      "centroid": [
+        168,
+        9
+      ],
+      "mapFeatureId": "584",
+      "mapMarker": true,
+      "difficulty": 5,
+      "continentIds": [
+        "continent:oceania"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q12919",
+          "wikidataId": "Q12919",
+          "nameDe": "Majuro",
+          "aliasesDe": [],
+          "centroid": [
+            171.3802,
+            7.0918
+          ],
+          "difficulty": 5,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:mk",
+      "iso2": "MK",
+      "iso3": "MKD",
+      "numericCode": "807",
+      "nameDe": "Nordmazedonien",
+      "aliasesDe": [
+        "Macedonia",
+        "Macedonia, The Former Yugoslav Republic of",
+        "MK",
+        "North Macedonia",
+        "Republic of North Macedonia",
+        "Republik Nordmazedonien",
+        "The former Yugoslav Republic of Macedonia",
+        "Република Северна Македонија"
+      ],
+      "centroid": [
+        22,
+        41.83333333
+      ],
+      "mapFeatureId": "807",
+      "mapMarker": false,
+      "difficulty": 4,
+      "continentIds": [
+        "continent:europe"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q384",
+          "wikidataId": "Q384",
+          "nameDe": "Skopje",
+          "aliasesDe": [],
+          "centroid": [
+            21.431666666,
+            41.996111111
+          ],
+          "difficulty": 4,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:ml",
+      "iso2": "ML",
+      "iso3": "MLI",
+      "numericCode": "466",
+      "nameDe": "Mali",
+      "aliasesDe": [
+        "ML",
+        "Republic of Mali",
+        "Republik Mali",
+        "Republique du Mali",
+        "République du Mali"
+      ],
+      "centroid": [
+        -4,
+        17
+      ],
+      "mapFeatureId": "466",
+      "mapMarker": false,
+      "difficulty": 1,
+      "continentIds": [
+        "continent:africa"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q3703",
+          "wikidataId": "Q3703",
+          "nameDe": "Bamako",
+          "aliasesDe": [],
+          "centroid": [
+            -7.992222222,
+            12.645833333
+          ],
+          "difficulty": 1,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:mm",
+      "iso2": "MM",
+      "iso3": "MMR",
+      "numericCode": "104",
+      "nameDe": "Myanmar",
+      "aliasesDe": [
+        "Burma",
+        "MM",
+        "Pyidaunzu Thanmada Myama Nainngandaw",
+        "Pyidaunzu Thanmăda Myăma Nainngandaw",
+        "Republic of the Union of Myanmar",
+        "Republik der Union Myanmar"
+      ],
+      "centroid": [
+        98,
+        22
+      ],
+      "mapFeatureId": "104",
+      "mapMarker": false,
+      "difficulty": 2,
+      "continentIds": [
+        "continent:asia"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q37400",
+          "wikidataId": "Q37400",
+          "nameDe": "Naypyidaw",
+          "aliasesDe": [],
+          "centroid": [
+            96.115,
+            19.7475
+          ],
+          "difficulty": 2,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:mn",
+      "iso2": "MN",
+      "iso3": "MNG",
+      "numericCode": "496",
+      "nameDe": "Mongolei",
+      "aliasesDe": [
+        "MN",
+        "Mongolia"
+      ],
+      "centroid": [
+        105,
+        46
+      ],
+      "mapFeatureId": "496",
+      "mapMarker": false,
+      "difficulty": 1,
+      "continentIds": [
+        "continent:asia"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q23430",
+          "wikidataId": "Q23430",
+          "nameDe": "Ulaanbaatar",
+          "aliasesDe": [
+            "Ulan Bator"
+          ],
+          "centroid": [
+            106.905515,
+            47.921357
+          ],
+          "difficulty": 1,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:mr",
+      "iso2": "MR",
+      "iso3": "MRT",
+      "numericCode": "478",
+      "nameDe": "Mauretanien",
+      "aliasesDe": [
+        "al-Jumhuriyyah al-Islamiyyah al-Muritaniyyah",
+        "al-Jumhūriyyah al-ʾIslāmiyyah al-Mūrītāniyyah",
+        "Islamic Republic of Mauritania",
+        "Islamische Republik Mauretanien",
+        "Mauritania",
+        "MR"
+      ],
+      "centroid": [
+        -12,
+        20
+      ],
+      "mapFeatureId": "478",
+      "mapMarker": false,
+      "difficulty": 1,
+      "continentIds": [
+        "continent:africa"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q3688",
+          "wikidataId": "Q3688",
+          "nameDe": "Nouakchott",
+          "aliasesDe": [],
+          "centroid": [
+            -15.9785,
+            18.08581
+          ],
+          "difficulty": 1,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:mt",
+      "iso2": "MT",
+      "iso3": "MLT",
+      "numericCode": "470",
+      "nameDe": "Malta",
+      "aliasesDe": [
+        "MT",
+        "Repubblika ta' Malta",
+        "Republic of Malta",
+        "Republik Malta"
+      ],
+      "centroid": [
+        14.58333333,
+        35.83333333
+      ],
+      "mapFeatureId": "470",
+      "mapMarker": true,
+      "difficulty": 5,
+      "continentIds": [
+        "continent:europe"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q23800",
+          "wikidataId": "Q23800",
+          "nameDe": "Valletta",
+          "aliasesDe": [],
+          "centroid": [
+            14.5125,
+            35.897777777
+          ],
+          "difficulty": 5,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:mu",
+      "iso2": "MU",
+      "iso3": "MUS",
+      "numericCode": "480",
+      "nameDe": "Mauritius",
+      "aliasesDe": [
+        "MU",
+        "Republic of Mauritius",
+        "Republik Mauritius",
+        "Republique de Maurice",
+        "République de Maurice"
+      ],
+      "centroid": [
+        57.55,
+        -20.28333333
+      ],
+      "mapFeatureId": "480",
+      "mapMarker": true,
+      "difficulty": 5,
+      "continentIds": [
+        "continent:africa"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q3929",
+          "wikidataId": "Q3929",
+          "nameDe": "Port Louis",
+          "aliasesDe": [],
+          "centroid": [
+            57.498888888,
+            -20.161944444
+          ],
+          "difficulty": 5,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:mv",
+      "iso2": "MV",
+      "iso3": "MDV",
+      "numericCode": "462",
+      "nameDe": "Malediven",
+      "aliasesDe": [
+        "Dhivehi Raajjeyge Jumhooriyya",
+        "Maldive Islands",
+        "Maldives",
+        "MV",
+        "Republic of the Maldives",
+        "Republik Malediven"
+      ],
+      "centroid": [
+        73,
+        3.25
+      ],
+      "mapFeatureId": "462",
+      "mapMarker": true,
+      "difficulty": 5,
+      "continentIds": [
+        "continent:asia"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q9347",
+          "wikidataId": "Q9347",
+          "nameDe": "Malé",
+          "aliasesDe": [
+            "Male"
+          ],
+          "centroid": [
+            73.508333333,
+            4.175
+          ],
+          "difficulty": 5,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:mw",
+      "iso2": "MW",
+      "iso3": "MWI",
+      "numericCode": "454",
+      "nameDe": "Malawi",
+      "aliasesDe": [
+        "MW",
+        "Republic of Malawi",
+        "Republik Malawi"
+      ],
+      "centroid": [
+        34,
+        -13.5
+      ],
+      "mapFeatureId": "454",
+      "mapMarker": false,
+      "difficulty": 3,
+      "continentIds": [
+        "continent:africa"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q3876",
+          "wikidataId": "Q3876",
+          "nameDe": "Lilongwe",
+          "aliasesDe": [],
+          "centroid": [
+            33.768055555,
+            -13.986388888
+          ],
+          "difficulty": 3,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:mx",
+      "iso2": "MX",
+      "iso3": "MEX",
+      "numericCode": "484",
+      "nameDe": "Mexiko",
+      "aliasesDe": [
+        "Estados Unidos Mexicanos",
+        "Mexicanos",
+        "Mexico",
+        "MX",
+        "United Mexican States",
+        "Vereinigte Mexikanische Staaten"
+      ],
+      "centroid": [
+        -102,
+        23
+      ],
+      "mapFeatureId": "484",
+      "mapMarker": false,
+      "difficulty": 1,
+      "continentIds": [
+        "continent:north-america"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q1489",
+          "wikidataId": "Q1489",
+          "nameDe": "Mexiko-Stadt",
+          "aliasesDe": [
+            "Mexico City"
+          ],
+          "centroid": [
+            -99.13589,
+            19.353773
+          ],
+          "difficulty": 1,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:my",
+      "iso2": "MY",
+      "iso3": "MYS",
+      "numericCode": "458",
+      "nameDe": "Malaysia",
+      "aliasesDe": [
+        "MY"
+      ],
+      "centroid": [
+        112.5,
+        2.5
+      ],
+      "mapFeatureId": "458",
+      "mapMarker": false,
+      "difficulty": 2,
+      "continentIds": [
+        "continent:asia"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q1865",
+          "wikidataId": "Q1865",
+          "nameDe": "Kuala Lumpur",
+          "aliasesDe": [],
+          "centroid": [
+            101.695277777,
+            3.147777777
+          ],
+          "difficulty": 2,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:mz",
+      "iso2": "MZ",
+      "iso3": "MOZ",
+      "numericCode": "508",
+      "nameDe": "Mosambik",
+      "aliasesDe": [
+        "Mozambique",
+        "MZ",
+        "Republic of Mozambique",
+        "Republica de Mocambique",
+        "República de Moçambique",
+        "Republik Mosambik"
+      ],
+      "centroid": [
+        35,
+        -18.25
+      ],
+      "mapFeatureId": "508",
+      "mapMarker": false,
+      "difficulty": 2,
+      "continentIds": [
+        "continent:africa"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q3889",
+          "wikidataId": "Q3889",
+          "nameDe": "Maputo",
+          "aliasesDe": [],
+          "centroid": [
+            32.573333333,
+            -25.968888888
+          ],
+          "difficulty": 2,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:na",
+      "iso2": "NA",
+      "iso3": "NAM",
+      "numericCode": "516",
+      "nameDe": "Namibia",
+      "aliasesDe": [
+        "NA",
+        "Namibie",
+        "Namibië",
+        "Republic of Namibia",
+        "Republik Namibia"
+      ],
+      "centroid": [
+        17,
+        -22
+      ],
+      "mapFeatureId": "516",
+      "mapMarker": false,
+      "difficulty": 2,
+      "continentIds": [
+        "continent:africa"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q3935",
+          "wikidataId": "Q3935",
+          "nameDe": "Windhoek",
+          "aliasesDe": [],
+          "centroid": [
+            17.083611111,
+            -22.57
+          ],
+          "difficulty": 2,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:ne",
+      "iso2": "NE",
+      "iso3": "NER",
+      "numericCode": "562",
+      "nameDe": "Niger",
+      "aliasesDe": [
+        "NE",
+        "Nijar",
+        "Republic of Niger",
+        "Republik Niger"
+      ],
+      "centroid": [
+        8,
+        16
+      ],
+      "mapFeatureId": "562",
+      "mapMarker": false,
+      "difficulty": 1,
+      "continentIds": [
+        "continent:africa"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q3674",
+          "wikidataId": "Q3674",
+          "nameDe": "Niamey",
+          "aliasesDe": [],
+          "centroid": [
+            2.1175,
+            13.515
+          ],
+          "difficulty": 1,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:ng",
+      "iso2": "NG",
+      "iso3": "NGA",
+      "numericCode": "566",
+      "nameDe": "Nigeria",
+      "aliasesDe": [
+        "Bundesrepublik Nigeria",
+        "Federal Republic of Nigeria",
+        "Naijiria",
+        "Naíjíríà",
+        "NG",
+        "Nijeriya"
+      ],
+      "centroid": [
+        8,
+        10
+      ],
+      "mapFeatureId": "566",
+      "mapMarker": false,
+      "difficulty": 2,
+      "continentIds": [
+        "continent:africa"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q3787",
+          "wikidataId": "Q3787",
+          "nameDe": "Abuja",
+          "aliasesDe": [],
+          "centroid": [
+            7.491388888,
+            9.055555555
+          ],
+          "difficulty": 2,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:ni",
+      "iso2": "NI",
+      "iso3": "NIC",
+      "numericCode": "558",
+      "nameDe": "Nicaragua",
+      "aliasesDe": [
+        "NI",
+        "Republic of Nicaragua",
+        "Republica de Nicaragua",
+        "República de Nicaragua",
+        "Republik Nicaragua"
+      ],
+      "centroid": [
+        -85,
+        13
+      ],
+      "mapFeatureId": "558",
+      "mapMarker": false,
+      "difficulty": 3,
+      "continentIds": [
+        "continent:north-america"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q3274",
+          "wikidataId": "Q3274",
+          "nameDe": "Managua",
+          "aliasesDe": [],
+          "centroid": [
+            -86.273725,
+            12.154680555
+          ],
+          "difficulty": 3,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:nl",
+      "iso2": "NL",
+      "iso3": "NLD",
+      "numericCode": "528",
+      "nameDe": "Königreich der Niederlande",
+      "aliasesDe": [
+        "Holland",
+        "Kingdom of the Netherlands",
+        "Konigreich der Niederlande",
+        "Nederland",
+        "Netherlands",
+        "Niederlande",
+        "NL",
+        "The Netherlands"
+      ],
+      "centroid": [
+        5.75,
+        52.5
+      ],
+      "mapFeatureId": "528",
+      "mapMarker": false,
+      "difficulty": 4,
+      "continentIds": [
+        "continent:europe"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q727",
+          "wikidataId": "Q727",
+          "nameDe": "Amsterdam",
+          "aliasesDe": [],
+          "centroid": [
+            4.883333333,
+            52.366666666
+          ],
+          "difficulty": 4,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:no",
+      "iso2": "NO",
+      "iso3": "NOR",
+      "numericCode": "578",
+      "nameDe": "Norwegen",
+      "aliasesDe": [
+        "Kingdom of Norway",
+        "Kongeriket Noreg",
+        "Kongeriket Norge",
+        "Konigreich Norwegen",
+        "Königreich Norwegen",
+        "NO",
+        "Noreg",
+        "Norge",
+        "Norway"
+      ],
+      "centroid": [
+        10,
+        62
+      ],
+      "mapFeatureId": "578",
+      "mapMarker": false,
+      "difficulty": 2,
+      "continentIds": [
+        "continent:europe"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q585",
+          "wikidataId": "Q585",
+          "nameDe": "Oslo",
+          "aliasesDe": [],
+          "centroid": [
+            10.738888888,
+            59.913333333
+          ],
+          "difficulty": 2,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:np",
+      "iso2": "NP",
+      "iso3": "NPL",
+      "numericCode": "524",
+      "nameDe": "Nepal",
+      "aliasesDe": [
+        "Demokratische Bundesrepublik Nepal",
+        "Federal Democratic Republic of Nepal",
+        "Loktantrik Ganatantra Nepal",
+        "Loktāntrik Ganatantra Nepāl",
+        "NP"
+      ],
+      "centroid": [
+        84,
+        28
+      ],
+      "mapFeatureId": "524",
+      "mapMarker": false,
+      "difficulty": 3,
+      "continentIds": [
+        "continent:asia"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q3037",
+          "wikidataId": "Q3037",
+          "nameDe": "Kathmandu",
+          "aliasesDe": [],
+          "centroid": [
+            85.32,
+            27.71
+          ],
+          "difficulty": 3,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:nr",
+      "iso2": "NR",
+      "iso3": "NRU",
+      "numericCode": "520",
+      "nameDe": "Nauru",
+      "aliasesDe": [
+        "Naoero",
+        "NR",
+        "Pleasant Island",
+        "Republic of Nauru",
+        "Republik Nauru",
+        "Ripublik Naoero"
+      ],
+      "centroid": [
+        166.91666666,
+        -0.53333333
+      ],
+      "mapFeatureId": "520",
+      "mapMarker": true,
+      "difficulty": 5,
+      "continentIds": [
+        "continent:oceania"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q31026",
+          "wikidataId": "Q31026",
+          "nameDe": "Yaren",
+          "aliasesDe": [],
+          "centroid": [
+            166.920867,
+            -0.5477
+          ],
+          "difficulty": 5,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:nz",
+      "iso2": "NZ",
+      "iso3": "NZL",
+      "numericCode": "554",
+      "nameDe": "Neuseeland",
+      "aliasesDe": [
+        "Aotearoa",
+        "New Zealand",
+        "NZ"
+      ],
+      "centroid": [
+        174,
+        -41
+      ],
+      "mapFeatureId": "554",
+      "mapMarker": false,
+      "difficulty": 2,
+      "continentIds": [
+        "continent:oceania"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q23661",
+          "wikidataId": "Q23661",
+          "nameDe": "Wellington",
+          "aliasesDe": [],
+          "centroid": [
+            174.777222222,
+            -41.288888888
+          ],
+          "difficulty": 2,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:om",
+      "iso2": "OM",
+      "iso3": "OMN",
+      "numericCode": "512",
+      "nameDe": "Oman",
+      "aliasesDe": [
+        "OM",
+        "Salṭanat ʻUmān",
+        "Saltanat Uman",
+        "Sultanat Oman",
+        "Sultanate of Oman"
+      ],
+      "centroid": [
+        57,
+        21
+      ],
+      "mapFeatureId": "512",
+      "mapMarker": false,
+      "difficulty": 2,
+      "continentIds": [
+        "continent:asia"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q3826",
+          "wikidataId": "Q3826",
+          "nameDe": "Maskat",
+          "aliasesDe": [
+            "Muscat"
+          ],
+          "centroid": [
+            58.592222222,
+            23.613888888
+          ],
+          "difficulty": 2,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:pa",
+      "iso2": "PA",
+      "iso3": "PAN",
+      "numericCode": "591",
+      "nameDe": "Panama",
+      "aliasesDe": [
+        "PA",
+        "Republic of Panama",
+        "Republica de Panama",
+        "República de Panamá",
+        "Republik Panama"
+      ],
+      "centroid": [
+        -80,
+        9
+      ],
+      "mapFeatureId": "591",
+      "mapMarker": false,
+      "difficulty": 3,
+      "continentIds": [
+        "continent:north-america"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q3306",
+          "wikidataId": "Q3306",
+          "nameDe": "Panama-Stadt",
+          "aliasesDe": [
+            "Panama City"
+          ],
+          "centroid": [
+            -79.534722222,
+            8.971111111
+          ],
+          "difficulty": 3,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:pe",
+      "iso2": "PE",
+      "iso3": "PER",
+      "numericCode": "604",
+      "nameDe": "Peru",
+      "aliasesDe": [
+        "PE",
+        "Republic of Peru",
+        "Republica del Peru",
+        "República del Perú",
+        "Republik Peru"
+      ],
+      "centroid": [
+        -76,
+        -10
+      ],
+      "mapFeatureId": "604",
+      "mapMarker": false,
+      "difficulty": 1,
+      "continentIds": [
+        "continent:south-america"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q2868",
+          "wikidataId": "Q2868",
+          "nameDe": "Lima",
+          "aliasesDe": [],
+          "centroid": [
+            -77.0375,
+            -12.06
+          ],
+          "difficulty": 1,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:pg",
+      "iso2": "PG",
+      "iso3": "PNG",
+      "numericCode": "598",
+      "nameDe": "Papua-Neuguinea",
+      "aliasesDe": [
+        "Independen Stet bilong Papua Niugini",
+        "Independent State of Papua New Guinea",
+        "Papua New Guinea",
+        "PG",
+        "Unabhangiger Staat Papua-Neuguinea",
+        "Unabhängiger Staat Papua-Neuguinea"
+      ],
+      "centroid": [
+        147,
+        -6
+      ],
+      "mapFeatureId": "598",
+      "mapMarker": false,
+      "difficulty": 2,
+      "continentIds": [
+        "continent:oceania"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q36526",
+          "wikidataId": "Q36526",
+          "nameDe": "Port Moresby",
+          "aliasesDe": [],
+          "centroid": [
+            147.149444444,
+            -9.478888888
+          ],
+          "difficulty": 2,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:ph",
+      "iso2": "PH",
+      "iso3": "PHL",
+      "numericCode": "608",
+      "nameDe": "Philippinen",
+      "aliasesDe": [
+        "PH",
+        "Philippines",
+        "Republic of the Philippines",
+        "Republik der Philippinen",
+        "Republika ng Pilipinas",
+        "Repúblika ng Pilipinas"
+      ],
+      "centroid": [
+        122,
+        13
+      ],
+      "mapFeatureId": "608",
+      "mapMarker": false,
+      "difficulty": 2,
+      "continentIds": [
+        "continent:asia"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q1461",
+          "wikidataId": "Q1461",
+          "nameDe": "Manila",
+          "aliasesDe": [],
+          "centroid": [
+            120.977222222,
+            14.595833333
+          ],
+          "difficulty": 2,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:pk",
+      "iso2": "PK",
+      "iso3": "PAK",
+      "numericCode": "586",
+      "nameDe": "Pakistan",
+      "aliasesDe": [
+        "Islami Jumhuriya'eh Pakistan",
+        "Islāmī Jumhūriya'eh Pākistān",
+        "Islamic Republic of Pakistan",
+        "Islamische Republik Pakistan",
+        "Pākistān",
+        "PK"
+      ],
+      "centroid": [
+        70,
+        30
+      ],
+      "mapFeatureId": "586",
+      "mapMarker": false,
+      "difficulty": 2,
+      "continentIds": [
+        "continent:asia"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q1362",
+          "wikidataId": "Q1362",
+          "nameDe": "Islamabad",
+          "aliasesDe": [],
+          "centroid": [
+            73.036944444,
+            33.698888888
+          ],
+          "difficulty": 2,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:pl",
+      "iso2": "PL",
+      "iso3": "POL",
+      "numericCode": "616",
+      "nameDe": "Polen",
+      "aliasesDe": [
+        "PL",
+        "Poland",
+        "Republic of Poland",
+        "Republik Polen",
+        "Rzeczpospolita Polska"
+      ],
+      "centroid": [
+        20,
+        52
+      ],
+      "mapFeatureId": "616",
+      "mapMarker": false,
+      "difficulty": 2,
+      "continentIds": [
+        "continent:europe"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q270",
+          "wikidataId": "Q270",
+          "nameDe": "Warschau",
+          "aliasesDe": [
+            "Warsaw"
+          ],
+          "centroid": [
+            21.011111111,
+            52.23
+          ],
+          "difficulty": 2,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:ps",
+      "iso2": "PS",
+      "iso3": "PSE",
+      "numericCode": "275",
+      "nameDe": "Palästina",
+      "aliasesDe": [
+        "Dawlat Filastin",
+        "Dawlat Filasṭin",
+        "Palastina",
+        "Palestine",
+        "Palestine, State of",
+        "PS",
+        "Staat Palastina",
+        "Staat Palästina",
+        "State of Palestine"
+      ],
+      "centroid": [
+        35.2,
+        31.9
+      ],
+      "mapFeatureId": "275",
+      "mapMarker": false,
+      "difficulty": 4,
+      "continentIds": [
+        "continent:asia"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q158119",
+          "wikidataId": "Q158119",
+          "nameDe": "Ramallah",
+          "aliasesDe": [],
+          "centroid": [
+            35.201666666,
+            31.896944444
+          ],
+          "difficulty": 4,
+          "role": "administrative_center",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        },
+        {
+          "id": "city:wd-q212938",
+          "wikidataId": "Q212938",
+          "nameDe": "Ostjerusalem",
+          "aliasesDe": [
+            "East Jerusalem"
+          ],
+          "centroid": [
+            35.23388,
+            31.78336
+          ],
+          "difficulty": 4,
+          "role": "claimed_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:pt",
+      "iso2": "PT",
+      "iso3": "PRT",
+      "numericCode": "620",
+      "nameDe": "Portugal",
+      "aliasesDe": [
+        "Portugiesische Republik",
+        "Portuguesa",
+        "Portuguese Republic",
+        "PT",
+        "Republica Portuguesa",
+        "República Portuguesa"
+      ],
+      "centroid": [
+        -8,
+        39.5
+      ],
+      "mapFeatureId": "620",
+      "mapMarker": false,
+      "difficulty": 3,
+      "continentIds": [
+        "continent:europe"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q597",
+          "wikidataId": "Q597",
+          "nameDe": "Lissabon",
+          "aliasesDe": [
+            "Lisbon"
+          ],
+          "centroid": [
+            -9.139016,
+            38.708042
+          ],
+          "difficulty": 3,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:pw",
+      "iso2": "PW",
+      "iso3": "PLW",
+      "numericCode": "585",
+      "nameDe": "Palau",
+      "aliasesDe": [
+        "Beluu er a Belau",
+        "PW",
+        "Republic of Palau",
+        "Republik Palau"
+      ],
+      "centroid": [
+        134.5,
+        7.5
+      ],
+      "mapFeatureId": "585",
+      "mapMarker": true,
+      "difficulty": 5,
+      "continentIds": [
+        "continent:oceania"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q515229",
+          "wikidataId": "Q515229",
+          "nameDe": "Ngerulmud",
+          "aliasesDe": [],
+          "centroid": [
+            134.624167,
+            7.500556
+          ],
+          "difficulty": 5,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:py",
+      "iso2": "PY",
+      "iso3": "PRY",
+      "numericCode": "600",
+      "nameDe": "Paraguay",
+      "aliasesDe": [
+        "PY",
+        "Republic of Paraguay",
+        "Republica del Paraguay",
+        "República del Paraguay",
+        "Republik Paraguay",
+        "Teta Paraguai",
+        "Tetã Paraguái"
+      ],
+      "centroid": [
+        -58,
+        -23
+      ],
+      "mapFeatureId": "600",
+      "mapMarker": false,
+      "difficulty": 2,
+      "continentIds": [
+        "continent:south-america"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q2933",
+          "wikidataId": "Q2933",
+          "nameDe": "Asunción",
+          "aliasesDe": [
+            "Asuncion"
+          ],
+          "centroid": [
+            -57.634444444,
+            -25.28
+          ],
+          "difficulty": 2,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:qa",
+      "iso2": "QA",
+      "iso3": "QAT",
+      "numericCode": "634",
+      "nameDe": "Katar",
+      "aliasesDe": [
+        "Dawlat Qatar",
+        "Dawlat Qaṭar",
+        "QA",
+        "Qatar",
+        "Staat Katar",
+        "State of Qatar"
+      ],
+      "centroid": [
+        51.25,
+        25.5
+      ],
+      "mapFeatureId": "634",
+      "mapMarker": false,
+      "difficulty": 4,
+      "continentIds": [
+        "continent:asia"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q3861",
+          "wikidataId": "Q3861",
+          "nameDe": "Doha",
+          "aliasesDe": [],
+          "centroid": [
+            51.529444444,
+            25.286111111
+          ],
+          "difficulty": 4,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:ro",
+      "iso2": "RO",
+      "iso3": "ROU",
+      "numericCode": "642",
+      "nameDe": "Rumänien",
+      "aliasesDe": [
+        "RO",
+        "Romania",
+        "România",
+        "Roumania",
+        "Rumania",
+        "Rumanien"
+      ],
+      "centroid": [
+        25,
+        46
+      ],
+      "mapFeatureId": "642",
+      "mapMarker": false,
+      "difficulty": 3,
+      "continentIds": [
+        "continent:europe"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q19660",
+          "wikidataId": "Q19660",
+          "nameDe": "Bukarest",
+          "aliasesDe": [
+            "Bucharest"
+          ],
+          "centroid": [
+            26.097777777,
+            44.413361111
+          ],
+          "difficulty": 3,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:rs",
+      "iso2": "RS",
+      "iso3": "SRB",
+      "numericCode": "688",
+      "nameDe": "Serbien",
+      "aliasesDe": [
+        "Republic of Serbia",
+        "Republik Serbien",
+        "Republika Srbija",
+        "RS",
+        "Serbia",
+        "Srbija",
+        "Република Србија",
+        "Србија"
+      ],
+      "centroid": [
+        21,
+        44
+      ],
+      "mapFeatureId": "688",
+      "mapMarker": false,
+      "difficulty": 3,
+      "continentIds": [
+        "continent:europe"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q3711",
+          "wikidataId": "Q3711",
+          "nameDe": "Belgrad",
+          "aliasesDe": [
+            "Belgrade"
+          ],
+          "centroid": [
+            20.456944444,
+            44.817777777
+          ],
+          "difficulty": 3,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:ru",
+      "iso2": "RU",
+      "iso3": "RUS",
+      "numericCode": "643",
+      "nameDe": "Russland",
+      "aliasesDe": [
+        "RU",
+        "Russia",
+        "Russian Federation",
+        "Russische Foderation",
+        "Russische Föderation",
+        "Россииская Федерация",
+        "Российская Федерация"
+      ],
+      "centroid": [
+        100,
+        60
+      ],
+      "mapFeatureId": "643",
+      "mapMarker": false,
+      "difficulty": 1,
+      "continentIds": [
+        "continent:europe",
+        "continent:asia"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q649",
+          "wikidataId": "Q649",
+          "nameDe": "Moskau",
+          "aliasesDe": [
+            "Moscow"
+          ],
+          "centroid": [
+            37.6175,
+            55.750555555
+          ],
+          "difficulty": 1,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:rw",
+      "iso2": "RW",
+      "iso3": "RWA",
+      "numericCode": "646",
+      "nameDe": "Ruanda",
+      "aliasesDe": [
+        "Republic of Rwanda",
+        "Republik Ruanda",
+        "Republique du Rwanda",
+        "République du Rwanda",
+        "Repubulika y'u Rwanda",
+        "RW",
+        "Rwanda"
+      ],
+      "centroid": [
+        30,
+        -2
+      ],
+      "mapFeatureId": "646",
+      "mapMarker": false,
+      "difficulty": 4,
+      "continentIds": [
+        "continent:africa"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q3859",
+          "wikidataId": "Q3859",
+          "nameDe": "Kigali",
+          "aliasesDe": [],
+          "centroid": [
+            30.115,
+            -1.9525
+          ],
+          "difficulty": 4,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:sa",
+      "iso2": "SA",
+      "iso3": "SAU",
+      "numericCode": "682",
+      "nameDe": "Al Juwain",
+      "aliasesDe": [
+        "Al-Mamlakah al-‘Arabiyyah as-Su‘udiyyah",
+        "Al-Mamlakah al-‘Arabiyyah as-Su‘ūdiyyah",
+        "Kingdom of Saudi Arabia",
+        "Konigreich Saudi-Arabien",
+        "Königreich Saudi-Arabien",
+        "SA",
+        "Saudi",
+        "Saudi Arabia",
+        "Saudi-Arabien"
+      ],
+      "centroid": [
+        45,
+        25
+      ],
+      "mapFeatureId": "682",
+      "mapMarker": false,
+      "difficulty": 1,
+      "continentIds": [
+        "continent:asia"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q3692",
+          "wikidataId": "Q3692",
+          "nameDe": "Riad",
+          "aliasesDe": [
+            "Riyadh"
+          ],
+          "centroid": [
+            46.71,
+            24.65
+          ],
+          "difficulty": 1,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:sb",
+      "iso2": "SB",
+      "iso3": "SLB",
+      "numericCode": "090",
+      "nameDe": "Salomonen",
+      "aliasesDe": [
+        "SB",
+        "Solomon Islands"
+      ],
+      "centroid": [
+        159,
+        -8
+      ],
+      "mapFeatureId": "090",
+      "mapMarker": false,
+      "difficulty": 4,
+      "continentIds": [
+        "continent:oceania"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q40921",
+          "wikidataId": "Q40921",
+          "nameDe": "Honiara",
+          "aliasesDe": [],
+          "centroid": [
+            159.95,
+            -9.433333
+          ],
+          "difficulty": 4,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:sc",
+      "iso2": "SC",
+      "iso3": "SYC",
+      "numericCode": "690",
+      "nameDe": "Seychellen",
+      "aliasesDe": [
+        "Repiblik Sesel",
+        "Republic of Seychelles",
+        "Republik der Seychellen",
+        "Republique des Seychelles",
+        "République des Seychelles",
+        "SC",
+        "Seychelles"
+      ],
+      "centroid": [
+        55.66666666,
+        -4.58333333
+      ],
+      "mapFeatureId": "690",
+      "mapMarker": true,
+      "difficulty": 5,
+      "continentIds": [
+        "continent:africa"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q3940",
+          "wikidataId": "Q3940",
+          "nameDe": "Victoria",
+          "aliasesDe": [],
+          "centroid": [
+            55.454444444,
+            -4.623611111
+          ],
+          "difficulty": 5,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:sd",
+      "iso2": "SD",
+      "iso3": "SDN",
+      "numericCode": "729",
+      "nameDe": "Sudan",
+      "aliasesDe": [
+        "Jumhuriyat as-Sudan",
+        "Jumhūrīyat as-Sūdān",
+        "Republic of the Sudan",
+        "Republik Sudan",
+        "SD"
+      ],
+      "centroid": [
+        30,
+        15
+      ],
+      "mapFeatureId": "729",
+      "mapMarker": false,
+      "difficulty": 1,
+      "continentIds": [
+        "continent:africa"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q1963",
+          "wikidataId": "Q1963",
+          "nameDe": "Chartum",
+          "aliasesDe": [
+            "Khartoum"
+          ],
+          "centroid": [
+            32.52654,
+            15.60308
+          ],
+          "difficulty": 1,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:se",
+      "iso2": "SE",
+      "iso3": "SWE",
+      "numericCode": "752",
+      "nameDe": "Schweden",
+      "aliasesDe": [
+        "Kingdom of Sweden",
+        "Konigreich Schweden",
+        "Königreich Schweden",
+        "Konungariket Sverige",
+        "SE",
+        "Sweden"
+      ],
+      "centroid": [
+        15,
+        62
+      ],
+      "mapFeatureId": "752",
+      "mapMarker": false,
+      "difficulty": 2,
+      "continentIds": [
+        "continent:europe"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q1754",
+          "wikidataId": "Q1754",
+          "nameDe": "Stockholm",
+          "aliasesDe": [],
+          "centroid": [
+            18.068611111,
+            59.329444444
+          ],
+          "difficulty": 2,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:sg",
+      "iso2": "SG",
+      "iso3": "SGP",
+      "numericCode": "702",
+      "nameDe": "Singapur",
+      "aliasesDe": [
+        "Republic of Singapore",
+        "Republik Singapur",
+        "Republik Singapura",
+        "SG",
+        "Singapore",
+        "Singapura",
+        "新加坡共和国"
+      ],
+      "centroid": [
+        103.8,
+        1.36666666
+      ],
+      "mapFeatureId": "702",
+      "mapMarker": true,
+      "difficulty": 5,
+      "continentIds": [
+        "continent:asia"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q334",
+          "wikidataId": "Q334",
+          "nameDe": "Singapur",
+          "aliasesDe": [
+            "Singapore"
+          ],
+          "centroid": [
+            103.8,
+            1.3
+          ],
+          "difficulty": 5,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:si",
+      "iso2": "SI",
+      "iso3": "SVN",
+      "numericCode": "705",
+      "nameDe": "Slowenien",
+      "aliasesDe": [
+        "Republic of Slovenia",
+        "Republik Slowenien",
+        "Republika Slovenija",
+        "SI",
+        "Slovenia"
+      ],
+      "centroid": [
+        14.81666666,
+        46.11666666
+      ],
+      "mapFeatureId": "705",
+      "mapMarker": false,
+      "difficulty": 4,
+      "continentIds": [
+        "continent:europe"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q437",
+          "wikidataId": "Q437",
+          "nameDe": "Ljubljana",
+          "aliasesDe": [],
+          "centroid": [
+            14.506111111,
+            46.051388888
+          ],
+          "difficulty": 4,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:sk",
+      "iso2": "SK",
+      "iso3": "SVK",
+      "numericCode": "703",
+      "nameDe": "Slowakei",
+      "aliasesDe": [
+        "SK",
+        "Slovak Republic",
+        "Slovakia",
+        "Slovenska republika",
+        "Slovenská republika",
+        "Slowakische Republik"
+      ],
+      "centroid": [
+        19.5,
+        48.66666666
+      ],
+      "mapFeatureId": "703",
+      "mapMarker": false,
+      "difficulty": 4,
+      "continentIds": [
+        "continent:europe"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q1780",
+          "wikidataId": "Q1780",
+          "nameDe": "Bratislava",
+          "aliasesDe": [],
+          "centroid": [
+            17.1093063,
+            48.1516988
+          ],
+          "difficulty": 4,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:sl",
+      "iso2": "SL",
+      "iso3": "SLE",
+      "numericCode": "694",
+      "nameDe": "Sierra Leone",
+      "aliasesDe": [
+        "Republic of Sierra Leone",
+        "Republik Sierra Leone",
+        "SL"
+      ],
+      "centroid": [
+        -11.5,
+        8.5
+      ],
+      "mapFeatureId": "694",
+      "mapMarker": false,
+      "difficulty": 3,
+      "continentIds": [
+        "continent:africa"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q3780",
+          "wikidataId": "Q3780",
+          "nameDe": "Freetown",
+          "aliasesDe": [],
+          "centroid": [
+            -13.235555555,
+            8.487222222
+          ],
+          "difficulty": 3,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:sm",
+      "iso2": "SM",
+      "iso3": "SMR",
+      "numericCode": "674",
+      "nameDe": "San Marino",
+      "aliasesDe": [
+        "Most Serene Republic of San Marino",
+        "Repubblica di San Marino",
+        "Republic of San Marino",
+        "Republik San Marino",
+        "SM"
+      ],
+      "centroid": [
+        12.41666666,
+        43.76666666
+      ],
+      "mapFeatureId": "674",
+      "mapMarker": true,
+      "difficulty": 5,
+      "continentIds": [
+        "continent:europe"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q1848",
+          "wikidataId": "Q1848",
+          "nameDe": "San Marino",
+          "aliasesDe": [
+            "City of San Marino"
+          ],
+          "centroid": [
+            12.44845,
+            43.932011111
+          ],
+          "difficulty": 5,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:sn",
+      "iso2": "SN",
+      "iso3": "SEN",
+      "numericCode": "686",
+      "nameDe": "Senegal",
+      "aliasesDe": [
+        "Republic of Senegal",
+        "Republik Senegal",
+        "Republique du Senegal",
+        "République du Sénégal",
+        "SN"
+      ],
+      "centroid": [
+        -14,
+        14
+      ],
+      "mapFeatureId": "686",
+      "mapMarker": false,
+      "difficulty": 3,
+      "continentIds": [
+        "continent:africa"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q3718",
+          "wikidataId": "Q3718",
+          "nameDe": "Dakar",
+          "aliasesDe": [],
+          "centroid": [
+            -17.432,
+            14.672555555
+          ],
+          "difficulty": 3,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:so",
+      "iso2": "SO",
+      "iso3": "SOM",
+      "numericCode": "706",
+      "nameDe": "Somalia",
+      "aliasesDe": [
+        "as-Sumal",
+        "aṣ-Ṣūmāl",
+        "Bundesrepublik Somalia",
+        "Federal Republic of Somalia",
+        "Jamhuuriyadda Federaalka Soomaaliya",
+        "Jumhuriyyat as-Sumal al-Fideraliyya",
+        "Jumhūriyyat aṣ-Ṣūmāl al-Fiderāliyya",
+        "SO"
+      ],
+      "centroid": [
+        49,
+        10
+      ],
+      "mapFeatureId": "706",
+      "mapMarker": false,
+      "difficulty": 2,
+      "continentIds": [
+        "continent:africa"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q2449",
+          "wikidataId": "Q2449",
+          "nameDe": "Mogadischu",
+          "aliasesDe": [
+            "Mogadishu"
+          ],
+          "centroid": [
+            45.341944444,
+            2.039166666
+          ],
+          "difficulty": 2,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:sr",
+      "iso2": "SR",
+      "iso3": "SUR",
+      "numericCode": "740",
+      "nameDe": "Suriname",
+      "aliasesDe": [
+        "Republic of Suriname",
+        "Republiek Suriname",
+        "Republik Suriname",
+        "Sarnam",
+        "SR",
+        "Sranangron"
+      ],
+      "centroid": [
+        -56,
+        4
+      ],
+      "mapFeatureId": "740",
+      "mapMarker": false,
+      "difficulty": 3,
+      "continentIds": [
+        "continent:south-america"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q3001",
+          "wikidataId": "Q3001",
+          "nameDe": "Paramaribo",
+          "aliasesDe": [],
+          "centroid": [
+            -55.166666666,
+            5.866666666
+          ],
+          "difficulty": 3,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:ss",
+      "iso2": "SS",
+      "iso3": "SSD",
+      "numericCode": "728",
+      "nameDe": "Südsudan",
+      "aliasesDe": [
+        "Republic of South Sudan",
+        "Republik Sudsudan",
+        "Republik Südsudan",
+        "South Sudan",
+        "SS",
+        "Sudsudan"
+      ],
+      "centroid": [
+        30,
+        7
+      ],
+      "mapFeatureId": "728",
+      "mapMarker": false,
+      "difficulty": 2,
+      "continentIds": [
+        "continent:africa"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q1947",
+          "wikidataId": "Q1947",
+          "nameDe": "Juba",
+          "aliasesDe": [],
+          "centroid": [
+            31.5825,
+            4.853888888
+          ],
+          "difficulty": 2,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:st",
+      "iso2": "ST",
+      "iso3": "STP",
+      "numericCode": "678",
+      "nameDe": "São Tomé und Príncipe",
+      "aliasesDe": [
+        "Democratic Republic of Sao Tome and Principe",
+        "Democratic Republic of São Tomé and Príncipe",
+        "Demokratische Republik Sao Tome und Principe",
+        "Demokratische Republik São Tomé und Príncipe",
+        "Republica Democratica de Sao Tome e Principe",
+        "República Democrática de São Tomé e Príncipe",
+        "Sao Tome and Principe",
+        "São Tomé and Príncipe",
+        "Sao Tome und Principe",
+        "ST"
+      ],
+      "centroid": [
+        7,
+        1
+      ],
+      "mapFeatureId": "678",
+      "mapMarker": true,
+      "difficulty": 5,
+      "continentIds": [
+        "continent:africa"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q3932",
+          "wikidataId": "Q3932",
+          "nameDe": "São Tomé",
+          "aliasesDe": [
+            "Sao Tome"
+          ],
+          "centroid": [
+            6.728333333,
+            0.3375
+          ],
+          "difficulty": 5,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:sv",
+      "iso2": "SV",
+      "iso3": "SLV",
+      "numericCode": "222",
+      "nameDe": "El Salvador",
+      "aliasesDe": [
+        "Republic of El Salvador",
+        "Republica de El Salvador",
+        "República de El Salvador",
+        "Republik El Salvador",
+        "SV"
+      ],
+      "centroid": [
+        -88.91666666,
+        13.83333333
+      ],
+      "mapFeatureId": "222",
+      "mapMarker": false,
+      "difficulty": 4,
+      "continentIds": [
+        "continent:north-america"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q3110",
+          "wikidataId": "Q3110",
+          "nameDe": "San Salvador",
+          "aliasesDe": [],
+          "centroid": [
+            -89.191155555,
+            13.697597222
+          ],
+          "difficulty": 4,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:sy",
+      "iso2": "SY",
+      "iso3": "SYR",
+      "numericCode": "760",
+      "nameDe": "Syrien",
+      "aliasesDe": [
+        "Al-Jumhuriyah Al-Arabiyah As-Suriyah",
+        "Al-Jumhūrīyah Al-ʻArabīyah As-Sūrīyah",
+        "Arabische Republik Syrien",
+        "SY",
+        "Syria",
+        "Syrian Arab Republic"
+      ],
+      "centroid": [
+        38,
+        35
+      ],
+      "mapFeatureId": "760",
+      "mapMarker": false,
+      "difficulty": 3,
+      "continentIds": [
+        "continent:asia"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q3766",
+          "wikidataId": "Q3766",
+          "nameDe": "Damaskus",
+          "aliasesDe": [
+            "Damascus"
+          ],
+          "centroid": [
+            36.292,
+            33.513
+          ],
+          "difficulty": 3,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:sz",
+      "iso2": "SZ",
+      "iso3": "SWZ",
+      "numericCode": "748",
+      "nameDe": "Eswatini",
+      "aliasesDe": [
+        "Kingdom of Eswatini",
+        "Konigreich Eswatini",
+        "Königreich Eswatini",
+        "Ngwane",
+        "Swasiland",
+        "Swatini",
+        "Swaziland",
+        "SZ",
+        "Umbuso weSwatini",
+        "weSwatini"
+      ],
+      "centroid": [
+        31.5,
+        -26.5
+      ],
+      "mapFeatureId": "748",
+      "mapMarker": false,
+      "difficulty": 4,
+      "continentIds": [
+        "continent:africa"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q101418",
+          "wikidataId": "Q101418",
+          "nameDe": "Lobamba",
+          "aliasesDe": [],
+          "centroid": [
+            31.206411,
+            -26.44648
+          ],
+          "difficulty": 4,
+          "role": "royal_and_legislative_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        },
+        {
+          "id": "city:wd-q3904",
+          "wikidataId": "Q3904",
+          "nameDe": "Mbabane",
+          "aliasesDe": [],
+          "centroid": [
+            31.133333333,
+            -26.316666666
+          ],
+          "difficulty": 4,
+          "role": "administrative_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:td",
+      "iso2": "TD",
+      "iso3": "TCD",
+      "numericCode": "148",
+      "nameDe": "Tschad",
+      "aliasesDe": [
+        "Chad",
+        "Republic of Chad",
+        "Republik Tschad",
+        "Republique du Tchad",
+        "République du Tchad",
+        "Tchad",
+        "TD"
+      ],
+      "centroid": [
+        19,
+        15
+      ],
+      "mapFeatureId": "148",
+      "mapMarker": false,
+      "difficulty": 1,
+      "continentIds": [
+        "continent:africa"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q3659",
+          "wikidataId": "Q3659",
+          "nameDe": "N’Djamena",
+          "aliasesDe": [
+            "N'Djamena"
+          ],
+          "centroid": [
+            15.05,
+            12.11
+          ],
+          "difficulty": 1,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:tg",
+      "iso2": "TG",
+      "iso3": "TGO",
+      "numericCode": "768",
+      "nameDe": "Togo",
+      "aliasesDe": [
+        "Republik Togo",
+        "Republique Togolaise",
+        "République Togolaise",
+        "TG",
+        "Togolese",
+        "Togolese Republic"
+      ],
+      "centroid": [
+        1.16666666,
+        8
+      ],
+      "mapFeatureId": "768",
+      "mapMarker": false,
+      "difficulty": 3,
+      "continentIds": [
+        "continent:africa"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q3792",
+          "wikidataId": "Q3792",
+          "nameDe": "Lomé",
+          "aliasesDe": [
+            "Lome"
+          ],
+          "centroid": [
+            1.215833333,
+            6.13
+          ],
+          "difficulty": 3,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:th",
+      "iso2": "TH",
+      "iso3": "THA",
+      "numericCode": "764",
+      "nameDe": "Thailand",
+      "aliasesDe": [
+        "Kingdom of Thailand",
+        "Konigreich Thailand",
+        "Königreich Thailand",
+        "Prathet",
+        "Ratcha Anachak Thai",
+        "TH",
+        "Thai",
+        "ราชอาณาจักรไทย"
+      ],
+      "centroid": [
+        100,
+        15
+      ],
+      "mapFeatureId": "764",
+      "mapMarker": false,
+      "difficulty": 2,
+      "continentIds": [
+        "continent:asia"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q1861",
+          "wikidataId": "Q1861",
+          "nameDe": "Bangkok",
+          "aliasesDe": [],
+          "centroid": [
+            100.516666666,
+            13.75
+          ],
+          "difficulty": 2,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:tj",
+      "iso2": "TJ",
+      "iso3": "TJK",
+      "numericCode": "762",
+      "nameDe": "Tadschikistan",
+      "aliasesDe": [
+        "Cumhuriyi Tocikiston",
+        "Çumhuriyi Toçikiston",
+        "Republic of Tajikistan",
+        "Republik Tadschikistan",
+        "Tajikistan",
+        "TJ",
+        "Tocikiston",
+        "Toçikiston",
+        "Ҷумҳурии Тоҷикистон"
+      ],
+      "centroid": [
+        71,
+        39
+      ],
+      "mapFeatureId": "762",
+      "mapMarker": false,
+      "difficulty": 3,
+      "continentIds": [
+        "continent:asia"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q9365",
+          "wikidataId": "Q9365",
+          "nameDe": "Duschanbe",
+          "aliasesDe": [
+            "Dushanbe"
+          ],
+          "centroid": [
+            68.786388888,
+            38.573055555
+          ],
+          "difficulty": 3,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:tl",
+      "iso2": "TL",
+      "iso3": "TLS",
+      "numericCode": "626",
+      "nameDe": "Osttimor",
+      "aliasesDe": [
+        "Democratic Republic of Timor-Leste",
+        "Demokratische Republik Timor-Leste",
+        "East Timor",
+        "Republica Democratica de Timor-Leste",
+        "República Democrática de Timor-Leste",
+        "Republika Demokratika Timor-Leste",
+        "Repúblika Demokrátika Timór-Leste",
+        "Timor",
+        "Timor Lorosa'e",
+        "Timór Lorosa'e",
+        "Timor Lorosae",
+        "Timor-Leste",
+        "TL"
+      ],
+      "centroid": [
+        125.91666666,
+        -8.83333333
+      ],
+      "mapFeatureId": "626",
+      "mapMarker": false,
+      "difficulty": 4,
+      "continentIds": [
+        "continent:asia"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q9310",
+          "wikidataId": "Q9310",
+          "nameDe": "Dili",
+          "aliasesDe": [],
+          "centroid": [
+            125.578333333,
+            -8.553611111
+          ],
+          "difficulty": 4,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:tm",
+      "iso2": "TM",
+      "iso3": "TKM",
+      "numericCode": "795",
+      "nameDe": "Turkmenistan",
+      "aliasesDe": [
+        "TM"
+      ],
+      "centroid": [
+        60,
+        40
+      ],
+      "mapFeatureId": "795",
+      "mapMarker": false,
+      "difficulty": 2,
+      "continentIds": [
+        "continent:asia"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q23438",
+          "wikidataId": "Q23438",
+          "nameDe": "Aşgabat",
+          "aliasesDe": [
+            "Asgabat",
+            "Ashgabat"
+          ],
+          "centroid": [
+            58.383333333,
+            37.95
+          ],
+          "difficulty": 2,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:tn",
+      "iso2": "TN",
+      "iso3": "TUN",
+      "numericCode": "788",
+      "nameDe": "Tunesien",
+      "aliasesDe": [
+        "al-Jumhuriyyah at-Tunisiyyah",
+        "al-Jumhūriyyah at-Tūnisiyyah",
+        "Republic of Tunisia",
+        "TN",
+        "Tunesische Republik",
+        "Tunisia",
+        "Tunisian Republic"
+      ],
+      "centroid": [
+        9,
+        34
+      ],
+      "mapFeatureId": "788",
+      "mapMarker": false,
+      "difficulty": 3,
+      "continentIds": [
+        "continent:africa"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q3572",
+          "wikidataId": "Q3572",
+          "nameDe": "Tunis",
+          "aliasesDe": [],
+          "centroid": [
+            10.18,
+            36.800833333
+          ],
+          "difficulty": 3,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:to",
+      "iso2": "TO",
+      "iso3": "TON",
+      "numericCode": "776",
+      "nameDe": "Tonga",
+      "aliasesDe": [
+        "Kingdom of Tonga",
+        "Konigreich Tonga",
+        "Königreich Tonga",
+        "TO"
+      ],
+      "centroid": [
+        -175,
+        -20
+      ],
+      "mapFeatureId": "776",
+      "mapMarker": true,
+      "difficulty": 5,
+      "continentIds": [
+        "continent:oceania"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q38834",
+          "wikidataId": "Q38834",
+          "nameDe": "Nukuʻalofa",
+          "aliasesDe": [
+            "Nuku'alofa",
+            "Nukualofa"
+          ],
+          "centroid": [
+            -175.201808,
+            -21.1343401
+          ],
+          "difficulty": 5,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:tr",
+      "iso2": "TR",
+      "iso3": "TUR",
+      "numericCode": "792",
+      "nameDe": "Türkei",
+      "aliasesDe": [
+        "Republic of Turkey",
+        "Republic of Turkiye",
+        "Republic of Türkiye",
+        "Republik Turkei",
+        "Republik Türkei",
+        "TR",
+        "Turkei",
+        "Turkiye",
+        "Türkiye",
+        "Turkiye Cumhuriyeti",
+        "Türkiye Cumhuriyeti"
+      ],
+      "centroid": [
+        35,
+        39
+      ],
+      "mapFeatureId": "792",
+      "mapMarker": false,
+      "difficulty": 2,
+      "continentIds": [
+        "continent:europe",
+        "continent:asia"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q3640",
+          "wikidataId": "Q3640",
+          "nameDe": "Ankara",
+          "aliasesDe": [],
+          "centroid": [
+            32.83869,
+            39.93576
+          ],
+          "difficulty": 2,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:tt",
+      "iso2": "TT",
+      "iso3": "TTO",
+      "numericCode": "780",
+      "nameDe": "Trinidad und Tobago",
+      "aliasesDe": [
+        "Republic of Trinidad and Tobago",
+        "Republik Trinidad und Tobago",
+        "Trinidad and Tobago",
+        "TT"
+      ],
+      "centroid": [
+        -61,
+        11
+      ],
+      "mapFeatureId": "780",
+      "mapMarker": false,
+      "difficulty": 4,
+      "continentIds": [
+        "continent:north-america"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q39178",
+          "wikidataId": "Q39178",
+          "nameDe": "Port of Spain",
+          "aliasesDe": [],
+          "centroid": [
+            -61.516666666,
+            10.666666666
+          ],
+          "difficulty": 4,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:tv",
+      "iso2": "TV",
+      "iso3": "TUV",
+      "numericCode": "798",
+      "nameDe": "Tuvalu",
+      "aliasesDe": [
+        "TV"
+      ],
+      "centroid": [
+        178,
+        -8
+      ],
+      "mapFeatureId": "798",
+      "mapMarker": true,
+      "difficulty": 5,
+      "continentIds": [
+        "continent:oceania"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q34126",
+          "wikidataId": "Q34126",
+          "nameDe": "Funafuti",
+          "aliasesDe": [],
+          "centroid": [
+            179.117361111,
+            -8.504777777
+          ],
+          "difficulty": 5,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:tz",
+      "iso2": "TZ",
+      "iso3": "TZA",
+      "numericCode": "834",
+      "nameDe": "Tansania",
+      "aliasesDe": [
+        "Jamhuri ya Muungano wa Tanzania",
+        "Tanzania",
+        "Tanzania, United Republic of",
+        "TZ",
+        "United Republic of Tanzania",
+        "Vereinigte Republik Tansania"
+      ],
+      "centroid": [
+        35,
+        -6
+      ],
+      "mapFeatureId": "834",
+      "mapMarker": false,
+      "difficulty": 2,
+      "continentIds": [
+        "continent:africa"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q3866",
+          "wikidataId": "Q3866",
+          "nameDe": "Dodoma",
+          "aliasesDe": [],
+          "centroid": [
+            35.746,
+            -6.1835
+          ],
+          "difficulty": 2,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:ua",
+      "iso2": "UA",
+      "iso3": "UKR",
+      "numericCode": "804",
+      "nameDe": "Ukraine",
+      "aliasesDe": [
+        "UA",
+        "Ukrayina"
+      ],
+      "centroid": [
+        32,
+        49
+      ],
+      "mapFeatureId": "804",
+      "mapMarker": false,
+      "difficulty": 2,
+      "continentIds": [
+        "continent:europe"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q1899",
+          "wikidataId": "Q1899",
+          "nameDe": "Kiew",
+          "aliasesDe": [
+            "Kyiv"
+          ],
+          "centroid": [
+            30.523611111,
+            50.45
+          ],
+          "difficulty": 2,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:ug",
+      "iso2": "UG",
+      "iso3": "UGA",
+      "numericCode": "800",
+      "nameDe": "Uganda",
+      "aliasesDe": [
+        "Jamhuri ya Uganda",
+        "Republic of Uganda",
+        "Republik Uganda",
+        "UG"
+      ],
+      "centroid": [
+        32,
+        1
+      ],
+      "mapFeatureId": "800",
+      "mapMarker": false,
+      "difficulty": 3,
+      "continentIds": [
+        "continent:africa"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q3894",
+          "wikidataId": "Q3894",
+          "nameDe": "Kampala",
+          "aliasesDe": [],
+          "centroid": [
+            32.581111111,
+            0.313611111
+          ],
+          "difficulty": 3,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:us",
+      "iso2": "US",
+      "iso3": "USA",
+      "numericCode": "840",
+      "nameDe": "Vereinigte Staaten",
+      "aliasesDe": [
+        "United States",
+        "United States of America",
+        "US",
+        "USA",
+        "Vereinigte Staaten von Amerika"
+      ],
+      "centroid": [
+        -97,
+        38
+      ],
+      "mapFeatureId": "840",
+      "mapMarker": false,
+      "difficulty": 1,
+      "continentIds": [
+        "continent:north-america"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q61",
+          "wikidataId": "Q61",
+          "nameDe": "Washington, D.C.",
+          "aliasesDe": [
+            "Washington D.C."
+          ],
+          "centroid": [
+            -77.036666666,
+            38.895
+          ],
+          "difficulty": 1,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:uy",
+      "iso2": "UY",
+      "iso3": "URY",
+      "numericCode": "858",
+      "nameDe": "Uruguay",
+      "aliasesDe": [
+        "Oriental Republic of Uruguay",
+        "Republica Oriental del Uruguay",
+        "República Oriental del Uruguay",
+        "Republik Ostlich des Uruguay",
+        "Republik Östlich des Uruguay",
+        "UY"
+      ],
+      "centroid": [
+        -56,
+        -33
+      ],
+      "mapFeatureId": "858",
+      "mapMarker": false,
+      "difficulty": 3,
+      "continentIds": [
+        "continent:south-america"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q1335",
+          "wikidataId": "Q1335",
+          "nameDe": "Montevideo",
+          "aliasesDe": [],
+          "centroid": [
+            -56.191311111,
+            -34.905916666
+          ],
+          "difficulty": 3,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:uz",
+      "iso2": "UZ",
+      "iso3": "UZB",
+      "numericCode": "860",
+      "nameDe": "Usbekistan",
+      "aliasesDe": [
+        "O‘zbekiston Respublikasi",
+        "Republic of Uzbekistan",
+        "Republik Usbekistan",
+        "UZ",
+        "Uzbekistan",
+        "Узбекистон Республикаси",
+        "Ўзбекистон Республикаси"
+      ],
+      "centroid": [
+        64,
+        41
+      ],
+      "mapFeatureId": "860",
+      "mapMarker": false,
+      "difficulty": 2,
+      "continentIds": [
+        "continent:asia"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q269",
+          "wikidataId": "Q269",
+          "nameDe": "Taschkent",
+          "aliasesDe": [
+            "Tashkent"
+          ],
+          "centroid": [
+            69.279722222,
+            41.311111111
+          ],
+          "difficulty": 2,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:va",
+      "iso2": "VA",
+      "iso3": "VAT",
+      "numericCode": "336",
+      "nameDe": "Vatikanstadt",
+      "aliasesDe": [
+        "Holy See (Vatican City State)",
+        "Staat Vatikanstadt",
+        "Stato della Citta del Vaticano",
+        "Stato della Città del Vaticano",
+        "VA",
+        "Vatican",
+        "Vatican City",
+        "Vatican City State"
+      ],
+      "centroid": [
+        12.45,
+        41.9
+      ],
+      "mapFeatureId": "336",
+      "mapMarker": true,
+      "difficulty": 5,
+      "continentIds": [
+        "continent:europe"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q237",
+          "wikidataId": "Q237",
+          "nameDe": "Vatikanstadt",
+          "aliasesDe": [
+            "Vatican City"
+          ],
+          "centroid": [
+            12.453,
+            41.904
+          ],
+          "difficulty": 5,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:vc",
+      "iso2": "VC",
+      "iso3": "VCT",
+      "numericCode": "670",
+      "nameDe": "St. Vincent und die Grenadinen",
+      "aliasesDe": [
+        "Saint Vincent and the Grenadines",
+        "VC"
+      ],
+      "centroid": [
+        -61.2,
+        13.25
+      ],
+      "mapFeatureId": "670",
+      "mapMarker": true,
+      "difficulty": 5,
+      "continentIds": [
+        "continent:north-america"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q41474",
+          "wikidataId": "Q41474",
+          "nameDe": "Kingstown",
+          "aliasesDe": [],
+          "centroid": [
+            -61.22742,
+            13.15527
+          ],
+          "difficulty": 5,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:ve",
+      "iso2": "VE",
+      "iso3": "VEN",
+      "numericCode": "862",
+      "nameDe": "Venezuela",
+      "aliasesDe": [
+        "Bolivarian Republic of Venezuela",
+        "Bolivarische Republik Venezuela",
+        "Republica Bolivariana de Venezuela",
+        "República Bolivariana de Venezuela",
+        "VE",
+        "Venezuela, Bolivarian Republic of"
+      ],
+      "centroid": [
+        -66,
+        8
+      ],
+      "mapFeatureId": "862",
+      "mapMarker": false,
+      "difficulty": 2,
+      "continentIds": [
+        "continent:south-america"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q1533",
+          "wikidataId": "Q1533",
+          "nameDe": "Caracas",
+          "aliasesDe": [],
+          "centroid": [
+            -66.914444444,
+            10.506111111
+          ],
+          "difficulty": 2,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:vn",
+      "iso2": "VN",
+      "iso3": "VNM",
+      "numericCode": "704",
+      "nameDe": "Vietnam",
+      "aliasesDe": [
+        "Cong hoa Xa hoi chu nghia Viet Nam",
+        "Cộng hòa Xã hội chủ nghĩa Việt Nam",
+        "Socialist Republic of Vietnam",
+        "Sozialistische Republik Vietnam",
+        "Viet Nam",
+        "VN"
+      ],
+      "centroid": [
+        107.83333333,
+        16.16666666
+      ],
+      "mapFeatureId": "704",
+      "mapMarker": false,
+      "difficulty": 2,
+      "continentIds": [
+        "continent:asia"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q1858",
+          "wikidataId": "Q1858",
+          "nameDe": "Hanoi",
+          "aliasesDe": [],
+          "centroid": [
+            105.84117,
+            21.0245
+          ],
+          "difficulty": 2,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:vu",
+      "iso2": "VU",
+      "iso3": "VUT",
+      "numericCode": "548",
+      "nameDe": "Vanuatu",
+      "aliasesDe": [
+        "Republic of Vanuatu",
+        "Republique de Vanuatu",
+        "République de Vanuatu",
+        "Ripablik blong Vanuatu",
+        "VU"
+      ],
+      "centroid": [
+        167,
+        -16
+      ],
+      "mapFeatureId": "548",
+      "mapMarker": false,
+      "difficulty": 4,
+      "continentIds": [
+        "continent:oceania"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q37806",
+          "wikidataId": "Q37806",
+          "nameDe": "Port Vila",
+          "aliasesDe": [],
+          "centroid": [
+            168.316667,
+            -17.73333
+          ],
+          "difficulty": 4,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:ws",
+      "iso2": "WS",
+      "iso3": "WSM",
+      "numericCode": "882",
+      "nameDe": "Samoa",
+      "aliasesDe": [
+        "Independent State of Samoa",
+        "Malo Saʻoloto Tutoʻatasi o Sāmoa",
+        "Malo Saoloto Tutoatasi o Samoa",
+        "Unabhangige Staat Samoa",
+        "Unabhängige Staat Samoa",
+        "WS"
+      ],
+      "centroid": [
+        -172.33333333,
+        -13.58333333
+      ],
+      "mapFeatureId": "882",
+      "mapMarker": true,
+      "difficulty": 5,
+      "continentIds": [
+        "continent:oceania"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q36260",
+          "wikidataId": "Q36260",
+          "nameDe": "Apia",
+          "aliasesDe": [],
+          "centroid": [
+            -171.833333333,
+            -13.833333333
+          ],
+          "difficulty": 5,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:ye",
+      "iso2": "YE",
+      "iso3": "YEM",
+      "numericCode": "887",
+      "nameDe": "Jemen",
+      "aliasesDe": [
+        "al-Jumhuriyyah al-Yamaniyyah",
+        "al-Jumhūriyyah al-Yamaniyyah",
+        "Republic of Yemen",
+        "Republik Jemen",
+        "YE",
+        "Yemen",
+        "Yemeni Republic"
+      ],
+      "centroid": [
+        48,
+        15
+      ],
+      "mapFeatureId": "887",
+      "mapMarker": false,
+      "difficulty": 2,
+      "continentIds": [
+        "continent:asia"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q131694",
+          "wikidataId": "Q131694",
+          "nameDe": "Aden",
+          "aliasesDe": [],
+          "centroid": [
+            45.033333333,
+            12.8
+          ],
+          "difficulty": 2,
+          "role": "provisional_seat",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        },
+        {
+          "id": "city:wd-q2471",
+          "wikidataId": "Q2471",
+          "nameDe": "Sanaa",
+          "aliasesDe": [
+            "Sana'a"
+          ],
+          "centroid": [
+            44.2,
+            15.35
+          ],
+          "difficulty": 2,
+          "role": "constitutional_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:za",
+      "iso2": "ZA",
+      "iso3": "ZAF",
+      "numericCode": "710",
+      "nameDe": "Südafrika",
+      "aliasesDe": [
+        "Republic of South Africa",
+        "Republik Sudafrika",
+        "Republik Südafrika",
+        "RSA",
+        "South Africa",
+        "Sudafrika",
+        "Suid-Afrika",
+        "ZA"
+      ],
+      "centroid": [
+        24,
+        -29
+      ],
+      "mapFeatureId": "710",
+      "mapMarker": false,
+      "difficulty": 1,
+      "continentIds": [
+        "continent:africa"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q37701",
+          "wikidataId": "Q37701",
+          "nameDe": "Bloemfontein",
+          "aliasesDe": [],
+          "centroid": [
+            26.216666666,
+            -29.1
+          ],
+          "difficulty": 1,
+          "role": "judicial_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        },
+        {
+          "id": "city:wd-q3926",
+          "wikidataId": "Q3926",
+          "nameDe": "Pretoria",
+          "aliasesDe": [],
+          "centroid": [
+            28.188055555,
+            -25.746388888
+          ],
+          "difficulty": 1,
+          "role": "executive_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        },
+        {
+          "id": "city:wd-q5465",
+          "wikidataId": "Q5465",
+          "nameDe": "Kapstadt",
+          "aliasesDe": [
+            "Cape Town"
+          ],
+          "centroid": [
+            18.423888888,
+            -33.925277777
+          ],
+          "difficulty": 1,
+          "role": "legislative_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:zm",
+      "iso2": "ZM",
+      "iso3": "ZMB",
+      "numericCode": "894",
+      "nameDe": "Sambia",
+      "aliasesDe": [
+        "Republic of Zambia",
+        "Republik Sambia",
+        "Zambia",
+        "ZM"
+      ],
+      "centroid": [
+        30,
+        -15
+      ],
+      "mapFeatureId": "894",
+      "mapMarker": false,
+      "difficulty": 2,
+      "continentIds": [
+        "continent:africa"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q3881",
+          "wikidataId": "Q3881",
+          "nameDe": "Lusaka",
+          "aliasesDe": [],
+          "centroid": [
+            28.283333333,
+            -15.416666666
+          ],
+          "difficulty": 2,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "country:zw",
+      "iso2": "ZW",
+      "iso3": "ZWE",
+      "numericCode": "716",
+      "nameDe": "Simbabwe",
+      "aliasesDe": [
+        "Republic of Zimbabwe",
+        "Republik Simbabwe",
+        "Zimbabwe",
+        "ZW"
+      ],
+      "centroid": [
+        30,
+        -20
+      ],
+      "mapFeatureId": "716",
+      "mapMarker": false,
+      "difficulty": 2,
+      "continentIds": [
+        "continent:africa"
+      ],
+      "capitals": [
+        {
+          "id": "city:wd-q3921",
+          "wikidataId": "Q3921",
+          "nameDe": "Harare",
+          "aliasesDe": [],
+          "centroid": [
+            31.052222222,
+            -17.829166666
+          ],
+          "difficulty": 2,
+          "role": "official_capital",
+          "sourceRefs": [
+            "wikidata-capital-snapshot"
+          ]
+        }
+      ]
+    }
+  ]
+}

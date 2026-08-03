@@ -1,0 +1,4442 @@
+{
+  "schemaVersion": 1,
+  "datasetVersion": "2026-08-03.phase7-ranked-physical1",
+  "builtAt": "2026-07-30T03:45:20.083Z",
+  "sources": [
+    {
+      "id": "world-bank-land-area-2023",
+      "sourceVersion": "AG.LND.TOTL.K2/2023",
+      "retrievedAt": "2026-07-30",
+      "url": "https://data.worldbank.org/indicator/AG.LND.TOTL.K2",
+      "license": "CC BY-4.0"
+    },
+    {
+      "id": "world-bank-population-2023",
+      "sourceVersion": "SP.POP.TOTL/2023",
+      "retrievedAt": "2026-07-30",
+      "url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+      "license": "CC BY-4.0"
+    },
+    {
+      "id": "cplp-portuguese-language-states",
+      "sourceVersion": "2026-07-30",
+      "retrievedAt": "2026-07-30",
+      "url": "https://www.cplp.org/estados-membros/",
+      "license": "Quellenverweis; Fakten redaktionell extrahiert"
+    },
+    {
+      "id": "phase2-scope-policy",
+      "sourceVersion": "un-193-plus-observers-v1",
+      "retrievedAt": "2026-07-30",
+      "url": "docs/DATA_MODEL.md",
+      "license": "Projektinterne redaktionelle Scope-Policy"
+    }
+  ],
+  "factDefinitions": [
+    {
+      "id": "fact-type:land-area-km2",
+      "labelDe": "Landfläche",
+      "descriptionDe": "Landfläche ohne Binnengewässer gemäß World-Bank-Indikator AG.LND.TOTL.K2.",
+      "valueType": "number",
+      "unit": "km²",
+      "comparisonPolicy": "same_source_method_and_date"
+    },
+    {
+      "id": "fact-type:population-total",
+      "labelDe": "Bevölkerung",
+      "descriptionDe": "Gesamtbevölkerung gemäß World-Bank-Indikator SP.POP.TOTL.",
+      "valueType": "number",
+      "unit": "Menschen",
+      "comparisonPolicy": "same_source_method_and_date"
+    }
+  ],
+  "facts": [
+    {
+      "id": "fact:country-ad:land-area-km2:2023",
+      "entityId": "country:ad",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 470,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-ad:population-total:2023",
+      "entityId": "country:ad",
+      "factTypeId": "fact-type:population-total",
+      "value": 80856,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-ae:land-area-km2:2023",
+      "entityId": "country:ae",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 71020,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-ae:population-total:2023",
+      "entityId": "country:ae",
+      "factTypeId": "fact-type:population-total",
+      "value": 10483751,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-af:land-area-km2:2023",
+      "entityId": "country:af",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 652230,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-af:population-total:2023",
+      "entityId": "country:af",
+      "factTypeId": "fact-type:population-total",
+      "value": 41454761,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-ag:land-area-km2:2023",
+      "entityId": "country:ag",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 440,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-ag:population-total:2023",
+      "entityId": "country:ag",
+      "factTypeId": "fact-type:population-total",
+      "value": 93316,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-al:land-area-km2:2023",
+      "entityId": "country:al",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 27400,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-al:population-total:2023",
+      "entityId": "country:al",
+      "factTypeId": "fact-type:population-total",
+      "value": 2411658,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-am:land-area-km2:2023",
+      "entityId": "country:am",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 28199.44,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-am:population-total:2023",
+      "entityId": "country:am",
+      "factTypeId": "fact-type:population-total",
+      "value": 2964300,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-ao:land-area-km2:2023",
+      "entityId": "country:ao",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 1246700,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-ao:population-total:2023",
+      "entityId": "country:ao",
+      "factTypeId": "fact-type:population-total",
+      "value": 36749906,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-ar:land-area-km2:2023",
+      "entityId": "country:ar",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 2736690,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-ar:population-total:2023",
+      "entityId": "country:ar",
+      "factTypeId": "fact-type:population-total",
+      "value": 45538401,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-at:land-area-km2:2023",
+      "entityId": "country:at",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 82520,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-at:population-total:2023",
+      "entityId": "country:at",
+      "factTypeId": "fact-type:population-total",
+      "value": 9131761,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-au:land-area-km2:2023",
+      "entityId": "country:au",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 7692020,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-au:population-total:2023",
+      "entityId": "country:au",
+      "factTypeId": "fact-type:population-total",
+      "value": 26659922,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-az:land-area-km2:2023",
+      "entityId": "country:az",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 82650,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-az:population-total:2023",
+      "entityId": "country:az",
+      "factTypeId": "fact-type:population-total",
+      "value": 10153958,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-ba:land-area-km2:2023",
+      "entityId": "country:ba",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 51200,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-ba:population-total:2023",
+      "entityId": "country:ba",
+      "factTypeId": "fact-type:population-total",
+      "value": 3185073,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-bb:land-area-km2:2023",
+      "entityId": "country:bb",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 430,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-bb:population-total:2023",
+      "entityId": "country:bb",
+      "factTypeId": "fact-type:population-total",
+      "value": 282336,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-bd:land-area-km2:2023",
+      "entityId": "country:bd",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 129980,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-bd:population-total:2023",
+      "entityId": "country:bd",
+      "factTypeId": "fact-type:population-total",
+      "value": 171466990,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-be:land-area-km2:2023",
+      "entityId": "country:be",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 30494,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-be:population-total:2023",
+      "entityId": "country:be",
+      "factTypeId": "fact-type:population-total",
+      "value": 11779946,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-bf:land-area-km2:2023",
+      "entityId": "country:bf",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 273600,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-bf:population-total:2023",
+      "entityId": "country:bf",
+      "factTypeId": "fact-type:population-total",
+      "value": 23025776,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-bg:land-area-km2:2023",
+      "entityId": "country:bg",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 108560,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-bg:population-total:2023",
+      "entityId": "country:bg",
+      "factTypeId": "fact-type:population-total",
+      "value": 6446596,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-bh:land-area-km2:2023",
+      "entityId": "country:bh",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 800,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-bh:population-total:2023",
+      "entityId": "country:bh",
+      "factTypeId": "fact-type:population-total",
+      "value": 1577059,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-bi:land-area-km2:2023",
+      "entityId": "country:bi",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 25680,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-bi:population-total:2023",
+      "entityId": "country:bi",
+      "factTypeId": "fact-type:population-total",
+      "value": 13689450,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-bj:land-area-km2:2023",
+      "entityId": "country:bj",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 112760,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-bj:population-total:2023",
+      "entityId": "country:bj",
+      "factTypeId": "fact-type:population-total",
+      "value": 14111034,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-bn:land-area-km2:2023",
+      "entityId": "country:bn",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 5270,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-bn:population-total:2023",
+      "entityId": "country:bn",
+      "factTypeId": "fact-type:population-total",
+      "value": 458949,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-bo:land-area-km2:2023",
+      "entityId": "country:bo",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 1083300,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-bo:population-total:2023",
+      "entityId": "country:bo",
+      "factTypeId": "fact-type:population-total",
+      "value": 12244159,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-br:land-area-km2:2023",
+      "entityId": "country:br",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 8358140,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-br:population-total:2023",
+      "entityId": "country:br",
+      "factTypeId": "fact-type:population-total",
+      "value": 211140729,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-bs:land-area-km2:2023",
+      "entityId": "country:bs",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 10010,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-bs:population-total:2023",
+      "entityId": "country:bs",
+      "factTypeId": "fact-type:population-total",
+      "value": 399440,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-bt:land-area-km2:2023",
+      "entityId": "country:bt",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 38140,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-bt:population-total:2023",
+      "entityId": "country:bt",
+      "factTypeId": "fact-type:population-total",
+      "value": 786385,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-bw:land-area-km2:2023",
+      "entityId": "country:bw",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 566730,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-bw:population-total:2023",
+      "entityId": "country:bw",
+      "factTypeId": "fact-type:population-total",
+      "value": 2480244,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-by:land-area-km2:2023",
+      "entityId": "country:by",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 202983,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-by:population-total:2023",
+      "entityId": "country:by",
+      "factTypeId": "fact-type:population-total",
+      "value": 9178298,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-bz:land-area-km2:2023",
+      "entityId": "country:bz",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 22810,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-bz:population-total:2023",
+      "entityId": "country:bz",
+      "factTypeId": "fact-type:population-total",
+      "value": 411106,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-ca:land-area-km2:2023",
+      "entityId": "country:ca",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 8788700,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-ca:population-total:2023",
+      "entityId": "country:ca",
+      "factTypeId": "fact-type:population-total",
+      "value": 40049088,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-cd:land-area-km2:2023",
+      "entityId": "country:cd",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 2267050,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-cd:population-total:2023",
+      "entityId": "country:cd",
+      "factTypeId": "fact-type:population-total",
+      "value": 105789731,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-cf:land-area-km2:2023",
+      "entityId": "country:cf",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 622980,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-cf:population-total:2023",
+      "entityId": "country:cf",
+      "factTypeId": "fact-type:population-total",
+      "value": 5152421,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-cg:land-area-km2:2023",
+      "entityId": "country:cg",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 341500,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-cg:population-total:2023",
+      "entityId": "country:cg",
+      "factTypeId": "fact-type:population-total",
+      "value": 6182885,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-ch:land-area-km2:2023",
+      "entityId": "country:ch",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 39509.63,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-ch:population-total:2023",
+      "entityId": "country:ch",
+      "factTypeId": "fact-type:population-total",
+      "value": 8888822,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-ci:land-area-km2:2023",
+      "entityId": "country:ci",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 318000,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-ci:population-total:2023",
+      "entityId": "country:ci",
+      "factTypeId": "fact-type:population-total",
+      "value": 31165654,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-cl:land-area-km2:2023",
+      "entityId": "country:cl",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 742831.64,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-cl:population-total:2023",
+      "entityId": "country:cl",
+      "factTypeId": "fact-type:population-total",
+      "value": 19658835,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-cm:land-area-km2:2023",
+      "entityId": "country:cm",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 472710,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-cm:population-total:2023",
+      "entityId": "country:cm",
+      "factTypeId": "fact-type:population-total",
+      "value": 28372687,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-cn:land-area-km2:2023",
+      "entityId": "country:cn",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 9388210,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-cn:population-total:2023",
+      "entityId": "country:cn",
+      "factTypeId": "fact-type:population-total",
+      "value": 1410710000,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-co:land-area-km2:2023",
+      "entityId": "country:co",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 1109500,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-co:population-total:2023",
+      "entityId": "country:co",
+      "factTypeId": "fact-type:population-total",
+      "value": 52321152,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-cr:land-area-km2:2023",
+      "entityId": "country:cr",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 51060,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-cr:population-total:2023",
+      "entityId": "country:cr",
+      "factTypeId": "fact-type:population-total",
+      "value": 5105525,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-cu:land-area-km2:2023",
+      "entityId": "country:cu",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 103800,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-cu:population-total:2023",
+      "entityId": "country:cu",
+      "factTypeId": "fact-type:population-total",
+      "value": 11019931,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-cv:land-area-km2:2023",
+      "entityId": "country:cv",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 4030,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-cv:population-total:2023",
+      "entityId": "country:cv",
+      "factTypeId": "fact-type:population-total",
+      "value": 522331,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-cy:land-area-km2:2023",
+      "entityId": "country:cy",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 9240,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-cy:population-total:2023",
+      "entityId": "country:cy",
+      "factTypeId": "fact-type:population-total",
+      "value": 1344976,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-cz:land-area-km2:2023",
+      "entityId": "country:cz",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 77167.31,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-cz:population-total:2023",
+      "entityId": "country:cz",
+      "factTypeId": "fact-type:population-total",
+      "value": 10864042,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-de:land-area-km2:2023",
+      "entityId": "country:de",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 349430,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-de:population-total:2023",
+      "entityId": "country:de",
+      "factTypeId": "fact-type:population-total",
+      "value": 83287273,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-dj:land-area-km2:2023",
+      "entityId": "country:dj",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 23180,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-dj:population-total:2023",
+      "entityId": "country:dj",
+      "factTypeId": "fact-type:population-total",
+      "value": 1152944,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-dk:land-area-km2:2023",
+      "entityId": "country:dk",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 40000,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-dk:population-total:2023",
+      "entityId": "country:dk",
+      "factTypeId": "fact-type:population-total",
+      "value": 5946952,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-dm:land-area-km2:2023",
+      "entityId": "country:dm",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 750,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-dm:population-total:2023",
+      "entityId": "country:dm",
+      "factTypeId": "fact-type:population-total",
+      "value": 66510,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-do:land-area-km2:2023",
+      "entityId": "country:do",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 48198.02,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-do:population-total:2023",
+      "entityId": "country:do",
+      "factTypeId": "fact-type:population-total",
+      "value": 11331265,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-dz:land-area-km2:2023",
+      "entityId": "country:dz",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 2381740,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-dz:population-total:2023",
+      "entityId": "country:dz",
+      "factTypeId": "fact-type:population-total",
+      "value": 46164219,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-ec:land-area-km2:2023",
+      "entityId": "country:ec",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 248360,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-ec:population-total:2023",
+      "entityId": "country:ec",
+      "factTypeId": "fact-type:population-total",
+      "value": 17980083,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-ee:land-area-km2:2023",
+      "entityId": "country:ee",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 42730,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-ee:population-total:2023",
+      "entityId": "country:ee",
+      "factTypeId": "fact-type:population-total",
+      "value": 1370286,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-eg:land-area-km2:2023",
+      "entityId": "country:eg",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 995450,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-eg:population-total:2023",
+      "entityId": "country:eg",
+      "factTypeId": "fact-type:population-total",
+      "value": 114535772,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-er:land-area-km2:2023",
+      "entityId": "country:er",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 121178.2,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-er:population-total:2023",
+      "entityId": "country:er",
+      "factTypeId": "fact-type:population-total",
+      "value": 3470390,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-es:land-area-km2:2023",
+      "entityId": "country:es",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 499697.4,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-es:population-total:2023",
+      "entityId": "country:es",
+      "factTypeId": "fact-type:population-total",
+      "value": 48352528,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-et:land-area-km2:2023",
+      "entityId": "country:et",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 1128498.8,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-et:population-total:2023",
+      "entityId": "country:et",
+      "factTypeId": "fact-type:population-total",
+      "value": 128691692,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-fi:land-area-km2:2023",
+      "entityId": "country:fi",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 303960,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-fi:population-total:2023",
+      "entityId": "country:fi",
+      "factTypeId": "fact-type:population-total",
+      "value": 5583911,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-fj:land-area-km2:2023",
+      "entityId": "country:fj",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 18270,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-fj:population-total:2023",
+      "entityId": "country:fj",
+      "factTypeId": "fact-type:population-total",
+      "value": 924145,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-fm:land-area-km2:2023",
+      "entityId": "country:fm",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 700,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-fm:population-total:2023",
+      "entityId": "country:fm",
+      "factTypeId": "fact-type:population-total",
+      "value": 112630,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-fr:land-area-km2:2023",
+      "entityId": "country:fr",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 538950,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-fr:population-total:2023",
+      "entityId": "country:fr",
+      "factTypeId": "fact-type:population-total",
+      "value": 68372286,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-ga:land-area-km2:2023",
+      "entityId": "country:ga",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 257670,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-ga:population-total:2023",
+      "entityId": "country:ga",
+      "factTypeId": "fact-type:population-total",
+      "value": 2484789,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-gb:land-area-km2:2023",
+      "entityId": "country:gb",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 241930,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-gb:population-total:2023",
+      "entityId": "country:gb",
+      "factTypeId": "fact-type:population-total",
+      "value": 68526000,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-gd:land-area-km2:2023",
+      "entityId": "country:gd",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 340,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-gd:population-total:2023",
+      "entityId": "country:gd",
+      "factTypeId": "fact-type:population-total",
+      "value": 117081,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-ge:land-area-km2:2023",
+      "entityId": "country:ge",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 69490,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-ge:population-total:2023",
+      "entityId": "country:ge",
+      "factTypeId": "fact-type:population-total",
+      "value": 3715483,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-gh:land-area-km2:2023",
+      "entityId": "country:gh",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 227533,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-gh:population-total:2023",
+      "entityId": "country:gh",
+      "factTypeId": "fact-type:population-total",
+      "value": 33787914,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-gm:land-area-km2:2023",
+      "entityId": "country:gm",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 10120,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-gm:population-total:2023",
+      "entityId": "country:gm",
+      "factTypeId": "fact-type:population-total",
+      "value": 2697845,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-gn:land-area-km2:2023",
+      "entityId": "country:gn",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 245720,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-gn:population-total:2023",
+      "entityId": "country:gn",
+      "factTypeId": "fact-type:population-total",
+      "value": 14405468,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-gq:land-area-km2:2023",
+      "entityId": "country:gq",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 28050,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-gq:population-total:2023",
+      "entityId": "country:gq",
+      "factTypeId": "fact-type:population-total",
+      "value": 1847549,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-gr:land-area-km2:2023",
+      "entityId": "country:gr",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 128900,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-gr:population-total:2023",
+      "entityId": "country:gr",
+      "factTypeId": "fact-type:population-total",
+      "value": 10407351,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-gt:land-area-km2:2023",
+      "entityId": "country:gt",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 107160,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-gt:population-total:2023",
+      "entityId": "country:gt",
+      "factTypeId": "fact-type:population-total",
+      "value": 18124838,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-gw:land-area-km2:2023",
+      "entityId": "country:gw",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 28120,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-gw:population-total:2023",
+      "entityId": "country:gw",
+      "factTypeId": "fact-type:population-total",
+      "value": 2153339,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-gy:land-area-km2:2023",
+      "entityId": "country:gy",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 211140,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-gy:population-total:2023",
+      "entityId": "country:gy",
+      "factTypeId": "fact-type:population-total",
+      "value": 826353,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-hn:land-area-km2:2023",
+      "entityId": "country:hn",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 111890,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-hn:population-total:2023",
+      "entityId": "country:hn",
+      "factTypeId": "fact-type:population-total",
+      "value": 10644851,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-hr:land-area-km2:2023",
+      "entityId": "country:hr",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 55960,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-hr:population-total:2023",
+      "entityId": "country:hr",
+      "factTypeId": "fact-type:population-total",
+      "value": 3859686,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-ht:land-area-km2:2023",
+      "entityId": "country:ht",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 27560,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-ht:population-total:2023",
+      "entityId": "country:ht",
+      "factTypeId": "fact-type:population-total",
+      "value": 11637398,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-hu:land-area-km2:2023",
+      "entityId": "country:hu",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 91260,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-hu:population-total:2023",
+      "entityId": "country:hu",
+      "factTypeId": "fact-type:population-total",
+      "value": 9592186,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-id:land-area-km2:2023",
+      "entityId": "country:id",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 1892555.47,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-id:population-total:2023",
+      "entityId": "country:id",
+      "factTypeId": "fact-type:population-total",
+      "value": 281190067,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-ie:land-area-km2:2023",
+      "entityId": "country:ie",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 68890,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-ie:population-total:2023",
+      "entityId": "country:ie",
+      "factTypeId": "fact-type:population-total",
+      "value": 5311538,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-il:land-area-km2:2023",
+      "entityId": "country:il",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 21640,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-il:population-total:2023",
+      "entityId": "country:il",
+      "factTypeId": "fact-type:population-total",
+      "value": 9849000,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-in:land-area-km2:2023",
+      "entityId": "country:in",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 2973190,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-in:population-total:2023",
+      "entityId": "country:in",
+      "factTypeId": "fact-type:population-total",
+      "value": 1438069596,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-iq:land-area-km2:2023",
+      "entityId": "country:iq",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 434130,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-iq:population-total:2023",
+      "entityId": "country:iq",
+      "factTypeId": "fact-type:population-total",
+      "value": 45074049,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-ir:land-area-km2:2023",
+      "entityId": "country:ir",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 1622500,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-ir:population-total:2023",
+      "entityId": "country:ir",
+      "factTypeId": "fact-type:population-total",
+      "value": 90608707,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-is:land-area-km2:2023",
+      "entityId": "country:is",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 100830,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-is:population-total:2023",
+      "entityId": "country:is",
+      "factTypeId": "fact-type:population-total",
+      "value": 385663,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-it:land-area-km2:2023",
+      "entityId": "country:it",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 295720,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-it:population-total:2023",
+      "entityId": "country:it",
+      "factTypeId": "fact-type:population-total",
+      "value": 58984216,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-jm:land-area-km2:2023",
+      "entityId": "country:jm",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 10830,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-jm:population-total:2023",
+      "entityId": "country:jm",
+      "factTypeId": "fact-type:population-total",
+      "value": 2839786,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-jo:land-area-km2:2023",
+      "entityId": "country:jo",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 88794,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-jo:population-total:2023",
+      "entityId": "country:jo",
+      "factTypeId": "fact-type:population-total",
+      "value": 11439213,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-jp:land-area-km2:2023",
+      "entityId": "country:jp",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 364569.27,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-jp:population-total:2023",
+      "entityId": "country:jp",
+      "factTypeId": "fact-type:population-total",
+      "value": 124516650,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-ke:land-area-km2:2023",
+      "entityId": "country:ke",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 580876.3,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-ke:population-total:2023",
+      "entityId": "country:ke",
+      "factTypeId": "fact-type:population-total",
+      "value": 55339003,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-kg:land-area-km2:2023",
+      "entityId": "country:kg",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 191800,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-kg:population-total:2023",
+      "entityId": "country:kg",
+      "factTypeId": "fact-type:population-total",
+      "value": 7099750,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-kh:land-area-km2:2023",
+      "entityId": "country:kh",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 176520,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-kh:population-total:2023",
+      "entityId": "country:kh",
+      "factTypeId": "fact-type:population-total",
+      "value": 17423880,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-ki:land-area-km2:2023",
+      "entityId": "country:ki",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 810,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-ki:population-total:2023",
+      "entityId": "country:ki",
+      "factTypeId": "fact-type:population-total",
+      "value": 132530,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-km:land-area-km2:2023",
+      "entityId": "country:km",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 1861,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-km:population-total:2023",
+      "entityId": "country:km",
+      "factTypeId": "fact-type:population-total",
+      "value": 850387,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-kn:land-area-km2:2023",
+      "entityId": "country:kn",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 260,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-kn:population-total:2023",
+      "entityId": "country:kn",
+      "factTypeId": "fact-type:population-total",
+      "value": 46758,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-kp:land-area-km2:2023",
+      "entityId": "country:kp",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 120410,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-kp:population-total:2023",
+      "entityId": "country:kp",
+      "factTypeId": "fact-type:population-total",
+      "value": 26418204,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-kr:land-area-km2:2023",
+      "entityId": "country:kr",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 97600,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-kr:population-total:2023",
+      "entityId": "country:kr",
+      "factTypeId": "fact-type:population-total",
+      "value": 51712619,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-kw:land-area-km2:2023",
+      "entityId": "country:kw",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 17820,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-kw:population-total:2023",
+      "entityId": "country:kw",
+      "factTypeId": "fact-type:population-total",
+      "value": 4853420,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-kz:land-area-km2:2023",
+      "entityId": "country:kz",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 2699700,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-kz:population-total:2023",
+      "entityId": "country:kz",
+      "factTypeId": "fact-type:population-total",
+      "value": 20330104,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-la:land-area-km2:2023",
+      "entityId": "country:la",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 230800,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-la:population-total:2023",
+      "entityId": "country:la",
+      "factTypeId": "fact-type:population-total",
+      "value": 7664993,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-lb:land-area-km2:2023",
+      "entityId": "country:lb",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 10230,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-lb:population-total:2023",
+      "entityId": "country:lb",
+      "factTypeId": "fact-type:population-total",
+      "value": 5773493,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-lc:land-area-km2:2023",
+      "entityId": "country:lc",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 610,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-lc:population-total:2023",
+      "entityId": "country:lc",
+      "factTypeId": "fact-type:population-total",
+      "value": 179285,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-li:land-area-km2:2023",
+      "entityId": "country:li",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 160,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-li:population-total:2023",
+      "entityId": "country:li",
+      "factTypeId": "fact-type:population-total",
+      "value": 39846,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-lk:land-area-km2:2023",
+      "entityId": "country:lk",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 61860,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-lk:population-total:2023",
+      "entityId": "country:lk",
+      "factTypeId": "fact-type:population-total",
+      "value": 22037000,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-lr:land-area-km2:2023",
+      "entityId": "country:lr",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 96320,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-lr:population-total:2023",
+      "entityId": "country:lr",
+      "factTypeId": "fact-type:population-total",
+      "value": 5493031,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-ls:land-area-km2:2023",
+      "entityId": "country:ls",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 30360,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-ls:population-total:2023",
+      "entityId": "country:ls",
+      "factTypeId": "fact-type:population-total",
+      "value": 2311472,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-lt:land-area-km2:2023",
+      "entityId": "country:lt",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 62600,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-lt:population-total:2023",
+      "entityId": "country:lt",
+      "factTypeId": "fact-type:population-total",
+      "value": 2871585,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-lu:land-area-km2:2023",
+      "entityId": "country:lu",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 2574.46,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-lu:population-total:2023",
+      "entityId": "country:lu",
+      "factTypeId": "fact-type:population-total",
+      "value": 666430,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-lv:land-area-km2:2023",
+      "entityId": "country:lv",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 62230,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-lv:population-total:2023",
+      "entityId": "country:lv",
+      "factTypeId": "fact-type:population-total",
+      "value": 1883710,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-ly:land-area-km2:2023",
+      "entityId": "country:ly",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 1759540,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-ly:population-total:2023",
+      "entityId": "country:ly",
+      "factTypeId": "fact-type:population-total",
+      "value": 7305659,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-ma:land-area-km2:2023",
+      "entityId": "country:ma",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 446300,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-ma:population-total:2023",
+      "entityId": "country:ma",
+      "factTypeId": "fact-type:population-total",
+      "value": 37712505,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-mc:land-area-km2:2023",
+      "entityId": "country:mc",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 2.084,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-mc:population-total:2023",
+      "entityId": "country:mc",
+      "factTypeId": "fact-type:population-total",
+      "value": 38956,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-md:land-area-km2:2023",
+      "entityId": "country:md",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 32930,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-md:population-total:2023",
+      "entityId": "country:md",
+      "factTypeId": "fact-type:population-total",
+      "value": 2457783,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-me:land-area-km2:2023",
+      "entityId": "country:me",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 13450,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-me:population-total:2023",
+      "entityId": "country:me",
+      "factTypeId": "fact-type:population-total",
+      "value": 623529,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-mg:land-area-km2:2023",
+      "entityId": "country:mg",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 581800,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-mg:population-total:2023",
+      "entityId": "country:mg",
+      "factTypeId": "fact-type:population-total",
+      "value": 31195932,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-mh:land-area-km2:2023",
+      "entityId": "country:mh",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 180,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-mh:population-total:2023",
+      "entityId": "country:mh",
+      "factTypeId": "fact-type:population-total",
+      "value": 38827,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-mk:land-area-km2:2023",
+      "entityId": "country:mk",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 25220,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-mk:population-total:2023",
+      "entityId": "country:mk",
+      "factTypeId": "fact-type:population-total",
+      "value": 1827816,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-ml:land-area-km2:2023",
+      "entityId": "country:ml",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 1220190,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-ml:population-total:2023",
+      "entityId": "country:ml",
+      "factTypeId": "fact-type:population-total",
+      "value": 23769127,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-mm:land-area-km2:2023",
+      "entityId": "country:mm",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 652670,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-mm:population-total:2023",
+      "entityId": "country:mm",
+      "factTypeId": "fact-type:population-total",
+      "value": 54133798,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-mn:land-area-km2:2023",
+      "entityId": "country:mn",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 1558499.786,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-mn:population-total:2023",
+      "entityId": "country:mn",
+      "factTypeId": "fact-type:population-total",
+      "value": 3481145,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-mr:land-area-km2:2023",
+      "entityId": "country:mr",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 1030700,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-mr:population-total:2023",
+      "entityId": "country:mr",
+      "factTypeId": "fact-type:population-total",
+      "value": 5022441,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-mt:land-area-km2:2023",
+      "entityId": "country:mt",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 320,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-mt:population-total:2023",
+      "entityId": "country:mt",
+      "factTypeId": "fact-type:population-total",
+      "value": 552747,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-mu:land-area-km2:2023",
+      "entityId": "country:mu",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 1997,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-mu:population-total:2023",
+      "entityId": "country:mu",
+      "factTypeId": "fact-type:population-total",
+      "value": 1248647,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-mv:land-area-km2:2023",
+      "entityId": "country:mv",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 298,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-mv:population-total:2023",
+      "entityId": "country:mv",
+      "factTypeId": "fact-type:population-total",
+      "value": 525994,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-mw:land-area-km2:2023",
+      "entityId": "country:mw",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 94280,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-mw:population-total:2023",
+      "entityId": "country:mw",
+      "factTypeId": "fact-type:population-total",
+      "value": 21104482,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-mx:land-area-km2:2023",
+      "entityId": "country:mx",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 1943950,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-mx:population-total:2023",
+      "entityId": "country:mx",
+      "factTypeId": "fact-type:population-total",
+      "value": 129739759,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-my:land-area-km2:2023",
+      "entityId": "country:my",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 328550,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-my:population-total:2023",
+      "entityId": "country:my",
+      "factTypeId": "fact-type:population-total",
+      "value": 35126298,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-mz:land-area-km2:2023",
+      "entityId": "country:mz",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 786380,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-mz:population-total:2023",
+      "entityId": "country:mz",
+      "factTypeId": "fact-type:population-total",
+      "value": 33635160,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-na:land-area-km2:2023",
+      "entityId": "country:na",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 823290,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-na:population-total:2023",
+      "entityId": "country:na",
+      "factTypeId": "fact-type:population-total",
+      "value": 2963095,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-ne:land-area-km2:2023",
+      "entityId": "country:ne",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 1266700,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-ne:population-total:2023",
+      "entityId": "country:ne",
+      "factTypeId": "fact-type:population-total",
+      "value": 26159867,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-ng:land-area-km2:2023",
+      "entityId": "country:ng",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 910770,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-ng:population-total:2023",
+      "entityId": "country:ng",
+      "factTypeId": "fact-type:population-total",
+      "value": 227882945,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-ni:land-area-km2:2023",
+      "entityId": "country:ni",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 120340,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-ni:population-total:2023",
+      "entityId": "country:ni",
+      "factTypeId": "fact-type:population-total",
+      "value": 6823613,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-nl:land-area-km2:2023",
+      "entityId": "country:nl",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 33670,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-nl:population-total:2023",
+      "entityId": "country:nl",
+      "factTypeId": "fact-type:population-total",
+      "value": 17877117,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-no:land-area-km2:2023",
+      "entityId": "country:no",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 364270,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-no:population-total:2023",
+      "entityId": "country:no",
+      "factTypeId": "fact-type:population-total",
+      "value": 5519601,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-np:land-area-km2:2023",
+      "entityId": "country:np",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 143350,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-np:population-total:2023",
+      "entityId": "country:np",
+      "factTypeId": "fact-type:population-total",
+      "value": 29694614,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-nr:land-area-km2:2023",
+      "entityId": "country:nr",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 20,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-nr:population-total:2023",
+      "entityId": "country:nr",
+      "factTypeId": "fact-type:population-total",
+      "value": 11875,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-nz:land-area-km2:2023",
+      "entityId": "country:nz",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 263310,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-nz:population-total:2023",
+      "entityId": "country:nz",
+      "factTypeId": "fact-type:population-total",
+      "value": 5200000,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-om:land-area-km2:2023",
+      "entityId": "country:om",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 309500,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-om:population-total:2023",
+      "entityId": "country:om",
+      "factTypeId": "fact-type:population-total",
+      "value": 5049269,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-pa:land-area-km2:2023",
+      "entityId": "country:pa",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 74180,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-pa:population-total:2023",
+      "entityId": "country:pa",
+      "factTypeId": "fact-type:population-total",
+      "value": 4458759,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-pe:land-area-km2:2023",
+      "entityId": "country:pe",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 1280000,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-pe:population-total:2023",
+      "entityId": "country:pe",
+      "factTypeId": "fact-type:population-total",
+      "value": 33845617,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-pg:land-area-km2:2023",
+      "entityId": "country:pg",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 452860,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-pg:population-total:2023",
+      "entityId": "country:pg",
+      "factTypeId": "fact-type:population-total",
+      "value": 10389635,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-ph:land-area-km2:2023",
+      "entityId": "country:ph",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 298170,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-ph:population-total:2023",
+      "entityId": "country:ph",
+      "factTypeId": "fact-type:population-total",
+      "value": 114891199,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-pk:land-area-km2:2023",
+      "entityId": "country:pk",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 770880,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-pk:population-total:2023",
+      "entityId": "country:pk",
+      "factTypeId": "fact-type:population-total",
+      "value": 247504495,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-pl:land-area-km2:2023",
+      "entityId": "country:pl",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 306270,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-pl:population-total:2023",
+      "entityId": "country:pl",
+      "factTypeId": "fact-type:population-total",
+      "value": 36687353,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-ps:land-area-km2:2023",
+      "entityId": "country:ps",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 6025,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-ps:population-total:2023",
+      "entityId": "country:ps",
+      "factTypeId": "fact-type:population-total",
+      "value": 5165775,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-pt:land-area-km2:2023",
+      "entityId": "country:pt",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 91605.6,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-pt:population-total:2023",
+      "entityId": "country:pt",
+      "factTypeId": "fact-type:population-total",
+      "value": 10578174,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-pw:land-area-km2:2023",
+      "entityId": "country:pw",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 460,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-pw:population-total:2023",
+      "entityId": "country:pw",
+      "factTypeId": "fact-type:population-total",
+      "value": 17727,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-py:land-area-km2:2023",
+      "entityId": "country:py",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 396012.03,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-py:population-total:2023",
+      "entityId": "country:py",
+      "factTypeId": "fact-type:population-total",
+      "value": 6844146,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-qa:land-area-km2:2023",
+      "entityId": "country:qa",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 11490,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-qa:population-total:2023",
+      "entityId": "country:qa",
+      "factTypeId": "fact-type:population-total",
+      "value": 2656032,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-ro:land-area-km2:2023",
+      "entityId": "country:ro",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 230080,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-ro:population-total:2023",
+      "entityId": "country:ro",
+      "factTypeId": "fact-type:population-total",
+      "value": 19061062,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-rs:land-area-km2:2023",
+      "entityId": "country:rs",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 84090,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-rs:population-total:2023",
+      "entityId": "country:rs",
+      "factTypeId": "fact-type:population-total",
+      "value": 6623183,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-ru:land-area-km2:2023",
+      "entityId": "country:ru",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 16376870,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-ru:population-total:2023",
+      "entityId": "country:ru",
+      "factTypeId": "fact-type:population-total",
+      "value": 143826130,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-rw:land-area-km2:2023",
+      "entityId": "country:rw",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 24670,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-rw:population-total:2023",
+      "entityId": "country:rw",
+      "factTypeId": "fact-type:population-total",
+      "value": 13954471,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-sa:land-area-km2:2023",
+      "entityId": "country:sa",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 2149690,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-sa:population-total:2023",
+      "entityId": "country:sa",
+      "factTypeId": "fact-type:population-total",
+      "value": 33702731,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-sb:land-area-km2:2023",
+      "entityId": "country:sb",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 27990,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-sb:population-total:2023",
+      "entityId": "country:sb",
+      "factTypeId": "fact-type:population-total",
+      "value": 800005,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-sc:land-area-km2:2023",
+      "entityId": "country:sc",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 460,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-sc:population-total:2023",
+      "entityId": "country:sc",
+      "factTypeId": "fact-type:population-total",
+      "value": 119773,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-sd:land-area-km2:2023",
+      "entityId": "country:sd",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 1868000,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-sd:population-total:2023",
+      "entityId": "country:sd",
+      "factTypeId": "fact-type:population-total",
+      "value": 50042791,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-se:land-area-km2:2023",
+      "entityId": "country:se",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 407270,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-se:population-total:2023",
+      "entityId": "country:se",
+      "factTypeId": "fact-type:population-total",
+      "value": 10536632,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-sg:land-area-km2:2023",
+      "entityId": "country:sg",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 718,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-sg:population-total:2023",
+      "entityId": "country:sg",
+      "factTypeId": "fact-type:population-total",
+      "value": 5917648,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-si:land-area-km2:2023",
+      "entityId": "country:si",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 20134.5,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-si:population-total:2023",
+      "entityId": "country:si",
+      "factTypeId": "fact-type:population-total",
+      "value": 2120461,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-sk:land-area-km2:2023",
+      "entityId": "country:sk",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 48080,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-sk:population-total:2023",
+      "entityId": "country:sk",
+      "factTypeId": "fact-type:population-total",
+      "value": 5426740,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-sl:land-area-km2:2023",
+      "entityId": "country:sl",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 72180,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-sl:population-total:2023",
+      "entityId": "country:sl",
+      "factTypeId": "fact-type:population-total",
+      "value": 8460512,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-sm:land-area-km2:2023",
+      "entityId": "country:sm",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 60,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-sm:population-total:2023",
+      "entityId": "country:sm",
+      "factTypeId": "fact-type:population-total",
+      "value": 33860,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-sn:land-area-km2:2023",
+      "entityId": "country:sn",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 192530,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-sn:population-total:2023",
+      "entityId": "country:sn",
+      "factTypeId": "fact-type:population-total",
+      "value": 18077573,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-so:land-area-km2:2023",
+      "entityId": "country:so",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 627340,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-so:population-total:2023",
+      "entityId": "country:so",
+      "factTypeId": "fact-type:population-total",
+      "value": 18358615,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-sr:land-area-km2:2023",
+      "entityId": "country:sr",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 160507.61,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-sr:population-total:2023",
+      "entityId": "country:sr",
+      "factTypeId": "fact-type:population-total",
+      "value": 628886,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-ss:land-area-km2:2023",
+      "entityId": "country:ss",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 631930,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-ss:population-total:2023",
+      "entityId": "country:ss",
+      "factTypeId": "fact-type:population-total",
+      "value": 11483374,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-st:land-area-km2:2023",
+      "entityId": "country:st",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 960,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-st:population-total:2023",
+      "entityId": "country:st",
+      "factTypeId": "fact-type:population-total",
+      "value": 230871,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-sv:land-area-km2:2023",
+      "entityId": "country:sv",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 20720,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-sv:population-total:2023",
+      "entityId": "country:sv",
+      "factTypeId": "fact-type:population-total",
+      "value": 6309624,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-sy:land-area-km2:2023",
+      "entityId": "country:sy",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 183630,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-sy:population-total:2023",
+      "entityId": "country:sy",
+      "factTypeId": "fact-type:population-total",
+      "value": 23594623,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-sz:land-area-km2:2023",
+      "entityId": "country:sz",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 17200,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-sz:population-total:2023",
+      "entityId": "country:sz",
+      "factTypeId": "fact-type:population-total",
+      "value": 1230506,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-td:land-area-km2:2023",
+      "entityId": "country:td",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 1259200,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-td:population-total:2023",
+      "entityId": "country:td",
+      "factTypeId": "fact-type:population-total",
+      "value": 19319064,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-tg:land-area-km2:2023",
+      "entityId": "country:tg",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 54390,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-tg:population-total:2023",
+      "entityId": "country:tg",
+      "factTypeId": "fact-type:population-total",
+      "value": 8223850,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-th:land-area-km2:2023",
+      "entityId": "country:th",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 510890,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-th:population-total:2023",
+      "entityId": "country:th",
+      "factTypeId": "fact-type:population-total",
+      "value": 71702435,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-tj:land-area-km2:2023",
+      "entityId": "country:tj",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 138790,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-tj:population-total:2023",
+      "entityId": "country:tj",
+      "factTypeId": "fact-type:population-total",
+      "value": 10389799,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-tl:land-area-km2:2023",
+      "entityId": "country:tl",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 14870,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-tl:population-total:2023",
+      "entityId": "country:tl",
+      "factTypeId": "fact-type:population-total",
+      "value": 1384286,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-tm:land-area-km2:2023",
+      "entityId": "country:tm",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 469930,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-tm:population-total:2023",
+      "entityId": "country:tm",
+      "factTypeId": "fact-type:population-total",
+      "value": 7364438,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-tn:land-area-km2:2023",
+      "entityId": "country:tn",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 155360,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-tn:population-total:2023",
+      "entityId": "country:tn",
+      "factTypeId": "fact-type:population-total",
+      "value": 12200431,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-to:land-area-km2:2023",
+      "entityId": "country:to",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 720,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-to:population-total:2023",
+      "entityId": "country:to",
+      "factTypeId": "fact-type:population-total",
+      "value": 104597,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-tr:land-area-km2:2023",
+      "entityId": "country:tr",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 769630,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-tr:population-total:2023",
+      "entityId": "country:tr",
+      "factTypeId": "fact-type:population-total",
+      "value": 85325965,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-tt:land-area-km2:2023",
+      "entityId": "country:tt",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 5130,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-tt:population-total:2023",
+      "entityId": "country:tt",
+      "factTypeId": "fact-type:population-total",
+      "value": 1367510,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-tv:land-area-km2:2023",
+      "entityId": "country:tv",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 30,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-tv:population-total:2023",
+      "entityId": "country:tv",
+      "factTypeId": "fact-type:population-total",
+      "value": 9816,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-tz:land-area-km2:2023",
+      "entityId": "country:tz",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 885800,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-tz:population-total:2023",
+      "entityId": "country:tz",
+      "factTypeId": "fact-type:population-total",
+      "value": 66617606,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-ua:land-area-km2:2023",
+      "entityId": "country:ua",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 579400,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-ua:population-total:2023",
+      "entityId": "country:ua",
+      "factTypeId": "fact-type:population-total",
+      "value": 37732836,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-ug:land-area-km2:2023",
+      "entityId": "country:ug",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 200520,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-ug:population-total:2023",
+      "entityId": "country:ug",
+      "factTypeId": "fact-type:population-total",
+      "value": 48656601,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-us:land-area-km2:2023",
+      "entityId": "country:us",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 9147420,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-us:population-total:2023",
+      "entityId": "country:us",
+      "factTypeId": "fact-type:population-total",
+      "value": 336755052,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-uy:land-area-km2:2023",
+      "entityId": "country:uy",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 175020,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-uy:population-total:2023",
+      "entityId": "country:uy",
+      "factTypeId": "fact-type:population-total",
+      "value": 3388081,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-uz:land-area-km2:2023",
+      "entityId": "country:uz",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 440650,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-uz:population-total:2023",
+      "entityId": "country:uz",
+      "factTypeId": "fact-type:population-total",
+      "value": 35652307,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-vc:land-area-km2:2023",
+      "entityId": "country:vc",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 390,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-vc:population-total:2023",
+      "entityId": "country:vc",
+      "factTypeId": "fact-type:population-total",
+      "value": 101323,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-ve:land-area-km2:2023",
+      "entityId": "country:ve",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 882050,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-ve:population-total:2023",
+      "entityId": "country:ve",
+      "factTypeId": "fact-type:population-total",
+      "value": 28300854,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-vn:land-area-km2:2023",
+      "entityId": "country:vn",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 313429,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-vn:population-total:2023",
+      "entityId": "country:vn",
+      "factTypeId": "fact-type:population-total",
+      "value": 100352192,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-vu:land-area-km2:2023",
+      "entityId": "country:vu",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 12190,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-vu:population-total:2023",
+      "entityId": "country:vu",
+      "factTypeId": "fact-type:population-total",
+      "value": 320409,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-ws:land-area-km2:2023",
+      "entityId": "country:ws",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 2780,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-ws:population-total:2023",
+      "entityId": "country:ws",
+      "factTypeId": "fact-type:population-total",
+      "value": 216663,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-ye:land-area-km2:2023",
+      "entityId": "country:ye",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 527970,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-ye:population-total:2023",
+      "entityId": "country:ye",
+      "factTypeId": "fact-type:population-total",
+      "value": 39390799,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-za:land-area-km2:2023",
+      "entityId": "country:za",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 1213090,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-za:population-total:2023",
+      "entityId": "country:za",
+      "factTypeId": "fact-type:population-total",
+      "value": 63212384,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-zm:land-area-km2:2023",
+      "entityId": "country:zm",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 743390,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-zm:population-total:2023",
+      "entityId": "country:zm",
+      "factTypeId": "fact-type:population-total",
+      "value": 20723965,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "fact:country-zw:land-area-km2:2023",
+      "entityId": "country:zw",
+      "factTypeId": "fact-type:land-area-km2",
+      "value": 386850,
+      "asOf": "2023",
+      "method": "World Bank WDI AG.LND.TOTL.K2; FAOSTAT-Landfläche; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "fact:country-zw:population-total:2023",
+      "entityId": "country:zw",
+      "factTypeId": "fact-type:population-total",
+      "value": 16340822,
+      "asOf": "2023",
+      "method": "World Bank WDI SP.POP.TOTL; Gesamtbevölkerung; Kalenderjahr 2023",
+      "sourceRefs": [
+        "world-bank-population-2023"
+      ]
+    }
+  ],
+  "relationClaims": [
+    {
+      "id": "relation:country-ao:has-official-language:language-pt",
+      "sourceId": "country:ao",
+      "relationType": "has_official_language",
+      "targetId": "language:pt",
+      "qualifiers": {
+        "status": "official",
+        "reviewedAt": "2026-07-30"
+      },
+      "sourceRefs": [
+        "cplp-portuguese-language-states"
+      ]
+    },
+    {
+      "id": "relation:country-br:has-official-language:language-pt",
+      "sourceId": "country:br",
+      "relationType": "has_official_language",
+      "targetId": "language:pt",
+      "qualifiers": {
+        "status": "official",
+        "reviewedAt": "2026-07-30"
+      },
+      "sourceRefs": [
+        "cplp-portuguese-language-states"
+      ]
+    },
+    {
+      "id": "relation:country-cv:has-official-language:language-pt",
+      "sourceId": "country:cv",
+      "relationType": "has_official_language",
+      "targetId": "language:pt",
+      "qualifiers": {
+        "status": "official",
+        "reviewedAt": "2026-07-30"
+      },
+      "sourceRefs": [
+        "cplp-portuguese-language-states"
+      ]
+    },
+    {
+      "id": "relation:country-gq:has-official-language:language-pt",
+      "sourceId": "country:gq",
+      "relationType": "has_official_language",
+      "targetId": "language:pt",
+      "qualifiers": {
+        "status": "official",
+        "reviewedAt": "2026-07-30"
+      },
+      "sourceRefs": [
+        "cplp-portuguese-language-states"
+      ]
+    },
+    {
+      "id": "relation:country-gw:has-official-language:language-pt",
+      "sourceId": "country:gw",
+      "relationType": "has_official_language",
+      "targetId": "language:pt",
+      "qualifiers": {
+        "status": "official",
+        "reviewedAt": "2026-07-30"
+      },
+      "sourceRefs": [
+        "cplp-portuguese-language-states"
+      ]
+    },
+    {
+      "id": "relation:country-mz:has-official-language:language-pt",
+      "sourceId": "country:mz",
+      "relationType": "has_official_language",
+      "targetId": "language:pt",
+      "qualifiers": {
+        "status": "official",
+        "reviewedAt": "2026-07-30"
+      },
+      "sourceRefs": [
+        "cplp-portuguese-language-states"
+      ]
+    },
+    {
+      "id": "relation:country-pt:has-official-language:language-pt",
+      "sourceId": "country:pt",
+      "relationType": "has_official_language",
+      "targetId": "language:pt",
+      "qualifiers": {
+        "status": "official",
+        "reviewedAt": "2026-07-30"
+      },
+      "sourceRefs": [
+        "cplp-portuguese-language-states"
+      ]
+    },
+    {
+      "id": "relation:country-st:has-official-language:language-pt",
+      "sourceId": "country:st",
+      "relationType": "has_official_language",
+      "targetId": "language:pt",
+      "qualifiers": {
+        "status": "official",
+        "reviewedAt": "2026-07-30"
+      },
+      "sourceRefs": [
+        "cplp-portuguese-language-states"
+      ]
+    },
+    {
+      "id": "relation:country-tl:has-official-language:language-pt",
+      "sourceId": "country:tl",
+      "relationType": "has_official_language",
+      "targetId": "language:pt",
+      "qualifiers": {
+        "status": "official",
+        "reviewedAt": "2026-07-30"
+      },
+      "sourceRefs": [
+        "cplp-portuguese-language-states"
+      ]
+    }
+  ]
+}

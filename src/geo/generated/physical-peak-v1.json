@@ -1,0 +1,277 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "naturalearth:peak:aconcagua",
+      "properties": {
+        "entityId": "naturalearth:peak:aconcagua",
+        "label": "Aconcagua",
+        "entityType": "peak",
+        "difficulty": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.015801,
+          -32.655679
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "naturalearth:peak:bolivar",
+      "properties": {
+        "entityId": "naturalearth:peak:bolivar",
+        "label": "Pico Bolívar",
+        "entityType": "peak",
+        "difficulty": 3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.052734,
+          8.552859
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "naturalearth:peak:chimborazo",
+      "properties": {
+        "entityId": "naturalearth:peak:chimborazo",
+        "label": "Chimborazo",
+        "entityType": "peak",
+        "difficulty": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.817489,
+          -1.469261
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "naturalearth:peak:denali",
+      "properties": {
+        "entityId": "naturalearth:peak:denali",
+        "label": "Denali",
+        "entityType": "peak",
+        "difficulty": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.007296,
+          63.069411
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "naturalearth:peak:dhaulagiri",
+      "properties": {
+        "entityId": "naturalearth:peak:dhaulagiri",
+        "label": "Dhaulagiri",
+        "entityType": "peak",
+        "difficulty": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.495136,
+          28.696462
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "naturalearth:peak:elbrus",
+      "properties": {
+        "entityId": "naturalearth:peak:elbrus",
+        "label": "Elbrus",
+        "entityType": "peak",
+        "difficulty": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          42.439198,
+          43.355171
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "naturalearth:peak:everest",
+      "properties": {
+        "entityId": "naturalearth:peak:everest",
+        "label": "Mount Everest",
+        "entityType": "peak",
+        "difficulty": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.880596,
+          27.980481
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "naturalearth:peak:k2",
+      "properties": {
+        "entityId": "naturalearth:peak:k2",
+        "label": "K2",
+        "entityType": "peak",
+        "difficulty": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.513209,
+          35.882406
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "naturalearth:peak:kilimanjaro",
+      "properties": {
+        "entityId": "naturalearth:peak:kilimanjaro",
+        "label": "Kilimandscharo",
+        "entityType": "peak",
+        "difficulty": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.353252,
+          -3.075715
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "naturalearth:peak:kosciuszko",
+      "properties": {
+        "entityId": "naturalearth:peak:kosciuszko",
+        "label": "Mount Kosciuszko",
+        "entityType": "peak",
+        "difficulty": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          148.263192,
+          -36.45588
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "naturalearth:peak:mont-blanc",
+      "properties": {
+        "entityId": "naturalearth:peak:mont-blanc",
+        "label": "Mont Blanc",
+        "entityType": "peak",
+        "difficulty": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.865043,
+          45.833679
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "naturalearth:peak:mount-kenya",
+      "properties": {
+        "entityId": "naturalearth:peak:mount-kenya",
+        "label": "Mount-Kenya-Massiv",
+        "entityType": "peak",
+        "difficulty": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.299935,
+          -0.150072
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "naturalearth:peak:puncak-jaya",
+      "properties": {
+        "entityId": "naturalearth:peak:puncak-jaya",
+        "label": "Carstensz-Pyramide",
+        "entityType": "peak",
+        "difficulty": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.166252,
+          -4.077668
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "naturalearth:peak:shasta",
+      "properties": {
+        "entityId": "naturalearth:peak:shasta",
+        "label": "Mount Shasta",
+        "entityType": "peak",
+        "difficulty": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.195014,
+          41.409307
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "naturalearth:peak:toubkal",
+      "properties": {
+        "entityId": "naturalearth:peak:toubkal",
+        "label": "Jbel Toubkal",
+        "entityType": "peak",
+        "difficulty": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.916134,
+          31.062075
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "naturalearth:peak:whitney",
+      "properties": {
+        "entityId": "naturalearth:peak:whitney",
+        "label": "Mount Whitney",
+        "entityType": "peak",
+        "difficulty": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.292218,
+          36.582715
+        ]
+      }
+    }
+  ]
+}

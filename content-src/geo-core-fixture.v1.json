@@ -1,0 +1,156 @@
+{
+  "datasetId": "geo-core-fixture",
+  "version": "2026-07-30.phase1",
+  "schemaVersion": 1,
+  "builtAt": "2026-07-30T00:00:00.000Z",
+  "localeCoverage": ["de"],
+  "sources": [
+    {
+      "id": "phase1-curated-fixture",
+      "sourceVersion": "1",
+      "retrievedAt": "2026-07-30T00:00:00.000Z",
+      "url": "local:content-src/geo-core-fixture.v1.json",
+      "license": "Projektinterne Testdaten; nicht als Produktionsquelle freigegeben"
+    },
+    {
+      "id": "natural-earth",
+      "sourceVersion": "world-atlas-2.0.2 / Natural Earth 1:110m",
+      "retrievedAt": "2026-07-30T00:00:00.000Z",
+      "url": "https://www.naturalearthdata.com/",
+      "license": "Public Domain"
+    }
+  ],
+  "countries": [
+    {
+      "id": "country:at",
+      "nameDe": "Österreich",
+      "mapFeatureName": "Austria",
+      "difficulty": 1,
+      "capital": {
+        "id": "curated:capital-vienna",
+        "nameDe": "Wien",
+        "aliasesDe": ["Vienna"],
+        "centroid": [16.3738, 48.2082],
+        "difficulty": 1
+      }
+    },
+    {
+      "id": "country:cz",
+      "nameDe": "Tschechien",
+      "aliasesDe": ["Tschechische Republik"],
+      "mapFeatureName": "Czechia",
+      "difficulty": 2,
+      "capital": {
+        "id": "curated:capital-prague",
+        "nameDe": "Prag",
+        "aliasesDe": ["Praha", "Prague"],
+        "centroid": [14.4378, 50.0755],
+        "difficulty": 1
+      }
+    },
+    {
+      "id": "country:de",
+      "nameDe": "Deutschland",
+      "mapFeatureName": "Germany",
+      "difficulty": 1,
+      "capital": {
+        "id": "curated:capital-berlin",
+        "nameDe": "Berlin",
+        "aliasesDe": [],
+        "centroid": [13.405, 52.52],
+        "difficulty": 1
+      }
+    },
+    {
+      "id": "country:es",
+      "nameDe": "Spanien",
+      "mapFeatureName": "Spain",
+      "difficulty": 1,
+      "capital": {
+        "id": "curated:capital-madrid",
+        "nameDe": "Madrid",
+        "aliasesDe": [],
+        "centroid": [-3.7038, 40.4168],
+        "difficulty": 1
+      }
+    },
+    {
+      "id": "country:fr",
+      "nameDe": "Frankreich",
+      "mapFeatureName": "France",
+      "difficulty": 1,
+      "capital": {
+        "id": "curated:capital-paris",
+        "nameDe": "Paris",
+        "aliasesDe": [],
+        "centroid": [2.3522, 48.8566],
+        "difficulty": 1
+      }
+    },
+    {
+      "id": "country:hr",
+      "nameDe": "Kroatien",
+      "mapFeatureName": "Croatia",
+      "difficulty": 2,
+      "capital": {
+        "id": "curated:capital-zagreb",
+        "nameDe": "Zagreb",
+        "aliasesDe": ["Agram"],
+        "centroid": [15.9819, 45.815],
+        "difficulty": 2
+      }
+    },
+    {
+      "id": "country:it",
+      "nameDe": "Italien",
+      "mapFeatureName": "Italy",
+      "difficulty": 1,
+      "capital": {
+        "id": "curated:capital-rome",
+        "nameDe": "Rom",
+        "aliasesDe": ["Roma", "Rome"],
+        "centroid": [12.4964, 41.9028],
+        "difficulty": 1
+      }
+    },
+    {
+      "id": "country:pl",
+      "nameDe": "Polen",
+      "mapFeatureName": "Poland",
+      "difficulty": 1,
+      "capital": {
+        "id": "curated:capital-warsaw",
+        "nameDe": "Warschau",
+        "aliasesDe": ["Warszawa", "Warsaw"],
+        "centroid": [21.0122, 52.2297],
+        "difficulty": 1
+      }
+    },
+    {
+      "id": "country:pt",
+      "nameDe": "Portugal",
+      "mapFeatureName": "Portugal",
+      "difficulty": 1,
+      "capital": {
+        "id": "curated:capital-lisbon",
+        "nameDe": "Lissabon",
+        "aliasesDe": ["Lisboa", "Lisbon"],
+        "centroid": [-9.1393, 38.7223],
+        "difficulty": 1
+      }
+    },
+    {
+      "id": "country:si",
+      "nameDe": "Slowenien",
+      "mapFeatureName": "Slovenia",
+      "difficulty": 2,
+      "capital": {
+        "id": "curated:capital-ljubljana",
+        "nameDe": "Ljubljana",
+        "aliasesDe": ["Laibach"],
+        "centroid": [14.5058, 46.0569],
+        "difficulty": 2
+      }
+    }
+  ]
+}

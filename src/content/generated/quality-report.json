@@ -1,0 +1,224 @@
+{
+  "datasetId": "geo-core-mvp",
+  "version": "2026-08-03.phase7-ranked-physical1",
+  "checks": {
+    "schemaValid": true,
+    "uniqueEntityIds": true,
+    "referencesResolved": true,
+    "coordinateRangesValid": true,
+    "countryCount": 195,
+    "capitalSeatCount": 202,
+    "physicalEntityCounts": {
+      "river": 18,
+      "lake": 18,
+      "sea": 18,
+      "mountain_range": 18,
+      "peak": 16
+    },
+    "physicalScopeCounts": {
+      "continent:africa": {
+        "river": 3,
+        "lake": 3,
+        "sea": 3,
+        "mountain_range": 3,
+        "peak": 3
+      },
+      "continent:asia": {
+        "river": 4,
+        "lake": 3,
+        "sea": 7,
+        "mountain_range": 5,
+        "peak": 4
+      },
+      "continent:europe": {
+        "river": 3,
+        "lake": 3,
+        "sea": 4,
+        "mountain_range": 3,
+        "peak": 2
+      },
+      "continent:north-america": {
+        "river": 3,
+        "lake": 3,
+        "sea": 4,
+        "mountain_range": 3,
+        "peak": 3
+      },
+      "continent:oceania": {
+        "river": 3,
+        "lake": 3,
+        "sea": 3,
+        "mountain_range": 3,
+        "peak": 2
+      },
+      "continent:south-america": {
+        "river": 3,
+        "lake": 3,
+        "sea": 3,
+        "mountain_range": 3,
+        "peak": 3
+      }
+    },
+    "continentCounts": {
+      "continent:africa": 54,
+      "continent:asia": 50,
+      "continent:europe": 50,
+      "continent:north-america": 23,
+      "continent:oceania": 14,
+      "continent:south-america": 12
+    },
+    "mapFallbackFeatureIds": [
+      "798"
+    ],
+    "knowledgeFactCount": 388,
+    "knowledgeTemplateCount": 20,
+    "compiledKnowledgeQuestionCount": 20,
+    "knowledgeQuestionsUniqueAndSourced": true,
+    "knowledgeComparisonsMethodConsistent": true,
+    "rankedCityEntityCount": 6000,
+    "rankedCityScopeCounts": {
+      "world": 1000,
+      "continent:africa": 1000,
+      "continent:asia": 1000,
+      "continent:europe": 1000,
+      "continent:north-america": 1000,
+      "continent:oceania": 1000,
+      "continent:south-america": 1000
+    },
+    "rankedCityGermanPreferredNameCount": 3100,
+    "rankedCityGermanAliasCount": 1527,
+    "rankedCityBoundaryTies": 1,
+    "rankedCityPackBytes": 8844004,
+    "rankedPhysicalEntityCounts": {
+      "ranked_river": 100,
+      "ranked_peak": 100
+    },
+    "rankedPhysicalGermanAliasCount": 166,
+    "rankedPhysicalPackBytes": 418722
+  },
+  "review": {
+    "multipleCapitalCountries": [
+      {
+        "countryId": "country:bo",
+        "capitals": [
+          {
+            "id": "city:wd-q1491",
+            "nameDe": "La Paz",
+            "role": "seat_of_government"
+          },
+          {
+            "id": "city:wd-q2907",
+            "nameDe": "Sucre",
+            "role": "constitutional_capital"
+          }
+        ]
+      },
+      {
+        "countryId": "country:lk",
+        "capitals": [
+          {
+            "id": "city:wd-q35381",
+            "nameDe": "Colombo",
+            "role": "executive_and_judicial_seat"
+          },
+          {
+            "id": "city:wd-q41963",
+            "nameDe": "Sri Jayewardenepura Kotte",
+            "role": "legislative_capital"
+          }
+        ]
+      },
+      {
+        "countryId": "country:ps",
+        "capitals": [
+          {
+            "id": "city:wd-q158119",
+            "nameDe": "Ramallah",
+            "role": "administrative_center"
+          },
+          {
+            "id": "city:wd-q212938",
+            "nameDe": "Ostjerusalem",
+            "role": "claimed_capital"
+          }
+        ]
+      },
+      {
+        "countryId": "country:sz",
+        "capitals": [
+          {
+            "id": "city:wd-q101418",
+            "nameDe": "Lobamba",
+            "role": "royal_and_legislative_capital"
+          },
+          {
+            "id": "city:wd-q3904",
+            "nameDe": "Mbabane",
+            "role": "administrative_capital"
+          }
+        ]
+      },
+      {
+        "countryId": "country:ye",
+        "capitals": [
+          {
+            "id": "city:wd-q131694",
+            "nameDe": "Aden",
+            "role": "provisional_seat"
+          },
+          {
+            "id": "city:wd-q2471",
+            "nameDe": "Sanaa",
+            "role": "constitutional_capital"
+          }
+        ]
+      },
+      {
+        "countryId": "country:za",
+        "capitals": [
+          {
+            "id": "city:wd-q37701",
+            "nameDe": "Bloemfontein",
+            "role": "judicial_capital"
+          },
+          {
+            "id": "city:wd-q3926",
+            "nameDe": "Pretoria",
+            "role": "executive_capital"
+          },
+          {
+            "id": "city:wd-q5465",
+            "nameDe": "Kapstadt",
+            "role": "legislative_capital"
+          }
+        ]
+      }
+    ],
+    "politicallySensitiveCountryIds": [
+      "country:cy",
+      "country:gq",
+      "country:il",
+      "country:ps",
+      "country:ye"
+    ],
+    "knownNameUpdates": [
+      {
+        "countryId": "country:sz",
+        "preferred": "Eswatini",
+        "retainedAlias": "Swasiland"
+      }
+    ]
+  },
+  "warnings": [
+    "Kontinentscopes überlappen bei transkontinentalen Staaten.",
+    "Hauptstadtrollen und politisch sensible Fälle benötigen redaktionelle Einzelprüfung.",
+    "Kleinstaaten verwenden zusätzlich kartographische Treffermarker.",
+    "Physische Kontinentscopes sind kuratiert und dürfen überlappen.",
+    "Meeres- und Gebirgspolygone sind kartographische Lernflächen.",
+    "Wissensrankings verwenden den gemeinsamen Bezugsstand 2023; Vatikanstadt fehlt in den World-Bank-Indikatoren und wird von keiner Phase-6-Vorlage gerankt.",
+    "Städteränge verwenden das GeoNames-population-Feld; es ist keine einheitliche Stadtgebiets- oder Metropolregionsstatistik.",
+    "Exakte Top-N-Mengen lösen gleiche Bevölkerungswerte deterministisch nach numerischer GeoNames-ID auf.",
+    "Flusslängen hängen von der gewählten Quelle-Mündung-Definition ab; das Rangquiz nutzt ausschließlich den ersten Kilometerwert der fest versionierten Systemtabelle.",
+    "Das Bergranking nutzt eigenständige Gipfel nach gerundeter Höhe über Meeresspiegel und schließt als S markierte Untergipfel aus."
+  ]
+}

@@ -1,45 +1,118 @@
-# Geographie
+# GeoApp
 
-Responsive Lern- und Quizplattform für Länder, Währungen, Sehenswürdigkeiten und das Sonnensystem. Fortschritt, Punkte, Statistiken, Lernverlauf und Erfolge werden lokal im Browser gespeichert.
+Eine geplante Geographie-Lern-App, in der sich sehr viele Quizarten aus wenigen
+Bausteinen zusammensetzen lassen: Länder, Hauptstädte, Flaggen, Städte, Flüsse,
+Gebirge und später weitere geographische Themen – auf der Karte, per
+Texteingabe, als Auswahlaufgabe, mit oder ohne Zeitdruck.
 
-**Live:** [tqnoomaxx.github.io/geographie](https://tqnoomaxx.github.io/geographie/)
+Phase 0 enthält die belastbare Produkt-, Daten- und Architekturplanung. Phase 1
+hat die generische Quiz- und Session-Engine bewiesen. Phase 2 macht daraus
+einen lokalen MVP mit 195 Staaten,
+202 Hauptstadtsitzen, vier Frage-/Antwortkombinationen, sieben Gebieten,
+Timer, Fehlertraining, lokalem Lernstand und vorbereitetem Offline-Betrieb.
+Phase 3 ergänzt Gastidentität, Export, Offline-Outbox, optionalen
+Supabase-Sync und konfigurierbare Abzeichen. Phase 4 ergänzt 195 lokale
+Flaggen, 195 Länderumrisse, Auswahlfragen, Lern-/Übungs-/Prüfungsprofile, eine erste
+Wiederholungsqueue und einen deterministischen Weltmix. Phase 5 ergänzt
+kuratierte Flüsse, Seen, Meere, Gebirge und Gipfel mit Punkt-, Linien- und
+Flächenfragen, fünf neue Abzeichenfamilien und den vollständigen Neun-Pool-Mix.
+Phase 6 ergänzt einen belegten Faktengraphen, 20 kompilierte Wissenspuzzles und
+den zehnten Weltmix-Pool. Phase 7 ergänzt einen lazy geladenen
+GeoNames-Snapshot mit globalen und kontinentalen Top-100/250/500/1000-Sets,
+beiden Stadt-Fragerichtungen, Suche, Clustering, pausierbaren Marathons,
+Abzeichen und Weltmixintegration. Ein zweiter Phase-7-Pack ergänzt je 100
+globale Flusssysteme und eigenständige Gipfel als Faktenquiz mit Länge/Höhe,
+Ländern und Mündung beziehungsweise Gebirge.
 
-## Funktionen
+## Einstieg
 
-- Länderquiz mit Hauptstadt, Erhebung, Fluss, Sprache und Währung
-- Eigenes Währungsquiz mit allen 197 Ländern
-- Sehenswürdigkeiten-Quiz mit 174 bebilderten Orten
-- Planeten-, Monde- und Zwergplaneten-Quiz
-- Lernkarten mit gewichteter Wiederholung für unsichere Antworten
-- Unbekannte Antworten werden vollständig aufgedeckt und später in derselben Runde wiederholt
-- Sehenswürdigkeiten wahlweise nach Name, Land oder beidem abfragen
-- Statistiken mit Lernfortschritt, schwierigen Fragen und letzten Lernkarten
-- Helles und dunkles Design, responsive Navigation und reduzierte Animationen bei Bedarf
-- Tolerante Antworterkennung für Groß-/Kleinschreibung, Akzente, Umlaute und alternative Schreibweisen
+- [Dokumentenübersicht](docs/INDEX.md)
+- [Produktbild und MVP](docs/PRODUCT.md)
+- [Langfristiger Quizkatalog](docs/QUIZ_CATALOG.md)
+- [Quizsystem](docs/QUIZ_ENGINE.md)
+- [Gemischte und zusammengesetzte Fragen](docs/COMPOSITE_QUESTIONS.md)
+- [Datenmodell](docs/DATA_MODEL.md)
+- [Accounts, Spielstände und Abzeichen](docs/ACCOUNTS_AND_ACHIEVEMENTS.md)
+- [Technische Architektur](docs/ARCHITECTURE.md)
+- [Zentrales Designsystem](docs/design/DESIGN_SYSTEM.md)
+- [Roadmap](docs/ROADMAP.md)
+- [Detaillierte Umsetzungsschritte](docs/IMPLEMENTATION_STEPS.md)
+- [Deployment über GitHub Pages](docs/DEPLOYMENT.md)
+- [Performance-Baseline](docs/PERFORMANCE.md)
+- [Visueller Konzept-/Render-Abgleich](docs/design/REVIEW.md)
+- [Probleme und Risiken](Critics.md)
+- [Phase-2-MVP-Slice](docs/slices/PHASE_2_MVP_VERTICAL_SLICE.md)
+- [Phase-3-Slice](docs/slices/PHASE_3_ACCOUNT_SYNC_VERTICAL_SLICE.md)
+- [Phase-4-Slice](docs/slices/PHASE_4_VISUAL_MIX_VERTICAL_SLICE.md)
+- [Phase-5-Slice](docs/slices/PHASE_5_PHYSICAL_GEOGRAPHY_VERTICAL_SLICE.md)
+- [Aktiver Phase-7-Slice](docs/slices/PHASE_7_RANKED_CITIES_VERTICAL_SLICE.md)
+- [Phase-7-Physikranglisten](docs/slices/PHASE_7_RANKED_PHYSICAL_VERTICAL_SLICE.md)
+- [Content-Pipeline einschließlich Phase 7](docs/CONTENT_PIPELINE.md)
 
 ## Lokal starten
 
-Voraussetzung: Node.js 20.19 oder neuer.
-
-```bash
-npm ci
+```sh
+npm install
 npm run dev
 ```
 
-Die lokale Anwendung läuft anschließend unter `http://localhost:5173`.
+Typecheck, Unit-/Datentests und Produktionsbuild:
 
-## Qualität prüfen
-
-```bash
+```sh
 npm run check
 ```
 
-Der Check umfasst Daten- und Antworttests, den Produktions-Build sowie Browser-Tests in Desktop- und Mobilansicht.
+Browser-Smoke-Test für Desktop und Mobile:
 
-## Veröffentlichung
+```sh
+npx playwright install chromium
+npm run test:browser
+```
 
-Jeder Push auf `main` baut die Anwendung über GitHub Actions und veröffentlicht `dist` automatisch auf GitHub Pages. Die Vite-Konfiguration verwendet relative Asset-Pfade und funktioniert dadurch sowohl unter einer Repository-URL als auch mit einer späteren Custom-Domain.
+Die App bietet Länder und Hauptstädte jeweils als Name → Karte und
+Kartenmarkierung → Texteingabe sowie Flagge/Form → Text, Flagge → Auswahl und
+Land → Flagge. Flüsse, Seen, Meere, Gebirge und Gipfel sind jeweils als
+Name → Karte und Kartenmarkierung → Text verfügbar. Einzel- und Weltmixrunden
+entstehen aus validierten `QuizRoundDefinitionen`, sind per Seed reproduzierbar
+und können nach einem Reload fortgesetzt werden. Der normale Build arbeitet
+ausschließlich mit dem versionierten lokalen Snapshot.
 
-## Inhalte erweitern
+Große Städte stehen für Welt und Kontinente als exakte Top
+100/250/500/1000 nach dem sichtbaren GeoNames-Bevölkerungsfeld zur Verfügung.
+Der 6000-Städte-Pack wird erst beim Stadtmodus oder vorhandenem Stadtlernstand
+geladen.
 
-Die Lerninhalte liegen unter `src/data/*.json`. Sehenswürdigkeitsbilder können über das Feld `image` oder über `public/landmarks/<id>.jpg` bereitgestellt werden. Das Hilfsskript `scripts/fetch-images.mjs` ergänzt fehlende Wikipedia-Bild-URLs.
+„Längste Flüsse“ und „Höchste Berge“ sind globale Top-100-Faktenquizze. Die
+Frage zeigt ein Faktenprofil, die Lösung den Namen zusammen mit allen Angaben.
+Die vorhandenen Kartenquizze für Flussverläufe, Gebirge und Gipfel bleiben
+eigene Themen.
+
+Ein bewusster Datenrefresh benötigt Netzwerkzugriff:
+
+```sh
+npm run content:refresh
+npm run content:refresh:physical
+npm run content:refresh:knowledge
+npm run content:refresh:cities
+npm run content:refresh:ranked-physical
+```
+
+Er ist kein Teil eines normalen Builds oder einer Quizrunde.
+
+Konten sind optional. Eine Beispielkonfiguration steht in `.env.example`; ohne
+beide öffentlichen Supabase-Variablen bleibt die App vollständig im Gastmodus.
+
+## Kurzform der Strategie
+
+```text
+Thema       Hauptstadt
+Frage       Name → Position
+Antwort     Kartenklick
+Gebiet      Europa
+Regeln      20 Fragen, 15 s pro Frage
+                 ↓
+          eine QuizDefinition
+```
+
+Andere Kombinationen verwenden dieselbe Engine. Dadurch ist „alles“ ein
+erweiterbares Ziel und kein unwartbarer Berg einzelner Sonderfälle.

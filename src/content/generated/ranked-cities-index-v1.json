@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "datasetVersion": "2026-08-03.phase7-ranked-physical1",
+  "builtAt": "2026-07-30T00:52:13.953Z",
+  "ranking": {
+    "methodId": "geonames-population-desc-id-asc-v1",
+    "labelDe": "GeoNames-Bevölkerungsfeld, absteigend",
+    "snapshotDate": "2026-07-30",
+    "tieBreakDe": "Bei Gleichstand: numerische GeoNames-ID, aufsteigend",
+    "supportedSetSizes": [
+      100,
+      250,
+      500,
+      1000
+    ]
+  },
+  "quality": {
+    "entityCount": 6000,
+    "germanPreferredNameCount": 3100,
+    "germanAliasCount": 1527,
+    "scopeCounts": {
+      "world": 1000,
+      "continent:africa": 1000,
+      "continent:asia": 1000,
+      "continent:europe": 1000,
+      "continent:north-america": 1000,
+      "continent:oceania": 1000,
+      "continent:south-america": 1000
+    },
+    "boundaryTies": [
+      {
+        "scopeId": "continent:oceania",
+        "setSize": 1000,
+        "population": 2190,
+        "includedId": "geonames:2190948",
+        "excludedId": "geonames:6207712"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "geonames-cities1000",
+      "sourceVersion": "cities1000.zip/2026-07-30",
+      "retrievedAt": "2026-07-30",
+      "url": "https://download.geonames.org/export/dump/cities1000.zip",
+      "license": "CC BY 4.0",
+      "file": {
+        "name": "cities1000.zip",
+        "sha256": "2ef839bf0c3359c3ad28818fb5fc216f5c9c0fe31ef4b25ae7f7c62d667008df",
+        "bytes": 10732828
+      }
+    },
+    {
+      "id": "geonames-alternate-names-v2",
+      "sourceVersion": "alternateNamesV2.zip/2026-07-30",
+      "retrievedAt": "2026-07-30",
+      "url": "https://download.geonames.org/export/dump/alternateNamesV2.zip",
+      "license": "CC BY 4.0",
+      "file": {
+        "name": "alternateNamesV2.zip",
+        "sha256": "93f847f599311762733d9bc9d0857cdb63b00da773ded38af8bb2bb37af136e4",
+        "bytes": 202502773
+      }
+    },
+    {
+      "id": "geonames-country-info",
+      "sourceVersion": "countryInfo.txt/2026-07-30",
+      "retrievedAt": "2026-07-30",
+      "url": "https://download.geonames.org/export/dump/countryInfo.txt",
+      "license": "CC BY 4.0",
+      "file": {
+        "name": "countryInfo.txt",
+        "sha256": "93bafc525813f22e4711ff9ed6d626343094ce48c26388dc7c49189b3d7d5512",
+        "bytes": 31678
+      }
+    }
+  ]
+}

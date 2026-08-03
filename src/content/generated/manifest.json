@@ -1,0 +1,225 @@
+{
+  "datasetId": "geo-core-mvp",
+  "version": "2026-08-03.phase7-ranked-physical1",
+  "schemaVersion": 4,
+  "builtAt": "2026-07-30T00:52:13.953Z",
+  "localeCoverage": [
+    "de"
+  ],
+  "scopePolicy": {
+    "id": "un-193-plus-observers-v1",
+    "labelDe": "195 Staaten: 193 UN-Mitglieder plus Palästina und Vatikanstadt"
+  },
+  "sources": [
+    {
+      "id": "cplp-portuguese-language-states",
+      "sourceVersion": "2026-07-30",
+      "retrievedAt": "2026-07-30",
+      "url": "https://www.cplp.org/estados-membros/",
+      "license": "Quellenverweis; Fakten redaktionell extrahiert"
+    },
+    {
+      "id": "flag-icons",
+      "sourceVersion": "7.5.0",
+      "retrievedAt": "2026-07-30",
+      "url": "https://github.com/lipis/flag-icons/tree/v7.5.0",
+      "license": "MIT"
+    },
+    {
+      "id": "geonames-alternate-names-v2",
+      "sourceVersion": "alternateNamesV2.zip/2026-07-30",
+      "retrievedAt": "2026-07-30",
+      "url": "https://download.geonames.org/export/dump/alternateNamesV2.zip",
+      "license": "CC BY 4.0",
+      "file": {
+        "name": "alternateNamesV2.zip",
+        "sha256": "93f847f599311762733d9bc9d0857cdb63b00da773ded38af8bb2bb37af136e4",
+        "bytes": 202502773
+      }
+    },
+    {
+      "id": "geonames-cities1000",
+      "sourceVersion": "cities1000.zip/2026-07-30",
+      "retrievedAt": "2026-07-30",
+      "url": "https://download.geonames.org/export/dump/cities1000.zip",
+      "license": "CC BY 4.0",
+      "file": {
+        "name": "cities1000.zip",
+        "sha256": "2ef839bf0c3359c3ad28818fb5fc216f5c9c0fe31ef4b25ae7f7c62d667008df",
+        "bytes": 10732828
+      }
+    },
+    {
+      "id": "geonames-country-info",
+      "sourceVersion": "countryInfo.txt/2026-07-30",
+      "retrievedAt": "2026-07-30",
+      "url": "https://download.geonames.org/export/dump/countryInfo.txt",
+      "license": "CC BY 4.0",
+      "file": {
+        "name": "countryInfo.txt",
+        "sha256": "93bafc525813f22e4711ff9ed6d626343094ce48c26388dc7c49189b3d7d5512",
+        "bytes": 31678
+      }
+    },
+    {
+      "id": "natural-earth",
+      "sourceVersion": "world-atlas@2.0.2 / 50m+10m",
+      "retrievedAt": "2026-07-30",
+      "url": "https://www.naturalearthdata.com/",
+      "license": "Public Domain"
+    },
+    {
+      "id": "natural-earth-physical",
+      "sourceVersion": "5.1.2",
+      "retrievedAt": "2026-07-30",
+      "url": "https://github.com/nvkelso/natural-earth-vector/tree/v5.1.2",
+      "license": "Public Domain"
+    },
+    {
+      "id": "phase2-scope-policy",
+      "sourceVersion": "un-193-plus-observers-v1",
+      "retrievedAt": "2026-07-30",
+      "url": "docs/DATA_MODEL.md",
+      "license": "Projektinterne redaktionelle Scope-Policy"
+    },
+    {
+      "id": "wikidata-capital-snapshot",
+      "sourceVersion": "2026-07-30",
+      "retrievedAt": "2026-07-30",
+      "url": "https://query.wikidata.org/",
+      "license": "CC0-1.0"
+    },
+    {
+      "id": "wikipedia-highest-mountains",
+      "sourceVersion": "revision-1367438324",
+      "retrievedAt": "2026-08-03",
+      "url": "https://en.wikipedia.org/w/index.php?title=List_of_highest_mountains_on_Earth&oldid=1367438324",
+      "license": "CC BY-SA 4.0",
+      "pageTitle": "List of highest mountains on Earth",
+      "revisionId": 1367438324,
+      "sha256": "f2126731de4bb5cdd863f6215081fcf40b0a7fbe26291345dcd7107473abbe7c",
+      "bytes": 338963
+    },
+    {
+      "id": "wikipedia-river-systems",
+      "sourceVersion": "revision-1367222027",
+      "retrievedAt": "2026-08-03",
+      "url": "https://en.wikipedia.org/w/index.php?title=List_of_river_systems_by_length&oldid=1367222027",
+      "license": "CC BY-SA 4.0",
+      "pageTitle": "List of river systems by length",
+      "revisionId": 1367222027,
+      "sha256": "d536597b5837a05c2e3bccd9daf025ec48e832ac596b705fcec9dbfa5938affe",
+      "bytes": 315131
+    },
+    {
+      "id": "world-bank-land-area-2023",
+      "sourceVersion": "AG.LND.TOTL.K2/2023",
+      "retrievedAt": "2026-07-30",
+      "url": "https://data.worldbank.org/indicator/AG.LND.TOTL.K2",
+      "license": "CC BY-4.0"
+    },
+    {
+      "id": "world-bank-population-2023",
+      "sourceVersion": "SP.POP.TOTL/2023",
+      "retrievedAt": "2026-07-30",
+      "url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+      "license": "CC BY-4.0"
+    },
+    {
+      "id": "world-countries",
+      "sourceVersion": "5.1.0",
+      "retrievedAt": "2026-07-30",
+      "url": "https://github.com/mledoze/countries",
+      "license": "ODbL-1.0"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "geo-core-mvp-v1.json",
+      "sha256": "26ff1a51869cd839c9c26814fe58bb8153b848c3cc0115063f39aed6dc2ce861",
+      "bytes": 1021122,
+      "entityCount": 512
+    },
+    {
+      "path": "quality-report.json",
+      "sha256": "fe7d9212e8b2d3a45287489657ecd0e2d1550386720910c6b5d7b67272a43c40",
+      "bytes": 6198
+    },
+    {
+      "path": "ranked-cities-v1.json",
+      "sha256": "49bbec691634e3066a7e41adc90c5caef2b8b9265a481d171e241bebefd2d6d2",
+      "bytes": 8844004,
+      "entityCount": 6000
+    },
+    {
+      "path": "ranked-cities-index-v1.json",
+      "sha256": "aead267975767ee25fc0ccaafc401afb1db2c73a6aa9f3d33e3c8518e1437709",
+      "bytes": 2298
+    },
+    {
+      "path": "ranked-physical-v1.json",
+      "sha256": "d66bcca030010c29b58a9c2207f759667acfd05046662970af36db4ad0894efe",
+      "bytes": 418722,
+      "entityCount": 200
+    },
+    {
+      "path": "ranked-physical-index-v1.json",
+      "sha256": "5f43d5a5578014e86c1e2290f3d4a5aa7481b4b7142bd52693c68fb583cee541",
+      "bytes": 2373
+    },
+    {
+      "path": "../../geo/generated/mvp-map-additions-v1.json",
+      "sha256": "0708d9ed48812047fcb8defbd79310c5467f2855b55e9a1f31dc63e46139e007",
+      "bytes": 7562
+    },
+    {
+      "path": "../../geo/generated/physical-river-v1.json",
+      "sha256": "a8b3190020709c9c1df2139ef56e1e44eb22cdf012037f2bdb691d1ca2a9417c",
+      "bytes": 299669,
+      "entityCount": 18
+    },
+    {
+      "path": "../../geo/generated/physical-lake-v1.json",
+      "sha256": "7e4380253f62faf0a0515206ce35ab057f16eec84fa6bb99e2840553ea8f457e",
+      "bytes": 267082,
+      "entityCount": 18
+    },
+    {
+      "path": "../../geo/generated/physical-sea-v1.json",
+      "sha256": "3260901860004528128ddd48ba1fd15ace014cd2b12cffd3408ce36ed14c5808",
+      "bytes": 696287,
+      "entityCount": 18
+    },
+    {
+      "path": "../../geo/generated/physical-mountain-range-v1.json",
+      "sha256": "19a2ff2b507401f7a5ed54a4906311ff214caa8a1861d19761037f7a131c4f4a",
+      "bytes": 273685,
+      "entityCount": 18
+    },
+    {
+      "path": "../../geo/generated/physical-peak-v1.json",
+      "sha256": "c0272a0a6230d42f60ebe62fb2fe6bf79187f7133263410ac343d3adb53e17c2",
+      "bytes": 6090,
+      "entityCount": 16
+    },
+    {
+      "path": "visual-assets-index-v1.json",
+      "sha256": "e5fc619a006cde97c1750c1cd495f300d42e66514d436ae314983ea0f905f945",
+      "bytes": 137662,
+      "entityCount": 195
+    }
+  ],
+  "attribution": [
+    "Länderbasis: world-countries 5.1.0 (ODbL 1.0)",
+    "Hauptstadtbeziehungen und Labels: Wikidata (CC0 1.0)",
+    "Kartengeometrie und Länderumrisse: Natural Earth (Public Domain)",
+    "Physische Geometrien: Natural Earth 5.1.2, 1:50m (Public Domain)",
+    "Flaggen: flag-icons 7.5.0 (MIT)",
+    "Landfläche 2023: World Bank WDI / FAOSTAT (CC BY 4.0)",
+    "Bevölkerung 2023: World Bank WDI (CC BY 4.0)",
+    "Portugiesische Amtssprachen: CPLP-Mitgliedstaaten und Länderprofile",
+    "Städte, Koordinaten, Namen und Bevölkerungsfeld: GeoNames (CC BY 4.0)",
+    "Top-100-Flusssysteme und -Gipfel: fest versionierte Wikipedia-Listen (CC BY-SA 4.0)"
+  ],
+  "qualityReport": "quality-report.json"
+}

@@ -1,0 +1,418 @@
+{
+  "schemaVersion": 1,
+  "datasetVersion": "2026-08-03.phase7-ranked-physical1",
+  "templates": [
+    {
+      "id": "official-portuguese-land-rank-2",
+      "candidateType": "country",
+      "promptDe": "Welches ist nach Landfläche das zweitgrößte Land, in dem Portugiesisch Amtssprache ist?",
+      "filter": {
+        "op": "relation",
+        "relationType": "has_official_language",
+        "targetId": "language:pt"
+      },
+      "ranking": {
+        "factTypeId": "fact-type:land-area-km2",
+        "order": "descending",
+        "rank": 2
+      },
+      "answer": { "from": "ranked_entity" },
+      "difficulty": 3
+    },
+    {
+      "id": "official-portuguese-population-rank-2",
+      "candidateType": "country",
+      "promptDe": "Welches Land mit Portugiesisch als Amtssprache hat die zweitgrößte Bevölkerung?",
+      "filter": {
+        "op": "relation",
+        "relationType": "has_official_language",
+        "targetId": "language:pt"
+      },
+      "ranking": {
+        "factTypeId": "fact-type:population-total",
+        "order": "descending",
+        "rank": 2
+      },
+      "answer": { "from": "ranked_entity" },
+      "difficulty": 3
+    },
+    {
+      "id": "african-official-portuguese-land-rank-2",
+      "candidateType": "country",
+      "promptDe": "Welches afrikanische Land mit Portugiesisch als Amtssprache ist nach Landfläche das zweitgrößte?",
+      "filter": {
+        "op": "all",
+        "expressions": [
+          {
+            "op": "relation",
+            "relationType": "located_in",
+            "targetId": "continent:africa"
+          },
+          {
+            "op": "relation",
+            "relationType": "has_official_language",
+            "targetId": "language:pt"
+          }
+        ]
+      },
+      "ranking": {
+        "factTypeId": "fact-type:land-area-km2",
+        "order": "descending",
+        "rank": 2
+      },
+      "answer": { "from": "ranked_entity" },
+      "difficulty": 4
+    },
+    {
+      "id": "african-official-portuguese-population-rank-2",
+      "candidateType": "country",
+      "promptDe": "Welches afrikanische Land mit Portugiesisch als Amtssprache hat die zweitgrößte Bevölkerung?",
+      "filter": {
+        "op": "all",
+        "expressions": [
+          {
+            "op": "relation",
+            "relationType": "located_in",
+            "targetId": "continent:africa"
+          },
+          {
+            "op": "relation",
+            "relationType": "has_official_language",
+            "targetId": "language:pt"
+          }
+        ]
+      },
+      "ranking": {
+        "factTypeId": "fact-type:population-total",
+        "order": "descending",
+        "rank": 2
+      },
+      "answer": { "from": "ranked_entity" },
+      "difficulty": 4
+    },
+    {
+      "id": "africa-largest-land",
+      "candidateType": "country",
+      "promptDe": "Welches afrikanische Land hat die größte Landfläche?",
+      "filter": {
+        "op": "relation",
+        "relationType": "located_in",
+        "targetId": "continent:africa"
+      },
+      "ranking": {
+        "factTypeId": "fact-type:land-area-km2",
+        "order": "descending",
+        "rank": 1
+      },
+      "answer": { "from": "ranked_entity" },
+      "difficulty": 2
+    },
+    {
+      "id": "africa-largest-population",
+      "candidateType": "country",
+      "promptDe": "Welches afrikanische Land hat die größte Bevölkerung?",
+      "filter": {
+        "op": "relation",
+        "relationType": "located_in",
+        "targetId": "continent:africa"
+      },
+      "ranking": {
+        "factTypeId": "fact-type:population-total",
+        "order": "descending",
+        "rank": 1
+      },
+      "answer": { "from": "ranked_entity" },
+      "difficulty": 2
+    },
+    {
+      "id": "south-america-land-rank-2",
+      "candidateType": "country",
+      "promptDe": "Welches südamerikanische Land ist nach Landfläche das zweitgrößte?",
+      "filter": {
+        "op": "relation",
+        "relationType": "located_in",
+        "targetId": "continent:south-america"
+      },
+      "ranking": {
+        "factTypeId": "fact-type:land-area-km2",
+        "order": "descending",
+        "rank": 2
+      },
+      "answer": { "from": "ranked_entity" },
+      "difficulty": 2
+    },
+    {
+      "id": "south-america-population-rank-2",
+      "candidateType": "country",
+      "promptDe": "Welches südamerikanische Land hat die zweitgrößte Bevölkerung?",
+      "filter": {
+        "op": "relation",
+        "relationType": "located_in",
+        "targetId": "continent:south-america"
+      },
+      "ranking": {
+        "factTypeId": "fact-type:population-total",
+        "order": "descending",
+        "rank": 2
+      },
+      "answer": { "from": "ranked_entity" },
+      "difficulty": 3
+    },
+    {
+      "id": "north-america-land-rank-2",
+      "candidateType": "country",
+      "promptDe": "Welches nordamerikanische Land ist nach Landfläche das zweitgrößte?",
+      "filter": {
+        "op": "relation",
+        "relationType": "located_in",
+        "targetId": "continent:north-america"
+      },
+      "ranking": {
+        "factTypeId": "fact-type:land-area-km2",
+        "order": "descending",
+        "rank": 2
+      },
+      "answer": { "from": "ranked_entity" },
+      "difficulty": 2
+    },
+    {
+      "id": "north-america-population-rank-2",
+      "candidateType": "country",
+      "promptDe": "Welches nordamerikanische Land hat die zweitgrößte Bevölkerung?",
+      "filter": {
+        "op": "relation",
+        "relationType": "located_in",
+        "targetId": "continent:north-america"
+      },
+      "ranking": {
+        "factTypeId": "fact-type:population-total",
+        "order": "descending",
+        "rank": 2
+      },
+      "answer": { "from": "ranked_entity" },
+      "difficulty": 2
+    },
+    {
+      "id": "oceania-land-rank-2",
+      "candidateType": "country",
+      "promptDe": "Welches Land Ozeaniens ist nach Landfläche das zweitgrößte?",
+      "filter": {
+        "op": "relation",
+        "relationType": "located_in",
+        "targetId": "continent:oceania"
+      },
+      "ranking": {
+        "factTypeId": "fact-type:land-area-km2",
+        "order": "descending",
+        "rank": 2
+      },
+      "answer": { "from": "ranked_entity" },
+      "difficulty": 3
+    },
+    {
+      "id": "oceania-population-rank-2",
+      "candidateType": "country",
+      "promptDe": "Welches Land Ozeaniens hat die zweitgrößte Bevölkerung?",
+      "filter": {
+        "op": "relation",
+        "relationType": "located_in",
+        "targetId": "continent:oceania"
+      },
+      "ranking": {
+        "factTypeId": "fact-type:population-total",
+        "order": "descending",
+        "rank": 2
+      },
+      "answer": { "from": "ranked_entity" },
+      "difficulty": 3
+    },
+    {
+      "id": "capital-africa-largest-land",
+      "candidateType": "country",
+      "promptDe": "Wie heißt die Hauptstadt des nach Landfläche größten afrikanischen Landes?",
+      "filter": {
+        "op": "relation",
+        "relationType": "located_in",
+        "targetId": "continent:africa"
+      },
+      "ranking": {
+        "factTypeId": "fact-type:land-area-km2",
+        "order": "descending",
+        "rank": 1
+      },
+      "answer": {
+        "from": "ranked_entity",
+        "relationType": "has_capital",
+        "direction": "outgoing",
+        "relationLabelDe": "Hauptstadt"
+      },
+      "difficulty": 3
+    },
+    {
+      "id": "capital-africa-largest-population",
+      "candidateType": "country",
+      "promptDe": "Wie heißt die Hauptstadt des bevölkerungsreichsten Landes Afrikas?",
+      "filter": {
+        "op": "relation",
+        "relationType": "located_in",
+        "targetId": "continent:africa"
+      },
+      "ranking": {
+        "factTypeId": "fact-type:population-total",
+        "order": "descending",
+        "rank": 1
+      },
+      "answer": {
+        "from": "ranked_entity",
+        "relationType": "has_capital",
+        "direction": "outgoing",
+        "relationLabelDe": "Hauptstadt"
+      },
+      "difficulty": 3
+    },
+    {
+      "id": "capital-south-america-land-rank-2",
+      "candidateType": "country",
+      "promptDe": "Wie heißt die Hauptstadt des nach Landfläche zweitgrößten Landes Südamerikas?",
+      "filter": {
+        "op": "relation",
+        "relationType": "located_in",
+        "targetId": "continent:south-america"
+      },
+      "ranking": {
+        "factTypeId": "fact-type:land-area-km2",
+        "order": "descending",
+        "rank": 2
+      },
+      "answer": {
+        "from": "ranked_entity",
+        "relationType": "has_capital",
+        "direction": "outgoing",
+        "relationLabelDe": "Hauptstadt"
+      },
+      "difficulty": 3
+    },
+    {
+      "id": "capital-south-america-population-rank-2",
+      "candidateType": "country",
+      "promptDe": "Wie heißt die Hauptstadt des Landes mit der zweitgrößten Bevölkerung Südamerikas?",
+      "filter": {
+        "op": "relation",
+        "relationType": "located_in",
+        "targetId": "continent:south-america"
+      },
+      "ranking": {
+        "factTypeId": "fact-type:population-total",
+        "order": "descending",
+        "rank": 2
+      },
+      "answer": {
+        "from": "ranked_entity",
+        "relationType": "has_capital",
+        "direction": "outgoing",
+        "relationLabelDe": "Hauptstadt"
+      },
+      "difficulty": 4
+    },
+    {
+      "id": "capital-north-america-land-rank-2",
+      "candidateType": "country",
+      "promptDe": "Wie heißt die Hauptstadt des nach Landfläche zweitgrößten Landes Nordamerikas?",
+      "filter": {
+        "op": "relation",
+        "relationType": "located_in",
+        "targetId": "continent:north-america"
+      },
+      "ranking": {
+        "factTypeId": "fact-type:land-area-km2",
+        "order": "descending",
+        "rank": 2
+      },
+      "answer": {
+        "from": "ranked_entity",
+        "relationType": "has_capital",
+        "direction": "outgoing",
+        "relationLabelDe": "Hauptstadt"
+      },
+      "difficulty": 3
+    },
+    {
+      "id": "capital-north-america-population-rank-2",
+      "candidateType": "country",
+      "promptDe": "Wie heißt die Hauptstadt des Landes mit der zweitgrößten Bevölkerung Nordamerikas?",
+      "filter": {
+        "op": "relation",
+        "relationType": "located_in",
+        "targetId": "continent:north-america"
+      },
+      "ranking": {
+        "factTypeId": "fact-type:population-total",
+        "order": "descending",
+        "rank": 2
+      },
+      "answer": {
+        "from": "ranked_entity",
+        "relationType": "has_capital",
+        "direction": "outgoing",
+        "relationLabelDe": "Hauptstadt"
+      },
+      "difficulty": 3
+    },
+    {
+      "id": "africa-population-over-million-km2",
+      "candidateType": "country",
+      "promptDe": "Welches afrikanische Land mit mindestens einer Million km² Landfläche hat die größte Bevölkerung?",
+      "filter": {
+        "op": "all",
+        "expressions": [
+          {
+            "op": "relation",
+            "relationType": "located_in",
+            "targetId": "continent:africa"
+          },
+          {
+            "op": "fact",
+            "factTypeId": "fact-type:land-area-km2",
+            "comparator": "gte",
+            "value": 1000000
+          }
+        ]
+      },
+      "ranking": {
+        "factTypeId": "fact-type:population-total",
+        "order": "descending",
+        "rank": 1
+      },
+      "answer": { "from": "ranked_entity" },
+      "difficulty": 4
+    },
+    {
+      "id": "south-america-smallest-land-over-20m",
+      "candidateType": "country",
+      "promptDe": "Welches südamerikanische Land mit mehr als 20 Millionen Einwohnern hat die kleinste Landfläche?",
+      "filter": {
+        "op": "all",
+        "expressions": [
+          {
+            "op": "relation",
+            "relationType": "located_in",
+            "targetId": "continent:south-america"
+          },
+          {
+            "op": "fact",
+            "factTypeId": "fact-type:population-total",
+            "comparator": "gt",
+            "value": 20000000
+          }
+        ]
+      },
+      "ranking": {
+        "factTypeId": "fact-type:land-area-km2",
+        "order": "ascending",
+        "rank": 1
+      },
+      "answer": { "from": "ranked_entity" },
+      "difficulty": 4
+    }
+  ]
+}

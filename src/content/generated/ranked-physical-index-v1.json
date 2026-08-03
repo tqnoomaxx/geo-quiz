@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "datasetVersion": "2026-08-03.phase7-ranked-physical1",
+  "builtAt": "2026-08-03T19:35:12.229Z",
+  "rankings": {
+    "rivers": {
+      "methodId": "wikipedia-river-system-length-km-v1",
+      "labelDe": "Flusssystemlänge in Kilometern, absteigend",
+      "definitionDe": "Top 100 der vollständigen Flusssysteme nach dem ersten Kilometerwert der fest versionierten Tabelle; Längen hängen von der gewählten Quelle-Mündung-Definition ab.",
+      "sourceId": "wikipedia-river-systems",
+      "count": 100,
+      "boundary": {
+        "includedRank": 100,
+        "includedValue": 1490,
+        "excludedRank": 101,
+        "excludedValue": 1485
+      }
+    },
+    "peaks": {
+      "methodId": "wikipedia-independent-peak-elevation-m-v1",
+      "labelDe": "Gipfelhöhe über Meeresspiegel, absteigend",
+      "definitionDe": "Top 100 eigenständiger Gipfel der fest versionierten Liste nach gerundeter Höhe über Meeresspiegel; als Nebenzeile S markierte Untergipfel sind ausgeschlossen.",
+      "sourceId": "wikipedia-highest-mountains",
+      "count": 100,
+      "boundary": {
+        "includedRank": 100,
+        "includedValue": 7219,
+        "excludedRank": 101,
+        "excludedValue": 7213
+      }
+    }
+  },
+  "quality": {
+    "entityCounts": {
+      "ranked_river": 100,
+      "ranked_peak": 100
+    },
+    "germanPreferredNameCount": 200,
+    "germanAliasCount": 166
+  },
+  "sources": [
+    {
+      "id": "wikipedia-river-systems",
+      "sourceVersion": "revision-1367222027",
+      "retrievedAt": "2026-08-03",
+      "url": "https://en.wikipedia.org/w/index.php?title=List_of_river_systems_by_length&oldid=1367222027",
+      "license": "CC BY-SA 4.0",
+      "pageTitle": "List of river systems by length",
+      "revisionId": 1367222027,
+      "sha256": "d536597b5837a05c2e3bccd9daf025ec48e832ac596b705fcec9dbfa5938affe",
+      "bytes": 315131
+    },
+    {
+      "id": "wikipedia-highest-mountains",
+      "sourceVersion": "revision-1367438324",
+      "retrievedAt": "2026-08-03",
+      "url": "https://en.wikipedia.org/w/index.php?title=List_of_highest_mountains_on_Earth&oldid=1367438324",
+      "license": "CC BY-SA 4.0",
+      "pageTitle": "List of highest mountains on Earth",
+      "revisionId": 1367438324,
+      "sha256": "f2126731de4bb5cdd863f6215081fcf40b0a7fbe26291345dcd7107473abbe7c",
+      "bytes": 338963
+    }
+  ]
+}
