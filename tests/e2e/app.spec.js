@@ -42,14 +42,47 @@ test('Währungsquiz prüft alle Länderdaten und speichert Fortschritt', async (
   expect(saved.points).toBe(10)
 })
 
-test('übersprungene Währungsfragen werden in derselben Runde wiederholt', async ({ page }) => {
+test('unbekannte Währungsfragen werden aufgedeckt und später wiederholt', async ({ page }) => {
   await page.goto('./#currencyQuiz')
   const firstCountry = await page.locator('.quiz-item h2').textContent()
-  await page.getByRole('button', { name: 'Überspringen' }).click()
+  const firstAnswer = currenciesByCountry.get(firstCountry)[0]
+
+  await page.getByRole('button', { name: 'Lösung anzeigen' }).click()
+  await expect(page.locator('.quiz-item h2')).toHaveText(firstCountry)
+  await expect(page.locator('.reveal li')).toHaveClass(/revealed/)
+  await expect(page.getByText(firstAnswer, { exact: true })).toBeVisible()
+  await expect(page.getByRole('button', { name: 'Nächstes →' })).toBeVisible()
+
+  await page.getByRole('button', { name: 'Nächstes →' }).click()
   await expect(page.locator('.quiz-item h2')).not.toHaveText(firstCountry)
 
-  await page.getByRole('button', { name: 'Überspringen' }).click()
+  await page.getByRole('button', { name: 'Lösung anzeigen' }).click()
+  await page.getByRole('button', { name: 'Nächstes →' }).click()
   await expect(page.locator('.quiz-item h2')).toHaveText(firstCountry)
+})
+
+test('Sehenswürdigkeiten fragen standardmäßig Name und Land ab und lassen sich umstellen', async ({ page }) => {
+  await page.goto('./#landmarkQuiz')
+  await expect(page.getByRole('button', { name: 'Name & Land' })).toHaveAttribute('aria-pressed', 'true')
+  await expect(page.locator('.reveal li')).toHaveCount(2)
+  await expect(page.getByText('Sehenswürdigkeit', { exact: true })).toBeVisible()
+  await expect(page.getByText('Land', { exact: true })).toBeVisible()
+
+  await page.getByRole('button', { name: 'Lösung anzeigen' }).click()
+  await expect(page.locator('.lm-answer strong')).not.toBeEmpty()
+  await expect(page.locator('.lm-answer span')).not.toBeEmpty()
+  await expect(page.locator('.reveal li.revealed')).toHaveCount(2)
+
+  await page.getByRole('button', { name: 'Nur Name' }).click()
+  await expect(page.locator('.reveal li')).toHaveCount(1)
+  await expect(page.getByText('Sehenswürdigkeit', { exact: true })).toBeVisible()
+
+  await page.getByRole('button', { name: 'Nur Land' }).click()
+  await expect(page.locator('.reveal li')).toHaveCount(1)
+  await expect(page.getByText('Land', { exact: true })).toBeVisible()
+  await page.reload()
+  await expect(page.getByRole('button', { name: 'Nur Land' })).toHaveAttribute('aria-pressed', 'true')
+  await expect(page.locator('.reveal li')).toHaveCount(1)
 })
 
 test('Theme und Hash-Route bleiben nach einem Reload erhalten', async ({ page }) => {

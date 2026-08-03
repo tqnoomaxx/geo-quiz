@@ -220,6 +220,10 @@ main { width: min(100%, 1260px); margin: 0 auto; padding: 52px 46px 90px; }
 .head > svg { width: 34px; height: 34px; color: var(--accent); stroke-width: 1.7; }
 .head h1 { font-size: clamp(2.2rem, 4.5vw, 4rem); }
 .page-intro { max-width: 670px; margin: 0 0 24px 48px; color: var(--muted); font-size: 1.02rem; }
+.quiz-mode { display: inline-flex; gap: 4px; margin: 0 0 16px 48px; padding: 4px; border: 1px solid var(--border); border-radius: 12px; background: var(--surface-2); }
+.quiz-mode button { padding: 8px 13px; border: 0; border-radius: 8px; background: transparent; color: var(--muted); cursor: pointer; font-size: .86rem; font-weight: 700; }
+.quiz-mode button:hover { color: var(--text); }
+.quiz-mode button[aria-pressed='true'] { background: var(--surface); color: var(--accent-strong); box-shadow: 0 2px 8px rgba(17, 61, 105, .1); }
 .back {
   display: inline-flex;
   align-items: center;
@@ -271,6 +275,8 @@ main { width: min(100%, 1260px); margin: 0 auto; padding: 52px 46px 90px; }
 .reveal em { font-style: normal; }
 .reveal li.ok { border-color: color-mix(in srgb, var(--green) 34%, var(--border)); background: var(--green-soft); color: var(--green); }
 .reveal li.ok .dot { border-color: var(--green); background: var(--green); color: #fff; }
+.reveal li.revealed { border-color: color-mix(in srgb, var(--amber) 45%, var(--border)); background: color-mix(in srgb, var(--amber) 9%, var(--surface)); color: color-mix(in srgb, var(--amber) 75%, var(--text)); }
+.reveal li.revealed .dot { border-color: var(--amber); background: color-mix(in srgb, var(--amber) 14%, var(--surface)); color: var(--amber); }
 .reveal li.flash { animation: pop .5s ease; }
 @keyframes pop { 40% { transform: scale(1.015); } }
 .next { width: 100%; margin-top: 16px; padding: 14px; border: 0; border-radius: var(--radius-sm); background: var(--accent-strong); color: #fff; cursor: pointer; font-weight: 750; }
@@ -278,9 +284,13 @@ main { width: min(100%, 1260px); margin: 0 auto; padding: 52px 46px 90px; }
 
 .lm-header { margin: 0 -18px 18px; padding: 18px; border-bottom: 1px solid var(--border); text-align: center; }
 .lm-ask { margin: 14px 0 0; font-size: 1.25rem; font-weight: 750; }
+.lm-answer { display: flex; align-items: center; justify-content: center; gap: 14px; margin: 14px auto 0; color: var(--text); }
+.lm-answer strong { font-size: 1.08rem; }
+.lm-answer span { padding-left: 14px; border-left: 1px solid var(--border); color: var(--muted); }
 .lm-media { position: relative; overflow: hidden; border-radius: 12px; }
+.lm-media.big { height: 320px; }
 .lm-img { display: block; width: 100%; max-height: 340px; border-radius: 12px; object-fit: cover; }
-.lm-img.big { max-height: 380px; }
+.lm-img.big { height: 100%; max-height: none; }
 .lm-img:not(.loaded) { position: absolute; inset: 0; height: 100%; opacity: 0; }
 .lm-placeholder { display: grid; place-items: center; height: 230px; border-radius: 12px; background: var(--surface-2); font-size: 72px; }
 .lm-placeholder.big { height: 320px; font-size: 105px; }
@@ -387,6 +397,8 @@ main { width: min(100%, 1260px); margin: 0 auto; padding: 52px 46px 90px; }
   .head > svg { width: 28px; }
   .head h1 { font-size: clamp(2.1rem, 12vw, 3.2rem); }
   .page-intro { margin: 0 0 20px; font-size: .92rem; }
+  .quiz-mode { display: grid; grid-template-columns: repeat(3, 1fr); width: 100%; margin: 0 0 14px; }
+  .quiz-mode button { padding: 8px 5px; font-size: .78rem; }
   .back { margin-bottom: 16px; }
   .pick, .ach-grid, .card dl, .rate { grid-template-columns: 1fr; }
   .quiz { padding: 0 12px 12px; }
@@ -397,6 +409,10 @@ main { width: min(100%, 1260px); margin: 0 auto; padding: 52px 46px 90px; }
   .reveal li { grid-template-columns: 27px 1fr; gap: 8px; padding: 11px; }
   .reveal em { grid-column: 2; font-size: .86rem; }
   .lm-header { margin-right: -12px; margin-left: -12px; padding: 12px; }
+  .lm-media.big { height: 230px; }
+  .lm-placeholder.big { height: 230px; }
+  .lm-answer { flex-direction: column; gap: 3px; }
+  .lm-answer span { padding-left: 0; border-left: 0; }
   .card { padding: 20px 14px; }
   .bar { grid-template-columns: 105px 1fr 50px; gap: 8px; font-size: .85rem; }
   .toast { bottom: 82px; left: 50%; max-width: calc(100% - 32px); }

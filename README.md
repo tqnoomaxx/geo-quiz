@@ -11,7 +11,8 @@ Responsive Lern- und Quizplattform für Länder, Währungen, Sehenswürdigkeiten
 - Sehenswürdigkeiten-Quiz mit 174 bebilderten Orten
 - Planeten-, Monde- und Zwergplaneten-Quiz
 - Lernkarten mit gewichteter Wiederholung für unsichere Antworten
-- Wiederholung übersprungener Quizfragen innerhalb der Lernrunde
+- Unbekannte Antworten werden vollständig aufgedeckt und später in derselben Runde wiederholt
+- Sehenswürdigkeiten wahlweise nach Name, Land oder beidem abfragen
 - Statistiken mit Lernfortschritt, schwierigen Fragen und letzten Lernkarten
 - Helles und dunkles Design, responsive Navigation und reduzierte Animationen bei Bedarf
 - Tolerante Antworterkennung für Groß-/Kleinschreibung, Akzente, Umlaute und alternative Schreibweisen

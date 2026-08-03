@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client'
 import {
   Home, BookOpen, Brain, BarChart3, Trophy,
   Sun, Moon, ArrowLeft, ArrowRight, Check, X, RotateCcw,
-  Globe2, Map, Landmark, Orbit, CircleDotDashed, Sparkles, LockKeyhole, Coins
+  Globe2, Map, Landmark, Orbit, CircleDotDashed, Sparkles, LockKeyhole, Coins, Eye
 } from 'lucide-react'
 import countries from './data/countries.json'
 import landmarks from './data/landmarks.json'
@@ -64,6 +64,11 @@ const TOPICS = {
   dwarfs: { base: 'dwarf', icon: Sparkles, title: 'Zwergplaneten', description: 'Kleine Himmelskörper, großes Wissen', learn: true, quiz: true },
 }
 const TOPIC_ORDER = ['countries', 'landmarks', 'currencies', 'planets', 'moons', 'dwarfs']
+const LANDMARK_MODES = [
+  ['both', 'Name & Land'],
+  ['name', 'Nur Name'],
+  ['country', 'Nur Land'],
+]
 
 const PAGES = new Set([
   ...NAV.map(([id]) => id),
@@ -141,19 +146,19 @@ function App() {
     setToast({ kind, text })
     toastTimer.current = setTimeout(() => setToast(null), 1600)
   }
-  const reward = (ok, message, question) => {
+  const reward = (ok, message, question, amount = 1) => {
     setStats(s => ({
       ...s,
-      correct: s.correct + (ok ? 1 : 0),
-      wrong: s.wrong + (ok ? 0 : 1),
-      points: s.points + (ok ? 10 : 0),
+      correct: s.correct + (ok ? amount : 0),
+      wrong: s.wrong + (ok ? 0 : amount),
+      points: s.points + (ok ? 10 * amount : 0),
       questions: question ? {
         ...s.questions,
         [question.key]: {
           title: question.title,
           item: question.item,
-          correct: (s.questions[question.key]?.correct || 0) + (ok ? 1 : 0),
-          wrong: (s.questions[question.key]?.wrong || 0) + (ok ? 0 : 1),
+          correct: (s.questions[question.key]?.correct || 0) + (ok ? amount : 0),
+          wrong: (s.questions[question.key]?.wrong || 0) + (ok ? 0 : amount),
         },
       } : s.questions,
     }))
@@ -299,19 +304,23 @@ function Library({ mode, setPage }) {
   )
 }
 
-/* ---------- Generischer Auto-Quiz (ohne Bestätigen) ---------- */
+/* ---------- Generischer Auto-Quiz mit Lösungsauflösung ---------- */
 
-function Quiz({ title, icon = Brain, items, targetsOf, renderHeader, reward, markMastered, masteredId, onBack }) {
+function Quiz({ title, icon = Brain, items, targetsOf, renderHeader, controls, reward, markMastered, masteredId, onBack }) {
   const pick = () => items[Math.floor(Math.random() * items.length)]
   const [item, setItem] = useState(pick)
   const [input, setInput] = useState('')
   const [solved, setSolved] = useState([])
+  const [revealed, setRevealed] = useState(false)
   const [flash, setFlash] = useState(null)
   const [retryItems, setRetryItems] = useState([])
   const inputRef = useRef(null)
 
+  useEffect(() => inputRef.current?.focus(), [item])
+
   const targets = targetsOf(item)
-  const done = solved.length === targets.length
+  const solvedNaturally = solved.length === targets.length
+  const done = solvedNaturally || revealed
   const question = {
     key: `${title}:${item.id}`,
     title,
@@ -334,21 +343,32 @@ function Quiz({ title, icon = Brain, items, targetsOf, renderHeader, reward, mar
     }
   }
 
-  const goNext = () => {
+  const revealSolution = () => {
     const missed = targets.length - solved.length
-    if (missed > 0) reward(false, `${missed} offen`, question)
-    const queued = retryItems.filter(queuedItem => queuedItem !== item)
-    let n = queued[0] || pick()
+    if (missed <= 0) return
+    setRevealed(true)
+    setInput('')
+    setRetryItems(queue => queue.includes(item) ? queue : [...queue, item])
+    reward(false, null, question, missed)
+  }
+
+  const goNext = () => {
+    const retryIndex = retryItems.findIndex(queuedItem => queuedItem !== item)
+    let n = retryIndex >= 0 ? retryItems[retryIndex] : pick()
     if (items.length > 1) while (n === item) n = pick()
-    setRetryItems(missed > 0 ? [...queued.slice(1), item] : queued.slice(1))
-    setItem(n); setSolved([]); setInput(''); inputRef.current?.focus()
+    if (retryIndex >= 0) setRetryItems(queue => queue.filter((_, index) => index !== retryIndex))
+    setItem(n)
+    setSolved([])
+    setRevealed(false)
+    setInput('')
   }
 
   return (
     <Page icon={icon} title={title} onBack={onBack}>
       <p className="page-intro">Gib die gesuchten Informationen ein. Deine Antworten werden beim Tippen automatisch erkannt.</p>
+      {controls}
       <div className="quiz">
-        {renderHeader(item, { done, solved: solved.length, total: targets.length })}
+        {renderHeader(item, { done, revealed, solved: solved.length, total: targets.length })}
 
         <label className="sr-only" htmlFor="quiz-answer">Antwort</label>
         <input
@@ -360,17 +380,20 @@ function Quiz({ title, icon = Brain, items, targetsOf, renderHeader, reward, mar
         <ul className="reveal">
           {targets.map(t => {
             const ok = solved.includes(t.key)
+            const showAnswer = ok || revealed
             return (
-              <li key={t.key} className={`${ok ? 'ok' : ''} ${flash === t.key ? 'flash' : ''}`}>
-                <span className="dot">{ok ? <Check /> : ''}</span>
+              <li key={t.key} className={`${ok ? 'ok' : ''} ${revealed && !ok ? 'revealed' : ''} ${flash === t.key ? 'flash' : ''}`}>
+                <span className="dot">{ok ? <Check /> : revealed ? <Eye /> : ''}</span>
                 <b>{t.label}</b>
-                <em>{ok ? t.display : 'Noch nicht gelöst'}</em>
+                <em>{showAnswer ? t.display : 'Noch nicht gelöst'}</em>
               </li>
             )
           })}
         </ul>
 
-        <button className="next" onClick={goNext}>{done ? 'Nächstes →' : 'Überspringen'}</button>
+        <button className="next" onClick={done ? goNext : revealSolution}>
+          {done ? 'Nächstes →' : 'Lösung anzeigen'}
+        </button>
       </div>
     </Page>
   )
@@ -428,14 +451,39 @@ const MoonQuiz = p => (
 )
 
 function LandmarkQuiz(p) {
+  const [mode, setMode] = useState(() => {
+    const saved = localStorage.getItem('geo-landmark-mode')
+    return LANDMARK_MODES.some(([id]) => id === saved) ? saved : 'both'
+  })
+  useEffect(() => localStorage.setItem('geo-landmark-mode', mode), [mode])
+  const question = mode === 'both'
+    ? 'Wie heißt dieser Ort und in welchem Land liegt er?'
+    : mode === 'name' ? 'Wie heißt diese Sehenswürdigkeit?' : 'In welchem Land liegt dieser Ort?'
+
   return (
-    <Quiz {...p} title="Sehenswürdigkeiten-Quiz" items={landmarks}
-      targetsOf={item => [{ key: 'country', label: 'Land', accepted: item.country, display: item.country[0] }]}
+    <Quiz key={mode} {...p} title="Sehenswürdigkeiten-Quiz" items={landmarks}
+      controls={(
+        <div className="quiz-mode" role="group" aria-label="Abfragemodus">
+          {LANDMARK_MODES.map(([id, label]) => (
+            <button key={id} type="button" aria-pressed={mode === id} onClick={() => setMode(id)}>{label}</button>
+          ))}
+        </div>
+      )}
+      targetsOf={item => [
+        ...(mode !== 'country' ? [{ key: 'name', label: 'Sehenswürdigkeit', accepted: item.name, display: item.name[0] }] : []),
+        ...(mode !== 'name' ? [{ key: 'country', label: 'Land', accepted: item.country, display: item.country[0] }] : []),
+      ]}
       masteredId={x => x.id}
       renderHeader={(item, st) => (
         <div className="lm-header">
           <LandmarkImage lm={item} big />
-          <p className="lm-ask">{st.done ? item.name[0] : 'Welches Land?'}</p>
+          <p className="lm-ask">{question}</p>
+          {st.done && (
+            <p className="lm-answer" role="status">
+              <strong>{item.name[0]}</strong>
+              <span>{item.country[0]}</span>
+            </p>
+          )}
         </div>
       )} />
   )
