@@ -21,6 +21,7 @@ function fixture(): MixedQuizDefinition {
     regionId: "world" as const,
     questionCount: 10 as const,
     citySetSize: 100 as const,
+    astronomyFieldIds: [],
     timerSeconds: 0 as const,
     seed: "mixed-stable"
   };
@@ -84,6 +85,7 @@ describe("weighted Mixed scheduler", () => {
       regionId: "world",
       questionCount: 10,
       citySetSize: 100,
+      astronomyFieldIds: [],
       timerSeconds: 0,
       seed: "phase6-ten-pools"
     });

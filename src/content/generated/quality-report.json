@@ -1,6 +1,6 @@
 {
   "datasetId": "geo-core-mvp",
-  "version": "2026-08-03.phase7-ranked-physical1",
+  "version": "2026-08-04.phase8-astronomy1",
   "checks": {
     "schemaValid": true,
     "uniqueEntityIds": true,
@@ -8,6 +8,9 @@
     "coordinateRangesValid": true,
     "countryCount": 195,
     "capitalSeatCount": 202,
+    "languageCount": 139,
+    "currencyCount": 146,
+    "countryProfilesComplete": true,
     "physicalEntityCounts": {
       "river": 18,
       "lake": 18,
@@ -70,7 +73,7 @@
     "mapFallbackFeatureIds": [
       "798"
     ],
-    "knowledgeFactCount": 388,
+    "knowledgeFactCount": 498,
     "knowledgeTemplateCount": 20,
     "compiledKnowledgeQuestionCount": 20,
     "knowledgeQuestionsUniqueAndSourced": true,
@@ -88,13 +91,20 @@
     "rankedCityGermanPreferredNameCount": 3100,
     "rankedCityGermanAliasCount": 1527,
     "rankedCityBoundaryTies": 1,
-    "rankedCityPackBytes": 8844004,
+    "rankedCityPackBytes": 8843998,
     "rankedPhysicalEntityCounts": {
       "ranked_river": 100,
       "ranked_peak": 100
     },
     "rankedPhysicalGermanAliasCount": 166,
-    "rankedPhysicalPackBytes": 418722
+    "rankedPhysicalPackBytes": 418716,
+    "astronomyEntityCounts": {
+      "planet": 8,
+      "moon": 20,
+      "dwarf_planet": 5,
+      "zodiac_constellation": 12
+    },
+    "constellationChartCount": 12
   },
   "review": {
     "multipleCapitalCountries": [

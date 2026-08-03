@@ -8,16 +8,21 @@ Ein ruhiger, redaktioneller Atlas statt futuristischer Spieloberfläche:
 - starke, klare Typografie;
 - Karte als primärer visueller Inhalt;
 - blasses Ozeanblau und Salbeigrün für Geographie;
-- tiefes Petrol nur für Auswahl und Hauptaktionen;
+- Kobaltblau nur für Auswahl und Hauptaktionen;
+- ein schmaler chartreusefarbener Marker für die aktive Challenge;
 - feine Linien, minimale Schatten;
 - keine Glows, Glassmorphism, 3D-Illustrationen oder dekorativen KI-Motive.
 
 ## Konzeptreferenzen
 
 - [`concepts/geoapp-home-desktop.png`](concepts/geoapp-home-desktop.png)
+- [`concepts/geoapp-home-redesign-desktop.png`](concepts/geoapp-home-redesign-desktop.png)
+- [`concepts/geoapp-home-redesign-mobile.png`](concepts/geoapp-home-redesign-mobile.png)
 - [`concepts/geoapp-map-quiz-desktop.png`](concepts/geoapp-map-quiz-desktop.png)
 - [`concepts/geoapp-text-quiz-mobile.png`](concepts/geoapp-text-quiz-mobile.png)
 - [`concepts/geoapp-results-desktop.png`](concepts/geoapp-results-desktop.png)
+- [`concepts/geoapp-astronomy-setup-desktop.png`](concepts/geoapp-astronomy-setup-desktop.png)
+- [`concepts/geoapp-zodiac-quiz-desktop.png`](concepts/geoapp-zodiac-quiz-desktop.png)
 - [`REVIEW.md`](REVIEW.md) mit realen Browser-Renderings und Abweichungen
 
 Die Mockups sind Referenzen für Hierarchie, Dichte, Farbe und Komponenten. Alle
@@ -31,12 +36,13 @@ enthält frei erfundene Markenfarben oder Abstände.
 ```css
 :root {
   --color-canvas: #ffffff;
-  --color-surface: #f7f9fb;
-  --color-ink: #0b2141;
-  --color-muted: #5d6979;
-  --color-border: #d8e0e7;
-  --color-accent: #087680;
-  --color-accent-hover: #065f68;
+  --color-surface: #f7f9fd;
+  --color-ink: #10213e;
+  --color-muted: #58657b;
+  --color-border: #dce3ed;
+  --color-accent: #2457d6;
+  --color-accent-hover: #193fa9;
+  --color-marker: #b8ee35;
   --color-ocean: #dceff7;
   --color-land: #cfddc7;
   --color-success: #2f7d5b;
@@ -90,8 +96,8 @@ Komponentenvarianten ändern können.
 ## Komponentenfamilien
 
 - `AppHeader`
-- `TopicList` / `TopicRow`
-- `SelectField`
+- `ChallengeIndex` / `ChallengeRow`
+- direkte `ModeOptions`, `DirectionOptions` und `ChoicePills`
 - `Button` mit `primary`, `secondary`, `text`
 - `ProgressRail`
 - `QuestionPanel`
@@ -116,7 +122,7 @@ Komponentenvarianten ändern können.
 - keine schwebenden Elemente oder kontinuierliche Dekoration;
 - `prefers-reduced-motion` schaltet nicht notwendige Bewegung ab.
 
-## Copy-Lock für den Phase-0-Spike
+## Copy-Lock für die Challenge-Auswahl
 
 Oberhalb des ersten Scrollbereichs sind nur diese Kernaussagen vorgesehen:
 
@@ -125,9 +131,12 @@ Oberhalb des ersten Scrollbereichs sind nur diese Kernaussagen vorgesehen:
 - `Fortschritt`
 - `Abzeichen`
 - `Anmelden`
-- `Die Welt Schritt für Schritt lernen.`
-- `Wähle ein Thema und starte eine kurze Runde.`
-- `Quiz starten`
+- `Was möchtest du heute üben?`
+- `Wähle eine Challenge. Den Rest stellst du in wenigen Klicks ein.`
+- `Wie möchtest du lernen?`
+- `Welches Gebiet?`
+- `Wie lang?`
+- `10 Fragen starten`
 
 Der technische Spike darf fachlich notwendige Quizfragen und
 Feedbackformulierungen ergänzen.

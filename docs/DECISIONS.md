@@ -1,6 +1,6 @@
 # Entscheidungsprotokoll
 
-Letzte Aktualisierung: 2026-08-03
+Letzte Aktualisierung: 2026-08-04
 
 ## Gültige Entscheidungen
 
@@ -481,6 +481,51 @@ Letzte Aktualisierung: 2026-08-03
   Definition und Ergebnisqueue setzen sie um. Eine unbeantwortete
   Prüfungsfrage kann ohne Auflösung verlassen werden und wird als
   `skipped` mit der sichtbaren Antwort „Keine Antwort“ gespeichert.
+
+### D-046 – Länderprofile sind ein zusammengesetzter Antwortmodus
+
+- **Status:** accepted
+- **Entscheidung:** Das Thema `Länderprofil` verwendet den registrierten
+  Antwortmodus `country_profile_input` und den Grader `country-profile-v1`.
+  Eine Frage gibt genau ein Land vor und kompiliert Hauptstadt,
+  Amtssprache und Währung aus versionierten Relationen. Der Kontinent bleibt
+  bewusst außen vor, weil er beim vorgegebenen Land zu leicht ableitbar ist.
+  Pro Feld
+  genügt eine der gepflegten gültigen Antworten; das Feedback zeigt alle
+  akzeptierten Werte. Eine vollständig richtige Antwort erhält einen Punkt,
+  ein teilweise ausgefülltes Profil den Status `partial` ohne Teilpunkt.
+  Amtssprachen und Währungen werden beim Content-Build aus dem bereits
+  gepinnten Snapshot `world-countries@5.1.0` übernommen. Stabile IDs verwenden
+  ISO-639-3- beziehungsweise ISO-4217-Codes; der Spielbetrieb fragt keine
+  Live-API ab.
+- **Konsequenz:** React sammelt lediglich drei Texteingaben. Generator und
+  Grader bleiben pure TypeScript-Module, Lernen/Üben/Prüfung funktionieren
+  unverändert über die zentralen Regelprofile, und mehrwertige Länderfälle
+  werden weder künstlich vereinfacht noch unfair als vollständige Aufzählung
+  verlangt.
+
+### D-047 – Astronomie bleibt ein versionierter Content-Slice mit generischem Faktenprofil
+
+- **Status:** accepted
+- **Entscheidung:** Planeten, ausgewählte bekannte Monde, die fünf von NASA
+  geführten Zwergplaneten und die zwölf traditionellen Tierkreis-Sternbilder
+  werden als normale Entitätstypen im lokalen Kerndatensatz modelliert.
+  Planeten, Monde und Zwergplaneten verwenden den vorhandenen `fact`-Prompt
+  mit `text_input`. Sternzeichen verwenden lokale, versionierte SVG-Karten
+  über `visual_asset` und den neuen wiederverwendbaren Antwortmodus
+  `fact_profile_input` mit `fact-profile-v1`. Der Name ist immer Pflicht;
+  IAU-Kürzel, beste Sichtbarkeit und Himmelslage können im Setup einzeln
+  zugeschaltet werden. „Beste Sichtbarkeit“ bedeutet den abgeleiteten Monat
+  für ungefähr 22 Uhr in Mitteleuropa. Eine momentane Himmelsrichtung wird
+  nicht als zeitlose Eigenschaft gespeichert, weil sie von Ort und Uhrzeit
+  abhängt.
+- **Konsequenz:** Alle vier Themen laufen durch dieselbe Session-, Lernmodus-,
+  Fortschritts- und Lösungslogik. Die IAU definiert Sternbilder fachlich als
+  Himmelsflächen, aber keine verbindlichen Strichfiguren; die dargestellten
+  Sternmuster sind deshalb ausdrücklich vereinfachte, didaktische Karten mit
+  eigener Asset-Version. Astrologische Horoskopbehauptungen sind nicht Teil
+  des Datensatzes. Weitere Faktenprofile können denselben generischen Grader
+  nutzen, ohne einen themenspezifischen Sessiontyp einzuführen.
 
 ## Offene Entscheidungen
 

@@ -44,6 +44,13 @@ function payloadLabel(payload: AnswerPayload | undefined) {
     return undefined;
   }
 
+  if (
+    payload.kind === "country_profile_input" ||
+    payload.kind === "fact_profile_input"
+  ) {
+    return Object.values(payload.values).join(" · ");
+  }
+
   return `${payload.coordinates[1].toFixed(2)}, ${payload.coordinates[0].toFixed(2)}`;
 }
 

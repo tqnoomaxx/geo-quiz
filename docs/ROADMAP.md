@@ -303,10 +303,21 @@ blockieren den Content-Build.
 - [x] Eindeutige Ranggrenze, Quellenrevision, Lizenz und Methode im Manifest.
 - [x] Eigene Quizthemen mit `fact → text_input`, Lösung und Fehlertraining.
 
+### Länderprofile
+
+- [x] Amtssprachen und Währungen für alle 195 Länder als stabile Entitäten und
+  Relationen bauen.
+- [x] Land → Hauptstadt, Amtssprache und Währung als gemeinsamen
+  Mehrfeldmodus umsetzen.
+- [x] Mehrfachwerte fair akzeptieren und in der Lösung vollständig zeigen.
+- [x] Lernen, Üben und Prüfung über dieselben zentralen Regelprofile anbieten.
+- [x] Vereinfachte Challenge-Auswahl mit direkt sichtbaren Einstellungen auf
+  Desktop und Mobil umsetzen.
+
 **Gate:** Definition und Datenstand sind in der UI sichtbar; 1000 Punkte
 beeinträchtigen Karteninteraktion und Startzeit nicht unvertretbar.
 
-### Arbeitsstand 2026-08-03
+### Arbeitsstand 2026-08-04
 
 - Der explizite Netzwerkrefresh pinnt `cities1000.zip`,
   `alternateNamesV2.zip` und `countryInfo.txt` samt Bytezahl und SHA-256.
@@ -330,11 +341,15 @@ beeinträchtigen Karteninteraktion und Startzeit nicht unvertretbar.
 - Die fest versionierten Wikipedia-Revisionen werden nur durch einen
   expliziten Refresh aktualisiert. Der Build sperrt unvollständige Faktserien,
   gemischte Methoden und einen Gleichstand an der Top-100-Grenze.
-- 120 Unit-/Content-/Engine-Tests sowie 26 Produktions-Browserflows auf
+- Der Kerndatensatz ergänzt 139 Sprachen, 146 Währungen und vollständige
+  relationale Profile für alle 195 Länder. `country-profile-v1` speichert
+  richtige, teilweise richtige und aufgedeckte Dreifeldantworten.
+- 126 Unit-/Content-/Engine-Tests sowie 30 Produktions-Browsertests auf
   Desktop und Pixel 7 bestehen; acht redundante Mobil-Doppelungen werden
   bewusst übersprungen.
-  Der Browserlauf prüft den Top-1000-Start, München-Suche, Pause/Fortsetzen,
-  eine Antwort sowie Desktop und Pixel-7-Viewport.
+  Der Browserlauf prüft unter anderem Länderprofil-Eingabe und -Auflösung,
+  Top-1000-Start, Pause/Fortsetzen, Offline-Start sowie Desktop und
+  Pixel-7-Viewport.
 - Das Städtepaket liegt in einem separaten Chunk von 404,21 kB gzip und wird
   nur bei Stadtmodus oder vorhandenem Stadtlernstand geladen. Lokale,
   ungedrosselte Chromium-Messungen lagen bei 386–408 ms bis zur
@@ -345,6 +360,23 @@ beeinträchtigen Karteninteraktion und Startzeit nicht unvertretbar.
   Namenssichtung. Frühere Release-Gates bleiben ebenfalls offen.
 
 ## Phase 8 – Lernsystem und Personalisierung
+
+### Astronomie-Grundwissen
+
+- [x] Acht Planeten, zwanzig bekannte Monde und fünf Zwergplaneten als
+  versionierten, von NASA belegten Offline-Snapshot integrieren.
+- [x] Zwölf Tierkreis-Sternbilder mit lokalen, vereinfachten SVG-Lernkarten
+  und offiziellen IAU-Kürzeln integrieren.
+- [x] Sternzeichenname verpflichtend und IAU-Kürzel, Sichtbarkeitsmonat sowie
+  Himmelslage einzeln konfigurierbar machen.
+- [x] Einen generischen `fact-profile-v1`-Grader statt astronomischer
+  Session-Sonderlogik verwenden.
+- [x] Lernen, Üben, Prüfung, Lösung, Persistenz und Fehlertraining für alle
+  vier Themen durch dieselben zentralen Verträge führen.
+
+**Astronomie-Slice-Gate erreicht:** Content- und Engine-Verträge sowie der
+Produktionsfluss auf Desktop und Pixel-7-Viewport bestehen. Eine fachliche
+Sichtung aller zwölf vereinfachten Linienbilder bleibt redaktionelle QA.
 
 - Spaced-Repetition-Algorithmus mit Versionierung.
 - Eigene Lernlisten und gezieltes Fehlertraining.

@@ -19,9 +19,18 @@ type BrowserQuestion = {
       | "single_choice"
       | "map_point"
       | "map_area"
-      | "map_line";
+      | "map_line"
+      | "country_profile_input"
+      | "fact_profile_input";
     expectedEntityIds: string[];
     options?: Array<{ entityId: string }>;
+    graderConfig?: {
+      profileFields?: Array<{
+        id: string;
+        label: string;
+        expectedNames: Array<{ value: string }>;
+      }>;
+    };
   };
   metadata: {
     entityType?: string;
@@ -252,6 +261,7 @@ async function configureAndStart(
     topic:
       | "Länder"
       | "Hauptstädte"
+      | "Länderprofil"
       | "Große Städte"
       | "Flaggen"
       | "Länderformen"
@@ -262,6 +272,10 @@ async function configureAndStart(
       | "Gipfel"
       | "Längste Flüsse"
       | "Höchste Berge"
+      | "Planeten"
+      | "Monde"
+      | "Zwergplaneten"
+      | "Sternzeichen"
       | "Wissenspuzzle"
       | "Weltmix";
     mode:
@@ -272,41 +286,90 @@ async function configureAndStart(
       | "choice"
       | "reverse_choice"
       | "facts_to_name"
+      | "profile"
       | "mix";
     region?: string;
     timer?: string;
     profile?: "learn" | "practice" | "exam";
     citySet?: "100" | "250" | "500" | "1000";
-    questionCount?: "10" | "20" | "all";
+    questionCount?: "6" | "10" | "20" | "all";
+    expectedTotal?: number;
+    zodiacFields?: Array<
+      "iau-abbreviation" | "best-visibility" | "sky-position"
+    >;
   }
 ) {
   await page.goto("./");
-  await page
-    .getByRole("button", {
-      name: new RegExp(`^${setup.topic}(?:\\s|$)`)
-    })
-    .click();
-  await page.getByLabel("Fragerichtung").selectOption(setup.mode);
-  await page.getByLabel("Lernmodus").selectOption(setup.profile ?? "learn");
-  await page.getByLabel("Gebiet").selectOption(
-    setup.region ?? "continent:europe"
+  const topicIds: Record<typeof setup.topic, string> = {
+    Länder: "countries",
+    Hauptstädte: "capitals",
+    Länderprofil: "country-profile",
+    "Große Städte": "cities",
+    Flaggen: "flags",
+    Länderformen: "shapes",
+    Flüsse: "rivers",
+    Seen: "lakes",
+    Meere: "seas",
+    Gebirge: "mountain-ranges",
+    Gipfel: "peaks",
+    "Längste Flüsse": "longest-rivers",
+    "Höchste Berge": "highest-mountains",
+    Planeten: "planets",
+    Monde: "moons",
+    Zwergplaneten: "dwarf-planets",
+    Sternzeichen: "zodiac",
+    Wissenspuzzle: "knowledge",
+    Weltmix: "world-mix"
+  };
+  const topicButton = page.locator(
+    `[data-topic-id="${topicIds[setup.topic]}"]`
   );
+  if (!(await topicButton.isVisible())) {
+    await page.getByRole("button", { name: "Challenge wechseln" }).click();
+  }
+  await topicButton.click();
+
+  const directionButton = page.locator(
+    `[data-direction-id="${setup.mode}"]`
+  );
+  if ((await directionButton.count()) > 0) await directionButton.click();
+  await page
+    .locator(`[data-profile-id="${setup.profile ?? "learn"}"]`)
+    .click();
+  const regionButton = page.locator(
+    `[data-region-id="${setup.region ?? "continent:europe"}"]`
+  );
+  if ((await regionButton.count()) > 0) await regionButton.click();
+  for (const fieldId of setup.zodiacFields ?? []) {
+    const field = page.locator(`[data-zodiac-field-id="${fieldId}"]`);
+    if (!(await field.isChecked())) await field.check();
+  }
   if (setup.citySet) {
-    await page.getByLabel("Stadtset").selectOption(setup.citySet);
+    await page.locator(".advanced-settings summary").click();
+    await page.locator(`[data-city-set-size="${setup.citySet}"]`).click();
   }
-  await page.getByLabel("Fragen").selectOption(setup.questionCount ?? "10");
-  const timerControl = page.getByLabel("Zeit pro Frage");
+  await page
+    .locator(`[data-question-count="${setup.questionCount ?? "10"}"]`)
+    .click();
   if ((setup.profile ?? "learn") === "exam") {
-    await timerControl.selectOption(setup.timer ?? "0");
+    if (!(await page.locator(".advanced-settings").getAttribute("open"))) {
+      await page.locator(".advanced-settings summary").click();
+    }
+    await page.locator(`[data-timer-seconds="${setup.timer ?? "0"}"]`).click();
   } else {
-    await expect(timerControl).toBeDisabled();
-    await expect(timerControl).toHaveValue("0");
+    await expect(page.locator('[data-timer-seconds="15"]')).toBeDisabled();
+    await expect(page.locator('[data-timer-seconds="0"]')).toHaveAttribute(
+      "aria-pressed",
+      "true"
+    );
   }
-  await page.getByRole("button", { name: /^Quiz starten/ }).click();
+  await page.locator(".challenge-start .button").click();
+  const expectedTotal =
+    setup.questionCount === "all"
+      ? setup.expectedTotal ?? Number(setup.citySet)
+      : Number(setup.questionCount ?? 10);
   await expect(
-    page.getByText(
-      `1 / ${setup.questionCount === "all" ? setup.citySet : (setup.questionCount ?? "10")}`
-    )
+    page.getByText(`1 / ${expectedTotal}`)
   ).toBeVisible();
 }
 
@@ -329,6 +392,24 @@ async function answerCurrentQuestion(page: Page, correct = true) {
     await page
       .locator(`.choice-option[data-entity-id="${selectedId}"]`)
       .click();
+  } else if (question.answerSpec.kind === "country_profile_input") {
+    const fields = question.answerSpec.graderConfig?.profileFields ?? [];
+    expect(fields).toHaveLength(3);
+    for (const field of fields) {
+      await page
+        .getByLabel(field.label)
+        .fill(correct ? field.expectedNames[0].value : "Atlantis");
+    }
+    await page.getByRole("button", { name: "Profil prüfen" }).click();
+  } else if (question.answerSpec.kind === "fact_profile_input") {
+    const fields = question.answerSpec.graderConfig?.profileFields ?? [];
+    expect(fields.length).toBeGreaterThan(0);
+    for (const field of fields) {
+      await page
+        .getByLabel(field.label)
+        .fill(correct ? field.expectedNames[0].value : "Atlantis");
+    }
+    await page.getByRole("button", { name: "Antwort prüfen" }).click();
   } else if (question.answerSpec.kind === "map_line") {
     await expect(
       page.locator('.quiz-map .geo-map[data-physical-ready="true"]')
@@ -433,6 +514,70 @@ test("runs both global Top-100 fact quizzes with complete reveal feedback", asyn
   expect(consoleErrors).toEqual([]);
 });
 
+test("runs all astronomy challenges and a configurable zodiac profile", async ({
+  page
+}) => {
+  const consoleErrors = collectConsoleErrors(page);
+  const factChallenges = [
+    { topic: "Planeten", questionCount: "6", total: 6 },
+    { topic: "Monde", questionCount: "10", total: 10 },
+    { topic: "Zwergplaneten", questionCount: "all", total: 5 }
+  ] as const;
+
+  for (const challenge of factChallenges) {
+    await configureAndStart(page, {
+      topic: challenge.topic,
+      mode: "facts_to_name",
+      questionCount: challenge.questionCount,
+      expectedTotal: challenge.total
+    });
+    const question = await currentQuestion(page);
+    expect(question.promptPayload.kind).toBe("fact");
+    expect(question.answerSpec.kind).toBe("text_input");
+    await expect(page.locator(".fact-question-card")).toBeVisible();
+    await page.getByRole("button", { name: "Lösung anzeigen" }).click();
+    await expect(page.locator(".feedback-panel.is-revealed")).toContainText(
+      question.feedback.expectedLabel
+    );
+  }
+
+  await configureAndStart(page, {
+    topic: "Sternzeichen",
+    mode: "profile",
+    questionCount: "6",
+    expectedTotal: 6,
+    zodiacFields: [
+      "iau-abbreviation",
+      "best-visibility",
+      "sky-position"
+    ]
+  });
+  const zodiac = await currentQuestion(page);
+  expect(zodiac.answerSpec.kind).toBe("fact_profile_input");
+  await expect(page.locator(".fact-profile-question")).toBeVisible();
+  await expect(page.locator(".visual-asset--constellation")).toBeVisible();
+  await expect(page.getByLabel("Name")).toBeVisible();
+  await expect(page.getByLabel("IAU-Kürzel")).toBeVisible();
+  await expect(page.getByLabel("Beste Sichtbarkeit")).toBeVisible();
+  await expect(page.getByLabel("Himmelslage")).toBeVisible();
+  await answerCurrentQuestion(page);
+  await expect(page.locator(".feedback-panel")).toContainText("Alles richtig");
+  await page.getByRole("button", { name: "Weiter" }).click();
+  await page.getByRole("button", { name: "Lösung anzeigen" }).click();
+  await expect(page.locator(".feedback-panel.is-revealed")).toContainText(
+    "Lösung"
+  );
+  await expect(page.locator(".fact-profile-field small")).toHaveCount(4);
+
+  const accessibility = await new AxeBuilder({ page }).analyze();
+  expect(
+    accessibility.violations.filter((violation) =>
+      ["serious", "critical"].includes(violation.impact ?? "")
+    )
+  ).toEqual([]);
+  expect(consoleErrors).toEqual([]);
+});
+
 test("asks for the country when given a capital name", async ({ page }) => {
   const consoleErrors = collectConsoleErrors(page);
   await configureAndStart(page, {
@@ -457,6 +602,34 @@ test("asks for the country when given a capital name", async ({ page }) => {
   expect(consoleErrors).toEqual([]);
 });
 
+test("runs and reveals the three-field country profile challenge", async ({
+  page
+}) => {
+  const consoleErrors = collectConsoleErrors(page);
+  await configureAndStart(page, {
+    topic: "Länderprofil",
+    mode: "profile",
+    region: "continent:europe"
+  });
+  const question = await currentQuestion(page);
+
+  expect(question.answerSpec.kind).toBe("country_profile_input");
+  await expect(page.locator(".country-profile-question")).toBeVisible();
+  await expect(page.getByLabel("Hauptstadt")).toBeVisible();
+  await expect(page.getByLabel("Amtssprache")).toBeVisible();
+  await expect(page.getByLabel("Währung")).toBeVisible();
+  await expect(page.getByLabel("Kontinent")).toHaveCount(0);
+  await answerCurrentQuestion(page);
+  await expect(page.locator(".feedback-panel")).toContainText(
+    "Profil vollständig"
+  );
+  await page.getByRole("button", { name: "Weiter" }).click();
+  await page.getByRole("button", { name: "Lösung anzeigen" }).click();
+  await expect(page.locator(".feedback-panel.is-revealed")).toBeVisible();
+  await expect(page.locator(".country-profile-field small")).toHaveCount(3);
+  expect(consoleErrors).toEqual([]);
+});
+
 test("upgrades the Phase-2 browser schema without losing the guest profile", async ({
   page
 }, testInfo) => {
@@ -464,7 +637,7 @@ test("upgrades the Phase-2 browser schema without losing the guest profile", asy
   await page.goto("./");
   await expect(
     page.getByRole("heading", {
-      name: "Die Welt Schritt für Schritt lernen."
+      name: "Was möchtest du heute üben?"
     })
   ).toBeVisible();
 
@@ -656,30 +829,24 @@ test("runs both knowledge modes and shows the compiled evidence chain", async ({
   expect(consoleErrors).toEqual([]);
 });
 
-test("loads, searches, pauses and resumes a Top-1000 city marathon", async ({
+test("configures, pauses and resumes a Top-1000 city marathon", async ({
   page
 }) => {
   const consoleErrors = collectConsoleErrors(page);
   await page.goto("./");
-  await page.getByRole("button", { name: /^Große Städte(?:\s|$)/ }).click();
-  await page.getByLabel("Gebiet").selectOption("world");
-  await page.getByLabel("Stadtset").selectOption("1000");
-
-  await expect(
-    page.locator('.home-map-frame .geo-map[data-city-points="1000"]')
-  ).toBeVisible();
-  await expect(page.locator(".city-method-note")).toContainText(
+  const cityButton = page.locator('[data-topic-id="cities"]');
+  if (!(await cityButton.isVisible())) {
+    await page.getByRole("button", { name: "Challenge wechseln" }).click();
+  }
+  await cityButton.click();
+  await page.locator('[data-region-id="world"]').click();
+  await page.locator(".advanced-settings summary").click();
+  await page.locator('[data-city-set-size="1000"]').click();
+  await expect(page.locator(".source-note")).toContainText(
     "GeoNames-Bevölkerungsfeld"
   );
-  await expect(page.locator(".city-method-note")).toContainText(
-    "Keine Metropolregionsrangliste"
-  );
-  await page.getByLabel("Stadt im Set suchen").fill("München");
-  await expect(page.locator(".city-search__results")).toContainText("München");
-  await expect(page.locator(".city-search__results")).toContainText("Rang 314");
-
-  await page.getByLabel("Fragen").selectOption("all");
-  await page.getByRole("button", { name: /^Quiz starten/ }).click();
+  await page.locator('[data-question-count="all"]').click();
+  await page.locator(".challenge-start .button").click();
   await expect(page.getByText("1 / 1000")).toBeVisible();
   const prepared = await activeSession(page);
   expect(prepared.questions).toHaveLength(1000);
@@ -687,10 +854,10 @@ test("loads, searches, pauses and resumes a Top-1000 city marathon", async ({
 
   await page.getByRole("button", { name: "Runde pausieren" }).click();
   await expect(
-    page.getByRole("button", { name: /Gespeicherte Runde fortsetzen/ })
+    page.getByRole("button", { name: /Runde fortsetzen/ })
   ).toBeVisible();
   await page
-    .getByRole("button", { name: /Gespeicherte Runde fortsetzen/ })
+    .getByRole("button", { name: /Runde fortsetzen/ })
     .click();
   await expect(page.getByText("Gespeicherte Runde fortgesetzt")).toBeVisible();
   expect((await activeSession(page)).id).toBe(prepared.id);
@@ -917,10 +1084,10 @@ test("loads the prepared app shell and starts a round offline", async ({
   await page.goto("./");
   await expect(
     page.getByRole("heading", {
-      name: "Die Welt Schritt für Schritt lernen."
+      name: "Was möchtest du heute üben?"
     })
   ).toBeVisible();
-  await expect(page.locator(".home-map-frame .maplibregl-canvas")).toBeVisible();
+  await expect(page.locator(".challenge-preview .visual-asset--flag")).toBeVisible();
   await page.evaluate(async () => {
     await navigator.serviceWorker.ready;
     if (!navigator.serviceWorker.controller) {
@@ -938,12 +1105,12 @@ test("loads the prepared app shell and starts a round offline", async ({
   await page.reload();
   await expect(
     page.getByRole("heading", {
-      name: "Die Welt Schritt für Schritt lernen."
+      name: "Was möchtest du heute üben?"
     })
   ).toBeVisible();
-  await page.getByRole("button", { name: /^Länder(?:\s|$)/ }).click();
-  await page.getByLabel("Fragerichtung").selectOption("name");
-  await page.getByRole("button", { name: /^Quiz starten/ }).click();
+  await page.locator('[data-topic-id="countries"]').click();
+  await page.locator('[data-direction-id="name"]').click();
+  await page.locator(".challenge-start .button").click();
   await expect(page.getByLabel("Deine Antwort")).toBeVisible();
   await context.setOffline(false);
   expect(consoleErrors).toEqual([]);
@@ -958,7 +1125,7 @@ test("restores a prepared visual round with its SVGs offline", async ({
   await page.goto("./");
   await expect(
     page.getByRole("heading", {
-      name: "Die Welt Schritt für Schritt lernen."
+      name: "Was möchtest du heute üben?"
     })
   ).toBeVisible();
   await page.evaluate(async () => {
@@ -974,11 +1141,11 @@ test("restores a prepared visual round with its SVGs offline", async ({
     }
   });
 
-  await page.getByRole("button", { name: /^Flaggen(?:\s|$)/ }).click();
-  await page.getByLabel("Fragerichtung").selectOption("reverse_choice");
-  await page.getByLabel("Gebiet").selectOption("continent:europe");
-  await page.getByLabel("Fragen").selectOption("10");
-  await page.getByRole("button", { name: /^Quiz starten/ }).click();
+  await page.locator('[data-topic-id="flags"]').click();
+  await page.locator('[data-direction-id="reverse_choice"]').click();
+  await page.locator('[data-region-id="continent:europe"]').click();
+  await page.locator('[data-question-count="10"]').click();
+  await page.locator(".challenge-start .button").click();
   await expect(
     page.locator(".choice-option .visual-asset--flag").first()
   ).toBeVisible();
@@ -1015,11 +1182,11 @@ test("restores a prepared river round with its geometry offline", async ({
     }
   });
 
-  await page.getByRole("button", { name: /^Flüsse(?:\s|$)/ }).click();
-  await page.getByLabel("Fragerichtung").selectOption("locate");
-  await page.getByLabel("Gebiet").selectOption("world");
-  await page.getByLabel("Fragen").selectOption("10");
-  await page.getByRole("button", { name: /^Quiz starten/ }).click();
+  await page.locator('[data-topic-id="rivers"]').click();
+  await page.locator('[data-direction-id="locate"]').click();
+  await page.locator('[data-region-id="world"]').click();
+  await page.locator('[data-question-count="10"]').click();
+  await page.locator(".challenge-start .button").click();
   await expect(
     page.locator('.quiz-map .geo-map[data-physical-ready="true"]')
   ).toBeVisible();
@@ -1043,7 +1210,9 @@ test("has no serious or critical accessibility violations on core screens", asyn
 }, testInfo) => {
   test.skip(testInfo.project.name !== "desktop-chromium");
   await page.goto("./");
-  await expect(page.locator(".home-map-frame .maplibregl-canvas")).toBeVisible();
+  await expect(
+    page.getByRole("heading", { name: "Was möchtest du heute üben?" })
+  ).toBeVisible();
 
   const homeResults = await new AxeBuilder({ page }).analyze();
   expect(

@@ -7,6 +7,8 @@ import { canRevealSolution } from "../../engine/quiz/learningProfiles";
 import { getRemainingTimeMs } from "../../engine/session/session";
 import { MapQuestionView } from "./MapQuestionView";
 import { KnowledgeQuestionView } from "./KnowledgeQuestionView";
+import { CountryProfileQuestionView } from "./CountryProfileQuestionView";
+import { FactProfileQuestionView } from "./FactProfileQuestionView";
 import { TextQuestionView } from "./TextQuestionView";
 import { VisualQuestionView } from "./VisualQuestionView";
 import { useQuizSession } from "./useQuizSession";
@@ -167,7 +169,29 @@ export function QuizPage() {
         </div>
       ) : null}
 
-      {question.promptPayload.kind === "description" ? (
+      {question.answerSpec.kind === "country_profile_input" ? (
+        <CountryProfileQuestionView
+          key={question.id}
+          question={question}
+          attempt={attempt}
+          onAnswer={answer}
+          onContinue={continueQuiz}
+          onReveal={handleUnanswered}
+          solutionRevealAllowed={solutionRevealAllowed}
+          continueLabel={continueLabel}
+        />
+      ) : question.answerSpec.kind === "fact_profile_input" ? (
+        <FactProfileQuestionView
+          key={question.id}
+          question={question}
+          attempt={attempt}
+          onAnswer={answer}
+          onContinue={continueQuiz}
+          onReveal={handleUnanswered}
+          solutionRevealAllowed={solutionRevealAllowed}
+          continueLabel={continueLabel}
+        />
+      ) : question.promptPayload.kind === "description" ? (
         <KnowledgeQuestionView
           key={question.id}
           question={question}

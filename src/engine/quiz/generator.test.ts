@@ -106,6 +106,157 @@ describe("Phase-2 QuizDefinition and deterministic generator", () => {
     });
   });
 
+  it("compiles and grades complete country profiles with valid alternatives", () => {
+    const profileDefinition = definition({
+      topic: "country-profile",
+      direction: "profile",
+      regionId: "world",
+      questionCount: "all"
+    });
+    expect(validateQuizDefinition(profileDefinition, geoDataset)).toMatchObject({
+      success: true
+    });
+    const questions = generateQuestions(profileDefinition, repository);
+    expect(questions).toHaveLength(195);
+
+    const germany = questions.find(
+      (question) => question.subjectId === "country:de"
+    )!;
+    expect(germany).toMatchObject({
+      promptText: "Was weißt du über Deutschland?",
+      answerSpec: {
+        kind: "country_profile_input",
+        graderId: "country-profile-v1"
+      },
+      feedback: {
+        expectedLabel:
+          "Hauptstadt: Berlin · Amtssprache: Deutsch · Währung: Euro"
+      }
+    });
+    expect(
+      gradeQuestionAnswer(
+        germany,
+        {
+          kind: "country_profile_input",
+          values: {
+            capital: "Berlin",
+            language: "Deutsch",
+            currency: "Euro"
+          }
+        },
+        1_000
+      )
+    ).toMatchObject({
+      status: "correct",
+      score: 1,
+      detail: "Alle drei Angaben stimmen."
+    });
+
+    const southAfrica = questions.find(
+      (question) => question.subjectId === "country:za"
+    )!;
+    const partial = gradeQuestionAnswer(
+      southAfrica,
+      {
+        kind: "country_profile_input",
+        values: {
+          capital: "Kapstadt",
+          language: "Englisch",
+          currency: "Euro"
+        }
+      },
+      1_000
+    );
+    expect(partial).toMatchObject({ status: "partial", score: 0 });
+    expect(partial.profileFields).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({ id: "capital", correct: true }),
+        expect.objectContaining({ id: "currency", correct: false })
+      ])
+    );
+  });
+
+  it("compiles planets, moons, dwarf planets and configurable zodiac profiles", () => {
+    const astronomyTopics = [
+      ["planets", 8],
+      ["moons", 20],
+      ["dwarf-planets", 5]
+    ] as const;
+
+    for (const [topic, count] of astronomyTopics) {
+      const candidate = definition({
+        topic,
+        direction: "facts_to_name",
+        regionId: "world",
+        questionCount: "all"
+      });
+      expect(validateQuizDefinition(candidate, geoDataset)).toMatchObject({
+        success: true
+      });
+      const questions = generateQuestions(candidate, repository);
+      expect(questions).toHaveLength(count);
+      expect(questions[0]).toMatchObject({
+        promptPayload: { kind: "fact" },
+        answerSpec: { kind: "text_input", graderId: "text-v1" },
+        metadata: { entityType: candidate.content.subjectType }
+      });
+    }
+
+    const zodiac = definition({
+      topic: "zodiac",
+      direction: "profile",
+      questionCount: "all",
+      astronomyFieldIds: [
+        "iau-abbreviation",
+        "best-visibility",
+        "sky-position"
+      ]
+    });
+    expect(validateQuizDefinition(zodiac, geoDataset)).toMatchObject({
+      success: true
+    });
+    const zodiacQuestions = generateQuestions(zodiac, repository);
+    expect(zodiacQuestions).toHaveLength(12);
+    const leo = zodiacQuestions.find(
+      (question) => question.subjectId === "constellation:leo"
+    )!;
+    expect(leo).toMatchObject({
+      promptText: "Welches Sternzeichen ist das?",
+      promptPayload: {
+        kind: "visual_asset",
+        asset: { kind: "constellation_chart" }
+      },
+      answerSpec: {
+        kind: "fact_profile_input",
+        graderId: "fact-profile-v1"
+      },
+      feedback: {
+        expectedLabel:
+          "Name: Löwe · IAU-Kürzel: Leo · Beste Sichtbarkeit: April · Himmelslage: Nordhimmel"
+      }
+    });
+    expect(leo.answerSpec.graderConfig.profileFields).toHaveLength(4);
+    expect(
+      gradeQuestionAnswer(
+        leo,
+        {
+          kind: "fact_profile_input",
+          values: {
+            name: "Loewe",
+            "iau-abbreviation": "LEO",
+            "best-visibility": "04",
+            "sky-position": "nördlich"
+          }
+        },
+        1_000
+      )
+    ).toMatchObject({
+      status: "correct",
+      score: 1,
+      detail: "Alle 4 Angaben stimmen."
+    });
+  });
+
   it("compiles all four Phase-4 visual combinations from presets", () => {
     const definitions = [
       definition({ topic: "flags", direction: "name" }),
@@ -162,16 +313,16 @@ describe("Phase-2 QuizDefinition and deterministic generator", () => {
       second.map((question) => question.subjectId)
     );
     expect(first.map((question) => question.feedback.expectedLabel)).toEqual([
-      "Tiflis",
-      "Bukarest",
-      "Ankara",
-      "Oslo",
-      "Dublin",
-      "Helsinki",
-      "Kopenhagen",
-      "Madrid",
-      "Prag",
-      "Lissabon"
+      "Athen",
+      "Sofia",
+      "Vatikanstadt",
+      "Monaco",
+      "Luxemburg",
+      "Kiew",
+      "Stockholm",
+      "Moskau",
+      "London",
+      "Madrid"
     ]);
   });
 

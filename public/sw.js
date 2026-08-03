@@ -1,4 +1,4 @@
-const CACHE_NAME = "geoapp-shell-phase7-v1";
+const CACHE_NAME = "geoapp-shell-phase8-astronomy-v1";
 const scopeUrl = new URL(self.registration.scope);
 const shellUrl = scopeUrl.href;
 const manifestUrl = new URL("asset-manifest.json", scopeUrl).href;
@@ -11,7 +11,11 @@ async function precacheApplication() {
   }
 
   const manifest = await manifestResponse.json();
-  const assetUrls = new Set([shellUrl, manifestUrl]);
+  const assetUrls = new Set([
+    shellUrl,
+    manifestUrl,
+    new URL("assets/visual/v1/flags/de.svg", scopeUrl).href
+  ]);
 
   const shellEntryKeys = new Set(["index.html", "src/geo/GeoMap.tsx"]);
   for (const [key, entry] of Object.entries(manifest)) {

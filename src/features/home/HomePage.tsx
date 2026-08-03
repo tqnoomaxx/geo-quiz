@@ -1,24 +1,30 @@
-import { lazy, Suspense, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import {
-  Building2,
   BookOpenCheck,
   BrainCircuit,
+  Building2,
+  ChevronDown,
   ChevronRight,
   Droplets,
   Flag,
-  GraduationCap,
   Globe2,
+  GraduationCap,
   Landmark,
   Map as MapIcon,
   Mountain,
   MountainSnow,
+  Moon,
+  Orbit,
   RotateCcw,
   Shuffle,
+  Sparkles,
+  Star,
   Waves
 } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 import { AppHeader } from "../../app/AppHeader";
 import { navigate } from "../../app/navigation";
-import { geoDataset, datasetManifest } from "../../content/dataset";
+import { datasetManifest, geoDataset } from "../../content/dataset";
 import {
   rankedCityIndex,
   type RankedCitySetSize
@@ -31,6 +37,7 @@ import {
   describeQuizDefinition,
   MVP_DIRECTIONS,
   MVP_REGIONS,
+  ZODIAC_OPTIONAL_FIELD_IDS,
   type MvpQuestionCount,
   type MvpQuizSetup,
   type MvpRegionId,
@@ -43,159 +50,310 @@ import {
 } from "../../engine/quiz/learningProfiles";
 import type { QuizSessionState } from "../../engine/session/session";
 import { getSessionRepository } from "../../persistence/sessionRepository";
+import { VisualAssetGraphic } from "../quiz/VisualAssetGraphic";
 import { requestQuizSession } from "../quiz/sessionIntent";
 
-const MapPreview = lazy(() =>
-  import("../../geo/GeoMap").then((module) => ({
-    default: module.MapPreview
-  }))
-);
-const CityExplorer = lazy(() => import("./CityExplorer"));
-const CANDIDATE_COUNTS = new Map<string, number>(
-  (
-    [
-      "capitals",
-      "cities",
-      "countries",
-      "flags",
-      "shapes",
-      "rivers",
-      "lakes",
-      "seas",
-      "mountain-ranges",
-      "peaks",
-      "longest-rivers",
-      "highest-mountains",
-      "knowledge",
-      "world-mix"
-    ] as const
-  ).flatMap((topic) =>
-    MVP_DIRECTIONS[topic].flatMap((direction) =>
-      MVP_REGIONS.map(
-        (region) =>
-          [
-            `${topic}:${direction.id}:${region.id}`,
-            candidateCountForSetup(
-              topic,
-              region.id,
-              1000,
-              direction.id
-            )
-          ] as const
-      )
-    )
-  )
-);
-const PHYSICAL_TYPE_BY_TOPIC = {
-  rivers: "river",
-  lakes: "lake",
-  seas: "sea",
-  "mountain-ranges": "mountain_range",
-  peaks: "peak"
+type Challenge = {
+  id: MvpTopic;
+  label: string;
+  detail: string;
+  icon: LucideIcon;
+};
+
+const CHALLENGE_GROUPS: Array<{ label: string; challenges: Challenge[] }> = [
+  {
+    label: "Länder & Menschen",
+    challenges: [
+      {
+        id: "countries",
+        label: "Länder finden",
+        detail: "Länder auf der Karte finden oder benennen",
+        icon: Globe2
+      },
+      {
+        id: "capitals",
+        label: "Hauptstädte",
+        detail: "Stadt, Land und Lage miteinander verbinden",
+        icon: Landmark
+      },
+      {
+        id: "country-profile",
+        label: "Länderprofil",
+        detail: "Hauptstadt, Amtssprache und Währung",
+        icon: BookOpenCheck
+      },
+      {
+        id: "flags",
+        label: "Flaggen",
+        detail: "Flaggen erkennen und Ländern zuordnen",
+        icon: Flag
+      },
+      {
+        id: "shapes",
+        label: "Länderformen",
+        detail: "Länder an ihrem Umriss erkennen",
+        icon: MapIcon
+      },
+      {
+        id: "cities",
+        label: "Große Städte",
+        detail: "Die größten 100 bis 1000 Städte je Gebiet",
+        icon: Building2
+      }
+    ]
+  },
+  {
+    label: "Natur",
+    challenges: [
+      {
+        id: "rivers",
+        label: "Flüsse auf der Karte",
+        detail: "18 wichtige Flussverläufe",
+        icon: Waves
+      },
+      {
+        id: "lakes",
+        label: "Seen",
+        detail: "18 große Seen erkennen und finden",
+        icon: Droplets
+      },
+      {
+        id: "seas",
+        label: "Meere",
+        detail: "18 Meeresräume erkennen und finden",
+        icon: Globe2
+      },
+      {
+        id: "mountain-ranges",
+        label: "Gebirge",
+        detail: "18 Gebirgsräume erkennen und finden",
+        icon: Mountain
+      },
+      {
+        id: "peaks",
+        label: "Gipfel auf der Karte",
+        detail: "16 markante Gipfel",
+        icon: MountainSnow
+      },
+      {
+        id: "longest-rivers",
+        label: "Die längsten Flüsse",
+        detail: "Top 100 mit Länge, Ländern und Mündung",
+        icon: Waves
+      },
+      {
+        id: "highest-mountains",
+        label: "Die höchsten Berge",
+        detail: "Top 100 mit Höhe, Land und Gebirge",
+        icon: MountainSnow
+      }
+    ]
+  },
+  {
+    label: "Weltraum",
+    challenges: [
+      {
+        id: "planets",
+        label: "Planeten",
+        detail: "Alle 8 Planeten anhand ihrer Merkmale",
+        icon: Orbit
+      },
+      {
+        id: "moons",
+        label: "Monde",
+        detail: "20 bekannte Monde und ihre Planeten",
+        icon: Moon
+      },
+      {
+        id: "dwarf-planets",
+        label: "Zwergplaneten",
+        detail: "Ceres, Pluto, Haumea, Makemake und Eris",
+        icon: Sparkles
+      },
+      {
+        id: "zodiac",
+        label: "Sternzeichen",
+        detail: "12 Sternbilder erkennen und benennen",
+        icon: Star
+      }
+    ]
+  },
+  {
+    label: "Gemischt",
+    challenges: [
+      {
+        id: "knowledge",
+        label: "Wissenspuzzle",
+        detail: "Fakten kombinieren und die Lösung herleiten",
+        icon: BrainCircuit
+      },
+      {
+        id: "world-mix",
+        label: "Weltmix",
+        detail: "Politik, Natur, Karten und Wissen gemischt",
+        icon: Shuffle
+      }
+    ]
+  }
+];
+
+const CHALLENGES = CHALLENGE_GROUPS.flatMap((group) => group.challenges);
+const HOME_DEFAULT_SETUP: MvpQuizSetup = {
+  ...DEFAULT_MVP_SETUP,
+  topic: "country-profile",
+  direction: "profile",
+  regionId: "world",
+  profile: "learn"
+};
+
+const MODE_COPY = {
+  learn: "Lösung jederzeit ansehen",
+  practice: "Fehler kommen am Ende noch einmal",
+  exam: "Auswertung erst nach der letzten Frage"
 } as const;
 
-const topics = [
-  {
-    id: "countries",
-    label: "Länder",
-    detail: "195 Staaten",
-    icon: Globe2,
-    available: true
-  },
-  {
-    id: "capitals",
-    label: "Hauptstädte",
-    detail: "202 Hauptstadtsitze",
-    icon: Landmark,
-    available: true
-  },
-  {
-    id: "cities",
-    label: "Große Städte",
-    detail: "Top 100 bis 1000 je Gebiet",
-    icon: Building2,
-    available: true
-  },
-  {
-    id: "flags",
-    label: "Flaggen",
-    detail: "195 lokale SVGs",
-    icon: Flag,
-    available: true
-  },
-  {
-    id: "shapes",
-    label: "Länderformen",
-    detail: "195 Umrisse",
-    icon: MapIcon,
-    available: true
-  },
-  {
-    id: "rivers",
-    label: "Flüsse · Karte",
-    detail: "18 kuratierte Verläufe",
-    icon: Waves,
-    available: true
-  },
-  {
-    id: "lakes",
-    label: "Seen",
-    detail: "18 große Seen",
-    icon: Droplets,
-    available: true
-  },
-  {
-    id: "seas",
-    label: "Meere",
-    detail: "18 Meeresräume",
-    icon: Globe2,
-    available: true
-  },
-  {
-    id: "mountain-ranges",
-    label: "Gebirge",
-    detail: "18 Gebirgsräume",
-    icon: Mountain,
-    available: true
-  },
-  {
-    id: "peaks",
-    label: "Gipfel · Karte",
-    detail: "16 markante Gipfel",
-    icon: MountainSnow,
-    available: true
-  },
-  {
-    id: "longest-rivers",
-    label: "Längste Flüsse",
-    detail: "Top 100 · Länge, Länder, Mündung",
-    icon: Waves,
-    available: true
-  },
-  {
-    id: "highest-mountains",
-    label: "Höchste Berge",
-    detail: "Top 100 · Höhe, Land, Gebirge",
-    icon: MountainSnow,
-    available: true
-  },
-  {
-    id: "knowledge",
-    label: "Wissenspuzzle",
-    detail: "20 erklärbare Fragen",
-    icon: BrainCircuit,
-    available: true
-  }
-] as const;
+const MODE_ICONS = {
+  learn: BookOpenCheck,
+  practice: RotateCcw,
+  exam: GraduationCap
+} as const;
+
+const DIRECTION_COPY: Partial<Record<MvpQuizSetup["direction"], string>> = {
+  locate: "Du siehst einen Namen und wählst den Ort auf der Karte.",
+  name: "Du siehst die Karte oder ein Bild und gibst den Namen ein.",
+  country_to_name: "Du siehst ein Land und nennst seine Hauptstadt.",
+  name_to_country: "Du siehst eine Hauptstadt und nennst das Land.",
+  choice: "Du wählst aus vier gut unterscheidbaren Antworten.",
+  reverse_choice: "Du siehst ein Land und wählst seine Flagge.",
+  facts_to_name: "Du leitest den Namen aus einem kurzen Faktenprofil ab.",
+  profile: "Du ergänzt drei wichtige Fakten zu einem vorgegebenen Land.",
+  mix: "Verschiedene vorhandene Challenges wechseln sich ab."
+};
 
 function randomSeed() {
   return crypto.randomUUID();
 }
 
+function setupCandidateCount(value: MvpQuizSetup) {
+  return candidateCountForSetup(
+    value.topic,
+    value.regionId,
+    value.citySetSize,
+    value.direction
+  );
+}
+
+const ASTRONOMY_TOPICS = new Set<MvpTopic>([
+  "planets",
+  "moons",
+  "dwarf-planets",
+  "zodiac"
+]);
+
+function questionCountOptions(
+  topic: MvpTopic,
+  candidateCount: number
+): MvpQuestionCount[] {
+  if (topic === "world-mix") return [10, 20];
+  if (candidateCount <= 5) return ["all"];
+  if (candidateCount <= 12) return [6, "all"];
+  if (candidateCount <= 20) return [10, "all"];
+  return [10, 20, "all"];
+}
+
+function ChallengePreview({
+  challenge,
+  setup
+}: {
+  challenge: Challenge;
+  setup: MvpQuizSetup;
+}) {
+  const Icon = challenge.icon;
+  if (challenge.id === "country-profile") {
+    return (
+      <aside className="challenge-preview challenge-preview--profile">
+        <div className="challenge-preview__heading">
+          <div className="challenge-preview__flag">
+            <VisualAssetGraphic
+              asset={{
+                kind: "flag",
+                key: "visual:flag:country:de",
+                entityId: "country:de"
+              }}
+              accessibleLabel="Flagge von Deutschland"
+              compact
+            />
+          </div>
+          <div>
+            <span>Beispiel</span>
+            <strong>Deutschland</strong>
+          </div>
+        </div>
+        <dl>
+          <div><dt>Hauptstadt</dt><dd>Berlin</dd></div>
+          <div><dt>Amtssprache</dt><dd>Deutsch</dd></div>
+          <div><dt>Währung</dt><dd>Euro</dd></div>
+        </dl>
+      </aside>
+    );
+  }
+
+  if (challenge.id === "zodiac") {
+    const selectedFields = [
+      { id: "name", label: "Name", value: "Löwe" },
+      { id: "iau-abbreviation", label: "IAU-Kürzel", value: "Leo" },
+      { id: "best-visibility", label: "Beste Sichtbarkeit", value: "April" },
+      { id: "sky-position", label: "Himmelslage", value: "Nordhimmel" }
+    ].filter(
+      (field) =>
+        field.id === "name" ||
+        setup.astronomyFieldIds.includes(
+          field.id as (typeof ZODIAC_OPTIONAL_FIELD_IDS)[number]
+        )
+    );
+    return (
+      <aside className="challenge-preview challenge-preview--zodiac">
+        <div className="challenge-preview__constellation">
+          <VisualAssetGraphic
+            asset={{
+              kind: "constellation_chart",
+              key: "visual:constellation_chart:constellation:leo",
+              entityId: "constellation:leo"
+            }}
+            accessibleLabel="Beispiel einer vereinfachten Sternbildkarte"
+          />
+        </div>
+        <div>
+          <span>Vorschau</span>
+          <strong>Du bestimmst den Umfang</strong>
+          <dl>
+            {selectedFields.map((field) => (
+              <div key={field.id}>
+                <dt>{field.label}</dt>
+                <dd>{field.value}</dd>
+              </div>
+            ))}
+          </dl>
+        </div>
+      </aside>
+    );
+  }
+
+  return (
+    <aside className="challenge-preview">
+      <Icon aria-hidden="true" />
+      <span>So läuft die Challenge</span>
+      <strong>{challenge.label}</strong>
+      <p>{challenge.detail}</p>
+    </aside>
+  );
+}
+
 export function HomePage() {
-  const [setup, setSetup] = useState<MvpQuizSetup>(DEFAULT_MVP_SETUP);
+  const [setup, setSetup] = useState<MvpQuizSetup>(HOME_DEFAULT_SETUP);
   const [activeSession, setActiveSession] = useState<QuizSessionState>();
   const [starting, setStarting] = useState(false);
+  const [mobilePickerOpen, setMobilePickerOpen] = useState(false);
 
   useEffect(() => {
     let cancelled = false;
@@ -204,7 +362,6 @@ export function HomePage() {
     void Promise.all([repository.loadActive(), repository.loadSetup()])
       .then(([active, savedSetup]) => {
         if (cancelled) return;
-
         if (
           active &&
           active.status !== "completed" &&
@@ -215,20 +372,19 @@ export function HomePage() {
         }
         if (savedSetup) {
           const restoredSetup = {
-            ...DEFAULT_MVP_SETUP,
+            ...HOME_DEFAULT_SETUP,
             ...savedSetup,
-            seed: DEFAULT_MVP_SETUP.seed
+            seed: HOME_DEFAULT_SETUP.seed
           };
           setSetup(
-            getLearningProfile(restoredSetup.profile).timerPolicy ===
-              "disabled"
+            getLearningProfile(restoredSetup.profile).timerPolicy === "disabled"
               ? { ...restoredSetup, timerSeconds: 0 }
               : restoredSetup
           );
         }
       })
       .catch(() => {
-        // Der Quiz-Screen bleibt spielbar und meldet Speicherausfälle.
+        // Die Runde bleibt ohne gespeicherte Komfortauswahl spielbar.
       });
 
     return () => {
@@ -236,19 +392,11 @@ export function HomePage() {
     };
   }, []);
 
-  const countForSetup = (value: MvpQuizSetup) =>
-    value.topic === "cities"
-      ? candidateCountForSetup(
-          value.topic,
-          value.regionId,
-          value.citySetSize,
-          value.direction
-        )
-      : CANDIDATE_COUNTS.get(
-          `${value.topic}:${value.direction}:${value.regionId}`
-        ) ?? 0;
-  const candidateCount = countForSetup(setup);
-  const learningProfile = getLearningProfile(setup.profile);
+  const candidateCount = setupCandidateCount(setup);
+  const selectedChallenge =
+    CHALLENGES.find((challenge) => challenge.id === setup.topic) ??
+    CHALLENGES[0];
+  const selectedDirections = MVP_DIRECTIONS[setup.topic];
   const activeDescription = activeSession
     ? describeQuizDefinition(activeSession.definitionSnapshot)
     : undefined;
@@ -258,375 +406,344 @@ export function HomePage() {
       const next = { ...current, ...patch };
       if (patch.topic && patch.topic !== current.topic) {
         next.direction = MVP_DIRECTIONS[patch.topic][0].id;
+        if (ASTRONOMY_TOPICS.has(patch.topic)) next.regionId = "world";
         if (patch.topic === "world-mix" && next.questionCount === "all") {
           next.questionCount = 10;
         }
-        if (
-          countForSetup(next) === 0
-        ) {
-          next.regionId = "world";
-        }
+        if (setupCandidateCount(next) === 0) next.regionId = "world";
       }
-      const count = countForSetup(next);
-
-      if (
-        next.topic !== "world-mix" &&
-        next.questionCount !== "all" &&
-        count < next.questionCount
-      ) {
-        next.questionCount = count >= 10 ? 10 : "all";
+      const count = setupCandidateCount(next);
+      const availableCounts = questionCountOptions(next.topic, count);
+      if (!availableCounts.includes(next.questionCount)) {
+        next.questionCount = availableCounts[0] ?? "all";
       }
       return next;
     });
   };
 
+  const chooseChallenge = (topic: MvpTopic) => {
+    updateSetup({ topic });
+    setMobilePickerOpen(false);
+  };
+
   const startQuiz = () => {
     setStarting(true);
     const nextSetup = { ...setup, seed: randomSeed(), includeIds: undefined };
-    const definition = createQuizRoundDefinition(nextSetup);
-    requestQuizSession(definition);
-    void getSessionRepository().saveSetup(nextSetup).catch(() => {
-      // Die Auswahl ist Komfortzustand; der Quiz-Intent liegt zusätzlich im RAM.
-    });
+    requestQuizSession(createQuizRoundDefinition(nextSetup));
+    void getSessionRepository().saveSetup(nextSetup).catch(() => undefined);
     navigate("/quiz");
   };
 
-  const resumeQuiz = () => {
-    setStarting(true);
-    navigate("/quiz");
-  };
+  const startLabel =
+    setup.questionCount === "all"
+      ? `Alle ${candidateCount} Fragen starten`
+      : `${setup.questionCount} Fragen starten`;
+  const availableQuestionCounts = questionCountOptions(
+    setup.topic,
+    candidateCount
+  );
 
   return (
     <div className="app-page">
       <AppHeader activeRoute="/" />
-      <main className="home-layout">
-        <section className="home-intro">
-          <div>
-            <h1>Die Welt Schritt für Schritt lernen.</h1>
-            <p>Wähle ein Thema und starte eine kurze Runde.</p>
-          </div>
+      <main className="challenge-home">
+        <header className="challenge-home__intro">
+          <p className="eyebrow">Deine nächste Runde</p>
+          <h1>Was möchtest du heute üben?</h1>
+          <p>Wähle eine Challenge. Den Rest stellst du in wenigen Klicks ein.</p>
+        </header>
 
-          <div className="topic-picker">
-            <h2>Thema wählen</h2>
-            <div className="topic-list">
-              {topics.map(({ id, label, detail, icon: Icon, available }) => {
-                const selected = id === setup.topic;
-                return (
-                  <button
-                    className={`topic-row${selected ? " is-selected" : ""}`}
-                    key={id}
-                    type="button"
-                    aria-pressed={selected}
-                    disabled={!available}
-                    onClick={
-                      available
-                        ? () => updateSetup({ topic: id as MvpTopic })
-                        : undefined
-                    }
-                  >
-                    <Icon aria-hidden="true" />
-                    <span>
-                      {label}
-                      <small>{detail}</small>
-                    </span>
-                    <ChevronRight aria-hidden="true" />
-                  </button>
-                );
-              })}
+        <div className="challenge-workspace">
+          <aside
+            className={`challenge-index${mobilePickerOpen ? " is-mobile-open" : ""}`}
+            aria-label="Challenges"
+          >
+            {CHALLENGE_GROUPS.map((group) => (
+              <section key={group.label}>
+                <h2>{group.label}</h2>
+                <div>
+                  {group.challenges.map((challenge) => {
+                    const Icon = challenge.icon;
+                    const selected = challenge.id === setup.topic;
+                    return (
+                      <button
+                        key={challenge.id}
+                        type="button"
+                        data-topic-id={challenge.id}
+                        className={`challenge-row${selected ? " is-selected" : ""}`}
+                        aria-pressed={selected}
+                        onClick={() => chooseChallenge(challenge.id)}
+                      >
+                        <Icon aria-hidden="true" />
+                        <span>
+                          <strong>{challenge.label}</strong>
+                          <small>{challenge.detail}</small>
+                        </span>
+                        <ChevronRight aria-hidden="true" />
+                      </button>
+                    );
+                  })}
+                </div>
+              </section>
+            ))}
+          </aside>
+
+          <section className="challenge-config" aria-labelledby="challenge-title">
+            <div className="challenge-config__header">
+              <div>
+                <button
+                  className="challenge-switch"
+                  type="button"
+                  aria-expanded={mobilePickerOpen}
+                  onClick={() => setMobilePickerOpen((open) => !open)}
+                >
+                  Challenge wechseln
+                  <ChevronDown aria-hidden="true" />
+                </button>
+                <h2 id="challenge-title">{selectedChallenge.label}</h2>
+                <p>{selectedChallenge.detail}</p>
+              </div>
+              {activeDescription ? (
+                <button
+                  className="resume-compact"
+                  type="button"
+                  onClick={() => navigate("/quiz")}
+                  disabled={starting}
+                >
+                  Runde fortsetzen
+                  <small>{activeDescription.mode} · {activeDescription.region}</small>
+                </button>
+              ) : null}
             </div>
 
-            <button
-              className={`topic-row topic-row--mix${setup.topic === "world-mix" ? " is-selected" : ""}`}
-              type="button"
-              aria-pressed={setup.topic === "world-mix"}
-              onClick={() => updateSetup({ topic: "world-mix" })}
-            >
-              <Shuffle aria-hidden="true" />
-              <span>
-                Weltmix
-                <small>Politische, physische und verknüpfte Fragen</small>
-              </span>
-              <ChevronRight aria-hidden="true" />
-            </button>
-          </div>
-        </section>
-
-        <section className="quiz-setup" aria-labelledby="quiz-setup-title">
-          <div className="setup-bar">
-            <h2 id="quiz-setup-title">Quiz einrichten</h2>
-            <div className="setup-controls">
-              <label>
-                Fragerichtung
-                <span className="select-control">
-                  <MapIcon aria-hidden="true" />
-                  <select
-                    aria-label="Fragerichtung"
-                    value={setup.direction}
-                    onChange={(event) =>
-                      updateSetup({
-                        direction: event.target.value as MvpQuizSetup["direction"]
-                      })
-                    }
-                  >
-                    {MVP_DIRECTIONS[setup.topic].map((direction) => (
-                      <option key={direction.id} value={direction.id}>
-                        {direction.label}
-                      </option>
-                    ))}
-                  </select>
-                </span>
-              </label>
-              <label>
-                Lernmodus
-                <span className="select-control">
-                  {setup.profile === "learn" ? (
-                    <BookOpenCheck aria-hidden="true" />
-                  ) : setup.profile === "practice" ? (
-                    <RotateCcw aria-hidden="true" />
-                  ) : (
-                    <GraduationCap aria-hidden="true" />
-                  )}
-                  <select
-                    aria-label="Lernmodus"
-                    value={setup.profile}
-                    onChange={(event) => {
-                      const profile =
-                        event.target.value as MvpQuizSetup["profile"];
-                      updateSetup({
-                        profile,
-                        timerSeconds:
-                          getLearningProfile(profile).timerPolicy === "disabled"
-                            ? 0
-                            : setup.timerSeconds
-                      });
-                    }}
-                  >
-                    {LEARNING_PROFILES.map((profile) => (
-                      <option key={profile.id} value={profile.id}>
-                        {profile.optionLabel}
-                      </option>
-                    ))}
-                  </select>
-                </span>
-              </label>
-              <label>
-                Gebiet
-                <span className="select-control">
-                  <Globe2 aria-hidden="true" />
-                  <select
-                    aria-label="Gebiet"
-                    value={setup.regionId}
-                    onChange={(event) =>
-                      updateSetup({
-                        regionId: event.target.value as MvpRegionId
-                      })
-                    }
-                  >
-                    {MVP_REGIONS.map((region) => (
-                      <option
-                        key={region.id}
-                        value={region.id}
-                        disabled={
-                          setup.topic === "cities"
-                            ? candidateCountForSetup(
-                                setup.topic,
-                                region.id,
-                                setup.citySetSize,
-                                setup.direction
-                              ) === 0
-                            : (CANDIDATE_COUNTS.get(
-                                `${setup.topic}:${setup.direction}:${region.id}`
-                              ) ?? 0) === 0
+            <div className="challenge-settings">
+              <fieldset className="setting-group setting-group--modes">
+                <legend>Wie möchtest du lernen?</legend>
+                <div className="mode-options">
+                  {LEARNING_PROFILES.map((profile) => {
+                    const Icon = MODE_ICONS[profile.id];
+                    const selected = setup.profile === profile.id;
+                    return (
+                      <button
+                        key={profile.id}
+                        type="button"
+                        data-profile-id={profile.id}
+                        className={selected ? "is-selected" : ""}
+                        aria-pressed={selected}
+                        onClick={() =>
+                          updateSetup({
+                            profile: profile.id,
+                            timerSeconds:
+                              profile.timerPolicy === "disabled"
+                                ? 0
+                                : setup.timerSeconds
+                          })
                         }
                       >
-                        {region.label}
-                      </option>
+                        <Icon aria-hidden="true" />
+                        <span><strong>{profile.label}</strong><small>{MODE_COPY[profile.id]}</small></span>
+                      </button>
+                    );
+                  })}
+                </div>
+              </fieldset>
+
+              {selectedDirections.length > 1 ? (
+                <fieldset className="setting-group">
+                  <legend>Wie wird gefragt?</legend>
+                  <div className="direction-options">
+                    {selectedDirections.map((direction) => (
+                      <button
+                        key={direction.id}
+                        type="button"
+                        data-direction-id={direction.id}
+                        className={setup.direction === direction.id ? "is-selected" : ""}
+                        aria-pressed={setup.direction === direction.id}
+                        onClick={() => updateSetup({ direction: direction.id })}
+                      >
+                        <strong>{direction.label}</strong>
+                        <small>{DIRECTION_COPY[direction.id]}</small>
+                      </button>
                     ))}
-                  </select>
-                </span>
-              </label>
-              {setup.topic === "cities" ? (
-                <label>
-                  Stadtset
-                  <span className="select-control select-control--plain">
-                    <select
-                      aria-label="Stadtset"
-                      value={setup.citySetSize}
-                      onChange={(event) =>
-                        updateSetup({
-                          citySetSize: Number(
-                            event.target.value
-                          ) as RankedCitySetSize
-                        })
-                      }
-                    >
-                      <option value="100">Top 100</option>
-                      <option value="250">Top 250</option>
-                      <option value="500">Top 500</option>
-                      <option value="1000">Top 1000</option>
-                    </select>
-                  </span>
-                </label>
+                  </div>
+                </fieldset>
               ) : null}
-              <label>
-                Fragen
-                <span className="select-control select-control--plain">
-                  <select
-                    aria-label="Fragen"
-                    value={setup.questionCount}
-                    onChange={(event) =>
-                      updateSetup({
-                        questionCount:
-                          event.target.value === "all"
-                            ? "all"
-                            : (Number(event.target.value) as MvpQuestionCount)
-                      })
-                    }
-                  >
-                    <option value="10" disabled={candidateCount < 10}>10</option>
-                    <option value="20" disabled={candidateCount < 20}>20</option>
-                    <option
-                      value="all"
-                      disabled={setup.topic === "world-mix"}
-                    >
-                      Alle ({candidateCount})
-                    </option>
-                  </select>
-                </span>
-              </label>
-              <label>
-                Zeitlimit
-                <span className="select-control select-control--plain">
-                  <select
-                    aria-label="Zeit pro Frage"
-                    value={setup.timerSeconds}
-                    disabled={learningProfile.timerPolicy === "disabled"}
-                    onChange={(event) =>
-                      updateSetup({
-                        timerSeconds: Number(
-                          event.target.value
-                        ) as MvpTimerSeconds
-                      })
-                    }
-                  >
-                    <option value="0">Ohne</option>
-                    <option value="15">15 Sekunden</option>
-                    <option value="30">30 Sekunden</option>
-                  </select>
-                </span>
-              </label>
-              <aside className="learning-mode-note" aria-live="polite">
-                <strong>{learningProfile.label}</strong>
-                <span>{learningProfile.description}</span>
-              </aside>
+
+              {!ASTRONOMY_TOPICS.has(setup.topic) ? (
+                <fieldset className="setting-group">
+                  <legend>Welches Gebiet?</legend>
+                  <div className="choice-pills choice-pills--regions">
+                    {MVP_REGIONS.map((region) => {
+                      const available =
+                        setupCandidateCount({ ...setup, regionId: region.id }) > 0;
+                      return (
+                        <button
+                          key={region.id}
+                          type="button"
+                          data-region-id={region.id}
+                          className={setup.regionId === region.id ? "is-selected" : ""}
+                          aria-pressed={setup.regionId === region.id}
+                          disabled={!available}
+                          onClick={() => updateSetup({ regionId: region.id as MvpRegionId })}
+                        >
+                          {region.label}
+                        </button>
+                      );
+                    })}
+                  </div>
+                </fieldset>
+              ) : null}
+
+              <fieldset className="setting-group">
+                <legend>Wie lang?</legend>
+                <div className="choice-pills">
+                  {availableQuestionCounts.map((count) => {
+                    return (
+                      <button
+                        key={count}
+                        type="button"
+                        data-question-count={count}
+                        className={setup.questionCount === count ? "is-selected" : ""}
+                        aria-pressed={setup.questionCount === count}
+                        onClick={() => updateSetup({ questionCount: count as MvpQuestionCount })}
+                      >
+                        {count === "all" ? `Alle (${candidateCount})` : count}
+                      </button>
+                    );
+                  })}
+                </div>
+              </fieldset>
+
+              {setup.topic === "zodiac" ? (
+                <fieldset className="setting-group zodiac-field-settings">
+                  <legend>Was möchtest du eingeben?</legend>
+                  <div className="profile-field-options">
+                    <label>
+                      <input type="checkbox" checked disabled />
+                      <span><strong>Name</strong><small>Der deutsche Name ist immer dabei.</small></span>
+                      <em>Pflicht</em>
+                    </label>
+                    {[
+                      {
+                        id: "iau-abbreviation",
+                        label: "IAU-Kürzel",
+                        detail: "Das offizielle Kürzel, zum Beispiel Leo."
+                      },
+                      {
+                        id: "best-visibility",
+                        label: "Beste Sichtbarkeit",
+                        detail: "Der Monat gegen 22 Uhr in Mitteleuropa."
+                      },
+                      {
+                        id: "sky-position",
+                        label: "Himmelslage",
+                        detail: "Nordhimmel, äquatornah oder Südhimmel."
+                      }
+                    ].map((field) => {
+                      const fieldId = field.id as (typeof ZODIAC_OPTIONAL_FIELD_IDS)[number];
+                      const checked = setup.astronomyFieldIds.includes(fieldId);
+                      return (
+                        <label key={field.id}>
+                          <input
+                            type="checkbox"
+                            data-zodiac-field-id={field.id}
+                            checked={checked}
+                            onChange={() =>
+                              updateSetup({
+                                astronomyFieldIds: checked
+                                  ? setup.astronomyFieldIds.filter((id) => id !== fieldId)
+                                  : [...setup.astronomyFieldIds, fieldId]
+                              })
+                            }
+                          />
+                          <span><strong>{field.label}</strong><small>{field.detail}</small></span>
+                          <em>Optional</em>
+                        </label>
+                      );
+                    })}
+                  </div>
+                </fieldset>
+              ) : null}
+
+              <details className="advanced-settings">
+                <summary>Weitere Einstellungen <ChevronDown aria-hidden="true" /></summary>
+                <div>
+                  {setup.topic === "cities" ? (
+                    <fieldset className="setting-group">
+                      <legend>Wie viele Städte gehören zum Lernset?</legend>
+                      <div className="choice-pills">
+                        {([100, 250, 500, 1000] as const).map((size) => (
+                          <button
+                            key={size}
+                            type="button"
+                            data-city-set-size={size}
+                            className={setup.citySetSize === size ? "is-selected" : ""}
+                            aria-pressed={setup.citySetSize === size}
+                            onClick={() => updateSetup({ citySetSize: size as RankedCitySetSize })}
+                          >
+                            Top {size}
+                          </button>
+                        ))}
+                      </div>
+                    </fieldset>
+                  ) : null}
+                  <fieldset className="setting-group">
+                    <legend>Zeit pro Frage</legend>
+                    <div className="choice-pills">
+                      {([0, 15, 30] as const).map((seconds) => (
+                        <button
+                          key={seconds}
+                          type="button"
+                          data-timer-seconds={seconds}
+                          className={setup.timerSeconds === seconds ? "is-selected" : ""}
+                          aria-pressed={setup.timerSeconds === seconds}
+                          disabled={setup.profile !== "exam" && seconds > 0}
+                          onClick={() => updateSetup({ timerSeconds: seconds as MvpTimerSeconds })}
+                        >
+                          {seconds === 0 ? "Ohne Zeitlimit" : `${seconds} Sekunden`}
+                        </button>
+                      ))}
+                    </div>
+                    {setup.profile !== "exam" ? (
+                      <small>Ein Zeitlimit gibt es nur im Prüfungsmodus.</small>
+                    ) : null}
+                  </fieldset>
+                  <p className="source-note">
+                    {setup.topic === "cities"
+                      ? `${rankedCityIndex.ranking.labelDe} · Snapshot ${rankedCityIndex.ranking.snapshotDate}`
+                      : setup.topic === "longest-rivers"
+                        ? rankedPhysicalIndex.rankings.rivers.definitionDe
+                      : setup.topic === "highest-mountains"
+                          ? rankedPhysicalIndex.rankings.peaks.definitionDe
+                          : ASTRONOMY_TOPICS.has(setup.topic)
+                            ? setup.topic === "zodiac"
+                              ? "IAU-Sternbilder · lokale Lernkarten · keine Horoskope"
+                              : "NASA Solar System Exploration · kuratierter Offline-Snapshot"
+                          : `${geoDataset.scopePolicy.labelDe} · Datenstand ${datasetManifest.builtAt.slice(0, 10)}`}
+                  </p>
+                </div>
+              </details>
             </div>
-            {setup.topic === "cities" ? (
-              <aside className="city-method-note">
-                <strong>
-                  Top {setup.citySetSize} in{" "}
-                  {MVP_REGIONS.find(
-                    (region) => region.id === setup.regionId
-                  )?.label ?? "Welt"}
-                </strong>
-                <span>
-                  {rankedCityIndex.ranking.labelDe} · Snapshot{" "}
-                  {rankedCityIndex.ranking.snapshotDate}
-                </span>
-                <small>
-                  Keine Metropolregionsrangliste.{" "}
-                  {rankedCityIndex.ranking.tieBreakDe}.
-                </small>
-              </aside>
-            ) : null}
-            {setup.topic === "longest-rivers" ||
-            setup.topic === "highest-mountains" ? (
-              <aside className="city-method-note">
-                <strong>
-                  {setup.topic === "longest-rivers"
-                    ? "Top 100 Flusssysteme weltweit"
-                    : "Top 100 eigenständige Gipfel weltweit"}
-                </strong>
-                <span>
-                  {setup.topic === "longest-rivers"
-                    ? rankedPhysicalIndex.rankings.rivers.labelDe
-                    : rankedPhysicalIndex.rankings.peaks.labelDe} · Snapshot{" "}
-                  {rankedPhysicalIndex.sources.find(
-                    (source) =>
-                      source.id ===
-                      (setup.topic === "longest-rivers"
-                        ? rankedPhysicalIndex.rankings.rivers.sourceId
-                        : rankedPhysicalIndex.rankings.peaks.sourceId)
-                  )?.retrievedAt}
-                </span>
-                <small>
-                  {setup.topic === "longest-rivers"
-                    ? rankedPhysicalIndex.rankings.rivers.definitionDe
-                    : rankedPhysicalIndex.rankings.peaks.definitionDe}
-                </small>
-              </aside>
-            ) : null}
-            <div className="setup-actions">
+
+            <ChallengePreview challenge={selectedChallenge} setup={setup} />
+
+            <div className="challenge-start">
+              <div>
+                <strong>{startLabel}</strong>
+                <span>{getLearningProfile(setup.profile).description}</span>
+              </div>
               <button
-                className="button button--primary setup-submit"
+                className="button button--primary"
                 type="button"
                 onClick={startQuiz}
                 disabled={starting || candidateCount === 0}
               >
-                {starting ? "Wird vorbereitet …" : "Quiz starten"}
+                {starting ? "Wird vorbereitet …" : startLabel}
                 <ChevronRight aria-hidden="true" />
               </button>
-              {activeDescription ? (
-                <button
-                  className="button button--secondary resume-button"
-                  type="button"
-                  onClick={resumeQuiz}
-                  disabled={starting}
-                >
-                  Gespeicherte Runde fortsetzen
-                  <small>
-                    {activeDescription.mode} · {activeDescription.region}
-                  </small>
-                </button>
-              ) : null}
             </div>
-          </div>
-
-          <div className="home-map-frame" aria-label="Vorschau der gewählten Karte">
-            <Suspense fallback={<div className="map-skeleton">Karte wird vorbereitet …</div>}>
-              {setup.topic === "cities" ? (
-                <CityExplorer
-                  key={`${setup.regionId}:${setup.citySetSize}`}
-                  regionId={setup.regionId}
-                  setSize={setup.citySetSize}
-                />
-              ) : (
-                <MapPreview
-                  key={`${setup.regionId}:${setup.topic}`}
-                  regionId={setup.regionId}
-                  physicalEntityType={
-                    PHYSICAL_TYPE_BY_TOPIC[
-                      setup.topic as keyof typeof PHYSICAL_TYPE_BY_TOPIC
-                    ]
-                  }
-                />
-              )}
-            </Suspense>
-          </div>
-          <div className="map-credit map-credit--split">
-            <span>
-              <Building2 aria-hidden="true" />
-              {geoDataset.scopePolicy.labelDe}
-            </span>
-            <span>
-              {setup.topic === "cities"
-                ? `GeoNames ${rankedCityIndex.ranking.snapshotDate} · CC BY 4.0`
-                : setup.topic === "longest-rivers" ||
-                    setup.topic === "highest-mountains"
-                  ? `Wikipedia-Listensnapshot ${rankedPhysicalIndex.builtAt.slice(0, 10)} · CC BY-SA 4.0`
-                : `Datenstand ${datasetManifest.builtAt.slice(0, 10)} · ODbL/CC0 · Natural Earth`}
-            </span>
-          </div>
-        </section>
+          </section>
+        </div>
       </main>
     </div>
   );

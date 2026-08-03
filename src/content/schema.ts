@@ -71,9 +71,50 @@ export type EntityFact = {
   entityId: string;
   factTypeId: string;
   value: number | string;
+  acceptedValues?: string[];
   asOf: string;
   method: string;
   sourceRefs: string[];
+};
+
+export type AstronomyEntityType =
+  | "planet"
+  | "moon"
+  | "dwarf_planet"
+  | "zodiac_constellation";
+
+export type RawAstronomyFact = {
+  factTypeId: string;
+  value: number | string;
+  acceptedValues?: string[];
+  method: string;
+  sourceRefs: string[];
+};
+
+export type ConstellationChart = {
+  stars: Array<{ x: number; y: number; size: number }>;
+  lines: Array<[number, number]>;
+};
+
+export type RawAstronomyEntity = {
+  id: string;
+  type: AstronomyEntityType;
+  nameDe: string;
+  aliasesDe: string[];
+  difficulty: number;
+  sourceRefs: string[];
+  orbitsId?: string;
+  facts: RawAstronomyFact[];
+  chart?: ConstellationChart;
+};
+
+export type RawAstronomySnapshot = {
+  schemaVersion: 1;
+  datasetVersion: string;
+  builtAt: string;
+  sources: DatasetSource[];
+  factDefinitions: FactDefinition[];
+  entities: RawAstronomyEntity[];
 };
 
 export type KnowledgeEvidence = {
@@ -1173,6 +1214,13 @@ export function validateGeoDataset(value: unknown): ValidationResult<GeoDataset>
     if (!fact.asOf || !fact.method || fact.sourceRefs.length === 0) {
       issues.push(`Fakt ${fact.id} benötigt Datum, Methode und Quelle.`);
     }
+    if (
+      fact.acceptedValues !== undefined &&
+      (!isStringArray(fact.acceptedValues) ||
+        fact.acceptedValues.some((accepted) => accepted.trim().length === 0))
+    ) {
+      issues.push(`Fakt ${fact.id} besitzt ungültige akzeptierte Eingaben.`);
+    }
     for (const sourceRef of fact.sourceRefs) {
       if (!sourceIds.has(sourceRef)) {
         issues.push(`Fakt ${fact.id} verweist auf unbekannte Quelle ${sourceRef}.`);
@@ -1246,6 +1294,174 @@ export function validateGeoDataset(value: unknown): ValidationResult<GeoDataset>
     : { success: true, data: dataset };
 }
 
+export function validateRawAstronomySnapshot(
+  value: unknown
+): ValidationResult<RawAstronomySnapshot> {
+  const issues: string[] = [];
+  if (!isRecord(value)) {
+    return { success: false, issues: ["Astronomie-Snapshot muss ein Objekt sein."] };
+  }
+  if (
+    value.schemaVersion !== 1 ||
+    typeof value.datasetVersion !== "string" ||
+    typeof value.builtAt !== "string"
+  ) {
+    issues.push("Astronomie-Snapshot-Kopf ist ungültig.");
+  }
+
+  const sourceIds = new Set<string>();
+  if (!Array.isArray(value.sources) || value.sources.length === 0) {
+    issues.push("Astronomie-Snapshot benötigt Quellen.");
+  } else {
+    value.sources.forEach((source, index) => {
+      validateSource(source, `sources[${index}]`, issues);
+      if (isRecord(source) && typeof source.id === "string") {
+        if (sourceIds.has(source.id)) issues.push(`Doppelte Astronomiequelle ${source.id}.`);
+        sourceIds.add(source.id);
+      }
+    });
+  }
+
+  const factDefinitions = new Map<string, FactDefinition>();
+  if (!Array.isArray(value.factDefinitions) || value.factDefinitions.length === 0) {
+    issues.push("Astronomie-Snapshot benötigt Faktdefinitionen.");
+  } else {
+    value.factDefinitions.forEach((definition, index) => {
+      if (
+        !isRecord(definition) ||
+        typeof definition.id !== "string" ||
+        typeof definition.labelDe !== "string" ||
+        typeof definition.descriptionDe !== "string" ||
+        (definition.valueType !== "number" && definition.valueType !== "string") ||
+        definition.comparisonPolicy !== "same_source_method_and_date"
+      ) {
+        issues.push(`factDefinitions[${index}] ist ungültig.`);
+        return;
+      }
+      if (factDefinitions.has(definition.id)) {
+        issues.push(`Doppelte Astronomie-Faktdefinition ${definition.id}.`);
+      }
+      factDefinitions.set(definition.id, definition as FactDefinition);
+    });
+  }
+
+  const validTypes = new Set<AstronomyEntityType>([
+    "planet",
+    "moon",
+    "dwarf_planet",
+    "zodiac_constellation"
+  ]);
+  const entityIds = new Set<string>();
+  if (!Array.isArray(value.entities) || value.entities.length === 0) {
+    issues.push("Astronomie-Snapshot benötigt Entitäten.");
+  } else {
+    value.entities.forEach((entity, index) => {
+      const path = `entities[${index}]`;
+      if (!isRecord(entity)) {
+        issues.push(`${path} muss ein Objekt sein.`);
+        return;
+      }
+      if (typeof entity.id !== "string" || entity.id.length === 0) {
+        issues.push(`${path}.id fehlt.`);
+      } else if (entityIds.has(entity.id)) {
+        issues.push(`Doppelte Astronomie-Entität ${entity.id}.`);
+      } else {
+        entityIds.add(entity.id);
+      }
+      if (!validTypes.has(entity.type as AstronomyEntityType)) {
+        issues.push(`${path}.type ist ungültig.`);
+      }
+      if (typeof entity.nameDe !== "string" || !isStringArray(entity.aliasesDe)) {
+        issues.push(`${path} benötigt deutschen Namen und Aliasse.`);
+      }
+      if (!isDifficulty(entity.difficulty)) {
+        issues.push(`${path}.difficulty muss zwischen 1 und 5 liegen.`);
+      }
+      if (!isStringArray(entity.sourceRefs) || entity.sourceRefs.length === 0) {
+        issues.push(`${path}.sourceRefs fehlt.`);
+      }
+      if (entity.type === "moon" && typeof entity.orbitsId !== "string") {
+        issues.push(`${path}.orbitsId fehlt für einen Mond.`);
+      }
+      if (!Array.isArray(entity.facts) || entity.facts.length === 0) {
+        issues.push(`${path}.facts darf nicht leer sein.`);
+      } else {
+        entity.facts.forEach((fact, factIndex) => {
+          const factPath = `${path}.facts[${factIndex}]`;
+          if (!isRecord(fact) || typeof fact.factTypeId !== "string") {
+            issues.push(`${factPath} ist ungültig.`);
+            return;
+          }
+          const definition = factDefinitions.get(fact.factTypeId);
+          if (!definition || typeof fact.value !== definition.valueType) {
+            issues.push(`${factPath} passt zu keiner Faktdefinition.`);
+          }
+          if (
+            typeof fact.method !== "string" ||
+            !isStringArray(fact.sourceRefs) ||
+            fact.sourceRefs.length === 0 ||
+            fact.sourceRefs.some((sourceRef) => !sourceIds.has(sourceRef))
+          ) {
+            issues.push(`${factPath} benötigt Methode und bekannte Quellen.`);
+          }
+          if (
+            fact.acceptedValues !== undefined &&
+            (!isStringArray(fact.acceptedValues) ||
+              fact.acceptedValues.some((accepted) => accepted.trim().length === 0))
+          ) {
+            issues.push(`${factPath}.acceptedValues ist ungültig.`);
+          }
+        });
+      }
+
+      if (entity.type === "zodiac_constellation") {
+        const chart = entity.chart;
+        const stars = isRecord(chart) && Array.isArray(chart.stars)
+          ? chart.stars
+          : [];
+        if (
+          !isRecord(chart) ||
+          !Array.isArray(chart.stars) ||
+          stars.length < 3 ||
+          !stars.every(
+            (star) =>
+              isRecord(star) &&
+              typeof star.x === "number" &&
+              star.x >= 0 &&
+              star.x <= 100 &&
+              typeof star.y === "number" &&
+              star.y >= 0 &&
+              star.y <= 100 &&
+              typeof star.size === "number" &&
+              star.size >= 1 &&
+              star.size <= 5
+          ) ||
+          !Array.isArray(chart.lines) ||
+          !chart.lines.every(
+            (line) =>
+              Array.isArray(line) &&
+              line.length === 2 &&
+              line.every(
+                (starIndex) =>
+                  Number.isInteger(starIndex) &&
+                  starIndex >= 0 &&
+                  starIndex < stars.length
+              )
+          )
+        ) {
+          issues.push(`${path}.chart ist ungültig.`);
+        }
+      } else if (entity.chart !== undefined) {
+        issues.push(`${path}.chart ist nur für Sternbilder erlaubt.`);
+      }
+    });
+  }
+
+  return issues.length > 0
+    ? { success: false, issues }
+    : { success: true, data: value as RawAstronomySnapshot };
+}
+
 export function validateDatasetManifest(
   value: unknown
 ): ValidationResult<DatasetManifest> {
@@ -1301,6 +1517,18 @@ export function parseRawPhysicalSnapshot(value: unknown): RawPhysicalSnapshot {
   if (!result.success) {
     throw new Error(
       `Ungültiger Physical Snapshot:\n${result.issues.join("\n")}`
+    );
+  }
+  return result.data;
+}
+
+export function parseRawAstronomySnapshot(
+  value: unknown
+): RawAstronomySnapshot {
+  const result = validateRawAstronomySnapshot(value);
+  if (!result.success) {
+    throw new Error(
+      `Ungültiger Astronomie-Snapshot:\n${result.issues.join("\n")}`
     );
   }
   return result.data;

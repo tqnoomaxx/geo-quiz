@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "datasetVersion": "2026-08-03.phase7-ranked-physical1",
+  "datasetVersion": "2026-08-04.phase8-astronomy1",
   "builtAt": "2026-07-30T00:52:13.953Z",
   "ranking": {
     "methodId": "geonames-population-desc-id-asc-v1",

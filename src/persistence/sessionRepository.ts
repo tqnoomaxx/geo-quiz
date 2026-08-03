@@ -10,8 +10,10 @@ import {
 } from "../engine/achievements/achievement";
 import type {
   MvpProfile,
-  MvpQuizSetup
+  MvpQuizSetup,
+  ZodiacOptionalFieldId
 } from "../engine/quiz/presets";
+import { ZODIAC_OPTIONAL_FIELD_IDS } from "../engine/quiz/presets";
 import type { RankedCitySetSize } from "../content/rankedCities";
 import {
   createPersistedSessionSnapshot,
@@ -57,9 +59,13 @@ export interface SessionRepository {
   loadSetup(): Promise<MvpQuizSetup | undefined>;
 }
 
-type StoredQuizSetup = Omit<MvpQuizSetup, "profile" | "citySetSize"> & {
+type StoredQuizSetup = Omit<
+  MvpQuizSetup,
+  "profile" | "citySetSize" | "astronomyFieldIds"
+> & {
   profile?: MvpProfile;
   citySetSize?: RankedCitySetSize;
+  astronomyFieldIds?: ZodiacOptionalFieldId[];
 };
 
 function isSetup(value: unknown): value is StoredQuizSetup {
@@ -69,6 +75,7 @@ function isSetup(value: unknown): value is StoredQuizSetup {
     "topic" in value &&
     [
       "capitals",
+      "country-profile",
       "cities",
       "countries",
       "flags",
@@ -80,6 +87,10 @@ function isSetup(value: unknown): value is StoredQuizSetup {
       "peaks",
       "longest-rivers",
       "highest-mountains",
+      "planets",
+      "moons",
+      "dwarf-planets",
+      "zodiac",
       "knowledge",
       "world-mix"
     ].includes(String(value.topic)) &&
@@ -92,6 +103,7 @@ function isSetup(value: unknown): value is StoredQuizSetup {
       "choice",
       "reverse_choice",
       "facts_to_name",
+      "profile",
       "mix"
     ].includes(String(value.direction)) &&
     (!("profile" in value) ||
@@ -101,7 +113,8 @@ function isSetup(value: unknown): value is StoredQuizSetup {
     "regionId" in value &&
     typeof value.regionId === "string" &&
     "questionCount" in value &&
-    (value.questionCount === 10 ||
+    (value.questionCount === 6 ||
+      value.questionCount === 10 ||
       value.questionCount === 20 ||
       value.questionCount === "all") &&
     (!("citySetSize" in value) ||
@@ -109,6 +122,13 @@ function isSetup(value: unknown): value is StoredQuizSetup {
       value.citySetSize === 250 ||
       value.citySetSize === 500 ||
       value.citySetSize === 1000) &&
+    (!("astronomyFieldIds" in value) ||
+      (Array.isArray(value.astronomyFieldIds) &&
+        value.astronomyFieldIds.every((fieldId) =>
+          ZODIAC_OPTIONAL_FIELD_IDS.includes(
+            fieldId as ZodiacOptionalFieldId
+          )
+        ))) &&
     "timerSeconds" in value &&
     (value.timerSeconds === 0 ||
       value.timerSeconds === 15 ||
@@ -362,7 +382,8 @@ export function createIndexedDbSessionRepository(): SessionRepository {
           ? {
               ...record.value,
               profile: record.value.profile ?? "learn",
-              citySetSize: record.value.citySetSize ?? 100
+              citySetSize: record.value.citySetSize ?? 100,
+              astronomyFieldIds: record.value.astronomyFieldIds ?? []
             }
           : undefined;
       } finally {

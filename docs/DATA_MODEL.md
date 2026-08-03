@@ -50,6 +50,12 @@ Interne IDs basieren auf stabilen Standards oder Quell-IDs, nicht auf dem
 aktuellen Anzeigenamen:
 
 - Länder: `country:` + ISO-Alpha-2 in Kleinbuchstaben.
+- Sprachen: `language:` + ISO-639-3 in Kleinbuchstaben; die bestehende stabile
+  ID `language:pt` bleibt für Portugiesisch erhalten.
+- Währungen: `currency:` + ISO-4217 in Kleinbuchstaben.
+- Planeten, Monde und Zwergplaneten: `planet:`, `moon:` beziehungsweise
+  `dwarf-planet:` plus dauerhaft reservierter englischer Slug.
+- Tierkreis-Sternbilder: `constellation:` plus lateinischer IAU-Slug.
 - GeoNames-Orte: `geonames:` + numerische GeoNames-ID.
 - Natural-Earth-Features: eigener stabiler Import-Key plus Geometrie-Fingerprint.
 - Kuratierte Entitäten: `curated:` + UUIDv7 oder dauerhaft reservierter Slug.
@@ -101,6 +107,21 @@ Relationsrichtungen sind kanonisch. Beispielsweise zeigt `country
 --has_capital--> city`; die Gegenrichtung kann von der Abfrage abgeleitet oder
 explizit als `is_capital_of` materialisiert werden.
 
+Länderprofile verwenden ausschließlich vorhandene Relationen:
+
+- `country --has_capital--> city`
+- `country --has_official_language--> language`
+- `country --uses_currency--> currency`
+
+Mehrere Ziele bleiben erhalten. Der Antwortmodus entscheidet nicht über die
+fachlichen Werte, sondern bewertet einen Eingabewert gegen die akzeptierten
+Namen aller passenden Zielentitäten.
+
+Astronomie verwendet ergänzend `moon --orbits--> planet`. Die Relation
+modelliert hier nur das dauerhafte Zentralobjekt der kuratierten Lernmenge;
+Bahnelemente oder aktuelle Positionen sind ausdrücklich keine statischen
+Relationswerte.
+
 ### `relation_definition`
 
 | Feld | Typ | Zweck |
@@ -128,6 +149,11 @@ Fakten werden nur für echte, filter- oder abfragbare Daten verwendet:
 | `as_of` | Datum optional | Bezugsdatum |
 | `method` | text optional | `city_proper`, `gazetteer_value` |
 | `source_ref` | text | Importdatensatz |
+
+Ein Fakt darf zusätzlich `accepted_values` für fachlich gleichwertige freie
+Eingaben tragen, etwa `04` für April oder `nördlich` für Nordhimmel. Diese
+Werte werden versioniert und vom Grader wie Namensaliasse behandelt. Sie
+ersetzen weder den bevorzugten Anzeigewert noch Quellen- und Methodenangaben.
 
 Bevölkerungswerte ohne Bezugsdatum und Methode dürfen nicht als präzise globale
 Rangliste dargestellt werden.

@@ -16,6 +16,7 @@ import {
   getLearningProfile,
   learningProfileFromRules
 } from "../quiz/learningProfiles";
+import { COUNTRY_PROFILE_FIELD_IDS } from "../graders/countryProfile";
 
 export type QuizSessionStatus =
   | "preparing"
@@ -549,6 +550,8 @@ function isQuizDefinitionSnapshot(value: unknown): value is QuizDefinition {
       "map_point",
       "map_area",
       "map_line",
+      "country_profile_input",
+      "fact_profile_input",
       "drag_match",
       "sort_order"
     ].includes(String(value.answer.kind)) ||
@@ -717,7 +720,7 @@ function isQuestionSnapshot(value: unknown): value is QuestionInstance {
       typeof value.promptPayload.lineId !== "string") ||
     (value.promptPayload.kind === "visual_asset" &&
       (!isRecord(value.promptPayload.asset) ||
-        !["flag", "country_outline"].includes(
+        !["flag", "country_outline", "constellation_chart"].includes(
           String(value.promptPayload.asset.kind)
         ) ||
         typeof value.promptPayload.asset.key !== "string" ||
@@ -727,9 +730,15 @@ function isQuestionSnapshot(value: unknown): value is QuestionInstance {
   }
   if (
     !isRecord(value.answerSpec) ||
-    !["text_input", "single_choice", "map_point", "map_area", "map_line"].includes(
-      String(value.answerSpec.kind)
-    ) ||
+    ![
+      "text_input",
+      "single_choice",
+      "map_point",
+      "map_area",
+      "map_line",
+      "country_profile_input",
+      "fact_profile_input"
+    ].includes(String(value.answerSpec.kind)) ||
     !Array.isArray(value.answerSpec.expectedEntityIds) ||
     !value.answerSpec.expectedEntityIds.every(
       (id) => typeof id === "string"
@@ -811,7 +820,54 @@ function isAnswerPayload(value: unknown): value is AnswerPayload {
       (value.label === undefined || typeof value.label === "string")
     );
   }
+  if (value.kind === "country_profile_input") {
+    const values = value.values;
+    return (
+      isRecord(values) &&
+      COUNTRY_PROFILE_FIELD_IDS.every(
+        (fieldId) => typeof values[fieldId] === "string"
+      )
+    );
+  }
+  if (value.kind === "fact_profile_input") {
+    return (
+      isRecord(value.values) &&
+      Object.keys(value.values).length > 0 &&
+      Object.values(value.values).every((fieldValue) =>
+        typeof fieldValue === "string"
+      )
+    );
+  }
   return false;
+}
+
+function isProfileFieldResult(value: unknown) {
+  return (
+    isRecord(value) &&
+    COUNTRY_PROFILE_FIELD_IDS.includes(
+      value.id as (typeof COUNTRY_PROFILE_FIELD_IDS)[number]
+    ) &&
+    typeof value.label === "string" &&
+    typeof value.value === "string" &&
+    typeof value.expectedLabel === "string" &&
+    typeof value.correct === "boolean" &&
+    (value.matchedAliasId === undefined ||
+      typeof value.matchedAliasId === "string")
+  );
+}
+
+function isFactProfileFieldResult(value: unknown) {
+  return (
+    isRecord(value) &&
+    typeof value.id === "string" &&
+    value.id.length > 0 &&
+    typeof value.label === "string" &&
+    typeof value.value === "string" &&
+    typeof value.expectedLabel === "string" &&
+    typeof value.correct === "boolean" &&
+    (value.matchedAliasId === undefined ||
+      typeof value.matchedAliasId === "string")
+  );
 }
 
 function isAttempt(value: unknown): value is QuestionAttempt {
@@ -832,6 +888,12 @@ function isAttempt(value: unknown): value is QuestionAttempt {
     value.result.feedbackEntityIds.every((id) => typeof id === "string") &&
     typeof value.result.responseLabel === "string" &&
     typeof value.result.detail === "string" &&
+    (value.result.profileFields === undefined ||
+      (Array.isArray(value.result.profileFields) &&
+        value.result.profileFields.every(isProfileFieldResult))) &&
+    (value.result.factProfileFields === undefined ||
+      (Array.isArray(value.result.factProfileFields) &&
+        value.result.factProfileFields.every(isFactProfileFieldResult))) &&
     typeof value.answeredAt === "string" &&
     typeof value.graderVersion === "string"
   );

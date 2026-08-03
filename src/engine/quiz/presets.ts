@@ -21,6 +21,7 @@ import {
 
 export type MvpTopic =
   | "capitals"
+  | "country-profile"
   | "cities"
   | "countries"
   | "flags"
@@ -32,6 +33,10 @@ export type MvpTopic =
   | "peaks"
   | "longest-rivers"
   | "highest-mountains"
+  | "planets"
+  | "moons"
+  | "dwarf-planets"
+  | "zodiac"
   | "knowledge"
   | "world-mix";
 export type MvpDirection =
@@ -42,8 +47,16 @@ export type MvpDirection =
   | "choice"
   | "reverse_choice"
   | "facts_to_name"
+  | "profile"
   | "mix";
 export type MvpProfile = LearningProfileId;
+export const ZODIAC_OPTIONAL_FIELD_IDS = [
+  "iau-abbreviation",
+  "best-visibility",
+  "sky-position"
+] as const;
+export type ZodiacOptionalFieldId =
+  (typeof ZODIAC_OPTIONAL_FIELD_IDS)[number];
 export type MvpRegionId =
   | "world"
   | "continent:africa"
@@ -52,7 +65,7 @@ export type MvpRegionId =
   | "continent:north-america"
   | "continent:oceania"
   | "continent:south-america";
-export type MvpQuestionCount = 10 | 20 | "all";
+export type MvpQuestionCount = 6 | 10 | 20 | "all";
 export type MvpTimerSeconds = 0 | 15 | 30;
 
 export interface MvpQuizSetup {
@@ -62,6 +75,7 @@ export interface MvpQuizSetup {
   regionId: MvpRegionId;
   questionCount: MvpQuestionCount;
   citySetSize: RankedCitySetSize;
+  astronomyFieldIds: ZodiacOptionalFieldId[];
   timerSeconds: MvpTimerSeconds;
   seed: string;
   includeIds?: string[];
@@ -86,6 +100,9 @@ export const MVP_DIRECTIONS: Record<
     { id: "name", label: "Punkt → Name" },
     { id: "country_to_name", label: "Land → Hauptstadt" },
     { id: "name_to_country", label: "Hauptstadt → Land" }
+  ],
+  "country-profile": [
+    { id: "profile", label: "Land → Länderprofil" }
   ],
   cities: [
     { id: "locate", label: "Name → Karte" },
@@ -127,6 +144,12 @@ export const MVP_DIRECTIONS: Record<
   "highest-mountains": [
     { id: "facts_to_name", label: "Fakten → Bergname" }
   ],
+  planets: [{ id: "facts_to_name", label: "Fakten → Planet" }],
+  moons: [{ id: "facts_to_name", label: "Fakten → Mond" }],
+  "dwarf-planets": [
+    { id: "facts_to_name", label: "Fakten → Zwergplanet" }
+  ],
+  zodiac: [{ id: "profile", label: "Sternbild → Angaben" }],
   knowledge: [
     { id: "choice", label: "Wissenspuzzle → Auswahl" },
     { id: "name", label: "Wissenspuzzle → Eingabe" }
@@ -141,6 +164,13 @@ const PHYSICAL_TOPIC_TYPES: Partial<Record<MvpTopic, string>> = {
   "mountain-ranges": "mountain_range",
   peaks: "peak"
 };
+const ASTRONOMY_TOPIC_TYPES: Partial<Record<MvpTopic, string>> = {
+  planets: "planet",
+  moons: "moon",
+  "dwarf-planets": "dwarf_planet",
+  zodiac: "zodiac_constellation"
+};
+const ASTRONOMY_TOPICS = new Set<MvpTopic>(Object.keys(ASTRONOMY_TOPIC_TYPES) as MvpTopic[]);
 const contentRepository = createContentRepository(geoDataset);
 
 export function candidateCountForSetup(
@@ -155,7 +185,8 @@ export function candidateCountForSetup(
           (candidate) =>
             candidate !== "world-mix" &&
             candidate !== "longest-rivers" &&
-            candidate !== "highest-mountains"
+            candidate !== "highest-mountains" &&
+            !ASTRONOMY_TOPICS.has(candidate as MvpTopic)
         )
         .reduce(
           (sum, candidate) =>
@@ -171,6 +202,7 @@ export function candidateCountForSetup(
   }
   const entityType =
     PHYSICAL_TOPIC_TYPES[topic] ??
+    ASTRONOMY_TOPIC_TYPES[topic] ??
     (topic === "capitals"
       ? direction === "country_to_name"
         ? "country"
@@ -212,6 +244,7 @@ export const DEFAULT_MVP_SETUP: MvpQuizSetup = {
   regionId: "continent:europe",
   questionCount: 10,
   citySetSize: 100,
+  astronomyFieldIds: [],
   timerSeconds: 0,
   seed: "phase2-default"
 };
@@ -320,6 +353,44 @@ function createCountryOrCapitalDefinition(
   };
 }
 
+function createCountryProfileDefinition(
+  setup: MvpQuizSetup,
+  datasetVersion: string
+): QuizDefinition {
+  const regionSlug = setup.regionId.replace("continent:", "");
+  const count = setup.includeIds?.length ? "all" : setup.questionCount;
+
+  return {
+    id: `phase7-country-profile-${regionSlug}-v1`,
+    schemaVersion: 1,
+    datasetVersion,
+    content: {
+      subjectType: "country",
+      requiredRelations: [
+        "has_capital",
+        "has_official_language",
+        "uses_currency"
+      ]
+    },
+    prompt: {
+      kind: "name",
+      entity: { from: "subject" },
+      field: "country_profile",
+      locale: "de"
+    },
+    answer: {
+      kind: "country_profile_input",
+      entity: { from: "subject" },
+      grader: "country-profile-v1"
+    },
+    scope: {
+      regionIds: scopeRegionIds(setup.regionId),
+      includeIds: setup.includeIds
+    },
+    rules: rulesFromSetup(setup, count)
+  };
+}
+
 function createRankedCityDefinition(
   setup: MvpQuizSetup,
   datasetVersion: string
@@ -406,6 +477,125 @@ function createRankedPhysicalDefinition(
     },
     scope: {
       regionIds: scopeRegionIds(setup.regionId),
+      includeIds: setup.includeIds
+    },
+    rules: rulesFromSetup(setup, count)
+  };
+}
+
+function createAstronomyFactDefinition(
+  setup: MvpQuizSetup,
+  datasetVersion: string
+): QuizDefinition {
+  const subjectType = ASTRONOMY_TOPIC_TYPES[setup.topic];
+  if (!subjectType || setup.topic === "zodiac") {
+    throw new Error(`${setup.topic} ist kein astronomisches Faktenquiz.`);
+  }
+  const fields =
+    setup.topic === "planets"
+      ? [
+          "fact-type:solar-order",
+          "fact-type:planet-class",
+          "fact-type:astronomy-feature"
+        ]
+      : setup.topic === "moons"
+        ? ["fact-type:parent-body", "fact-type:astronomy-feature"]
+        : ["fact-type:solar-region", "fact-type:astronomy-feature"];
+  const count = setup.includeIds?.length ? "all" : setup.questionCount;
+
+  return {
+    id: `phase8-${setup.topic}-facts-to-name-v1`,
+    schemaVersion: 1,
+    datasetVersion,
+    content: { subjectType },
+    prompt: {
+      kind: "fact",
+      entity: { from: "subject" },
+      fields,
+      locale: "de"
+    },
+    answer: {
+      kind: "text_input",
+      entity: { from: "subject" },
+      grader: "text-v1"
+    },
+    scope: {
+      regionIds: [],
+      includeIds: setup.includeIds
+    },
+    rules: rulesFromSetup(setup, count)
+  };
+}
+
+const ZODIAC_FIELD_DEFINITIONS = {
+  "iau-abbreviation": {
+    id: "iau-abbreviation",
+    label: "IAU-Kürzel",
+    placeholder: "z. B. Leo",
+    source: {
+      kind: "fact" as const,
+      factTypeId: "fact-type:iau-abbreviation"
+    }
+  },
+  "best-visibility": {
+    id: "best-visibility",
+    label: "Beste Sichtbarkeit",
+    placeholder: "z. B. April",
+    source: {
+      kind: "fact" as const,
+      factTypeId: "fact-type:best-visibility-month"
+    }
+  },
+  "sky-position": {
+    id: "sky-position",
+    label: "Himmelslage",
+    placeholder: "z. B. Nordhimmel",
+    source: {
+      kind: "fact" as const,
+      factTypeId: "fact-type:sky-position"
+    }
+  }
+};
+
+function createZodiacDefinition(
+  setup: MvpQuizSetup,
+  datasetVersion: string
+): QuizDefinition {
+  const selectedFields = ZODIAC_OPTIONAL_FIELD_IDS.filter((fieldId) =>
+    setup.astronomyFieldIds.includes(fieldId)
+  );
+  const fieldDefinitions = [
+    {
+      id: "name",
+      label: "Name",
+      placeholder: "z. B. Löwe",
+      source: { kind: "entity_name" as const }
+    },
+    ...selectedFields.map((fieldId) => ZODIAC_FIELD_DEFINITIONS[fieldId])
+  ];
+  const fieldSlug = fieldDefinitions.map((field) => field.id).join("+");
+  const count = setup.includeIds?.length ? "all" : setup.questionCount;
+
+  return {
+    id: `phase8-zodiac-${fieldSlug}-v1`,
+    schemaVersion: 1,
+    datasetVersion,
+    content: { subjectType: "zodiac_constellation" },
+    prompt: {
+      kind: "visual_asset",
+      entity: { from: "subject" },
+      field: "constellation_chart",
+      locale: "de"
+    },
+    answer: {
+      kind: "fact_profile_input",
+      entity: { from: "subject" },
+      field: fieldSlug,
+      grader: "fact-profile-v1",
+      graderConfig: { fieldDefinitions }
+    },
+    scope: {
+      regionIds: [],
       includeIds: setup.includeIds
     },
     rules: rulesFromSetup(setup, count)
@@ -571,6 +761,15 @@ export function createMvpQuizDefinition(
   if (setup.topic === "knowledge") {
     return createKnowledgeDefinition(setup, datasetVersion);
   }
+  if (setup.topic === "zodiac") {
+    return createZodiacDefinition(setup, datasetVersion);
+  }
+  if (ASTRONOMY_TOPIC_TYPES[setup.topic]) {
+    return createAstronomyFactDefinition(setup, datasetVersion);
+  }
+  if (setup.topic === "country-profile") {
+    return createCountryProfileDefinition(setup, datasetVersion);
+  }
   return setup.topic === "flags" || setup.topic === "shapes"
     ? createVisualDefinition(setup, datasetVersion)
     : createCountryOrCapitalDefinition(setup, datasetVersion);
@@ -666,7 +865,22 @@ export function createQuizRoundDefinition(
 function setupForSkill(skillKey: string): Pick<
   MvpQuizSetup,
   "topic" | "direction"
-> {
+> & Partial<Pick<MvpQuizSetup, "astronomyFieldIds">> {
+  const zodiacPrefix =
+    "zodiac_constellation:visual_asset:constellation_chart_to_fact_profile_input:";
+  if (skillKey.startsWith(zodiacPrefix)) {
+    const selected = skillKey
+      .slice(zodiacPrefix.length)
+      .split("+")
+      .filter((fieldId): fieldId is ZodiacOptionalFieldId =>
+        ZODIAC_OPTIONAL_FIELD_IDS.includes(fieldId as ZodiacOptionalFieldId)
+      );
+    return {
+      topic: "zodiac",
+      direction: "profile",
+      astronomyFieldIds: selected
+    };
+  }
   const mapping: Record<
     string,
     Pick<MvpQuizSetup, "topic" | "direction">
@@ -702,6 +916,10 @@ function setupForSkill(skillKey: string): Pick<
     "country:map_highlight_to_text_input": {
       topic: "countries",
       direction: "name"
+    },
+    "country:name:country_profile_to_country_profile_input": {
+      topic: "country-profile",
+      direction: "profile"
     },
     "country:visual_asset:flag_to_text_input": {
       topic: "flags",
@@ -765,6 +983,18 @@ function setupForSkill(skillKey: string): Pick<
     },
     "ranked_peak:fact_to_text_input": {
       topic: "highest-mountains",
+      direction: "facts_to_name"
+    },
+    "planet:fact_to_text_input": {
+      topic: "planets",
+      direction: "facts_to_name"
+    },
+    "moon:fact_to_text_input": {
+      topic: "moons",
+      direction: "facts_to_name"
+    },
+    "dwarf_planet:fact_to_text_input": {
+      topic: "dwarf-planets",
       direction: "facts_to_name"
     },
     "knowledge_question:description_to_single_choice:name": {
@@ -884,6 +1114,7 @@ export function setupFromDefinition(
           ? definition.rules.questionCount
           : 10,
       citySetSize: 100,
+      astronomyFieldIds: [],
       timerSeconds:
         timer.kind === "per_question" &&
         (timer.seconds === 15 || timer.seconds === 30)
@@ -895,7 +1126,13 @@ export function setupFromDefinition(
 
   let topic: MvpTopic;
   let direction: MvpDirection;
-  if (definition.prompt.kind === "visual_asset") {
+  if (definition.answer.kind === "country_profile_input") {
+    topic = "country-profile";
+    direction = "profile";
+  } else if (definition.answer.kind === "fact_profile_input") {
+    topic = "zodiac";
+    direction = "profile";
+  } else if (definition.prompt.kind === "visual_asset") {
     topic = definition.prompt.field === "country_outline" ? "shapes" : "flags";
     direction =
       definition.answer.kind === "single_choice" ? "choice" : "name";
@@ -924,6 +1161,12 @@ export function setupFromDefinition(
               ? "longest-rivers"
               : definition.content.subjectType === "ranked_peak"
                 ? "highest-mountains"
+                : definition.content.subjectType === "planet"
+                  ? "planets"
+                  : definition.content.subjectType === "moon"
+                    ? "moons"
+                    : definition.content.subjectType === "dwarf_planet"
+                      ? "dwarf-planets"
                 : physicalTopic ??
                   (definition.content.subjectType === "country"
                     ? "countries"
@@ -949,6 +1192,7 @@ export function setupFromDefinition(
   const timer = definition.rules.timer;
   const configuredCount = definition.rules.questionCount;
   const questionCount: MvpQuestionCount =
+    configuredCount === 6 ||
     configuredCount === 10 ||
     configuredCount === 20 ||
     configuredCount === "all"
@@ -964,6 +1208,19 @@ export function setupFromDefinition(
     configuredCitySetSize === 1000
       ? configuredCitySetSize
       : 100;
+  const astronomyFieldIds: ZodiacOptionalFieldId[] =
+    definition.answer.kind === "fact_profile_input" &&
+    Array.isArray(definition.answer.graderConfig?.fieldDefinitions)
+      ? definition.answer.graderConfig.fieldDefinitions
+          .map((field) =>
+            typeof field === "object" && field !== null && "id" in field
+              ? String(field.id)
+              : ""
+          )
+          .filter((fieldId): fieldId is ZodiacOptionalFieldId =>
+            ZODIAC_OPTIONAL_FIELD_IDS.includes(fieldId as ZodiacOptionalFieldId)
+          )
+      : [];
 
   return {
     topic,
@@ -972,6 +1229,7 @@ export function setupFromDefinition(
     regionId,
     questionCount,
     citySetSize,
+    astronomyFieldIds,
     timerSeconds:
       timer.kind === "per_question" &&
       (timer.seconds === 15 || timer.seconds === 30)
@@ -986,14 +1244,19 @@ export function describeQuizDefinition(definition: QuizRoundDefinition) {
   const setup = setupFromDefinition(definition);
   const learningProfile = getLearningProfile(setup.profile);
   const region =
-    MVP_REGIONS.find((candidate) => candidate.id === setup.regionId)?.label ??
-    "Welt";
+    setup.topic === "zodiac"
+      ? "Tierkreis"
+      : ASTRONOMY_TOPICS.has(setup.topic)
+        ? "Sonnensystem"
+        : MVP_REGIONS.find((candidate) => candidate.id === setup.regionId)?.label ??
+          "Welt";
   const directionLabel =
     MVP_DIRECTIONS[setup.topic].find(
       (direction) => direction.id === setup.direction
     )?.label ?? setup.direction;
   const topicLabel: Record<MvpTopic, string> = {
     capitals: "Hauptstädte",
+    "country-profile": "Länderprofil",
     cities: "Große Städte",
     countries: "Länder",
     flags: "Flaggen",
@@ -1005,6 +1268,10 @@ export function describeQuizDefinition(definition: QuizRoundDefinition) {
     peaks: "Gipfel",
     "longest-rivers": "Längste Flüsse",
     "highest-mountains": "Höchste Berge",
+    planets: "Planeten",
+    moons: "Monde",
+    "dwarf-planets": "Zwergplaneten",
+    zodiac: "Sternzeichen",
     knowledge: "Wissenspuzzle",
     "world-mix": "Weltmix"
   };

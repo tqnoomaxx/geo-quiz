@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "datasetVersion": "2026-08-03.phase7-ranked-physical1",
-  "builtAt": "2026-07-30T00:52:13.953Z",
+  "datasetVersion": "2026-08-04.phase8-astronomy1",
+  "builtAt": "2026-08-04T00:00:00.000Z",
   "sources": [
     {
       "id": "flag-icons",
@@ -14,6 +14,12 @@
       "sourceVersion": "world-atlas@2.0.2 / 50m+10m",
       "url": "https://www.naturalearthdata.com/",
       "license": "Public Domain"
+    },
+    {
+      "id": "iau-constellations",
+      "sourceVersion": "retrieved-2026-08-04",
+      "url": "https://www.iau.org/Iau/Science/What-we-do/The-Constellations.aspx",
+      "license": "Constellation charts CC BY 4.0"
     }
   ],
   "assets": [
@@ -3916,6 +3922,126 @@
       "bytes": 1898,
       "sourceRef": "natural-earth@world-atlas-2.0.2",
       "path": "assets/visual/v1/outlines/zw.svg"
+    },
+    {
+      "key": "visual:constellation_chart:constellation:aquarius",
+      "entityId": "constellation:aquarius",
+      "kind": "constellation_chart",
+      "mediaType": "image/svg+xml",
+      "sha256": "793f03e4a4068c2a1ccac93e23e65a05685642c44e06cad456429533261af84f",
+      "bytes": 2341,
+      "sourceRef": "iau-constellations",
+      "path": "assets/visual/v1/constellations/aquarius.svg"
+    },
+    {
+      "key": "visual:constellation_chart:constellation:aries",
+      "entityId": "constellation:aries",
+      "kind": "constellation_chart",
+      "mediaType": "image/svg+xml",
+      "sha256": "44678acf7b4928a235ddb5bc060eeb7176a624b7ffaf333cef68a364618c522c",
+      "bytes": 1601,
+      "sourceRef": "iau-constellations",
+      "path": "assets/visual/v1/constellations/aries.svg"
+    },
+    {
+      "key": "visual:constellation_chart:constellation:cancer",
+      "entityId": "constellation:cancer",
+      "kind": "constellation_chart",
+      "mediaType": "image/svg+xml",
+      "sha256": "38c4a1d71b35308ea0032e3883032eb93e944f6ece5ae035e3308f3ae34a0055",
+      "bytes": 1775,
+      "sourceRef": "iau-constellations",
+      "path": "assets/visual/v1/constellations/cancer.svg"
+    },
+    {
+      "key": "visual:constellation_chart:constellation:capricornus",
+      "entityId": "constellation:capricornus",
+      "kind": "constellation_chart",
+      "mediaType": "image/svg+xml",
+      "sha256": "e9a3c71726481a27913787b746a3b5058eb3da75a0db2ea56640f0567d88d91b",
+      "bytes": 1840,
+      "sourceRef": "iau-constellations",
+      "path": "assets/visual/v1/constellations/capricornus.svg"
+    },
+    {
+      "key": "visual:constellation_chart:constellation:gemini",
+      "entityId": "constellation:gemini",
+      "kind": "constellation_chart",
+      "mediaType": "image/svg+xml",
+      "sha256": "1dbe6a0e00766678e7a3ad7008784320e0234165310c6c585a193701430ba543",
+      "bytes": 2335,
+      "sourceRef": "iau-constellations",
+      "path": "assets/visual/v1/constellations/gemini.svg"
+    },
+    {
+      "key": "visual:constellation_chart:constellation:leo",
+      "entityId": "constellation:leo",
+      "kind": "constellation_chart",
+      "mediaType": "image/svg+xml",
+      "sha256": "a0ce1997dcfd16c27fedce24dfcb5e50aa73c8bbe8f74e8947c9a5585e387a0b",
+      "bytes": 2400,
+      "sourceRef": "iau-constellations",
+      "path": "assets/visual/v1/constellations/leo.svg"
+    },
+    {
+      "key": "visual:constellation_chart:constellation:libra",
+      "entityId": "constellation:libra",
+      "kind": "constellation_chart",
+      "mediaType": "image/svg+xml",
+      "sha256": "55aa4c87a9ddb6fadb3d61b7a0bb6826c5df2a6b6f74d61a1948dbe363e0ae1c",
+      "bytes": 1697,
+      "sourceRef": "iau-constellations",
+      "path": "assets/visual/v1/constellations/libra.svg"
+    },
+    {
+      "key": "visual:constellation_chart:constellation:pisces",
+      "entityId": "constellation:pisces",
+      "kind": "constellation_chart",
+      "mediaType": "image/svg+xml",
+      "sha256": "6b770fb3903d87957e496df80554636f4363003144ccdea7c6085250f74c9524",
+      "bytes": 2609,
+      "sourceRef": "iau-constellations",
+      "path": "assets/visual/v1/constellations/pisces.svg"
+    },
+    {
+      "key": "visual:constellation_chart:constellation:sagittarius",
+      "entityId": "constellation:sagittarius",
+      "kind": "constellation_chart",
+      "mediaType": "image/svg+xml",
+      "sha256": "ae38331c1b6a70a0ba952334b285478435f90cc06d8ad022da7962023ae1762f",
+      "bytes": 2253,
+      "sourceRef": "iau-constellations",
+      "path": "assets/visual/v1/constellations/sagittarius.svg"
+    },
+    {
+      "key": "visual:constellation_chart:constellation:scorpius",
+      "entityId": "constellation:scorpius",
+      "kind": "constellation_chart",
+      "mediaType": "image/svg+xml",
+      "sha256": "c12ba924e784e5348aca6da2cfba440c92b47b4d9424445dcc3180d833d6ac98",
+      "bytes": 2337,
+      "sourceRef": "iau-constellations",
+      "path": "assets/visual/v1/constellations/scorpius.svg"
+    },
+    {
+      "key": "visual:constellation_chart:constellation:taurus",
+      "entityId": "constellation:taurus",
+      "kind": "constellation_chart",
+      "mediaType": "image/svg+xml",
+      "sha256": "f5ff5712c6e261d4739b747347f9c871657218cc369e122b0d6c37822a849d61",
+      "bytes": 1965,
+      "sourceRef": "iau-constellations",
+      "path": "assets/visual/v1/constellations/taurus.svg"
+    },
+    {
+      "key": "visual:constellation_chart:constellation:virgo",
+      "entityId": "constellation:virgo",
+      "kind": "constellation_chart",
+      "mediaType": "image/svg+xml",
+      "sha256": "20d37881b3b715e951dc6ee9968e3a16755e3d561f4c722d20399b13708ee431",
+      "bytes": 2014,
+      "sourceRef": "iau-constellations",
+      "path": "assets/visual/v1/constellations/virgo.svg"
     }
   ]
 }

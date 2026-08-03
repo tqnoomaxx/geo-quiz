@@ -2,15 +2,16 @@
   color-scheme: light;
 
   --color-canvas: #ffffff;
-  --color-surface: #f7f9fb;
-  --color-surface-strong: #eef3f5;
-  --color-ink: #0b2141;
-  --color-muted: #5d6979;
-  --color-border: #d8e0e7;
-  --color-border-strong: #bcc9d3;
-  --color-accent: #087680;
-  --color-accent-hover: #065f68;
-  --color-accent-soft: #e8f3f3;
+  --color-surface: #f7f9fd;
+  --color-surface-strong: #edf2f9;
+  --color-ink: #10213e;
+  --color-muted: #58657b;
+  --color-border: #dce3ed;
+  --color-border-strong: #becadb;
+  --color-accent: #2457d6;
+  --color-accent-hover: #193fa9;
+  --color-accent-soft: #edf3ff;
+  --color-marker: #b8ee35;
   --color-ocean: #dceff7;
   --color-land: #cfddc7;
   --color-success: #2f7d5b;

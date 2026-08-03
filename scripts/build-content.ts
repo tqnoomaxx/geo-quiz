@@ -11,8 +11,10 @@ import type {
 } from "geojson";
 import { feature } from "topojson-client";
 import type { GeometryCollection, Topology } from "topojson-specification";
+import countries, { type Country } from "world-countries";
 import {
   CONTENT_SCHEMA_VERSION,
+  parseRawAstronomySnapshot,
   parseGeoDataset,
   parseRankedCityContentPack,
   parseRankedPhysicalContentPack,
@@ -20,6 +22,7 @@ import {
   parseRawPhysicalSnapshot,
   type ContentEntity,
   type DatasetManifest,
+  type EntityFact,
   type EntityRelation,
   type GeoDataset,
   type LocalizedName
@@ -48,6 +51,10 @@ const knowledgeSourcePath = resolve(
 const knowledgeTemplatePath = resolve(
   projectRoot,
   "content-src/knowledge-templates.v1.json"
+);
+const astronomySourcePath = resolve(
+  projectRoot,
+  "content-src/astronomy-core.v1.json"
 );
 const rankedCitySourcePath = resolve(
   projectRoot,
@@ -100,6 +107,61 @@ const CONTINENTS = [
   ["continent:oceania", "Ozeanien"],
   ["continent:south-america", "Südamerika"]
 ] as const;
+
+const germanLanguageNames = new Intl.DisplayNames(["de"], {
+  type: "language"
+});
+const germanCurrencyNames = new Intl.DisplayNames(["de"], {
+  type: "currency"
+});
+
+function languageEntityId(code: string) {
+  return code === "por" ? "language:pt" : `language:${code.toLowerCase()}`;
+}
+
+function currencyEntityId(code: string) {
+  return `currency:${code.toLowerCase()}`;
+}
+
+function countryProfileSource(countryIso2: string) {
+  const profile = countries.find((country) => country.cca2 === countryIso2);
+  if (!profile) {
+    throw new Error(`world-countries-Profil für ${countryIso2} fehlt.`);
+  }
+  return profile;
+}
+
+function profileCurrencies(profile: Country) {
+  if (Object.keys(profile.currencies).length > 0) return profile.currencies;
+  if (profile.cca2 === "FM") {
+    return { USD: { name: "United States dollar", symbol: "$" } };
+  }
+  return profile.currencies;
+}
+
+function currencySourceRefs(countryIso2: string) {
+  return countryIso2 === "FM"
+    ? ["fsm-government-currency"]
+    : ["world-countries"];
+}
+
+function displayName(
+  displayNames: Intl.DisplayNames,
+  code: string,
+  fallback: string
+) {
+  try {
+    return displayNames.of(code) ?? fallback;
+  } catch {
+    return fallback;
+  }
+}
+
+function profileAliases(preferred: string, ...candidates: string[]) {
+  return [...new Set(candidates.map((value) => value.trim()))].filter(
+    (value) => value.length > 0 && value !== preferred
+  );
+}
 
 function stableJson(value: unknown) {
   return `${JSON.stringify(value, null, 2)}\n`;
@@ -197,6 +259,9 @@ const knowledgeSnapshot = parseRawKnowledgeSnapshot(
 const knowledgeTemplates = parseRawKnowledgeTemplateSnapshot(
   JSON.parse(await readFile(knowledgeTemplatePath, "utf8"))
 );
+const astronomySnapshot = parseRawAstronomySnapshot(
+  JSON.parse(await readFile(astronomySourcePath, "utf8"))
+);
 const rankedCities = parseRankedCityContentPack(
   JSON.parse(await readFile(rankedCitySourcePath, "utf8"))
 );
@@ -243,6 +308,29 @@ const mapAdditions: FeatureCollection<
 const entities: ContentEntity[] = [];
 const names: LocalizedName[] = [];
 const relations: EntityRelation[] = [];
+const profileCountries = fixture.countries.map((country) => ({
+  fixture: country,
+  profile: countryProfileSource(country.iso2)
+}));
+const languages = new Map<string, { code: string; englishName: string }>();
+const currencies = new Map<
+  string,
+  { code: string; profile: Country["currencies"][string] }
+>();
+const curatedOfficialLanguagePairs = new Set(
+  knowledgeSnapshot.relationClaims
+    .filter((relation) => relation.relationType === "has_official_language")
+    .map((relation) => `${relation.sourceId}|${relation.targetId}`)
+);
+
+for (const { profile } of profileCountries) {
+  for (const [code, englishName] of Object.entries(profile.languages)) {
+    languages.set(code, { code, englishName });
+  }
+  for (const [code, currency] of Object.entries(profileCurrencies(profile))) {
+    currencies.set(code, { code, profile: currency });
+  }
+}
 
 for (const [continentId, label] of CONTINENTS) {
   const suffix = continentId.replace(":", "-");
@@ -257,19 +345,60 @@ for (const [continentId, label] of CONTINENTS) {
   names.push(preferredName(continentId, label, suffix));
 }
 
-entities.push({
-  id: "language:pt",
-  type: "language",
-  canonicalNameId: "name:language-pt:de:preferred",
-  difficulty: 2,
-  active: true,
-  sourceRefs: ["cplp-portuguese-language-states"]
-});
-names.push(preferredName("language:pt", "Portugiesisch", "language-pt"));
+for (const { code, englishName } of [...languages.values()].toSorted((left, right) =>
+  left.code.localeCompare(right.code)
+)) {
+  const entityId = languageEntityId(code);
+  const suffix = entityId.replace(":", "-");
+  const preferred = displayName(germanLanguageNames, code, englishName);
+  entities.push({
+    id: entityId,
+    type: "language",
+    canonicalNameId: `name:${suffix}:de:preferred`,
+    difficulty: 2,
+    active: true,
+    sourceRefs:
+      entityId === "language:pt"
+        ? ["world-countries", "cplp-portuguese-language-states"]
+        : ["world-countries"]
+  });
+  names.push(
+    preferredName(entityId, preferred, suffix),
+    ...aliasNames(
+      entityId,
+      profileAliases(preferred, englishName, code),
+      suffix
+    )
+  );
+}
+
+for (const { code, profile } of [...currencies.values()].toSorted((left, right) =>
+  left.code.localeCompare(right.code)
+)) {
+  const entityId = currencyEntityId(code);
+  const suffix = entityId.replace(":", "-");
+  const preferred = displayName(germanCurrencyNames, code, profile.name);
+  entities.push({
+    id: entityId,
+    type: "currency",
+    canonicalNameId: `name:${suffix}:de:preferred`,
+    difficulty: 2,
+    active: true,
+    sourceRefs: ["world-countries"]
+  });
+  names.push(
+    preferredName(entityId, preferred, suffix),
+    ...aliasNames(
+      entityId,
+      profileAliases(preferred, profile.name, code, profile.symbol),
+      suffix
+    )
+  );
+}
 
 const seenCapitalIds = new Set<string>();
 
-for (const country of fixture.countries) {
+for (const { fixture: country, profile } of profileCountries) {
   const countrySuffix = country.id.replace(":", "-");
 
   entities.push({
@@ -302,6 +431,30 @@ for (const country of fixture.countries) {
       relationType: "located_in",
       targetId: continentId,
       sourceRefs: ["phase2-scope-policy"]
+    });
+  }
+
+  for (const code of Object.keys(profile.languages)) {
+    const targetId = languageEntityId(code);
+    if (curatedOfficialLanguagePairs.has(`${country.id}|${targetId}`)) {
+      continue;
+    }
+    relations.push({
+      id: `relation:${countrySuffix}:official-language:${code.toLowerCase()}`,
+      sourceId: country.id,
+      relationType: "has_official_language",
+      targetId,
+      sourceRefs: ["world-countries"]
+    });
+  }
+
+  for (const code of Object.keys(profileCurrencies(profile))) {
+    relations.push({
+      id: `relation:${countrySuffix}:uses-currency:${code.toLowerCase()}`,
+      sourceId: country.id,
+      relationType: "uses_currency",
+      targetId: currencyEntityId(code),
+      sourceRefs: currencySourceRefs(country.iso2)
     });
   }
 
@@ -380,6 +533,44 @@ for (const physical of physicalSnapshot.entities) {
   }
 }
 
+const astronomyFacts: EntityFact[] = [];
+for (const astronomy of astronomySnapshot.entities) {
+  const suffix = astronomy.id.replaceAll(":", "-");
+  entities.push({
+    id: astronomy.id,
+    type: astronomy.type,
+    canonicalNameId: `name:${suffix}:de:preferred`,
+    difficulty: astronomy.difficulty,
+    active: true,
+    sourceRefs: astronomy.sourceRefs
+  });
+  names.push(
+    preferredName(astronomy.id, astronomy.nameDe, suffix),
+    ...aliasNames(astronomy.id, astronomy.aliasesDe, suffix)
+  );
+  astronomyFacts.push(
+    ...astronomy.facts.map((fact) => ({
+      id: `fact:${suffix}:${fact.factTypeId.replace("fact-type:", "")}`,
+      entityId: astronomy.id,
+      factTypeId: fact.factTypeId,
+      value: fact.value,
+      acceptedValues: fact.acceptedValues,
+      asOf: astronomySnapshot.builtAt.slice(0, 10),
+      method: fact.method,
+      sourceRefs: fact.sourceRefs
+    }))
+  );
+  if (astronomy.orbitsId) {
+    relations.push({
+      id: `relation:${suffix}:orbits:${astronomy.orbitsId.replaceAll(":", "-")}`,
+      sourceId: astronomy.id,
+      relationType: "orbits",
+      targetId: astronomy.orbitsId,
+      sourceRefs: astronomy.sourceRefs
+    });
+  }
+}
+
 relations.push(...knowledgeSnapshot.relationClaims);
 
 const sources = [
@@ -399,13 +590,21 @@ const sources = [
     license: "MIT"
   },
   {
+    id: "fsm-government-currency",
+    sourceVersion: "retrieved-2026-08-04",
+    retrievedAt: "2026-08-04",
+    url: "https://bankingboard.gov.fm/overview.htm",
+    license: "Government factual statement; page content not redistributed"
+  },
+  {
     id: physicalSnapshot.source.id,
     sourceVersion: physicalSnapshot.source.sourceVersion,
     retrievedAt: physicalSnapshot.source.retrievedAt,
     url: physicalSnapshot.source.url,
     license: physicalSnapshot.source.license
   },
-  ...knowledgeSnapshot.sources
+  ...knowledgeSnapshot.sources,
+  ...astronomySnapshot.sources
 ].toSorted((left, right) => left.id.localeCompare(right.id));
 
 const knowledge = compileKnowledgeQuestions(knowledgeTemplates.templates, {
@@ -462,7 +661,12 @@ const dataset: GeoDataset = {
       id: "country",
       geometryKind: "polygon",
       supportedPromptIds: ["name", "visual_asset", "map_highlight"],
-      supportedAnswerModeIds: ["text_input", "single_choice", "map_area"]
+      supportedAnswerModeIds: [
+        "text_input",
+        "single_choice",
+        "map_area",
+        "country_profile_input"
+      ]
     },
     {
       id: "river",
@@ -501,10 +705,40 @@ const dataset: GeoDataset = {
       supportedAnswerModeIds: []
     },
     {
+      id: "currency",
+      geometryKind: "none",
+      supportedPromptIds: ["name"],
+      supportedAnswerModeIds: []
+    },
+    {
       id: "knowledge_question",
       geometryKind: "none",
       supportedPromptIds: ["description"],
       supportedAnswerModeIds: ["text_input", "single_choice"]
+    },
+    {
+      id: "planet",
+      geometryKind: "none",
+      supportedPromptIds: ["fact"],
+      supportedAnswerModeIds: ["text_input"]
+    },
+    {
+      id: "moon",
+      geometryKind: "none",
+      supportedPromptIds: ["fact"],
+      supportedAnswerModeIds: ["text_input"]
+    },
+    {
+      id: "dwarf_planet",
+      geometryKind: "none",
+      supportedPromptIds: ["fact"],
+      supportedAnswerModeIds: ["text_input"]
+    },
+    {
+      id: "zodiac_constellation",
+      geometryKind: "none",
+      supportedPromptIds: ["visual_asset"],
+      supportedAnswerModeIds: ["fact_profile_input"]
     }
   ],
   relationTypes: [
@@ -545,9 +779,21 @@ const dataset: GeoDataset = {
       cardinality: "many"
     },
     {
+      id: "uses_currency",
+      sourceTypeIds: ["country"],
+      targetTypeIds: ["currency"],
+      cardinality: "many"
+    },
+    {
       id: "has_answer",
       sourceTypeIds: ["knowledge_question"],
       targetTypeIds: ["country", "city"],
+      cardinality: "one"
+    },
+    {
+      id: "orbits",
+      sourceTypeIds: ["moon"],
+      targetTypeIds: ["planet"],
       cardinality: "one"
     }
   ],
@@ -556,11 +802,12 @@ const dataset: GeoDataset = {
   relations: relations.toSorted((left, right) =>
     left.id.localeCompare(right.id)
   ),
-  factDefinitions: knowledgeSnapshot.factDefinitions.toSorted((left, right) =>
-    left.id.localeCompare(right.id)
-  ),
-  facts: knowledgeSnapshot.facts.toSorted((left, right) =>
-    left.id.localeCompare(right.id)
+  factDefinitions: [
+    ...knowledgeSnapshot.factDefinitions,
+    ...astronomySnapshot.factDefinitions
+  ].toSorted((left, right) => left.id.localeCompare(right.id)),
+  facts: [...knowledgeSnapshot.facts, ...astronomyFacts].toSorted(
+    (left, right) => left.id.localeCompare(right.id)
   ),
   compiledKnowledgeQuestions: knowledge.questions
 };
@@ -691,6 +938,14 @@ const qualityReport = {
     coordinateRangesValid: true,
     countryCount: fixture.countries.length,
     capitalSeatCount: seenCapitalIds.size,
+    languageCount: languages.size,
+    currencyCount: currencies.size,
+    countryProfilesComplete: profileCountries.every(
+      ({ fixture: country, profile }) =>
+        country.capitals.length > 0 &&
+        Object.keys(profile.languages).length > 0 &&
+        Object.keys(profileCurrencies(profile)).length > 0
+    ),
     physicalEntityCounts: Object.fromEntries(
       physicalTypes.map((type) => [
         type,
@@ -730,7 +985,19 @@ const qualityReport = {
     rankedPhysicalEntityCounts: rankedPhysical.quality.entityCounts,
     rankedPhysicalGermanAliasCount:
       rankedPhysical.quality.germanAliasCount,
-    rankedPhysicalPackBytes: Buffer.byteLength(rankedPhysicalJson)
+    rankedPhysicalPackBytes: Buffer.byteLength(rankedPhysicalJson),
+    astronomyEntityCounts: Object.fromEntries(
+      ["planet", "moon", "dwarf_planet", "zodiac_constellation"].map(
+        (type) => [
+          type,
+          astronomySnapshot.entities.filter((entity) => entity.type === type)
+            .length
+        ]
+      )
+    ),
+    constellationChartCount: astronomySnapshot.entities.filter(
+      (entity) => entity.type === "zodiac_constellation" && entity.chart
+    ).length
   },
   review: {
     multipleCapitalCountries,
@@ -825,7 +1092,11 @@ const manifest: DatasetManifest = {
       path: "visual-assets-index-v1.json",
       sha256: sha256(visualAssetIndexJson),
       bytes: Buffer.byteLength(visualAssetIndexJson),
-      entityCount: fixture.countries.length
+      entityCount:
+        fixture.countries.length +
+        astronomySnapshot.entities.filter(
+          (entity) => entity.type === "zodiac_constellation"
+        ).length
     }
   ],
   attribution: [
@@ -837,8 +1108,11 @@ const manifest: DatasetManifest = {
     "Landfläche 2023: World Bank WDI / FAOSTAT (CC BY 4.0)",
     "Bevölkerung 2023: World Bank WDI (CC BY 4.0)",
     "Portugiesische Amtssprachen: CPLP-Mitgliedstaaten und Länderprofile",
+    "Währung Mikronesiens: Banking Board der Föderierten Staaten von Mikronesien",
     "Städte, Koordinaten, Namen und Bevölkerungsfeld: GeoNames (CC BY 4.0)",
-    "Top-100-Flusssysteme und -Gipfel: fest versionierte Wikipedia-Listen (CC BY-SA 4.0)"
+    "Top-100-Flusssysteme und -Gipfel: fest versionierte Wikipedia-Listen (CC BY-SA 4.0)",
+    "Planeten, Monde und Zwergplaneten: NASA Solar System Exploration",
+    "Sternbildnamen, IAU-Kürzel und Kartengrundlage: IAU (Karten CC BY 4.0)"
   ],
   qualityReport: "quality-report.json"
 };

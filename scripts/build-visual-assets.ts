@@ -5,6 +5,7 @@ import type { Feature, MultiPolygon, Polygon, Position } from "geojson";
 import { feature } from "topojson-client";
 import type { GeometryCollection, Topology } from "topojson-specification";
 import {
+  parseRawAstronomySnapshot,
   parseRawContentFixture,
   type RawCountryFixture
 } from "../src/content/schema";
@@ -16,6 +17,10 @@ type WorldTopology = Topology<{
 
 const projectRoot = resolve(import.meta.dirname, "..");
 const sourcePath = resolve(projectRoot, "content-src/geo-core-mvp.v1.json");
+const astronomySourcePath = resolve(
+  projectRoot,
+  "content-src/astronomy-core.v1.json"
+);
 const flagDirectory = resolve(
   projectRoot,
   "node_modules/flag-icons/flags/4x3"
@@ -172,8 +177,51 @@ function outlineSvg(
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${width} ${height}"><path fill="#000" fill-rule="evenodd" d="${path}"/></svg>`;
 }
 
+function constellationSvg(chart: {
+  stars: Array<{ x: number; y: number; size: number }>;
+  lines: Array<[number, number]>;
+}) {
+  const width = 640;
+  const height = 420;
+  const plot = { left: 54, top: 38, width: 532, height: 328 };
+  const point = (index: number) => {
+    const star = chart.stars[index];
+    if (!star) throw new Error(`Sternindex ${index} ist ungültig.`);
+    return {
+      x: rounded(plot.left + (star.x / 100) * plot.width),
+      y: rounded(plot.top + (star.y / 100) * plot.height),
+      size: star.size
+    };
+  };
+  const grid = [0.2, 0.4, 0.6, 0.8]
+    .flatMap((ratio) => [
+      `<line x1="${rounded(plot.left + plot.width * ratio)}" y1="${plot.top}" x2="${rounded(plot.left + plot.width * ratio)}" y2="${plot.top + plot.height}"/>`,
+      `<line x1="${plot.left}" y1="${rounded(plot.top + plot.height * ratio)}" x2="${plot.left + plot.width}" y2="${rounded(plot.top + plot.height * ratio)}"/>`
+    ])
+    .join("");
+  const lines = chart.lines
+    .map(([from, to]) => {
+      const start = point(from);
+      const end = point(to);
+      return `<line x1="${start.x}" y1="${start.y}" x2="${end.x}" y2="${end.y}"/>`;
+    })
+    .join("");
+  const stars = chart.stars
+    .map((_, index) => {
+      const star = point(index);
+      const radius = rounded(2.6 + star.size * 1.25);
+      return `<g transform="translate(${star.x} ${star.y})"><circle r="${radius}" fill="#fff"/><path d="M0-${rounded(radius + 4)}V${rounded(radius + 4)}M-${rounded(radius + 4)} 0H${rounded(radius + 4)}" stroke="#fff" stroke-width="1"/></g>`;
+    })
+    .join("");
+
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${width} ${height}"><rect width="${width}" height="${height}" rx="18" fill="#071f49"/><g stroke="#7188ac" stroke-width="1" stroke-dasharray="3 7" opacity=".62">${grid}</g><rect x="${plot.left}" y="${plot.top}" width="${plot.width}" height="${plot.height}" fill="none" stroke="#8aa0c0" stroke-width="1"/><g stroke="#e8f0ff" stroke-width="2.4" stroke-linecap="round" opacity=".92">${lines}</g><g>${stars}</g><g fill="#b9c8df" font-family="system-ui,sans-serif" font-size="12"><text x="${plot.left}" y="${height - 22}">vereinfachte Lernkarte</text><text x="${width - 74}" y="${height - 22}">N ↑</text></g></svg>`;
+}
+
 const fixture = parseRawContentFixture(
   JSON.parse(await readFile(sourcePath, "utf8"))
+);
+const astronomy = parseRawAstronomySnapshot(
+  JSON.parse(await readFile(astronomySourcePath, "utf8"))
 );
 const [world50m, world10m] = await Promise.all([
   loadTopology(world50mPath),
@@ -182,7 +230,7 @@ const [world50m, world10m] = await Promise.all([
 const assets: Array<{
   key: string;
   entityId: string;
-  kind: "flag" | "country_outline";
+  kind: "flag" | "country_outline" | "constellation_chart";
   mediaType: "image/svg+xml";
   sha256: string;
   bytes: number;
@@ -227,8 +275,32 @@ for (const country of fixture.countries.toSorted((left, right) =>
   }
 }
 
-if (assets.length !== 390) {
-  throw new Error(`Visual-Build erwartet 390 Assets, erzeugte aber ${assets.length}.`);
+for (const constellation of astronomy.entities
+  .filter((entity) => entity.type === "zodiac_constellation")
+  .toSorted((left, right) => left.id.localeCompare(right.id))) {
+  if (!constellation.chart) {
+    throw new Error(`${constellation.id}: Sternbildkarte fehlt.`);
+  }
+  const svg = constellationSvg(constellation.chart);
+  const filename = `${constellation.id.replace("constellation:", "")}.svg`;
+  const publicPath = `assets/visual/v1/constellations/${filename}`;
+  assets.push({
+    key: `visual:constellation_chart:${constellation.id}`,
+    entityId: constellation.id,
+    kind: "constellation_chart",
+    mediaType: "image/svg+xml",
+    sha256: sha256(svg),
+    bytes: Buffer.byteLength(svg),
+    sourceRef: "iau-constellations",
+    path: publicPath
+  });
+  assetWrites.push(
+    writeStable(resolve(publicAssetDirectory, "constellations", filename), svg)
+  );
+}
+
+if (assets.length !== 402) {
+  throw new Error(`Visual-Build erwartet 402 Assets, erzeugte aber ${assets.length}.`);
 }
 
 const indexJson = stableJson({
@@ -247,6 +319,12 @@ const indexJson = stableJson({
       sourceVersion: "world-atlas@2.0.2 / 50m+10m",
       url: "https://www.naturalearthdata.com/",
       license: "Public Domain"
+    },
+    {
+      id: "iau-constellations",
+      sourceVersion: "retrieved-2026-08-04",
+      url: "https://www.iau.org/Iau/Science/What-we-do/The-Constellations.aspx",
+      license: "Constellation charts CC BY 4.0"
     }
   ],
   assets

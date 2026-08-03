@@ -1,0 +1,450 @@
+{
+  "schemaVersion": 1,
+  "datasetVersion": "2026-08-04.phase8-astronomy1",
+  "builtAt": "2026-08-04T00:00:00.000Z",
+  "sources": [
+    {
+      "id": "nasa-solar-system",
+      "sourceVersion": "retrieved-2026-08-04",
+      "retrievedAt": "2026-08-04",
+      "url": "https://science.nasa.gov/solar-system/solar-system-facts/",
+      "license": "NASA factual material; page text and images are not redistributed"
+    },
+    {
+      "id": "nasa-moons",
+      "sourceVersion": "page-updated-2025-05-07",
+      "retrievedAt": "2026-08-04",
+      "url": "https://science.nasa.gov/solar-system/moons/facts/",
+      "license": "NASA factual material; page text and images are not redistributed"
+    },
+    {
+      "id": "nasa-dwarf-planets",
+      "sourceVersion": "retrieved-2026-08-04",
+      "retrievedAt": "2026-08-04",
+      "url": "https://science.nasa.gov/dwarf-planets/",
+      "license": "NASA factual material; page text and images are not redistributed"
+    },
+    {
+      "id": "iau-constellations",
+      "sourceVersion": "retrieved-2026-08-04",
+      "retrievedAt": "2026-08-04",
+      "url": "https://www.iau.org/Iau/Science/What-we-do/The-Constellations.aspx",
+      "license": "Constellation charts CC BY 4.0; names and abbreviations are factual data"
+    }
+  ],
+  "factDefinitions": [
+    {
+      "id": "fact-type:solar-order",
+      "labelDe": "Position zur Sonne",
+      "descriptionDe": "Reihenfolge des Planeten von der Sonne nach außen.",
+      "valueType": "string",
+      "comparisonPolicy": "same_source_method_and_date"
+    },
+    {
+      "id": "fact-type:planet-class",
+      "labelDe": "Planetentyp",
+      "descriptionDe": "Grobe physikalische Klasse als Felsplanet, Gasriese oder Eisriese.",
+      "valueType": "string",
+      "comparisonPolicy": "same_source_method_and_date"
+    },
+    {
+      "id": "fact-type:parent-body",
+      "labelDe": "Umläuft",
+      "descriptionDe": "Planet, den der natürliche Satellit umläuft.",
+      "valueType": "string",
+      "comparisonPolicy": "same_source_method_and_date"
+    },
+    {
+      "id": "fact-type:solar-region",
+      "labelDe": "Region",
+      "descriptionDe": "Grobe Lage des Himmelskörpers im Sonnensystem.",
+      "valueType": "string",
+      "comparisonPolicy": "same_source_method_and_date"
+    },
+    {
+      "id": "fact-type:astronomy-feature",
+      "labelDe": "Merkmal",
+      "descriptionDe": "Ein markantes, für das Lernquiz kuratiertes Erkennungsmerkmal.",
+      "valueType": "string",
+      "comparisonPolicy": "same_source_method_and_date"
+    },
+    {
+      "id": "fact-type:iau-abbreviation",
+      "labelDe": "IAU-Kürzel",
+      "descriptionDe": "Offizielles dreibuchstabiges Kürzel des lateinischen Sternbildnamens.",
+      "valueType": "string",
+      "comparisonPolicy": "same_source_method_and_date"
+    },
+    {
+      "id": "fact-type:best-visibility-month",
+      "labelDe": "Beste Sichtbarkeit",
+      "descriptionDe": "Abgeleiteter Monat für eine Beobachtung gegen 22 Uhr in Mitteleuropa.",
+      "valueType": "string",
+      "comparisonPolicy": "same_source_method_and_date"
+    },
+    {
+      "id": "fact-type:sky-position",
+      "labelDe": "Himmelslage",
+      "descriptionDe": "Didaktische Einordnung relativ zum Himmelsäquator.",
+      "valueType": "string",
+      "comparisonPolicy": "same_source_method_and_date"
+    }
+  ],
+  "entities": [
+    {
+      "id": "planet:mercury",
+      "type": "planet",
+      "nameDe": "Merkur",
+      "aliasesDe": ["Mercury"],
+      "difficulty": 1,
+      "sourceRefs": ["nasa-solar-system"],
+      "facts": [
+        { "factTypeId": "fact-type:solar-order", "value": "1. Planet von der Sonne", "method": "nasa-solar-order-v1", "sourceRefs": ["nasa-solar-system"] },
+        { "factTypeId": "fact-type:planet-class", "value": "Felsplanet", "method": "nasa-planet-class-v1", "sourceRefs": ["nasa-solar-system"] },
+        { "factTypeId": "fact-type:astronomy-feature", "value": "Kleinster und sonnennächster Planet", "method": "geoapp-distinctive-clue-v1", "sourceRefs": ["nasa-solar-system"] }
+      ]
+    },
+    {
+      "id": "planet:venus",
+      "type": "planet",
+      "nameDe": "Venus",
+      "aliasesDe": [],
+      "difficulty": 1,
+      "sourceRefs": ["nasa-solar-system"],
+      "facts": [
+        { "factTypeId": "fact-type:solar-order", "value": "2. Planet von der Sonne", "method": "nasa-solar-order-v1", "sourceRefs": ["nasa-solar-system"] },
+        { "factTypeId": "fact-type:planet-class", "value": "Felsplanet", "method": "nasa-planet-class-v1", "sourceRefs": ["nasa-solar-system"] },
+        { "factTypeId": "fact-type:astronomy-feature", "value": "Heißester Planet des Sonnensystems", "method": "geoapp-distinctive-clue-v1", "sourceRefs": ["nasa-solar-system"] }
+      ]
+    },
+    {
+      "id": "planet:earth",
+      "type": "planet",
+      "nameDe": "Erde",
+      "aliasesDe": ["Earth"],
+      "difficulty": 1,
+      "sourceRefs": ["nasa-solar-system"],
+      "facts": [
+        { "factTypeId": "fact-type:solar-order", "value": "3. Planet von der Sonne", "method": "nasa-solar-order-v1", "sourceRefs": ["nasa-solar-system"] },
+        { "factTypeId": "fact-type:planet-class", "value": "Felsplanet", "method": "nasa-planet-class-v1", "sourceRefs": ["nasa-solar-system"] },
+        { "factTypeId": "fact-type:astronomy-feature", "value": "Einziger bekannter Planet mit Leben und flüssigen Ozeanen", "method": "geoapp-distinctive-clue-v1", "sourceRefs": ["nasa-solar-system"] }
+      ]
+    },
+    {
+      "id": "planet:mars",
+      "type": "planet",
+      "nameDe": "Mars",
+      "aliasesDe": [],
+      "difficulty": 1,
+      "sourceRefs": ["nasa-solar-system"],
+      "facts": [
+        { "factTypeId": "fact-type:solar-order", "value": "4. Planet von der Sonne", "method": "nasa-solar-order-v1", "sourceRefs": ["nasa-solar-system"] },
+        { "factTypeId": "fact-type:planet-class", "value": "Felsplanet", "method": "nasa-planet-class-v1", "sourceRefs": ["nasa-solar-system"] },
+        { "factTypeId": "fact-type:astronomy-feature", "value": "Roter Planet mit dem Vulkan Olympus Mons", "method": "geoapp-distinctive-clue-v1", "sourceRefs": ["nasa-solar-system"] }
+      ]
+    },
+    {
+      "id": "planet:jupiter",
+      "type": "planet",
+      "nameDe": "Jupiter",
+      "aliasesDe": [],
+      "difficulty": 1,
+      "sourceRefs": ["nasa-solar-system"],
+      "facts": [
+        { "factTypeId": "fact-type:solar-order", "value": "5. Planet von der Sonne", "method": "nasa-solar-order-v1", "sourceRefs": ["nasa-solar-system"] },
+        { "factTypeId": "fact-type:planet-class", "value": "Gasriese", "method": "nasa-planet-class-v1", "sourceRefs": ["nasa-solar-system"] },
+        { "factTypeId": "fact-type:astronomy-feature", "value": "Größter Planet mit dem Großen Roten Fleck", "method": "geoapp-distinctive-clue-v1", "sourceRefs": ["nasa-solar-system"] }
+      ]
+    },
+    {
+      "id": "planet:saturn",
+      "type": "planet",
+      "nameDe": "Saturn",
+      "aliasesDe": [],
+      "difficulty": 1,
+      "sourceRefs": ["nasa-solar-system"],
+      "facts": [
+        { "factTypeId": "fact-type:solar-order", "value": "6. Planet von der Sonne", "method": "nasa-solar-order-v1", "sourceRefs": ["nasa-solar-system"] },
+        { "factTypeId": "fact-type:planet-class", "value": "Gasriese", "method": "nasa-planet-class-v1", "sourceRefs": ["nasa-solar-system"] },
+        { "factTypeId": "fact-type:astronomy-feature", "value": "Besonders auffälliges Ringsystem", "method": "geoapp-distinctive-clue-v1", "sourceRefs": ["nasa-solar-system"] }
+      ]
+    },
+    {
+      "id": "planet:uranus",
+      "type": "planet",
+      "nameDe": "Uranus",
+      "aliasesDe": [],
+      "difficulty": 2,
+      "sourceRefs": ["nasa-solar-system"],
+      "facts": [
+        { "factTypeId": "fact-type:solar-order", "value": "7. Planet von der Sonne", "method": "nasa-solar-order-v1", "sourceRefs": ["nasa-solar-system"] },
+        { "factTypeId": "fact-type:planet-class", "value": "Eisriese", "method": "nasa-planet-class-v1", "sourceRefs": ["nasa-solar-system"] },
+        { "factTypeId": "fact-type:astronomy-feature", "value": "Rotiert mit stark gekippter Achse nahezu auf der Seite", "method": "geoapp-distinctive-clue-v1", "sourceRefs": ["nasa-solar-system"] }
+      ]
+    },
+    {
+      "id": "planet:neptune",
+      "type": "planet",
+      "nameDe": "Neptun",
+      "aliasesDe": ["Neptune"],
+      "difficulty": 2,
+      "sourceRefs": ["nasa-solar-system"],
+      "facts": [
+        { "factTypeId": "fact-type:solar-order", "value": "8. Planet von der Sonne", "method": "nasa-solar-order-v1", "sourceRefs": ["nasa-solar-system"] },
+        { "factTypeId": "fact-type:planet-class", "value": "Eisriese", "method": "nasa-planet-class-v1", "sourceRefs": ["nasa-solar-system"] },
+        { "factTypeId": "fact-type:astronomy-feature", "value": "Entferntester Planet mit extrem starken Winden", "method": "geoapp-distinctive-clue-v1", "sourceRefs": ["nasa-solar-system"] }
+      ]
+    },
+
+    {
+      "id": "dwarf-planet:ceres",
+      "type": "dwarf_planet",
+      "nameDe": "Ceres",
+      "aliasesDe": [],
+      "difficulty": 1,
+      "sourceRefs": ["nasa-dwarf-planets"],
+      "facts": [
+        { "factTypeId": "fact-type:solar-region", "value": "Asteroidengürtel zwischen Mars und Jupiter", "method": "nasa-solar-region-v1", "sourceRefs": ["nasa-dwarf-planets"] },
+        { "factTypeId": "fact-type:astronomy-feature", "value": "Größtes Objekt des Asteroidengürtels und Ziel der Dawn-Mission", "method": "geoapp-distinctive-clue-v1", "sourceRefs": ["nasa-dwarf-planets"] }
+      ]
+    },
+    {
+      "id": "dwarf-planet:pluto",
+      "type": "dwarf_planet",
+      "nameDe": "Pluto",
+      "aliasesDe": [],
+      "difficulty": 1,
+      "sourceRefs": ["nasa-dwarf-planets"],
+      "facts": [
+        { "factTypeId": "fact-type:solar-region", "value": "Kuipergürtel jenseits des Neptun", "method": "nasa-solar-region-v1", "sourceRefs": ["nasa-dwarf-planets"] },
+        { "factTypeId": "fact-type:astronomy-feature", "value": "Bekanntester Zwergplanet mit fünf Monden", "method": "geoapp-distinctive-clue-v1", "sourceRefs": ["nasa-dwarf-planets"] }
+      ]
+    },
+    {
+      "id": "dwarf-planet:haumea",
+      "type": "dwarf_planet",
+      "nameDe": "Haumea",
+      "aliasesDe": [],
+      "difficulty": 3,
+      "sourceRefs": ["nasa-dwarf-planets"],
+      "facts": [
+        { "factTypeId": "fact-type:solar-region", "value": "Kuipergürtel jenseits des Neptun", "method": "nasa-solar-region-v1", "sourceRefs": ["nasa-dwarf-planets"] },
+        { "factTypeId": "fact-type:astronomy-feature", "value": "Sehr schnelle Rotation und längliche Form", "method": "geoapp-distinctive-clue-v1", "sourceRefs": ["nasa-dwarf-planets"] }
+      ]
+    },
+    {
+      "id": "dwarf-planet:makemake",
+      "type": "dwarf_planet",
+      "nameDe": "Makemake",
+      "aliasesDe": ["Make-Make"],
+      "difficulty": 3,
+      "sourceRefs": ["nasa-dwarf-planets"],
+      "facts": [
+        { "factTypeId": "fact-type:solar-region", "value": "Kuipergürtel jenseits des Neptun", "method": "nasa-solar-region-v1", "sourceRefs": ["nasa-dwarf-planets"] },
+        { "factTypeId": "fact-type:astronomy-feature", "value": "Zweithellstes bekanntes Objekt des Kuipergürtels", "method": "geoapp-distinctive-clue-v1", "sourceRefs": ["nasa-dwarf-planets"] }
+      ]
+    },
+    {
+      "id": "dwarf-planet:eris",
+      "type": "dwarf_planet",
+      "nameDe": "Eris",
+      "aliasesDe": [],
+      "difficulty": 2,
+      "sourceRefs": ["nasa-dwarf-planets"],
+      "facts": [
+        { "factTypeId": "fact-type:solar-region", "value": "Weit jenseits des Neptun", "method": "nasa-solar-region-v1", "sourceRefs": ["nasa-dwarf-planets"] },
+        { "factTypeId": "fact-type:astronomy-feature", "value": "Einer der größten bekannten Zwergplaneten", "method": "geoapp-distinctive-clue-v1", "sourceRefs": ["nasa-dwarf-planets"] }
+      ]
+    },
+
+    { "id": "moon:luna", "type": "moon", "nameDe": "Mond", "aliasesDe": ["Erdmond", "Luna"], "difficulty": 1, "sourceRefs": ["nasa-moons"], "orbitsId": "planet:earth", "facts": [
+      { "factTypeId": "fact-type:parent-body", "value": "Erde", "method": "nasa-parent-body-v1", "sourceRefs": ["nasa-moons"] },
+      { "factTypeId": "fact-type:astronomy-feature", "value": "Einziger Himmelskörper außerhalb der Erde, den Menschen betreten haben", "method": "geoapp-distinctive-clue-v1", "sourceRefs": ["nasa-moons"] }
+    ] },
+    { "id": "moon:phobos", "type": "moon", "nameDe": "Phobos", "aliasesDe": [], "difficulty": 1, "sourceRefs": ["nasa-moons"], "orbitsId": "planet:mars", "facts": [
+      { "factTypeId": "fact-type:parent-body", "value": "Mars", "method": "nasa-parent-body-v1", "sourceRefs": ["nasa-moons"] },
+      { "factTypeId": "fact-type:astronomy-feature", "value": "Größerer innerer Marsmond, der sich dem Planeten langsam nähert", "method": "geoapp-distinctive-clue-v1", "sourceRefs": ["nasa-moons"] }
+    ] },
+    { "id": "moon:deimos", "type": "moon", "nameDe": "Deimos", "aliasesDe": [], "difficulty": 2, "sourceRefs": ["nasa-moons"], "orbitsId": "planet:mars", "facts": [
+      { "factTypeId": "fact-type:parent-body", "value": "Mars", "method": "nasa-parent-body-v1", "sourceRefs": ["nasa-moons"] },
+      { "factTypeId": "fact-type:astronomy-feature", "value": "Kleinerer äußerer Marsmond mit unregelmäßiger Form", "method": "geoapp-distinctive-clue-v1", "sourceRefs": ["nasa-moons"] }
+    ] },
+    { "id": "moon:io", "type": "moon", "nameDe": "Io", "aliasesDe": [], "difficulty": 1, "sourceRefs": ["nasa-moons"], "orbitsId": "planet:jupiter", "facts": [
+      { "factTypeId": "fact-type:parent-body", "value": "Jupiter", "method": "nasa-parent-body-v1", "sourceRefs": ["nasa-moons"] },
+      { "factTypeId": "fact-type:astronomy-feature", "value": "Vulkanisch aktivster Himmelskörper des Sonnensystems", "method": "geoapp-distinctive-clue-v1", "sourceRefs": ["nasa-moons"] }
+    ] },
+    { "id": "moon:europa", "type": "moon", "nameDe": "Europa", "aliasesDe": [], "difficulty": 1, "sourceRefs": ["nasa-moons"], "orbitsId": "planet:jupiter", "facts": [
+      { "factTypeId": "fact-type:parent-body", "value": "Jupiter", "method": "nasa-parent-body-v1", "sourceRefs": ["nasa-moons"] },
+      { "factTypeId": "fact-type:astronomy-feature", "value": "Eiskruste über einem wahrscheinlich globalen Ozean", "method": "geoapp-distinctive-clue-v1", "sourceRefs": ["nasa-moons"] }
+    ] },
+    { "id": "moon:ganymede", "type": "moon", "nameDe": "Ganymed", "aliasesDe": ["Ganymede"], "difficulty": 1, "sourceRefs": ["nasa-moons"], "orbitsId": "planet:jupiter", "facts": [
+      { "factTypeId": "fact-type:parent-body", "value": "Jupiter", "method": "nasa-parent-body-v1", "sourceRefs": ["nasa-moons"] },
+      { "factTypeId": "fact-type:astronomy-feature", "value": "Größter Mond des Sonnensystems", "method": "geoapp-distinctive-clue-v1", "sourceRefs": ["nasa-moons"] }
+    ] },
+    { "id": "moon:callisto", "type": "moon", "nameDe": "Kallisto", "aliasesDe": ["Callisto"], "difficulty": 2, "sourceRefs": ["nasa-moons"], "orbitsId": "planet:jupiter", "facts": [
+      { "factTypeId": "fact-type:parent-body", "value": "Jupiter", "method": "nasa-parent-body-v1", "sourceRefs": ["nasa-moons"] },
+      { "factTypeId": "fact-type:astronomy-feature", "value": "Äußerster der vier großen galileischen Monde und stark verkratert", "method": "geoapp-distinctive-clue-v1", "sourceRefs": ["nasa-moons"] }
+    ] },
+    { "id": "moon:mimas", "type": "moon", "nameDe": "Mimas", "aliasesDe": [], "difficulty": 2, "sourceRefs": ["nasa-moons"], "orbitsId": "planet:saturn", "facts": [
+      { "factTypeId": "fact-type:parent-body", "value": "Saturn", "method": "nasa-parent-body-v1", "sourceRefs": ["nasa-moons"] },
+      { "factTypeId": "fact-type:astronomy-feature", "value": "Besitzt den riesigen Krater Herschel", "method": "geoapp-distinctive-clue-v1", "sourceRefs": ["nasa-moons"] }
+    ] },
+    { "id": "moon:enceladus", "type": "moon", "nameDe": "Enceladus", "aliasesDe": ["Enkeladus"], "difficulty": 1, "sourceRefs": ["nasa-moons"], "orbitsId": "planet:saturn", "facts": [
+      { "factTypeId": "fact-type:parent-body", "value": "Saturn", "method": "nasa-parent-body-v1", "sourceRefs": ["nasa-moons"] },
+      { "factTypeId": "fact-type:astronomy-feature", "value": "Eisfontänen speisen Material in den E-Ring", "method": "geoapp-distinctive-clue-v1", "sourceRefs": ["nasa-moons"] }
+    ] },
+    { "id": "moon:tethys", "type": "moon", "nameDe": "Tethys", "aliasesDe": [], "difficulty": 3, "sourceRefs": ["nasa-moons"], "orbitsId": "planet:saturn", "facts": [
+      { "factTypeId": "fact-type:parent-body", "value": "Saturn", "method": "nasa-parent-body-v1", "sourceRefs": ["nasa-moons"] },
+      { "factTypeId": "fact-type:astronomy-feature", "value": "Helle Eisoberfläche mit dem langen Graben Ithaca Chasma", "method": "geoapp-distinctive-clue-v1", "sourceRefs": ["nasa-moons"] }
+    ] },
+    { "id": "moon:dione", "type": "moon", "nameDe": "Dione", "aliasesDe": [], "difficulty": 3, "sourceRefs": ["nasa-moons"], "orbitsId": "planet:saturn", "facts": [
+      { "factTypeId": "fact-type:parent-body", "value": "Saturn", "method": "nasa-parent-body-v1", "sourceRefs": ["nasa-moons"] },
+      { "factTypeId": "fact-type:astronomy-feature", "value": "Eisige Steilwände bilden ein auffälliges helles Liniennetz", "method": "geoapp-distinctive-clue-v1", "sourceRefs": ["nasa-moons"] }
+    ] },
+    { "id": "moon:rhea", "type": "moon", "nameDe": "Rhea", "aliasesDe": [], "difficulty": 2, "sourceRefs": ["nasa-moons"], "orbitsId": "planet:saturn", "facts": [
+      { "factTypeId": "fact-type:parent-body", "value": "Saturn", "method": "nasa-parent-body-v1", "sourceRefs": ["nasa-moons"] },
+      { "factTypeId": "fact-type:astronomy-feature", "value": "Zweitgrößter Mond des Saturn", "method": "geoapp-distinctive-clue-v1", "sourceRefs": ["nasa-moons"] }
+    ] },
+    { "id": "moon:titan", "type": "moon", "nameDe": "Titan", "aliasesDe": [], "difficulty": 1, "sourceRefs": ["nasa-moons"], "orbitsId": "planet:saturn", "facts": [
+      { "factTypeId": "fact-type:parent-body", "value": "Saturn", "method": "nasa-parent-body-v1", "sourceRefs": ["nasa-moons"] },
+      { "factTypeId": "fact-type:astronomy-feature", "value": "Dichte Atmosphäre und Seen aus Methan und Ethan", "method": "geoapp-distinctive-clue-v1", "sourceRefs": ["nasa-moons"] }
+    ] },
+    { "id": "moon:iapetus", "type": "moon", "nameDe": "Iapetus", "aliasesDe": ["Japetus"], "difficulty": 2, "sourceRefs": ["nasa-moons"], "orbitsId": "planet:saturn", "facts": [
+      { "factTypeId": "fact-type:parent-body", "value": "Saturn", "method": "nasa-parent-body-v1", "sourceRefs": ["nasa-moons"] },
+      { "factTypeId": "fact-type:astronomy-feature", "value": "Extrem zweifarbige Oberfläche mit dunkler und heller Halbkugel", "method": "geoapp-distinctive-clue-v1", "sourceRefs": ["nasa-moons"] }
+    ] },
+    { "id": "moon:miranda", "type": "moon", "nameDe": "Miranda", "aliasesDe": [], "difficulty": 2, "sourceRefs": ["nasa-moons"], "orbitsId": "planet:uranus", "facts": [
+      { "factTypeId": "fact-type:parent-body", "value": "Uranus", "method": "nasa-parent-body-v1", "sourceRefs": ["nasa-moons"] },
+      { "factTypeId": "fact-type:astronomy-feature", "value": "Patchworkartige Oberfläche mit sehr hohen Steilhängen", "method": "geoapp-distinctive-clue-v1", "sourceRefs": ["nasa-moons"] }
+    ] },
+    { "id": "moon:ariel", "type": "moon", "nameDe": "Ariel", "aliasesDe": [], "difficulty": 3, "sourceRefs": ["nasa-moons"], "orbitsId": "planet:uranus", "facts": [
+      { "factTypeId": "fact-type:parent-body", "value": "Uranus", "method": "nasa-parent-body-v1", "sourceRefs": ["nasa-moons"] },
+      { "factTypeId": "fact-type:astronomy-feature", "value": "Heller Uranusmond mit Tälern und langen Schluchten", "method": "geoapp-distinctive-clue-v1", "sourceRefs": ["nasa-moons"] }
+    ] },
+    { "id": "moon:umbriel", "type": "moon", "nameDe": "Umbriel", "aliasesDe": [], "difficulty": 3, "sourceRefs": ["nasa-moons"], "orbitsId": "planet:uranus", "facts": [
+      { "factTypeId": "fact-type:parent-body", "value": "Uranus", "method": "nasa-parent-body-v1", "sourceRefs": ["nasa-moons"] },
+      { "factTypeId": "fact-type:astronomy-feature", "value": "Dunkelster der fünf großen Uranusmonde", "method": "geoapp-distinctive-clue-v1", "sourceRefs": ["nasa-moons"] }
+    ] },
+    { "id": "moon:titania", "type": "moon", "nameDe": "Titania", "aliasesDe": [], "difficulty": 2, "sourceRefs": ["nasa-moons"], "orbitsId": "planet:uranus", "facts": [
+      { "factTypeId": "fact-type:parent-body", "value": "Uranus", "method": "nasa-parent-body-v1", "sourceRefs": ["nasa-moons"] },
+      { "factTypeId": "fact-type:astronomy-feature", "value": "Größter Mond des Uranus", "method": "geoapp-distinctive-clue-v1", "sourceRefs": ["nasa-moons"] }
+    ] },
+    { "id": "moon:oberon", "type": "moon", "nameDe": "Oberon", "aliasesDe": [], "difficulty": 2, "sourceRefs": ["nasa-moons"], "orbitsId": "planet:uranus", "facts": [
+      { "factTypeId": "fact-type:parent-body", "value": "Uranus", "method": "nasa-parent-body-v1", "sourceRefs": ["nasa-moons"] },
+      { "factTypeId": "fact-type:astronomy-feature", "value": "Äußerster der fünf großen Uranusmonde", "method": "geoapp-distinctive-clue-v1", "sourceRefs": ["nasa-moons"] }
+    ] },
+    { "id": "moon:triton", "type": "moon", "nameDe": "Triton", "aliasesDe": [], "difficulty": 1, "sourceRefs": ["nasa-moons"], "orbitsId": "planet:neptune", "facts": [
+      { "factTypeId": "fact-type:parent-body", "value": "Neptun", "method": "nasa-parent-body-v1", "sourceRefs": ["nasa-moons"] },
+      { "factTypeId": "fact-type:astronomy-feature", "value": "Großer Mond mit rückläufiger Umlaufbahn und Stickstofffontänen", "method": "geoapp-distinctive-clue-v1", "sourceRefs": ["nasa-moons"] }
+    ] },
+
+    {
+      "id": "constellation:aries", "type": "zodiac_constellation", "nameDe": "Widder", "aliasesDe": ["Aries"], "difficulty": 2, "sourceRefs": ["iau-constellations"],
+      "facts": [
+        { "factTypeId": "fact-type:iau-abbreviation", "value": "Ari", "acceptedValues": ["ARI"], "method": "iau-abbreviation-v1", "sourceRefs": ["iau-constellations"] },
+        { "factTypeId": "fact-type:best-visibility-month", "value": "Dezember", "acceptedValues": ["12"], "method": "ra-to-22h-central-europe-v1", "sourceRefs": ["iau-constellations"] },
+        { "factTypeId": "fact-type:sky-position", "value": "Nordhimmel", "acceptedValues": ["nördlicher Himmel", "nördlich"], "method": "declination-band-v1", "sourceRefs": ["iau-constellations"] }
+      ],
+      "chart": { "stars": [{"x":18,"y":65,"size":2},{"x":38,"y":48,"size":4},{"x":62,"y":42,"size":3},{"x":82,"y":50,"size":2}], "lines": [[0,1],[1,2],[2,3]] }
+    },
+    {
+      "id": "constellation:taurus", "type": "zodiac_constellation", "nameDe": "Stier", "aliasesDe": ["Taurus"], "difficulty": 1, "sourceRefs": ["iau-constellations"],
+      "facts": [
+        { "factTypeId": "fact-type:iau-abbreviation", "value": "Tau", "acceptedValues": ["TAU"], "method": "iau-abbreviation-v1", "sourceRefs": ["iau-constellations"] },
+        { "factTypeId": "fact-type:best-visibility-month", "value": "Januar", "acceptedValues": ["1", "01"], "method": "ra-to-22h-central-europe-v1", "sourceRefs": ["iau-constellations"] },
+        { "factTypeId": "fact-type:sky-position", "value": "Nordhimmel", "acceptedValues": ["nördlicher Himmel", "nördlich"], "method": "declination-band-v1", "sourceRefs": ["iau-constellations"] }
+      ],
+      "chart": { "stars": [{"x":18,"y":25,"size":2},{"x":42,"y":48,"size":4},{"x":66,"y":25,"size":2},{"x":56,"y":58,"size":3},{"x":72,"y":72,"size":2},{"x":34,"y":66,"size":2}], "lines": [[0,1],[1,2],[1,3],[3,4],[1,5]] }
+    },
+    {
+      "id": "constellation:gemini", "type": "zodiac_constellation", "nameDe": "Zwillinge", "aliasesDe": ["Gemini"], "difficulty": 1, "sourceRefs": ["iau-constellations"],
+      "facts": [
+        { "factTypeId": "fact-type:iau-abbreviation", "value": "Gem", "acceptedValues": ["GEM"], "method": "iau-abbreviation-v1", "sourceRefs": ["iau-constellations"] },
+        { "factTypeId": "fact-type:best-visibility-month", "value": "Februar", "acceptedValues": ["2", "02"], "method": "ra-to-22h-central-europe-v1", "sourceRefs": ["iau-constellations"] },
+        { "factTypeId": "fact-type:sky-position", "value": "Nordhimmel", "acceptedValues": ["nördlicher Himmel", "nördlich"], "method": "declination-band-v1", "sourceRefs": ["iau-constellations"] }
+      ],
+      "chart": { "stars": [{"x":32,"y":18,"size":4},{"x":62,"y":22,"size":4},{"x":35,"y":42,"size":3},{"x":60,"y":44,"size":3},{"x":28,"y":70,"size":2},{"x":45,"y":82,"size":2},{"x":58,"y":72,"size":2},{"x":75,"y":82,"size":2}], "lines": [[0,2],[1,3],[2,3],[2,4],[2,5],[3,6],[3,7]] }
+    },
+    {
+      "id": "constellation:cancer", "type": "zodiac_constellation", "nameDe": "Krebs", "aliasesDe": ["Cancer"], "difficulty": 3, "sourceRefs": ["iau-constellations"],
+      "facts": [
+        { "factTypeId": "fact-type:iau-abbreviation", "value": "Cnc", "acceptedValues": ["CNC"], "method": "iau-abbreviation-v1", "sourceRefs": ["iau-constellations"] },
+        { "factTypeId": "fact-type:best-visibility-month", "value": "März", "acceptedValues": ["Maerz", "3", "03"], "method": "ra-to-22h-central-europe-v1", "sourceRefs": ["iau-constellations"] },
+        { "factTypeId": "fact-type:sky-position", "value": "Nordhimmel", "acceptedValues": ["nördlicher Himmel", "nördlich"], "method": "declination-band-v1", "sourceRefs": ["iau-constellations"] }
+      ],
+      "chart": { "stars": [{"x":48,"y":48,"size":4},{"x":25,"y":28,"size":2},{"x":18,"y":72,"size":2},{"x":70,"y":30,"size":2},{"x":78,"y":68,"size":2}], "lines": [[0,1],[0,2],[0,3],[0,4]] }
+    },
+    {
+      "id": "constellation:leo", "type": "zodiac_constellation", "nameDe": "Löwe", "aliasesDe": ["Loewe", "Leo"], "difficulty": 1, "sourceRefs": ["iau-constellations"],
+      "facts": [
+        { "factTypeId": "fact-type:iau-abbreviation", "value": "Leo", "acceptedValues": ["LEO"], "method": "iau-abbreviation-v1", "sourceRefs": ["iau-constellations"] },
+        { "factTypeId": "fact-type:best-visibility-month", "value": "April", "acceptedValues": ["4", "04"], "method": "ra-to-22h-central-europe-v1", "sourceRefs": ["iau-constellations"] },
+        { "factTypeId": "fact-type:sky-position", "value": "Nordhimmel", "acceptedValues": ["nördlicher Himmel", "nördlich"], "method": "declination-band-v1", "sourceRefs": ["iau-constellations"] }
+      ],
+      "chart": { "stars": [{"x":16,"y":67,"size":4},{"x":34,"y":54,"size":3},{"x":52,"y":62,"size":3},{"x":72,"y":72,"size":2},{"x":55,"y":40,"size":4},{"x":64,"y":25,"size":3},{"x":80,"y":20,"size":2},{"x":70,"y":42,"size":2}], "lines": [[0,1],[1,2],[2,3],[2,4],[4,5],[5,6],[5,7],[7,4]] }
+    },
+    {
+      "id": "constellation:virgo", "type": "zodiac_constellation", "nameDe": "Jungfrau", "aliasesDe": ["Virgo"], "difficulty": 2, "sourceRefs": ["iau-constellations"],
+      "facts": [
+        { "factTypeId": "fact-type:iau-abbreviation", "value": "Vir", "acceptedValues": ["VIR"], "method": "iau-abbreviation-v1", "sourceRefs": ["iau-constellations"] },
+        { "factTypeId": "fact-type:best-visibility-month", "value": "Mai", "acceptedValues": ["5", "05"], "method": "ra-to-22h-central-europe-v1", "sourceRefs": ["iau-constellations"] },
+        { "factTypeId": "fact-type:sky-position", "value": "Äquatornah", "acceptedValues": ["Aequatornah", "Himmelsäquator", "am Himmelsäquator"], "method": "declination-band-v1", "sourceRefs": ["iau-constellations"] }
+      ],
+      "chart": { "stars": [{"x":18,"y":38,"size":2},{"x":38,"y":48,"size":3},{"x":58,"y":43,"size":4},{"x":78,"y":30,"size":2},{"x":62,"y":70,"size":5},{"x":42,"y":75,"size":2}], "lines": [[0,1],[1,2],[2,3],[2,4],[4,5],[5,1]] }
+    },
+    {
+      "id": "constellation:libra", "type": "zodiac_constellation", "nameDe": "Waage", "aliasesDe": ["Libra"], "difficulty": 2, "sourceRefs": ["iau-constellations"],
+      "facts": [
+        { "factTypeId": "fact-type:iau-abbreviation", "value": "Lib", "acceptedValues": ["LIB"], "method": "iau-abbreviation-v1", "sourceRefs": ["iau-constellations"] },
+        { "factTypeId": "fact-type:best-visibility-month", "value": "Juni", "acceptedValues": ["6", "06"], "method": "ra-to-22h-central-europe-v1", "sourceRefs": ["iau-constellations"] },
+        { "factTypeId": "fact-type:sky-position", "value": "Südhimmel", "acceptedValues": ["Suedhimmel", "südlicher Himmel", "südlich"], "method": "declination-band-v1", "sourceRefs": ["iau-constellations"] }
+      ],
+      "chart": { "stars": [{"x":28,"y":28,"size":3},{"x":68,"y":30,"size":3},{"x":58,"y":65,"size":4},{"x":34,"y":68,"size":2}], "lines": [[0,1],[1,2],[2,3],[3,0],[0,2]] }
+    },
+    {
+      "id": "constellation:scorpius", "type": "zodiac_constellation", "nameDe": "Skorpion", "aliasesDe": ["Scorpius", "Scorpio"], "difficulty": 1, "sourceRefs": ["iau-constellations"],
+      "facts": [
+        { "factTypeId": "fact-type:iau-abbreviation", "value": "Sco", "acceptedValues": ["SCO"], "method": "iau-abbreviation-v1", "sourceRefs": ["iau-constellations"] },
+        { "factTypeId": "fact-type:best-visibility-month", "value": "Juli", "acceptedValues": ["7", "07"], "method": "ra-to-22h-central-europe-v1", "sourceRefs": ["iau-constellations"] },
+        { "factTypeId": "fact-type:sky-position", "value": "Südhimmel", "acceptedValues": ["Suedhimmel", "südlicher Himmel", "südlich"], "method": "declination-band-v1", "sourceRefs": ["iau-constellations"] }
+      ],
+      "chart": { "stars": [{"x":15,"y":28,"size":2},{"x":28,"y":38,"size":3},{"x":40,"y":30,"size":2},{"x":42,"y":52,"size":5},{"x":50,"y":68,"size":3},{"x":65,"y":78,"size":3},{"x":80,"y":70,"size":2},{"x":86,"y":55,"size":2}], "lines": [[0,1],[1,2],[1,3],[3,4],[4,5],[5,6],[6,7]] }
+    },
+    {
+      "id": "constellation:sagittarius", "type": "zodiac_constellation", "nameDe": "Schütze", "aliasesDe": ["Schuetze", "Sagittarius"], "difficulty": 1, "sourceRefs": ["iau-constellations"],
+      "facts": [
+        { "factTypeId": "fact-type:iau-abbreviation", "value": "Sgr", "acceptedValues": ["SGR"], "method": "iau-abbreviation-v1", "sourceRefs": ["iau-constellations"] },
+        { "factTypeId": "fact-type:best-visibility-month", "value": "August", "acceptedValues": ["8", "08"], "method": "ra-to-22h-central-europe-v1", "sourceRefs": ["iau-constellations"] },
+        { "factTypeId": "fact-type:sky-position", "value": "Südhimmel", "acceptedValues": ["Suedhimmel", "südlicher Himmel", "südlich"], "method": "declination-band-v1", "sourceRefs": ["iau-constellations"] }
+      ],
+      "chart": { "stars": [{"x":25,"y":30,"size":3},{"x":48,"y":28,"size":3},{"x":60,"y":48,"size":4},{"x":45,"y":64,"size":3},{"x":25,"y":58,"size":2},{"x":72,"y":68,"size":2},{"x":82,"y":45,"size":2}], "lines": [[0,1],[1,2],[2,3],[3,4],[4,0],[1,3],[2,5],[2,6]] }
+    },
+    {
+      "id": "constellation:capricornus", "type": "zodiac_constellation", "nameDe": "Steinbock", "aliasesDe": ["Capricornus", "Capricorn"], "difficulty": 2, "sourceRefs": ["iau-constellations"],
+      "facts": [
+        { "factTypeId": "fact-type:iau-abbreviation", "value": "Cap", "acceptedValues": ["CAP"], "method": "iau-abbreviation-v1", "sourceRefs": ["iau-constellations"] },
+        { "factTypeId": "fact-type:best-visibility-month", "value": "September", "acceptedValues": ["9", "09"], "method": "ra-to-22h-central-europe-v1", "sourceRefs": ["iau-constellations"] },
+        { "factTypeId": "fact-type:sky-position", "value": "Südhimmel", "acceptedValues": ["Suedhimmel", "südlicher Himmel", "südlich"], "method": "declination-band-v1", "sourceRefs": ["iau-constellations"] }
+      ],
+      "chart": { "stars": [{"x":16,"y":35,"size":3},{"x":36,"y":48,"size":2},{"x":55,"y":74,"size":4},{"x":78,"y":42,"size":3},{"x":63,"y":30,"size":2}], "lines": [[0,1],[1,2],[2,3],[3,4],[4,0]] }
+    },
+    {
+      "id": "constellation:aquarius", "type": "zodiac_constellation", "nameDe": "Wassermann", "aliasesDe": ["Aquarius"], "difficulty": 3, "sourceRefs": ["iau-constellations"],
+      "facts": [
+        { "factTypeId": "fact-type:iau-abbreviation", "value": "Aqr", "acceptedValues": ["AQR"], "method": "iau-abbreviation-v1", "sourceRefs": ["iau-constellations"] },
+        { "factTypeId": "fact-type:best-visibility-month", "value": "Oktober", "acceptedValues": ["10"], "method": "ra-to-22h-central-europe-v1", "sourceRefs": ["iau-constellations"] },
+        { "factTypeId": "fact-type:sky-position", "value": "Äquatornah", "acceptedValues": ["Aequatornah", "Himmelsäquator", "am Himmelsäquator"], "method": "declination-band-v1", "sourceRefs": ["iau-constellations"] }
+      ],
+      "chart": { "stars": [{"x":18,"y":30,"size":2},{"x":34,"y":38,"size":3},{"x":46,"y":28,"size":2},{"x":55,"y":45,"size":4},{"x":70,"y":58,"size":3},{"x":82,"y":75,"size":2},{"x":45,"y":72,"size":2},{"x":28,"y":82,"size":2}], "lines": [[0,1],[1,2],[2,3],[3,4],[4,5],[3,6],[6,7]] }
+    },
+    {
+      "id": "constellation:pisces", "type": "zodiac_constellation", "nameDe": "Fische", "aliasesDe": ["Pisces"], "difficulty": 3, "sourceRefs": ["iau-constellations"],
+      "facts": [
+        { "factTypeId": "fact-type:iau-abbreviation", "value": "Psc", "acceptedValues": ["PSC"], "method": "iau-abbreviation-v1", "sourceRefs": ["iau-constellations"] },
+        { "factTypeId": "fact-type:best-visibility-month", "value": "November", "acceptedValues": ["11"], "method": "ra-to-22h-central-europe-v1", "sourceRefs": ["iau-constellations"] },
+        { "factTypeId": "fact-type:sky-position", "value": "Äquatornah", "acceptedValues": ["Aequatornah", "Himmelsäquator", "am Himmelsäquator"], "method": "declination-band-v1", "sourceRefs": ["iau-constellations"] }
+      ],
+      "chart": { "stars": [{"x":18,"y":30,"size":2},{"x":28,"y":22,"size":2},{"x":38,"y":32,"size":2},{"x":28,"y":42,"size":3},{"x":48,"y":55,"size":2},{"x":68,"y":68,"size":3},{"x":82,"y":58,"size":2},{"x":86,"y":72,"size":2},{"x":74,"y":80,"size":2}], "lines": [[0,1],[1,2],[2,3],[3,0],[3,4],[4,5],[5,6],[6,7],[7,8],[8,5]] }
+    }
+  ]
+}

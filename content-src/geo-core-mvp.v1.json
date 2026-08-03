@@ -1,8 +1,8 @@
 {
   "datasetId": "geo-core-mvp",
-  "version": "2026-08-03.phase7-ranked-physical1",
+  "version": "2026-08-04.phase8-astronomy1",
   "schemaVersion": 4,
-  "builtAt": "2026-07-30T00:52:13.953Z",
+  "builtAt": "2026-08-04T00:00:00.000Z",
   "localeCoverage": [
     "de"
   ],

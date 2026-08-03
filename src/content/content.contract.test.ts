@@ -11,10 +11,12 @@ import physicalPeakJson from "../geo/generated/physical-peak-v1.json";
 import physicalRiverJson from "../geo/generated/physical-river-v1.json";
 import physicalSeaJson from "../geo/generated/physical-sea-v1.json";
 import physicalSnapshotJson from "../../content-src/physical-core.v1.json";
+import astronomySnapshotJson from "../../content-src/astronomy-core.v1.json";
 import { createContentRepository } from "./repository";
 import {
   validateDatasetManifest,
   validateGeoDataset,
+  validateRawAstronomySnapshot,
   validateRawPhysicalSnapshot
 } from "./schema";
 
@@ -101,9 +103,37 @@ describe("Phase-2 content contract", () => {
     ).toEqual(expect.arrayContaining(["Kairo", "Cairo"]));
   });
 
-  it("contains one versioned flag and outline for every state", () => {
+  it("contains a complete relation-backed profile for every country", () => {
+    const parsed = validateGeoDataset(datasetJson);
+    if (!parsed.success) throw new Error(parsed.issues.join("\n"));
+    const repository = createContentRepository(parsed.data);
+    const countries = repository.getEntitiesByType("country");
+
+    expect(repository.getEntitiesByType("language")).toHaveLength(139);
+    expect(repository.getEntitiesByType("currency")).toHaveLength(146);
+    expect(qualityJson.checks.countryProfilesComplete).toBe(true);
+    expect(
+      countries.every(
+        (country) =>
+          repository.getRelatedEntities(country.id, "has_capital", "outgoing")
+            .length > 0 &&
+          repository.getRelatedEntities(
+            country.id,
+            "has_official_language",
+            "outgoing"
+          ).length > 0 &&
+          repository.getRelatedEntities(country.id, "uses_currency", "outgoing")
+            .length > 0
+      )
+    ).toBe(true);
+    expect(
+      repository.getAcceptedNames("currency:eur", "de").map((name) => name.name)
+    ).toEqual(expect.arrayContaining(["Euro", "EUR"]));
+  });
+
+  it("contains every versioned country visual and constellation chart", () => {
     expect(visualAssetIndexJson.datasetVersion).toBe(datasetJson.version);
-    expect(visualAssetIndexJson.assets).toHaveLength(390);
+    expect(visualAssetIndexJson.assets).toHaveLength(402);
     expect(
       visualAssetIndexJson.assets.filter((asset) => asset.kind === "flag")
     ).toHaveLength(195);
@@ -113,8 +143,13 @@ describe("Phase-2 content contract", () => {
       )
     ).toHaveLength(195);
     expect(
+      visualAssetIndexJson.assets.filter(
+        (asset) => asset.kind === "constellation_chart"
+      )
+    ).toHaveLength(12);
+    expect(
       new Set(visualAssetIndexJson.assets.map((asset) => asset.key)).size
-    ).toBe(390);
+    ).toBe(402);
 
     for (const asset of visualAssetIndexJson.assets) {
       const svg = readFileSync(
@@ -125,6 +160,46 @@ describe("Phase-2 content contract", () => {
       expect(createHash("sha256").update(svg).digest("hex")).toBe(asset.sha256);
       expect(Buffer.byteLength(svg)).toBe(asset.bytes);
     }
+  });
+
+  it("ships a sourced astronomy core with stable facts and local charts", () => {
+    expect(validateRawAstronomySnapshot(astronomySnapshotJson)).toMatchObject({
+      success: true
+    });
+    const parsed = validateGeoDataset(datasetJson);
+    if (!parsed.success) throw new Error(parsed.issues.join("\n"));
+    const repository = createContentRepository(parsed.data);
+
+    expect(qualityJson.checks).toMatchObject({
+      astronomyEntityCounts: {
+        planet: 8,
+        moon: 20,
+        dwarf_planet: 5,
+        zodiac_constellation: 12
+      },
+      constellationChartCount: 12
+    });
+    expect(
+      repository.getEntitiesByType("moon").every(
+        (moon) =>
+          repository.getRelatedEntities(moon.id, "orbits", "outgoing")
+            .length === 1
+      )
+    ).toBe(true);
+    expect(
+      repository.getEntitiesByType("zodiac_constellation").every(
+        (constellation) =>
+          repository.getFact(
+            constellation.id,
+            "fact-type:iau-abbreviation"
+          ) &&
+          repository.getFact(
+            constellation.id,
+            "fact-type:best-visibility-month"
+          ) &&
+          repository.getFact(constellation.id, "fact-type:sky-position")
+      )
+    ).toBe(true);
   });
 
   it("links every curated physical entity to a versioned geometry", () => {
@@ -186,11 +261,11 @@ describe("Phase-2 content contract", () => {
     const repository = createContentRepository(parsed.data);
     const questions = repository.getEntitiesByType("knowledge_question");
 
-    expect(parsed.data.facts).toHaveLength(388);
+    expect(parsed.data.facts).toHaveLength(498);
     expect(parsed.data.compiledKnowledgeQuestions).toHaveLength(20);
     expect(questions).toHaveLength(20);
     expect(qualityJson.checks).toMatchObject({
-      knowledgeFactCount: 388,
+      knowledgeFactCount: 498,
       knowledgeTemplateCount: 20,
       compiledKnowledgeQuestionCount: 20,
       knowledgeQuestionsUniqueAndSourced: true,

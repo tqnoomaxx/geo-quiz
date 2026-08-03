@@ -25,6 +25,17 @@ export function VisualAssetGraphic({
     );
   }
 
+  if (asset.kind === "constellation_chart") {
+    return (
+      <img
+        className={`visual-asset visual-asset--constellation${compact ? " is-compact" : ""}`}
+        src={source}
+        alt={accessibleLabel}
+        draggable={false}
+      />
+    );
+  }
+
   const style = {
     "--visual-mask": `url("${source}")`
   } as CSSProperties;

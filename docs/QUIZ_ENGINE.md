@@ -37,6 +37,9 @@ kompiliert und erscheinen zur Laufzeit ebenfalls als normale
 | `peak` | `located_in`, `part_of_range` |
 | `sea` / `ocean` | `borders`, `part_of` |
 | `admin_region` | `part_of`, `has_capital` |
+| `planet` / `dwarf_planet` | Position, Klasse/Region und Merkmal als Fakten |
+| `moon` | `orbits` plus Zentralobjekt und Merkmal |
+| `zodiac_constellation` | IAU-Kürzel, Sichtbarkeitsmonat und Himmelslage |
 
 Weitere Inhalte werden als Entitäten, Relationen und Fakten ergänzt, nicht als
 neue Engine.
@@ -57,6 +60,8 @@ neue Engine.
 - `map_point`
 - `map_area`
 - `map_line`
+- `country_profile_input`
+- `fact_profile_input`
 - `drag_match`
 - `sort_order`
 
@@ -328,6 +333,27 @@ eine eindeutige Frageform verlangt.
 - Keine doppeldeutigen oder identischen sichtbaren Namen.
 - Die Position der richtigen Antwort ist per Seed reproduzierbar gemischt.
 
+### Länderprofil
+
+- `country_profile_input` übergibt drei benannte Textwerte für Hauptstadt,
+  Amtssprache und Währung an `country-profile-v1`.
+- Der Generator kompiliert pro Feld alle gültigen Relationsziele und deren
+  akzeptierte Namen. Eine gültige Alternative genügt; die Lösung zeigt alle.
+- Nur drei richtige Felder ergeben den einen Fragepunkt. Ein gemischtes
+  Ergebnis wird als `partial` ohne Teilpunkt gespeichert und feldgenau
+  erklärt.
+
+### Generisches Faktenprofil
+
+- `fact_profile_input` übergibt eine durch die Definition benannte Menge von
+  Textwerten an `fact-profile-v1`.
+- Jede Felddefinition bezieht ihre Lösung entweder aus dem Namen der
+  Subjektentität oder aus genau einem registrierten Faktentyp. Akzeptierte
+  Schreibweisen bleiben Content, nicht UI-Sonderlogik.
+- Der Generator schreibt nur die gewählten Felder und ihre Lösungen in den
+  serialisierbaren Fragensnapshot. Alle richtigen Felder ergeben einen Punkt;
+  gemischte Antworten werden als `partial` feldgenau erklärt.
+
 ## Kombinationen statt Sonderfälle
 
 | Thema | Frage | Antwort | Ergebnis |
@@ -443,6 +469,34 @@ und Aliasse.
 Die beiden Rangquizze sind globale, eigenständige Themen und vorerst keine
 Pools des Weltmixes. Die bestehenden Kartenquizze für Flussverläufe, Gebirge
 und Gipfel bleiben unverändert.
+
+### Im Phase-7-Länderprofil-Slice zusätzlich ausführbar
+
+| Thema | Richtung im Setup | Prompt | Antwort/Grader |
+|---|---|---|---|
+| Länderprofil | `profile` | Ländername und lokale Flagge | drei Texteingaben / `country-profile-v1` |
+
+Die drei Felder werden aus `has_capital`, `has_official_language` und
+`uses_currency` kompiliert. Der Kontinent wird wegen seines geringen
+Schwierigkeitsgrads nicht abgefragt. Das Thema verwendet weiterhin dieselben
+Welt-/Kontinentscopes, Rundengrößen und zentralen Profile Lernen, Üben und
+Prüfung wie alle anderen Definitionen.
+
+### Im Phase-8-Astronomie-Slice zusätzlich ausführbar
+
+| Thema | Richtung im Setup | Prompt | Antwort/Grader |
+|---|---|---|---|
+| Planeten | `facts_to_name` | Position, Typ und Merkmal | Name / `text-v1` |
+| Monde | `facts_to_name` | Zentralobjekt und Merkmal | Name / `text-v1` |
+| Zwergplaneten | `facts_to_name` | Sonnensystemregion und Merkmal | Name / `text-v1` |
+| Sternzeichen | `profile` | lokale vereinfachte Sternbildkarte | Name plus gewählte Fakten / `fact-profile-v1` |
+
+Der Sternzeichenname ist immer Teil des Profils. `iau-abbreviation`,
+`best-visibility` und `sky-position` werden im Setup unabhängig gewählt und
+in Quiz-ID, Skill-Key, Snapshot, Lösung und Review-Definition übernommen.
+Astronomiethemen besitzen keinen geographischen Gebietsschalter; ihre
+Kandidatenmenge ist der versionierte Sonnensystem- beziehungsweise
+Tierkreis-Snapshot.
 
 ## Deterministische Fragengenerierung
 

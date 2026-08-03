@@ -4,6 +4,15 @@ import type {
 } from "../../engine/quiz/question";
 
 export function visualAssetUrl(asset: VisualAssetReference) {
+  if (asset.kind === "constellation_chart") {
+    const slug = asset.entityId.startsWith("constellation:")
+      ? asset.entityId.slice("constellation:".length)
+      : "";
+    if (!/^[a-z-]+$/.test(slug)) {
+      throw new Error(`${asset.key}: Sternbildasset besitzt keine stabile ID.`);
+    }
+    return `${import.meta.env.BASE_URL}assets/visual/v1/constellations/${slug}.svg`;
+  }
   const iso2 = asset.entityId.startsWith("country:")
     ? asset.entityId.slice("country:".length)
     : "";
@@ -21,6 +30,14 @@ export async function preloadQuestionVisualAssets(
   for (const question of questions) {
     if (question.promptPayload.kind === "visual_asset") {
       byKey.set(question.promptPayload.asset.key, question.promptPayload.asset);
+    }
+    if (question.answerSpec.kind === "country_profile_input") {
+      const asset: VisualAssetReference = {
+        kind: "flag",
+        key: `visual:flag:${question.subjectId}`,
+        entityId: question.subjectId
+      };
+      byKey.set(asset.key, asset);
     }
     for (const option of question.answerSpec.options ?? []) {
       if (option.visualAsset) {

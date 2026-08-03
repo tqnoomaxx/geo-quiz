@@ -9,6 +9,14 @@ import type {
   VisualAssetKind,
   VisualAssetReference
 } from "./question";
+import type {
+  CountryProfileFieldConfig,
+  CountryProfileFieldId
+} from "../graders/countryProfile";
+import type {
+  FactProfileFieldConfig,
+  FactProfileFieldDefinition
+} from "../graders/factProfile";
 
 const germanNumberFormatter = new Intl.NumberFormat("de-DE", {
   maximumFractionDigits: 2
@@ -136,9 +144,13 @@ function createPromptPayload(
 
   if (definition.prompt.kind === "visual_asset") {
     const assetKind = definition.prompt.field;
-    if (assetKind !== "flag" && assetKind !== "country_outline") {
+    if (
+      assetKind !== "flag" &&
+      assetKind !== "country_outline" &&
+      assetKind !== "constellation_chart"
+    ) {
       throw new Error(
-        `${definition.id}: visual_asset benötigt field=flag oder field=country_outline.`
+        `${definition.id}: visual_asset besitzt eine unbekannte Asset-Art.`
       );
     }
 
@@ -203,9 +215,15 @@ function visualAssetReference(
   entity: ContentEntity,
   kind: VisualAssetKind
 ): VisualAssetReference {
-  if (entity.type !== "country") {
+  const validCountryAsset =
+    entity.type === "country" &&
+    (kind === "flag" || kind === "country_outline");
+  const validConstellationAsset =
+    entity.type === "zodiac_constellation" &&
+    kind === "constellation_chart";
+  if (!validCountryAsset && !validConstellationAsset) {
     throw new Error(
-      `${entity.id}: ${kind} ist in Phase 4 nur für Länder registriert.`
+      `${entity.id}: ${kind} ist für diesen Entitätstyp nicht registriert.`
     );
   }
 
@@ -216,10 +234,138 @@ function visualAssetReference(
   };
 }
 
+const COUNTRY_PROFILE_RELATIONS: Array<{
+  id: CountryProfileFieldId;
+  label: string;
+  relation: string;
+  targetType?: string;
+}> = [
+  { id: "capital", label: "Hauptstadt", relation: "has_capital" },
+  {
+    id: "language",
+    label: "Amtssprache",
+    relation: "has_official_language"
+  },
+  { id: "currency", label: "Währung", relation: "uses_currency" }
+];
+
+function createCountryProfileConfig(
+  repository: ContentRepository,
+  country: ContentEntity,
+  locale: string
+) {
+  if (country.type !== "country") {
+    throw new Error(`${country.id}: Länderprofile benötigen ein Land.`);
+  }
+
+  const profileFields: CountryProfileFieldConfig[] =
+    COUNTRY_PROFILE_RELATIONS.map((field) => {
+      const expectedEntities = repository
+        .getRelatedEntities(country.id, field.relation, "outgoing")
+        .filter((entity) => !field.targetType || entity.type === field.targetType)
+        .sort((left, right) => left.id.localeCompare(right.id));
+      if (expectedEntities.length === 0) {
+        throw new Error(
+          `${country.id}: Länderprofil besitzt keinen Wert für ${field.label}.`
+        );
+      }
+      const expectedNames = expectedEntities.flatMap((entity) =>
+        repository
+          .getAcceptedNames(entity.id, locale)
+          .map((name) => ({ id: name.id, value: name.name }))
+      );
+      const displayNames = expectedEntities
+        .map(
+          (entity) => repository.getDisplayName(entity.id, locale) ?? entity.id
+        )
+        .sort((left, right) => left.localeCompare(right, "de"));
+      return {
+        id: field.id,
+        label: field.label,
+        expectedEntityIds: expectedEntities.map((entity) => entity.id),
+        expectedNames,
+        expectedLabel: joinAlternativeLabels(displayNames)
+      };
+    });
+
+  return {
+    profileFields,
+    expectedEntityIds: profileFields.flatMap(
+      (field) => field.expectedEntityIds
+    ),
+    expectedLabel: profileFields
+      .map((field) => `${field.label}: ${field.expectedLabel}`)
+      .join(" · ")
+  };
+}
+
+function createFactProfileConfig(
+  repository: ContentRepository,
+  entity: ContentEntity,
+  locale: string,
+  rawDefinitions: unknown
+) {
+  if (!Array.isArray(rawDefinitions) || rawDefinitions.length === 0) {
+    throw new Error(`${entity.id}: Faktenprofil benötigt Felddefinitionen.`);
+  }
+  const definitions = rawDefinitions as FactProfileFieldDefinition[];
+  const profileFields: FactProfileFieldConfig[] = definitions.map(
+    (definition) => {
+      if (definition.source.kind === "entity_name") {
+        const expectedNames = repository
+          .getAcceptedNames(entity.id, locale)
+          .map((name) => ({ id: name.id, value: name.name }));
+        const expectedLabel =
+          repository.getDisplayName(entity.id, locale) ?? entity.id;
+        if (expectedNames.length === 0) {
+          throw new Error(`${entity.id}: Faktenprofil besitzt keinen Namen.`);
+        }
+        return {
+          id: definition.id,
+          label: definition.label,
+          placeholder: definition.placeholder,
+          expectedNames,
+          expectedLabel
+        };
+      }
+
+      const fact = repository.getFact(entity.id, definition.source.factTypeId);
+      if (!fact) {
+        throw new Error(
+          `${entity.id}: Faktenprofil besitzt ${definition.source.factTypeId} nicht.`
+        );
+      }
+      const value = String(fact.value);
+      return {
+        id: definition.id,
+        label: definition.label,
+        placeholder: definition.placeholder,
+        expectedNames: [
+          { id: `${fact.id}:canonical`, value },
+          ...(fact.acceptedValues ?? []).map((accepted, index) => ({
+            id: `${fact.id}:accepted-${index + 1}`,
+            value: accepted
+          }))
+        ],
+        expectedLabel: value
+      };
+    }
+  );
+
+  return {
+    profileFields,
+    expectedLabel: profileFields
+      .map((field) => `${field.label}: ${field.expectedLabel}`)
+      .join(" · ")
+  };
+}
+
 function createAnswerConfig(
   repository: ContentRepository,
   entities: readonly ContentEntity[],
-  definition: QuizDefinition
+  definition: QuizDefinition,
+  countryProfile?: ReturnType<typeof createCountryProfileConfig>,
+  factProfile?: ReturnType<typeof createFactProfileConfig>
 ) {
   const baseConfig = definition.answer.graderConfig ?? {};
   const entity = entities[0];
@@ -282,6 +428,20 @@ function createAnswerConfig(
 
   if (definition.answer.kind === "single_choice") {
     return baseConfig;
+  }
+
+  if (definition.answer.kind === "country_profile_input" && countryProfile) {
+    return {
+      ...baseConfig,
+      profileFields: countryProfile.profileFields
+    };
+  }
+
+  if (definition.answer.kind === "fact_profile_input" && factProfile) {
+    return {
+      ...baseConfig,
+      profileFields: factProfile.profileFields
+    };
   }
 
   throw new Error(
@@ -353,6 +513,20 @@ function promptCopy(
   answerRelation?: string,
   answerCount = 1
 ) {
+  if (answerKind === "country_profile_input") {
+    return {
+      promptText: `Was weißt du über ${label}?`,
+      instruction: "Nenne für jedes Feld eine passende Antwort."
+    };
+  }
+
+  if (answerKind === "fact_profile_input") {
+    return {
+      promptText: "Welches Sternzeichen ist das?",
+      instruction: "Erkenne das Sternbild und ergänze die gewählten Angaben."
+    };
+  }
+
   if (answerKind === "map_point") {
     return {
       promptText: `Wo liegt ${label}?`,
@@ -402,6 +576,8 @@ function promptCopy(
       promptText:
         promptField === "country_outline"
           ? "Welches Land zeigt dieser Umriss?"
+          : promptField === "constellation_chart"
+            ? "Welches Sternzeichen ist das?"
           : "Zu welchem Land gehört diese Flagge?",
       instruction:
         answerKind === "single_choice"
@@ -427,7 +603,13 @@ function promptCopy(
           ? "Welches Flusssystem passt zu diesen Angaben?"
           : subjectType === "ranked_peak"
             ? "Welcher Berg passt zu diesen Angaben?"
-            : "Welche Entität passt zu diesen Fakten?",
+            : subjectType === "planet"
+              ? "Welcher Planet passt zu diesen Angaben?"
+              : subjectType === "moon"
+                ? "Welcher Mond passt zu diesen Angaben?"
+                : subjectType === "dwarf_planet"
+                  ? "Welcher Zwergplanet passt zu diesen Angaben?"
+                  : "Welche Entität passt zu diesen Fakten?",
       instruction: "Gib den passenden Namen ein."
     };
   }
@@ -589,6 +771,23 @@ export function generateQuestions(
       promptEntity,
       definition
     );
+    const countryProfile =
+      definition.answer.kind === "country_profile_input"
+        ? createCountryProfileConfig(
+            repository,
+            subject,
+            definition.prompt.locale
+          )
+        : undefined;
+    const factProfile =
+      definition.answer.kind === "fact_profile_input"
+        ? createFactProfileConfig(
+            repository,
+            subject,
+            definition.prompt.locale,
+            definition.answer.graderConfig?.fieldDefinitions
+          )
+        : undefined;
     const answerLabels = answerEntities
       .map(
         (entity) =>
@@ -597,13 +796,16 @@ export function generateQuestions(
       )
       .sort((left, right) => left.localeCompare(right, "de"));
     const answerLabel = joinAlternativeLabels(answerLabels);
-    const expectedLabel = feedbackLabel(
-      definition.answer.entity,
-      answerLabel,
-      promptPayload.label,
-      answerEntities.length,
-      promptPayload
-    );
+    const expectedLabel =
+      countryProfile?.expectedLabel ??
+      factProfile?.expectedLabel ??
+      feedbackLabel(
+        definition.answer.entity,
+        answerLabel,
+        promptPayload.label,
+        answerEntities.length,
+        promptPayload
+      );
     const copy = promptCopy(
       promptPayload.label,
       definition.prompt.kind,
@@ -619,7 +821,9 @@ export function generateQuestions(
     const answerConfig = createAnswerConfig(
       repository,
       answerEntities,
-      definition
+      definition,
+      countryProfile,
+      factProfile
     );
     if (definition.answer.kind === "single_choice" && answerEntities.length > 1) {
       throw new Error(
@@ -648,7 +852,9 @@ export function generateQuestions(
       instruction: copy.instruction,
       answerSpec: {
         kind: definition.answer.kind,
-        expectedEntityIds: answerEntities.map((entity) => entity.id),
+        expectedEntityIds:
+          countryProfile?.expectedEntityIds ??
+          answerEntities.map((entity) => entity.id),
         graderId: definition.answer.grader,
         graderConfig: answerConfig,
         options: choices

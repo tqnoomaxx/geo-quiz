@@ -197,10 +197,10 @@ npm run content:refresh   # Netzwerk: Quellen neu abrufen
 npm run content:build     # offline: lokalen Snapshot validieren und paketieren
 ```
 
-`scripts/refresh-mvp-content.ts` kombiniert:
+`scripts/refresh-mvp-content.ts` und der Offline-Build kombinieren:
 
 - `world-countries@5.1.0` unter ODbL 1.0 für ISO-Codes, Flächen,
-  Regionsgrundlage, Aliasse und grobe Mittelpunkte;
+  Regionsgrundlage, Aliasse, grobe Mittelpunkte, Amtssprachen und Währungen;
 - einen am 2026-07-30 abgerufenen Wikidata-CC0-Snapshot für aktuelle deutsche
   Länder-/Hauptstadtnamen, Hauptstadtbeziehungen und Koordinaten;
 - kuratierte Rollen für geteilte oder beanspruchte Hauptstadtsitze sowie
@@ -214,10 +214,21 @@ für normale Builds. `scripts/build-content.ts` erzeugt:
 - `src/content/generated/quality-report.json`;
 - `src/geo/generated/mvp-map-additions-v1.json`.
 
-Der Stand `2026-07-30.phase2-mvp1` enthält 195 Länder, sechs
-Kontinententitäten, 202 Hauptstadtsitze und insgesamt 809 Relationen. Die Karte
+Der Stand `2026-08-04.phase8-astronomy1` enthält 195 Länder, sechs
+Kontinententitäten, 202 Hauptstadtsitze, 139 Sprachen und 146 Währungen. Alle
+195 Länder besitzen ein vollständiges Profil. Die in `world-countries@5.1.0`
+fehlende Währung Mikronesiens wird als USD-Korrektur mit dem Banking Board der
+Föderierten Staaten von Mikronesien als Primärquelle manifestiert. Die Karte
 verwendet Natural Earth 1:50m; nur das dort fehlende Tuvalu-Feature wird aus
 1:10m ergänzt.
+
+Der Offline-Eingang `content-src/astronomy-core.v1.json` ergänzt acht
+Planeten, zwanzig kuratierte bekannte Monde, fünf Zwergplaneten und zwölf
+Tierkreis-Sternbilder. NASA-Seiten belegen Sonnensystemfakten; die offizielle
+IAU-Liste belegt Namen und Kürzel. Der Build erzeugt daraus 45 Entitäten, 110
+Fakten, zwanzig `orbits`-Relationen und genau zwölf vereinfachte lokale
+Sternbildkarten. Die Strichfiguren sind eigene Lernvisualisierungen und werden
+nicht als offizielle IAU-Figuren bezeichnet.
 
 Contract-Tests prüfen Schema 2, eindeutige IDs, aufgelöste Referenzen,
 Koordinaten, Scopezahlen, Artefaktgrößen und SHA-256-Prüfsummen gegen das
@@ -245,9 +256,9 @@ für die konkrete Veröffentlichungsform abschließend geprüft werden. Siehe
 - `visual-assets-index-v1.json` führt Asset-Key, Entität, Art, Quelle, Pfad,
   Bytes und SHA-256;
 - `public/assets/visual/v1/flags` und `outlines` enthalten jeweils 195 lokale
-  Einzeldateien.
+  Einzeldateien; `constellations` enthält zwölf generierte Lernkarten.
 
-Der Content-Contract liest alle 390 Dateien, prüft SVG-Format, Anzahl,
+Der Content-Contract liest alle 402 Dateien, prüft SVG-Format, Anzahl,
 eindeutige Schlüssel, Bytes und Prüfsumme. Das Dataset-Manifest nennt
 `flag-icons 7.5.0 (MIT)` und Natural Earth. Zur Laufzeit wird kein CDN und keine
 Live-API verwendet. Die App lädt vor einer visuellen Runde nur die im konkreten

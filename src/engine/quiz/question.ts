@@ -2,7 +2,10 @@ import type { Coordinates } from "../graders/geo";
 import type { AnswerKind, PromptKind } from "./definition";
 import type { DatasetSource, KnowledgeEvidence } from "../../content/schema";
 
-export type VisualAssetKind = "flag" | "country_outline";
+export type VisualAssetKind =
+  | "flag"
+  | "country_outline"
+  | "constellation_chart";
 
 export interface VisualAssetReference {
   kind: VisualAssetKind;

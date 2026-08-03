@@ -1,6 +1,6 @@
 # Visueller Review – Phase 0 und Phase 2
 
-Stand: 2026-07-30
+Stand: 2026-08-04
 
 Die App wurde in Desktop Chromium (1440 × 1000) und einem Pixel-7-Viewport
 (390 × 844) gerendert. Kein Browser-Connector war verfügbar; die Prüfung lief
@@ -106,3 +106,42 @@ Die Produktionsansicht wurde bei 1440 × 1000 und in einem
   (C-057); lange Namen werden im schmalen Fragenrail sicher getrennt (C-058).
 - **Noch offen:** echte Touchgeräte-Fairness naher Flussverläufe,
   Screenreader-Grundfluss und fachliche Vollsichtung der Lernflächen.
+
+## Phase-8-Astronomie-Abgleich
+
+Die Produktionsansicht wurde ohne Browser-Connector lokal mit Playwright bei
+nativen Viewports von 1440 × 1000 und 393 × 852 gerendert. Die Screenshots sind
+Full-Page-Aufnahmen; der Browser wurde dafür weder skaliert noch nachträglich
+zugeschnitten.
+
+| Screen | Konzept | Desktop | Mobil |
+|---|---|---|---|
+| Astronomie-Setup | [Konzept](concepts/geoapp-astronomy-setup-desktop.png) | [Render](review/phase8-astronomy-setup-desktop.png) | [Render](review/phase8-astronomy-setup-mobile.png) |
+| Sternzeichenfrage | [Konzept](concepts/geoapp-zodiac-quiz-desktop.png) | [Render](review/phase8-zodiac-quiz-desktop.png) | [Render](review/phase8-zodiac-quiz-mobile.png) |
+
+Der Kernfluss wurde auf beiden Viewports vollständig geprüft: Sternzeichen
+wählen, drei optionale Felder zuschalten, Sechserrunde starten, vier Angaben
+korrekt beantworten, zur nächsten Frage wechseln und dort die komplette
+Lösung anzeigen. Die drei übrigen Astronomie-Challenges wurden ebenfalls aus
+dem echten Setup gestartet und auf Faktenprompt plus Lösungsanzeige geprüft.
+
+### Phase-8-Fidelity-Ledger
+
+- **Beibehalten:** zweigeteiltes Desktop-Setup, klare Lernprofile, kompakte
+  Rundengrößen, zeilenweise Feldwahl und dunkelblaue Sternbildfläche.
+- **Beibehalten:** Quizaufteilung aus großer visueller Frage links und ruhigem
+  Formular rechts; auf Mobile folgt das Formular direkt unter dem Motiv.
+- **Code-native umgesetzt:** Navigation, Icons, Checkboxen, Formularzustände,
+  Fokusrahmen und alle zwölf deterministisch gebauten SVG-Lernkarten.
+- **Bewusst abweichend:** Der echte Challenge-Katalog bleibt vollständig und
+  kombiniert Flüsse, Seen oder Gebirge nicht zu unpräzisen Sammelzeilen.
+- **Bewusst abweichend:** Das Länderprofil im Konzept nennt noch den
+  Kontinent; die Implementierung lässt ihn gemäß Produktentscheidung weg.
+- **Bewusst abweichend:** Die Lernkarten zeigen Raster und Nordhinweis, aber
+  keine scheinpräzisen Stunden-/Gradwerte. Die vereinfachten Linien werden
+  nicht als offizielle IAU-Strichfiguren ausgegeben.
+- **Copy-Diff:** „Beste Sichtbarkeit“ nennt in der Implementierung explizit
+  die Methode „gegen 22 Uhr in Mitteleuropa“; Platzhalter und Vorschau nutzen
+  April statt des rein illustrativen Konzeptwerts März.
+- **Responsive Ergebnis:** Kein seitlicher Überlauf bei 393 px; Motiv,
+  Eingaben, Lösung und Metazeile bleiben ohne verdeckte Controls bedienbar.

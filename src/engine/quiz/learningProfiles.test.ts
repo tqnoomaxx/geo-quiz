@@ -83,15 +83,22 @@ describe("Lernmodus-Regeln", () => {
       }))
     );
 
-    expect(combinations).toHaveLength(27);
+    expect(combinations).toHaveLength(32);
 
     for (const combination of combinations) {
       for (const profile of LEARNING_PROFILES) {
+        const shortTopicCount =
+          combination.topic === "planets"
+            ? 8
+            : combination.topic === "dwarf-planets"
+              ? 5
+              : undefined;
         const definition = createQuizRoundDefinition({
           ...DEFAULT_MVP_SETUP,
           ...combination,
           profile: profile.id,
           regionId: "world",
+          questionCount: shortTopicCount ? "all" : 10,
           timerSeconds: 15,
           seed: `profile-contract:${combination.topic}:${combination.direction}:${profile.id}`
         });
@@ -120,7 +127,7 @@ describe("Lernmodus-Regeln", () => {
             repository,
             definition.rules.seed
           )
-        ).toHaveLength(10);
+        ).toHaveLength(shortTopicCount ?? 10);
         if (isMixedQuizDefinition(definition)) {
           expect(definition.profile).toBe(profile.id);
         }

@@ -27,6 +27,8 @@ export type AnswerKind =
   | "map_point"
   | "map_area"
   | "map_line"
+  | "country_profile_input"
+  | "fact_profile_input"
   | "drag_match"
   | "sort_order";
 
@@ -422,6 +424,8 @@ const ANSWER_KINDS = new Set<AnswerKind>([
   "map_point",
   "map_area",
   "map_line",
+  "country_profile_input",
+  "fact_profile_input",
   "drag_match",
   "sort_order"
 ]);
@@ -430,7 +434,9 @@ const REGISTERED_GRADERS = new Set([
   "distance-v1",
   "area-v1",
   "line-v1",
-  "single-choice-v1"
+  "single-choice-v1",
+  "country-profile-v1",
+  "fact-profile-v1"
 ]);
 
 function isRecord(value: unknown): value is Record<string, unknown> {
@@ -601,12 +607,13 @@ export function validateQuizDefinition(
     if (
       value.prompt.kind === "visual_asset" &&
       value.prompt.field !== "flag" &&
-      value.prompt.field !== "country_outline"
+      value.prompt.field !== "country_outline" &&
+      value.prompt.field !== "constellation_chart"
     ) {
       issues.push({
         path: "prompt.field",
         code: "unknown_visual_asset",
-        message: "visual_asset benötigt flag oder country_outline."
+        message: "visual_asset benötigt flag, country_outline oder constellation_chart."
       });
     }
     if (
@@ -681,6 +688,66 @@ export function validateQuizDefinition(
         code: "incompatible_grader",
         message: "map_line benötigt line-v1."
       });
+    }
+    if (
+      value.answer.kind === "country_profile_input" &&
+      value.answer.grader !== "country-profile-v1"
+    ) {
+      issues.push({
+        path: "answer.grader",
+        code: "incompatible_grader",
+        message: "country_profile_input benötigt country-profile-v1."
+      });
+    }
+    if (
+      value.answer.kind === "fact_profile_input" &&
+      value.answer.grader !== "fact-profile-v1"
+    ) {
+      issues.push({
+        path: "answer.grader",
+        code: "incompatible_grader",
+        message: "fact_profile_input benötigt fact-profile-v1."
+      });
+    }
+    if (value.answer.kind === "fact_profile_input") {
+      const definitions = isRecord(value.answer.graderConfig)
+        ? value.answer.graderConfig.fieldDefinitions
+        : undefined;
+      if (
+        !Array.isArray(definitions) ||
+        definitions.length === 0 ||
+        definitions.some((definition) => {
+          if (
+            !isRecord(definition) ||
+            typeof definition.id !== "string" ||
+            typeof definition.label !== "string" ||
+            typeof definition.placeholder !== "string" ||
+            !isRecord(definition.source)
+          ) {
+            return true;
+          }
+          const source = definition.source;
+          if (source.kind === "entity_name") return false;
+          return (
+            source.kind !== "fact" ||
+            typeof source.factTypeId !== "string" ||
+            !dataset.factDefinitions.some(
+              (fact) => fact.id === source.factTypeId
+            )
+          );
+        }) ||
+        new Set(
+          definitions
+            .filter(isRecord)
+            .map((definition) => String(definition.id))
+        ).size !== definitions.length
+      ) {
+        issues.push({
+          path: "answer.graderConfig.fieldDefinitions",
+          code: "invalid_profile_fields",
+          message: "fact_profile_input benötigt eindeutige, gültige Felddefinitionen."
+        });
+      }
     }
     if (
       value.answer.kind === "single_choice" &&
