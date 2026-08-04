@@ -82,8 +82,9 @@ darf länger dauern, ist aber nicht die Standarderfahrung.
 ### Weltmix
 
 Eine Runde wechselt kontrolliert zwischen Ländern, Hauptstädten, Flaggen,
-Flüssen, Gebirgen, Städten und Wissenspuzzles. Gewichte, Mindestanteile und Seed
-halten sie abwechslungsreich und reproduzierbar.
+Länderformen, den fünf Naturthemen und Wissenspuzzles. Große Städte und die
+globalen Top-100-Ranglisten bleiben eigenständige Challenges. Gewichte,
+Mindestanteile und Seed halten den Mix abwechslungsreich und reproduzierbar.
 
 ### Wissenspuzzle
 

@@ -207,6 +207,25 @@ async function clickMapAt(
       projected.y <= projected.box.height - 8;
     if (isInside) break;
 
+    const zoomOut = page.getByRole("button", { name: "Zoom out" });
+    const minimumZoom =
+      (await mapContainer.getAttribute("data-region-id")) === "world"
+        ? -0.6
+        : 0.5;
+    if (projected.zoom > minimumZoom + 0.05 && (await zoomOut.isEnabled())) {
+      const previousZoom = projected.zoom;
+      await zoomOut.click();
+      await expect
+        .poll(() =>
+          mapContainer
+            .getAttribute("data-map-zoom")
+            .then((value) => Number(value))
+        )
+        .toBeLessThan(previousZoom);
+      projected = await projectedPosition();
+      continue;
+    }
+
     const previousCenter = [
       await mapContainer.getAttribute("data-map-center-longitude"),
       await mapContainer.getAttribute("data-map-center-latitude")
@@ -463,6 +482,36 @@ function collectConsoleErrors(page: Page) {
   });
   return errors;
 }
+
+test("shows only meaningful region and round-length choices", async ({
+  page
+}, testInfo) => {
+  test.skip(testInfo.project.name !== "desktop-chromium");
+  const consoleErrors = collectConsoleErrors(page);
+  await page.goto("./");
+
+  await expect(page.locator("[data-question-count]")).toHaveCount(4);
+  await expect(page.locator('[data-question-count="6"]')).toBeVisible();
+  await expect(page.locator('[data-question-count="10"]')).toBeVisible();
+  await expect(page.locator('[data-question-count="20"]')).toBeVisible();
+  await expect(page.locator('[data-question-count="all"]')).toBeVisible();
+
+  await page.locator('[data-topic-id="longest-rivers"]').click();
+  await expect(page.getByText("Welches Gebiet?", { exact: true })).toHaveCount(0);
+  await expect(page.locator("[data-question-count]")).toHaveCount(4);
+
+  await page.locator('[data-topic-id="planets"]').click();
+  await expect(page.getByText("Welches Gebiet?", { exact: true })).toHaveCount(0);
+  await expect(page.locator("[data-question-count]")).toHaveCount(2);
+  await expect(page.locator('[data-question-count="6"]')).toBeVisible();
+  await expect(page.locator('[data-question-count="all"]')).toBeVisible();
+
+  await page.locator('[data-topic-id="world-mix"]').click();
+  await expect(page.locator("[data-question-count]")).toHaveCount(2);
+  await expect(page.locator('[data-question-count="10"]')).toBeVisible();
+  await expect(page.locator('[data-question-count="20"]')).toBeVisible();
+  expect(consoleErrors).toEqual([]);
+});
 
 test("reveals paired capital and country solutions", async ({ page }) => {
   const consoleErrors = collectConsoleErrors(page);

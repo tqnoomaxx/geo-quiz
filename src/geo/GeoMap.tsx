@@ -775,6 +775,7 @@ export function GeoMap({
     <div
       ref={containerRef}
       className="geo-map"
+      data-region-id={regionId}
       data-physical-ready={physicalEntityType ? "false" : "true"}
       data-city-points={previewPoints?.features.length ?? 0}
       aria-label={

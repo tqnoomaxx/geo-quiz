@@ -821,7 +821,7 @@ export function createWorldMixDefinition(
 
   return {
     kind: "mixed",
-    id: `phase7-world-mix-${setup.regionId.replace("continent:", "")}-${setup.profile}-v1`,
+    id: `phase8-world-mix-${setup.regionId.replace("continent:", "")}-${setup.profile}-v2`,
     schemaVersion: 1,
     datasetVersion,
     label: "Weltmix",
@@ -830,10 +830,6 @@ export function createWorldMixDefinition(
     pools: [
       pool("countries", { topic: "countries", direction: "locate" }),
       pool("capitals", { topic: "capitals", direction: "name" }),
-      {
-        ...pool("cities", { topic: "cities", direction: "locate" }),
-        minimum: questionCount === 20 ? 1 : 0
-      },
       pool("flags", { topic: "flags", direction: "choice" }),
       pool("shapes", { topic: "shapes", direction: "name" }),
       pool("rivers", { topic: "rivers", direction: "locate" }),

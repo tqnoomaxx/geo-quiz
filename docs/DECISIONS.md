@@ -527,6 +527,20 @@ Letzte Aktualisierung: 2026-08-04
   des Datensatzes. Weitere Faktenprofile können denselben generischen Grader
   nutzen, ohne einen themenspezifischen Sessiontyp einzuführen.
 
+### D-048 – Der Weltmix verwendet zehn klar benannte Kernpools
+
+- **Status:** accepted
+- **Entscheidung:** Weltmix-Runden enthalten Länder, Hauptstädte, Flaggen,
+  Länderformen, Flüsse, Seen, Meere, Gebirge, Gipfel und Wissenspuzzle. Große
+  Städte sowie die globalen physischen Top-100-Listen bleiben eigenständige
+  Challenges. Die normalen Challenges bieten abhängig vom verfügbaren Scope
+  6, 10, 20 oder alle Fragen an; die ausdrücklich festgelegten Weltraum- und
+  Weltmixgrößen bleiben davon unberührt. Ein Gebietsschalter erscheint nur,
+  wenn das Thema mehr als einen tatsächlich verfügbaren Gebietsscope hat.
+- **Konsequenz:** Der sichtbare Setup-Vertrag entspricht dem Produktkatalog,
+  rein weltweite Themen zeigen keine wirkungslosen Kontinentoptionen und eine
+  Weltmix-Runde lädt den großen Städtepack nicht.
+
 ## Offene Entscheidungen
 
 Diese Punkte blockieren die Dokumentationsphase nicht, müssen aber vor dem

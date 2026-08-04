@@ -71,10 +71,11 @@ kurze Runde. „Runde pausieren“ wartet auf den IndexedDB-Schreibabschluss,
 bevor die App navigiert. Fortsetzen übernimmt dieselbe Session-ID und den
 gleichen Fragenstand. Ein eigener Marathon-Zustandsautomat ist nicht nötig.
 
-Der Weltmix gibt der kurzen 10er-Runde weiterhin ihre zehn garantierten
-Kernpools. Die 20er-Runde garantiert zusätzlich mindestens eine Stadtfrage.
-Der Scheduler balanciert Poolmengen so, dass
-`maxConsecutiveFromPool` tatsächlich planbar ist.
+Der Weltmix gibt kurzen und langen Runden weiterhin seine zehn garantierten
+Kernpools aus Ländern, Hauptstädten, Flaggen, Länderformen, Natur und
+Wissenspuzzle. Große Städte bleiben eine eigenständige Challenge; der Weltmix
+lädt den großen Städtepack daher nicht. Der Scheduler balanciert Poolmengen so,
+dass `maxConsecutiveFromPool` tatsächlich planbar ist.
 
 ## Abnahme
 

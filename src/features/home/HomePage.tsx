@@ -250,15 +250,20 @@ const ASTRONOMY_TOPICS = new Set<MvpTopic>([
   "zodiac"
 ]);
 
-function questionCountOptions(
+export function questionCountOptions(
   topic: MvpTopic,
   candidateCount: number
 ): MvpQuestionCount[] {
   if (topic === "world-mix") return [10, 20];
-  if (candidateCount <= 5) return ["all"];
-  if (candidateCount <= 12) return [6, "all"];
-  if (candidateCount <= 20) return [10, "all"];
-  return [10, 20, "all"];
+  if (topic === "planets" || topic === "zodiac") return [6, "all"];
+  if (topic === "moons") return [10, "all"];
+  if (topic === "dwarf-planets" || candidateCount < 6) return ["all"];
+
+  const counts: MvpQuestionCount[] = [6];
+  if (candidateCount > 10) counts.push(10);
+  if (candidateCount > 20) counts.push(20);
+  counts.push("all");
+  return counts;
 }
 
 function ChallengePreview({
@@ -442,6 +447,11 @@ export function HomePage() {
     setup.topic,
     candidateCount
   );
+  const availableRegions = MVP_REGIONS.filter(
+    (region) => setupCandidateCount({ ...setup, regionId: region.id }) > 0
+  );
+  const showsRegionSelection =
+    !ASTRONOMY_TOPICS.has(setup.topic) && availableRegions.length > 1;
 
   return (
     <div className="app-page">
@@ -569,7 +579,7 @@ export function HomePage() {
                 </fieldset>
               ) : null}
 
-              {!ASTRONOMY_TOPICS.has(setup.topic) ? (
+              {showsRegionSelection ? (
                 <fieldset className="setting-group">
                   <legend>Welches Gebiet?</legend>
                   <div className="choice-pills choice-pills--regions">

@@ -288,7 +288,9 @@ blockieren den Content-Build.
 - [x] Clustering nur in Lernübersichten, nicht als Antwortziel.
 - [x] Suche, Wiederaufnahme und Marathon-Zwischenstände.
 - [x] Daten-Lazy-Loading und synthetische Performanceprüfung.
-- [x] Städte-Abzeichen, Fehlertraining und Integration in den Weltmix.
+- [x] Städte-Abzeichen und Fehlertraining; der aktuelle Weltmix bleibt bewusst
+  auf Länder, Hauptstädte, Flaggen, Länderformen, Natur und Wissenspuzzle
+  begrenzt.
 - [ ] Redaktionelle Prüfung der deutschen Namensabdeckung.
 - [ ] Vollständigen 1000er-Langlauf auf einem echten mittleren Android-Gerät
   und unter gedrosseltem Netz profilieren.
@@ -332,8 +334,9 @@ beeinträchtigen Karteninteraktion und Startzeit nicht unvertretbar.
   Die Übersicht clustert 1000 Punkte und bietet Alias-Suche; die eigentliche
   Kartenfrage bleibt ein einzelnes, unclustered Antwortziel.
 - 1000-Fragen-Snapshots sind pausier- und mit identischer Session-ID
-  fortsetzbar. Fortschritt, Fehlertraining, drei Stadt-Abzeichen und der
-  Weltmix verarbeiten `ranked_city` über vorhandene Ereignisverträge.
+  fortsetzbar. Fortschritt, Fehlertraining und drei Stadt-Abzeichen verarbeiten
+  `ranked_city` über vorhandene Ereignisverträge; der Weltmix lädt das
+  Städtepaket nicht.
 - Ein zweiter lazy Pack enthält 100 globale Flusssysteme und 100 eigenständige
   Gipfel. Flüsse zeigen Systemlänge, Länder im Einzugsgebiet und Mündung;
   Berge zeigen Höhe, Land/Region und Gebirge. Die Lösung wiederholt Name und
@@ -344,8 +347,8 @@ beeinträchtigen Karteninteraktion und Startzeit nicht unvertretbar.
 - Der Kerndatensatz ergänzt 139 Sprachen, 146 Währungen und vollständige
   relationale Profile für alle 195 Länder. `country-profile-v1` speichert
   richtige, teilweise richtige und aufgedeckte Dreifeldantworten.
-- 126 Unit-/Content-/Engine-Tests sowie 30 Produktions-Browsertests auf
-  Desktop und Pixel 7 bestehen; acht redundante Mobil-Doppelungen werden
+- 128 Unit-/Content-/Engine-Tests sowie 31 Produktions-Browsertests auf
+  Desktop und Pixel 7 bestehen; neun redundante Mobil-Doppelungen werden
   bewusst übersprungen.
   Der Browserlauf prüft unter anderem Länderprofil-Eingabe und -Auflösung,
   Top-1000-Start, Pause/Fortsetzen, Offline-Start sowie Desktop und

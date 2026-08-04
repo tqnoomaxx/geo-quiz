@@ -169,7 +169,7 @@ describe("Phase-7 ranked city content", () => {
     expect(resumed.currentQuestionIndex).toBe(0);
   });
 
-  it("mischt Städte in eine 20er-Weltmixrunde", async () => {
+  it("hält Städte auch in einer 20er-Runde aus dem Weltmix heraus", async () => {
     const repository = await repositoryPromise;
     const definition = createWorldMixDefinition({
       ...DEFAULT_MVP_SETUP,
@@ -190,7 +190,8 @@ describe("Phase-7 ranked city content", () => {
       questions.some(
         (question) => question.metadata.sourcePoolId === "cities"
       )
-    ).toBe(true);
+    ).toBe(false);
+    expect(definition.pools.map((pool) => pool.id)).not.toContain("cities");
     expect(rankedCityIndex.quality.scopeCounts.world).toBe(1000);
   });
 });

@@ -104,7 +104,8 @@ astrologische Deutungen gehören nicht zum statischen Content-Snapshot.
 
 ## Themenübergreifende Modi
 
-- Weltmix mit kontrolliertem Wechsel zwischen allen freigeschalteten Themen.
+- Weltmix mit kontrolliertem Wechsel zwischen Ländern, Hauptstädten, Flaggen,
+  Länderformen, Naturthemen und Wissenspuzzles.
 - Regionalmix, etwa „alles über Europa“.
 - Persönlicher Mix mit höherem Gewicht für eigene Schwächen.
 - Wissenspuzzles aus Sprache, Fläche, Bevölkerung, Grenzen, Regionen,
