@@ -20,7 +20,7 @@
 - **Erfolgskriterien:** vier visuelle Kombinationen laufen durch dieselbe
   Session-Engine; Auswahlpositionen und Weltmix sind mit Seed reproduzierbar;
   Assets sind lokal, versioniert und im Manifest geprüft; offene Fehler werden
-  als erste Wiederholungsqueue nutzbar.
+  als separate Fehlertrainingsqueue nutzbar.
 - **Größte Risiken:** politische/zeitliche Aktualität von Flaggen,
   erkennbare Umrisse kleiner oder stark fragmentierter Staaten,
   zusätzlicher Asset-Download sowie bestehende offene Mobile-/Release-Gates.
@@ -62,7 +62,7 @@ Mindestmenge. Ein Pool darf nicht beliebig oft direkt hintereinander
 erscheinen. Bei zu kleinen Scopes scheitert die Vorbereitung mit einer
 verständlichen Fehlermeldung statt die Regeln still zu verändern.
 
-## Wiederholungsqueue v1
+## Fehlerqueue v1
 
 Die Queue betrachtet `(entityId, skillKey)` als Lernobjekt. Das jüngste
 Ereignis entscheidet:
@@ -71,8 +71,10 @@ Ereignis entscheidet:
 - ein späteres `correct` → erledigt;
 - älteste offene Einträge werden zuerst wiederholt.
 
-Sie ist absichtlich nur eine belastbare Fehlerqueue. Intervalle, Stärke und
-persönliche Gewichte bleiben Phase 8.
+Sie ist absichtlich nur eine belastbare Fehlerqueue. Fehler werden nicht mehr
+in derselben Runde erneut angehängt, sondern erst in einer ausdrücklich
+gestarteten Fehlertrainingsrunde verwendet. Intervalle, Stärke und persönliche
+Gewichte bleiben Phase 8.
 
 ## Abnahme
 
@@ -84,6 +86,6 @@ persönliche Gewichte bleiben Phase 8.
   identisch.
 - Lern-, Übungs- und Prüfungsprofil durchlaufen ihre vollständigen,
   voneinander getrennten Regelabläufe.
-- Fehlertraining und Wiederholungsqueue behalten den ursprünglichen Skill.
+- Fehlertraining und Fehlerqueue behalten den ursprünglichen Skill.
 - Root- und GitHub-Pages-Unterpfad laden visuelle Assets ohne externe Anfrage.
 - Desktop- und Mobile-Browserfluss sowie Accessibility-Baseline bestehen.

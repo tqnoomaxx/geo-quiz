@@ -77,6 +77,32 @@ function namedAnswers(value: unknown): NamedAnswer[] {
   );
 }
 
+export function isCorrectTextQuestionAnswer(
+  question: QuestionInstance,
+  value: string
+): boolean {
+  if (
+    question.answerSpec.kind !== "text_input" ||
+    question.answerSpec.graderId !== "text-v1"
+  ) {
+    return false;
+  }
+
+  const acceptedNames = namedAnswers(
+    question.answerSpec.graderConfig.expectedNames
+  );
+  if (acceptedNames.length === 0) {
+    throw new Error(`${question.id}: ungültige text-v1-Konfiguration.`);
+  }
+
+  const [preferred, ...aliases] = acceptedNames;
+  return gradeTextAnswer(value, {
+    expected: preferred.value,
+    aliases: aliases.map((name) => name.value),
+    locale: "de"
+  }).correct;
+}
+
 function countryProfileFields(value: unknown): CountryProfileFieldConfig[] {
   if (!Array.isArray(value)) return [];
 

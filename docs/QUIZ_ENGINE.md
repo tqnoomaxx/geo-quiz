@@ -82,7 +82,7 @@ Nachzeichnen eines Flusses ist eine spätere, eigene Ausbaustufe.
 - Sofortiges Feedback oder Feedback erst am Ende.
 - Ohne Leben oder feste Fehleranzahl.
 - Hinweise erlaubt/verboten.
-- Fehler erneut einstreuen.
+- Fehler anschließend als separate Trainingsrunde üben.
 - Zufalls-Seed.
 - Bewertungsprofil: Lernen, Prüfung, Sprint oder Marathon.
 
@@ -275,14 +275,13 @@ Die Regelkombinationen stammen aus einer zentralen Profilregistry:
 | Lernmodus | Timer | Feedback | Lösung | Fehlerwiederholung |
 |---|---|---|---|---|
 | Lernen | aus | sofort | erlaubt | keine |
-| Üben | aus | sofort | erlaubt | einmal am Rundenende |
+| Üben | aus | sofort | erlaubt | keine in derselben Runde |
 | Prüfung | optional | am Ende | während der Runde gesperrt | keine |
 
-Beim Üben erhält eine Wiederholungsfrage eine neue Fragen-ID und ein
-`retryOfQuestionId`. Dadurch bleiben Versuche und Fortschrittsereignisse
-idempotent, während die ursprüngliche Entität und Fähigkeit erhalten bleiben.
-Eine korrekt beantwortete Wiederholung schließt den Fehler in der
-Ergebnisansicht und in der vorhandenen Reviewqueue.
+Auch beim Üben erscheint jede konkrete Frage innerhalb einer Runde nur einmal.
+Offene Fehler bleiben in der Ergebnisansicht sichtbar und können anschließend
+über eine eigene, neu erzeugte Fehlertrainingsrunde geübt werden. So bleibt die
+Fragenzahl einer laufenden Runde stabil und vorhersehbar.
 
 Ein Katalogvertrag durchläuft jede registrierte Kombination aus Thema und
 Fragerichtung mit allen drei Lernmodi, validiert ihre Definition und erzeugt
@@ -298,6 +297,9 @@ zehn konkrete Fragen. Neue Fragerichtungen sind damit erst testgrün, wenn
 3. Sprachabhängig kleinschreiben.
 4. Typographische Apostrophe und Bindestriche vereinheitlichen.
 5. Gegen explizit gepflegte akzeptierte Namen und Aliasse prüfen.
+6. Sobald der zentrale Grader eine vollständig akzeptierte Eingabe erkennt,
+   bestätigt die Oberfläche sie automatisch; Enter gibt jede andere Eingabe
+   ohne zusätzlichen Button ab.
 6. Optionale Tippfehlertoleranz nur im Lernmodus anwenden.
 
 Akzente werden nicht global entfernt: `Kongo` und andere Namen dürfen dadurch

@@ -85,7 +85,7 @@ describe("Quiz session engine", () => {
     });
   });
 
-  it("repeats each missed practice question once at the end", () => {
+  it("keeps the original question set even for legacy retry rules", () => {
     const initial = askingSession();
     const practice = {
       ...initial,
@@ -120,37 +120,18 @@ describe("Quiz session engine", () => {
       atIso: "2026-07-30T10:00:02.000Z"
     });
 
-    expect(secondFeedback.questions).toHaveLength(3);
-    expect(secondFeedback.maxScore).toBe(3);
-    expect(secondFeedback.questions[2]).toMatchObject({
-      ordinal: 2,
-      subjectId: practice.questions[0].subjectId,
-      metadata: { retryOfQuestionId: practice.questions[0].id }
-    });
+    expect(secondFeedback.questions).toHaveLength(2);
+    expect(secondFeedback.maxScore).toBe(2);
 
-    const retry = reduceQuizSession(secondFeedback, {
+    const completed = reduceQuizSession(secondFeedback, {
       type: "CONTINUE",
       atMs: 2_100,
       atIso: "2026-07-30T10:00:02.100Z"
     });
-    const retryFeedback = reduceQuizSession(retry, {
-      type: "ANSWER",
-      payload: {
-        kind: "map_point",
-        coordinates: retry.questions[2].feedback.targetCoordinates!
-      },
-      atMs: 3_000,
-      atIso: "2026-07-30T10:00:03.000Z"
-    });
-    const completed = reduceQuizSession(retryFeedback, {
-      type: "CONTINUE",
-      atMs: 3_100,
-      atIso: "2026-07-30T10:00:03.100Z"
-    });
 
     expect(completed.status).toBe("completed");
-    expect(completed.questions).toHaveLength(3);
-    expect(completed.attempts).toHaveLength(3);
+    expect(completed.questions).toHaveLength(2);
+    expect(completed.attempts).toHaveLength(2);
   });
 
   it("continues an exam without revealing an unanswered solution", () => {

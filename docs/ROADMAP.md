@@ -157,7 +157,7 @@ voneinander isoliert; neue Standardabzeichen benötigen nur Konfiguration.
 - [x] Flagge → Text, Flagge → Auswahl, Land → Flagge.
 - [x] Länderumriss → Text.
 - [x] Zentrale Lern-/Übungs-/Prüfungsprofile mit echten Regelabläufen.
-- [x] Besseres Fehlertraining und erste Wiederholungsqueue.
+- [x] Besseres Fehlertraining ohne Wiederholungen innerhalb einer Runde.
 - [x] gewichteter Mixed-Mode-Scheduler.
 - [x] erster Weltmix aus Ländern, Hauptstädten, Flaggen und Formen.
 
@@ -174,7 +174,8 @@ Prompt-Komponente. Der Weltmix ist mit Seed reproduzierbar.
   einzelne lokale SVGs. Eine Runde lädt nur ihre tatsächlich referenzierten
   Motive vor; Fragen speichern weiterhin ausschließlich stabile Asset-Keys.
 - Vier visuelle Presets, `single-choice-v1`, Lern-/Übungs-/Prüfungsprofile und die erste
-  Rohereignis-Wiederholungsqueue laufen durch dieselbe Session-/Progress-Engine.
+  Rohereignis-Fehlerqueue laufen durch dieselbe Session-/Progress-Engine; eine
+  laufende Runde hängt falsche Fragen nicht erneut an.
 - Der gewichtete Scheduler orchestriert vier vorhandene Definitionen und
   erzeugt mit gleichem Seed identische Poolfolge, Subjekte und
   Auswahlpositionen.
@@ -239,7 +240,7 @@ funktionieren ohne Sonderlogik.
 - [x] sichere Abfragesprache für Filter, Relationen, Rang und Schnittmengen.
 - [x] Build-Zeit-Compiler mit Eindeutigkeitsprüfung.
 - [x] erklärendes Feedback mit Faktenkette.
-- [x] 20 kuratierte Vorlagen, Einzelmodus, Abzeichen und Integration in
+- [x] 62 kuratierte Vorlagen, Einzelmodus, Abzeichen und Integration in
   Weltmix.
 - [ ] Quellen- und Formulierungsreview durch eine zweite fachliche Person.
 - [ ] Faktenumfang um Höhe und weitere Relationsfamilien erweitern.
@@ -251,7 +252,7 @@ blockieren den Content-Build.
 
 - Dataset-Schema 4 enthält zwei FactDefinitions, 388 World-Bank-Fakten für
   Landfläche und Bevölkerung im gemeinsamen Bezugsjahr 2023, neun
-  Portugiesisch-Amtssprachenrelationen, Quellenmetadaten und 20 fertig
+  Portugiesisch-Amtssprachenrelationen, Quellenmetadaten und 62 fertig
   kompilierte Wissensfragen.
 - Die kleine deklarative Sprache unterstützt Relations- und Faktenfilter,
   Schnittmengen sowie auf- und absteigende Ränge. Vorlagen können die

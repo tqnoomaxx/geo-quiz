@@ -200,40 +200,7 @@ function recordAttempt(
     graderVersion: question.answerSpec.graderId
   };
   const attempts = [...state.attempts, attempt];
-  const reachedCurrentEnd =
-    state.currentQuestionIndex >= state.questions.length - 1;
-  const alreadyHasRetries = state.questions.some(
-    (candidate) => candidate.metadata.retryOfQuestionId !== undefined
-  );
-  const retryQuestions =
-    reachedCurrentEnd &&
-    state.definitionSnapshot.rules.retryMistakes &&
-    !alreadyHasRetries
-      ? attempts
-          .filter(
-            (candidate) =>
-              candidate.result.status !== "correct" &&
-              candidate.questionSnapshot.metadata.retryOfQuestionId ===
-                undefined
-          )
-          .map((candidate, index) => {
-            const original = candidate.questionSnapshot;
-            const ordinal = state.questions.length + index;
-            return {
-              ...structuredClone(original),
-              id: `${original.id}:retry:${index + 1}`,
-              ordinal,
-              metadata: {
-                ...original.metadata,
-                retryOfQuestionId: original.id
-              }
-            } satisfies QuestionInstance;
-          })
-      : [];
-  const questions =
-    retryQuestions.length > 0
-      ? [...state.questions, ...retryQuestions]
-      : state.questions;
+  const questions = state.questions;
   const score = state.score + result.score;
   const isLastQuestion =
     state.currentQuestionIndex >= questions.length - 1;

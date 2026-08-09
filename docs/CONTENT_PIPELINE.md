@@ -318,7 +318,7 @@ Vatikanstadt besitzt in diesen Indikatoren keinen Wert. Der Snapshot ergänzt
 neun kuratierte `has_official_language → language:pt`-Relationen aus den
 CPLP-Mitgliedstaaten und Länderprofilen.
 
-`content-src/knowledge-templates.v1.json` enthält 20 reviewbare, deklarative
+`content-src/knowledge-templates.v1.json` enthält 62 reviewbare, deklarative
 Vorlagen. `scripts/build-content.ts` führt sie gegen Fakten, Relationen und
 Namen aus. Der Build scheitert bei:
 

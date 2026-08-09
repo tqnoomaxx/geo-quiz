@@ -1,4 +1,3 @@
-import { useState, type FormEvent } from "react";
 import {
   CheckCircle2,
   ChevronRight,
@@ -13,6 +12,7 @@ import type {
 } from "../../engine/quiz/question";
 import type { QuestionAttempt } from "../../engine/session/session";
 import { VisualAssetGraphic } from "./VisualAssetGraphic";
+import { useTextAnswerInput } from "./useTextAnswerInput";
 
 interface VisualQuestionViewProps {
   question: QuestionInstance;
@@ -135,20 +135,10 @@ export function VisualQuestionView({
   solutionRevealAllowed,
   continueLabel = "Weiter"
 }: VisualQuestionViewProps) {
-  const [value, setValue] = useState(
-    attempt?.answerPayload?.kind === "text_input"
-      ? attempt.answerPayload.value
-      : ""
-  );
   const isTextInput = question.answerSpec.kind === "text_input";
   const options = question.answerSpec.options ?? [];
-
-  const submitText = (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    if (value.trim() && !attempt) {
-      onAnswer({ kind: "text_input", value });
-    }
-  };
+  const { value, handleChange, handleCompositionEnd, handleSubmit } =
+    useTextAnswerInput({ question, attempt, onAnswer });
 
   return (
     <main className="visual-question-layout">
@@ -174,33 +164,31 @@ export function VisualQuestionView({
 
       <section className="visual-answer-panel">
         {isTextInput ? (
-          <form onSubmit={submitText}>
+          <form onSubmit={handleSubmit}>
             <label htmlFor="visual-answer-input">Deine Antwort</label>
             <input
               id="visual-answer-input"
               value={value}
-              onChange={(event) => setValue(event.target.value)}
+              onChange={handleChange}
+              onCompositionEnd={handleCompositionEnd}
               placeholder="Land eingeben"
               autoComplete="off"
               autoFocus={!attempt}
               disabled={Boolean(attempt)}
+              aria-describedby={!attempt ? "visual-text-answer-hint" : undefined}
             />
+            {!attempt ? (
+              <p className="text-answer-hint" id="visual-text-answer-hint">
+                Richtige Antworten werden automatisch erkannt. Enter prüft deine
+                Eingabe sofort.
+              </p>
+            ) : null}
             {attempt ? (
               <Feedback
                 attempt={attempt}
                 onContinue={onContinue}
                 continueLabel={continueLabel}
               />
-            ) : null}
-            {!attempt ? (
-              <button
-                className="button button--primary"
-                type="submit"
-                disabled={!value.trim()}
-              >
-                Antwort prüfen
-                <ChevronRight aria-hidden="true" />
-              </button>
             ) : null}
             {!attempt ? (
               <button

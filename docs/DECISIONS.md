@@ -468,7 +468,8 @@ Letzte Aktualisierung: 2026-08-04
 
 ### D-045 – Lernmodi sind zentrale Regelprofile
 
-- **Status:** accepted
+- **Status:** superseded in Bezug auf Wiederholungen innerhalb einer Runde
+  durch D-049; übrige Profilregeln bleiben accepted
 - **Entscheidung:** `Lernen`, `Üben` und `Prüfung` sind keine UI-Bezeichnungen,
   sondern zentral definierte Kombinationen vorhandener Rundenregeln. Lernen
   läuft ohne Timer mit sofortigem Feedback und freiwilliger Lösungsanzeige.
@@ -540,6 +541,22 @@ Letzte Aktualisierung: 2026-08-04
 - **Konsequenz:** Der sichtbare Setup-Vertrag entspricht dem Produktkatalog,
   rein weltweite Themen zeigen keine wirkungslosen Kontinentoptionen und eine
   Weltmix-Runde lädt den großen Städtepack nicht.
+
+### D-049 – Laufende Runden wiederholen keine konkrete Frage
+
+- **Status:** accepted
+- **Datum:** 2026-08-09
+- **Entscheidung:** Der bei Rundenstart erzeugte Fragensatz bleibt unverändert;
+  keine falsche, übersprungene oder abgelaufene Frage wird innerhalb derselben
+  Runde erneut angehängt. Offene Fehler können weiterhin anschließend als
+  ausdrücklich gestartetes Fehlertraining gebündelt werden. Einfache
+  `text_input`-Antworten werden durch den zentralen Grader automatisch
+  bestätigt, sobald eine vollständig akzeptierte Antwort vorliegt; Enter bleibt
+  die tastaturbedienbare Abgabe für andere Eingaben.
+- **Konsequenz:** Die sichtbare Fragenzahl bleibt während einer Runde stabil,
+  jede konkrete Frage erscheint höchstens einmal und Texteingaben benötigen
+  keinen separaten Prüf-Button. `retryMistakes` bleibt nur zur Kompatibilität
+  des versionierten v1-Schemas lesbar und erzeugt keine neuen Fragen mehr.
 
 ## Offene Entscheidungen
 

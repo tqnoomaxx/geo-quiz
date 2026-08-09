@@ -413,6 +413,804 @@
       },
       "answer": { "from": "ranked_entity" },
       "difficulty": 4
+    },
+    {
+      "id": "africa-land-rank-2",
+      "candidateType": "country",
+      "promptDe": "Welches afrikanische Land ist nach Landfläche das zweitgrößte?",
+      "filter": {
+        "op": "relation",
+        "relationType": "located_in",
+        "targetId": "continent:africa"
+      },
+      "ranking": {
+        "factTypeId": "fact-type:land-area-km2",
+        "order": "descending",
+        "rank": 2
+      },
+      "answer": {
+        "from": "ranked_entity"
+      },
+      "difficulty": 2
+    },
+    {
+      "id": "africa-population-rank-2",
+      "candidateType": "country",
+      "promptDe": "Welches afrikanische Land hat die zweitgrößte Bevölkerung?",
+      "filter": {
+        "op": "relation",
+        "relationType": "located_in",
+        "targetId": "continent:africa"
+      },
+      "ranking": {
+        "factTypeId": "fact-type:population-total",
+        "order": "descending",
+        "rank": 2
+      },
+      "answer": {
+        "from": "ranked_entity"
+      },
+      "difficulty": 2
+    },
+    {
+      "id": "africa-land-rank-3",
+      "candidateType": "country",
+      "promptDe": "Welches afrikanische Land ist nach Landfläche das drittgrößte?",
+      "filter": {
+        "op": "relation",
+        "relationType": "located_in",
+        "targetId": "continent:africa"
+      },
+      "ranking": {
+        "factTypeId": "fact-type:land-area-km2",
+        "order": "descending",
+        "rank": 3
+      },
+      "answer": {
+        "from": "ranked_entity"
+      },
+      "difficulty": 3
+    },
+    {
+      "id": "africa-population-rank-3",
+      "candidateType": "country",
+      "promptDe": "Welches afrikanische Land hat die drittgrößte Bevölkerung?",
+      "filter": {
+        "op": "relation",
+        "relationType": "located_in",
+        "targetId": "continent:africa"
+      },
+      "ranking": {
+        "factTypeId": "fact-type:population-total",
+        "order": "descending",
+        "rank": 3
+      },
+      "answer": {
+        "from": "ranked_entity"
+      },
+      "difficulty": 3
+    },
+    {
+      "id": "africa-land-rank-4",
+      "candidateType": "country",
+      "promptDe": "Welches afrikanische Land ist nach Landfläche das viertgrößte?",
+      "filter": {
+        "op": "relation",
+        "relationType": "located_in",
+        "targetId": "continent:africa"
+      },
+      "ranking": {
+        "factTypeId": "fact-type:land-area-km2",
+        "order": "descending",
+        "rank": 4
+      },
+      "answer": {
+        "from": "ranked_entity"
+      },
+      "difficulty": 4
+    },
+    {
+      "id": "africa-population-rank-4",
+      "candidateType": "country",
+      "promptDe": "Welches afrikanische Land hat die viertgrößte Bevölkerung?",
+      "filter": {
+        "op": "relation",
+        "relationType": "located_in",
+        "targetId": "continent:africa"
+      },
+      "ranking": {
+        "factTypeId": "fact-type:population-total",
+        "order": "descending",
+        "rank": 4
+      },
+      "answer": {
+        "from": "ranked_entity"
+      },
+      "difficulty": 4
+    },
+    {
+      "id": "africa-smallest-land",
+      "candidateType": "country",
+      "promptDe": "Welches afrikanische Land hat die kleinste Landfläche?",
+      "filter": {
+        "op": "relation",
+        "relationType": "located_in",
+        "targetId": "continent:africa"
+      },
+      "ranking": {
+        "factTypeId": "fact-type:land-area-km2",
+        "order": "ascending",
+        "rank": 1
+      },
+      "answer": {
+        "from": "ranked_entity"
+      },
+      "difficulty": 4
+    },
+    {
+      "id": "africa-smallest-population",
+      "candidateType": "country",
+      "promptDe": "Welches afrikanische Land hat die kleinste Bevölkerung?",
+      "filter": {
+        "op": "relation",
+        "relationType": "located_in",
+        "targetId": "continent:africa"
+      },
+      "ranking": {
+        "factTypeId": "fact-type:population-total",
+        "order": "ascending",
+        "rank": 1
+      },
+      "answer": {
+        "from": "ranked_entity"
+      },
+      "difficulty": 4
+    },
+    {
+      "id": "asia-land-rank-1",
+      "candidateType": "country",
+      "promptDe": "Welches asiatische Land ist nach Landfläche das größte?",
+      "filter": {
+        "op": "relation",
+        "relationType": "located_in",
+        "targetId": "continent:asia"
+      },
+      "ranking": {
+        "factTypeId": "fact-type:land-area-km2",
+        "order": "descending",
+        "rank": 1
+      },
+      "answer": {
+        "from": "ranked_entity"
+      },
+      "difficulty": 2
+    },
+    {
+      "id": "asia-population-rank-1",
+      "candidateType": "country",
+      "promptDe": "Welches asiatische Land hat die größte Bevölkerung?",
+      "filter": {
+        "op": "relation",
+        "relationType": "located_in",
+        "targetId": "continent:asia"
+      },
+      "ranking": {
+        "factTypeId": "fact-type:population-total",
+        "order": "descending",
+        "rank": 1
+      },
+      "answer": {
+        "from": "ranked_entity"
+      },
+      "difficulty": 2
+    },
+    {
+      "id": "asia-land-rank-2",
+      "candidateType": "country",
+      "promptDe": "Welches asiatische Land ist nach Landfläche das zweitgrößte?",
+      "filter": {
+        "op": "relation",
+        "relationType": "located_in",
+        "targetId": "continent:asia"
+      },
+      "ranking": {
+        "factTypeId": "fact-type:land-area-km2",
+        "order": "descending",
+        "rank": 2
+      },
+      "answer": {
+        "from": "ranked_entity"
+      },
+      "difficulty": 2
+    },
+    {
+      "id": "asia-population-rank-2",
+      "candidateType": "country",
+      "promptDe": "Welches asiatische Land hat die zweitgrößte Bevölkerung?",
+      "filter": {
+        "op": "relation",
+        "relationType": "located_in",
+        "targetId": "continent:asia"
+      },
+      "ranking": {
+        "factTypeId": "fact-type:population-total",
+        "order": "descending",
+        "rank": 2
+      },
+      "answer": {
+        "from": "ranked_entity"
+      },
+      "difficulty": 2
+    },
+    {
+      "id": "asia-land-rank-3",
+      "candidateType": "country",
+      "promptDe": "Welches asiatische Land ist nach Landfläche das drittgrößte?",
+      "filter": {
+        "op": "relation",
+        "relationType": "located_in",
+        "targetId": "continent:asia"
+      },
+      "ranking": {
+        "factTypeId": "fact-type:land-area-km2",
+        "order": "descending",
+        "rank": 3
+      },
+      "answer": {
+        "from": "ranked_entity"
+      },
+      "difficulty": 3
+    },
+    {
+      "id": "asia-population-rank-3",
+      "candidateType": "country",
+      "promptDe": "Welches asiatische Land hat die drittgrößte Bevölkerung?",
+      "filter": {
+        "op": "relation",
+        "relationType": "located_in",
+        "targetId": "continent:asia"
+      },
+      "ranking": {
+        "factTypeId": "fact-type:population-total",
+        "order": "descending",
+        "rank": 3
+      },
+      "answer": {
+        "from": "ranked_entity"
+      },
+      "difficulty": 3
+    },
+    {
+      "id": "asia-land-rank-4",
+      "candidateType": "country",
+      "promptDe": "Welches asiatische Land ist nach Landfläche das viertgrößte?",
+      "filter": {
+        "op": "relation",
+        "relationType": "located_in",
+        "targetId": "continent:asia"
+      },
+      "ranking": {
+        "factTypeId": "fact-type:land-area-km2",
+        "order": "descending",
+        "rank": 4
+      },
+      "answer": {
+        "from": "ranked_entity"
+      },
+      "difficulty": 4
+    },
+    {
+      "id": "asia-population-rank-4",
+      "candidateType": "country",
+      "promptDe": "Welches asiatische Land hat die viertgrößte Bevölkerung?",
+      "filter": {
+        "op": "relation",
+        "relationType": "located_in",
+        "targetId": "continent:asia"
+      },
+      "ranking": {
+        "factTypeId": "fact-type:population-total",
+        "order": "descending",
+        "rank": 4
+      },
+      "answer": {
+        "from": "ranked_entity"
+      },
+      "difficulty": 4
+    },
+    {
+      "id": "asia-smallest-land",
+      "candidateType": "country",
+      "promptDe": "Welches asiatische Land hat die kleinste Landfläche?",
+      "filter": {
+        "op": "relation",
+        "relationType": "located_in",
+        "targetId": "continent:asia"
+      },
+      "ranking": {
+        "factTypeId": "fact-type:land-area-km2",
+        "order": "ascending",
+        "rank": 1
+      },
+      "answer": {
+        "from": "ranked_entity"
+      },
+      "difficulty": 4
+    },
+    {
+      "id": "asia-smallest-population",
+      "candidateType": "country",
+      "promptDe": "Welches asiatische Land hat die kleinste Bevölkerung?",
+      "filter": {
+        "op": "relation",
+        "relationType": "located_in",
+        "targetId": "continent:asia"
+      },
+      "ranking": {
+        "factTypeId": "fact-type:population-total",
+        "order": "ascending",
+        "rank": 1
+      },
+      "answer": {
+        "from": "ranked_entity"
+      },
+      "difficulty": 4
+    },
+    {
+      "id": "north-america-land-rank-1",
+      "candidateType": "country",
+      "promptDe": "Welches nordamerikanische Land ist nach Landfläche das größte?",
+      "filter": {
+        "op": "relation",
+        "relationType": "located_in",
+        "targetId": "continent:north-america"
+      },
+      "ranking": {
+        "factTypeId": "fact-type:land-area-km2",
+        "order": "descending",
+        "rank": 1
+      },
+      "answer": {
+        "from": "ranked_entity"
+      },
+      "difficulty": 2
+    },
+    {
+      "id": "north-america-population-rank-1",
+      "candidateType": "country",
+      "promptDe": "Welches nordamerikanische Land hat die größte Bevölkerung?",
+      "filter": {
+        "op": "relation",
+        "relationType": "located_in",
+        "targetId": "continent:north-america"
+      },
+      "ranking": {
+        "factTypeId": "fact-type:population-total",
+        "order": "descending",
+        "rank": 1
+      },
+      "answer": {
+        "from": "ranked_entity"
+      },
+      "difficulty": 2
+    },
+    {
+      "id": "north-america-land-rank-3",
+      "candidateType": "country",
+      "promptDe": "Welches nordamerikanische Land ist nach Landfläche das drittgrößte?",
+      "filter": {
+        "op": "relation",
+        "relationType": "located_in",
+        "targetId": "continent:north-america"
+      },
+      "ranking": {
+        "factTypeId": "fact-type:land-area-km2",
+        "order": "descending",
+        "rank": 3
+      },
+      "answer": {
+        "from": "ranked_entity"
+      },
+      "difficulty": 3
+    },
+    {
+      "id": "north-america-population-rank-3",
+      "candidateType": "country",
+      "promptDe": "Welches nordamerikanische Land hat die drittgrößte Bevölkerung?",
+      "filter": {
+        "op": "relation",
+        "relationType": "located_in",
+        "targetId": "continent:north-america"
+      },
+      "ranking": {
+        "factTypeId": "fact-type:population-total",
+        "order": "descending",
+        "rank": 3
+      },
+      "answer": {
+        "from": "ranked_entity"
+      },
+      "difficulty": 3
+    },
+    {
+      "id": "north-america-land-rank-4",
+      "candidateType": "country",
+      "promptDe": "Welches nordamerikanische Land ist nach Landfläche das viertgrößte?",
+      "filter": {
+        "op": "relation",
+        "relationType": "located_in",
+        "targetId": "continent:north-america"
+      },
+      "ranking": {
+        "factTypeId": "fact-type:land-area-km2",
+        "order": "descending",
+        "rank": 4
+      },
+      "answer": {
+        "from": "ranked_entity"
+      },
+      "difficulty": 4
+    },
+    {
+      "id": "north-america-population-rank-4",
+      "candidateType": "country",
+      "promptDe": "Welches nordamerikanische Land hat die viertgrößte Bevölkerung?",
+      "filter": {
+        "op": "relation",
+        "relationType": "located_in",
+        "targetId": "continent:north-america"
+      },
+      "ranking": {
+        "factTypeId": "fact-type:population-total",
+        "order": "descending",
+        "rank": 4
+      },
+      "answer": {
+        "from": "ranked_entity"
+      },
+      "difficulty": 4
+    },
+    {
+      "id": "north-america-smallest-land",
+      "candidateType": "country",
+      "promptDe": "Welches nordamerikanische Land hat die kleinste Landfläche?",
+      "filter": {
+        "op": "relation",
+        "relationType": "located_in",
+        "targetId": "continent:north-america"
+      },
+      "ranking": {
+        "factTypeId": "fact-type:land-area-km2",
+        "order": "ascending",
+        "rank": 1
+      },
+      "answer": {
+        "from": "ranked_entity"
+      },
+      "difficulty": 4
+    },
+    {
+      "id": "north-america-smallest-population",
+      "candidateType": "country",
+      "promptDe": "Welches nordamerikanische Land hat die kleinste Bevölkerung?",
+      "filter": {
+        "op": "relation",
+        "relationType": "located_in",
+        "targetId": "continent:north-america"
+      },
+      "ranking": {
+        "factTypeId": "fact-type:population-total",
+        "order": "ascending",
+        "rank": 1
+      },
+      "answer": {
+        "from": "ranked_entity"
+      },
+      "difficulty": 4
+    },
+    {
+      "id": "south-america-land-rank-1",
+      "candidateType": "country",
+      "promptDe": "Welches südamerikanische Land ist nach Landfläche das größte?",
+      "filter": {
+        "op": "relation",
+        "relationType": "located_in",
+        "targetId": "continent:south-america"
+      },
+      "ranking": {
+        "factTypeId": "fact-type:land-area-km2",
+        "order": "descending",
+        "rank": 1
+      },
+      "answer": {
+        "from": "ranked_entity"
+      },
+      "difficulty": 2
+    },
+    {
+      "id": "south-america-population-rank-1",
+      "candidateType": "country",
+      "promptDe": "Welches südamerikanische Land hat die größte Bevölkerung?",
+      "filter": {
+        "op": "relation",
+        "relationType": "located_in",
+        "targetId": "continent:south-america"
+      },
+      "ranking": {
+        "factTypeId": "fact-type:population-total",
+        "order": "descending",
+        "rank": 1
+      },
+      "answer": {
+        "from": "ranked_entity"
+      },
+      "difficulty": 2
+    },
+    {
+      "id": "south-america-land-rank-3",
+      "candidateType": "country",
+      "promptDe": "Welches südamerikanische Land ist nach Landfläche das drittgrößte?",
+      "filter": {
+        "op": "relation",
+        "relationType": "located_in",
+        "targetId": "continent:south-america"
+      },
+      "ranking": {
+        "factTypeId": "fact-type:land-area-km2",
+        "order": "descending",
+        "rank": 3
+      },
+      "answer": {
+        "from": "ranked_entity"
+      },
+      "difficulty": 3
+    },
+    {
+      "id": "south-america-population-rank-3",
+      "candidateType": "country",
+      "promptDe": "Welches südamerikanische Land hat die drittgrößte Bevölkerung?",
+      "filter": {
+        "op": "relation",
+        "relationType": "located_in",
+        "targetId": "continent:south-america"
+      },
+      "ranking": {
+        "factTypeId": "fact-type:population-total",
+        "order": "descending",
+        "rank": 3
+      },
+      "answer": {
+        "from": "ranked_entity"
+      },
+      "difficulty": 3
+    },
+    {
+      "id": "south-america-land-rank-4",
+      "candidateType": "country",
+      "promptDe": "Welches südamerikanische Land ist nach Landfläche das viertgrößte?",
+      "filter": {
+        "op": "relation",
+        "relationType": "located_in",
+        "targetId": "continent:south-america"
+      },
+      "ranking": {
+        "factTypeId": "fact-type:land-area-km2",
+        "order": "descending",
+        "rank": 4
+      },
+      "answer": {
+        "from": "ranked_entity"
+      },
+      "difficulty": 4
+    },
+    {
+      "id": "south-america-population-rank-4",
+      "candidateType": "country",
+      "promptDe": "Welches südamerikanische Land hat die viertgrößte Bevölkerung?",
+      "filter": {
+        "op": "relation",
+        "relationType": "located_in",
+        "targetId": "continent:south-america"
+      },
+      "ranking": {
+        "factTypeId": "fact-type:population-total",
+        "order": "descending",
+        "rank": 4
+      },
+      "answer": {
+        "from": "ranked_entity"
+      },
+      "difficulty": 4
+    },
+    {
+      "id": "south-america-smallest-land",
+      "candidateType": "country",
+      "promptDe": "Welches südamerikanische Land hat die kleinste Landfläche?",
+      "filter": {
+        "op": "relation",
+        "relationType": "located_in",
+        "targetId": "continent:south-america"
+      },
+      "ranking": {
+        "factTypeId": "fact-type:land-area-km2",
+        "order": "ascending",
+        "rank": 1
+      },
+      "answer": {
+        "from": "ranked_entity"
+      },
+      "difficulty": 4
+    },
+    {
+      "id": "south-america-smallest-population",
+      "candidateType": "country",
+      "promptDe": "Welches südamerikanische Land hat die kleinste Bevölkerung?",
+      "filter": {
+        "op": "relation",
+        "relationType": "located_in",
+        "targetId": "continent:south-america"
+      },
+      "ranking": {
+        "factTypeId": "fact-type:population-total",
+        "order": "ascending",
+        "rank": 1
+      },
+      "answer": {
+        "from": "ranked_entity"
+      },
+      "difficulty": 4
+    },
+    {
+      "id": "oceania-land-rank-1",
+      "candidateType": "country",
+      "promptDe": "Welches Land Ozeaniens ist nach Landfläche das größte?",
+      "filter": {
+        "op": "relation",
+        "relationType": "located_in",
+        "targetId": "continent:oceania"
+      },
+      "ranking": {
+        "factTypeId": "fact-type:land-area-km2",
+        "order": "descending",
+        "rank": 1
+      },
+      "answer": {
+        "from": "ranked_entity"
+      },
+      "difficulty": 2
+    },
+    {
+      "id": "oceania-population-rank-1",
+      "candidateType": "country",
+      "promptDe": "Welches Land Ozeaniens hat die größte Bevölkerung?",
+      "filter": {
+        "op": "relation",
+        "relationType": "located_in",
+        "targetId": "continent:oceania"
+      },
+      "ranking": {
+        "factTypeId": "fact-type:population-total",
+        "order": "descending",
+        "rank": 1
+      },
+      "answer": {
+        "from": "ranked_entity"
+      },
+      "difficulty": 2
+    },
+    {
+      "id": "oceania-land-rank-3",
+      "candidateType": "country",
+      "promptDe": "Welches Land Ozeaniens ist nach Landfläche das drittgrößte?",
+      "filter": {
+        "op": "relation",
+        "relationType": "located_in",
+        "targetId": "continent:oceania"
+      },
+      "ranking": {
+        "factTypeId": "fact-type:land-area-km2",
+        "order": "descending",
+        "rank": 3
+      },
+      "answer": {
+        "from": "ranked_entity"
+      },
+      "difficulty": 3
+    },
+    {
+      "id": "oceania-population-rank-3",
+      "candidateType": "country",
+      "promptDe": "Welches Land Ozeaniens hat die drittgrößte Bevölkerung?",
+      "filter": {
+        "op": "relation",
+        "relationType": "located_in",
+        "targetId": "continent:oceania"
+      },
+      "ranking": {
+        "factTypeId": "fact-type:population-total",
+        "order": "descending",
+        "rank": 3
+      },
+      "answer": {
+        "from": "ranked_entity"
+      },
+      "difficulty": 3
+    },
+    {
+      "id": "oceania-land-rank-4",
+      "candidateType": "country",
+      "promptDe": "Welches Land Ozeaniens ist nach Landfläche das viertgrößte?",
+      "filter": {
+        "op": "relation",
+        "relationType": "located_in",
+        "targetId": "continent:oceania"
+      },
+      "ranking": {
+        "factTypeId": "fact-type:land-area-km2",
+        "order": "descending",
+        "rank": 4
+      },
+      "answer": {
+        "from": "ranked_entity"
+      },
+      "difficulty": 4
+    },
+    {
+      "id": "oceania-population-rank-4",
+      "candidateType": "country",
+      "promptDe": "Welches Land Ozeaniens hat die viertgrößte Bevölkerung?",
+      "filter": {
+        "op": "relation",
+        "relationType": "located_in",
+        "targetId": "continent:oceania"
+      },
+      "ranking": {
+        "factTypeId": "fact-type:population-total",
+        "order": "descending",
+        "rank": 4
+      },
+      "answer": {
+        "from": "ranked_entity"
+      },
+      "difficulty": 4
+    },
+    {
+      "id": "oceania-smallest-land",
+      "candidateType": "country",
+      "promptDe": "Welches Land Ozeaniens hat die kleinste Landfläche?",
+      "filter": {
+        "op": "relation",
+        "relationType": "located_in",
+        "targetId": "continent:oceania"
+      },
+      "ranking": {
+        "factTypeId": "fact-type:land-area-km2",
+        "order": "ascending",
+        "rank": 1
+      },
+      "answer": {
+        "from": "ranked_entity"
+      },
+      "difficulty": 4
+    },
+    {
+      "id": "oceania-smallest-population",
+      "candidateType": "country",
+      "promptDe": "Welches Land Ozeaniens hat die kleinste Bevölkerung?",
+      "filter": {
+        "op": "relation",
+        "relationType": "located_in",
+        "targetId": "continent:oceania"
+      },
+      "ranking": {
+        "factTypeId": "fact-type:population-total",
+        "order": "ascending",
+        "rank": 1
+      },
+      "answer": {
+        "from": "ranked_entity"
+      },
+      "difficulty": 4
     }
   ]
 }

@@ -245,13 +245,13 @@ Erweiterung, nicht Teil des ersten Phase-6-Slices.
 - Filter, Schnittmenge, Ranking, Minimum/Maximum und Anzahl.
 - Eindeutigkeits- und Gleichstandsprüfung.
 - Erklärung und Quellenkette.
-- 20–50 kuratierte Templatefamilien.
+- 20–100 kuratierte Templatefamilien.
 - Wissenspuzzle-Abzeichen und Integration in Weltmix.
 
 **Gate:** Nicht eindeutige oder unbelegte Fragen können den Content-Build nicht
 passieren.
 
-**Stand 2026-07-30:** 20 kuratierte Vorlagen, sichere Filter/Schnittmengen,
+**Stand 2026-08-09:** 62 kuratierte Vorlagen, sichere Filter/Schnittmengen,
 Ranking, Faktenfilter, ein einstufiger Relationspfad, Erklärungen,
 Quellenlinks, Wissenspuzzle-Abzeichen und der zehnte Weltmix-Pool sind
 umgesetzt. Minimum/Maximum sind durch Rang 1 auf-/absteigend abgedeckt;

@@ -262,12 +262,12 @@ describe("Phase-2 content contract", () => {
     const questions = repository.getEntitiesByType("knowledge_question");
 
     expect(parsed.data.facts).toHaveLength(498);
-    expect(parsed.data.compiledKnowledgeQuestions).toHaveLength(20);
-    expect(questions).toHaveLength(20);
+    expect(parsed.data.compiledKnowledgeQuestions).toHaveLength(62);
+    expect(questions).toHaveLength(62);
     expect(qualityJson.checks).toMatchObject({
       knowledgeFactCount: 498,
-      knowledgeTemplateCount: 20,
-      compiledKnowledgeQuestionCount: 20,
+      knowledgeTemplateCount: 62,
+      compiledKnowledgeQuestionCount: 62,
       knowledgeQuestionsUniqueAndSourced: true,
       knowledgeComparisonsMethodConsistent: true
     });

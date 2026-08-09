@@ -1,4 +1,3 @@
-import { useState, type FormEvent } from "react";
 import {
   BookOpenCheck,
   CheckCircle2,
@@ -15,6 +14,7 @@ import type {
   QuestionInstance
 } from "../../engine/quiz/question";
 import type { QuestionAttempt } from "../../engine/session/session";
+import { useTextAnswerInput } from "./useTextAnswerInput";
 
 interface KnowledgeQuestionViewProps {
   question: QuestionInstance;
@@ -135,21 +135,11 @@ export function KnowledgeQuestionView({
   solutionRevealAllowed,
   continueLabel = "Weiter"
 }: KnowledgeQuestionViewProps) {
-  const [value, setValue] = useState(
-    attempt?.answerPayload?.kind === "text_input"
-      ? attempt.answerPayload.value
-      : ""
-  );
   const isTextInput = question.answerSpec.kind === "text_input";
   const isCorrect = attempt?.result.status === "correct";
   const isRevealed = attempt?.result.status === "skipped";
-
-  const submitText = (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    if (value.trim() && !attempt) {
-      onAnswer({ kind: "text_input", value });
-    }
-  };
+  const { value, handleChange, handleCompositionEnd, handleSubmit } =
+    useTextAnswerInput({ question, attempt, onAnswer });
 
   return (
     <main className="knowledge-question-layout">
@@ -161,26 +151,29 @@ export function KnowledgeQuestionView({
         </div>
 
         {isTextInput ? (
-          <form onSubmit={submitText}>
+          <form onSubmit={handleSubmit}>
             <label htmlFor="knowledge-answer-input">Deine Antwort</label>
             <input
               id="knowledge-answer-input"
               value={value}
-              onChange={(event) => setValue(event.target.value)}
+              onChange={handleChange}
+              onCompositionEnd={handleCompositionEnd}
               placeholder="Land oder Hauptstadt eingeben"
               autoComplete="off"
               autoFocus={!attempt}
               disabled={Boolean(attempt)}
+              aria-describedby={
+                !attempt ? "knowledge-text-answer-hint" : undefined
+              }
             />
             {!attempt ? (
-              <button
-                className="button button--primary"
-                type="submit"
-                disabled={!value.trim()}
+              <p
+                className="text-answer-hint"
+                id="knowledge-text-answer-hint"
               >
-                Antwort prüfen
-                <ChevronRight aria-hidden="true" />
-              </button>
+                Richtige Antworten werden automatisch erkannt. Enter prüft deine
+                Eingabe sofort.
+              </p>
             ) : null}
           </form>
         ) : (

@@ -9001,6 +9001,39 @@
       ]
     },
     {
+      "id": "knowledge:africa-land-rank-2",
+      "type": "knowledge_question",
+      "canonicalNameId": "name:knowledge-africa-land-rank-2:de:preferred",
+      "difficulty": 2,
+      "active": true,
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "knowledge:africa-land-rank-3",
+      "type": "knowledge_question",
+      "canonicalNameId": "name:knowledge-africa-land-rank-3:de:preferred",
+      "difficulty": 3,
+      "active": true,
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "knowledge:africa-land-rank-4",
+      "type": "knowledge_question",
+      "canonicalNameId": "name:knowledge-africa-land-rank-4:de:preferred",
+      "difficulty": 4,
+      "active": true,
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
       "id": "knowledge:africa-largest-land",
       "type": "knowledge_question",
       "canonicalNameId": "name:knowledge-africa-largest-land:de:preferred",
@@ -9035,6 +9068,61 @@
       ]
     },
     {
+      "id": "knowledge:africa-population-rank-2",
+      "type": "knowledge_question",
+      "canonicalNameId": "name:knowledge-africa-population-rank-2:de:preferred",
+      "difficulty": 2,
+      "active": true,
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "knowledge:africa-population-rank-3",
+      "type": "knowledge_question",
+      "canonicalNameId": "name:knowledge-africa-population-rank-3:de:preferred",
+      "difficulty": 3,
+      "active": true,
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "knowledge:africa-population-rank-4",
+      "type": "knowledge_question",
+      "canonicalNameId": "name:knowledge-africa-population-rank-4:de:preferred",
+      "difficulty": 4,
+      "active": true,
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "knowledge:africa-smallest-land",
+      "type": "knowledge_question",
+      "canonicalNameId": "name:knowledge-africa-smallest-land:de:preferred",
+      "difficulty": 4,
+      "active": true,
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "knowledge:africa-smallest-population",
+      "type": "knowledge_question",
+      "canonicalNameId": "name:knowledge-africa-smallest-population:de:preferred",
+      "difficulty": 4,
+      "active": true,
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-population-2023"
+      ]
+    },
+    {
       "id": "knowledge:african-official-portuguese-land-rank-2",
       "type": "knowledge_question",
       "canonicalNameId": "name:knowledge-african-official-portuguese-land-rank-2:de:preferred",
@@ -9054,6 +9142,116 @@
       "active": true,
       "sourceRefs": [
         "cplp-portuguese-language-states",
+        "phase2-scope-policy",
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "knowledge:asia-land-rank-1",
+      "type": "knowledge_question",
+      "canonicalNameId": "name:knowledge-asia-land-rank-1:de:preferred",
+      "difficulty": 2,
+      "active": true,
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "knowledge:asia-land-rank-2",
+      "type": "knowledge_question",
+      "canonicalNameId": "name:knowledge-asia-land-rank-2:de:preferred",
+      "difficulty": 2,
+      "active": true,
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "knowledge:asia-land-rank-3",
+      "type": "knowledge_question",
+      "canonicalNameId": "name:knowledge-asia-land-rank-3:de:preferred",
+      "difficulty": 3,
+      "active": true,
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "knowledge:asia-land-rank-4",
+      "type": "knowledge_question",
+      "canonicalNameId": "name:knowledge-asia-land-rank-4:de:preferred",
+      "difficulty": 4,
+      "active": true,
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "knowledge:asia-population-rank-1",
+      "type": "knowledge_question",
+      "canonicalNameId": "name:knowledge-asia-population-rank-1:de:preferred",
+      "difficulty": 2,
+      "active": true,
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "knowledge:asia-population-rank-2",
+      "type": "knowledge_question",
+      "canonicalNameId": "name:knowledge-asia-population-rank-2:de:preferred",
+      "difficulty": 2,
+      "active": true,
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "knowledge:asia-population-rank-3",
+      "type": "knowledge_question",
+      "canonicalNameId": "name:knowledge-asia-population-rank-3:de:preferred",
+      "difficulty": 3,
+      "active": true,
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "knowledge:asia-population-rank-4",
+      "type": "knowledge_question",
+      "canonicalNameId": "name:knowledge-asia-population-rank-4:de:preferred",
+      "difficulty": 4,
+      "active": true,
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "knowledge:asia-smallest-land",
+      "type": "knowledge_question",
+      "canonicalNameId": "name:knowledge-asia-smallest-land:de:preferred",
+      "difficulty": 4,
+      "active": true,
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "knowledge:asia-smallest-population",
+      "type": "knowledge_question",
+      "canonicalNameId": "name:knowledge-asia-smallest-population:de:preferred",
+      "difficulty": 4,
+      "active": true,
+      "sourceRefs": [
         "phase2-scope-policy",
         "world-bank-population-2023"
       ]
@@ -9131,6 +9329,17 @@
       ]
     },
     {
+      "id": "knowledge:north-america-land-rank-1",
+      "type": "knowledge_question",
+      "canonicalNameId": "name:knowledge-north-america-land-rank-1:de:preferred",
+      "difficulty": 2,
+      "active": true,
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
       "id": "knowledge:north-america-land-rank-2",
       "type": "knowledge_question",
       "canonicalNameId": "name:knowledge-north-america-land-rank-2:de:preferred",
@@ -9139,6 +9348,39 @@
       "sourceRefs": [
         "phase2-scope-policy",
         "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "knowledge:north-america-land-rank-3",
+      "type": "knowledge_question",
+      "canonicalNameId": "name:knowledge-north-america-land-rank-3:de:preferred",
+      "difficulty": 3,
+      "active": true,
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "knowledge:north-america-land-rank-4",
+      "type": "knowledge_question",
+      "canonicalNameId": "name:knowledge-north-america-land-rank-4:de:preferred",
+      "difficulty": 4,
+      "active": true,
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "knowledge:north-america-population-rank-1",
+      "type": "knowledge_question",
+      "canonicalNameId": "name:knowledge-north-america-population-rank-1:de:preferred",
+      "difficulty": 2,
+      "active": true,
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-population-2023"
       ]
     },
     {
@@ -9153,6 +9395,61 @@
       ]
     },
     {
+      "id": "knowledge:north-america-population-rank-3",
+      "type": "knowledge_question",
+      "canonicalNameId": "name:knowledge-north-america-population-rank-3:de:preferred",
+      "difficulty": 3,
+      "active": true,
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "knowledge:north-america-population-rank-4",
+      "type": "knowledge_question",
+      "canonicalNameId": "name:knowledge-north-america-population-rank-4:de:preferred",
+      "difficulty": 4,
+      "active": true,
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "knowledge:north-america-smallest-land",
+      "type": "knowledge_question",
+      "canonicalNameId": "name:knowledge-north-america-smallest-land:de:preferred",
+      "difficulty": 4,
+      "active": true,
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "knowledge:north-america-smallest-population",
+      "type": "knowledge_question",
+      "canonicalNameId": "name:knowledge-north-america-smallest-population:de:preferred",
+      "difficulty": 4,
+      "active": true,
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "knowledge:oceania-land-rank-1",
+      "type": "knowledge_question",
+      "canonicalNameId": "name:knowledge-oceania-land-rank-1:de:preferred",
+      "difficulty": 2,
+      "active": true,
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
       "id": "knowledge:oceania-land-rank-2",
       "type": "knowledge_question",
       "canonicalNameId": "name:knowledge-oceania-land-rank-2:de:preferred",
@@ -9164,10 +9461,87 @@
       ]
     },
     {
+      "id": "knowledge:oceania-land-rank-3",
+      "type": "knowledge_question",
+      "canonicalNameId": "name:knowledge-oceania-land-rank-3:de:preferred",
+      "difficulty": 3,
+      "active": true,
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "knowledge:oceania-land-rank-4",
+      "type": "knowledge_question",
+      "canonicalNameId": "name:knowledge-oceania-land-rank-4:de:preferred",
+      "difficulty": 4,
+      "active": true,
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "knowledge:oceania-population-rank-1",
+      "type": "knowledge_question",
+      "canonicalNameId": "name:knowledge-oceania-population-rank-1:de:preferred",
+      "difficulty": 2,
+      "active": true,
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-population-2023"
+      ]
+    },
+    {
       "id": "knowledge:oceania-population-rank-2",
       "type": "knowledge_question",
       "canonicalNameId": "name:knowledge-oceania-population-rank-2:de:preferred",
       "difficulty": 3,
+      "active": true,
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "knowledge:oceania-population-rank-3",
+      "type": "knowledge_question",
+      "canonicalNameId": "name:knowledge-oceania-population-rank-3:de:preferred",
+      "difficulty": 3,
+      "active": true,
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "knowledge:oceania-population-rank-4",
+      "type": "knowledge_question",
+      "canonicalNameId": "name:knowledge-oceania-population-rank-4:de:preferred",
+      "difficulty": 4,
+      "active": true,
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "knowledge:oceania-smallest-land",
+      "type": "knowledge_question",
+      "canonicalNameId": "name:knowledge-oceania-smallest-land:de:preferred",
+      "difficulty": 4,
+      "active": true,
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "knowledge:oceania-smallest-population",
+      "type": "knowledge_question",
+      "canonicalNameId": "name:knowledge-oceania-smallest-population:de:preferred",
+      "difficulty": 4,
       "active": true,
       "sourceRefs": [
         "phase2-scope-policy",
@@ -9197,6 +9571,17 @@
       ]
     },
     {
+      "id": "knowledge:south-america-land-rank-1",
+      "type": "knowledge_question",
+      "canonicalNameId": "name:knowledge-south-america-land-rank-1:de:preferred",
+      "difficulty": 2,
+      "active": true,
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
       "id": "knowledge:south-america-land-rank-2",
       "type": "knowledge_question",
       "canonicalNameId": "name:knowledge-south-america-land-rank-2:de:preferred",
@@ -9205,6 +9590,39 @@
       "sourceRefs": [
         "phase2-scope-policy",
         "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "knowledge:south-america-land-rank-3",
+      "type": "knowledge_question",
+      "canonicalNameId": "name:knowledge-south-america-land-rank-3:de:preferred",
+      "difficulty": 3,
+      "active": true,
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "knowledge:south-america-land-rank-4",
+      "type": "knowledge_question",
+      "canonicalNameId": "name:knowledge-south-america-land-rank-4:de:preferred",
+      "difficulty": 4,
+      "active": true,
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "knowledge:south-america-population-rank-1",
+      "type": "knowledge_question",
+      "canonicalNameId": "name:knowledge-south-america-population-rank-1:de:preferred",
+      "difficulty": 2,
+      "active": true,
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-population-2023"
       ]
     },
     {
@@ -9219,6 +9637,39 @@
       ]
     },
     {
+      "id": "knowledge:south-america-population-rank-3",
+      "type": "knowledge_question",
+      "canonicalNameId": "name:knowledge-south-america-population-rank-3:de:preferred",
+      "difficulty": 3,
+      "active": true,
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "knowledge:south-america-population-rank-4",
+      "type": "knowledge_question",
+      "canonicalNameId": "name:knowledge-south-america-population-rank-4:de:preferred",
+      "difficulty": 4,
+      "active": true,
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "knowledge:south-america-smallest-land",
+      "type": "knowledge_question",
+      "canonicalNameId": "name:knowledge-south-america-smallest-land:de:preferred",
+      "difficulty": 4,
+      "active": true,
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
       "id": "knowledge:south-america-smallest-land-over-20m",
       "type": "knowledge_question",
       "canonicalNameId": "name:knowledge-south-america-smallest-land-over-20m:de:preferred",
@@ -9227,6 +9678,17 @@
       "sourceRefs": [
         "phase2-scope-policy",
         "world-bank-land-area-2023",
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "knowledge:south-america-smallest-population",
+      "type": "knowledge_question",
+      "canonicalNameId": "name:knowledge-south-america-smallest-population:de:preferred",
+      "difficulty": 4,
+      "active": true,
+      "sourceRefs": [
+        "phase2-scope-policy",
         "world-bank-population-2023"
       ]
     },
@@ -30328,6 +30790,30 @@
       "answerPolicy": "display_and_accept"
     },
     {
+      "id": "name:knowledge-africa-land-rank-2:de:preferred",
+      "entityId": "knowledge:africa-land-rank-2",
+      "locale": "de",
+      "name": "Wissenspuzzle africa-land-rank-2",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
+      "id": "name:knowledge-africa-land-rank-3:de:preferred",
+      "entityId": "knowledge:africa-land-rank-3",
+      "locale": "de",
+      "name": "Wissenspuzzle africa-land-rank-3",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
+      "id": "name:knowledge-africa-land-rank-4:de:preferred",
+      "entityId": "knowledge:africa-land-rank-4",
+      "locale": "de",
+      "name": "Wissenspuzzle africa-land-rank-4",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
       "id": "name:knowledge-africa-largest-land:de:preferred",
       "entityId": "knowledge:africa-largest-land",
       "locale": "de",
@@ -30352,6 +30838,46 @@
       "answerPolicy": "display_and_accept"
     },
     {
+      "id": "name:knowledge-africa-population-rank-2:de:preferred",
+      "entityId": "knowledge:africa-population-rank-2",
+      "locale": "de",
+      "name": "Wissenspuzzle africa-population-rank-2",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
+      "id": "name:knowledge-africa-population-rank-3:de:preferred",
+      "entityId": "knowledge:africa-population-rank-3",
+      "locale": "de",
+      "name": "Wissenspuzzle africa-population-rank-3",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
+      "id": "name:knowledge-africa-population-rank-4:de:preferred",
+      "entityId": "knowledge:africa-population-rank-4",
+      "locale": "de",
+      "name": "Wissenspuzzle africa-population-rank-4",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
+      "id": "name:knowledge-africa-smallest-land:de:preferred",
+      "entityId": "knowledge:africa-smallest-land",
+      "locale": "de",
+      "name": "Wissenspuzzle africa-smallest-land",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
+      "id": "name:knowledge-africa-smallest-population:de:preferred",
+      "entityId": "knowledge:africa-smallest-population",
+      "locale": "de",
+      "name": "Wissenspuzzle africa-smallest-population",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
       "id": "name:knowledge-african-official-portuguese-land-rank-2:de:preferred",
       "entityId": "knowledge:african-official-portuguese-land-rank-2",
       "locale": "de",
@@ -30364,6 +30890,86 @@
       "entityId": "knowledge:african-official-portuguese-population-rank-2",
       "locale": "de",
       "name": "Wissenspuzzle african-official-portuguese-population-rank-2",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
+      "id": "name:knowledge-asia-land-rank-1:de:preferred",
+      "entityId": "knowledge:asia-land-rank-1",
+      "locale": "de",
+      "name": "Wissenspuzzle asia-land-rank-1",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
+      "id": "name:knowledge-asia-land-rank-2:de:preferred",
+      "entityId": "knowledge:asia-land-rank-2",
+      "locale": "de",
+      "name": "Wissenspuzzle asia-land-rank-2",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
+      "id": "name:knowledge-asia-land-rank-3:de:preferred",
+      "entityId": "knowledge:asia-land-rank-3",
+      "locale": "de",
+      "name": "Wissenspuzzle asia-land-rank-3",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
+      "id": "name:knowledge-asia-land-rank-4:de:preferred",
+      "entityId": "knowledge:asia-land-rank-4",
+      "locale": "de",
+      "name": "Wissenspuzzle asia-land-rank-4",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
+      "id": "name:knowledge-asia-population-rank-1:de:preferred",
+      "entityId": "knowledge:asia-population-rank-1",
+      "locale": "de",
+      "name": "Wissenspuzzle asia-population-rank-1",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
+      "id": "name:knowledge-asia-population-rank-2:de:preferred",
+      "entityId": "knowledge:asia-population-rank-2",
+      "locale": "de",
+      "name": "Wissenspuzzle asia-population-rank-2",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
+      "id": "name:knowledge-asia-population-rank-3:de:preferred",
+      "entityId": "knowledge:asia-population-rank-3",
+      "locale": "de",
+      "name": "Wissenspuzzle asia-population-rank-3",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
+      "id": "name:knowledge-asia-population-rank-4:de:preferred",
+      "entityId": "knowledge:asia-population-rank-4",
+      "locale": "de",
+      "name": "Wissenspuzzle asia-population-rank-4",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
+      "id": "name:knowledge-asia-smallest-land:de:preferred",
+      "entityId": "knowledge:asia-smallest-land",
+      "locale": "de",
+      "name": "Wissenspuzzle asia-smallest-land",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
+      "id": "name:knowledge-asia-smallest-population:de:preferred",
+      "entityId": "knowledge:asia-smallest-population",
+      "locale": "de",
+      "name": "Wissenspuzzle asia-smallest-population",
       "kind": "preferred",
       "answerPolicy": "display_and_accept"
     },
@@ -30416,10 +31022,42 @@
       "answerPolicy": "display_and_accept"
     },
     {
+      "id": "name:knowledge-north-america-land-rank-1:de:preferred",
+      "entityId": "knowledge:north-america-land-rank-1",
+      "locale": "de",
+      "name": "Wissenspuzzle north-america-land-rank-1",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
       "id": "name:knowledge-north-america-land-rank-2:de:preferred",
       "entityId": "knowledge:north-america-land-rank-2",
       "locale": "de",
       "name": "Wissenspuzzle north-america-land-rank-2",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
+      "id": "name:knowledge-north-america-land-rank-3:de:preferred",
+      "entityId": "knowledge:north-america-land-rank-3",
+      "locale": "de",
+      "name": "Wissenspuzzle north-america-land-rank-3",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
+      "id": "name:knowledge-north-america-land-rank-4:de:preferred",
+      "entityId": "knowledge:north-america-land-rank-4",
+      "locale": "de",
+      "name": "Wissenspuzzle north-america-land-rank-4",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
+      "id": "name:knowledge-north-america-population-rank-1:de:preferred",
+      "entityId": "knowledge:north-america-population-rank-1",
+      "locale": "de",
+      "name": "Wissenspuzzle north-america-population-rank-1",
       "kind": "preferred",
       "answerPolicy": "display_and_accept"
     },
@@ -30432,6 +31070,46 @@
       "answerPolicy": "display_and_accept"
     },
     {
+      "id": "name:knowledge-north-america-population-rank-3:de:preferred",
+      "entityId": "knowledge:north-america-population-rank-3",
+      "locale": "de",
+      "name": "Wissenspuzzle north-america-population-rank-3",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
+      "id": "name:knowledge-north-america-population-rank-4:de:preferred",
+      "entityId": "knowledge:north-america-population-rank-4",
+      "locale": "de",
+      "name": "Wissenspuzzle north-america-population-rank-4",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
+      "id": "name:knowledge-north-america-smallest-land:de:preferred",
+      "entityId": "knowledge:north-america-smallest-land",
+      "locale": "de",
+      "name": "Wissenspuzzle north-america-smallest-land",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
+      "id": "name:knowledge-north-america-smallest-population:de:preferred",
+      "entityId": "knowledge:north-america-smallest-population",
+      "locale": "de",
+      "name": "Wissenspuzzle north-america-smallest-population",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
+      "id": "name:knowledge-oceania-land-rank-1:de:preferred",
+      "entityId": "knowledge:oceania-land-rank-1",
+      "locale": "de",
+      "name": "Wissenspuzzle oceania-land-rank-1",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
       "id": "name:knowledge-oceania-land-rank-2:de:preferred",
       "entityId": "knowledge:oceania-land-rank-2",
       "locale": "de",
@@ -30440,10 +31118,66 @@
       "answerPolicy": "display_and_accept"
     },
     {
+      "id": "name:knowledge-oceania-land-rank-3:de:preferred",
+      "entityId": "knowledge:oceania-land-rank-3",
+      "locale": "de",
+      "name": "Wissenspuzzle oceania-land-rank-3",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
+      "id": "name:knowledge-oceania-land-rank-4:de:preferred",
+      "entityId": "knowledge:oceania-land-rank-4",
+      "locale": "de",
+      "name": "Wissenspuzzle oceania-land-rank-4",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
+      "id": "name:knowledge-oceania-population-rank-1:de:preferred",
+      "entityId": "knowledge:oceania-population-rank-1",
+      "locale": "de",
+      "name": "Wissenspuzzle oceania-population-rank-1",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
       "id": "name:knowledge-oceania-population-rank-2:de:preferred",
       "entityId": "knowledge:oceania-population-rank-2",
       "locale": "de",
       "name": "Wissenspuzzle oceania-population-rank-2",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
+      "id": "name:knowledge-oceania-population-rank-3:de:preferred",
+      "entityId": "knowledge:oceania-population-rank-3",
+      "locale": "de",
+      "name": "Wissenspuzzle oceania-population-rank-3",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
+      "id": "name:knowledge-oceania-population-rank-4:de:preferred",
+      "entityId": "knowledge:oceania-population-rank-4",
+      "locale": "de",
+      "name": "Wissenspuzzle oceania-population-rank-4",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
+      "id": "name:knowledge-oceania-smallest-land:de:preferred",
+      "entityId": "knowledge:oceania-smallest-land",
+      "locale": "de",
+      "name": "Wissenspuzzle oceania-smallest-land",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
+      "id": "name:knowledge-oceania-smallest-population:de:preferred",
+      "entityId": "knowledge:oceania-smallest-population",
+      "locale": "de",
+      "name": "Wissenspuzzle oceania-smallest-population",
       "kind": "preferred",
       "answerPolicy": "display_and_accept"
     },
@@ -30464,10 +31198,42 @@
       "answerPolicy": "display_and_accept"
     },
     {
+      "id": "name:knowledge-south-america-land-rank-1:de:preferred",
+      "entityId": "knowledge:south-america-land-rank-1",
+      "locale": "de",
+      "name": "Wissenspuzzle south-america-land-rank-1",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
       "id": "name:knowledge-south-america-land-rank-2:de:preferred",
       "entityId": "knowledge:south-america-land-rank-2",
       "locale": "de",
       "name": "Wissenspuzzle south-america-land-rank-2",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
+      "id": "name:knowledge-south-america-land-rank-3:de:preferred",
+      "entityId": "knowledge:south-america-land-rank-3",
+      "locale": "de",
+      "name": "Wissenspuzzle south-america-land-rank-3",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
+      "id": "name:knowledge-south-america-land-rank-4:de:preferred",
+      "entityId": "knowledge:south-america-land-rank-4",
+      "locale": "de",
+      "name": "Wissenspuzzle south-america-land-rank-4",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
+      "id": "name:knowledge-south-america-population-rank-1:de:preferred",
+      "entityId": "knowledge:south-america-population-rank-1",
+      "locale": "de",
+      "name": "Wissenspuzzle south-america-population-rank-1",
       "kind": "preferred",
       "answerPolicy": "display_and_accept"
     },
@@ -30480,10 +31246,42 @@
       "answerPolicy": "display_and_accept"
     },
     {
+      "id": "name:knowledge-south-america-population-rank-3:de:preferred",
+      "entityId": "knowledge:south-america-population-rank-3",
+      "locale": "de",
+      "name": "Wissenspuzzle south-america-population-rank-3",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
+      "id": "name:knowledge-south-america-population-rank-4:de:preferred",
+      "entityId": "knowledge:south-america-population-rank-4",
+      "locale": "de",
+      "name": "Wissenspuzzle south-america-population-rank-4",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
       "id": "name:knowledge-south-america-smallest-land-over-20m:de:preferred",
       "entityId": "knowledge:south-america-smallest-land-over-20m",
       "locale": "de",
       "name": "Wissenspuzzle south-america-smallest-land-over-20m",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
+      "id": "name:knowledge-south-america-smallest-land:de:preferred",
+      "entityId": "knowledge:south-america-smallest-land",
+      "locale": "de",
+      "name": "Wissenspuzzle south-america-smallest-land",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
+      "id": "name:knowledge-south-america-smallest-population:de:preferred",
+      "entityId": "knowledge:south-america-smallest-population",
+      "locale": "de",
+      "name": "Wissenspuzzle south-america-smallest-population",
       "kind": "preferred",
       "answerPolicy": "display_and_accept"
     },
@@ -48860,6 +49658,63 @@
       ]
     },
     {
+      "id": "relation:knowledge-africa-land-rank-2:has-answer:country-cd",
+      "sourceId": "knowledge:africa-land-rank-2",
+      "relationType": "has_answer",
+      "targetId": "country:cd",
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "relation:knowledge-africa-land-rank-2:located-in:continent-africa",
+      "sourceId": "knowledge:africa-land-rank-2",
+      "relationType": "located_in",
+      "targetId": "continent:africa",
+      "sourceRefs": [
+        "phase2-scope-policy"
+      ]
+    },
+    {
+      "id": "relation:knowledge-africa-land-rank-3:has-answer:country-sd",
+      "sourceId": "knowledge:africa-land-rank-3",
+      "relationType": "has_answer",
+      "targetId": "country:sd",
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "relation:knowledge-africa-land-rank-3:located-in:continent-africa",
+      "sourceId": "knowledge:africa-land-rank-3",
+      "relationType": "located_in",
+      "targetId": "continent:africa",
+      "sourceRefs": [
+        "phase2-scope-policy"
+      ]
+    },
+    {
+      "id": "relation:knowledge-africa-land-rank-4:has-answer:country-ly",
+      "sourceId": "knowledge:africa-land-rank-4",
+      "relationType": "has_answer",
+      "targetId": "country:ly",
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "relation:knowledge-africa-land-rank-4:located-in:continent-africa",
+      "sourceId": "knowledge:africa-land-rank-4",
+      "relationType": "located_in",
+      "targetId": "continent:africa",
+      "sourceRefs": [
+        "phase2-scope-policy"
+      ]
+    },
+    {
       "id": "relation:knowledge-africa-largest-land:has-answer:country-dz",
       "sourceId": "knowledge:africa-largest-land",
       "relationType": "has_answer",
@@ -48918,6 +49773,110 @@
       ]
     },
     {
+      "id": "relation:knowledge-africa-population-rank-2:has-answer:country-et",
+      "sourceId": "knowledge:africa-population-rank-2",
+      "relationType": "has_answer",
+      "targetId": "country:et",
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "relation:knowledge-africa-population-rank-2:located-in:continent-africa",
+      "sourceId": "knowledge:africa-population-rank-2",
+      "relationType": "located_in",
+      "targetId": "continent:africa",
+      "sourceRefs": [
+        "phase2-scope-policy"
+      ]
+    },
+    {
+      "id": "relation:knowledge-africa-population-rank-3:has-answer:country-eg",
+      "sourceId": "knowledge:africa-population-rank-3",
+      "relationType": "has_answer",
+      "targetId": "country:eg",
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "relation:knowledge-africa-population-rank-3:located-in:continent-africa",
+      "sourceId": "knowledge:africa-population-rank-3",
+      "relationType": "located_in",
+      "targetId": "continent:africa",
+      "sourceRefs": [
+        "phase2-scope-policy"
+      ]
+    },
+    {
+      "id": "relation:knowledge-africa-population-rank-3:located-in:continent-asia",
+      "sourceId": "knowledge:africa-population-rank-3",
+      "relationType": "located_in",
+      "targetId": "continent:asia",
+      "sourceRefs": [
+        "phase2-scope-policy"
+      ]
+    },
+    {
+      "id": "relation:knowledge-africa-population-rank-4:has-answer:country-cd",
+      "sourceId": "knowledge:africa-population-rank-4",
+      "relationType": "has_answer",
+      "targetId": "country:cd",
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "relation:knowledge-africa-population-rank-4:located-in:continent-africa",
+      "sourceId": "knowledge:africa-population-rank-4",
+      "relationType": "located_in",
+      "targetId": "continent:africa",
+      "sourceRefs": [
+        "phase2-scope-policy"
+      ]
+    },
+    {
+      "id": "relation:knowledge-africa-smallest-land:has-answer:country-sc",
+      "sourceId": "knowledge:africa-smallest-land",
+      "relationType": "has_answer",
+      "targetId": "country:sc",
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "relation:knowledge-africa-smallest-land:located-in:continent-africa",
+      "sourceId": "knowledge:africa-smallest-land",
+      "relationType": "located_in",
+      "targetId": "continent:africa",
+      "sourceRefs": [
+        "phase2-scope-policy"
+      ]
+    },
+    {
+      "id": "relation:knowledge-africa-smallest-population:has-answer:country-sc",
+      "sourceId": "knowledge:africa-smallest-population",
+      "relationType": "has_answer",
+      "targetId": "country:sc",
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "relation:knowledge-africa-smallest-population:located-in:continent-africa",
+      "sourceId": "knowledge:africa-smallest-population",
+      "relationType": "located_in",
+      "targetId": "continent:africa",
+      "sourceRefs": [
+        "phase2-scope-policy"
+      ]
+    },
+    {
       "id": "relation:knowledge-african-official-portuguese-land-rank-2:has-answer:country-mz",
       "sourceId": "knowledge:african-official-portuguese-land-rank-2",
       "relationType": "has_answer",
@@ -48953,6 +49912,214 @@
       "sourceId": "knowledge:african-official-portuguese-population-rank-2",
       "relationType": "located_in",
       "targetId": "continent:africa",
+      "sourceRefs": [
+        "phase2-scope-policy"
+      ]
+    },
+    {
+      "id": "relation:knowledge-asia-land-rank-1:has-answer:country-ru",
+      "sourceId": "knowledge:asia-land-rank-1",
+      "relationType": "has_answer",
+      "targetId": "country:ru",
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "relation:knowledge-asia-land-rank-1:located-in:continent-asia",
+      "sourceId": "knowledge:asia-land-rank-1",
+      "relationType": "located_in",
+      "targetId": "continent:asia",
+      "sourceRefs": [
+        "phase2-scope-policy"
+      ]
+    },
+    {
+      "id": "relation:knowledge-asia-land-rank-1:located-in:continent-europe",
+      "sourceId": "knowledge:asia-land-rank-1",
+      "relationType": "located_in",
+      "targetId": "continent:europe",
+      "sourceRefs": [
+        "phase2-scope-policy"
+      ]
+    },
+    {
+      "id": "relation:knowledge-asia-land-rank-2:has-answer:country-cn",
+      "sourceId": "knowledge:asia-land-rank-2",
+      "relationType": "has_answer",
+      "targetId": "country:cn",
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "relation:knowledge-asia-land-rank-2:located-in:continent-asia",
+      "sourceId": "knowledge:asia-land-rank-2",
+      "relationType": "located_in",
+      "targetId": "continent:asia",
+      "sourceRefs": [
+        "phase2-scope-policy"
+      ]
+    },
+    {
+      "id": "relation:knowledge-asia-land-rank-3:has-answer:country-in",
+      "sourceId": "knowledge:asia-land-rank-3",
+      "relationType": "has_answer",
+      "targetId": "country:in",
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "relation:knowledge-asia-land-rank-3:located-in:continent-asia",
+      "sourceId": "knowledge:asia-land-rank-3",
+      "relationType": "located_in",
+      "targetId": "continent:asia",
+      "sourceRefs": [
+        "phase2-scope-policy"
+      ]
+    },
+    {
+      "id": "relation:knowledge-asia-land-rank-4:has-answer:country-kz",
+      "sourceId": "knowledge:asia-land-rank-4",
+      "relationType": "has_answer",
+      "targetId": "country:kz",
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "relation:knowledge-asia-land-rank-4:located-in:continent-asia",
+      "sourceId": "knowledge:asia-land-rank-4",
+      "relationType": "located_in",
+      "targetId": "continent:asia",
+      "sourceRefs": [
+        "phase2-scope-policy"
+      ]
+    },
+    {
+      "id": "relation:knowledge-asia-land-rank-4:located-in:continent-europe",
+      "sourceId": "knowledge:asia-land-rank-4",
+      "relationType": "located_in",
+      "targetId": "continent:europe",
+      "sourceRefs": [
+        "phase2-scope-policy"
+      ]
+    },
+    {
+      "id": "relation:knowledge-asia-population-rank-1:has-answer:country-in",
+      "sourceId": "knowledge:asia-population-rank-1",
+      "relationType": "has_answer",
+      "targetId": "country:in",
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "relation:knowledge-asia-population-rank-1:located-in:continent-asia",
+      "sourceId": "knowledge:asia-population-rank-1",
+      "relationType": "located_in",
+      "targetId": "continent:asia",
+      "sourceRefs": [
+        "phase2-scope-policy"
+      ]
+    },
+    {
+      "id": "relation:knowledge-asia-population-rank-2:has-answer:country-cn",
+      "sourceId": "knowledge:asia-population-rank-2",
+      "relationType": "has_answer",
+      "targetId": "country:cn",
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "relation:knowledge-asia-population-rank-2:located-in:continent-asia",
+      "sourceId": "knowledge:asia-population-rank-2",
+      "relationType": "located_in",
+      "targetId": "continent:asia",
+      "sourceRefs": [
+        "phase2-scope-policy"
+      ]
+    },
+    {
+      "id": "relation:knowledge-asia-population-rank-3:has-answer:country-id",
+      "sourceId": "knowledge:asia-population-rank-3",
+      "relationType": "has_answer",
+      "targetId": "country:id",
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "relation:knowledge-asia-population-rank-3:located-in:continent-asia",
+      "sourceId": "knowledge:asia-population-rank-3",
+      "relationType": "located_in",
+      "targetId": "continent:asia",
+      "sourceRefs": [
+        "phase2-scope-policy"
+      ]
+    },
+    {
+      "id": "relation:knowledge-asia-population-rank-4:has-answer:country-pk",
+      "sourceId": "knowledge:asia-population-rank-4",
+      "relationType": "has_answer",
+      "targetId": "country:pk",
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "relation:knowledge-asia-population-rank-4:located-in:continent-asia",
+      "sourceId": "knowledge:asia-population-rank-4",
+      "relationType": "located_in",
+      "targetId": "continent:asia",
+      "sourceRefs": [
+        "phase2-scope-policy"
+      ]
+    },
+    {
+      "id": "relation:knowledge-asia-smallest-land:has-answer:country-mv",
+      "sourceId": "knowledge:asia-smallest-land",
+      "relationType": "has_answer",
+      "targetId": "country:mv",
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "relation:knowledge-asia-smallest-land:located-in:continent-asia",
+      "sourceId": "knowledge:asia-smallest-land",
+      "relationType": "located_in",
+      "targetId": "continent:asia",
+      "sourceRefs": [
+        "phase2-scope-policy"
+      ]
+    },
+    {
+      "id": "relation:knowledge-asia-smallest-population:has-answer:country-bn",
+      "sourceId": "knowledge:asia-smallest-population",
+      "relationType": "has_answer",
+      "targetId": "country:bn",
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "relation:knowledge-asia-smallest-population:located-in:continent-asia",
+      "sourceId": "knowledge:asia-smallest-population",
+      "relationType": "located_in",
+      "targetId": "continent:asia",
       "sourceRefs": [
         "phase2-scope-policy"
       ]
@@ -49078,6 +50245,25 @@
       ]
     },
     {
+      "id": "relation:knowledge-north-america-land-rank-1:has-answer:country-us",
+      "sourceId": "knowledge:north-america-land-rank-1",
+      "relationType": "has_answer",
+      "targetId": "country:us",
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "relation:knowledge-north-america-land-rank-1:located-in:continent-north-america",
+      "sourceId": "knowledge:north-america-land-rank-1",
+      "relationType": "located_in",
+      "targetId": "continent:north-america",
+      "sourceRefs": [
+        "phase2-scope-policy"
+      ]
+    },
+    {
       "id": "relation:knowledge-north-america-land-rank-2:has-answer:country-ca",
       "sourceId": "knowledge:north-america-land-rank-2",
       "relationType": "has_answer",
@@ -49090,6 +50276,63 @@
     {
       "id": "relation:knowledge-north-america-land-rank-2:located-in:continent-north-america",
       "sourceId": "knowledge:north-america-land-rank-2",
+      "relationType": "located_in",
+      "targetId": "continent:north-america",
+      "sourceRefs": [
+        "phase2-scope-policy"
+      ]
+    },
+    {
+      "id": "relation:knowledge-north-america-land-rank-3:has-answer:country-mx",
+      "sourceId": "knowledge:north-america-land-rank-3",
+      "relationType": "has_answer",
+      "targetId": "country:mx",
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "relation:knowledge-north-america-land-rank-3:located-in:continent-north-america",
+      "sourceId": "knowledge:north-america-land-rank-3",
+      "relationType": "located_in",
+      "targetId": "continent:north-america",
+      "sourceRefs": [
+        "phase2-scope-policy"
+      ]
+    },
+    {
+      "id": "relation:knowledge-north-america-land-rank-4:has-answer:country-ni",
+      "sourceId": "knowledge:north-america-land-rank-4",
+      "relationType": "has_answer",
+      "targetId": "country:ni",
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "relation:knowledge-north-america-land-rank-4:located-in:continent-north-america",
+      "sourceId": "knowledge:north-america-land-rank-4",
+      "relationType": "located_in",
+      "targetId": "continent:north-america",
+      "sourceRefs": [
+        "phase2-scope-policy"
+      ]
+    },
+    {
+      "id": "relation:knowledge-north-america-population-rank-1:has-answer:country-us",
+      "sourceId": "knowledge:north-america-population-rank-1",
+      "relationType": "has_answer",
+      "targetId": "country:us",
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "relation:knowledge-north-america-population-rank-1:located-in:continent-north-america",
+      "sourceId": "knowledge:north-america-population-rank-1",
       "relationType": "located_in",
       "targetId": "continent:north-america",
       "sourceRefs": [
@@ -49116,6 +50359,101 @@
       ]
     },
     {
+      "id": "relation:knowledge-north-america-population-rank-3:has-answer:country-ca",
+      "sourceId": "knowledge:north-america-population-rank-3",
+      "relationType": "has_answer",
+      "targetId": "country:ca",
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "relation:knowledge-north-america-population-rank-3:located-in:continent-north-america",
+      "sourceId": "knowledge:north-america-population-rank-3",
+      "relationType": "located_in",
+      "targetId": "continent:north-america",
+      "sourceRefs": [
+        "phase2-scope-policy"
+      ]
+    },
+    {
+      "id": "relation:knowledge-north-america-population-rank-4:has-answer:country-gt",
+      "sourceId": "knowledge:north-america-population-rank-4",
+      "relationType": "has_answer",
+      "targetId": "country:gt",
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "relation:knowledge-north-america-population-rank-4:located-in:continent-north-america",
+      "sourceId": "knowledge:north-america-population-rank-4",
+      "relationType": "located_in",
+      "targetId": "continent:north-america",
+      "sourceRefs": [
+        "phase2-scope-policy"
+      ]
+    },
+    {
+      "id": "relation:knowledge-north-america-smallest-land:has-answer:country-kn",
+      "sourceId": "knowledge:north-america-smallest-land",
+      "relationType": "has_answer",
+      "targetId": "country:kn",
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "relation:knowledge-north-america-smallest-land:located-in:continent-north-america",
+      "sourceId": "knowledge:north-america-smallest-land",
+      "relationType": "located_in",
+      "targetId": "continent:north-america",
+      "sourceRefs": [
+        "phase2-scope-policy"
+      ]
+    },
+    {
+      "id": "relation:knowledge-north-america-smallest-population:has-answer:country-kn",
+      "sourceId": "knowledge:north-america-smallest-population",
+      "relationType": "has_answer",
+      "targetId": "country:kn",
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "relation:knowledge-north-america-smallest-population:located-in:continent-north-america",
+      "sourceId": "knowledge:north-america-smallest-population",
+      "relationType": "located_in",
+      "targetId": "continent:north-america",
+      "sourceRefs": [
+        "phase2-scope-policy"
+      ]
+    },
+    {
+      "id": "relation:knowledge-oceania-land-rank-1:has-answer:country-au",
+      "sourceId": "knowledge:oceania-land-rank-1",
+      "relationType": "has_answer",
+      "targetId": "country:au",
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "relation:knowledge-oceania-land-rank-1:located-in:continent-oceania",
+      "sourceId": "knowledge:oceania-land-rank-1",
+      "relationType": "located_in",
+      "targetId": "continent:oceania",
+      "sourceRefs": [
+        "phase2-scope-policy"
+      ]
+    },
+    {
       "id": "relation:knowledge-oceania-land-rank-2:has-answer:country-pg",
       "sourceId": "knowledge:oceania-land-rank-2",
       "relationType": "has_answer",
@@ -49135,6 +50473,63 @@
       ]
     },
     {
+      "id": "relation:knowledge-oceania-land-rank-3:has-answer:country-nz",
+      "sourceId": "knowledge:oceania-land-rank-3",
+      "relationType": "has_answer",
+      "targetId": "country:nz",
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "relation:knowledge-oceania-land-rank-3:located-in:continent-oceania",
+      "sourceId": "knowledge:oceania-land-rank-3",
+      "relationType": "located_in",
+      "targetId": "continent:oceania",
+      "sourceRefs": [
+        "phase2-scope-policy"
+      ]
+    },
+    {
+      "id": "relation:knowledge-oceania-land-rank-4:has-answer:country-sb",
+      "sourceId": "knowledge:oceania-land-rank-4",
+      "relationType": "has_answer",
+      "targetId": "country:sb",
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "relation:knowledge-oceania-land-rank-4:located-in:continent-oceania",
+      "sourceId": "knowledge:oceania-land-rank-4",
+      "relationType": "located_in",
+      "targetId": "continent:oceania",
+      "sourceRefs": [
+        "phase2-scope-policy"
+      ]
+    },
+    {
+      "id": "relation:knowledge-oceania-population-rank-1:has-answer:country-au",
+      "sourceId": "knowledge:oceania-population-rank-1",
+      "relationType": "has_answer",
+      "targetId": "country:au",
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "relation:knowledge-oceania-population-rank-1:located-in:continent-oceania",
+      "sourceId": "knowledge:oceania-population-rank-1",
+      "relationType": "located_in",
+      "targetId": "continent:oceania",
+      "sourceRefs": [
+        "phase2-scope-policy"
+      ]
+    },
+    {
       "id": "relation:knowledge-oceania-population-rank-2:has-answer:country-pg",
       "sourceId": "knowledge:oceania-population-rank-2",
       "relationType": "has_answer",
@@ -49147,6 +50542,82 @@
     {
       "id": "relation:knowledge-oceania-population-rank-2:located-in:continent-oceania",
       "sourceId": "knowledge:oceania-population-rank-2",
+      "relationType": "located_in",
+      "targetId": "continent:oceania",
+      "sourceRefs": [
+        "phase2-scope-policy"
+      ]
+    },
+    {
+      "id": "relation:knowledge-oceania-population-rank-3:has-answer:country-nz",
+      "sourceId": "knowledge:oceania-population-rank-3",
+      "relationType": "has_answer",
+      "targetId": "country:nz",
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "relation:knowledge-oceania-population-rank-3:located-in:continent-oceania",
+      "sourceId": "knowledge:oceania-population-rank-3",
+      "relationType": "located_in",
+      "targetId": "continent:oceania",
+      "sourceRefs": [
+        "phase2-scope-policy"
+      ]
+    },
+    {
+      "id": "relation:knowledge-oceania-population-rank-4:has-answer:country-fj",
+      "sourceId": "knowledge:oceania-population-rank-4",
+      "relationType": "has_answer",
+      "targetId": "country:fj",
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "relation:knowledge-oceania-population-rank-4:located-in:continent-oceania",
+      "sourceId": "knowledge:oceania-population-rank-4",
+      "relationType": "located_in",
+      "targetId": "continent:oceania",
+      "sourceRefs": [
+        "phase2-scope-policy"
+      ]
+    },
+    {
+      "id": "relation:knowledge-oceania-smallest-land:has-answer:country-nr",
+      "sourceId": "knowledge:oceania-smallest-land",
+      "relationType": "has_answer",
+      "targetId": "country:nr",
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "relation:knowledge-oceania-smallest-land:located-in:continent-oceania",
+      "sourceId": "knowledge:oceania-smallest-land",
+      "relationType": "located_in",
+      "targetId": "continent:oceania",
+      "sourceRefs": [
+        "phase2-scope-policy"
+      ]
+    },
+    {
+      "id": "relation:knowledge-oceania-smallest-population:has-answer:country-tv",
+      "sourceId": "knowledge:oceania-smallest-population",
+      "relationType": "has_answer",
+      "targetId": "country:tv",
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "relation:knowledge-oceania-smallest-population:located-in:continent-oceania",
+      "sourceId": "knowledge:oceania-smallest-population",
       "relationType": "located_in",
       "targetId": "continent:oceania",
       "sourceRefs": [
@@ -49192,6 +50663,25 @@
       ]
     },
     {
+      "id": "relation:knowledge-south-america-land-rank-1:has-answer:country-br",
+      "sourceId": "knowledge:south-america-land-rank-1",
+      "relationType": "has_answer",
+      "targetId": "country:br",
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "relation:knowledge-south-america-land-rank-1:located-in:continent-south-america",
+      "sourceId": "knowledge:south-america-land-rank-1",
+      "relationType": "located_in",
+      "targetId": "continent:south-america",
+      "sourceRefs": [
+        "phase2-scope-policy"
+      ]
+    },
+    {
       "id": "relation:knowledge-south-america-land-rank-2:has-answer:country-ar",
       "sourceId": "knowledge:south-america-land-rank-2",
       "relationType": "has_answer",
@@ -49204,6 +50694,63 @@
     {
       "id": "relation:knowledge-south-america-land-rank-2:located-in:continent-south-america",
       "sourceId": "knowledge:south-america-land-rank-2",
+      "relationType": "located_in",
+      "targetId": "continent:south-america",
+      "sourceRefs": [
+        "phase2-scope-policy"
+      ]
+    },
+    {
+      "id": "relation:knowledge-south-america-land-rank-3:has-answer:country-pe",
+      "sourceId": "knowledge:south-america-land-rank-3",
+      "relationType": "has_answer",
+      "targetId": "country:pe",
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "relation:knowledge-south-america-land-rank-3:located-in:continent-south-america",
+      "sourceId": "knowledge:south-america-land-rank-3",
+      "relationType": "located_in",
+      "targetId": "continent:south-america",
+      "sourceRefs": [
+        "phase2-scope-policy"
+      ]
+    },
+    {
+      "id": "relation:knowledge-south-america-land-rank-4:has-answer:country-co",
+      "sourceId": "knowledge:south-america-land-rank-4",
+      "relationType": "has_answer",
+      "targetId": "country:co",
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "relation:knowledge-south-america-land-rank-4:located-in:continent-south-america",
+      "sourceId": "knowledge:south-america-land-rank-4",
+      "relationType": "located_in",
+      "targetId": "continent:south-america",
+      "sourceRefs": [
+        "phase2-scope-policy"
+      ]
+    },
+    {
+      "id": "relation:knowledge-south-america-population-rank-1:has-answer:country-br",
+      "sourceId": "knowledge:south-america-population-rank-1",
+      "relationType": "has_answer",
+      "targetId": "country:br",
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "relation:knowledge-south-america-population-rank-1:located-in:continent-south-america",
+      "sourceId": "knowledge:south-america-population-rank-1",
       "relationType": "located_in",
       "targetId": "continent:south-america",
       "sourceRefs": [
@@ -49230,6 +50777,44 @@
       ]
     },
     {
+      "id": "relation:knowledge-south-america-population-rank-3:has-answer:country-ar",
+      "sourceId": "knowledge:south-america-population-rank-3",
+      "relationType": "has_answer",
+      "targetId": "country:ar",
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "relation:knowledge-south-america-population-rank-3:located-in:continent-south-america",
+      "sourceId": "knowledge:south-america-population-rank-3",
+      "relationType": "located_in",
+      "targetId": "continent:south-america",
+      "sourceRefs": [
+        "phase2-scope-policy"
+      ]
+    },
+    {
+      "id": "relation:knowledge-south-america-population-rank-4:has-answer:country-pe",
+      "sourceId": "knowledge:south-america-population-rank-4",
+      "relationType": "has_answer",
+      "targetId": "country:pe",
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "relation:knowledge-south-america-population-rank-4:located-in:continent-south-america",
+      "sourceId": "knowledge:south-america-population-rank-4",
+      "relationType": "located_in",
+      "targetId": "continent:south-america",
+      "sourceRefs": [
+        "phase2-scope-policy"
+      ]
+    },
+    {
       "id": "relation:knowledge-south-america-smallest-land-over-20m:has-answer:country-ve",
       "sourceId": "knowledge:south-america-smallest-land-over-20m",
       "relationType": "has_answer",
@@ -49243,6 +50828,44 @@
     {
       "id": "relation:knowledge-south-america-smallest-land-over-20m:located-in:continent-south-america",
       "sourceId": "knowledge:south-america-smallest-land-over-20m",
+      "relationType": "located_in",
+      "targetId": "continent:south-america",
+      "sourceRefs": [
+        "phase2-scope-policy"
+      ]
+    },
+    {
+      "id": "relation:knowledge-south-america-smallest-land:has-answer:country-sr",
+      "sourceId": "knowledge:south-america-smallest-land",
+      "relationType": "has_answer",
+      "targetId": "country:sr",
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-land-area-2023"
+      ]
+    },
+    {
+      "id": "relation:knowledge-south-america-smallest-land:located-in:continent-south-america",
+      "sourceId": "knowledge:south-america-smallest-land",
+      "relationType": "located_in",
+      "targetId": "continent:south-america",
+      "sourceRefs": [
+        "phase2-scope-policy"
+      ]
+    },
+    {
+      "id": "relation:knowledge-south-america-smallest-population:has-answer:country-sr",
+      "sourceId": "knowledge:south-america-smallest-population",
+      "relationType": "has_answer",
+      "targetId": "country:sr",
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "relation:knowledge-south-america-smallest-population:located-in:continent-south-america",
+      "sourceId": "knowledge:south-america-smallest-population",
       "relationType": "located_in",
       "targetId": "continent:south-america",
       "sourceRefs": [
@@ -56005,6 +57628,111 @@
   ],
   "compiledKnowledgeQuestions": [
     {
+      "id": "compiled:africa-land-rank-2",
+      "entityId": "knowledge:africa-land-rank-2",
+      "templateId": "africa-land-rank-2",
+      "promptDe": "Welches afrikanische Land ist nach Landfläche das zweitgrößte?",
+      "answerEntityId": "country:cd",
+      "explanationDe": "Landfläche, Stand 2023: Rang 1: Algerien (2.381.740 km²); Rang 2: Demokratische Republik Kongo (2.267.050 km²).",
+      "evidence": [
+        {
+          "labelDe": "Rang 1 · Algerien",
+          "valueDe": "2.381.740 km²",
+          "factId": "fact:country-dz:land-area-km2:2023"
+        },
+        {
+          "labelDe": "Rang 2 · Demokratische Republik Kongo",
+          "valueDe": "2.267.050 km²",
+          "factId": "fact:country-cd:land-area-km2:2023"
+        },
+        {
+          "labelDe": "Gebiet",
+          "valueDe": "Afrika",
+          "relationId": "relation:country-cd:located-in:continent-africa"
+        }
+      ],
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-land-area-2023"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "compiled:africa-land-rank-3",
+      "entityId": "knowledge:africa-land-rank-3",
+      "templateId": "africa-land-rank-3",
+      "promptDe": "Welches afrikanische Land ist nach Landfläche das drittgrößte?",
+      "answerEntityId": "country:sd",
+      "explanationDe": "Landfläche, Stand 2023: Rang 1: Algerien (2.381.740 km²); Rang 2: Demokratische Republik Kongo (2.267.050 km²); Rang 3: Sudan (1.868.000 km²).",
+      "evidence": [
+        {
+          "labelDe": "Rang 1 · Algerien",
+          "valueDe": "2.381.740 km²",
+          "factId": "fact:country-dz:land-area-km2:2023"
+        },
+        {
+          "labelDe": "Rang 2 · Demokratische Republik Kongo",
+          "valueDe": "2.267.050 km²",
+          "factId": "fact:country-cd:land-area-km2:2023"
+        },
+        {
+          "labelDe": "Rang 3 · Sudan",
+          "valueDe": "1.868.000 km²",
+          "factId": "fact:country-sd:land-area-km2:2023"
+        },
+        {
+          "labelDe": "Gebiet",
+          "valueDe": "Afrika",
+          "relationId": "relation:country-sd:located-in:continent-africa"
+        }
+      ],
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-land-area-2023"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "compiled:africa-land-rank-4",
+      "entityId": "knowledge:africa-land-rank-4",
+      "templateId": "africa-land-rank-4",
+      "promptDe": "Welches afrikanische Land ist nach Landfläche das viertgrößte?",
+      "answerEntityId": "country:ly",
+      "explanationDe": "Landfläche, Stand 2023: Rang 1: Algerien (2.381.740 km²); Rang 2: Demokratische Republik Kongo (2.267.050 km²); Rang 3: Sudan (1.868.000 km²); Rang 4: Libyen (1.759.540 km²).",
+      "evidence": [
+        {
+          "labelDe": "Rang 1 · Algerien",
+          "valueDe": "2.381.740 km²",
+          "factId": "fact:country-dz:land-area-km2:2023"
+        },
+        {
+          "labelDe": "Rang 2 · Demokratische Republik Kongo",
+          "valueDe": "2.267.050 km²",
+          "factId": "fact:country-cd:land-area-km2:2023"
+        },
+        {
+          "labelDe": "Rang 3 · Sudan",
+          "valueDe": "1.868.000 km²",
+          "factId": "fact:country-sd:land-area-km2:2023"
+        },
+        {
+          "labelDe": "Rang 4 · Libyen",
+          "valueDe": "1.759.540 km²",
+          "factId": "fact:country-ly:land-area-km2:2023"
+        },
+        {
+          "labelDe": "Gebiet",
+          "valueDe": "Afrika",
+          "relationId": "relation:country-ly:located-in:continent-africa"
+        }
+      ],
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-land-area-2023"
+      ],
+      "difficulty": 4
+    },
+    {
       "id": "compiled:africa-largest-land",
       "entityId": "knowledge:africa-largest-land",
       "templateId": "africa-largest-land",
@@ -56086,6 +57814,161 @@
       "difficulty": 4
     },
     {
+      "id": "compiled:africa-population-rank-2",
+      "entityId": "knowledge:africa-population-rank-2",
+      "templateId": "africa-population-rank-2",
+      "promptDe": "Welches afrikanische Land hat die zweitgrößte Bevölkerung?",
+      "answerEntityId": "country:et",
+      "explanationDe": "Bevölkerung, Stand 2023: Rang 1: Nigeria (227.882.945 Menschen); Rang 2: Äthiopien (128.691.692 Menschen).",
+      "evidence": [
+        {
+          "labelDe": "Rang 1 · Nigeria",
+          "valueDe": "227.882.945 Menschen",
+          "factId": "fact:country-ng:population-total:2023"
+        },
+        {
+          "labelDe": "Rang 2 · Äthiopien",
+          "valueDe": "128.691.692 Menschen",
+          "factId": "fact:country-et:population-total:2023"
+        },
+        {
+          "labelDe": "Gebiet",
+          "valueDe": "Afrika",
+          "relationId": "relation:country-et:located-in:continent-africa"
+        }
+      ],
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-population-2023"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "compiled:africa-population-rank-3",
+      "entityId": "knowledge:africa-population-rank-3",
+      "templateId": "africa-population-rank-3",
+      "promptDe": "Welches afrikanische Land hat die drittgrößte Bevölkerung?",
+      "answerEntityId": "country:eg",
+      "explanationDe": "Bevölkerung, Stand 2023: Rang 1: Nigeria (227.882.945 Menschen); Rang 2: Äthiopien (128.691.692 Menschen); Rang 3: Ägypten (114.535.772 Menschen).",
+      "evidence": [
+        {
+          "labelDe": "Rang 1 · Nigeria",
+          "valueDe": "227.882.945 Menschen",
+          "factId": "fact:country-ng:population-total:2023"
+        },
+        {
+          "labelDe": "Rang 2 · Äthiopien",
+          "valueDe": "128.691.692 Menschen",
+          "factId": "fact:country-et:population-total:2023"
+        },
+        {
+          "labelDe": "Rang 3 · Ägypten",
+          "valueDe": "114.535.772 Menschen",
+          "factId": "fact:country-eg:population-total:2023"
+        },
+        {
+          "labelDe": "Gebiet",
+          "valueDe": "Afrika",
+          "relationId": "relation:country-eg:located-in:continent-africa"
+        }
+      ],
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-population-2023"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "compiled:africa-population-rank-4",
+      "entityId": "knowledge:africa-population-rank-4",
+      "templateId": "africa-population-rank-4",
+      "promptDe": "Welches afrikanische Land hat die viertgrößte Bevölkerung?",
+      "answerEntityId": "country:cd",
+      "explanationDe": "Bevölkerung, Stand 2023: Rang 1: Nigeria (227.882.945 Menschen); Rang 2: Äthiopien (128.691.692 Menschen); Rang 3: Ägypten (114.535.772 Menschen); Rang 4: Demokratische Republik Kongo (105.789.731 Menschen).",
+      "evidence": [
+        {
+          "labelDe": "Rang 1 · Nigeria",
+          "valueDe": "227.882.945 Menschen",
+          "factId": "fact:country-ng:population-total:2023"
+        },
+        {
+          "labelDe": "Rang 2 · Äthiopien",
+          "valueDe": "128.691.692 Menschen",
+          "factId": "fact:country-et:population-total:2023"
+        },
+        {
+          "labelDe": "Rang 3 · Ägypten",
+          "valueDe": "114.535.772 Menschen",
+          "factId": "fact:country-eg:population-total:2023"
+        },
+        {
+          "labelDe": "Rang 4 · Demokratische Republik Kongo",
+          "valueDe": "105.789.731 Menschen",
+          "factId": "fact:country-cd:population-total:2023"
+        },
+        {
+          "labelDe": "Gebiet",
+          "valueDe": "Afrika",
+          "relationId": "relation:country-cd:located-in:continent-africa"
+        }
+      ],
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-population-2023"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "compiled:africa-smallest-land",
+      "entityId": "knowledge:africa-smallest-land",
+      "templateId": "africa-smallest-land",
+      "promptDe": "Welches afrikanische Land hat die kleinste Landfläche?",
+      "answerEntityId": "country:sc",
+      "explanationDe": "Landfläche, Stand 2023: Rang 1: Seychellen (460 km²).",
+      "evidence": [
+        {
+          "labelDe": "Rang 1 · Seychellen",
+          "valueDe": "460 km²",
+          "factId": "fact:country-sc:land-area-km2:2023"
+        },
+        {
+          "labelDe": "Gebiet",
+          "valueDe": "Afrika",
+          "relationId": "relation:country-sc:located-in:continent-africa"
+        }
+      ],
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-land-area-2023"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "compiled:africa-smallest-population",
+      "entityId": "knowledge:africa-smallest-population",
+      "templateId": "africa-smallest-population",
+      "promptDe": "Welches afrikanische Land hat die kleinste Bevölkerung?",
+      "answerEntityId": "country:sc",
+      "explanationDe": "Bevölkerung, Stand 2023: Rang 1: Seychellen (119.773 Menschen).",
+      "evidence": [
+        {
+          "labelDe": "Rang 1 · Seychellen",
+          "valueDe": "119.773 Menschen",
+          "factId": "fact:country-sc:population-total:2023"
+        },
+        {
+          "labelDe": "Gebiet",
+          "valueDe": "Afrika",
+          "relationId": "relation:country-sc:located-in:continent-africa"
+        }
+      ],
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-population-2023"
+      ],
+      "difficulty": 4
+    },
+    {
       "id": "compiled:african-official-portuguese-land-rank-2",
       "entityId": "knowledge:african-official-portuguese-land-rank-2",
       "templateId": "african-official-portuguese-land-rank-2",
@@ -56152,6 +58035,316 @@
       ],
       "sourceRefs": [
         "cplp-portuguese-language-states",
+        "phase2-scope-policy",
+        "world-bank-population-2023"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "compiled:asia-land-rank-1",
+      "entityId": "knowledge:asia-land-rank-1",
+      "templateId": "asia-land-rank-1",
+      "promptDe": "Welches asiatische Land ist nach Landfläche das größte?",
+      "answerEntityId": "country:ru",
+      "explanationDe": "Landfläche, Stand 2023: Rang 1: Russland (16.376.870 km²).",
+      "evidence": [
+        {
+          "labelDe": "Rang 1 · Russland",
+          "valueDe": "16.376.870 km²",
+          "factId": "fact:country-ru:land-area-km2:2023"
+        },
+        {
+          "labelDe": "Gebiet",
+          "valueDe": "Asien",
+          "relationId": "relation:country-ru:located-in:continent-asia"
+        }
+      ],
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-land-area-2023"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "compiled:asia-land-rank-2",
+      "entityId": "knowledge:asia-land-rank-2",
+      "templateId": "asia-land-rank-2",
+      "promptDe": "Welches asiatische Land ist nach Landfläche das zweitgrößte?",
+      "answerEntityId": "country:cn",
+      "explanationDe": "Landfläche, Stand 2023: Rang 1: Russland (16.376.870 km²); Rang 2: Volksrepublik China (9.388.210 km²).",
+      "evidence": [
+        {
+          "labelDe": "Rang 1 · Russland",
+          "valueDe": "16.376.870 km²",
+          "factId": "fact:country-ru:land-area-km2:2023"
+        },
+        {
+          "labelDe": "Rang 2 · Volksrepublik China",
+          "valueDe": "9.388.210 km²",
+          "factId": "fact:country-cn:land-area-km2:2023"
+        },
+        {
+          "labelDe": "Gebiet",
+          "valueDe": "Asien",
+          "relationId": "relation:country-cn:located-in:continent-asia"
+        }
+      ],
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-land-area-2023"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "compiled:asia-land-rank-3",
+      "entityId": "knowledge:asia-land-rank-3",
+      "templateId": "asia-land-rank-3",
+      "promptDe": "Welches asiatische Land ist nach Landfläche das drittgrößte?",
+      "answerEntityId": "country:in",
+      "explanationDe": "Landfläche, Stand 2023: Rang 1: Russland (16.376.870 km²); Rang 2: Volksrepublik China (9.388.210 km²); Rang 3: Indien (2.973.190 km²).",
+      "evidence": [
+        {
+          "labelDe": "Rang 1 · Russland",
+          "valueDe": "16.376.870 km²",
+          "factId": "fact:country-ru:land-area-km2:2023"
+        },
+        {
+          "labelDe": "Rang 2 · Volksrepublik China",
+          "valueDe": "9.388.210 km²",
+          "factId": "fact:country-cn:land-area-km2:2023"
+        },
+        {
+          "labelDe": "Rang 3 · Indien",
+          "valueDe": "2.973.190 km²",
+          "factId": "fact:country-in:land-area-km2:2023"
+        },
+        {
+          "labelDe": "Gebiet",
+          "valueDe": "Asien",
+          "relationId": "relation:country-in:located-in:continent-asia"
+        }
+      ],
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-land-area-2023"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "compiled:asia-land-rank-4",
+      "entityId": "knowledge:asia-land-rank-4",
+      "templateId": "asia-land-rank-4",
+      "promptDe": "Welches asiatische Land ist nach Landfläche das viertgrößte?",
+      "answerEntityId": "country:kz",
+      "explanationDe": "Landfläche, Stand 2023: Rang 1: Russland (16.376.870 km²); Rang 2: Volksrepublik China (9.388.210 km²); Rang 3: Indien (2.973.190 km²); Rang 4: Kasachstan (2.699.700 km²).",
+      "evidence": [
+        {
+          "labelDe": "Rang 1 · Russland",
+          "valueDe": "16.376.870 km²",
+          "factId": "fact:country-ru:land-area-km2:2023"
+        },
+        {
+          "labelDe": "Rang 2 · Volksrepublik China",
+          "valueDe": "9.388.210 km²",
+          "factId": "fact:country-cn:land-area-km2:2023"
+        },
+        {
+          "labelDe": "Rang 3 · Indien",
+          "valueDe": "2.973.190 km²",
+          "factId": "fact:country-in:land-area-km2:2023"
+        },
+        {
+          "labelDe": "Rang 4 · Kasachstan",
+          "valueDe": "2.699.700 km²",
+          "factId": "fact:country-kz:land-area-km2:2023"
+        },
+        {
+          "labelDe": "Gebiet",
+          "valueDe": "Asien",
+          "relationId": "relation:country-kz:located-in:continent-asia"
+        }
+      ],
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-land-area-2023"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "compiled:asia-population-rank-1",
+      "entityId": "knowledge:asia-population-rank-1",
+      "templateId": "asia-population-rank-1",
+      "promptDe": "Welches asiatische Land hat die größte Bevölkerung?",
+      "answerEntityId": "country:in",
+      "explanationDe": "Bevölkerung, Stand 2023: Rang 1: Indien (1.438.069.596 Menschen).",
+      "evidence": [
+        {
+          "labelDe": "Rang 1 · Indien",
+          "valueDe": "1.438.069.596 Menschen",
+          "factId": "fact:country-in:population-total:2023"
+        },
+        {
+          "labelDe": "Gebiet",
+          "valueDe": "Asien",
+          "relationId": "relation:country-in:located-in:continent-asia"
+        }
+      ],
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-population-2023"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "compiled:asia-population-rank-2",
+      "entityId": "knowledge:asia-population-rank-2",
+      "templateId": "asia-population-rank-2",
+      "promptDe": "Welches asiatische Land hat die zweitgrößte Bevölkerung?",
+      "answerEntityId": "country:cn",
+      "explanationDe": "Bevölkerung, Stand 2023: Rang 1: Indien (1.438.069.596 Menschen); Rang 2: Volksrepublik China (1.410.710.000 Menschen).",
+      "evidence": [
+        {
+          "labelDe": "Rang 1 · Indien",
+          "valueDe": "1.438.069.596 Menschen",
+          "factId": "fact:country-in:population-total:2023"
+        },
+        {
+          "labelDe": "Rang 2 · Volksrepublik China",
+          "valueDe": "1.410.710.000 Menschen",
+          "factId": "fact:country-cn:population-total:2023"
+        },
+        {
+          "labelDe": "Gebiet",
+          "valueDe": "Asien",
+          "relationId": "relation:country-cn:located-in:continent-asia"
+        }
+      ],
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-population-2023"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "compiled:asia-population-rank-3",
+      "entityId": "knowledge:asia-population-rank-3",
+      "templateId": "asia-population-rank-3",
+      "promptDe": "Welches asiatische Land hat die drittgrößte Bevölkerung?",
+      "answerEntityId": "country:id",
+      "explanationDe": "Bevölkerung, Stand 2023: Rang 1: Indien (1.438.069.596 Menschen); Rang 2: Volksrepublik China (1.410.710.000 Menschen); Rang 3: Indonesien (281.190.067 Menschen).",
+      "evidence": [
+        {
+          "labelDe": "Rang 1 · Indien",
+          "valueDe": "1.438.069.596 Menschen",
+          "factId": "fact:country-in:population-total:2023"
+        },
+        {
+          "labelDe": "Rang 2 · Volksrepublik China",
+          "valueDe": "1.410.710.000 Menschen",
+          "factId": "fact:country-cn:population-total:2023"
+        },
+        {
+          "labelDe": "Rang 3 · Indonesien",
+          "valueDe": "281.190.067 Menschen",
+          "factId": "fact:country-id:population-total:2023"
+        },
+        {
+          "labelDe": "Gebiet",
+          "valueDe": "Asien",
+          "relationId": "relation:country-id:located-in:continent-asia"
+        }
+      ],
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-population-2023"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "compiled:asia-population-rank-4",
+      "entityId": "knowledge:asia-population-rank-4",
+      "templateId": "asia-population-rank-4",
+      "promptDe": "Welches asiatische Land hat die viertgrößte Bevölkerung?",
+      "answerEntityId": "country:pk",
+      "explanationDe": "Bevölkerung, Stand 2023: Rang 1: Indien (1.438.069.596 Menschen); Rang 2: Volksrepublik China (1.410.710.000 Menschen); Rang 3: Indonesien (281.190.067 Menschen); Rang 4: Pakistan (247.504.495 Menschen).",
+      "evidence": [
+        {
+          "labelDe": "Rang 1 · Indien",
+          "valueDe": "1.438.069.596 Menschen",
+          "factId": "fact:country-in:population-total:2023"
+        },
+        {
+          "labelDe": "Rang 2 · Volksrepublik China",
+          "valueDe": "1.410.710.000 Menschen",
+          "factId": "fact:country-cn:population-total:2023"
+        },
+        {
+          "labelDe": "Rang 3 · Indonesien",
+          "valueDe": "281.190.067 Menschen",
+          "factId": "fact:country-id:population-total:2023"
+        },
+        {
+          "labelDe": "Rang 4 · Pakistan",
+          "valueDe": "247.504.495 Menschen",
+          "factId": "fact:country-pk:population-total:2023"
+        },
+        {
+          "labelDe": "Gebiet",
+          "valueDe": "Asien",
+          "relationId": "relation:country-pk:located-in:continent-asia"
+        }
+      ],
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-population-2023"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "compiled:asia-smallest-land",
+      "entityId": "knowledge:asia-smallest-land",
+      "templateId": "asia-smallest-land",
+      "promptDe": "Welches asiatische Land hat die kleinste Landfläche?",
+      "answerEntityId": "country:mv",
+      "explanationDe": "Landfläche, Stand 2023: Rang 1: Malediven (298 km²).",
+      "evidence": [
+        {
+          "labelDe": "Rang 1 · Malediven",
+          "valueDe": "298 km²",
+          "factId": "fact:country-mv:land-area-km2:2023"
+        },
+        {
+          "labelDe": "Gebiet",
+          "valueDe": "Asien",
+          "relationId": "relation:country-mv:located-in:continent-asia"
+        }
+      ],
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-land-area-2023"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "compiled:asia-smallest-population",
+      "entityId": "knowledge:asia-smallest-population",
+      "templateId": "asia-smallest-population",
+      "promptDe": "Welches asiatische Land hat die kleinste Bevölkerung?",
+      "answerEntityId": "country:bn",
+      "explanationDe": "Bevölkerung, Stand 2023: Rang 1: Brunei (458.949 Menschen).",
+      "evidence": [
+        {
+          "labelDe": "Rang 1 · Brunei",
+          "valueDe": "458.949 Menschen",
+          "factId": "fact:country-bn:population-total:2023"
+        },
+        {
+          "labelDe": "Gebiet",
+          "valueDe": "Asien",
+          "relationId": "relation:country-bn:located-in:continent-asia"
+        }
+      ],
+      "sourceRefs": [
         "phase2-scope-policy",
         "world-bank-population-2023"
       ],
@@ -56364,6 +58557,31 @@
       "difficulty": 4
     },
     {
+      "id": "compiled:north-america-land-rank-1",
+      "entityId": "knowledge:north-america-land-rank-1",
+      "templateId": "north-america-land-rank-1",
+      "promptDe": "Welches nordamerikanische Land ist nach Landfläche das größte?",
+      "answerEntityId": "country:us",
+      "explanationDe": "Landfläche, Stand 2023: Rang 1: Vereinigte Staaten (9.147.420 km²).",
+      "evidence": [
+        {
+          "labelDe": "Rang 1 · Vereinigte Staaten",
+          "valueDe": "9.147.420 km²",
+          "factId": "fact:country-us:land-area-km2:2023"
+        },
+        {
+          "labelDe": "Gebiet",
+          "valueDe": "Nordamerika",
+          "relationId": "relation:country-us:located-in:continent-north-america"
+        }
+      ],
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-land-area-2023"
+      ],
+      "difficulty": 2
+    },
+    {
       "id": "compiled:north-america-land-rank-2",
       "entityId": "knowledge:north-america-land-rank-2",
       "templateId": "north-america-land-rank-2",
@@ -56390,6 +58608,106 @@
       "sourceRefs": [
         "phase2-scope-policy",
         "world-bank-land-area-2023"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "compiled:north-america-land-rank-3",
+      "entityId": "knowledge:north-america-land-rank-3",
+      "templateId": "north-america-land-rank-3",
+      "promptDe": "Welches nordamerikanische Land ist nach Landfläche das drittgrößte?",
+      "answerEntityId": "country:mx",
+      "explanationDe": "Landfläche, Stand 2023: Rang 1: Vereinigte Staaten (9.147.420 km²); Rang 2: Kanada (8.788.700 km²); Rang 3: Mexiko (1.943.950 km²).",
+      "evidence": [
+        {
+          "labelDe": "Rang 1 · Vereinigte Staaten",
+          "valueDe": "9.147.420 km²",
+          "factId": "fact:country-us:land-area-km2:2023"
+        },
+        {
+          "labelDe": "Rang 2 · Kanada",
+          "valueDe": "8.788.700 km²",
+          "factId": "fact:country-ca:land-area-km2:2023"
+        },
+        {
+          "labelDe": "Rang 3 · Mexiko",
+          "valueDe": "1.943.950 km²",
+          "factId": "fact:country-mx:land-area-km2:2023"
+        },
+        {
+          "labelDe": "Gebiet",
+          "valueDe": "Nordamerika",
+          "relationId": "relation:country-mx:located-in:continent-north-america"
+        }
+      ],
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-land-area-2023"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "compiled:north-america-land-rank-4",
+      "entityId": "knowledge:north-america-land-rank-4",
+      "templateId": "north-america-land-rank-4",
+      "promptDe": "Welches nordamerikanische Land ist nach Landfläche das viertgrößte?",
+      "answerEntityId": "country:ni",
+      "explanationDe": "Landfläche, Stand 2023: Rang 1: Vereinigte Staaten (9.147.420 km²); Rang 2: Kanada (8.788.700 km²); Rang 3: Mexiko (1.943.950 km²); Rang 4: Nicaragua (120.340 km²).",
+      "evidence": [
+        {
+          "labelDe": "Rang 1 · Vereinigte Staaten",
+          "valueDe": "9.147.420 km²",
+          "factId": "fact:country-us:land-area-km2:2023"
+        },
+        {
+          "labelDe": "Rang 2 · Kanada",
+          "valueDe": "8.788.700 km²",
+          "factId": "fact:country-ca:land-area-km2:2023"
+        },
+        {
+          "labelDe": "Rang 3 · Mexiko",
+          "valueDe": "1.943.950 km²",
+          "factId": "fact:country-mx:land-area-km2:2023"
+        },
+        {
+          "labelDe": "Rang 4 · Nicaragua",
+          "valueDe": "120.340 km²",
+          "factId": "fact:country-ni:land-area-km2:2023"
+        },
+        {
+          "labelDe": "Gebiet",
+          "valueDe": "Nordamerika",
+          "relationId": "relation:country-ni:located-in:continent-north-america"
+        }
+      ],
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-land-area-2023"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "compiled:north-america-population-rank-1",
+      "entityId": "knowledge:north-america-population-rank-1",
+      "templateId": "north-america-population-rank-1",
+      "promptDe": "Welches nordamerikanische Land hat die größte Bevölkerung?",
+      "answerEntityId": "country:us",
+      "explanationDe": "Bevölkerung, Stand 2023: Rang 1: Vereinigte Staaten (336.755.052 Menschen).",
+      "evidence": [
+        {
+          "labelDe": "Rang 1 · Vereinigte Staaten",
+          "valueDe": "336.755.052 Menschen",
+          "factId": "fact:country-us:population-total:2023"
+        },
+        {
+          "labelDe": "Gebiet",
+          "valueDe": "Nordamerika",
+          "relationId": "relation:country-us:located-in:continent-north-america"
+        }
+      ],
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-population-2023"
       ],
       "difficulty": 2
     },
@@ -56424,6 +58742,156 @@
       "difficulty": 2
     },
     {
+      "id": "compiled:north-america-population-rank-3",
+      "entityId": "knowledge:north-america-population-rank-3",
+      "templateId": "north-america-population-rank-3",
+      "promptDe": "Welches nordamerikanische Land hat die drittgrößte Bevölkerung?",
+      "answerEntityId": "country:ca",
+      "explanationDe": "Bevölkerung, Stand 2023: Rang 1: Vereinigte Staaten (336.755.052 Menschen); Rang 2: Mexiko (129.739.759 Menschen); Rang 3: Kanada (40.049.088 Menschen).",
+      "evidence": [
+        {
+          "labelDe": "Rang 1 · Vereinigte Staaten",
+          "valueDe": "336.755.052 Menschen",
+          "factId": "fact:country-us:population-total:2023"
+        },
+        {
+          "labelDe": "Rang 2 · Mexiko",
+          "valueDe": "129.739.759 Menschen",
+          "factId": "fact:country-mx:population-total:2023"
+        },
+        {
+          "labelDe": "Rang 3 · Kanada",
+          "valueDe": "40.049.088 Menschen",
+          "factId": "fact:country-ca:population-total:2023"
+        },
+        {
+          "labelDe": "Gebiet",
+          "valueDe": "Nordamerika",
+          "relationId": "relation:country-ca:located-in:continent-north-america"
+        }
+      ],
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-population-2023"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "compiled:north-america-population-rank-4",
+      "entityId": "knowledge:north-america-population-rank-4",
+      "templateId": "north-america-population-rank-4",
+      "promptDe": "Welches nordamerikanische Land hat die viertgrößte Bevölkerung?",
+      "answerEntityId": "country:gt",
+      "explanationDe": "Bevölkerung, Stand 2023: Rang 1: Vereinigte Staaten (336.755.052 Menschen); Rang 2: Mexiko (129.739.759 Menschen); Rang 3: Kanada (40.049.088 Menschen); Rang 4: Guatemala (18.124.838 Menschen).",
+      "evidence": [
+        {
+          "labelDe": "Rang 1 · Vereinigte Staaten",
+          "valueDe": "336.755.052 Menschen",
+          "factId": "fact:country-us:population-total:2023"
+        },
+        {
+          "labelDe": "Rang 2 · Mexiko",
+          "valueDe": "129.739.759 Menschen",
+          "factId": "fact:country-mx:population-total:2023"
+        },
+        {
+          "labelDe": "Rang 3 · Kanada",
+          "valueDe": "40.049.088 Menschen",
+          "factId": "fact:country-ca:population-total:2023"
+        },
+        {
+          "labelDe": "Rang 4 · Guatemala",
+          "valueDe": "18.124.838 Menschen",
+          "factId": "fact:country-gt:population-total:2023"
+        },
+        {
+          "labelDe": "Gebiet",
+          "valueDe": "Nordamerika",
+          "relationId": "relation:country-gt:located-in:continent-north-america"
+        }
+      ],
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-population-2023"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "compiled:north-america-smallest-land",
+      "entityId": "knowledge:north-america-smallest-land",
+      "templateId": "north-america-smallest-land",
+      "promptDe": "Welches nordamerikanische Land hat die kleinste Landfläche?",
+      "answerEntityId": "country:kn",
+      "explanationDe": "Landfläche, Stand 2023: Rang 1: St. Kitts und Nevis (260 km²).",
+      "evidence": [
+        {
+          "labelDe": "Rang 1 · St. Kitts und Nevis",
+          "valueDe": "260 km²",
+          "factId": "fact:country-kn:land-area-km2:2023"
+        },
+        {
+          "labelDe": "Gebiet",
+          "valueDe": "Nordamerika",
+          "relationId": "relation:country-kn:located-in:continent-north-america"
+        }
+      ],
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-land-area-2023"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "compiled:north-america-smallest-population",
+      "entityId": "knowledge:north-america-smallest-population",
+      "templateId": "north-america-smallest-population",
+      "promptDe": "Welches nordamerikanische Land hat die kleinste Bevölkerung?",
+      "answerEntityId": "country:kn",
+      "explanationDe": "Bevölkerung, Stand 2023: Rang 1: St. Kitts und Nevis (46.758 Menschen).",
+      "evidence": [
+        {
+          "labelDe": "Rang 1 · St. Kitts und Nevis",
+          "valueDe": "46.758 Menschen",
+          "factId": "fact:country-kn:population-total:2023"
+        },
+        {
+          "labelDe": "Gebiet",
+          "valueDe": "Nordamerika",
+          "relationId": "relation:country-kn:located-in:continent-north-america"
+        }
+      ],
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-population-2023"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "compiled:oceania-land-rank-1",
+      "entityId": "knowledge:oceania-land-rank-1",
+      "templateId": "oceania-land-rank-1",
+      "promptDe": "Welches Land Ozeaniens ist nach Landfläche das größte?",
+      "answerEntityId": "country:au",
+      "explanationDe": "Landfläche, Stand 2023: Rang 1: Australien (7.692.020 km²).",
+      "evidence": [
+        {
+          "labelDe": "Rang 1 · Australien",
+          "valueDe": "7.692.020 km²",
+          "factId": "fact:country-au:land-area-km2:2023"
+        },
+        {
+          "labelDe": "Gebiet",
+          "valueDe": "Ozeanien",
+          "relationId": "relation:country-au:located-in:continent-oceania"
+        }
+      ],
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-land-area-2023"
+      ],
+      "difficulty": 2
+    },
+    {
       "id": "compiled:oceania-land-rank-2",
       "entityId": "knowledge:oceania-land-rank-2",
       "templateId": "oceania-land-rank-2",
@@ -56454,6 +58922,106 @@
       "difficulty": 3
     },
     {
+      "id": "compiled:oceania-land-rank-3",
+      "entityId": "knowledge:oceania-land-rank-3",
+      "templateId": "oceania-land-rank-3",
+      "promptDe": "Welches Land Ozeaniens ist nach Landfläche das drittgrößte?",
+      "answerEntityId": "country:nz",
+      "explanationDe": "Landfläche, Stand 2023: Rang 1: Australien (7.692.020 km²); Rang 2: Papua-Neuguinea (452.860 km²); Rang 3: Neuseeland (263.310 km²).",
+      "evidence": [
+        {
+          "labelDe": "Rang 1 · Australien",
+          "valueDe": "7.692.020 km²",
+          "factId": "fact:country-au:land-area-km2:2023"
+        },
+        {
+          "labelDe": "Rang 2 · Papua-Neuguinea",
+          "valueDe": "452.860 km²",
+          "factId": "fact:country-pg:land-area-km2:2023"
+        },
+        {
+          "labelDe": "Rang 3 · Neuseeland",
+          "valueDe": "263.310 km²",
+          "factId": "fact:country-nz:land-area-km2:2023"
+        },
+        {
+          "labelDe": "Gebiet",
+          "valueDe": "Ozeanien",
+          "relationId": "relation:country-nz:located-in:continent-oceania"
+        }
+      ],
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-land-area-2023"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "compiled:oceania-land-rank-4",
+      "entityId": "knowledge:oceania-land-rank-4",
+      "templateId": "oceania-land-rank-4",
+      "promptDe": "Welches Land Ozeaniens ist nach Landfläche das viertgrößte?",
+      "answerEntityId": "country:sb",
+      "explanationDe": "Landfläche, Stand 2023: Rang 1: Australien (7.692.020 km²); Rang 2: Papua-Neuguinea (452.860 km²); Rang 3: Neuseeland (263.310 km²); Rang 4: Salomonen (27.990 km²).",
+      "evidence": [
+        {
+          "labelDe": "Rang 1 · Australien",
+          "valueDe": "7.692.020 km²",
+          "factId": "fact:country-au:land-area-km2:2023"
+        },
+        {
+          "labelDe": "Rang 2 · Papua-Neuguinea",
+          "valueDe": "452.860 km²",
+          "factId": "fact:country-pg:land-area-km2:2023"
+        },
+        {
+          "labelDe": "Rang 3 · Neuseeland",
+          "valueDe": "263.310 km²",
+          "factId": "fact:country-nz:land-area-km2:2023"
+        },
+        {
+          "labelDe": "Rang 4 · Salomonen",
+          "valueDe": "27.990 km²",
+          "factId": "fact:country-sb:land-area-km2:2023"
+        },
+        {
+          "labelDe": "Gebiet",
+          "valueDe": "Ozeanien",
+          "relationId": "relation:country-sb:located-in:continent-oceania"
+        }
+      ],
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-land-area-2023"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "compiled:oceania-population-rank-1",
+      "entityId": "knowledge:oceania-population-rank-1",
+      "templateId": "oceania-population-rank-1",
+      "promptDe": "Welches Land Ozeaniens hat die größte Bevölkerung?",
+      "answerEntityId": "country:au",
+      "explanationDe": "Bevölkerung, Stand 2023: Rang 1: Australien (26.659.922 Menschen).",
+      "evidence": [
+        {
+          "labelDe": "Rang 1 · Australien",
+          "valueDe": "26.659.922 Menschen",
+          "factId": "fact:country-au:population-total:2023"
+        },
+        {
+          "labelDe": "Gebiet",
+          "valueDe": "Ozeanien",
+          "relationId": "relation:country-au:located-in:continent-oceania"
+        }
+      ],
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-population-2023"
+      ],
+      "difficulty": 2
+    },
+    {
       "id": "compiled:oceania-population-rank-2",
       "entityId": "knowledge:oceania-population-rank-2",
       "templateId": "oceania-population-rank-2",
@@ -56482,6 +59050,131 @@
         "world-bank-population-2023"
       ],
       "difficulty": 3
+    },
+    {
+      "id": "compiled:oceania-population-rank-3",
+      "entityId": "knowledge:oceania-population-rank-3",
+      "templateId": "oceania-population-rank-3",
+      "promptDe": "Welches Land Ozeaniens hat die drittgrößte Bevölkerung?",
+      "answerEntityId": "country:nz",
+      "explanationDe": "Bevölkerung, Stand 2023: Rang 1: Australien (26.659.922 Menschen); Rang 2: Papua-Neuguinea (10.389.635 Menschen); Rang 3: Neuseeland (5.200.000 Menschen).",
+      "evidence": [
+        {
+          "labelDe": "Rang 1 · Australien",
+          "valueDe": "26.659.922 Menschen",
+          "factId": "fact:country-au:population-total:2023"
+        },
+        {
+          "labelDe": "Rang 2 · Papua-Neuguinea",
+          "valueDe": "10.389.635 Menschen",
+          "factId": "fact:country-pg:population-total:2023"
+        },
+        {
+          "labelDe": "Rang 3 · Neuseeland",
+          "valueDe": "5.200.000 Menschen",
+          "factId": "fact:country-nz:population-total:2023"
+        },
+        {
+          "labelDe": "Gebiet",
+          "valueDe": "Ozeanien",
+          "relationId": "relation:country-nz:located-in:continent-oceania"
+        }
+      ],
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-population-2023"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "compiled:oceania-population-rank-4",
+      "entityId": "knowledge:oceania-population-rank-4",
+      "templateId": "oceania-population-rank-4",
+      "promptDe": "Welches Land Ozeaniens hat die viertgrößte Bevölkerung?",
+      "answerEntityId": "country:fj",
+      "explanationDe": "Bevölkerung, Stand 2023: Rang 1: Australien (26.659.922 Menschen); Rang 2: Papua-Neuguinea (10.389.635 Menschen); Rang 3: Neuseeland (5.200.000 Menschen); Rang 4: Fidschi (924.145 Menschen).",
+      "evidence": [
+        {
+          "labelDe": "Rang 1 · Australien",
+          "valueDe": "26.659.922 Menschen",
+          "factId": "fact:country-au:population-total:2023"
+        },
+        {
+          "labelDe": "Rang 2 · Papua-Neuguinea",
+          "valueDe": "10.389.635 Menschen",
+          "factId": "fact:country-pg:population-total:2023"
+        },
+        {
+          "labelDe": "Rang 3 · Neuseeland",
+          "valueDe": "5.200.000 Menschen",
+          "factId": "fact:country-nz:population-total:2023"
+        },
+        {
+          "labelDe": "Rang 4 · Fidschi",
+          "valueDe": "924.145 Menschen",
+          "factId": "fact:country-fj:population-total:2023"
+        },
+        {
+          "labelDe": "Gebiet",
+          "valueDe": "Ozeanien",
+          "relationId": "relation:country-fj:located-in:continent-oceania"
+        }
+      ],
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-population-2023"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "compiled:oceania-smallest-land",
+      "entityId": "knowledge:oceania-smallest-land",
+      "templateId": "oceania-smallest-land",
+      "promptDe": "Welches Land Ozeaniens hat die kleinste Landfläche?",
+      "answerEntityId": "country:nr",
+      "explanationDe": "Landfläche, Stand 2023: Rang 1: Nauru (20 km²).",
+      "evidence": [
+        {
+          "labelDe": "Rang 1 · Nauru",
+          "valueDe": "20 km²",
+          "factId": "fact:country-nr:land-area-km2:2023"
+        },
+        {
+          "labelDe": "Gebiet",
+          "valueDe": "Ozeanien",
+          "relationId": "relation:country-nr:located-in:continent-oceania"
+        }
+      ],
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-land-area-2023"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "compiled:oceania-smallest-population",
+      "entityId": "knowledge:oceania-smallest-population",
+      "templateId": "oceania-smallest-population",
+      "promptDe": "Welches Land Ozeaniens hat die kleinste Bevölkerung?",
+      "answerEntityId": "country:tv",
+      "explanationDe": "Bevölkerung, Stand 2023: Rang 1: Tuvalu (9.816 Menschen).",
+      "evidence": [
+        {
+          "labelDe": "Rang 1 · Tuvalu",
+          "valueDe": "9.816 Menschen",
+          "factId": "fact:country-tv:population-total:2023"
+        },
+        {
+          "labelDe": "Gebiet",
+          "valueDe": "Ozeanien",
+          "relationId": "relation:country-tv:located-in:continent-oceania"
+        }
+      ],
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-population-2023"
+      ],
+      "difficulty": 4
     },
     {
       "id": "compiled:official-portuguese-land-rank-2",
@@ -56544,6 +59237,31 @@
       "difficulty": 3
     },
     {
+      "id": "compiled:south-america-land-rank-1",
+      "entityId": "knowledge:south-america-land-rank-1",
+      "templateId": "south-america-land-rank-1",
+      "promptDe": "Welches südamerikanische Land ist nach Landfläche das größte?",
+      "answerEntityId": "country:br",
+      "explanationDe": "Landfläche, Stand 2023: Rang 1: Brasilien (8.358.140 km²).",
+      "evidence": [
+        {
+          "labelDe": "Rang 1 · Brasilien",
+          "valueDe": "8.358.140 km²",
+          "factId": "fact:country-br:land-area-km2:2023"
+        },
+        {
+          "labelDe": "Gebiet",
+          "valueDe": "Südamerika",
+          "relationId": "relation:country-br:located-in:continent-south-america"
+        }
+      ],
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-land-area-2023"
+      ],
+      "difficulty": 2
+    },
+    {
       "id": "compiled:south-america-land-rank-2",
       "entityId": "knowledge:south-america-land-rank-2",
       "templateId": "south-america-land-rank-2",
@@ -56570,6 +59288,106 @@
       "sourceRefs": [
         "phase2-scope-policy",
         "world-bank-land-area-2023"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "compiled:south-america-land-rank-3",
+      "entityId": "knowledge:south-america-land-rank-3",
+      "templateId": "south-america-land-rank-3",
+      "promptDe": "Welches südamerikanische Land ist nach Landfläche das drittgrößte?",
+      "answerEntityId": "country:pe",
+      "explanationDe": "Landfläche, Stand 2023: Rang 1: Brasilien (8.358.140 km²); Rang 2: Argentinien (2.736.690 km²); Rang 3: Peru (1.280.000 km²).",
+      "evidence": [
+        {
+          "labelDe": "Rang 1 · Brasilien",
+          "valueDe": "8.358.140 km²",
+          "factId": "fact:country-br:land-area-km2:2023"
+        },
+        {
+          "labelDe": "Rang 2 · Argentinien",
+          "valueDe": "2.736.690 km²",
+          "factId": "fact:country-ar:land-area-km2:2023"
+        },
+        {
+          "labelDe": "Rang 3 · Peru",
+          "valueDe": "1.280.000 km²",
+          "factId": "fact:country-pe:land-area-km2:2023"
+        },
+        {
+          "labelDe": "Gebiet",
+          "valueDe": "Südamerika",
+          "relationId": "relation:country-pe:located-in:continent-south-america"
+        }
+      ],
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-land-area-2023"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "compiled:south-america-land-rank-4",
+      "entityId": "knowledge:south-america-land-rank-4",
+      "templateId": "south-america-land-rank-4",
+      "promptDe": "Welches südamerikanische Land ist nach Landfläche das viertgrößte?",
+      "answerEntityId": "country:co",
+      "explanationDe": "Landfläche, Stand 2023: Rang 1: Brasilien (8.358.140 km²); Rang 2: Argentinien (2.736.690 km²); Rang 3: Peru (1.280.000 km²); Rang 4: Kolumbien (1.109.500 km²).",
+      "evidence": [
+        {
+          "labelDe": "Rang 1 · Brasilien",
+          "valueDe": "8.358.140 km²",
+          "factId": "fact:country-br:land-area-km2:2023"
+        },
+        {
+          "labelDe": "Rang 2 · Argentinien",
+          "valueDe": "2.736.690 km²",
+          "factId": "fact:country-ar:land-area-km2:2023"
+        },
+        {
+          "labelDe": "Rang 3 · Peru",
+          "valueDe": "1.280.000 km²",
+          "factId": "fact:country-pe:land-area-km2:2023"
+        },
+        {
+          "labelDe": "Rang 4 · Kolumbien",
+          "valueDe": "1.109.500 km²",
+          "factId": "fact:country-co:land-area-km2:2023"
+        },
+        {
+          "labelDe": "Gebiet",
+          "valueDe": "Südamerika",
+          "relationId": "relation:country-co:located-in:continent-south-america"
+        }
+      ],
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-land-area-2023"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "compiled:south-america-population-rank-1",
+      "entityId": "knowledge:south-america-population-rank-1",
+      "templateId": "south-america-population-rank-1",
+      "promptDe": "Welches südamerikanische Land hat die größte Bevölkerung?",
+      "answerEntityId": "country:br",
+      "explanationDe": "Bevölkerung, Stand 2023: Rang 1: Brasilien (211.140.729 Menschen).",
+      "evidence": [
+        {
+          "labelDe": "Rang 1 · Brasilien",
+          "valueDe": "211.140.729 Menschen",
+          "factId": "fact:country-br:population-total:2023"
+        },
+        {
+          "labelDe": "Gebiet",
+          "valueDe": "Südamerika",
+          "relationId": "relation:country-br:located-in:continent-south-america"
+        }
+      ],
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-population-2023"
       ],
       "difficulty": 2
     },
@@ -56604,6 +59422,106 @@
       "difficulty": 3
     },
     {
+      "id": "compiled:south-america-population-rank-3",
+      "entityId": "knowledge:south-america-population-rank-3",
+      "templateId": "south-america-population-rank-3",
+      "promptDe": "Welches südamerikanische Land hat die drittgrößte Bevölkerung?",
+      "answerEntityId": "country:ar",
+      "explanationDe": "Bevölkerung, Stand 2023: Rang 1: Brasilien (211.140.729 Menschen); Rang 2: Kolumbien (52.321.152 Menschen); Rang 3: Argentinien (45.538.401 Menschen).",
+      "evidence": [
+        {
+          "labelDe": "Rang 1 · Brasilien",
+          "valueDe": "211.140.729 Menschen",
+          "factId": "fact:country-br:population-total:2023"
+        },
+        {
+          "labelDe": "Rang 2 · Kolumbien",
+          "valueDe": "52.321.152 Menschen",
+          "factId": "fact:country-co:population-total:2023"
+        },
+        {
+          "labelDe": "Rang 3 · Argentinien",
+          "valueDe": "45.538.401 Menschen",
+          "factId": "fact:country-ar:population-total:2023"
+        },
+        {
+          "labelDe": "Gebiet",
+          "valueDe": "Südamerika",
+          "relationId": "relation:country-ar:located-in:continent-south-america"
+        }
+      ],
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-population-2023"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "compiled:south-america-population-rank-4",
+      "entityId": "knowledge:south-america-population-rank-4",
+      "templateId": "south-america-population-rank-4",
+      "promptDe": "Welches südamerikanische Land hat die viertgrößte Bevölkerung?",
+      "answerEntityId": "country:pe",
+      "explanationDe": "Bevölkerung, Stand 2023: Rang 1: Brasilien (211.140.729 Menschen); Rang 2: Kolumbien (52.321.152 Menschen); Rang 3: Argentinien (45.538.401 Menschen); Rang 4: Peru (33.845.617 Menschen).",
+      "evidence": [
+        {
+          "labelDe": "Rang 1 · Brasilien",
+          "valueDe": "211.140.729 Menschen",
+          "factId": "fact:country-br:population-total:2023"
+        },
+        {
+          "labelDe": "Rang 2 · Kolumbien",
+          "valueDe": "52.321.152 Menschen",
+          "factId": "fact:country-co:population-total:2023"
+        },
+        {
+          "labelDe": "Rang 3 · Argentinien",
+          "valueDe": "45.538.401 Menschen",
+          "factId": "fact:country-ar:population-total:2023"
+        },
+        {
+          "labelDe": "Rang 4 · Peru",
+          "valueDe": "33.845.617 Menschen",
+          "factId": "fact:country-pe:population-total:2023"
+        },
+        {
+          "labelDe": "Gebiet",
+          "valueDe": "Südamerika",
+          "relationId": "relation:country-pe:located-in:continent-south-america"
+        }
+      ],
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-population-2023"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "compiled:south-america-smallest-land",
+      "entityId": "knowledge:south-america-smallest-land",
+      "templateId": "south-america-smallest-land",
+      "promptDe": "Welches südamerikanische Land hat die kleinste Landfläche?",
+      "answerEntityId": "country:sr",
+      "explanationDe": "Landfläche, Stand 2023: Rang 1: Suriname (160.508 km²).",
+      "evidence": [
+        {
+          "labelDe": "Rang 1 · Suriname",
+          "valueDe": "160.508 km²",
+          "factId": "fact:country-sr:land-area-km2:2023"
+        },
+        {
+          "labelDe": "Gebiet",
+          "valueDe": "Südamerika",
+          "relationId": "relation:country-sr:located-in:continent-south-america"
+        }
+      ],
+      "sourceRefs": [
+        "phase2-scope-policy",
+        "world-bank-land-area-2023"
+      ],
+      "difficulty": 4
+    },
+    {
       "id": "compiled:south-america-smallest-land-over-20m",
       "entityId": "knowledge:south-america-smallest-land-over-20m",
       "templateId": "south-america-smallest-land-over-20m",
@@ -56630,6 +59548,31 @@
       "sourceRefs": [
         "phase2-scope-policy",
         "world-bank-land-area-2023",
+        "world-bank-population-2023"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "compiled:south-america-smallest-population",
+      "entityId": "knowledge:south-america-smallest-population",
+      "templateId": "south-america-smallest-population",
+      "promptDe": "Welches südamerikanische Land hat die kleinste Bevölkerung?",
+      "answerEntityId": "country:sr",
+      "explanationDe": "Bevölkerung, Stand 2023: Rang 1: Suriname (628.886 Menschen).",
+      "evidence": [
+        {
+          "labelDe": "Rang 1 · Suriname",
+          "valueDe": "628.886 Menschen",
+          "factId": "fact:country-sr:population-total:2023"
+        },
+        {
+          "labelDe": "Gebiet",
+          "valueDe": "Südamerika",
+          "relationId": "relation:country-sr:located-in:continent-south-america"
+        }
+      ],
+      "sourceRefs": [
+        "phase2-scope-policy",
         "world-bank-population-2023"
       ],
       "difficulty": 4

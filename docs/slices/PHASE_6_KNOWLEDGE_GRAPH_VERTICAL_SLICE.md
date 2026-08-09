@@ -18,7 +18,7 @@
 - **Laufzeitmodus:** `knowledge_question × description ×
   single_choice/text_input`; die vorhandenen Grader, Sessions, Timer,
   Spielstände, Fortschrittsereignisse und Reviewqueue bleiben unverändert.
-- **Erster Umfang:** 20 kuratierte Vorlagen, zwei Einzelmodi, ein
+- **Aktueller Umfang:** 62 kuratierte Vorlagen, zwei Einzelmodi, ein
   Bronze-Abzeichen und ein zehnter Weltmix-Pool.
 - **Nicht enthalten:** freie KI-Generierung, Live-Abfragen, Nachbar-, Höhen-,
   Währungs- oder Flussdurchquerungsfakten sowie eine Behauptung vollständiger
@@ -104,7 +104,7 @@ World Bank sowie CPLP. Die Frage sagt ausdrücklich „Amtssprache“ und
 
 ## Abnahme
 
-- 388 Fakten, neun Amtssprachenrelationen und 20 Vorlagen werden strukturell
+- 388 Fakten, neun Amtssprachenrelationen und 62 Vorlagen werden strukturell
   validiert.
 - Fehlender Rankingfakt, Methodenmix, unbekannte Quelle, mehrdeutiger
   Relationspfad und Gleichstand blockieren den Build.

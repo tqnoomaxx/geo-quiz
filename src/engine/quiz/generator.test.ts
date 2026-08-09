@@ -6,7 +6,10 @@ import {
   type QuizDefinition
 } from "./definition";
 import { generateQuestions, selectQuizCandidates } from "./generator";
-import { gradeQuestionAnswer } from "../graders/registry";
+import {
+  gradeQuestionAnswer,
+  isCorrectTextQuestionAnswer
+} from "../graders/registry";
 import {
   createMvpQuizDefinition,
   DEFAULT_MVP_SETUP,
@@ -393,8 +396,11 @@ describe("Phase-2 QuizDefinition and deterministic generator", () => {
     expect(validateQuizDefinition(choiceDefinition, geoDataset)).toMatchObject({
       success: true
     });
-    expect(choiceQuestions).toHaveLength(20);
+    expect(choiceQuestions).toHaveLength(62);
     expect(textQuestions).toHaveLength(10);
+    expect(
+      new Set(choiceQuestions.map((question) => question.subjectId)).size
+    ).toBe(choiceQuestions.length);
     expect(choiceQuestions[0]).toMatchObject({
       promptPayload: { kind: "description" },
       answerSpec: { kind: "single_choice" },
@@ -417,6 +423,15 @@ describe("Phase-2 QuizDefinition and deterministic generator", () => {
       })
     ).toBe(true);
     expect(textQuestions[0].answerSpec.kind).toBe("text_input");
+    expect(
+      isCorrectTextQuestionAnswer(
+        textQuestions[0],
+        textQuestions[0].feedback.expectedLabel
+      )
+    ).toBe(true);
+    expect(isCorrectTextQuestionAnswer(textQuestions[0], "Atlantis")).toBe(
+      false
+    );
 
     const angola = choiceQuestions.find((question) =>
       question.promptText.includes("zweitgrößte Land")

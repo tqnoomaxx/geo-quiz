@@ -28,11 +28,11 @@ export const LEARNING_PROFILES: readonly LearningProfileDefinition[] = [
   {
     id: "practice",
     label: "Üben",
-    optionLabel: "Üben · Fehler erneut",
+    optionLabel: "Üben · ohne Wiederholung",
     description:
-      "Ohne Zeitdruck: Falsche und aufgedeckte Fragen erscheinen am Rundenende genau einmal erneut.",
+      "Ohne Zeitdruck und mit sofortigem Feedback: Jede Frage erscheint in der Runde nur einmal.",
     feedback: "immediate",
-    retryMistakes: true,
+    retryMistakes: false,
     hints: "one",
     timerPolicy: "disabled"
   },
@@ -67,7 +67,7 @@ export function learningProfileFromRules(
   rules: Pick<QuizRules, "feedback" | "retryMistakes" | "hints">
 ): LearningProfileId {
   if (rules.feedback === "end") return "exam";
-  if (rules.retryMistakes) return "practice";
+  if (rules.hints === "one" || rules.retryMistakes) return "practice";
   return "learn";
 }
 

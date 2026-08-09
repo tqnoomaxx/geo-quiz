@@ -1,4 +1,4 @@
-import { lazy, Suspense, useState, type FormEvent } from "react";
+import { lazy, Suspense } from "react";
 import {
   CheckCircle2,
   ChevronRight,
@@ -9,6 +9,7 @@ import {
 import type { AnswerPayload } from "../../engine/graders/registry";
 import type { QuestionInstance } from "../../engine/quiz/question";
 import type { QuestionAttempt } from "../../engine/session/session";
+import { useTextAnswerInput } from "./useTextAnswerInput";
 
 const GeoMap = lazy(() =>
   import("../../geo/GeoMap").then((module) => ({
@@ -35,11 +36,8 @@ export function TextQuestionView({
   solutionRevealAllowed,
   continueLabel = "Weiter"
 }: TextQuestionViewProps) {
-  const [value, setValue] = useState(
-    attempt?.answerPayload?.kind === "text_input"
-      ? attempt.answerPayload.value
-      : ""
-  );
+  const { value, handleChange, handleCompositionEnd, handleSubmit } =
+    useTextAnswerInput({ question, attempt, onAnswer });
   const isCorrect = attempt?.result.status === "correct";
   const isRevealed = attempt?.result.status === "skipped";
   const physicalEntityType = [
@@ -68,14 +66,6 @@ export function TextQuestionView({
     ranked_peak: "Bergname eingeben"
   };
 
-  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-
-    if (value.trim() && !attempt) {
-      onAnswer({ kind: "text_input", value });
-    }
-  };
-
   return (
     <div className="text-question-layout">
       <section className="text-question-panel">
@@ -85,7 +75,8 @@ export function TextQuestionView({
           <input
             id="answer-input"
             value={value}
-            onChange={(event) => setValue(event.target.value)}
+            onChange={handleChange}
+            onCompositionEnd={handleCompositionEnd}
             placeholder={
               placeholder[
                 question.metadata.answerEntityType ??
@@ -98,7 +89,14 @@ export function TextQuestionView({
             autoComplete="off"
             autoFocus={!attempt}
             disabled={Boolean(attempt)}
+            aria-describedby={!attempt ? "text-answer-hint" : undefined}
           />
+          {!attempt ? (
+            <p className="text-answer-hint" id="text-answer-hint">
+              Richtige Antworten werden automatisch erkannt. Enter prüft deine
+              Eingabe sofort.
+            </p>
+          ) : null}
           {attempt ? (
             <div
               className={`feedback-panel feedback-panel--inline ${
@@ -125,15 +123,16 @@ export function TextQuestionView({
               </div>
             </div>
           ) : null}
-          <button
-            className="button button--primary"
-            type={attempt ? "button" : "submit"}
-            onClick={attempt ? onContinue : undefined}
-            disabled={!attempt && !value.trim()}
-          >
-            {attempt ? continueLabel : "Antwort prüfen"}
-            <ChevronRight aria-hidden="true" />
-          </button>
+          {attempt ? (
+            <button
+              className="button button--primary"
+              type="button"
+              onClick={onContinue}
+            >
+              {continueLabel}
+              <ChevronRight aria-hidden="true" />
+            </button>
+          ) : null}
           {!attempt ? (
             <button className="button button--text" type="button" onClick={onReveal}>
               {solutionRevealAllowed ? (

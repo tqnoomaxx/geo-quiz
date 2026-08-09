@@ -35,7 +35,7 @@ describe("Lernmodus-Regeln", () => {
     expect(learningProfileFromRules(definition.rules)).toBe("learn");
   });
 
-  it("wiederholt Fehler beim Üben genau über die zentrale Rundenregel", () => {
+  it("zeigt beim Üben sofort Feedback, ohne Fragen zu wiederholen", () => {
     const definition = createMvpQuizDefinition({
       ...DEFAULT_MVP_SETUP,
       profile: "practice",
@@ -45,7 +45,7 @@ describe("Lernmodus-Regeln", () => {
     expect(definition.rules).toMatchObject({
       timer: { kind: "none" },
       feedback: "immediate",
-      retryMistakes: true,
+      retryMistakes: false,
       hints: "one"
     });
     expect(canRevealSolution(definition.rules)).toBe(true);

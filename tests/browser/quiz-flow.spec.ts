@@ -4,6 +4,7 @@ import { expect, test, type Page } from "@playwright/test";
 type BrowserQuestion = {
   id: string;
   ordinal: number;
+  subjectId: string;
   promptPayload: {
     kind: string;
   };
@@ -396,10 +397,9 @@ async function answerCurrentQuestion(page: Page, correct = true) {
   const question = await currentQuestion(page);
 
   if (question.answerSpec.kind === "text_input") {
-    await page
-      .getByLabel("Deine Antwort")
-      .fill(correct ? question.feedback.expectedLabel : "Atlantis");
-    await page.getByRole("button", { name: "Antwort prüfen" }).click();
+    const input = page.getByLabel("Deine Antwort");
+    await input.fill(correct ? question.feedback.expectedLabel : "Atlantis");
+    if (!correct) await input.press("Enter");
   } else if (question.answerSpec.kind === "single_choice") {
     const expectedId = question.answerSpec.expectedEntityIds[0];
     const selectedId = correct
@@ -860,6 +860,22 @@ test("runs both knowledge modes and shows the compiled evidence chain", async ({
       region: "world"
     });
     await expect(page.locator(".knowledge-question-card")).toBeVisible();
+    const prepared = await activeSession(page);
+    expect(
+      new Set(
+        prepared.questions.map(
+          (question: BrowserQuestion) => question.subjectId
+        )
+      ).size
+    ).toBe(prepared.questions.length);
+    if (mode === "name") {
+      await expect(
+        page.getByText("Richtige Antworten werden automatisch erkannt")
+      ).toBeVisible();
+      await expect(
+        page.getByRole("button", { name: "Antwort prüfen" })
+      ).toHaveCount(0);
+    }
     await answerCurrentQuestion(page);
     await expect(page.locator(".knowledge-feedback")).toContainText("Richtig");
     await expect(
@@ -978,7 +994,7 @@ test("runs a world mix and an exam profile through their real transitions", asyn
   expect(consoleErrors).toEqual([]);
 });
 
-test("repeats missed questions once in practice mode", async ({ page }, testInfo) => {
+test("does not repeat missed questions during a practice round", async ({ page }, testInfo) => {
   test.skip(testInfo.project.name !== "desktop-chromium");
   const consoleErrors = collectConsoleErrors(page);
   await configureAndStart(page, {
@@ -988,26 +1004,39 @@ test("repeats missed questions once in practice mode", async ({ page }, testInfo
     region: "continent:europe"
   });
   await expect(page.locator(".quiz-meta")).toContainText("Üben");
-  const firstQuestion = await currentQuestion(page);
+  const initialSession = await activeSession(page);
+  expect(
+    new Set(
+      initialSession.questions.map(
+        (question: BrowserQuestion) => question.subjectId
+      )
+    ).size
+  ).toBe(initialSession.questions.length);
 
+  let finalQuestionSession: BrowserSession | undefined;
   for (let index = 0; index < 10; index += 1) {
     await answerCurrentQuestion(page, index !== 0);
-    await page.getByRole("button", { name: "Weiter" }).click();
+    if (index === 9) {
+      finalQuestionSession = await activeSession(page);
+    }
+    await page
+      .getByRole("button", {
+        name: index === 9 ? "Ergebnis ansehen" : "Weiter"
+      })
+      .click();
   }
 
-  const retrySession = await activeSession(page);
-  expect(retrySession.questions).toHaveLength(11);
-  expect(retrySession.questions[10].metadata).toMatchObject({
-    retryOfQuestionId: firstQuestion.id
-  });
-  await expect(page.getByText("11 / 11")).toBeVisible();
-  await answerCurrentQuestion(page);
-  await page.getByRole("button", { name: "Ergebnis ansehen" }).click();
-  await expect(page.getByText("10 von 11 richtig")).toBeVisible();
-  await expect(page.getByText("Keine offenen Fehler in dieser Runde.")).toBeVisible();
+  expect(finalQuestionSession?.questions).toHaveLength(10);
+  expect(
+    finalQuestionSession?.questions.some(
+      (question: BrowserQuestion) =>
+        question.metadata.retryOfQuestionId !== undefined
+    )
+  ).toBe(false);
+  await expect(page.getByText("9 von 10 richtig")).toBeVisible();
   await expect(
     page.getByRole("button", { name: "Fehler gezielt üben" })
-  ).toHaveCount(0);
+  ).toBeVisible();
   expect(consoleErrors).toEqual([]);
 });
 

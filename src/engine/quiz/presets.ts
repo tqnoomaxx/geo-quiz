@@ -1004,7 +1004,7 @@ function setupForSkill(skillKey: string): Pick<
   };
   const setup = mapping[skillKey];
   if (!setup) {
-    throw new Error(`Für ${skillKey} ist noch kein Wiederholungspreset registriert.`);
+    throw new Error(`Für ${skillKey} ist noch kein Fehlertraining registriert.`);
   }
   return setup;
 }
@@ -1015,7 +1015,7 @@ export function createReviewRoundDefinition(
   datasetVersion = geoDataset.version
 ): QuizRoundDefinition {
   if (queue.length === 0) {
-    throw new Error("Eine Wiederholungsrunde benötigt mindestens einen Fehler.");
+    throw new Error("Ein Fehlertraining benötigt mindestens einen Fehler.");
   }
 
   const bySkill = new Map<string, ReviewQueueItem[]>();
@@ -1070,7 +1070,7 @@ export function createReviewRoundDefinition(
     id: "phase5-review-queue-v1",
     schemaVersion: 1,
     datasetVersion,
-    label: "Wiederholungsqueue",
+    label: "Fehlertraining",
     profile: "practice",
     scope: { regionIds: [] },
     pools: definitions.map((entry, index) => ({
@@ -1086,7 +1086,7 @@ export function createReviewRoundDefinition(
       randomizer: "mulberry32-v1",
       timer: { kind: "none" },
       feedback: "immediate",
-      retryMistakes: true,
+      retryMistakes: false,
       hints: "one",
       seed
     }

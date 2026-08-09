@@ -171,13 +171,13 @@
   "artifacts": [
     {
       "path": "geo-core-mvp-v1.json",
-      "sha256": "46023ebbe40704f1dabb3df7743874a5201ddda6af0d7a6ce3b1a2dbe6fe6b0d",
-      "bytes": 1475839,
-      "entityCount": 841
+      "sha256": "62bd0460f844b706940ebb058997079cf3a65836e52433386fa2b0302a6a5606",
+      "bytes": 1574810,
+      "entityCount": 883
     },
     {
       "path": "quality-report.json",
-      "sha256": "f463b59833f97a1aa526d506f4f43f83544b49c1f69c7285119425227bdb2acd",
+      "sha256": "4d6ff4f153605707c49dffd553482373c812c7bc6bc90cd3c2456a83d9b926b1",
       "bytes": 6449
     },
     {
