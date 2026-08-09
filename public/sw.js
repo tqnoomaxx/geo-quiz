@@ -1,4 +1,4 @@
-const CACHE_NAME = "geoapp-shell-phase8-astronomy-v1";
+const CACHE_NAME = "geoapp-shell-phase8-landmarks-v1";
 const scopeUrl = new URL(self.registration.scope);
 const shellUrl = scopeUrl.href;
 const manifestUrl = new URL("asset-manifest.json", scopeUrl).href;
