@@ -558,6 +558,25 @@ Letzte Aktualisierung: 2026-08-04
   keinen separaten Prüf-Button. `retryMistakes` bleibt nur zur Kompatibilität
   des versionierten v1-Schemas lesbar und erzeugt keine neuen Fragen mehr.
 
+### D-050 – Wahrzeichenfotos sind versionierte visuelle Entitäten
+
+- **Status:** accepted
+- **Datum:** 2026-08-09
+- **Entscheidung:** Sehenswürdigkeiten und Naturhighlights werden als Entitätstyp
+  `landmark` mit stabiler ID, deutschen Namen und Aliasen modelliert. Die
+  Fragerichtung verwendet den vorhandenen Prompt `visual_asset`, die neue
+  Asset-Art `landmark_photo`, `text_input` und `text-v1`. Land, Stadt oder
+  nächster benannter Ort, Funfact und präzise Besonderheit liegen als
+  versionierte Fakten vor. Dokumentarische Fotos werden aus Wikimedia Commons
+  durch einen expliziten Refresh geladen, per Bytezahl und SHA-256 gepinnt und
+  lokal ausgeliefert; Fakten- und Bildquellen erscheinen in der Auflösung.
+- **Konsequenz:** Eine Runde benötigt keine Live-API und keine themenspezifische
+  Sessionlogik. Rekordbehauptungen nennen Messgröße und Abgrenzung, etwa
+  „höchster Wasserfall“ gegenüber „größter Vorhang fallenden Wassers“. Ein Ort
+  darf bei Naturzielen ausdrücklich der nächste Ausgangsort statt einer
+  erfundenen Stadtzuordnung sein. Neue Motive erweitern den Snapshot und
+  durchlaufen dieselben Lizenz-, Eindeutigkeits- und Assetprüfungen.
+
 ## Offene Entscheidungen
 
 Diese Punkte blockieren die Dokumentationsphase nicht, müssen aber vor dem

@@ -122,6 +122,13 @@ modelliert hier nur das dauerhafte Zentralobjekt der kuratierten Lernmenge;
 Bahnelemente oder aktuelle Positionen sind ausdrücklich keine statischen
 Relationswerte.
 
+Der Entitätstyp `landmark` bündelt sowohl gebaute Sehenswürdigkeiten als auch
+Naturhighlights. `promptQualifier` kennzeichnet die redaktionelle Unterart;
+`located_in` verbindet das Motiv mit einem oder mehreren Kontinent-Scope(s).
+Land, Stadt beziehungsweise nächster benannter Ausgangsort, Funfact und
+Besonderheit sind vier eigene `entity_fact`-Werte. Das lokale Foto bleibt ein
+versioniertes `visual_asset` und wird nicht in der Entität eingebettet.
+
 ### `relation_definition`
 
 | Feld | Typ | Zweck |
@@ -209,6 +216,8 @@ Schema 4 ergänzt:
   bewusst keine vorgetäuschte Einzelgeometrie.
 - `promptQualifier` für gleichnamige Punktziele; bei Städten wird der
   Ländercode gezeigt, ohne den akzeptierten Namen zu verändern.
+- `landmark` mit `landmark_photo` sowie vier belegten Auflösungsfakten; das
+  Foto wird lokal per Prüfsumme referenziert.
 
 Eine kompilierte Wissensfrage ist eine normale Entität. Ihr kanonischer Name
 ist nur ein interner, stabiler Redaktionsname; der sichtbare Fragetext liegt im

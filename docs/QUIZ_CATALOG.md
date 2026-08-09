@@ -83,7 +83,8 @@ App setzt nicht voraus, dass Verwaltungsebenen weltweit gleich aufgebaut sind.
 - Landesflächen, Bevölkerung, Höhen und Längen vergleichen/sortieren.
 - Kfz-/Internet-Ländercodes und internationale Kürzel.
 - Wahrzeichen und Naturstätten, sobald Bildrechte und Quellen sauber geklärt
-  sind.
+  sind — **erster 12-Motive-Slice umgesetzt: Foto → Texteingabe mit Ort,
+  Funfact und belegter Besonderheit**.
 
 Diese Faktenmodi verwenden sichtbare Bezugsdaten. Veränderliche Zahlen werden
 nicht als zeitlose Wahrheit behandelt.

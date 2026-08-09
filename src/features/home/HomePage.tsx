@@ -3,6 +3,7 @@ import {
   BookOpenCheck,
   BrainCircuit,
   Building2,
+  Camera,
   ChevronDown,
   ChevronRight,
   Droplets,
@@ -99,6 +100,12 @@ const CHALLENGE_GROUPS: Array<{ label: string; challenges: Challenge[] }> = [
         label: "Große Städte",
         detail: "Die größten 100 bis 1000 Städte je Gebiet",
         icon: Building2
+      },
+      {
+        id: "landmarks",
+        label: "Sehenswürdigkeiten & Naturhighlights",
+        detail: "12 berühmte Orte am Foto erkennen – mit Funfacts",
+        icon: Camera
       }
     ]
   },
@@ -208,7 +215,7 @@ const HOME_DEFAULT_SETUP: MvpQuizSetup = {
 
 const MODE_COPY = {
   learn: "Lösung jederzeit ansehen",
-  practice: "Fehler kommen am Ende noch einmal",
+  practice: "Direktes Feedback ohne Wiederholungen",
   exam: "Auswertung erst nach der letzten Frage"
 } as const;
 

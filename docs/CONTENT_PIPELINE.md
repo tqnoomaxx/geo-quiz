@@ -27,6 +27,8 @@ flowchart LR
 | Länderflaggen als lokale SVGs | [flag-icons](https://github.com/lipis/flag-icons) | MIT-Paketlizenz | gebündelte Flaggenassets |
 | Vergleichbare Flächen-/Bevölkerungswerte | [World Bank Open Data](https://data.worldbank.org/) und benannte Primärquelle des Indikators | Lizenz und Methode je Indikator | versionierte Fakten für Wissenspuzzles |
 | Amtssprachen und besondere Hauptstadtrollen | nationale Verfassung/Gesetz oder andere zuständige Primärquelle; Wikidata nur zur Kandidatensuche | Lizenz und Beleg je Quelle | kuratierte Relationsdaten für eindeutige Wissenspuzzles |
+| Wahrzeichenfotos | einzelne Wikimedia-Commons-Dateiseite | Public Domain, CC0 oder sichtbare CC-Attribution je Datei | lokale `landmark_photo`-Assets |
+| Wahrzeichenfakten | UNESCO, zuständige Denkmal-/Parkverwaltung oder offizielle Betreiberseite | Fakten paraphrasiert; URL, Abrufdatum und fachliche Abgrenzung manifestiert | Land/Ort, Funfact und Besonderheit |
 
 Natural Earth bietet Kartenmaßstäbe von 1:10m, 1:50m und 1:110m. Der Build
 wählt je App-Umfang eine passende Auflösung, statt Rohdaten maximaler Größe
@@ -68,6 +70,16 @@ Jeder veröffentlichte Content-Build besitzt ein maschinenlesbares Manifest:
 
 Versionen sind unveränderlich. Ein neuer Import erzeugt eine neue Version,
 niemals stillschweigend andere Inhalte unter derselben URL.
+
+### Landmark-Fotos
+
+`content-src/landmarks-core.v1.json` führt pro Motiv die Commons-Dateiseite,
+Urheber, Lizenz, feste 960-Pixel-Download-URL, Bytezahl und SHA-256. Nur
+`npm run content:refresh:landmarks` greift auf das Netz zu. Der normale Build
+prüft die lokal gespeicherte Binärdatei erneut und kopiert sie als JPEG in das
+öffentliche Visual-Asset-Paket. Die Quizrunde lädt ausschließlich diese lokale
+Datei. Offizielle Faktquellen und die Fotoattribution werden mit der
+Fragenauflösung ausgeliefert.
 
 ## Pipeline-Schritte
 

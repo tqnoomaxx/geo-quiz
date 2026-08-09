@@ -296,6 +296,7 @@ async function configureAndStart(
       | "Monde"
       | "Zwergplaneten"
       | "Sternzeichen"
+      | "Sehenswürdigkeiten & Naturhighlights"
       | "Wissenspuzzle"
       | "Weltmix";
     mode:
@@ -338,6 +339,7 @@ async function configureAndStart(
     Monde: "moons",
     Zwergplaneten: "dwarf-planets",
     Sternzeichen: "zodiac",
+    "Sehenswürdigkeiten & Naturhighlights": "landmarks",
     Wissenspuzzle: "knowledge",
     Weltmix: "world-mix"
   };
@@ -884,6 +886,44 @@ test("runs both knowledge modes and shows the compiled evidence chain", async ({
     await expect(page.locator(".knowledge-explanation dl > div")).not.toHaveCount(0);
     await expect(page.locator(".knowledge-sources")).toContainText("Quellen");
   }
+
+  const accessibility = await new AxeBuilder({ page }).analyze();
+  expect(
+    accessibility.violations.filter((violation) =>
+      ["serious", "critical"].includes(violation.impact ?? "")
+    )
+  ).toEqual([]);
+  expect(consoleErrors).toEqual([]);
+});
+
+test("recognizes a landmark photo and reveals place, fun fact and attribution", async ({
+  page
+}) => {
+  const consoleErrors = collectConsoleErrors(page);
+  await configureAndStart(page, {
+    topic: "Sehenswürdigkeiten & Naturhighlights",
+    mode: "name",
+    region: "world",
+    questionCount: "all",
+    expectedTotal: 12
+  });
+
+  const prepared = await activeSession(page);
+  expect(prepared.questions).toHaveLength(12);
+  expect(new Set(prepared.questions.map((question: BrowserQuestion) => question.subjectId)).size).toBe(12);
+  await expect(page.locator(".visual-asset--landmark")).toBeVisible();
+  await expect(page.getByPlaceholder("Name eingeben")).toBeFocused();
+  await expect(page.getByRole("button", { name: "Antwort prüfen" })).toHaveCount(0);
+
+  await answerCurrentQuestion(page);
+  await expect(page.locator(".feedback-panel")).toContainText("Richtig");
+  await expect(page.getByRole("heading", { name: "Ort & Funfact" })).toBeVisible();
+  await expect(page.locator(".landmark-explanation dt")).toHaveText([
+    "Land",
+    "Stadt / nächster Ort",
+    "Besonderheit"
+  ]);
+  await expect(page.locator(".landmark-explanation__sources")).toContainText("Foto:");
 
   const accessibility = await new AxeBuilder({ page }).analyze();
   expect(

@@ -15,6 +15,7 @@ import countries, { type Country } from "world-countries";
 import {
   CONTENT_SCHEMA_VERSION,
   parseRawAstronomySnapshot,
+  parseRawLandmarkSnapshot,
   parseGeoDataset,
   parseRankedCityContentPack,
   parseRankedPhysicalContentPack,
@@ -55,6 +56,10 @@ const knowledgeTemplatePath = resolve(
 const astronomySourcePath = resolve(
   projectRoot,
   "content-src/astronomy-core.v1.json"
+);
+const landmarkSourcePath = resolve(
+  projectRoot,
+  "content-src/landmarks-core.v1.json"
 );
 const rankedCitySourcePath = resolve(
   projectRoot,
@@ -262,6 +267,9 @@ const knowledgeTemplates = parseRawKnowledgeTemplateSnapshot(
 const astronomySnapshot = parseRawAstronomySnapshot(
   JSON.parse(await readFile(astronomySourcePath, "utf8"))
 );
+const landmarkSnapshot = parseRawLandmarkSnapshot(
+  JSON.parse(await readFile(landmarkSourcePath, "utf8"))
+);
 const rankedCities = parseRankedCityContentPack(
   JSON.parse(await readFile(rankedCitySourcePath, "utf8"))
 );
@@ -277,6 +285,7 @@ if (physicalSnapshot.datasetVersion !== fixture.version) {
 if (
   knowledgeSnapshot.datasetVersion !== fixture.version ||
   knowledgeTemplates.datasetVersion !== fixture.version ||
+  landmarkSnapshot.datasetVersion !== fixture.version ||
   rankedCities.datasetVersion !== fixture.version ||
   rankedPhysical.datasetVersion !== fixture.version
 ) {
@@ -571,6 +580,50 @@ for (const astronomy of astronomySnapshot.entities) {
   }
 }
 
+const landmarkFacts: EntityFact[] = [];
+for (const landmark of landmarkSnapshot.entities) {
+  const suffix = landmark.id.replaceAll(":", "-");
+  entities.push({
+    id: landmark.id,
+    type: "landmark",
+    canonicalNameId: `name:${suffix}:de:preferred`,
+    promptQualifier:
+      landmark.kind === "natural" ? "Naturhighlight" : "Sehenswürdigkeit",
+    difficulty: landmark.difficulty,
+    active: true,
+    sourceRefs: landmark.sourceRefs
+  });
+  names.push(
+    preferredName(landmark.id, landmark.nameDe, suffix),
+    ...aliasNames(landmark.id, landmark.aliasesDe, suffix)
+  );
+  for (const continentId of landmark.continentIds) {
+    relations.push({
+      id: `relation:${suffix}:located-in:${continentId.replace(":", "-")}`,
+      sourceId: landmark.id,
+      relationType: "located_in",
+      targetId: continentId,
+      sourceRefs: landmark.sourceRefs
+    });
+  }
+  for (const [factTypeId, value] of [
+    ["fact-type:landmark-country", landmark.countryDe],
+    ["fact-type:landmark-place", landmark.placeDe],
+    ["fact-type:landmark-fun-fact", landmark.funFactDe],
+    ["fact-type:landmark-distinction", landmark.distinctionDe]
+  ] as const) {
+    landmarkFacts.push({
+      id: `fact:${suffix}:${factTypeId.replace("fact-type:", "")}`,
+      entityId: landmark.id,
+      factTypeId,
+      value,
+      asOf: landmarkSnapshot.builtAt.slice(0, 10),
+      method: "curated-official-location-and-distinction-v1",
+      sourceRefs: landmark.sourceRefs.filter((sourceRef) => !sourceRef.startsWith("commons-"))
+    });
+  }
+}
+
 relations.push(...knowledgeSnapshot.relationClaims);
 
 const sources = [
@@ -604,7 +657,8 @@ const sources = [
     license: physicalSnapshot.source.license
   },
   ...knowledgeSnapshot.sources,
-  ...astronomySnapshot.sources
+  ...astronomySnapshot.sources,
+  ...landmarkSnapshot.sources
 ].toSorted((left, right) => left.id.localeCompare(right.id));
 
 const knowledge = compileKnowledgeQuestions(knowledgeTemplates.templates, {
@@ -739,6 +793,12 @@ const dataset: GeoDataset = {
       geometryKind: "none",
       supportedPromptIds: ["visual_asset"],
       supportedAnswerModeIds: ["fact_profile_input"]
+    },
+    {
+      id: "landmark",
+      geometryKind: "none",
+      supportedPromptIds: ["visual_asset"],
+      supportedAnswerModeIds: ["text_input"]
     }
   ],
   relationTypes: [
@@ -767,6 +827,7 @@ const dataset: GeoDataset = {
         "sea",
         "mountain_range",
         "peak",
+        "landmark",
         "knowledge_question"
       ],
       targetTypeIds: ["country", "continent"],
@@ -804,9 +865,10 @@ const dataset: GeoDataset = {
   ),
   factDefinitions: [
     ...knowledgeSnapshot.factDefinitions,
-    ...astronomySnapshot.factDefinitions
+    ...astronomySnapshot.factDefinitions,
+    ...landmarkSnapshot.factDefinitions
   ].toSorted((left, right) => left.id.localeCompare(right.id)),
-  facts: [...knowledgeSnapshot.facts, ...astronomyFacts].toSorted(
+  facts: [...knowledgeSnapshot.facts, ...astronomyFacts, ...landmarkFacts].toSorted(
     (left, right) => left.id.localeCompare(right.id)
   ),
   compiledKnowledgeQuestions: knowledge.questions
@@ -970,9 +1032,14 @@ const qualityReport = {
     ),
     continentCounts,
     mapFallbackFeatureIds: fallbackFeatureIds,
-    knowledgeFactCount: dataset.facts.length,
+    knowledgeFactCount: dataset.facts.length - landmarkFacts.length,
+    landmarkFactCount: landmarkFacts.length,
     knowledgeTemplateCount: knowledgeTemplates.templates.length,
     compiledKnowledgeQuestionCount: dataset.compiledKnowledgeQuestions.length,
+    landmarkEntityCount: landmarkSnapshot.entities.length,
+    landmarkImagesPinnedAndSourced: landmarkSnapshot.entities.every(
+      (entity) => entity.image.sha256.length === 64 && entity.sourceRefs.length >= 2
+    ),
     knowledgeQuestionsUniqueAndSourced: true,
     knowledgeComparisonsMethodConsistent: true,
     rankedCityEntityCount: rankedCities.entities.length,

@@ -292,6 +292,43 @@ describe("Phase-2 QuizDefinition and deterministic generator", () => {
     ).toBe(true);
   });
 
+  it("compiles a non-repeating landmark photo round with sourced details", () => {
+    const landmarks = definition({
+      topic: "landmarks",
+      direction: "name",
+      regionId: "world",
+      questionCount: "all"
+    });
+    expect(validateQuizDefinition(landmarks, geoDataset)).toMatchObject({
+      success: true
+    });
+    const questions = generateQuestions(landmarks, repository, "landmarks-stable");
+    expect(questions).toHaveLength(12);
+    expect(new Set(questions.map((question) => question.subjectId)).size).toBe(12);
+    expect(questions[0]).toMatchObject({
+      promptPayload: {
+        kind: "visual_asset",
+        asset: { kind: "landmark_photo" }
+      },
+      answerSpec: { kind: "text_input", graderId: "text-v1" },
+      feedback: {
+        explanation: {
+          text: expect.any(String),
+          evidence: [
+            { labelDe: "Land", valueDe: expect.any(String) },
+            { labelDe: "Stadt / nächster Ort", valueDe: expect.any(String) },
+            { labelDe: "Besonderheit", valueDe: expect.any(String) }
+          ],
+          sources: expect.any(Array)
+        }
+      }
+    });
+    expect(questions[0].feedback.explanation?.sources.length).toBeGreaterThan(0);
+    expect(
+      isCorrectTextQuestionAnswer(questions[0], questions[0].feedback.expectedLabel)
+    ).toBe(true);
+  });
+
   it("rejects a mismatched dataset version", () => {
     const invalid = {
       ...definition(),
@@ -316,16 +353,16 @@ describe("Phase-2 QuizDefinition and deterministic generator", () => {
       second.map((question) => question.subjectId)
     );
     expect(first.map((question) => question.feedback.expectedLabel)).toEqual([
-      "Athen",
-      "Sofia",
-      "Vatikanstadt",
-      "Monaco",
-      "Luxemburg",
-      "Kiew",
-      "Stockholm",
+      "Vaduz",
+      "Riga",
+      "Reykjavík",
+      "Budapest",
       "Moskau",
       "London",
-      "Madrid"
+      "Warschau",
+      "Vatikanstadt",
+      "Stockholm",
+      "Oslo"
     ]);
   });
 

@@ -117,6 +117,39 @@ export type RawAstronomySnapshot = {
   entities: RawAstronomyEntity[];
 };
 
+export type RawLandmarkEntity = {
+  id: string;
+  kind: "cultural" | "natural";
+  nameDe: string;
+  aliasesDe: string[];
+  countryDe: string;
+  placeDe: string;
+  funFactDe: string;
+  distinctionDe: string;
+  continentIds: string[];
+  difficulty: number;
+  sourceRefs: string[];
+  image: {
+    filename: string;
+    downloadUrl: string;
+    pageUrl: string;
+    creator: string;
+    license: string;
+    licenseUrl?: string;
+    sha256: string;
+    bytes: number;
+  };
+};
+
+export type RawLandmarkSnapshot = {
+  schemaVersion: 1;
+  datasetVersion: string;
+  builtAt: string;
+  sources: DatasetSource[];
+  factDefinitions: FactDefinition[];
+  entities: RawLandmarkEntity[];
+};
+
 export type KnowledgeEvidence = {
   labelDe: string;
   valueDe: string;
@@ -531,6 +564,95 @@ export function validateRawContentFixture(
   return issues.length > 0
     ? { success: false, issues }
     : { success: true, data: value as RawContentFixture };
+}
+
+export function validateRawLandmarkSnapshot(
+  value: unknown
+): ValidationResult<RawLandmarkSnapshot> {
+  const issues: string[] = [];
+  if (!isRecord(value)) {
+    return { success: false, issues: ["Landmark-Snapshot muss ein Objekt sein."] };
+  }
+  if (
+    value.schemaVersion !== 1 ||
+    typeof value.datasetVersion !== "string" ||
+    typeof value.builtAt !== "string"
+  ) {
+    issues.push("Landmark-Snapshot-Kopf ist ungültig.");
+  }
+  if (!Array.isArray(value.sources) || value.sources.length === 0) {
+    issues.push("Landmark-Snapshot benötigt Quellen.");
+  } else {
+    value.sources.forEach((source, index) =>
+      validateSource(source, `sources[${index}]`, issues)
+    );
+  }
+  if (!Array.isArray(value.factDefinitions) || value.factDefinitions.length !== 4) {
+    issues.push("Landmark-Snapshot benötigt vier Faktdefinitionen.");
+  }
+  if (!Array.isArray(value.entities) || value.entities.length === 0) {
+    issues.push("Landmark-Snapshot benötigt Entitäten.");
+  } else {
+    value.entities.forEach((entity, index) => {
+      const path = `entities[${index}]`;
+      if (!isRecord(entity)) {
+        issues.push(`${path} muss ein Objekt sein.`);
+        return;
+      }
+      for (const field of [
+        "id",
+        "nameDe",
+        "countryDe",
+        "placeDe",
+        "funFactDe",
+        "distinctionDe"
+      ]) {
+        if (typeof entity[field] !== "string" || entity[field].length === 0) {
+          issues.push(`${path}.${field} muss ein nichtleerer String sein.`);
+        }
+      }
+      if (entity.kind !== "cultural" && entity.kind !== "natural") {
+        issues.push(`${path}.kind muss cultural oder natural sein.`);
+      }
+      if (!isStringArray(entity.aliasesDe)) {
+        issues.push(`${path}.aliasesDe muss ein String-Array sein.`);
+      }
+      if (!isStringArray(entity.continentIds) || entity.continentIds.length === 0) {
+        issues.push(`${path}.continentIds muss mindestens einen Scope enthalten.`);
+      }
+      if (!isStringArray(entity.sourceRefs) || entity.sourceRefs.length === 0) {
+        issues.push(`${path}.sourceRefs muss Quellen enthalten.`);
+      }
+      if (!isDifficulty(entity.difficulty)) {
+        issues.push(`${path}.difficulty muss zwischen 1 und 5 liegen.`);
+      }
+      if (!isRecord(entity.image)) {
+        issues.push(`${path}.image muss ein Objekt sein.`);
+      } else {
+        for (const field of [
+          "filename",
+          "downloadUrl",
+          "pageUrl",
+          "creator",
+          "license",
+          "sha256"
+        ]) {
+          if (
+            typeof entity.image[field] !== "string" ||
+            entity.image[field].length === 0
+          ) {
+            issues.push(`${path}.image.${field} muss ein nichtleerer String sein.`);
+          }
+        }
+        if (!Number.isInteger(entity.image.bytes) || Number(entity.image.bytes) <= 0) {
+          issues.push(`${path}.image.bytes muss eine positive Ganzzahl sein.`);
+        }
+      }
+    });
+  }
+  return issues.length > 0
+    ? { success: false, issues }
+    : { success: true, data: value as RawLandmarkSnapshot };
 }
 
 export function validateRawPhysicalSnapshot(
@@ -1508,6 +1630,14 @@ export function parseRawContentFixture(value: unknown): RawContentFixture {
   const result = validateRawContentFixture(value);
   if (!result.success) {
     throw new Error(`Ungültige Content-Fixture:\n${result.issues.join("\n")}`);
+  }
+  return result.data;
+}
+
+export function parseRawLandmarkSnapshot(value: unknown): RawLandmarkSnapshot {
+  const result = validateRawLandmarkSnapshot(value);
+  if (!result.success) {
+    throw new Error(`Ungültiger Landmark-Snapshot:\n- ${result.issues.join("\n- ")}`);
   }
   return result.data;
 }

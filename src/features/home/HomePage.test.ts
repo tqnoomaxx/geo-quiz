@@ -10,6 +10,7 @@ describe("Rundenlängen im Challenge-Setup", () => {
       "all"
     ]);
     expect(questionCountOptions("rivers", 18)).toEqual([6, 10, "all"]);
+    expect(questionCountOptions("landmarks", 12)).toEqual([6, 10, "all"]);
     expect(questionCountOptions("peaks", 5)).toEqual(["all"]);
   });
 

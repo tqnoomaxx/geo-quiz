@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "datasetVersion": "2026-08-04.phase8-astronomy1",
-  "builtAt": "2026-08-04T00:00:00.000Z",
+  "datasetVersion": "2026-08-09.phase8-landmarks1",
+  "builtAt": "2026-08-09T12:00:00.000Z",
   "sources": [
     {
       "id": "flag-icons",
@@ -20,6 +20,78 @@
       "sourceVersion": "retrieved-2026-08-04",
       "url": "https://www.iau.org/Iau/Science/What-we-do/The-Constellations.aspx",
       "license": "Constellation charts CC BY 4.0"
+    },
+    {
+      "id": "commons-eiffel",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Tour_Eiffel_Wikimedia_Commons.jpg",
+      "license": "Public domain; Benh LIEU SONG"
+    },
+    {
+      "id": "commons-colosseum",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Colosseum_of_Rome,_Italy.jpg",
+      "license": "CC0; Wilfredor"
+    },
+    {
+      "id": "commons-taj-mahal",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Taj_Mahal,_Agra,_India_edit2.jpg",
+      "license": "CC BY-SA 4.0; Yann, edited by King of Hearts"
+    },
+    {
+      "id": "commons-sydney-opera",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Sydney_(AU),_Opera_House_--_2019_--_3054.jpg",
+      "license": "CC BY-SA 4.0; Dietmar Rabich"
+    },
+    {
+      "id": "commons-brandenburg-gate",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Brandenburger_Tor_morgens.jpg",
+      "license": "CC BY-SA 3.0; Thomas Wolf, www.foto-tw.de"
+    },
+    {
+      "id": "commons-statue-liberty",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Statue_of_Liberty,_NY.jpg",
+      "license": "CC BY 2.0; William Warby"
+    },
+    {
+      "id": "commons-victoria-falls",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Cataratas_Victoria,_Zambia-Zimbabue,_2018-07-27,_DD_30-34_PAN.jpg",
+      "license": "CC BY-SA 4.0; Diego Delso"
+    },
+    {
+      "id": "commons-angel-falls",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Salto_del_Angel-Canaima-Venezuela18.JPG",
+      "license": "CC BY 3.0; Diego Delso"
+    },
+    {
+      "id": "commons-grand-canyon",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Grand_Canyon_Powell_Point_Evening_Light_02_2013.jpg",
+      "license": "CC BY-SA 3.0; Tuxyso"
+    },
+    {
+      "id": "commons-uluru",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Petermann_Ranges_(AU),_Uluru-Kata_Tjuta_National_Park,_Uluru,_Kuniya_Walk_--_2019_--_3636.jpg",
+      "license": "CC BY-SA 4.0; Dietmar Rabich"
+    },
+    {
+      "id": "commons-matterhorn",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:View_of_the_Matterhorn_from_Zermatt.jpg",
+      "license": "CC BY-SA 4.0; CaramelizedOnions"
+    },
+    {
+      "id": "commons-mount-fuji",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Fujikawaguchiko_view_of_Mt._Fuji.jpg",
+      "license": "CC0; Harperawl"
     }
   ],
   "assets": [
@@ -4042,6 +4114,126 @@
       "bytes": 2014,
       "sourceRef": "iau-constellations",
       "path": "assets/visual/v1/constellations/virgo.svg"
+    },
+    {
+      "key": "visual:landmark_photo:landmark:angel-falls",
+      "entityId": "landmark:angel-falls",
+      "kind": "landmark_photo",
+      "mediaType": "image/jpeg",
+      "sha256": "7a7dd96214a728f3d47f1a91e72deda377172687a91632cc206852225623c11c",
+      "bytes": 163632,
+      "sourceRef": "commons-angel-falls",
+      "path": "assets/visual/v1/landmarks/angel-falls.jpg"
+    },
+    {
+      "key": "visual:landmark_photo:landmark:brandenburg-gate",
+      "entityId": "landmark:brandenburg-gate",
+      "kind": "landmark_photo",
+      "mediaType": "image/jpeg",
+      "sha256": "b5b52152e0799507bdfbf6cbb23b9811aecc2b00b89f9fff1099ed3fe8f8e96c",
+      "bytes": 133208,
+      "sourceRef": "commons-brandenburg-gate",
+      "path": "assets/visual/v1/landmarks/brandenburg-gate.jpg"
+    },
+    {
+      "key": "visual:landmark_photo:landmark:colosseum",
+      "entityId": "landmark:colosseum",
+      "kind": "landmark_photo",
+      "mediaType": "image/jpeg",
+      "sha256": "b23cac9304be3befdcb41d98e3c3b16378d2ad4cd980cdc0ffd00907f14bbd70",
+      "bytes": 200438,
+      "sourceRef": "commons-colosseum",
+      "path": "assets/visual/v1/landmarks/colosseum.jpg"
+    },
+    {
+      "key": "visual:landmark_photo:landmark:eiffel-tower",
+      "entityId": "landmark:eiffel-tower",
+      "kind": "landmark_photo",
+      "mediaType": "image/jpeg",
+      "sha256": "848139c75c8eb5d021837af2f856a51e8e0055e3f0c388d6fae26b49cfac339f",
+      "bytes": 338718,
+      "sourceRef": "commons-eiffel",
+      "path": "assets/visual/v1/landmarks/eiffel-tower.jpg"
+    },
+    {
+      "key": "visual:landmark_photo:landmark:grand-canyon",
+      "entityId": "landmark:grand-canyon",
+      "kind": "landmark_photo",
+      "mediaType": "image/jpeg",
+      "sha256": "ef3ba5e5cc26221eb45ad950e4a4e596e802ae92343d4e092cb6decdab22a3e2",
+      "bytes": 171634,
+      "sourceRef": "commons-grand-canyon",
+      "path": "assets/visual/v1/landmarks/grand-canyon.jpg"
+    },
+    {
+      "key": "visual:landmark_photo:landmark:matterhorn",
+      "entityId": "landmark:matterhorn",
+      "kind": "landmark_photo",
+      "mediaType": "image/jpeg",
+      "sha256": "25cb777c0477b7d1453cb56e162d7b5657c2b05ca65969dd6dce27abf637f976",
+      "bytes": 458291,
+      "sourceRef": "commons-matterhorn",
+      "path": "assets/visual/v1/landmarks/matterhorn.jpg"
+    },
+    {
+      "key": "visual:landmark_photo:landmark:mount-fuji",
+      "entityId": "landmark:mount-fuji",
+      "kind": "landmark_photo",
+      "mediaType": "image/jpeg",
+      "sha256": "05609d88aa7014173f9cbe1024852736fc3c88f9f7189e2d43a1007dd3d4b1d0",
+      "bytes": 213587,
+      "sourceRef": "commons-mount-fuji",
+      "path": "assets/visual/v1/landmarks/mount-fuji.jpg"
+    },
+    {
+      "key": "visual:landmark_photo:landmark:statue-of-liberty",
+      "entityId": "landmark:statue-of-liberty",
+      "kind": "landmark_photo",
+      "mediaType": "image/jpeg",
+      "sha256": "781413e5f9b638e5722e0b35b9fb7871f69da4ace77e4000613d786771616bad",
+      "bytes": 120529,
+      "sourceRef": "commons-statue-liberty",
+      "path": "assets/visual/v1/landmarks/statue-of-liberty.jpg"
+    },
+    {
+      "key": "visual:landmark_photo:landmark:sydney-opera-house",
+      "entityId": "landmark:sydney-opera-house",
+      "kind": "landmark_photo",
+      "mediaType": "image/jpeg",
+      "sha256": "89d73f4c5a9bc2cc1c6a2c98172ab101f72351e5ee54e53c85cf6559c2acf98f",
+      "bytes": 107412,
+      "sourceRef": "commons-sydney-opera",
+      "path": "assets/visual/v1/landmarks/sydney-opera-house.jpg"
+    },
+    {
+      "key": "visual:landmark_photo:landmark:taj-mahal",
+      "entityId": "landmark:taj-mahal",
+      "kind": "landmark_photo",
+      "mediaType": "image/jpeg",
+      "sha256": "2f59fca3b5c08d683cf67665944865d372dbb7a56d728457131fbf2726e8ac58",
+      "bytes": 132881,
+      "sourceRef": "commons-taj-mahal",
+      "path": "assets/visual/v1/landmarks/taj-mahal.jpg"
+    },
+    {
+      "key": "visual:landmark_photo:landmark:uluru",
+      "entityId": "landmark:uluru",
+      "kind": "landmark_photo",
+      "mediaType": "image/jpeg",
+      "sha256": "61af15aacde0c49a7cbc5ffb402a383302c387fa3a3126f2150a4e565fea79dc",
+      "bytes": 181746,
+      "sourceRef": "commons-uluru",
+      "path": "assets/visual/v1/landmarks/uluru.jpg"
+    },
+    {
+      "key": "visual:landmark_photo:landmark:victoria-falls",
+      "entityId": "landmark:victoria-falls",
+      "kind": "landmark_photo",
+      "mediaType": "image/jpeg",
+      "sha256": "14e82634f96f9ae4d0674cd8ec711d46b9c5c4981be727ff2ed1b495d75f9b1b",
+      "bytes": 86285,
+      "sourceRef": "commons-victoria-falls",
+      "path": "assets/visual/v1/landmarks/victoria-falls.jpg"
     }
   ]
 }

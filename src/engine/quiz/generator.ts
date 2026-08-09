@@ -147,7 +147,8 @@ function createPromptPayload(
     if (
       assetKind !== "flag" &&
       assetKind !== "country_outline" &&
-      assetKind !== "constellation_chart"
+      assetKind !== "constellation_chart" &&
+      assetKind !== "landmark_photo"
     ) {
       throw new Error(
         `${definition.id}: visual_asset besitzt eine unbekannte Asset-Art.`
@@ -221,7 +222,9 @@ function visualAssetReference(
   const validConstellationAsset =
     entity.type === "zodiac_constellation" &&
     kind === "constellation_chart";
-  if (!validCountryAsset && !validConstellationAsset) {
+  const validLandmarkAsset =
+    entity.type === "landmark" && kind === "landmark_photo";
+  if (!validCountryAsset && !validConstellationAsset && !validLandmarkAsset) {
     throw new Error(
       `${entity.id}: ${kind} ist für diesen Entitätstyp nicht registriert.`
     );
@@ -578,7 +581,9 @@ function promptCopy(
           ? "Welches Land zeigt dieser Umriss?"
           : promptField === "constellation_chart"
             ? "Welches Sternzeichen ist das?"
-          : "Zu welchem Land gehört diese Flagge?",
+            : promptField === "landmark_photo"
+              ? "Welche Sehenswürdigkeit oder welches Naturhighlight ist das?"
+              : "Zu welchem Land gehört diese Flagge?",
       instruction:
         answerKind === "single_choice"
           ? "Wähle die passende Antwort."
@@ -645,6 +650,52 @@ function promptCopy(
       answerKind === "single_choice"
         ? "Wähle die passende Antwort."
         : "Gib den passenden Namen ein."
+  };
+}
+
+function createLandmarkExplanation(
+  repository: ContentRepository,
+  subject: ContentEntity
+) {
+  if (subject.type !== "landmark") return undefined;
+  const factIds = [
+    "fact-type:landmark-country",
+    "fact-type:landmark-place",
+    "fact-type:landmark-fun-fact",
+    "fact-type:landmark-distinction"
+  ] as const;
+  const facts = new Map(
+    factIds.map((factTypeId) => {
+      const fact = repository.getFact(subject.id, factTypeId);
+      if (!fact) throw new Error(`${subject.id}: ${factTypeId} fehlt.`);
+      return [factTypeId, fact] as const;
+    })
+  );
+  const sourceRefs = [
+    ...new Set([
+      ...subject.sourceRefs,
+      ...[...facts.values()].flatMap((fact) => fact.sourceRefs)
+    ])
+  ];
+  return {
+    text: String(facts.get("fact-type:landmark-fun-fact")?.value ?? ""),
+    evidence: ([
+      ["Land", "fact-type:landmark-country"],
+      ["Stadt / nächster Ort", "fact-type:landmark-place"],
+      ["Besonderheit", "fact-type:landmark-distinction"]
+    ] as Array<[string, (typeof factIds)[number]]>).map(([labelDe, factTypeId]) => {
+      const fact = facts.get(factTypeId);
+      return {
+        labelDe,
+        valueDe: String(fact?.value ?? ""),
+        factId: fact?.id
+      };
+    }),
+    sources: sourceRefs.map((sourceRef) => {
+      const source = repository.getSource(sourceRef);
+      if (!source) throw new Error(`${subject.id}: Quelle ${sourceRef} fehlt.`);
+      return source;
+    })
   };
 }
 
@@ -841,6 +892,7 @@ export function generateQuestions(
       subject.type === "knowledge_question"
         ? repository.getCompiledKnowledgeQuestion(subject.id)
         : undefined;
+    const landmarkExplanation = createLandmarkExplanation(repository, subject);
 
     return {
       schemaVersion: 1,
@@ -872,7 +924,7 @@ export function generateQuestions(
           answerEntity.geometryRef?.layer === "physical-lines"
             ? answerEntity.id
             : undefined,
-        explanation: compiledKnowledge
+        explanation: landmarkExplanation ?? (compiledKnowledge
           ? {
               text: compiledKnowledge.explanationDe,
               evidence: compiledKnowledge.evidence,
@@ -886,7 +938,7 @@ export function generateQuestions(
                 return source;
               })
             }
-          : undefined
+          : undefined)
       },
       metadata: {
         promptKind: definition.prompt.kind,

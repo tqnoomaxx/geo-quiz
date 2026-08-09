@@ -10,6 +10,7 @@
     "content:refresh:knowledge": "tsx scripts/refresh-knowledge-content.ts",
     "content:refresh:cities": "tsx scripts/refresh-ranked-cities.ts",
     "content:refresh:ranked-physical": "tsx scripts/refresh-ranked-physical.ts",
+    "content:refresh:landmarks": "tsx scripts/refresh-landmark-assets.ts",
     "content:build": "tsx scripts/build-visual-assets.ts && tsx scripts/build-content.ts",
     "build": "npm run content:build && tsc -b && vite build",
     "preview": "vite preview",

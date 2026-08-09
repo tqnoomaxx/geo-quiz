@@ -52,6 +52,7 @@ darf länger dauern, ist aber nicht die Standarderfahrung.
 | Visuelle Zuordnung | Flaggen, Länderumrisse | 2 |
 | Siedlungen | Hauptstädte, große Städte, Metropolen | 2–4 |
 | Physische Geographie | Flüsse, Seen, Meere, Gebirge, Gipfel | 3 |
+| Wahrzeichen & Naturhighlights | Foto erkennen, Land/Ort und Funfact auflösen | 3 |
 | Administrative Ebenen | Bundesländer, Staaten, Provinzen, Regionen | 5 |
 | Erweiterungen | Inseln, Wüsten, Zeitzonen, Sprachen, Währungen | 5+ |
 | Themenübergreifend | Weltmix und zusammengesetzte Wissenspuzzles | 3–6 |

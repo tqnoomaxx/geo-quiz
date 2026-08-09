@@ -382,6 +382,22 @@ beeinträchtigen Karteninteraktion und Startzeit nicht unvertretbar.
 Produktionsfluss auf Desktop und Pixel-7-Viewport bestehen. Eine fachliche
 Sichtung aller zwölf vereinfachten Linienbilder bleibt redaktionelle QA.
 
+### Sehenswürdigkeiten und Naturhighlights
+
+- [x] Zwölf Kultur- und Naturmotive mit stabilen IDs und deutschen Aliasen.
+- [x] Lizenzierte Commons-Fotos per explizitem Refresh und SHA-256 lokal pinnen.
+- [x] `visual_asset → text_input` ohne themenspezifischen Session- oder Graderpfad.
+- [x] Nach jeder Antwort Land, Stadt/nächsten Ort, Funfact, präzise
+  Besonderheit sowie Fakten- und Bildquelle zeigen.
+- [x] Welt- und Kontinent-Scope, 6/10/alle sowie Lernen, Üben und Prüfung über
+  die bestehenden Regeln anbieten; keine Wiederholung innerhalb einer Runde.
+- [ ] Motivauswahl und deutsche Formulierungen redaktionell gegenprüfen und
+  den Pool anschließend kuratiert erweitern.
+
+**Wahrzeichen-Slice technisch erreicht:** Content-Vertrag, lokale Assets,
+Generator- und Browserfluss sind abgedeckt. Die redaktionelle Bild- und
+Textsichtung bleibt vor einer größeren Erweiterung offen.
+
 - Spaced-Repetition-Algorithmus mit Versionierung.
 - Eigene Lernlisten und gezieltes Fehlertraining.
 - Fortschrittsansichten pro Thema, Gebiet und Skill.

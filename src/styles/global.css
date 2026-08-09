@@ -1797,6 +1797,7 @@ svg {
 
 .visual-prompt-panel {
   display: flex;
+  overflow-y: auto;
   flex-direction: column;
   justify-content: space-between;
   gap: var(--space-8);
@@ -1814,6 +1815,20 @@ svg {
   margin-top: var(--space-4);
   color: var(--color-muted);
   font-size: var(--text-md);
+}
+
+.visual-question-layout--landmark .visual-prompt-panel {
+  padding-top: clamp(2rem, 3vw, 3rem);
+  padding-bottom: clamp(2rem, 3vw, 3rem);
+}
+
+.visual-question-layout--landmark .visual-prompt-panel h1 {
+  max-width: 19ch;
+  font-size: clamp(1.85rem, 2.7vw, 2.8rem);
+}
+
+.visual-question-layout--landmark .visual-prompt-asset {
+  padding: var(--space-5);
 }
 
 .visual-prompt-asset {
@@ -1852,6 +1867,29 @@ svg {
   object-fit: contain;
 }
 
+.visual-asset--landmark {
+  display: block;
+  width: min(100%, 46rem);
+  height: clamp(13rem, 28vh, 20rem);
+  object-fit: cover;
+  border-radius: 1.25rem;
+  box-shadow: 0 1.25rem 3rem rgba(10, 35, 28, 0.18);
+}
+
+.landmark-explanation {
+  margin: 0 0 1rem;
+}
+
+.landmark-explanation__sources {
+  font-size: 0.78rem;
+}
+
+.landmark-explanation__sources a {
+  color: currentColor;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.15em;
+}
+
 .visual-asset.is-compact {
   width: min(100%, 11rem);
   height: 6rem;
@@ -1880,6 +1918,7 @@ svg {
 
 .visual-answer-panel {
   display: grid;
+  overflow-y: auto;
   align-content: center;
 }
 
@@ -3117,6 +3156,20 @@ svg {
   .visual-asset--outline,
   .visual-asset-skeleton {
     height: 11rem;
+  }
+
+  .visual-asset--landmark {
+    height: clamp(20rem, 52vh, 30rem);
+  }
+
+  .visual-question-layout--landmark .visual-prompt-panel {
+    padding-top: var(--space-10);
+    padding-bottom: var(--space-8);
+  }
+
+  .visual-question-layout--landmark .visual-prompt-panel h1 {
+    max-width: 15ch;
+    font-size: clamp(2rem, 10vw, 3rem);
   }
 
   .visual-answer-panel {

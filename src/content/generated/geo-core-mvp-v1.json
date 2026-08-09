@@ -1,12 +1,103 @@
 {
   "datasetId": "geo-core-mvp",
-  "version": "2026-08-04.phase8-astronomy1",
+  "version": "2026-08-09.phase8-landmarks1",
   "schemaVersion": 4,
   "scopePolicy": {
     "id": "un-193-plus-observers-v1",
     "labelDe": "195 Staaten: 193 UN-Mitglieder plus Palästina und Vatikanstadt"
   },
   "sources": [
+    {
+      "id": "berlin-brandenburg-gate",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://www.berlin.de/sehenswuerdigkeiten/3560266-3558930-brandenburger-tor.html",
+      "license": "Factual reference; page content not redistributed"
+    },
+    {
+      "id": "commons-angel-falls",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Salto_del_Angel-Canaima-Venezuela18.JPG",
+      "license": "CC BY 3.0; Diego Delso"
+    },
+    {
+      "id": "commons-brandenburg-gate",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Brandenburger_Tor_morgens.jpg",
+      "license": "CC BY-SA 3.0; Thomas Wolf, www.foto-tw.de"
+    },
+    {
+      "id": "commons-colosseum",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Colosseum_of_Rome,_Italy.jpg",
+      "license": "CC0; Wilfredor"
+    },
+    {
+      "id": "commons-eiffel",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Tour_Eiffel_Wikimedia_Commons.jpg",
+      "license": "Public domain; Benh LIEU SONG"
+    },
+    {
+      "id": "commons-grand-canyon",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Grand_Canyon_Powell_Point_Evening_Light_02_2013.jpg",
+      "license": "CC BY-SA 3.0; Tuxyso"
+    },
+    {
+      "id": "commons-matterhorn",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:View_of_the_Matterhorn_from_Zermatt.jpg",
+      "license": "CC BY-SA 4.0; CaramelizedOnions"
+    },
+    {
+      "id": "commons-mount-fuji",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Fujikawaguchiko_view_of_Mt._Fuji.jpg",
+      "license": "CC0; Harperawl"
+    },
+    {
+      "id": "commons-statue-liberty",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Statue_of_Liberty,_NY.jpg",
+      "license": "CC BY 2.0; William Warby"
+    },
+    {
+      "id": "commons-sydney-opera",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Sydney_(AU),_Opera_House_--_2019_--_3054.jpg",
+      "license": "CC BY-SA 4.0; Dietmar Rabich"
+    },
+    {
+      "id": "commons-taj-mahal",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Taj_Mahal,_Agra,_India_edit2.jpg",
+      "license": "CC BY-SA 4.0; Yann, edited by King of Hearts"
+    },
+    {
+      "id": "commons-uluru",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Petermann_Ranges_(AU),_Uluru-Kata_Tjuta_National_Park,_Uluru,_Kuniya_Walk_--_2019_--_3636.jpg",
+      "license": "CC BY-SA 4.0; Dietmar Rabich"
+    },
+    {
+      "id": "commons-victoria-falls",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Cataratas_Victoria,_Zambia-Zimbabue,_2018-07-27,_DD_30-34_PAN.jpg",
+      "license": "CC BY-SA 4.0; Diego Delso"
+    },
     {
       "id": "cplp-portuguese-language-states",
       "sourceVersion": "2026-07-30",
@@ -15,9 +106,16 @@
       "license": "Quellenverweis; Fakten redaktionell extrahiert"
     },
     {
+      "id": "eiffel-official",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://www.toureiffel.paris/de/monument/zahlen",
+      "license": "Factual reference; page content not redistributed"
+    },
+    {
       "id": "flag-icons",
       "sourceVersion": "7.5.0",
-      "retrievedAt": "2026-08-04",
+      "retrievedAt": "2026-08-09",
       "url": "https://github.com/lipis/flag-icons/tree/v7.5.0",
       "license": "MIT"
     },
@@ -59,7 +157,7 @@
     {
       "id": "natural-earth",
       "sourceVersion": "world-atlas@2.0.2 / 50m+10m",
-      "retrievedAt": "2026-08-04",
+      "retrievedAt": "2026-08-09",
       "url": "https://www.naturalearthdata.com/",
       "license": "Public Domain"
     },
@@ -76,6 +174,69 @@
       "retrievedAt": "2026-07-30",
       "url": "docs/DATA_MODEL.md",
       "license": "Projektinterne redaktionelle Scope-Policy"
+    },
+    {
+      "id": "unesco-canaima-701",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://whc.unesco.org/en/list/701",
+      "license": "CC BY-SA 3.0 IGO for page description; facts paraphrased"
+    },
+    {
+      "id": "unesco-fuji-1418",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://whc.unesco.org/en/list/1418",
+      "license": "CC BY-SA 3.0 IGO for page description; facts paraphrased"
+    },
+    {
+      "id": "unesco-grand-canyon-75",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://whc.unesco.org/en/list/75",
+      "license": "CC BY-SA 3.0 IGO for page description; facts paraphrased"
+    },
+    {
+      "id": "unesco-liberty-307",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://whc.unesco.org/en/list/307",
+      "license": "CC BY-SA 3.0 IGO for page description; facts paraphrased"
+    },
+    {
+      "id": "unesco-rome-91",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://whc.unesco.org/en/list/91",
+      "license": "CC BY-SA 3.0 IGO for page description; facts paraphrased"
+    },
+    {
+      "id": "unesco-sydney-166",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://whc.unesco.org/en/list/166",
+      "license": "CC BY-SA 3.0 IGO for page description; facts paraphrased"
+    },
+    {
+      "id": "unesco-taj-mahal-252",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://whc.unesco.org/en/list/252",
+      "license": "CC BY-SA 3.0 IGO for page description; facts paraphrased"
+    },
+    {
+      "id": "unesco-uluru-447",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://whc.unesco.org/en/list/447",
+      "license": "CC BY-SA 3.0 IGO for page description; facts paraphrased"
+    },
+    {
+      "id": "unesco-victoria-falls-509",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://whc.unesco.org/en/list/509",
+      "license": "CC BY-SA 3.0 IGO for page description; facts paraphrased"
     },
     {
       "id": "wikidata-capital-snapshot",
@@ -104,6 +265,13 @@
       "retrievedAt": "2026-07-30",
       "url": "https://github.com/mledoze/countries",
       "license": "ODbL-1.0"
+    },
+    {
+      "id": "zermatt-matterhorn",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://zermatt.swiss/en/p/matterhorn-01tVj000005DoH6IAK",
+      "license": "Factual reference; page content not redistributed"
     }
   ],
   "entityTypes": [
@@ -300,6 +468,16 @@
       "supportedAnswerModeIds": [
         "fact_profile_input"
       ]
+    },
+    {
+      "id": "landmark",
+      "geometryKind": "none",
+      "supportedPromptIds": [
+        "visual_asset"
+      ],
+      "supportedAnswerModeIds": [
+        "text_input"
+      ]
     }
   ],
   "relationTypes": [
@@ -336,6 +514,7 @@
         "sea",
         "mountain_range",
         "peak",
+        "landmark",
         "knowledge_question"
       ],
       "targetTypeIds": [
@@ -9690,6 +9869,150 @@
       "sourceRefs": [
         "phase2-scope-policy",
         "world-bank-population-2023"
+      ]
+    },
+    {
+      "id": "landmark:angel-falls",
+      "type": "landmark",
+      "canonicalNameId": "name:landmark-angel-falls:de:preferred",
+      "promptQualifier": "Naturhighlight",
+      "difficulty": 2,
+      "active": true,
+      "sourceRefs": [
+        "unesco-canaima-701",
+        "commons-angel-falls"
+      ]
+    },
+    {
+      "id": "landmark:brandenburg-gate",
+      "type": "landmark",
+      "canonicalNameId": "name:landmark-brandenburg-gate:de:preferred",
+      "promptQualifier": "Sehenswürdigkeit",
+      "difficulty": 1,
+      "active": true,
+      "sourceRefs": [
+        "berlin-brandenburg-gate",
+        "commons-brandenburg-gate"
+      ]
+    },
+    {
+      "id": "landmark:colosseum",
+      "type": "landmark",
+      "canonicalNameId": "name:landmark-colosseum:de:preferred",
+      "promptQualifier": "Sehenswürdigkeit",
+      "difficulty": 1,
+      "active": true,
+      "sourceRefs": [
+        "unesco-rome-91",
+        "commons-colosseum"
+      ]
+    },
+    {
+      "id": "landmark:eiffel-tower",
+      "type": "landmark",
+      "canonicalNameId": "name:landmark-eiffel-tower:de:preferred",
+      "promptQualifier": "Sehenswürdigkeit",
+      "difficulty": 1,
+      "active": true,
+      "sourceRefs": [
+        "eiffel-official",
+        "commons-eiffel"
+      ]
+    },
+    {
+      "id": "landmark:grand-canyon",
+      "type": "landmark",
+      "canonicalNameId": "name:landmark-grand-canyon:de:preferred",
+      "promptQualifier": "Naturhighlight",
+      "difficulty": 1,
+      "active": true,
+      "sourceRefs": [
+        "unesco-grand-canyon-75",
+        "commons-grand-canyon"
+      ]
+    },
+    {
+      "id": "landmark:matterhorn",
+      "type": "landmark",
+      "canonicalNameId": "name:landmark-matterhorn:de:preferred",
+      "promptQualifier": "Naturhighlight",
+      "difficulty": 2,
+      "active": true,
+      "sourceRefs": [
+        "zermatt-matterhorn",
+        "commons-matterhorn"
+      ]
+    },
+    {
+      "id": "landmark:mount-fuji",
+      "type": "landmark",
+      "canonicalNameId": "name:landmark-mount-fuji:de:preferred",
+      "promptQualifier": "Naturhighlight",
+      "difficulty": 2,
+      "active": true,
+      "sourceRefs": [
+        "unesco-fuji-1418",
+        "commons-mount-fuji"
+      ]
+    },
+    {
+      "id": "landmark:statue-of-liberty",
+      "type": "landmark",
+      "canonicalNameId": "name:landmark-statue-of-liberty:de:preferred",
+      "promptQualifier": "Sehenswürdigkeit",
+      "difficulty": 1,
+      "active": true,
+      "sourceRefs": [
+        "unesco-liberty-307",
+        "commons-statue-liberty"
+      ]
+    },
+    {
+      "id": "landmark:sydney-opera-house",
+      "type": "landmark",
+      "canonicalNameId": "name:landmark-sydney-opera-house:de:preferred",
+      "promptQualifier": "Sehenswürdigkeit",
+      "difficulty": 1,
+      "active": true,
+      "sourceRefs": [
+        "unesco-sydney-166",
+        "commons-sydney-opera"
+      ]
+    },
+    {
+      "id": "landmark:taj-mahal",
+      "type": "landmark",
+      "canonicalNameId": "name:landmark-taj-mahal:de:preferred",
+      "promptQualifier": "Sehenswürdigkeit",
+      "difficulty": 1,
+      "active": true,
+      "sourceRefs": [
+        "unesco-taj-mahal-252",
+        "commons-taj-mahal"
+      ]
+    },
+    {
+      "id": "landmark:uluru",
+      "type": "landmark",
+      "canonicalNameId": "name:landmark-uluru:de:preferred",
+      "promptQualifier": "Naturhighlight",
+      "difficulty": 2,
+      "active": true,
+      "sourceRefs": [
+        "unesco-uluru-447",
+        "commons-uluru"
+      ]
+    },
+    {
+      "id": "landmark:victoria-falls",
+      "type": "landmark",
+      "canonicalNameId": "name:landmark-victoria-falls:de:preferred",
+      "promptQualifier": "Naturhighlight",
+      "difficulty": 2,
+      "active": true,
+      "sourceRefs": [
+        "unesco-victoria-falls-509",
+        "commons-victoria-falls"
       ]
     },
     {
@@ -31286,6 +31609,286 @@
       "answerPolicy": "display_and_accept"
     },
     {
+      "id": "name:landmark-angel-falls:de:alias-1",
+      "entityId": "landmark:angel-falls",
+      "locale": "de",
+      "name": "Angel Falls",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-angel-falls:de:alias-2",
+      "entityId": "landmark:angel-falls",
+      "locale": "de",
+      "name": "Angelfall",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-angel-falls:de:alias-3",
+      "entityId": "landmark:angel-falls",
+      "locale": "de",
+      "name": "Angel Falls Wasserfall",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-angel-falls:de:preferred",
+      "entityId": "landmark:angel-falls",
+      "locale": "de",
+      "name": "Salto Ángel",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
+      "id": "name:landmark-brandenburg-gate:de:preferred",
+      "entityId": "landmark:brandenburg-gate",
+      "locale": "de",
+      "name": "Brandenburger Tor",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
+      "id": "name:landmark-colosseum:de:alias-1",
+      "entityId": "landmark:colosseum",
+      "locale": "de",
+      "name": "Colosseum",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-colosseum:de:alias-2",
+      "entityId": "landmark:colosseum",
+      "locale": "de",
+      "name": "Amphitheatrum Flavium",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-colosseum:de:preferred",
+      "entityId": "landmark:colosseum",
+      "locale": "de",
+      "name": "Kolosseum",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
+      "id": "name:landmark-eiffel-tower:de:alias-1",
+      "entityId": "landmark:eiffel-tower",
+      "locale": "de",
+      "name": "Eiffel-Turm",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-eiffel-tower:de:alias-2",
+      "entityId": "landmark:eiffel-tower",
+      "locale": "de",
+      "name": "Tour Eiffel",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-eiffel-tower:de:preferred",
+      "entityId": "landmark:eiffel-tower",
+      "locale": "de",
+      "name": "Eiffelturm",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
+      "id": "name:landmark-grand-canyon:de:alias-1",
+      "entityId": "landmark:grand-canyon",
+      "locale": "de",
+      "name": "Grand-Canyon",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-grand-canyon:de:preferred",
+      "entityId": "landmark:grand-canyon",
+      "locale": "de",
+      "name": "Grand Canyon",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
+      "id": "name:landmark-matterhorn:de:alias-1",
+      "entityId": "landmark:matterhorn",
+      "locale": "de",
+      "name": "Monte Cervino",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-matterhorn:de:alias-2",
+      "entityId": "landmark:matterhorn",
+      "locale": "de",
+      "name": "Mont Cervin",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-matterhorn:de:preferred",
+      "entityId": "landmark:matterhorn",
+      "locale": "de",
+      "name": "Matterhorn",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
+      "id": "name:landmark-mount-fuji:de:alias-1",
+      "entityId": "landmark:mount-fuji",
+      "locale": "de",
+      "name": "Mount Fuji",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-mount-fuji:de:alias-2",
+      "entityId": "landmark:mount-fuji",
+      "locale": "de",
+      "name": "Fujisan",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-mount-fuji:de:alias-3",
+      "entityId": "landmark:mount-fuji",
+      "locale": "de",
+      "name": "Fudschijama",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-mount-fuji:de:alias-4",
+      "entityId": "landmark:mount-fuji",
+      "locale": "de",
+      "name": "Berg Fuji",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-mount-fuji:de:preferred",
+      "entityId": "landmark:mount-fuji",
+      "locale": "de",
+      "name": "Fuji",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
+      "id": "name:landmark-statue-of-liberty:de:alias-1",
+      "entityId": "landmark:statue-of-liberty",
+      "locale": "de",
+      "name": "Statue of Liberty",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-statue-of-liberty:de:alias-2",
+      "entityId": "landmark:statue-of-liberty",
+      "locale": "de",
+      "name": "Liberty Enlightening the World",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-statue-of-liberty:de:preferred",
+      "entityId": "landmark:statue-of-liberty",
+      "locale": "de",
+      "name": "Freiheitsstatue",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
+      "id": "name:landmark-sydney-opera-house:de:alias-1",
+      "entityId": "landmark:sydney-opera-house",
+      "locale": "de",
+      "name": "Opernhaus Sydney",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-sydney-opera-house:de:alias-2",
+      "entityId": "landmark:sydney-opera-house",
+      "locale": "de",
+      "name": "Sydney Opernhaus",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-sydney-opera-house:de:preferred",
+      "entityId": "landmark:sydney-opera-house",
+      "locale": "de",
+      "name": "Sydney Opera House",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
+      "id": "name:landmark-taj-mahal:de:alias-1",
+      "entityId": "landmark:taj-mahal",
+      "locale": "de",
+      "name": "Tadsch Mahal",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-taj-mahal:de:preferred",
+      "entityId": "landmark:taj-mahal",
+      "locale": "de",
+      "name": "Taj Mahal",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
+      "id": "name:landmark-uluru:de:alias-1",
+      "entityId": "landmark:uluru",
+      "locale": "de",
+      "name": "Ayers Rock",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-uluru:de:preferred",
+      "entityId": "landmark:uluru",
+      "locale": "de",
+      "name": "Uluru",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
+      "id": "name:landmark-victoria-falls:de:alias-1",
+      "entityId": "landmark:victoria-falls",
+      "locale": "de",
+      "name": "Victoria Falls",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-victoria-falls:de:alias-2",
+      "entityId": "landmark:victoria-falls",
+      "locale": "de",
+      "name": "Mosi-oa-Tunya",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-victoria-falls:de:alias-3",
+      "entityId": "landmark:victoria-falls",
+      "locale": "de",
+      "name": "Mosi-oa-Tunya / Victoria Falls",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-victoria-falls:de:preferred",
+      "entityId": "landmark:victoria-falls",
+      "locale": "de",
+      "name": "Victoriafälle",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
       "id": "name:language-afr:de:alias-1",
       "entityId": "language:afr",
       "locale": "de",
@@ -50873,6 +51476,126 @@
       ]
     },
     {
+      "id": "relation:landmark-angel-falls:located-in:continent-south-america",
+      "sourceId": "landmark:angel-falls",
+      "relationType": "located_in",
+      "targetId": "continent:south-america",
+      "sourceRefs": [
+        "unesco-canaima-701",
+        "commons-angel-falls"
+      ]
+    },
+    {
+      "id": "relation:landmark-brandenburg-gate:located-in:continent-europe",
+      "sourceId": "landmark:brandenburg-gate",
+      "relationType": "located_in",
+      "targetId": "continent:europe",
+      "sourceRefs": [
+        "berlin-brandenburg-gate",
+        "commons-brandenburg-gate"
+      ]
+    },
+    {
+      "id": "relation:landmark-colosseum:located-in:continent-europe",
+      "sourceId": "landmark:colosseum",
+      "relationType": "located_in",
+      "targetId": "continent:europe",
+      "sourceRefs": [
+        "unesco-rome-91",
+        "commons-colosseum"
+      ]
+    },
+    {
+      "id": "relation:landmark-eiffel-tower:located-in:continent-europe",
+      "sourceId": "landmark:eiffel-tower",
+      "relationType": "located_in",
+      "targetId": "continent:europe",
+      "sourceRefs": [
+        "eiffel-official",
+        "commons-eiffel"
+      ]
+    },
+    {
+      "id": "relation:landmark-grand-canyon:located-in:continent-north-america",
+      "sourceId": "landmark:grand-canyon",
+      "relationType": "located_in",
+      "targetId": "continent:north-america",
+      "sourceRefs": [
+        "unesco-grand-canyon-75",
+        "commons-grand-canyon"
+      ]
+    },
+    {
+      "id": "relation:landmark-matterhorn:located-in:continent-europe",
+      "sourceId": "landmark:matterhorn",
+      "relationType": "located_in",
+      "targetId": "continent:europe",
+      "sourceRefs": [
+        "zermatt-matterhorn",
+        "commons-matterhorn"
+      ]
+    },
+    {
+      "id": "relation:landmark-mount-fuji:located-in:continent-asia",
+      "sourceId": "landmark:mount-fuji",
+      "relationType": "located_in",
+      "targetId": "continent:asia",
+      "sourceRefs": [
+        "unesco-fuji-1418",
+        "commons-mount-fuji"
+      ]
+    },
+    {
+      "id": "relation:landmark-statue-of-liberty:located-in:continent-north-america",
+      "sourceId": "landmark:statue-of-liberty",
+      "relationType": "located_in",
+      "targetId": "continent:north-america",
+      "sourceRefs": [
+        "unesco-liberty-307",
+        "commons-statue-liberty"
+      ]
+    },
+    {
+      "id": "relation:landmark-sydney-opera-house:located-in:continent-oceania",
+      "sourceId": "landmark:sydney-opera-house",
+      "relationType": "located_in",
+      "targetId": "continent:oceania",
+      "sourceRefs": [
+        "unesco-sydney-166",
+        "commons-sydney-opera"
+      ]
+    },
+    {
+      "id": "relation:landmark-taj-mahal:located-in:continent-asia",
+      "sourceId": "landmark:taj-mahal",
+      "relationType": "located_in",
+      "targetId": "continent:asia",
+      "sourceRefs": [
+        "unesco-taj-mahal-252",
+        "commons-taj-mahal"
+      ]
+    },
+    {
+      "id": "relation:landmark-uluru:located-in:continent-oceania",
+      "sourceId": "landmark:uluru",
+      "relationType": "located_in",
+      "targetId": "continent:oceania",
+      "sourceRefs": [
+        "unesco-uluru-447",
+        "commons-uluru"
+      ]
+    },
+    {
+      "id": "relation:landmark-victoria-falls:located-in:continent-africa",
+      "sourceId": "landmark:victoria-falls",
+      "relationType": "located_in",
+      "targetId": "continent:africa",
+      "sourceRefs": [
+        "unesco-victoria-falls-509",
+        "commons-victoria-falls"
+      ]
+    },
+    {
       "id": "relation:moon-ariel:orbits:planet-uranus",
       "sourceId": "moon:ariel",
       "relationType": "orbits",
@@ -51963,6 +52686,34 @@
       "descriptionDe": "Landfläche ohne Binnengewässer gemäß World-Bank-Indikator AG.LND.TOTL.K2.",
       "valueType": "number",
       "unit": "km²",
+      "comparisonPolicy": "same_source_method_and_date"
+    },
+    {
+      "id": "fact-type:landmark-country",
+      "labelDe": "Land",
+      "descriptionDe": "Staat oder Staaten, in denen das Motiv liegt.",
+      "valueType": "string",
+      "comparisonPolicy": "same_source_method_and_date"
+    },
+    {
+      "id": "fact-type:landmark-distinction",
+      "labelDe": "Besonderheit",
+      "descriptionDe": "Präzise Einordnung, Messgröße oder kulturelle Bedeutung.",
+      "valueType": "string",
+      "comparisonPolicy": "same_source_method_and_date"
+    },
+    {
+      "id": "fact-type:landmark-fun-fact",
+      "labelDe": "Funfact",
+      "descriptionDe": "Kurze, belegte Besonderheit zum Motiv.",
+      "valueType": "string",
+      "comparisonPolicy": "same_source_method_and_date"
+    },
+    {
+      "id": "fact-type:landmark-place",
+      "labelDe": "Stadt / nächster Ort",
+      "descriptionDe": "Stadt oder nächstgelegener benannter Ausgangsort.",
+      "valueType": "string",
       "comparisonPolicy": "same_source_method_and_date"
     },
     {
@@ -56919,6 +57670,534 @@
       "method": "nasa-solar-region-v1",
       "sourceRefs": [
         "nasa-dwarf-planets"
+      ]
+    },
+    {
+      "id": "fact:landmark-angel-falls:landmark-country",
+      "entityId": "landmark:angel-falls",
+      "factTypeId": "fact-type:landmark-country",
+      "value": "Venezuela",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-canaima-701"
+      ]
+    },
+    {
+      "id": "fact:landmark-angel-falls:landmark-distinction",
+      "entityId": "landmark:angel-falls",
+      "factTypeId": "fact-type:landmark-distinction",
+      "value": "Mit rund 1.000 Metern Gesamthöhe gilt er als höchster Wasserfall der Welt.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-canaima-701"
+      ]
+    },
+    {
+      "id": "fact:landmark-angel-falls:landmark-fun-fact",
+      "entityId": "landmark:angel-falls",
+      "factTypeId": "fact-type:landmark-fun-fact",
+      "value": "Der Wasserfall stürzt von einem Tepui, einem steilwandigen Tafelberg, in den Regenwald.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-canaima-701"
+      ]
+    },
+    {
+      "id": "fact:landmark-angel-falls:landmark-place",
+      "entityId": "landmark:angel-falls",
+      "factTypeId": "fact-type:landmark-place",
+      "value": "Canaima-Nationalpark (nächster Ausgangsort: Canaima)",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-canaima-701"
+      ]
+    },
+    {
+      "id": "fact:landmark-brandenburg-gate:landmark-country",
+      "entityId": "landmark:brandenburg-gate",
+      "factTypeId": "fact-type:landmark-country",
+      "value": "Deutschland",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "berlin-brandenburg-gate"
+      ]
+    },
+    {
+      "id": "fact:landmark-brandenburg-gate:landmark-distinction",
+      "entityId": "landmark:brandenburg-gate",
+      "factTypeId": "fact-type:landmark-distinction",
+      "value": "Das 1788 bis 1791 errichtete Tor ist heute ein Symbol der deutschen Einheit.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "berlin-brandenburg-gate"
+      ]
+    },
+    {
+      "id": "fact:landmark-brandenburg-gate:landmark-fun-fact",
+      "entityId": "landmark:brandenburg-gate",
+      "factTypeId": "fact-type:landmark-fun-fact",
+      "value": "Die Quadriga wurde 1793 aufgesetzt, zwei Jahre nach der Fertigstellung des Tores.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "berlin-brandenburg-gate"
+      ]
+    },
+    {
+      "id": "fact:landmark-brandenburg-gate:landmark-place",
+      "entityId": "landmark:brandenburg-gate",
+      "factTypeId": "fact-type:landmark-place",
+      "value": "Berlin",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "berlin-brandenburg-gate"
+      ]
+    },
+    {
+      "id": "fact:landmark-colosseum:landmark-country",
+      "entityId": "landmark:colosseum",
+      "factTypeId": "fact-type:landmark-country",
+      "value": "Italien",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-rome-91"
+      ]
+    },
+    {
+      "id": "fact:landmark-colosseum:landmark-distinction",
+      "entityId": "landmark:colosseum",
+      "factTypeId": "fact-type:landmark-distinction",
+      "value": "Es ist ein römisches Amphitheater aus der Kaiserzeit und eines der bekanntesten Bauwerke der Antike.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-rome-91"
+      ]
+    },
+    {
+      "id": "fact:landmark-colosseum:landmark-fun-fact",
+      "entityId": "landmark:colosseum",
+      "factTypeId": "fact-type:landmark-fun-fact",
+      "value": "Das Kolosseum gehört zu den antiken Monumenten im historischen Zentrum Roms, dessen Geschichte fast drei Jahrtausende umfasst.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-rome-91"
+      ]
+    },
+    {
+      "id": "fact:landmark-colosseum:landmark-place",
+      "entityId": "landmark:colosseum",
+      "factTypeId": "fact-type:landmark-place",
+      "value": "Rom",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-rome-91"
+      ]
+    },
+    {
+      "id": "fact:landmark-eiffel-tower:landmark-country",
+      "entityId": "landmark:eiffel-tower",
+      "factTypeId": "fact-type:landmark-country",
+      "value": "Frankreich",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "eiffel-official"
+      ]
+    },
+    {
+      "id": "fact:landmark-eiffel-tower:landmark-distinction",
+      "entityId": "landmark:eiffel-tower",
+      "factTypeId": "fact-type:landmark-distinction",
+      "value": "Mit Antenne ist der Eiffelturm heute 330 Meter hoch.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "eiffel-official"
+      ]
+    },
+    {
+      "id": "fact:landmark-eiffel-tower:landmark-fun-fact",
+      "entityId": "landmark:eiffel-tower",
+      "factTypeId": "fact-type:landmark-fun-fact",
+      "value": "Der Turm wurde für die Weltausstellung 1889 in nur zwei Jahren, zwei Monaten und fünf Tagen gebaut.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "eiffel-official"
+      ]
+    },
+    {
+      "id": "fact:landmark-eiffel-tower:landmark-place",
+      "entityId": "landmark:eiffel-tower",
+      "factTypeId": "fact-type:landmark-place",
+      "value": "Paris",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "eiffel-official"
+      ]
+    },
+    {
+      "id": "fact:landmark-grand-canyon:landmark-country",
+      "entityId": "landmark:grand-canyon",
+      "factTypeId": "fact-type:landmark-country",
+      "value": "Vereinigte Staaten",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-grand-canyon-75"
+      ]
+    },
+    {
+      "id": "fact:landmark-grand-canyon:landmark-distinction",
+      "entityId": "landmark:grand-canyon",
+      "factTypeId": "fact-type:landmark-distinction",
+      "value": "Die Schlucht windet sich etwa 445 Kilometer und ist stellenweise fast 1.500 Meter tief.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-grand-canyon-75"
+      ]
+    },
+    {
+      "id": "fact:landmark-grand-canyon:landmark-fun-fact",
+      "entityId": "landmark:grand-canyon",
+      "factTypeId": "fact-type:landmark-fun-fact",
+      "value": "In seinen horizontalen Gesteinsschichten sind fast zwei Milliarden Jahre Erdgeschichte sichtbar.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-grand-canyon-75"
+      ]
+    },
+    {
+      "id": "fact:landmark-grand-canyon:landmark-place",
+      "entityId": "landmark:grand-canyon",
+      "factTypeId": "fact-type:landmark-place",
+      "value": "Arizona (Grand Canyon Village)",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-grand-canyon-75"
+      ]
+    },
+    {
+      "id": "fact:landmark-matterhorn:landmark-country",
+      "entityId": "landmark:matterhorn",
+      "factTypeId": "fact-type:landmark-country",
+      "value": "Schweiz und Italien",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "zermatt-matterhorn"
+      ]
+    },
+    {
+      "id": "fact:landmark-matterhorn:landmark-distinction",
+      "entityId": "landmark:matterhorn",
+      "factTypeId": "fact-type:landmark-distinction",
+      "value": "Der markante Gipfel ist 4.478 Meter hoch und liegt auf der schweizerisch-italienischen Grenze.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "zermatt-matterhorn"
+      ]
+    },
+    {
+      "id": "fact:landmark-matterhorn:landmark-fun-fact",
+      "entityId": "landmark:matterhorn",
+      "factTypeId": "fact-type:landmark-fun-fact",
+      "value": "Die Erstbesteigung gelang am 14. Juli 1865; beim Abstieg starben vier der sieben Bergsteiger.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "zermatt-matterhorn"
+      ]
+    },
+    {
+      "id": "fact:landmark-matterhorn:landmark-place",
+      "entityId": "landmark:matterhorn",
+      "factTypeId": "fact-type:landmark-place",
+      "value": "Zermatt / Breuil-Cervinia",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "zermatt-matterhorn"
+      ]
+    },
+    {
+      "id": "fact:landmark-mount-fuji:landmark-country",
+      "entityId": "landmark:mount-fuji",
+      "factTypeId": "fact-type:landmark-country",
+      "value": "Japan",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-fuji-1418"
+      ]
+    },
+    {
+      "id": "fact:landmark-mount-fuji:landmark-distinction",
+      "entityId": "landmark:mount-fuji",
+      "factTypeId": "fact-type:landmark-distinction",
+      "value": "Mit 3.776 Metern ist der Fuji der höchste Berg Japans.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-fuji-1418"
+      ]
+    },
+    {
+      "id": "fact:landmark-mount-fuji:landmark-fun-fact",
+      "entityId": "landmark:mount-fuji",
+      "factTypeId": "fact-type:landmark-fun-fact",
+      "value": "Der Vulkan ist seit Jahrhunderten Pilgerziel und inspirierte Künstler; Holzschnitte machten seine Form weltweit bekannt.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-fuji-1418"
+      ]
+    },
+    {
+      "id": "fact:landmark-mount-fuji:landmark-place",
+      "entityId": "landmark:mount-fuji",
+      "factTypeId": "fact-type:landmark-place",
+      "value": "Fujikawaguchiko",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-fuji-1418"
+      ]
+    },
+    {
+      "id": "fact:landmark-statue-of-liberty:landmark-country",
+      "entityId": "landmark:statue-of-liberty",
+      "factTypeId": "fact-type:landmark-country",
+      "value": "Vereinigte Staaten",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-liberty-307"
+      ]
+    },
+    {
+      "id": "fact:landmark-statue-of-liberty:landmark-distinction",
+      "entityId": "landmark:statue-of-liberty",
+      "factTypeId": "fact-type:landmark-distinction",
+      "value": "Gustave Eiffel entwarf das tragende Stahlgerüst unter der dünnen Kupferhaut.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-liberty-307"
+      ]
+    },
+    {
+      "id": "fact:landmark-statue-of-liberty:landmark-fun-fact",
+      "entityId": "landmark:statue-of-liberty",
+      "factTypeId": "fact-type:landmark-fun-fact",
+      "value": "Frankreich schenkte die Statue den USA; eingeweiht wurde sie 1886.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-liberty-307"
+      ]
+    },
+    {
+      "id": "fact:landmark-statue-of-liberty:landmark-place",
+      "entityId": "landmark:statue-of-liberty",
+      "factTypeId": "fact-type:landmark-place",
+      "value": "New York City",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-liberty-307"
+      ]
+    },
+    {
+      "id": "fact:landmark-sydney-opera-house:landmark-country",
+      "entityId": "landmark:sydney-opera-house",
+      "factTypeId": "fact-type:landmark-country",
+      "value": "Australien",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-sydney-166"
+      ]
+    },
+    {
+      "id": "fact:landmark-sydney-opera-house:landmark-distinction",
+      "entityId": "landmark:sydney-opera-house",
+      "factTypeId": "fact-type:landmark-distinction",
+      "value": "Drei Gruppen ineinandergreifender Gewölbeschalen bilden seine weltbekannte Silhouette.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-sydney-166"
+      ]
+    },
+    {
+      "id": "fact:landmark-sydney-opera-house:landmark-fun-fact",
+      "entityId": "landmark:sydney-opera-house",
+      "factTypeId": "fact-type:landmark-fun-fact",
+      "value": "Das 1973 eröffnete Gebäude stammt vom dänischen Architekten Jørn Utzon.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-sydney-166"
+      ]
+    },
+    {
+      "id": "fact:landmark-sydney-opera-house:landmark-place",
+      "entityId": "landmark:sydney-opera-house",
+      "factTypeId": "fact-type:landmark-place",
+      "value": "Sydney",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-sydney-166"
+      ]
+    },
+    {
+      "id": "fact:landmark-taj-mahal:landmark-country",
+      "entityId": "landmark:taj-mahal",
+      "factTypeId": "fact-type:landmark-country",
+      "value": "Indien",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-taj-mahal-252"
+      ]
+    },
+    {
+      "id": "fact:landmark-taj-mahal:landmark-distinction",
+      "entityId": "landmark:taj-mahal",
+      "factTypeId": "fact-type:landmark-distinction",
+      "value": "Der Bau aus weißem Marmor begann 1632; das Hauptgebäude wurde 1648 vollendet.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-taj-mahal-252"
+      ]
+    },
+    {
+      "id": "fact:landmark-taj-mahal:landmark-fun-fact",
+      "entityId": "landmark:taj-mahal",
+      "factTypeId": "fact-type:landmark-fun-fact",
+      "value": "Mogulkaiser Shah Jahan ließ das Mausoleum zum Andenken an seine Frau Mumtaz Mahal errichten.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-taj-mahal-252"
+      ]
+    },
+    {
+      "id": "fact:landmark-taj-mahal:landmark-place",
+      "entityId": "landmark:taj-mahal",
+      "factTypeId": "fact-type:landmark-place",
+      "value": "Agra",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-taj-mahal-252"
+      ]
+    },
+    {
+      "id": "fact:landmark-uluru:landmark-country",
+      "entityId": "landmark:uluru",
+      "factTypeId": "fact-type:landmark-country",
+      "value": "Australien",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-uluru-447"
+      ]
+    },
+    {
+      "id": "fact:landmark-uluru:landmark-distinction",
+      "entityId": "landmark:uluru",
+      "factTypeId": "fact-type:landmark-distinction",
+      "value": "Der Sandstein-Monolith ragt mehr als 300 Meter über die umliegende Ebene.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-uluru-447"
+      ]
+    },
+    {
+      "id": "fact:landmark-uluru:landmark-fun-fact",
+      "entityId": "landmark:uluru",
+      "factTypeId": "fact-type:landmark-fun-fact",
+      "value": "Uluru ist Teil des lebendigen Kultur- und Glaubenssystems der Anangu, der traditionellen Eigentümer des Gebiets.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-uluru-447"
+      ]
+    },
+    {
+      "id": "fact:landmark-uluru:landmark-place",
+      "entityId": "landmark:uluru",
+      "factTypeId": "fact-type:landmark-place",
+      "value": "Yulara",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-uluru-447"
+      ]
+    },
+    {
+      "id": "fact:landmark-victoria-falls:landmark-country",
+      "entityId": "landmark:victoria-falls",
+      "factTypeId": "fact-type:landmark-country",
+      "value": "Sambia und Simbabwe",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-victoria-falls-509"
+      ]
+    },
+    {
+      "id": "fact:landmark-victoria-falls:landmark-distinction",
+      "entityId": "landmark:victoria-falls",
+      "factTypeId": "fact-type:landmark-distinction",
+      "value": "Mit 1.708 Metern Breite gelten sie als größter Vorhang fallenden Wassers der Welt – nicht als höchster Wasserfall.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-victoria-falls-509"
+      ]
+    },
+    {
+      "id": "fact:landmark-victoria-falls:landmark-fun-fact",
+      "entityId": "landmark:victoria-falls",
+      "factTypeId": "fact-type:landmark-fun-fact",
+      "value": "Die Gischt kann aus vielen Kilometern Entfernung gesehen werden und erzeugt häufig Regenbögen.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-victoria-falls-509"
+      ]
+    },
+    {
+      "id": "fact:landmark-victoria-falls:landmark-place",
+      "entityId": "landmark:victoria-falls",
+      "factTypeId": "fact-type:landmark-place",
+      "value": "Livingstone / Victoria Falls",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-victoria-falls-509"
       ]
     },
     {

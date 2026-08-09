@@ -12,11 +12,13 @@ import physicalRiverJson from "../geo/generated/physical-river-v1.json";
 import physicalSeaJson from "../geo/generated/physical-sea-v1.json";
 import physicalSnapshotJson from "../../content-src/physical-core.v1.json";
 import astronomySnapshotJson from "../../content-src/astronomy-core.v1.json";
+import landmarkSnapshotJson from "../../content-src/landmarks-core.v1.json";
 import { createContentRepository } from "./repository";
 import {
   validateDatasetManifest,
   validateGeoDataset,
   validateRawAstronomySnapshot,
+  validateRawLandmarkSnapshot,
   validateRawPhysicalSnapshot
 } from "./schema";
 
@@ -131,9 +133,9 @@ describe("Phase-2 content contract", () => {
     ).toEqual(expect.arrayContaining(["Euro", "EUR"]));
   });
 
-  it("contains every versioned country visual and constellation chart", () => {
+  it("contains every versioned country visual, constellation chart and landmark photo", () => {
     expect(visualAssetIndexJson.datasetVersion).toBe(datasetJson.version);
-    expect(visualAssetIndexJson.assets).toHaveLength(402);
+    expect(visualAssetIndexJson.assets).toHaveLength(414);
     expect(
       visualAssetIndexJson.assets.filter((asset) => asset.kind === "flag")
     ).toHaveLength(195);
@@ -148,18 +150,50 @@ describe("Phase-2 content contract", () => {
       )
     ).toHaveLength(12);
     expect(
+      visualAssetIndexJson.assets.filter(
+        (asset) => asset.kind === "landmark_photo"
+      )
+    ).toHaveLength(12);
+    expect(
       new Set(visualAssetIndexJson.assets.map((asset) => asset.key)).size
-    ).toBe(402);
+    ).toBe(414);
 
     for (const asset of visualAssetIndexJson.assets) {
-      const svg = readFileSync(
-        new URL(`../../public/${asset.path}`, import.meta.url),
-        "utf8"
-      );
-      expect(svg).toMatch(/^<svg[\s>]/);
-      expect(createHash("sha256").update(svg).digest("hex")).toBe(asset.sha256);
-      expect(Buffer.byteLength(svg)).toBe(asset.bytes);
+      const file = readFileSync(new URL(`../../public/${asset.path}`, import.meta.url));
+      if (asset.mediaType === "image/svg+xml") {
+        expect(file.toString("utf8")).toMatch(/^<svg[\s>]/);
+      } else {
+        expect(asset.mediaType).toBe("image/jpeg");
+        expect(file.subarray(0, 2)).toEqual(Buffer.from([0xff, 0xd8]));
+      }
+      expect(createHash("sha256").update(file).digest("hex")).toBe(asset.sha256);
+      expect(file.byteLength).toBe(asset.bytes);
     }
+  });
+
+  it("ships sourced landmark facts and pinned local photographs", () => {
+    expect(validateRawLandmarkSnapshot(landmarkSnapshotJson)).toMatchObject({
+      success: true
+    });
+    const parsed = validateGeoDataset(datasetJson);
+    if (!parsed.success) throw new Error(parsed.issues.join("\n"));
+    const repository = createContentRepository(parsed.data);
+    const landmarks = repository.getEntitiesByType("landmark");
+    expect(landmarks).toHaveLength(12);
+    expect(qualityJson.checks).toMatchObject({
+      landmarkEntityCount: 12,
+      landmarkImagesPinnedAndSourced: true
+    });
+    expect(
+      landmarks.every((landmark) =>
+        [
+          "fact-type:landmark-country",
+          "fact-type:landmark-place",
+          "fact-type:landmark-fun-fact",
+          "fact-type:landmark-distinction"
+        ].every((factTypeId) => repository.getFact(landmark.id, factTypeId))
+      )
+    ).toBe(true);
   });
 
   it("ships a sourced astronomy core with stable facts and local charts", () => {
@@ -261,7 +295,7 @@ describe("Phase-2 content contract", () => {
     const repository = createContentRepository(parsed.data);
     const questions = repository.getEntitiesByType("knowledge_question");
 
-    expect(parsed.data.facts).toHaveLength(498);
+    expect(parsed.data.facts).toHaveLength(546);
     expect(parsed.data.compiledKnowledgeQuestions).toHaveLength(62);
     expect(questions).toHaveLength(62);
     expect(qualityJson.checks).toMatchObject({

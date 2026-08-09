@@ -5,7 +5,8 @@ import type { DatasetSource, KnowledgeEvidence } from "../../content/schema";
 export type VisualAssetKind =
   | "flag"
   | "country_outline"
-  | "constellation_chart";
+  | "constellation_chart"
+  | "landmark_photo";
 
 export interface VisualAssetReference {
   kind: VisualAssetKind;

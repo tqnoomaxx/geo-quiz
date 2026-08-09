@@ -1,8 +1,8 @@
 {
   "datasetId": "geo-core-mvp",
-  "version": "2026-08-04.phase8-astronomy1",
+  "version": "2026-08-09.phase8-landmarks1",
   "schemaVersion": 4,
-  "builtAt": "2026-08-04T00:00:00.000Z",
+  "builtAt": "2026-08-09T12:00:00.000Z",
   "localeCoverage": [
     "de"
   ],
@@ -12,6 +12,97 @@
   },
   "sources": [
     {
+      "id": "berlin-brandenburg-gate",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://www.berlin.de/sehenswuerdigkeiten/3560266-3558930-brandenburger-tor.html",
+      "license": "Factual reference; page content not redistributed"
+    },
+    {
+      "id": "commons-angel-falls",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Salto_del_Angel-Canaima-Venezuela18.JPG",
+      "license": "CC BY 3.0; Diego Delso"
+    },
+    {
+      "id": "commons-brandenburg-gate",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Brandenburger_Tor_morgens.jpg",
+      "license": "CC BY-SA 3.0; Thomas Wolf, www.foto-tw.de"
+    },
+    {
+      "id": "commons-colosseum",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Colosseum_of_Rome,_Italy.jpg",
+      "license": "CC0; Wilfredor"
+    },
+    {
+      "id": "commons-eiffel",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Tour_Eiffel_Wikimedia_Commons.jpg",
+      "license": "Public domain; Benh LIEU SONG"
+    },
+    {
+      "id": "commons-grand-canyon",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Grand_Canyon_Powell_Point_Evening_Light_02_2013.jpg",
+      "license": "CC BY-SA 3.0; Tuxyso"
+    },
+    {
+      "id": "commons-matterhorn",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:View_of_the_Matterhorn_from_Zermatt.jpg",
+      "license": "CC BY-SA 4.0; CaramelizedOnions"
+    },
+    {
+      "id": "commons-mount-fuji",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Fujikawaguchiko_view_of_Mt._Fuji.jpg",
+      "license": "CC0; Harperawl"
+    },
+    {
+      "id": "commons-statue-liberty",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Statue_of_Liberty,_NY.jpg",
+      "license": "CC BY 2.0; William Warby"
+    },
+    {
+      "id": "commons-sydney-opera",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Sydney_(AU),_Opera_House_--_2019_--_3054.jpg",
+      "license": "CC BY-SA 4.0; Dietmar Rabich"
+    },
+    {
+      "id": "commons-taj-mahal",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Taj_Mahal,_Agra,_India_edit2.jpg",
+      "license": "CC BY-SA 4.0; Yann, edited by King of Hearts"
+    },
+    {
+      "id": "commons-uluru",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Petermann_Ranges_(AU),_Uluru-Kata_Tjuta_National_Park,_Uluru,_Kuniya_Walk_--_2019_--_3636.jpg",
+      "license": "CC BY-SA 4.0; Dietmar Rabich"
+    },
+    {
+      "id": "commons-victoria-falls",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Cataratas_Victoria,_Zambia-Zimbabue,_2018-07-27,_DD_30-34_PAN.jpg",
+      "license": "CC BY-SA 4.0; Diego Delso"
+    },
+    {
       "id": "cplp-portuguese-language-states",
       "sourceVersion": "2026-07-30",
       "retrievedAt": "2026-07-30",
@@ -19,9 +110,16 @@
       "license": "Quellenverweis; Fakten redaktionell extrahiert"
     },
     {
+      "id": "eiffel-official",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://www.toureiffel.paris/de/monument/zahlen",
+      "license": "Factual reference; page content not redistributed"
+    },
+    {
       "id": "flag-icons",
       "sourceVersion": "7.5.0",
-      "retrievedAt": "2026-08-04",
+      "retrievedAt": "2026-08-09",
       "url": "https://github.com/lipis/flag-icons/tree/v7.5.0",
       "license": "MIT"
     },
@@ -99,7 +197,7 @@
     {
       "id": "natural-earth",
       "sourceVersion": "world-atlas@2.0.2 / 50m+10m",
-      "retrievedAt": "2026-08-04",
+      "retrievedAt": "2026-08-09",
       "url": "https://www.naturalearthdata.com/",
       "license": "Public Domain"
     },
@@ -116,6 +214,69 @@
       "retrievedAt": "2026-07-30",
       "url": "docs/DATA_MODEL.md",
       "license": "Projektinterne redaktionelle Scope-Policy"
+    },
+    {
+      "id": "unesco-canaima-701",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://whc.unesco.org/en/list/701",
+      "license": "CC BY-SA 3.0 IGO for page description; facts paraphrased"
+    },
+    {
+      "id": "unesco-fuji-1418",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://whc.unesco.org/en/list/1418",
+      "license": "CC BY-SA 3.0 IGO for page description; facts paraphrased"
+    },
+    {
+      "id": "unesco-grand-canyon-75",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://whc.unesco.org/en/list/75",
+      "license": "CC BY-SA 3.0 IGO for page description; facts paraphrased"
+    },
+    {
+      "id": "unesco-liberty-307",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://whc.unesco.org/en/list/307",
+      "license": "CC BY-SA 3.0 IGO for page description; facts paraphrased"
+    },
+    {
+      "id": "unesco-rome-91",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://whc.unesco.org/en/list/91",
+      "license": "CC BY-SA 3.0 IGO for page description; facts paraphrased"
+    },
+    {
+      "id": "unesco-sydney-166",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://whc.unesco.org/en/list/166",
+      "license": "CC BY-SA 3.0 IGO for page description; facts paraphrased"
+    },
+    {
+      "id": "unesco-taj-mahal-252",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://whc.unesco.org/en/list/252",
+      "license": "CC BY-SA 3.0 IGO for page description; facts paraphrased"
+    },
+    {
+      "id": "unesco-uluru-447",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://whc.unesco.org/en/list/447",
+      "license": "CC BY-SA 3.0 IGO for page description; facts paraphrased"
+    },
+    {
+      "id": "unesco-victoria-falls-509",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://whc.unesco.org/en/list/509",
+      "license": "CC BY-SA 3.0 IGO for page description; facts paraphrased"
     },
     {
       "id": "wikidata-capital-snapshot",
@@ -166,40 +327,47 @@
       "retrievedAt": "2026-07-30",
       "url": "https://github.com/mledoze/countries",
       "license": "ODbL-1.0"
+    },
+    {
+      "id": "zermatt-matterhorn",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://zermatt.swiss/en/p/matterhorn-01tVj000005DoH6IAK",
+      "license": "Factual reference; page content not redistributed"
     }
   ],
   "artifacts": [
     {
       "path": "geo-core-mvp-v1.json",
-      "sha256": "62bd0460f844b706940ebb058997079cf3a65836e52433386fa2b0302a6a5606",
-      "bytes": 1574810,
-      "entityCount": 883
+      "sha256": "02917230e457760982785b9fc5b7241a24158fcba453e690271b1b562eedc3d3",
+      "bytes": 1616504,
+      "entityCount": 895
     },
     {
       "path": "quality-report.json",
-      "sha256": "4d6ff4f153605707c49dffd553482373c812c7bc6bc90cd3c2456a83d9b926b1",
-      "bytes": 6449
+      "sha256": "409b203627e949e0e64e3ecd8b3b8c2de3e08e1653449e6bd4f4c2f40540784d",
+      "bytes": 6553
     },
     {
       "path": "ranked-cities-v1.json",
-      "sha256": "55bd6ac0d9a33c269df3632a04a6a464ec232ec583962f977079769e31f024ed",
+      "sha256": "0219381e0862022bbd0f2c18dd03a34933e108bca210973edbc3741a873fc290",
       "bytes": 8843998,
       "entityCount": 6000
     },
     {
       "path": "ranked-cities-index-v1.json",
-      "sha256": "9762bfaea9a1911c92ff0c4e3fccf79c1a13d043556a0c79e062a402621fcca6",
+      "sha256": "aea553df92036e1cf8148c0410d071cae193624fb1e022d225b8ab310b7fe63a",
       "bytes": 2292
     },
     {
       "path": "ranked-physical-v1.json",
-      "sha256": "52a13b81a9db33d9eace9d8ae8d322f79b8ac7e5edea4f9a13ddd3d4a9a42e02",
+      "sha256": "9da6a9e7c4dffb450b949c85326e97252a6ce6139e634ca89e2e63edc95548dd",
       "bytes": 418716,
       "entityCount": 200
     },
     {
       "path": "ranked-physical-index-v1.json",
-      "sha256": "8767b975efe0003145499c920de11b5a0f28e604a93234f3a3352cf62685ec59",
+      "sha256": "43899c47e4b1a64a57900f200a9a32af09bc7f5e1a119ef872ae0610fa92b2b2",
       "bytes": 2367
     },
     {
@@ -239,8 +407,8 @@
     },
     {
       "path": "visual-assets-index-v1.json",
-      "sha256": "b8ae012e7abf228ad5630183ed998760ce38d60d4dac7c5b3d1a6e26780e13e9",
-      "bytes": 142671,
+      "sha256": "69b23868f08aafb9867cf774bb94460b6bbfe440b782946cf72f31044e259f45",
+      "bytes": 150309,
       "entityCount": 207
     }
   ],

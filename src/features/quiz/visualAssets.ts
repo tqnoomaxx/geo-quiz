@@ -4,6 +4,15 @@ import type {
 } from "../../engine/quiz/question";
 
 export function visualAssetUrl(asset: VisualAssetReference) {
+  if (asset.kind === "landmark_photo") {
+    const slug = asset.entityId.startsWith("landmark:")
+      ? asset.entityId.slice("landmark:".length)
+      : "";
+    if (!/^[a-z-]+$/.test(slug)) {
+      throw new Error(`${asset.key}: Landmark-Foto besitzt keine stabile ID.`);
+    }
+    return `${import.meta.env.BASE_URL}assets/visual/v1/landmarks/${slug}.jpg`;
+  }
   if (asset.kind === "constellation_chart") {
     const slug = asset.entityId.startsWith("constellation:")
       ? asset.entityId.slice("constellation:".length)
@@ -52,7 +61,7 @@ export async function preloadQuestionVisualAssets(
         cache: "force-cache"
       });
       if (!response.ok) {
-        throw new Error(`${asset.key}: lokales SVG konnte nicht geladen werden.`);
+        throw new Error(`${asset.key}: lokales Bild konnte nicht geladen werden.`);
       }
     })
   );

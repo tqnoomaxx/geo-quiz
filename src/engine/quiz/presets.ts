@@ -37,6 +37,7 @@ export type MvpTopic =
   | "moons"
   | "dwarf-planets"
   | "zodiac"
+  | "landmarks"
   | "knowledge"
   | "world-mix";
 export type MvpDirection =
@@ -150,6 +151,7 @@ export const MVP_DIRECTIONS: Record<
     { id: "facts_to_name", label: "Fakten → Zwergplanet" }
   ],
   zodiac: [{ id: "profile", label: "Sternbild → Angaben" }],
+  landmarks: [{ id: "name", label: "Bild → Name" }],
   knowledge: [
     { id: "choice", label: "Wissenspuzzle → Auswahl" },
     { id: "name", label: "Wissenspuzzle → Eingabe" }
@@ -186,6 +188,7 @@ export function candidateCountForSetup(
             candidate !== "world-mix" &&
             candidate !== "longest-rivers" &&
             candidate !== "highest-mountains" &&
+            candidate !== "landmarks" &&
             !ASTRONOMY_TOPICS.has(candidate as MvpTopic)
         )
         .reduce(
@@ -209,6 +212,8 @@ export function candidateCountForSetup(
         : "city"
       : topic === "knowledge"
         ? "knowledge_question"
+        : topic === "landmarks"
+          ? "landmark"
         : "country");
   return contentRepository
     .getEntitiesByType(entityType)
@@ -640,6 +645,35 @@ function createVisualDefinition(
   };
 }
 
+function createLandmarkDefinition(
+  setup: MvpQuizSetup,
+  datasetVersion: string
+): QuizDefinition {
+  const count = setup.includeIds?.length ? "all" : setup.questionCount;
+  return {
+    id: `phase8-landmarks-name-${setup.regionId.replace("continent:", "")}-v1`,
+    schemaVersion: 1,
+    datasetVersion,
+    content: { subjectType: "landmark" },
+    prompt: {
+      kind: "visual_asset",
+      entity: { from: "subject" },
+      field: "landmark_photo",
+      locale: "de"
+    },
+    answer: {
+      kind: "text_input",
+      entity: { from: "subject" },
+      grader: "text-v1"
+    },
+    scope: {
+      regionIds: scopeRegionIds(setup.regionId),
+      includeIds: setup.includeIds
+    },
+    rules: rulesFromSetup(setup, count)
+  };
+}
+
 function createPhysicalDefinition(
   setup: MvpQuizSetup,
   datasetVersion: string
@@ -760,6 +794,9 @@ export function createMvpQuizDefinition(
   }
   if (setup.topic === "knowledge") {
     return createKnowledgeDefinition(setup, datasetVersion);
+  }
+  if (setup.topic === "landmarks") {
+    return createLandmarkDefinition(setup, datasetVersion);
   }
   if (setup.topic === "zodiac") {
     return createZodiacDefinition(setup, datasetVersion);
@@ -931,6 +968,10 @@ function setupForSkill(skillKey: string): Pick<
     },
     "country:visual_asset:country_outline_to_text_input": {
       topic: "shapes",
+      direction: "name"
+    },
+    "landmark:visual_asset:landmark_photo_to_text_input": {
+      topic: "landmarks",
       direction: "name"
     },
     "river:name_to_map_line": {
@@ -1129,7 +1170,12 @@ export function setupFromDefinition(
     topic = "zodiac";
     direction = "profile";
   } else if (definition.prompt.kind === "visual_asset") {
-    topic = definition.prompt.field === "country_outline" ? "shapes" : "flags";
+    topic =
+      definition.prompt.field === "country_outline"
+        ? "shapes"
+        : definition.prompt.field === "landmark_photo"
+          ? "landmarks"
+          : "flags";
     direction =
       definition.answer.kind === "single_choice" ? "choice" : "name";
   } else if (
@@ -1151,6 +1197,8 @@ export function setupFromDefinition(
         ? "capitals"
         : definition.content.subjectType === "knowledge_question"
           ? "knowledge"
+          : definition.content.subjectType === "landmark"
+            ? "landmarks"
           : definition.content.subjectType === "ranked_city"
             ? "cities"
             : definition.content.subjectType === "ranked_river"
@@ -1268,6 +1316,7 @@ export function describeQuizDefinition(definition: QuizRoundDefinition) {
     moons: "Monde",
     "dwarf-planets": "Zwergplaneten",
     zodiac: "Sternzeichen",
+    landmarks: "Sehenswürdigkeiten & Naturhighlights",
     knowledge: "Wissenspuzzle",
     "world-mix": "Weltmix"
   };

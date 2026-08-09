@@ -36,6 +36,17 @@ export function VisualAssetGraphic({
     );
   }
 
+  if (asset.kind === "landmark_photo") {
+    return (
+      <img
+        className={`visual-asset visual-asset--landmark${compact ? " is-compact" : ""}`}
+        src={source}
+        alt={accessibleLabel}
+        draggable={false}
+      />
+    );
+  }
+
   const style = {
     "--visual-mask": `url("${source}")`
   } as CSSProperties;

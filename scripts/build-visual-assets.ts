@@ -7,6 +7,7 @@ import type { GeometryCollection, Topology } from "topojson-specification";
 import {
   parseRawAstronomySnapshot,
   parseRawContentFixture,
+  parseRawLandmarkSnapshot,
   type RawCountryFixture
 } from "../src/content/schema";
 
@@ -21,6 +22,11 @@ const astronomySourcePath = resolve(
   projectRoot,
   "content-src/astronomy-core.v1.json"
 );
+const landmarkSourcePath = resolve(
+  projectRoot,
+  "content-src/landmarks-core.v1.json"
+);
+const landmarkImageDirectory = resolve(projectRoot, "content-src/landmark-images");
 const flagDirectory = resolve(
   projectRoot,
   "node_modules/flag-icons/flags/4x3"
@@ -48,6 +54,10 @@ function sha256(value: string) {
   return createHash("sha256").update(value).digest("hex");
 }
 
+function sha256Bytes(value: Uint8Array) {
+  return createHash("sha256").update(value).digest("hex");
+}
+
 async function writeStable(path: string, content: string) {
   let previous: string | undefined;
 
@@ -60,6 +70,19 @@ async function writeStable(path: string, content: string) {
   if (previous !== content) {
     await mkdir(dirname(path), { recursive: true });
     await writeFile(path, content, "utf8");
+  }
+}
+
+async function writeStableBytes(path: string, content: Uint8Array) {
+  let previous: Buffer | undefined;
+  try {
+    previous = await readFile(path);
+  } catch {
+    previous = undefined;
+  }
+  if (!previous || !previous.equals(content)) {
+    await mkdir(dirname(path), { recursive: true });
+    await writeFile(path, content);
   }
 }
 
@@ -223,6 +246,9 @@ const fixture = parseRawContentFixture(
 const astronomy = parseRawAstronomySnapshot(
   JSON.parse(await readFile(astronomySourcePath, "utf8"))
 );
+const landmarks = parseRawLandmarkSnapshot(
+  JSON.parse(await readFile(landmarkSourcePath, "utf8"))
+);
 const [world50m, world10m] = await Promise.all([
   loadTopology(world50mPath),
   loadTopology(world10mPath)
@@ -230,8 +256,8 @@ const [world50m, world10m] = await Promise.all([
 const assets: Array<{
   key: string;
   entityId: string;
-  kind: "flag" | "country_outline" | "constellation_chart";
-  mediaType: "image/svg+xml";
+  kind: "flag" | "country_outline" | "constellation_chart" | "landmark_photo";
+  mediaType: "image/svg+xml" | "image/jpeg";
   sha256: string;
   bytes: number;
   sourceRef: string;
@@ -299,8 +325,37 @@ for (const constellation of astronomy.entities
   );
 }
 
-if (assets.length !== 402) {
-  throw new Error(`Visual-Build erwartet 402 Assets, erzeugte aber ${assets.length}.`);
+for (const landmark of landmarks.entities.toSorted((left, right) =>
+  left.id.localeCompare(right.id)
+)) {
+  const photo = await readFile(
+    resolve(landmarkImageDirectory, landmark.image.filename)
+  );
+  const digest = sha256Bytes(photo);
+  if (photo.length !== landmark.image.bytes || digest !== landmark.image.sha256) {
+    throw new Error(`${landmark.id}: lokales Foto entspricht nicht dem Snapshot.`);
+  }
+  const publicPath = `assets/visual/v1/landmarks/${landmark.image.filename}`;
+  assets.push({
+    key: `visual:landmark_photo:${landmark.id}`,
+    entityId: landmark.id,
+    kind: "landmark_photo",
+    mediaType: "image/jpeg",
+    sha256: digest,
+    bytes: photo.length,
+    sourceRef: landmark.sourceRefs.find((sourceRef) => sourceRef.startsWith("commons-")) ?? "",
+    path: publicPath
+  });
+  assetWrites.push(
+    writeStableBytes(
+      resolve(publicAssetDirectory, "landmarks", landmark.image.filename),
+      photo
+    )
+  );
+}
+
+if (assets.length !== 414) {
+  throw new Error(`Visual-Build erwartet 414 Assets, erzeugte aber ${assets.length}.`);
 }
 
 const indexJson = stableJson({
@@ -325,12 +380,15 @@ const indexJson = stableJson({
       sourceVersion: "retrieved-2026-08-04",
       url: "https://www.iau.org/Iau/Science/What-we-do/The-Constellations.aspx",
       license: "Constellation charts CC BY 4.0"
-    }
+    },
+    ...landmarks.sources
+      .filter((source) => source.id.startsWith("commons-"))
+      .map(({ retrievedAt: _retrievedAt, ...source }) => source)
   ],
   assets
 });
 await Promise.all([writeStable(indexPath, indexJson), ...assetWrites]);
 
 process.stdout.write(
-  `Visual Assets ${fixture.version}: ${assets.length} SVGs\n`
+  `Visual Assets ${fixture.version}: ${assets.length} lokale Assets\n`
 );

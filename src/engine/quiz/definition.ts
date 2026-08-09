@@ -608,12 +608,13 @@ export function validateQuizDefinition(
       value.prompt.kind === "visual_asset" &&
       value.prompt.field !== "flag" &&
       value.prompt.field !== "country_outline" &&
-      value.prompt.field !== "constellation_chart"
+      value.prompt.field !== "constellation_chart" &&
+      value.prompt.field !== "landmark_photo"
     ) {
       issues.push({
         path: "prompt.field",
         code: "unknown_visual_asset",
-        message: "visual_asset benötigt flag, country_outline oder constellation_chart."
+        message: "visual_asset benötigt flag, country_outline, constellation_chart oder landmark_photo."
       });
     }
     if (

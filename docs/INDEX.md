@@ -23,6 +23,7 @@ Diese Dokumente bilden die gemeinsame Quelle der Wahrheit.
 | [Phase-7-Physikranglisten](slices/PHASE_7_RANKED_PHYSICAL_VERTICAL_SLICE.md) | Wie werden globale Top-100-Flusssysteme und -Gipfel als getrennte, belegte Faktenquizze integriert? |
 | [Phase-7-Länderprofile](slices/PHASE_7_COUNTRY_PROFILE_VERTICAL_SLICE.md) | Wie werden Hauptstadt, Amtssprache und Währung als ein zusammengesetztes Länderprofil abgefragt? |
 | [Phase-8-Astronomie](slices/PHASE_8_ASTRONOMY_VERTICAL_SLICE.md) | Wie werden Planeten, bekannte Monde, Zwergplaneten und konfigurierbare Sternzeichenprofile integriert? |
+| [Phase-8-Wahrzeichen](slices/PHASE_8_LANDMARKS_VERTICAL_SLICE.md) | Wie werden lokale Fotos von Sehenswürdigkeiten und Naturhighlights mit belegten Ortsangaben und Funfacts integriert? |
 | [Roadmap](ROADMAP.md) | In welcher Reihenfolge wird die große Vision umgesetzt? |
 | [Umsetzungsschritte](IMPLEMENTATION_STEPS.md) | Welche einzeln abnehmbaren Schritte führen von null bis zur großen Plattform? |
 | [Arbeitsablauf](WORKFLOW.md) | Welche wiederkehrenden Schemata gelten für Features, Daten und QA? |

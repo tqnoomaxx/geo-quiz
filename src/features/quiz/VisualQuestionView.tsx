@@ -2,6 +2,7 @@ import {
   CheckCircle2,
   ChevronRight,
   Eye,
+  Landmark,
   SkipForward,
   XCircle
 } from "lucide-react";
@@ -22,6 +23,45 @@ interface VisualQuestionViewProps {
   onReveal: () => void;
   solutionRevealAllowed: boolean;
   continueLabel?: string;
+}
+
+function LandmarkExplanation({
+  explanation
+}: {
+  explanation: NonNullable<QuestionInstance["feedback"]["explanation"]>;
+}) {
+  return (
+    <aside className="knowledge-explanation landmark-explanation" aria-labelledby="landmark-details-title">
+      <div className="knowledge-explanation__heading">
+        <Landmark aria-hidden="true" />
+        <div>
+          <p className="eyebrow">Mehr erfahren</p>
+          <h2 id="landmark-details-title">Ort & Funfact</h2>
+        </div>
+      </div>
+      <p>{explanation.text}</p>
+      <dl>
+        {explanation.evidence.map((item) => (
+          <div key={item.labelDe}>
+            <dt>{item.labelDe}</dt>
+            <dd>{item.valueDe}</dd>
+          </div>
+        ))}
+      </dl>
+      <p className="landmark-explanation__sources">
+        {explanation.sources.map((source, index) => (
+          <span key={source.id}>
+            {index > 0 ? " · " : "Quelle: "}
+            <a href={source.url} target="_blank" rel="noreferrer">
+              {source.id.startsWith("commons-")
+                ? `Foto: ${source.license}`
+                : new URL(source.url).hostname}
+            </a>
+          </span>
+        ))}
+      </p>
+    </aside>
+  );
 }
 
 function Feedback({
@@ -136,12 +176,17 @@ export function VisualQuestionView({
   continueLabel = "Weiter"
 }: VisualQuestionViewProps) {
   const isTextInput = question.answerSpec.kind === "text_input";
+  const isLandmark =
+    question.promptPayload.kind === "visual_asset" &&
+    question.promptPayload.asset.kind === "landmark_photo";
   const options = question.answerSpec.options ?? [];
   const { value, handleChange, handleCompositionEnd, handleSubmit } =
     useTextAnswerInput({ question, attempt, onAnswer });
 
   return (
-    <main className="visual-question-layout">
+    <main
+      className={`visual-question-layout${isLandmark ? " visual-question-layout--landmark" : ""}`}
+    >
       <section className="visual-prompt-panel">
         <div>
           <p className="eyebrow">Visuelle Frage</p>
@@ -155,6 +200,10 @@ export function VisualQuestionView({
               accessibleLabel={
                 question.promptPayload.asset.kind === "flag"
                   ? "Flagge als Quizfrage"
+                  : question.promptPayload.asset.kind === "landmark_photo"
+                    ? attempt
+                      ? `${question.feedback.expectedLabel} als Quizfrage`
+                      : "Foto einer Sehenswürdigkeit oder eines Naturhighlights als Quizfrage"
                   : "Länderumriss als Quizfrage"
               }
             />
@@ -171,7 +220,12 @@ export function VisualQuestionView({
               value={value}
               onChange={handleChange}
               onCompositionEnd={handleCompositionEnd}
-              placeholder="Land eingeben"
+              placeholder={
+                question.promptPayload.kind === "visual_asset" &&
+                question.promptPayload.asset.kind === "landmark_photo"
+                  ? "Name eingeben"
+                  : "Land eingeben"
+              }
               autoComplete="off"
               autoFocus={!attempt}
               disabled={Boolean(attempt)}
@@ -184,11 +238,16 @@ export function VisualQuestionView({
               </p>
             ) : null}
             {attempt ? (
-              <Feedback
-                attempt={attempt}
-                onContinue={onContinue}
-                continueLabel={continueLabel}
-              />
+              <>
+                {question.feedback.explanation ? (
+                  <LandmarkExplanation explanation={question.feedback.explanation} />
+                ) : null}
+                <Feedback
+                  attempt={attempt}
+                  onContinue={onContinue}
+                  continueLabel={continueLabel}
+                />
+              </>
             ) : null}
             {!attempt ? (
               <button

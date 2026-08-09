@@ -83,7 +83,7 @@ describe("Lernmodus-Regeln", () => {
       }))
     );
 
-    expect(combinations).toHaveLength(32);
+    expect(combinations).toHaveLength(33);
 
     for (const combination of combinations) {
       for (const profile of LEARNING_PROFILES) {
