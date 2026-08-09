@@ -912,6 +912,14 @@ test("recognizes a landmark photo and reveals place, fun fact and attribution", 
   expect(prepared.questions).toHaveLength(12);
   expect(new Set(prepared.questions.map((question: BrowserQuestion) => question.subjectId)).size).toBe(12);
   await expect(page.locator(".visual-asset--landmark")).toBeVisible();
+  await expect
+    .poll(() =>
+      page.locator(".visual-asset--landmark").evaluate((element) => {
+        const image = element as HTMLImageElement;
+        return image.complete && image.naturalWidth > 0 && image.naturalHeight > 0;
+      })
+    )
+    .toBe(true);
   await expect(page.getByPlaceholder("Name eingeben")).toBeFocused();
   await expect(page.getByRole("button", { name: "Antwort prüfen" })).toHaveCount(0);
 

@@ -63,6 +63,12 @@ export async function preloadQuestionVisualAssets(
       if (!response.ok) {
         throw new Error(`${asset.key}: lokales Bild konnte nicht geladen werden.`);
       }
+      await response.blob();
+      if (asset.kind === "landmark_photo" && typeof Image !== "undefined") {
+        const image = new Image();
+        image.src = visualAssetUrl(asset);
+        await image.decode();
+      }
     })
   );
 }
