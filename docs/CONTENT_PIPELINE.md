@@ -242,6 +242,12 @@ Fakten, zwanzig `orbits`-Relationen und genau zwölf vereinfachte lokale
 Sternbildkarten. Die Strichfiguren sind eigene Lernvisualisierungen und werden
 nicht als offizielle IAU-Figuren bezeichnet.
 
+Der Wahrzeichen-Snapshot `2026-08-09.phase8-landmarks2` enthält 40 Motive –
+je zwanzig Kulturstätten und Naturhighlights – mit 160 belegten
+Auflösungsfakten. Alle 40 Commons-Fotos wurden als vollständiges Motiv
+redaktionell geprüft und werden mit fester 960-Pixel-URL, Lizenz, Urheber,
+Bytezahl und SHA-256 lokal ausgeliefert.
+
 Contract-Tests prüfen Schema 2, eindeutige IDs, aufgelöste Referenzen,
 Koordinaten, Scopezahlen, Artefaktgrößen und SHA-256-Prüfsummen gegen das
 Manifest. Der Qualitätsbericht führt Mehrhauptstadtfälle, politisch sensible

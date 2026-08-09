@@ -354,8 +354,8 @@ for (const landmark of landmarks.entities.toSorted((left, right) =>
   );
 }
 
-if (assets.length !== 414) {
-  throw new Error(`Visual-Build erwartet 414 Assets, erzeugte aber ${assets.length}.`);
+if (assets.length !== 442) {
+  throw new Error(`Visual-Build erwartet 442 Assets, erzeugte aber ${assets.length}.`);
 }
 
 const indexJson = stableJson({

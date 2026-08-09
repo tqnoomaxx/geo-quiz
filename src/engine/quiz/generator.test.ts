@@ -303,8 +303,8 @@ describe("Phase-2 QuizDefinition and deterministic generator", () => {
       success: true
     });
     const questions = generateQuestions(landmarks, repository, "landmarks-stable");
-    expect(questions).toHaveLength(12);
-    expect(new Set(questions.map((question) => question.subjectId)).size).toBe(12);
+    expect(questions).toHaveLength(40);
+    expect(new Set(questions.map((question) => question.subjectId)).size).toBe(40);
     expect(questions[0]).toMatchObject({
       promptPayload: {
         kind: "visual_asset",
@@ -353,16 +353,16 @@ describe("Phase-2 QuizDefinition and deterministic generator", () => {
       second.map((question) => question.subjectId)
     );
     expect(first.map((question) => question.feedback.expectedLabel)).toEqual([
-      "Vaduz",
-      "Riga",
-      "Reykjavík",
-      "Budapest",
+      "Monaco",
       "Moskau",
-      "London",
-      "Warschau",
-      "Vatikanstadt",
-      "Stockholm",
-      "Oslo"
+      "Wien",
+      "Kiew",
+      "Nikosia",
+      "Valletta",
+      "Riga",
+      "Tiflis",
+      "San Marino",
+      "Stockholm"
     ]);
   });
 

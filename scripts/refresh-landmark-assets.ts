@@ -12,22 +12,56 @@ const snapshot = parseRawLandmarkSnapshot(
 const outputDirectory = resolve(projectRoot, "content-src/landmark-images");
 await mkdir(outputDirectory, { recursive: true });
 
-for (const landmark of snapshot.entities) {
-  const response = await fetch(landmark.image.downloadUrl, {
-    headers: {
-      "User-Agent":
-        "GeoAppContentBuilder/1.0 (educational project; https://github.com/tqnoomaxx/geo-quiz)"
+function matchesSnapshot(
+  bytes: Buffer,
+  expectedBytes: number,
+  expectedSha256: string
+) {
+  return (
+    bytes.length === expectedBytes &&
+    createHash("sha256").update(bytes).digest("hex") === expectedSha256
+  );
+}
+
+async function downloadWithRetry(url: string) {
+  for (let attempt = 0; attempt < 5; attempt += 1) {
+    const response = await fetch(url, {
+      headers: {
+        "User-Agent":
+          "GeoAppContentBuilder/1.0 (educational project; https://github.com/tqnoomaxx/geo-quiz)"
+      }
+    });
+    if (response.ok) return Buffer.from(await response.arrayBuffer());
+    if (response.status !== 429 && response.status < 500) {
+      throw new Error(`Download schlug mit ${response.status} fehl.`);
     }
-  });
-  if (!response.ok) {
-    throw new Error(`${landmark.id}: Download schlug mit ${response.status} fehl.`);
+    await new Promise((resolveDelay) =>
+      setTimeout(resolveDelay, 1_500 * (attempt + 1))
+    );
   }
-  const bytes = Buffer.from(await response.arrayBuffer());
-  const digest = createHash("sha256").update(bytes).digest("hex");
-  if (bytes.length !== landmark.image.bytes || digest !== landmark.image.sha256) {
+  throw new Error("Download blieb nach fünf Versuchen erfolglos.");
+}
+
+for (const landmark of snapshot.entities) {
+  const outputPath = resolve(outputDirectory, landmark.image.filename);
+  const existing = await readFile(outputPath).catch(() => undefined);
+  if (
+    existing &&
+    matchesSnapshot(existing, landmark.image.bytes, landmark.image.sha256)
+  ) {
+    continue;
+  }
+
+  const bytes = await downloadWithRetry(landmark.image.downloadUrl).catch(
+    (error: unknown) => {
+      const message = error instanceof Error ? error.message : String(error);
+      throw new Error(`${landmark.id}: ${message}`);
+    }
+  );
+  if (!matchesSnapshot(bytes, landmark.image.bytes, landmark.image.sha256)) {
     throw new Error(`${landmark.id}: Bild entspricht nicht dem geprüften Snapshot.`);
   }
-  await writeFile(resolve(outputDirectory, landmark.image.filename), bytes);
+  await writeFile(outputPath, bytes);
 }
 
 process.stdout.write(`Landmark-Fotos ${snapshot.datasetVersion}: ${snapshot.entities.length} Dateien geprüft\n`);

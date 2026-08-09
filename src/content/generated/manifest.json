@@ -1,6 +1,6 @@
 {
   "datasetId": "geo-core-mvp",
-  "version": "2026-08-09.phase8-landmarks1",
+  "version": "2026-08-09.phase8-landmarks2",
   "schemaVersion": 4,
   "builtAt": "2026-08-09T12:00:00.000Z",
   "localeCoverage": [
@@ -11,6 +11,13 @@
     "labelDe": "195 Staaten: 193 UN-Mitglieder plus Palästina und Vatikanstadt"
   },
   "sources": [
+    {
+      "id": "argentina-los-glaciares",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://www.argentina.gob.ar/parquesnacionales/patagonia-austral/parque-nacional-los-glaciares/biodiversidad",
+      "license": "Factual reference; page content not redistributed"
+    },
     {
       "id": "berlin-brandenburg-gate",
       "sourceVersion": "retrieved-2026-08-09",
@@ -26,11 +33,32 @@
       "license": "CC BY 3.0; Diego Delso"
     },
     {
+      "id": "commons-angkor-wat",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Angkor_Wat_with_its_reflection_(cropped).jpg",
+      "license": "CC BY-SA 4.0; Satdeep Gill"
+    },
+    {
       "id": "commons-brandenburg-gate",
       "sourceVersion": "960px-thumbnail-2026-08-09",
       "retrievedAt": "2026-08-09",
       "url": "https://commons.wikimedia.org/wiki/File:Brandenburger_Tor_morgens.jpg",
       "license": "CC BY-SA 3.0; Thomas Wolf, www.foto-tw.de"
+    },
+    {
+      "id": "commons-chichen-itza",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Chichen_Itza_3.jpg",
+      "license": "CC BY-SA 4.0; Daniel Schwen"
+    },
+    {
+      "id": "commons-christ-redeemer",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Christ_the_Redeemer_-_Cristo_Redentor_-_Rio.jpg",
+      "license": "CC BY-SA 3.0 DE; Arne Müseler"
     },
     {
       "id": "commons-colosseum",
@@ -47,11 +75,81 @@
       "license": "Public domain; Benh LIEU SONG"
     },
     {
+      "id": "commons-everest",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg",
+      "license": "CC BY-SA 2.5; Luca Galuzzi"
+    },
+    {
+      "id": "commons-giants-causeway",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:County_Antrim_-_Giant%27s_Causeway_-_Tops_of_Basalt_Columns_-_geograph.org.uk_-_3987884.jpg",
+      "license": "CC BY-SA 2.0; Suzanne Mischyshyn"
+    },
+    {
+      "id": "commons-giza-pyramids",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:All_Gizah_Pyramids.jpg",
+      "license": "CC BY-SA 2.0; Ricardo Liberato"
+    },
+    {
+      "id": "commons-golden-gate-bridge",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Golden_Gate_Bridge_as_seen_from_Marshall%E2%80%99s_Beach,_March_2018.jpg",
+      "license": "CC BY-SA 4.0; Frank Schulenburg"
+    },
+    {
       "id": "commons-grand-canyon",
       "sourceVersion": "960px-thumbnail-2026-08-09",
       "retrievedAt": "2026-08-09",
       "url": "https://commons.wikimedia.org/wiki/File:Grand_Canyon_Powell_Point_Evening_Light_02_2013.jpg",
       "license": "CC BY-SA 3.0; Tuxyso"
+    },
+    {
+      "id": "commons-grand-prismatic",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Grand_prismatic_spring.jpg",
+      "license": "Public domain; Jim Peaco, National Park Service"
+    },
+    {
+      "id": "commons-great-barrier-reef",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Aerial_View_of_Great_Barrier_Reef_(Ank_Kumar)_02.jpg",
+      "license": "CC BY-SA 4.0; Ank Kumar"
+    },
+    {
+      "id": "commons-great-wall",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Great_Wall_of_China_July_2006.JPG",
+      "license": "CC0; Velatrix"
+    },
+    {
+      "id": "commons-ha-long-bay",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Ha_Long_Bay,_Vietnam,_View_from_above.jpg",
+      "license": "CC BY 4.0; Vyacheslav Argenberg"
+    },
+    {
+      "id": "commons-iguazu-falls",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Iguazu_Falls_Panorama_2009.jpg",
+      "license": "CC BY-SA 4.0; Mariordo"
+    },
+    {
+      "id": "commons-machu-picchu",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Machu_Picchu,_Per%C3%BA,_2015-07-30,_DD_47.JPG",
+      "license": "CC BY-SA 4.0; Diego Delso"
     },
     {
       "id": "commons-matterhorn",
@@ -61,11 +159,74 @@
       "license": "CC BY-SA 4.0; CaramelizedOnions"
     },
     {
+      "id": "commons-moai",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Ahu_Tongariki.jpg",
+      "license": "CC BY-SA 3.0; Rivi"
+    },
+    {
       "id": "commons-mount-fuji",
       "sourceVersion": "960px-thumbnail-2026-08-09",
       "retrievedAt": "2026-08-09",
-      "url": "https://commons.wikimedia.org/wiki/File:Fujikawaguchiko_view_of_Mt._Fuji.jpg",
-      "license": "CC0; Harperawl"
+      "url": "https://commons.wikimedia.org/wiki/File:Mount_Fuji_from_Lake_Kawaguchi_20170206.jpg",
+      "license": "CC BY-SA 4.0; Suicasmo"
+    },
+    {
+      "id": "commons-neuschwanstein",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Neuschwanstein_Castle_2024-02.jpg",
+      "license": "CC0; Wilfredor"
+    },
+    {
+      "id": "commons-niagara-falls",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Panorama_of_Niagara_Falls_October_2024.jpg",
+      "license": "CC0; TheWxResearcher"
+    },
+    {
+      "id": "commons-pamukkale",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Pamukkale_02.jpg",
+      "license": "CC BY-SA 3.0; Bernard Gagnon"
+    },
+    {
+      "id": "commons-perito-moreno",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Perito_Moreno_Glacier_panorama.jpg",
+      "license": "CC BY-SA 4.0; Makelelecba"
+    },
+    {
+      "id": "commons-petra",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Petra_,_Al-Khazneh_2.jpg",
+      "license": "CC BY-SA 3.0; Faraheed"
+    },
+    {
+      "id": "commons-pisa",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:The_Leaning_Tower_of_Pisa_SB.jpeg",
+      "license": "CC BY-SA 3.0; Saffron Blaze"
+    },
+    {
+      "id": "commons-sagrada-familia",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Temple_Expiatori_de_la_Sagrada_Familia.jpg",
+      "license": "CC BY-SA 2.0; Victoriano Javier Tornel García"
+    },
+    {
+      "id": "commons-salar-de-uyuni",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Salar_de_Uyuni,_Bolivia,_2016-02-04,_DD_10-12_HDR.JPG",
+      "license": "CC BY-SA 4.0; Diego Delso"
     },
     {
       "id": "commons-statue-liberty",
@@ -75,10 +236,24 @@
       "license": "CC BY 2.0; William Warby"
     },
     {
+      "id": "commons-stonehenge",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Stonehenge,_Condado_de_Wiltshire,_Inglaterra,_2014-08-12,_DD_18.JPG",
+      "license": "CC BY-SA 4.0; Diego Delso"
+    },
+    {
       "id": "commons-sydney-opera",
       "sourceVersion": "960px-thumbnail-2026-08-09",
       "retrievedAt": "2026-08-09",
-      "url": "https://commons.wikimedia.org/wiki/File:Sydney_(AU),_Opera_House_--_2019_--_3054.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Sydney_Opera_House_-_Dec_2008.jpg",
+      "license": "CC BY-SA 3.0; Diliff"
+    },
+    {
+      "id": "commons-table-mountain",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Cape_Town_(ZA),_Table_Mountain_--_2024_--_3437.jpg",
       "license": "CC BY-SA 4.0; Dietmar Rabich"
     },
     {
@@ -89,11 +264,25 @@
       "license": "CC BY-SA 4.0; Yann, edited by King of Hearts"
     },
     {
+      "id": "commons-torres-del-paine",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Las_Torres,_Torres_del_Paine,_Chile.jpg",
+      "license": "CC BY-SA 4.0; Aakerueh"
+    },
+    {
+      "id": "commons-tower-bridge",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Tower_Bridge_London_Dusk_Feb_2006.jpg",
+      "license": "CC BY-SA 3.0; Diliff"
+    },
+    {
       "id": "commons-uluru",
       "sourceVersion": "960px-thumbnail-2026-08-09",
       "retrievedAt": "2026-08-09",
-      "url": "https://commons.wikimedia.org/wiki/File:Petermann_Ranges_(AU),_Uluru-Kata_Tjuta_National_Park,_Uluru,_Kuniya_Walk_--_2019_--_3636.jpg",
-      "license": "CC BY-SA 4.0; Dietmar Rabich"
+      "url": "https://commons.wikimedia.org/wiki/File:Ulu%E1%B9%9Fu_(Ayers_Rock),_Sunset.jpg",
+      "license": "CC0; Weyf"
     },
     {
       "id": "commons-victoria-falls",
@@ -101,6 +290,27 @@
       "retrievedAt": "2026-08-09",
       "url": "https://commons.wikimedia.org/wiki/File:Cataratas_Victoria,_Zambia-Zimbabue,_2018-07-27,_DD_30-34_PAN.jpg",
       "license": "CC BY-SA 4.0; Diego Delso"
+    },
+    {
+      "id": "commons-wulingyuan",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:1_zhangjiajie_huangshizhai_wulingyuan_panorama_2012.jpg",
+      "license": "CC BY-SA 4.0; chensiyuan"
+    },
+    {
+      "id": "commons-yosemite-half-dome",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Half_Dome_from_Glacier_Point,_Yosemite_NP_-_Diliff.jpg",
+      "license": "CC BY-SA 3.0; Diliff"
+    },
+    {
+      "id": "conaf-torres-del-paine",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://www.conaf.cl/parque_nacionales/parque-nacional-torres-del-paine/",
+      "license": "Factual reference; page content not redistributed"
     },
     {
       "id": "cplp-portuguese-language-states",
@@ -167,6 +377,13 @@
       }
     },
     {
+      "id": "golden-gate-official",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://www.goldengate.org/bridge/history-research/statistics-data/design-construction-stats/",
+      "license": "Factual reference; page content not redistributed"
+    },
+    {
       "id": "iau-constellations",
       "sourceVersion": "retrieved-2026-08-04",
       "retrievedAt": "2026-08-04",
@@ -186,6 +403,13 @@
       "retrievedAt": "2026-08-04",
       "url": "https://science.nasa.gov/solar-system/moons/facts/",
       "license": "NASA factual material; page text and images are not redistributed"
+    },
+    {
+      "id": "nasa-salar-uyuni",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://science.nasa.gov/earth/earth-observatory/an-expanse-of-white-in-bolivia-84853/",
+      "license": "Factual reference; page content not redistributed"
     },
     {
       "id": "nasa-solar-system",
@@ -209,6 +433,34 @@
       "license": "Public Domain"
     },
     {
+      "id": "neuschwanstein-official",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://www.neuschwanstein.de/englisch/palace/index.htm",
+      "license": "Factual reference; page content not redistributed"
+    },
+    {
+      "id": "niagara-parks-official",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://www.niagaraparks.com/visit/niagara-falls/",
+      "license": "Factual reference; page content not redistributed"
+    },
+    {
+      "id": "nps-grand-prismatic",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://www.nps.gov/features/yell/ofvec/exhibits/treasures/thermals/hotspring/grandprismatic.htm",
+      "license": "Factual reference; page content not redistributed"
+    },
+    {
+      "id": "nps-yosemite-half-dome",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://www.nps.gov/yose/learn/nature/halfdome.htm",
+      "license": "Factual reference; page content not redistributed"
+    },
+    {
       "id": "phase2-scope-policy",
       "sourceVersion": "un-193-plus-observers-v1",
       "retrievedAt": "2026-07-30",
@@ -216,10 +468,45 @@
       "license": "Projektinterne redaktionelle Scope-Policy"
     },
     {
+      "id": "sagrada-familia-official",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://sagradafamilia.org/en/history-of-the-temple",
+      "license": "Factual reference; page content not redistributed"
+    },
+    {
+      "id": "sanparks-table-mountain",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://www.sanparks.org/wp-content/uploads/2021/04/tmnp_brochure.pdf",
+      "license": "Factual reference; page content not redistributed"
+    },
+    {
+      "id": "tower-bridge-official",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://www.towerbridge.org.uk/about-us",
+      "license": "Factual reference; page content not redistributed"
+    },
+    {
+      "id": "unesco-angkor-668",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://whc.unesco.org/en/list/668",
+      "license": "CC BY-SA 3.0 IGO for page description; facts paraphrased"
+    },
+    {
       "id": "unesco-canaima-701",
       "sourceVersion": "retrieved-2026-08-09",
       "retrievedAt": "2026-08-09",
       "url": "https://whc.unesco.org/en/list/701",
+      "license": "CC BY-SA 3.0 IGO for page description; facts paraphrased"
+    },
+    {
+      "id": "unesco-chichen-itza-483",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://whc.unesco.org/en/list/483",
       "license": "CC BY-SA 3.0 IGO for page description; facts paraphrased"
     },
     {
@@ -230,10 +517,45 @@
       "license": "CC BY-SA 3.0 IGO for page description; facts paraphrased"
     },
     {
+      "id": "unesco-giants-causeway-369",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://whc.unesco.org/en/list/369",
+      "license": "CC BY-SA 3.0 IGO for page description; facts paraphrased"
+    },
+    {
       "id": "unesco-grand-canyon-75",
       "sourceVersion": "retrieved-2026-08-09",
       "retrievedAt": "2026-08-09",
       "url": "https://whc.unesco.org/en/list/75",
+      "license": "CC BY-SA 3.0 IGO for page description; facts paraphrased"
+    },
+    {
+      "id": "unesco-great-barrier-reef-154",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://whc.unesco.org/en/list/154",
+      "license": "CC BY-SA 3.0 IGO for page description; facts paraphrased"
+    },
+    {
+      "id": "unesco-great-wall-438",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://whc.unesco.org/en/list/438",
+      "license": "CC BY-SA 3.0 IGO for page description; facts paraphrased"
+    },
+    {
+      "id": "unesco-ha-long-672",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://whc.unesco.org/en/list/672",
+      "license": "CC BY-SA 3.0 IGO for page description; facts paraphrased"
+    },
+    {
+      "id": "unesco-iguazu-303",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://whc.unesco.org/en/list/303",
       "license": "CC BY-SA 3.0 IGO for page description; facts paraphrased"
     },
     {
@@ -244,10 +566,73 @@
       "license": "CC BY-SA 3.0 IGO for page description; facts paraphrased"
     },
     {
+      "id": "unesco-machu-picchu-274",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://whc.unesco.org/en/list/274",
+      "license": "CC BY-SA 3.0 IGO for page description; facts paraphrased"
+    },
+    {
+      "id": "unesco-memphis-86",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://whc.unesco.org/en/list/86",
+      "license": "CC BY-SA 3.0 IGO for page description; facts paraphrased"
+    },
+    {
+      "id": "unesco-pamukkale-485",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://whc.unesco.org/en/list/485",
+      "license": "CC BY-SA 3.0 IGO for page description; facts paraphrased"
+    },
+    {
+      "id": "unesco-petra-326",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://whc.unesco.org/en/list/326",
+      "license": "CC BY-SA 3.0 IGO for page description; facts paraphrased"
+    },
+    {
+      "id": "unesco-pisa-395",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://whc.unesco.org/en/list/395",
+      "license": "CC BY-SA 3.0 IGO for page description; facts paraphrased"
+    },
+    {
+      "id": "unesco-rapa-nui-715",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://whc.unesco.org/en/list/715",
+      "license": "CC BY-SA 3.0 IGO for page description; facts paraphrased"
+    },
+    {
+      "id": "unesco-rio-1100",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://whc.unesco.org/en/list/1100",
+      "license": "CC BY-SA 3.0 IGO for page description; facts paraphrased"
+    },
+    {
       "id": "unesco-rome-91",
       "sourceVersion": "retrieved-2026-08-09",
       "retrievedAt": "2026-08-09",
       "url": "https://whc.unesco.org/en/list/91",
+      "license": "CC BY-SA 3.0 IGO for page description; facts paraphrased"
+    },
+    {
+      "id": "unesco-sagarmatha-120",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://whc.unesco.org/en/list/120",
+      "license": "CC BY-SA 3.0 IGO for page description; facts paraphrased"
+    },
+    {
+      "id": "unesco-stonehenge-373",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://whc.unesco.org/en/list/373",
       "license": "CC BY-SA 3.0 IGO for page description; facts paraphrased"
     },
     {
@@ -276,6 +661,13 @@
       "sourceVersion": "retrieved-2026-08-09",
       "retrievedAt": "2026-08-09",
       "url": "https://whc.unesco.org/en/list/509",
+      "license": "CC BY-SA 3.0 IGO for page description; facts paraphrased"
+    },
+    {
+      "id": "unesco-wulingyuan-640",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://whc.unesco.org/en/list/640",
       "license": "CC BY-SA 3.0 IGO for page description; facts paraphrased"
     },
     {
@@ -339,35 +731,35 @@
   "artifacts": [
     {
       "path": "geo-core-mvp-v1.json",
-      "sha256": "02917230e457760982785b9fc5b7241a24158fcba453e690271b1b562eedc3d3",
-      "bytes": 1616504,
-      "entityCount": 895
+      "sha256": "624e17df730e212d6cae2328d5ee614b61765ab278e8f79fa053103954785696",
+      "bytes": 1719166,
+      "entityCount": 923
     },
     {
       "path": "quality-report.json",
-      "sha256": "409b203627e949e0e64e3ecd8b3b8c2de3e08e1653449e6bd4f4c2f40540784d",
-      "bytes": 6553
+      "sha256": "ffaa29f63608ea037392f3a2a7d207f288b30d0c861dd7d04946648c152196f7",
+      "bytes": 6554
     },
     {
       "path": "ranked-cities-v1.json",
-      "sha256": "0219381e0862022bbd0f2c18dd03a34933e108bca210973edbc3741a873fc290",
+      "sha256": "58d1873328b7cdde58caab438220f455428f65aa1bbf9678aa4554b6b685db57",
       "bytes": 8843998,
       "entityCount": 6000
     },
     {
       "path": "ranked-cities-index-v1.json",
-      "sha256": "aea553df92036e1cf8148c0410d071cae193624fb1e022d225b8ab310b7fe63a",
+      "sha256": "dea576ad1244411c80aefef05fed457c9073044d722af576997918cd6bf2fc37",
       "bytes": 2292
     },
     {
       "path": "ranked-physical-v1.json",
-      "sha256": "9da6a9e7c4dffb450b949c85326e97252a6ce6139e634ca89e2e63edc95548dd",
+      "sha256": "47b57699e101654358609f522c54f64a823a3a02bb49f73f7cdcb47424e22c01",
       "bytes": 418716,
       "entityCount": 200
     },
     {
       "path": "ranked-physical-index-v1.json",
-      "sha256": "43899c47e4b1a64a57900f200a9a32af09bc7f5e1a119ef872ae0610fa92b2b2",
+      "sha256": "06c0bbd9369355432411dc1e3bf68df1f3c58188a20da3c869071758a3f2505f",
       "bytes": 2367
     },
     {
@@ -407,8 +799,8 @@
     },
     {
       "path": "visual-assets-index-v1.json",
-      "sha256": "69b23868f08aafb9867cf774bb94460b6bbfe440b782946cf72f31044e259f45",
-      "bytes": 150309,
+      "sha256": "8a9aceaadf6a23d93bece1380f40a5bf07d3b0b930ff6fd59da3163d9662bf39",
+      "bytes": 168292,
       "entityCount": 207
     }
   ],

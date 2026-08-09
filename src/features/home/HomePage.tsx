@@ -104,7 +104,7 @@ const CHALLENGE_GROUPS: Array<{ label: string; challenges: Challenge[] }> = [
       {
         id: "landmarks",
         label: "Sehenswürdigkeiten & Naturhighlights",
-        detail: "12 berühmte Orte am Foto erkennen – mit Funfacts",
+        detail: "40 berühmte Orte am Foto erkennen – mit Funfacts",
         icon: Camera
       }
     ]

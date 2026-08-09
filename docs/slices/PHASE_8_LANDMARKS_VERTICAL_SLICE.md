@@ -8,7 +8,7 @@ einen Funfact, eine präzise Besonderheit und die verwendeten Quellen.
 
 ## Vertikaler Schnitt
 
-- 12 Motive: sechs gebaute Sehenswürdigkeiten und sechs Naturhighlights.
+- 40 Motive: zwanzig gebaute Sehenswürdigkeiten und zwanzig Naturhighlights.
 - Entitätstyp `landmark` mit stabiler ID, bevorzugtem deutschen Namen,
   akzeptierten Aliasen, Schwierigkeit und Kontinent-Scope.
 - Komposition `landmark × visual_asset:landmark_photo × text_input × Gebiet ×
@@ -16,7 +16,7 @@ einen Funfact, eine präzise Besonderheit und die verwendeten Quellen.
 - Vier versionierte Fakten: Land, Stadt/nächster Ort, Funfact und Besonderheit.
 - Lokal ausgelieferte Wikimedia-Commons-JPEGs mit Dateiseite, Urheber, Lizenz,
   Bytezahl und SHA-256 im Snapshot.
-- Rundenlängen 6, 10 oder alle; deterministische Auswahl ohne Wiederholung.
+- Rundenlängen 6, 10, 20 oder alle; deterministische Auswahl ohne Wiederholung.
 
 ## Daten- und Lizenzfluss
 
@@ -38,7 +38,7 @@ Lizenz.
 ## Abnahme
 
 - Raw-Snapshot und generiertes Dataset validieren.
-- Genau 12 Landmark-Entitäten, 48 Auflösungsfakten und 12 lokale JPEGs.
+- Genau 40 Landmark-Entitäten, 160 Auflösungsfakten und 40 lokale JPEGs.
 - Alle Fragen einer „alle“-Runde besitzen eindeutige `subjectId`s.
 - Korrekte Texteingabe wird automatisch angenommen; Ort, Funfact,
   Besonderheit und Attribution werden danach sichtbar.

@@ -1,12 +1,19 @@
 {
   "datasetId": "geo-core-mvp",
-  "version": "2026-08-09.phase8-landmarks1",
+  "version": "2026-08-09.phase8-landmarks2",
   "schemaVersion": 4,
   "scopePolicy": {
     "id": "un-193-plus-observers-v1",
     "labelDe": "195 Staaten: 193 UN-Mitglieder plus Palästina und Vatikanstadt"
   },
   "sources": [
+    {
+      "id": "argentina-los-glaciares",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://www.argentina.gob.ar/parquesnacionales/patagonia-austral/parque-nacional-los-glaciares/biodiversidad",
+      "license": "Factual reference; page content not redistributed"
+    },
     {
       "id": "berlin-brandenburg-gate",
       "sourceVersion": "retrieved-2026-08-09",
@@ -22,11 +29,32 @@
       "license": "CC BY 3.0; Diego Delso"
     },
     {
+      "id": "commons-angkor-wat",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Angkor_Wat_with_its_reflection_(cropped).jpg",
+      "license": "CC BY-SA 4.0; Satdeep Gill"
+    },
+    {
       "id": "commons-brandenburg-gate",
       "sourceVersion": "960px-thumbnail-2026-08-09",
       "retrievedAt": "2026-08-09",
       "url": "https://commons.wikimedia.org/wiki/File:Brandenburger_Tor_morgens.jpg",
       "license": "CC BY-SA 3.0; Thomas Wolf, www.foto-tw.de"
+    },
+    {
+      "id": "commons-chichen-itza",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Chichen_Itza_3.jpg",
+      "license": "CC BY-SA 4.0; Daniel Schwen"
+    },
+    {
+      "id": "commons-christ-redeemer",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Christ_the_Redeemer_-_Cristo_Redentor_-_Rio.jpg",
+      "license": "CC BY-SA 3.0 DE; Arne Müseler"
     },
     {
       "id": "commons-colosseum",
@@ -43,11 +71,81 @@
       "license": "Public domain; Benh LIEU SONG"
     },
     {
+      "id": "commons-everest",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg",
+      "license": "CC BY-SA 2.5; Luca Galuzzi"
+    },
+    {
+      "id": "commons-giants-causeway",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:County_Antrim_-_Giant%27s_Causeway_-_Tops_of_Basalt_Columns_-_geograph.org.uk_-_3987884.jpg",
+      "license": "CC BY-SA 2.0; Suzanne Mischyshyn"
+    },
+    {
+      "id": "commons-giza-pyramids",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:All_Gizah_Pyramids.jpg",
+      "license": "CC BY-SA 2.0; Ricardo Liberato"
+    },
+    {
+      "id": "commons-golden-gate-bridge",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Golden_Gate_Bridge_as_seen_from_Marshall%E2%80%99s_Beach,_March_2018.jpg",
+      "license": "CC BY-SA 4.0; Frank Schulenburg"
+    },
+    {
       "id": "commons-grand-canyon",
       "sourceVersion": "960px-thumbnail-2026-08-09",
       "retrievedAt": "2026-08-09",
       "url": "https://commons.wikimedia.org/wiki/File:Grand_Canyon_Powell_Point_Evening_Light_02_2013.jpg",
       "license": "CC BY-SA 3.0; Tuxyso"
+    },
+    {
+      "id": "commons-grand-prismatic",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Grand_prismatic_spring.jpg",
+      "license": "Public domain; Jim Peaco, National Park Service"
+    },
+    {
+      "id": "commons-great-barrier-reef",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Aerial_View_of_Great_Barrier_Reef_(Ank_Kumar)_02.jpg",
+      "license": "CC BY-SA 4.0; Ank Kumar"
+    },
+    {
+      "id": "commons-great-wall",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Great_Wall_of_China_July_2006.JPG",
+      "license": "CC0; Velatrix"
+    },
+    {
+      "id": "commons-ha-long-bay",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Ha_Long_Bay,_Vietnam,_View_from_above.jpg",
+      "license": "CC BY 4.0; Vyacheslav Argenberg"
+    },
+    {
+      "id": "commons-iguazu-falls",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Iguazu_Falls_Panorama_2009.jpg",
+      "license": "CC BY-SA 4.0; Mariordo"
+    },
+    {
+      "id": "commons-machu-picchu",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Machu_Picchu,_Per%C3%BA,_2015-07-30,_DD_47.JPG",
+      "license": "CC BY-SA 4.0; Diego Delso"
     },
     {
       "id": "commons-matterhorn",
@@ -57,11 +155,74 @@
       "license": "CC BY-SA 4.0; CaramelizedOnions"
     },
     {
+      "id": "commons-moai",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Ahu_Tongariki.jpg",
+      "license": "CC BY-SA 3.0; Rivi"
+    },
+    {
       "id": "commons-mount-fuji",
       "sourceVersion": "960px-thumbnail-2026-08-09",
       "retrievedAt": "2026-08-09",
-      "url": "https://commons.wikimedia.org/wiki/File:Fujikawaguchiko_view_of_Mt._Fuji.jpg",
-      "license": "CC0; Harperawl"
+      "url": "https://commons.wikimedia.org/wiki/File:Mount_Fuji_from_Lake_Kawaguchi_20170206.jpg",
+      "license": "CC BY-SA 4.0; Suicasmo"
+    },
+    {
+      "id": "commons-neuschwanstein",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Neuschwanstein_Castle_2024-02.jpg",
+      "license": "CC0; Wilfredor"
+    },
+    {
+      "id": "commons-niagara-falls",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Panorama_of_Niagara_Falls_October_2024.jpg",
+      "license": "CC0; TheWxResearcher"
+    },
+    {
+      "id": "commons-pamukkale",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Pamukkale_02.jpg",
+      "license": "CC BY-SA 3.0; Bernard Gagnon"
+    },
+    {
+      "id": "commons-perito-moreno",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Perito_Moreno_Glacier_panorama.jpg",
+      "license": "CC BY-SA 4.0; Makelelecba"
+    },
+    {
+      "id": "commons-petra",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Petra_,_Al-Khazneh_2.jpg",
+      "license": "CC BY-SA 3.0; Faraheed"
+    },
+    {
+      "id": "commons-pisa",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:The_Leaning_Tower_of_Pisa_SB.jpeg",
+      "license": "CC BY-SA 3.0; Saffron Blaze"
+    },
+    {
+      "id": "commons-sagrada-familia",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Temple_Expiatori_de_la_Sagrada_Familia.jpg",
+      "license": "CC BY-SA 2.0; Victoriano Javier Tornel García"
+    },
+    {
+      "id": "commons-salar-de-uyuni",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Salar_de_Uyuni,_Bolivia,_2016-02-04,_DD_10-12_HDR.JPG",
+      "license": "CC BY-SA 4.0; Diego Delso"
     },
     {
       "id": "commons-statue-liberty",
@@ -71,10 +232,24 @@
       "license": "CC BY 2.0; William Warby"
     },
     {
+      "id": "commons-stonehenge",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Stonehenge,_Condado_de_Wiltshire,_Inglaterra,_2014-08-12,_DD_18.JPG",
+      "license": "CC BY-SA 4.0; Diego Delso"
+    },
+    {
       "id": "commons-sydney-opera",
       "sourceVersion": "960px-thumbnail-2026-08-09",
       "retrievedAt": "2026-08-09",
-      "url": "https://commons.wikimedia.org/wiki/File:Sydney_(AU),_Opera_House_--_2019_--_3054.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Sydney_Opera_House_-_Dec_2008.jpg",
+      "license": "CC BY-SA 3.0; Diliff"
+    },
+    {
+      "id": "commons-table-mountain",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Cape_Town_(ZA),_Table_Mountain_--_2024_--_3437.jpg",
       "license": "CC BY-SA 4.0; Dietmar Rabich"
     },
     {
@@ -85,11 +260,25 @@
       "license": "CC BY-SA 4.0; Yann, edited by King of Hearts"
     },
     {
+      "id": "commons-torres-del-paine",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Las_Torres,_Torres_del_Paine,_Chile.jpg",
+      "license": "CC BY-SA 4.0; Aakerueh"
+    },
+    {
+      "id": "commons-tower-bridge",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Tower_Bridge_London_Dusk_Feb_2006.jpg",
+      "license": "CC BY-SA 3.0; Diliff"
+    },
+    {
       "id": "commons-uluru",
       "sourceVersion": "960px-thumbnail-2026-08-09",
       "retrievedAt": "2026-08-09",
-      "url": "https://commons.wikimedia.org/wiki/File:Petermann_Ranges_(AU),_Uluru-Kata_Tjuta_National_Park,_Uluru,_Kuniya_Walk_--_2019_--_3636.jpg",
-      "license": "CC BY-SA 4.0; Dietmar Rabich"
+      "url": "https://commons.wikimedia.org/wiki/File:Ulu%E1%B9%9Fu_(Ayers_Rock),_Sunset.jpg",
+      "license": "CC0; Weyf"
     },
     {
       "id": "commons-victoria-falls",
@@ -97,6 +286,27 @@
       "retrievedAt": "2026-08-09",
       "url": "https://commons.wikimedia.org/wiki/File:Cataratas_Victoria,_Zambia-Zimbabue,_2018-07-27,_DD_30-34_PAN.jpg",
       "license": "CC BY-SA 4.0; Diego Delso"
+    },
+    {
+      "id": "commons-wulingyuan",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:1_zhangjiajie_huangshizhai_wulingyuan_panorama_2012.jpg",
+      "license": "CC BY-SA 4.0; chensiyuan"
+    },
+    {
+      "id": "commons-yosemite-half-dome",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Half_Dome_from_Glacier_Point,_Yosemite_NP_-_Diliff.jpg",
+      "license": "CC BY-SA 3.0; Diliff"
+    },
+    {
+      "id": "conaf-torres-del-paine",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://www.conaf.cl/parque_nacionales/parque-nacional-torres-del-paine/",
+      "license": "Factual reference; page content not redistributed"
     },
     {
       "id": "cplp-portuguese-language-states",
@@ -127,6 +337,13 @@
       "license": "Government factual statement; page content not redistributed"
     },
     {
+      "id": "golden-gate-official",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://www.goldengate.org/bridge/history-research/statistics-data/design-construction-stats/",
+      "license": "Factual reference; page content not redistributed"
+    },
+    {
       "id": "iau-constellations",
       "sourceVersion": "retrieved-2026-08-04",
       "retrievedAt": "2026-08-04",
@@ -146,6 +363,13 @@
       "retrievedAt": "2026-08-04",
       "url": "https://science.nasa.gov/solar-system/moons/facts/",
       "license": "NASA factual material; page text and images are not redistributed"
+    },
+    {
+      "id": "nasa-salar-uyuni",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://science.nasa.gov/earth/earth-observatory/an-expanse-of-white-in-bolivia-84853/",
+      "license": "Factual reference; page content not redistributed"
     },
     {
       "id": "nasa-solar-system",
@@ -169,6 +393,34 @@
       "license": "Public Domain"
     },
     {
+      "id": "neuschwanstein-official",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://www.neuschwanstein.de/englisch/palace/index.htm",
+      "license": "Factual reference; page content not redistributed"
+    },
+    {
+      "id": "niagara-parks-official",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://www.niagaraparks.com/visit/niagara-falls/",
+      "license": "Factual reference; page content not redistributed"
+    },
+    {
+      "id": "nps-grand-prismatic",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://www.nps.gov/features/yell/ofvec/exhibits/treasures/thermals/hotspring/grandprismatic.htm",
+      "license": "Factual reference; page content not redistributed"
+    },
+    {
+      "id": "nps-yosemite-half-dome",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://www.nps.gov/yose/learn/nature/halfdome.htm",
+      "license": "Factual reference; page content not redistributed"
+    },
+    {
       "id": "phase2-scope-policy",
       "sourceVersion": "un-193-plus-observers-v1",
       "retrievedAt": "2026-07-30",
@@ -176,10 +428,45 @@
       "license": "Projektinterne redaktionelle Scope-Policy"
     },
     {
+      "id": "sagrada-familia-official",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://sagradafamilia.org/en/history-of-the-temple",
+      "license": "Factual reference; page content not redistributed"
+    },
+    {
+      "id": "sanparks-table-mountain",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://www.sanparks.org/wp-content/uploads/2021/04/tmnp_brochure.pdf",
+      "license": "Factual reference; page content not redistributed"
+    },
+    {
+      "id": "tower-bridge-official",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://www.towerbridge.org.uk/about-us",
+      "license": "Factual reference; page content not redistributed"
+    },
+    {
+      "id": "unesco-angkor-668",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://whc.unesco.org/en/list/668",
+      "license": "CC BY-SA 3.0 IGO for page description; facts paraphrased"
+    },
+    {
       "id": "unesco-canaima-701",
       "sourceVersion": "retrieved-2026-08-09",
       "retrievedAt": "2026-08-09",
       "url": "https://whc.unesco.org/en/list/701",
+      "license": "CC BY-SA 3.0 IGO for page description; facts paraphrased"
+    },
+    {
+      "id": "unesco-chichen-itza-483",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://whc.unesco.org/en/list/483",
       "license": "CC BY-SA 3.0 IGO for page description; facts paraphrased"
     },
     {
@@ -190,10 +477,45 @@
       "license": "CC BY-SA 3.0 IGO for page description; facts paraphrased"
     },
     {
+      "id": "unesco-giants-causeway-369",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://whc.unesco.org/en/list/369",
+      "license": "CC BY-SA 3.0 IGO for page description; facts paraphrased"
+    },
+    {
       "id": "unesco-grand-canyon-75",
       "sourceVersion": "retrieved-2026-08-09",
       "retrievedAt": "2026-08-09",
       "url": "https://whc.unesco.org/en/list/75",
+      "license": "CC BY-SA 3.0 IGO for page description; facts paraphrased"
+    },
+    {
+      "id": "unesco-great-barrier-reef-154",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://whc.unesco.org/en/list/154",
+      "license": "CC BY-SA 3.0 IGO for page description; facts paraphrased"
+    },
+    {
+      "id": "unesco-great-wall-438",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://whc.unesco.org/en/list/438",
+      "license": "CC BY-SA 3.0 IGO for page description; facts paraphrased"
+    },
+    {
+      "id": "unesco-ha-long-672",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://whc.unesco.org/en/list/672",
+      "license": "CC BY-SA 3.0 IGO for page description; facts paraphrased"
+    },
+    {
+      "id": "unesco-iguazu-303",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://whc.unesco.org/en/list/303",
       "license": "CC BY-SA 3.0 IGO for page description; facts paraphrased"
     },
     {
@@ -204,10 +526,73 @@
       "license": "CC BY-SA 3.0 IGO for page description; facts paraphrased"
     },
     {
+      "id": "unesco-machu-picchu-274",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://whc.unesco.org/en/list/274",
+      "license": "CC BY-SA 3.0 IGO for page description; facts paraphrased"
+    },
+    {
+      "id": "unesco-memphis-86",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://whc.unesco.org/en/list/86",
+      "license": "CC BY-SA 3.0 IGO for page description; facts paraphrased"
+    },
+    {
+      "id": "unesco-pamukkale-485",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://whc.unesco.org/en/list/485",
+      "license": "CC BY-SA 3.0 IGO for page description; facts paraphrased"
+    },
+    {
+      "id": "unesco-petra-326",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://whc.unesco.org/en/list/326",
+      "license": "CC BY-SA 3.0 IGO for page description; facts paraphrased"
+    },
+    {
+      "id": "unesco-pisa-395",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://whc.unesco.org/en/list/395",
+      "license": "CC BY-SA 3.0 IGO for page description; facts paraphrased"
+    },
+    {
+      "id": "unesco-rapa-nui-715",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://whc.unesco.org/en/list/715",
+      "license": "CC BY-SA 3.0 IGO for page description; facts paraphrased"
+    },
+    {
+      "id": "unesco-rio-1100",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://whc.unesco.org/en/list/1100",
+      "license": "CC BY-SA 3.0 IGO for page description; facts paraphrased"
+    },
+    {
       "id": "unesco-rome-91",
       "sourceVersion": "retrieved-2026-08-09",
       "retrievedAt": "2026-08-09",
       "url": "https://whc.unesco.org/en/list/91",
+      "license": "CC BY-SA 3.0 IGO for page description; facts paraphrased"
+    },
+    {
+      "id": "unesco-sagarmatha-120",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://whc.unesco.org/en/list/120",
+      "license": "CC BY-SA 3.0 IGO for page description; facts paraphrased"
+    },
+    {
+      "id": "unesco-stonehenge-373",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://whc.unesco.org/en/list/373",
       "license": "CC BY-SA 3.0 IGO for page description; facts paraphrased"
     },
     {
@@ -236,6 +621,13 @@
       "sourceVersion": "retrieved-2026-08-09",
       "retrievedAt": "2026-08-09",
       "url": "https://whc.unesco.org/en/list/509",
+      "license": "CC BY-SA 3.0 IGO for page description; facts paraphrased"
+    },
+    {
+      "id": "unesco-wulingyuan-640",
+      "sourceVersion": "retrieved-2026-08-09",
+      "retrievedAt": "2026-08-09",
+      "url": "https://whc.unesco.org/en/list/640",
       "license": "CC BY-SA 3.0 IGO for page description; facts paraphrased"
     },
     {
@@ -9884,6 +10276,18 @@
       ]
     },
     {
+      "id": "landmark:angkor-wat",
+      "type": "landmark",
+      "canonicalNameId": "name:landmark-angkor-wat:de:preferred",
+      "promptQualifier": "Sehenswürdigkeit",
+      "difficulty": 1,
+      "active": true,
+      "sourceRefs": [
+        "unesco-angkor-668",
+        "commons-angkor-wat"
+      ]
+    },
+    {
       "id": "landmark:brandenburg-gate",
       "type": "landmark",
       "canonicalNameId": "name:landmark-brandenburg-gate:de:preferred",
@@ -9893,6 +10297,30 @@
       "sourceRefs": [
         "berlin-brandenburg-gate",
         "commons-brandenburg-gate"
+      ]
+    },
+    {
+      "id": "landmark:chichen-itza",
+      "type": "landmark",
+      "canonicalNameId": "name:landmark-chichen-itza:de:preferred",
+      "promptQualifier": "Sehenswürdigkeit",
+      "difficulty": 2,
+      "active": true,
+      "sourceRefs": [
+        "unesco-chichen-itza-483",
+        "commons-chichen-itza"
+      ]
+    },
+    {
+      "id": "landmark:christ-the-redeemer",
+      "type": "landmark",
+      "canonicalNameId": "name:landmark-christ-the-redeemer:de:preferred",
+      "promptQualifier": "Sehenswürdigkeit",
+      "difficulty": 1,
+      "active": true,
+      "sourceRefs": [
+        "unesco-rio-1100",
+        "commons-christ-redeemer"
       ]
     },
     {
@@ -9920,6 +10348,42 @@
       ]
     },
     {
+      "id": "landmark:giants-causeway",
+      "type": "landmark",
+      "canonicalNameId": "name:landmark-giants-causeway:de:preferred",
+      "promptQualifier": "Naturhighlight",
+      "difficulty": 2,
+      "active": true,
+      "sourceRefs": [
+        "unesco-giants-causeway-369",
+        "commons-giants-causeway"
+      ]
+    },
+    {
+      "id": "landmark:giza-pyramids",
+      "type": "landmark",
+      "canonicalNameId": "name:landmark-giza-pyramids:de:preferred",
+      "promptQualifier": "Sehenswürdigkeit",
+      "difficulty": 1,
+      "active": true,
+      "sourceRefs": [
+        "unesco-memphis-86",
+        "commons-giza-pyramids"
+      ]
+    },
+    {
+      "id": "landmark:golden-gate-bridge",
+      "type": "landmark",
+      "canonicalNameId": "name:landmark-golden-gate-bridge:de:preferred",
+      "promptQualifier": "Sehenswürdigkeit",
+      "difficulty": 1,
+      "active": true,
+      "sourceRefs": [
+        "golden-gate-official",
+        "commons-golden-gate-bridge"
+      ]
+    },
+    {
       "id": "landmark:grand-canyon",
       "type": "landmark",
       "canonicalNameId": "name:landmark-grand-canyon:de:preferred",
@@ -9929,6 +10393,90 @@
       "sourceRefs": [
         "unesco-grand-canyon-75",
         "commons-grand-canyon"
+      ]
+    },
+    {
+      "id": "landmark:grand-prismatic-spring",
+      "type": "landmark",
+      "canonicalNameId": "name:landmark-grand-prismatic-spring:de:preferred",
+      "promptQualifier": "Naturhighlight",
+      "difficulty": 2,
+      "active": true,
+      "sourceRefs": [
+        "nps-grand-prismatic",
+        "commons-grand-prismatic"
+      ]
+    },
+    {
+      "id": "landmark:great-barrier-reef",
+      "type": "landmark",
+      "canonicalNameId": "name:landmark-great-barrier-reef:de:preferred",
+      "promptQualifier": "Naturhighlight",
+      "difficulty": 1,
+      "active": true,
+      "sourceRefs": [
+        "unesco-great-barrier-reef-154",
+        "commons-great-barrier-reef"
+      ]
+    },
+    {
+      "id": "landmark:great-wall-of-china",
+      "type": "landmark",
+      "canonicalNameId": "name:landmark-great-wall-of-china:de:preferred",
+      "promptQualifier": "Sehenswürdigkeit",
+      "difficulty": 1,
+      "active": true,
+      "sourceRefs": [
+        "unesco-great-wall-438",
+        "commons-great-wall"
+      ]
+    },
+    {
+      "id": "landmark:ha-long-bay",
+      "type": "landmark",
+      "canonicalNameId": "name:landmark-ha-long-bay:de:preferred",
+      "promptQualifier": "Naturhighlight",
+      "difficulty": 2,
+      "active": true,
+      "sourceRefs": [
+        "unesco-ha-long-672",
+        "commons-ha-long-bay"
+      ]
+    },
+    {
+      "id": "landmark:iguazu-falls",
+      "type": "landmark",
+      "canonicalNameId": "name:landmark-iguazu-falls:de:preferred",
+      "promptQualifier": "Naturhighlight",
+      "difficulty": 2,
+      "active": true,
+      "sourceRefs": [
+        "unesco-iguazu-303",
+        "commons-iguazu-falls"
+      ]
+    },
+    {
+      "id": "landmark:leaning-tower-of-pisa",
+      "type": "landmark",
+      "canonicalNameId": "name:landmark-leaning-tower-of-pisa:de:preferred",
+      "promptQualifier": "Sehenswürdigkeit",
+      "difficulty": 1,
+      "active": true,
+      "sourceRefs": [
+        "unesco-pisa-395",
+        "commons-pisa"
+      ]
+    },
+    {
+      "id": "landmark:machu-picchu",
+      "type": "landmark",
+      "canonicalNameId": "name:landmark-machu-picchu:de:preferred",
+      "promptQualifier": "Sehenswürdigkeit",
+      "difficulty": 1,
+      "active": true,
+      "sourceRefs": [
+        "unesco-machu-picchu-274",
+        "commons-machu-picchu"
       ]
     },
     {
@@ -9944,6 +10492,30 @@
       ]
     },
     {
+      "id": "landmark:moai-rapa-nui",
+      "type": "landmark",
+      "canonicalNameId": "name:landmark-moai-rapa-nui:de:preferred",
+      "promptQualifier": "Sehenswürdigkeit",
+      "difficulty": 2,
+      "active": true,
+      "sourceRefs": [
+        "unesco-rapa-nui-715",
+        "commons-moai"
+      ]
+    },
+    {
+      "id": "landmark:mount-everest",
+      "type": "landmark",
+      "canonicalNameId": "name:landmark-mount-everest:de:preferred",
+      "promptQualifier": "Naturhighlight",
+      "difficulty": 1,
+      "active": true,
+      "sourceRefs": [
+        "unesco-sagarmatha-120",
+        "commons-everest"
+      ]
+    },
+    {
       "id": "landmark:mount-fuji",
       "type": "landmark",
       "canonicalNameId": "name:landmark-mount-fuji:de:preferred",
@@ -9953,6 +10525,90 @@
       "sourceRefs": [
         "unesco-fuji-1418",
         "commons-mount-fuji"
+      ]
+    },
+    {
+      "id": "landmark:neuschwanstein",
+      "type": "landmark",
+      "canonicalNameId": "name:landmark-neuschwanstein:de:preferred",
+      "promptQualifier": "Sehenswürdigkeit",
+      "difficulty": 1,
+      "active": true,
+      "sourceRefs": [
+        "neuschwanstein-official",
+        "commons-neuschwanstein"
+      ]
+    },
+    {
+      "id": "landmark:niagara-falls",
+      "type": "landmark",
+      "canonicalNameId": "name:landmark-niagara-falls:de:preferred",
+      "promptQualifier": "Naturhighlight",
+      "difficulty": 1,
+      "active": true,
+      "sourceRefs": [
+        "niagara-parks-official",
+        "commons-niagara-falls"
+      ]
+    },
+    {
+      "id": "landmark:pamukkale",
+      "type": "landmark",
+      "canonicalNameId": "name:landmark-pamukkale:de:preferred",
+      "promptQualifier": "Naturhighlight",
+      "difficulty": 2,
+      "active": true,
+      "sourceRefs": [
+        "unesco-pamukkale-485",
+        "commons-pamukkale"
+      ]
+    },
+    {
+      "id": "landmark:perito-moreno-glacier",
+      "type": "landmark",
+      "canonicalNameId": "name:landmark-perito-moreno-glacier:de:preferred",
+      "promptQualifier": "Naturhighlight",
+      "difficulty": 2,
+      "active": true,
+      "sourceRefs": [
+        "argentina-los-glaciares",
+        "commons-perito-moreno"
+      ]
+    },
+    {
+      "id": "landmark:petra",
+      "type": "landmark",
+      "canonicalNameId": "name:landmark-petra:de:preferred",
+      "promptQualifier": "Sehenswürdigkeit",
+      "difficulty": 1,
+      "active": true,
+      "sourceRefs": [
+        "unesco-petra-326",
+        "commons-petra"
+      ]
+    },
+    {
+      "id": "landmark:sagrada-familia",
+      "type": "landmark",
+      "canonicalNameId": "name:landmark-sagrada-familia:de:preferred",
+      "promptQualifier": "Sehenswürdigkeit",
+      "difficulty": 1,
+      "active": true,
+      "sourceRefs": [
+        "sagrada-familia-official",
+        "commons-sagrada-familia"
+      ]
+    },
+    {
+      "id": "landmark:salar-de-uyuni",
+      "type": "landmark",
+      "canonicalNameId": "name:landmark-salar-de-uyuni:de:preferred",
+      "promptQualifier": "Naturhighlight",
+      "difficulty": 2,
+      "active": true,
+      "sourceRefs": [
+        "nasa-salar-uyuni",
+        "commons-salar-de-uyuni"
       ]
     },
     {
@@ -9968,6 +10624,18 @@
       ]
     },
     {
+      "id": "landmark:stonehenge",
+      "type": "landmark",
+      "canonicalNameId": "name:landmark-stonehenge:de:preferred",
+      "promptQualifier": "Sehenswürdigkeit",
+      "difficulty": 1,
+      "active": true,
+      "sourceRefs": [
+        "unesco-stonehenge-373",
+        "commons-stonehenge"
+      ]
+    },
+    {
       "id": "landmark:sydney-opera-house",
       "type": "landmark",
       "canonicalNameId": "name:landmark-sydney-opera-house:de:preferred",
@@ -9980,6 +10648,18 @@
       ]
     },
     {
+      "id": "landmark:table-mountain",
+      "type": "landmark",
+      "canonicalNameId": "name:landmark-table-mountain:de:preferred",
+      "promptQualifier": "Naturhighlight",
+      "difficulty": 2,
+      "active": true,
+      "sourceRefs": [
+        "sanparks-table-mountain",
+        "commons-table-mountain"
+      ]
+    },
+    {
       "id": "landmark:taj-mahal",
       "type": "landmark",
       "canonicalNameId": "name:landmark-taj-mahal:de:preferred",
@@ -9989,6 +10669,30 @@
       "sourceRefs": [
         "unesco-taj-mahal-252",
         "commons-taj-mahal"
+      ]
+    },
+    {
+      "id": "landmark:torres-del-paine",
+      "type": "landmark",
+      "canonicalNameId": "name:landmark-torres-del-paine:de:preferred",
+      "promptQualifier": "Naturhighlight",
+      "difficulty": 2,
+      "active": true,
+      "sourceRefs": [
+        "conaf-torres-del-paine",
+        "commons-torres-del-paine"
+      ]
+    },
+    {
+      "id": "landmark:tower-bridge",
+      "type": "landmark",
+      "canonicalNameId": "name:landmark-tower-bridge:de:preferred",
+      "promptQualifier": "Sehenswürdigkeit",
+      "difficulty": 1,
+      "active": true,
+      "sourceRefs": [
+        "tower-bridge-official",
+        "commons-tower-bridge"
       ]
     },
     {
@@ -10013,6 +10717,30 @@
       "sourceRefs": [
         "unesco-victoria-falls-509",
         "commons-victoria-falls"
+      ]
+    },
+    {
+      "id": "landmark:wulingyuan",
+      "type": "landmark",
+      "canonicalNameId": "name:landmark-wulingyuan:de:preferred",
+      "promptQualifier": "Naturhighlight",
+      "difficulty": 2,
+      "active": true,
+      "sourceRefs": [
+        "unesco-wulingyuan-640",
+        "commons-wulingyuan"
+      ]
+    },
+    {
+      "id": "landmark:yosemite-half-dome",
+      "type": "landmark",
+      "canonicalNameId": "name:landmark-yosemite-half-dome:de:preferred",
+      "promptQualifier": "Naturhighlight",
+      "difficulty": 2,
+      "active": true,
+      "sourceRefs": [
+        "nps-yosemite-half-dome",
+        "commons-yosemite-half-dome"
       ]
     },
     {
@@ -31641,10 +32369,106 @@
       "answerPolicy": "display_and_accept"
     },
     {
+      "id": "name:landmark-angkor-wat:de:alias-1",
+      "entityId": "landmark:angkor-wat",
+      "locale": "de",
+      "name": "Angkor-Wat",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-angkor-wat:de:alias-2",
+      "entityId": "landmark:angkor-wat",
+      "locale": "de",
+      "name": "Angkor",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-angkor-wat:de:preferred",
+      "entityId": "landmark:angkor-wat",
+      "locale": "de",
+      "name": "Angkor Wat",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
       "id": "name:landmark-brandenburg-gate:de:preferred",
       "entityId": "landmark:brandenburg-gate",
       "locale": "de",
       "name": "Brandenburger Tor",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
+      "id": "name:landmark-chichen-itza:de:alias-1",
+      "entityId": "landmark:chichen-itza",
+      "locale": "de",
+      "name": "Chichen Itza",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-chichen-itza:de:alias-2",
+      "entityId": "landmark:chichen-itza",
+      "locale": "de",
+      "name": "El Castillo",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-chichen-itza:de:alias-3",
+      "entityId": "landmark:chichen-itza",
+      "locale": "de",
+      "name": "Kukulcán-Pyramide",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-chichen-itza:de:alias-4",
+      "entityId": "landmark:chichen-itza",
+      "locale": "de",
+      "name": "Kukulkan-Pyramide",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-chichen-itza:de:preferred",
+      "entityId": "landmark:chichen-itza",
+      "locale": "de",
+      "name": "Chichén Itzá",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
+      "id": "name:landmark-christ-the-redeemer:de:alias-1",
+      "entityId": "landmark:christ-the-redeemer",
+      "locale": "de",
+      "name": "Christus der Erlöser",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-christ-the-redeemer:de:alias-2",
+      "entityId": "landmark:christ-the-redeemer",
+      "locale": "de",
+      "name": "Christ the Redeemer",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-christ-the-redeemer:de:alias-3",
+      "entityId": "landmark:christ-the-redeemer",
+      "locale": "de",
+      "name": "Cristo-Redentor-Statue",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-christ-the-redeemer:de:preferred",
+      "entityId": "landmark:christ-the-redeemer",
+      "locale": "de",
+      "name": "Cristo Redentor",
       "kind": "preferred",
       "answerPolicy": "display_and_accept"
     },
@@ -31697,6 +32521,102 @@
       "answerPolicy": "display_and_accept"
     },
     {
+      "id": "name:landmark-giants-causeway:de:alias-1",
+      "entityId": "landmark:giants-causeway",
+      "locale": "de",
+      "name": "Giant's Causeway",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-giants-causeway:de:alias-2",
+      "entityId": "landmark:giants-causeway",
+      "locale": "de",
+      "name": "Damm des Riesen",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-giants-causeway:de:alias-3",
+      "entityId": "landmark:giants-causeway",
+      "locale": "de",
+      "name": "Riesendamm",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-giants-causeway:de:preferred",
+      "entityId": "landmark:giants-causeway",
+      "locale": "de",
+      "name": "Giant’s Causeway",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
+      "id": "name:landmark-giza-pyramids:de:alias-1",
+      "entityId": "landmark:giza-pyramids",
+      "locale": "de",
+      "name": "Pyramiden von Giza",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-giza-pyramids:de:alias-2",
+      "entityId": "landmark:giza-pyramids",
+      "locale": "de",
+      "name": "Gizeh-Pyramiden",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-giza-pyramids:de:alias-3",
+      "entityId": "landmark:giza-pyramids",
+      "locale": "de",
+      "name": "Giza-Pyramiden",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-giza-pyramids:de:alias-4",
+      "entityId": "landmark:giza-pyramids",
+      "locale": "de",
+      "name": "Giza Pyramids",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-giza-pyramids:de:preferred",
+      "entityId": "landmark:giza-pyramids",
+      "locale": "de",
+      "name": "Pyramiden von Gizeh",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
+      "id": "name:landmark-golden-gate-bridge:de:alias-1",
+      "entityId": "landmark:golden-gate-bridge",
+      "locale": "de",
+      "name": "Golden-Gate-Brücke",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-golden-gate-bridge:de:alias-2",
+      "entityId": "landmark:golden-gate-bridge",
+      "locale": "de",
+      "name": "Golden Gate Brücke",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-golden-gate-bridge:de:preferred",
+      "entityId": "landmark:golden-gate-bridge",
+      "locale": "de",
+      "name": "Golden Gate Bridge",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
       "id": "name:landmark-grand-canyon:de:alias-1",
       "entityId": "landmark:grand-canyon",
       "locale": "de",
@@ -31709,6 +32629,214 @@
       "entityId": "landmark:grand-canyon",
       "locale": "de",
       "name": "Grand Canyon",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
+      "id": "name:landmark-grand-prismatic-spring:de:alias-1",
+      "entityId": "landmark:grand-prismatic-spring",
+      "locale": "de",
+      "name": "Große Prismatische Quelle",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-grand-prismatic-spring:de:alias-2",
+      "entityId": "landmark:grand-prismatic-spring",
+      "locale": "de",
+      "name": "Grand Prismatic",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-grand-prismatic-spring:de:preferred",
+      "entityId": "landmark:grand-prismatic-spring",
+      "locale": "de",
+      "name": "Grand Prismatic Spring",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
+      "id": "name:landmark-great-barrier-reef:de:alias-1",
+      "entityId": "landmark:great-barrier-reef",
+      "locale": "de",
+      "name": "Großes Barriereriff",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-great-barrier-reef:de:alias-2",
+      "entityId": "landmark:great-barrier-reef",
+      "locale": "de",
+      "name": "Großes Barriere-Riff",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-great-barrier-reef:de:preferred",
+      "entityId": "landmark:great-barrier-reef",
+      "locale": "de",
+      "name": "Great Barrier Reef",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
+      "id": "name:landmark-great-wall-of-china:de:alias-1",
+      "entityId": "landmark:great-wall-of-china",
+      "locale": "de",
+      "name": "Große Mauer",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-great-wall-of-china:de:alias-2",
+      "entityId": "landmark:great-wall-of-china",
+      "locale": "de",
+      "name": "Great Wall of China",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-great-wall-of-china:de:alias-3",
+      "entityId": "landmark:great-wall-of-china",
+      "locale": "de",
+      "name": "Great Wall",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-great-wall-of-china:de:preferred",
+      "entityId": "landmark:great-wall-of-china",
+      "locale": "de",
+      "name": "Chinesische Mauer",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
+      "id": "name:landmark-ha-long-bay:de:alias-1",
+      "entityId": "landmark:ha-long-bay",
+      "locale": "de",
+      "name": "Hạ-Long-Bucht",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-ha-long-bay:de:alias-2",
+      "entityId": "landmark:ha-long-bay",
+      "locale": "de",
+      "name": "Hạ Long Bay",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-ha-long-bay:de:alias-3",
+      "entityId": "landmark:ha-long-bay",
+      "locale": "de",
+      "name": "Ha Long Bay",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-ha-long-bay:de:alias-4",
+      "entityId": "landmark:ha-long-bay",
+      "locale": "de",
+      "name": "Halong Bay",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-ha-long-bay:de:preferred",
+      "entityId": "landmark:ha-long-bay",
+      "locale": "de",
+      "name": "Halong-Bucht",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
+      "id": "name:landmark-iguazu-falls:de:alias-1",
+      "entityId": "landmark:iguazu-falls",
+      "locale": "de",
+      "name": "Iguazúfälle",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-iguazu-falls:de:alias-2",
+      "entityId": "landmark:iguazu-falls",
+      "locale": "de",
+      "name": "Iguazu Falls",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-iguazu-falls:de:alias-3",
+      "entityId": "landmark:iguazu-falls",
+      "locale": "de",
+      "name": "Iguaçu-Wasserfälle",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-iguazu-falls:de:alias-4",
+      "entityId": "landmark:iguazu-falls",
+      "locale": "de",
+      "name": "Iguassu Falls",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-iguazu-falls:de:preferred",
+      "entityId": "landmark:iguazu-falls",
+      "locale": "de",
+      "name": "Iguazú-Wasserfälle",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
+      "id": "name:landmark-leaning-tower-of-pisa:de:alias-1",
+      "entityId": "landmark:leaning-tower-of-pisa",
+      "locale": "de",
+      "name": "Turm von Pisa",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-leaning-tower-of-pisa:de:alias-2",
+      "entityId": "landmark:leaning-tower-of-pisa",
+      "locale": "de",
+      "name": "Leaning Tower of Pisa",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-leaning-tower-of-pisa:de:alias-3",
+      "entityId": "landmark:leaning-tower-of-pisa",
+      "locale": "de",
+      "name": "Pisa",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-leaning-tower-of-pisa:de:preferred",
+      "entityId": "landmark:leaning-tower-of-pisa",
+      "locale": "de",
+      "name": "Schiefer Turm von Pisa",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
+      "id": "name:landmark-machu-picchu:de:alias-1",
+      "entityId": "landmark:machu-picchu",
+      "locale": "de",
+      "name": "Machu-Picchu",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-machu-picchu:de:preferred",
+      "entityId": "landmark:machu-picchu",
+      "locale": "de",
+      "name": "Machu Picchu",
       "kind": "preferred",
       "answerPolicy": "display_and_accept"
     },
@@ -31733,6 +32861,86 @@
       "entityId": "landmark:matterhorn",
       "locale": "de",
       "name": "Matterhorn",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
+      "id": "name:landmark-moai-rapa-nui:de:alias-1",
+      "entityId": "landmark:moai-rapa-nui",
+      "locale": "de",
+      "name": "Moai",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-moai-rapa-nui:de:alias-2",
+      "entityId": "landmark:moai-rapa-nui",
+      "locale": "de",
+      "name": "Moai-Statuen",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-moai-rapa-nui:de:alias-3",
+      "entityId": "landmark:moai-rapa-nui",
+      "locale": "de",
+      "name": "Ahu Tongariki",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-moai-rapa-nui:de:alias-4",
+      "entityId": "landmark:moai-rapa-nui",
+      "locale": "de",
+      "name": "Osterinsel",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-moai-rapa-nui:de:preferred",
+      "entityId": "landmark:moai-rapa-nui",
+      "locale": "de",
+      "name": "Moai von Rapa Nui",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
+      "id": "name:landmark-mount-everest:de:alias-1",
+      "entityId": "landmark:mount-everest",
+      "locale": "de",
+      "name": "Everest",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-mount-everest:de:alias-2",
+      "entityId": "landmark:mount-everest",
+      "locale": "de",
+      "name": "Sagarmatha",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-mount-everest:de:alias-3",
+      "entityId": "landmark:mount-everest",
+      "locale": "de",
+      "name": "Qomolangma",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-mount-everest:de:alias-4",
+      "entityId": "landmark:mount-everest",
+      "locale": "de",
+      "name": "Tschomolungma",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-mount-everest:de:preferred",
+      "entityId": "landmark:mount-everest",
+      "locale": "de",
+      "name": "Mount Everest",
       "kind": "preferred",
       "answerPolicy": "display_and_accept"
     },
@@ -31777,6 +32985,206 @@
       "answerPolicy": "display_and_accept"
     },
     {
+      "id": "name:landmark-neuschwanstein:de:alias-1",
+      "entityId": "landmark:neuschwanstein",
+      "locale": "de",
+      "name": "Neuschwanstein",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-neuschwanstein:de:alias-2",
+      "entityId": "landmark:neuschwanstein",
+      "locale": "de",
+      "name": "Neuschwanstein Castle",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-neuschwanstein:de:preferred",
+      "entityId": "landmark:neuschwanstein",
+      "locale": "de",
+      "name": "Schloss Neuschwanstein",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
+      "id": "name:landmark-niagara-falls:de:alias-1",
+      "entityId": "landmark:niagara-falls",
+      "locale": "de",
+      "name": "Niagara Falls",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-niagara-falls:de:alias-2",
+      "entityId": "landmark:niagara-falls",
+      "locale": "de",
+      "name": "Niagara-Fälle",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-niagara-falls:de:preferred",
+      "entityId": "landmark:niagara-falls",
+      "locale": "de",
+      "name": "Niagarafälle",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
+      "id": "name:landmark-pamukkale:de:alias-1",
+      "entityId": "landmark:pamukkale",
+      "locale": "de",
+      "name": "Kalkterrassen von Pamukkale",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-pamukkale:de:alias-2",
+      "entityId": "landmark:pamukkale",
+      "locale": "de",
+      "name": "Hierapolis-Pamukkale",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-pamukkale:de:preferred",
+      "entityId": "landmark:pamukkale",
+      "locale": "de",
+      "name": "Pamukkale",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
+      "id": "name:landmark-perito-moreno-glacier:de:alias-1",
+      "entityId": "landmark:perito-moreno-glacier",
+      "locale": "de",
+      "name": "Perito Moreno",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-perito-moreno-glacier:de:alias-2",
+      "entityId": "landmark:perito-moreno-glacier",
+      "locale": "de",
+      "name": "Glaciar Perito Moreno",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-perito-moreno-glacier:de:alias-3",
+      "entityId": "landmark:perito-moreno-glacier",
+      "locale": "de",
+      "name": "Perito Moreno Glacier",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-perito-moreno-glacier:de:preferred",
+      "entityId": "landmark:perito-moreno-glacier",
+      "locale": "de",
+      "name": "Perito-Moreno-Gletscher",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
+      "id": "name:landmark-petra:de:alias-1",
+      "entityId": "landmark:petra",
+      "locale": "de",
+      "name": "Felsenstadt Petra",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-petra:de:alias-2",
+      "entityId": "landmark:petra",
+      "locale": "de",
+      "name": "Al-Khazneh",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-petra:de:alias-3",
+      "entityId": "landmark:petra",
+      "locale": "de",
+      "name": "Schatzhaus von Petra",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-petra:de:alias-4",
+      "entityId": "landmark:petra",
+      "locale": "de",
+      "name": "Khazne al-Firaun",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-petra:de:preferred",
+      "entityId": "landmark:petra",
+      "locale": "de",
+      "name": "Petra",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
+      "id": "name:landmark-sagrada-familia:de:alias-1",
+      "entityId": "landmark:sagrada-familia",
+      "locale": "de",
+      "name": "Sagrada Familia",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-sagrada-familia:de:alias-2",
+      "entityId": "landmark:sagrada-familia",
+      "locale": "de",
+      "name": "Basílica de la Sagrada Família",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-sagrada-familia:de:preferred",
+      "entityId": "landmark:sagrada-familia",
+      "locale": "de",
+      "name": "Sagrada Família",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
+      "id": "name:landmark-salar-de-uyuni:de:alias-1",
+      "entityId": "landmark:salar-de-uyuni",
+      "locale": "de",
+      "name": "Uyuni-Salzsee",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-salar-de-uyuni:de:alias-2",
+      "entityId": "landmark:salar-de-uyuni",
+      "locale": "de",
+      "name": "Uyuni Salt Flat",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-salar-de-uyuni:de:alias-3",
+      "entityId": "landmark:salar-de-uyuni",
+      "locale": "de",
+      "name": "Salzwüste von Uyuni",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-salar-de-uyuni:de:preferred",
+      "entityId": "landmark:salar-de-uyuni",
+      "locale": "de",
+      "name": "Salar de Uyuni",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
       "id": "name:landmark-statue-of-liberty:de:alias-1",
       "entityId": "landmark:statue-of-liberty",
       "locale": "de",
@@ -31797,6 +33205,22 @@
       "entityId": "landmark:statue-of-liberty",
       "locale": "de",
       "name": "Freiheitsstatue",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
+      "id": "name:landmark-stonehenge:de:alias-1",
+      "entityId": "landmark:stonehenge",
+      "locale": "de",
+      "name": "Steinkreis von Stonehenge",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-stonehenge:de:preferred",
+      "entityId": "landmark:stonehenge",
+      "locale": "de",
+      "name": "Stonehenge",
       "kind": "preferred",
       "answerPolicy": "display_and_accept"
     },
@@ -31825,6 +33249,22 @@
       "answerPolicy": "display_and_accept"
     },
     {
+      "id": "name:landmark-table-mountain:de:alias-1",
+      "entityId": "landmark:table-mountain",
+      "locale": "de",
+      "name": "Table Mountain",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-table-mountain:de:preferred",
+      "entityId": "landmark:table-mountain",
+      "locale": "de",
+      "name": "Tafelberg",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
       "id": "name:landmark-taj-mahal:de:alias-1",
       "entityId": "landmark:taj-mahal",
       "locale": "de",
@@ -31837,6 +33277,54 @@
       "entityId": "landmark:taj-mahal",
       "locale": "de",
       "name": "Taj Mahal",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
+      "id": "name:landmark-torres-del-paine:de:alias-1",
+      "entityId": "landmark:torres-del-paine",
+      "locale": "de",
+      "name": "Las Torres",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-torres-del-paine:de:alias-2",
+      "entityId": "landmark:torres-del-paine",
+      "locale": "de",
+      "name": "Paine-Türme",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-torres-del-paine:de:alias-3",
+      "entityId": "landmark:torres-del-paine",
+      "locale": "de",
+      "name": "Torres-del-Paine-Nationalpark",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-torres-del-paine:de:preferred",
+      "entityId": "landmark:torres-del-paine",
+      "locale": "de",
+      "name": "Torres del Paine",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
+      "id": "name:landmark-tower-bridge:de:alias-1",
+      "entityId": "landmark:tower-bridge",
+      "locale": "de",
+      "name": "London Tower Bridge",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-tower-bridge:de:preferred",
+      "entityId": "landmark:tower-bridge",
+      "locale": "de",
+      "name": "Tower Bridge",
       "kind": "preferred",
       "answerPolicy": "display_and_accept"
     },
@@ -31885,6 +33373,70 @@
       "entityId": "landmark:victoria-falls",
       "locale": "de",
       "name": "Victoriafälle",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
+      "id": "name:landmark-wulingyuan:de:alias-1",
+      "entityId": "landmark:wulingyuan",
+      "locale": "de",
+      "name": "Wulingyuan",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-wulingyuan:de:alias-2",
+      "entityId": "landmark:wulingyuan",
+      "locale": "de",
+      "name": "Zhangjiajie-Nationalpark",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-wulingyuan:de:alias-3",
+      "entityId": "landmark:wulingyuan",
+      "locale": "de",
+      "name": "Avatar-Berge",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-wulingyuan:de:preferred",
+      "entityId": "landmark:wulingyuan",
+      "locale": "de",
+      "name": "Zhangjiajie",
+      "kind": "preferred",
+      "answerPolicy": "display_and_accept"
+    },
+    {
+      "id": "name:landmark-yosemite-half-dome:de:alias-1",
+      "entityId": "landmark:yosemite-half-dome",
+      "locale": "de",
+      "name": "Yosemite",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-yosemite-half-dome:de:alias-2",
+      "entityId": "landmark:yosemite-half-dome",
+      "locale": "de",
+      "name": "Yosemite-Nationalpark",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-yosemite-half-dome:de:alias-3",
+      "entityId": "landmark:yosemite-half-dome",
+      "locale": "de",
+      "name": "Yosemite National Park",
+      "kind": "alias",
+      "answerPolicy": "accept_only"
+    },
+    {
+      "id": "name:landmark-yosemite-half-dome:de:preferred",
+      "entityId": "landmark:yosemite-half-dome",
+      "locale": "de",
+      "name": "Half Dome",
       "kind": "preferred",
       "answerPolicy": "display_and_accept"
     },
@@ -51486,6 +53038,16 @@
       ]
     },
     {
+      "id": "relation:landmark-angkor-wat:located-in:continent-asia",
+      "sourceId": "landmark:angkor-wat",
+      "relationType": "located_in",
+      "targetId": "continent:asia",
+      "sourceRefs": [
+        "unesco-angkor-668",
+        "commons-angkor-wat"
+      ]
+    },
+    {
       "id": "relation:landmark-brandenburg-gate:located-in:continent-europe",
       "sourceId": "landmark:brandenburg-gate",
       "relationType": "located_in",
@@ -51493,6 +53055,26 @@
       "sourceRefs": [
         "berlin-brandenburg-gate",
         "commons-brandenburg-gate"
+      ]
+    },
+    {
+      "id": "relation:landmark-chichen-itza:located-in:continent-north-america",
+      "sourceId": "landmark:chichen-itza",
+      "relationType": "located_in",
+      "targetId": "continent:north-america",
+      "sourceRefs": [
+        "unesco-chichen-itza-483",
+        "commons-chichen-itza"
+      ]
+    },
+    {
+      "id": "relation:landmark-christ-the-redeemer:located-in:continent-south-america",
+      "sourceId": "landmark:christ-the-redeemer",
+      "relationType": "located_in",
+      "targetId": "continent:south-america",
+      "sourceRefs": [
+        "unesco-rio-1100",
+        "commons-christ-redeemer"
       ]
     },
     {
@@ -51516,6 +53098,36 @@
       ]
     },
     {
+      "id": "relation:landmark-giants-causeway:located-in:continent-europe",
+      "sourceId": "landmark:giants-causeway",
+      "relationType": "located_in",
+      "targetId": "continent:europe",
+      "sourceRefs": [
+        "unesco-giants-causeway-369",
+        "commons-giants-causeway"
+      ]
+    },
+    {
+      "id": "relation:landmark-giza-pyramids:located-in:continent-africa",
+      "sourceId": "landmark:giza-pyramids",
+      "relationType": "located_in",
+      "targetId": "continent:africa",
+      "sourceRefs": [
+        "unesco-memphis-86",
+        "commons-giza-pyramids"
+      ]
+    },
+    {
+      "id": "relation:landmark-golden-gate-bridge:located-in:continent-north-america",
+      "sourceId": "landmark:golden-gate-bridge",
+      "relationType": "located_in",
+      "targetId": "continent:north-america",
+      "sourceRefs": [
+        "golden-gate-official",
+        "commons-golden-gate-bridge"
+      ]
+    },
+    {
       "id": "relation:landmark-grand-canyon:located-in:continent-north-america",
       "sourceId": "landmark:grand-canyon",
       "relationType": "located_in",
@@ -51523,6 +53135,76 @@
       "sourceRefs": [
         "unesco-grand-canyon-75",
         "commons-grand-canyon"
+      ]
+    },
+    {
+      "id": "relation:landmark-grand-prismatic-spring:located-in:continent-north-america",
+      "sourceId": "landmark:grand-prismatic-spring",
+      "relationType": "located_in",
+      "targetId": "continent:north-america",
+      "sourceRefs": [
+        "nps-grand-prismatic",
+        "commons-grand-prismatic"
+      ]
+    },
+    {
+      "id": "relation:landmark-great-barrier-reef:located-in:continent-oceania",
+      "sourceId": "landmark:great-barrier-reef",
+      "relationType": "located_in",
+      "targetId": "continent:oceania",
+      "sourceRefs": [
+        "unesco-great-barrier-reef-154",
+        "commons-great-barrier-reef"
+      ]
+    },
+    {
+      "id": "relation:landmark-great-wall-of-china:located-in:continent-asia",
+      "sourceId": "landmark:great-wall-of-china",
+      "relationType": "located_in",
+      "targetId": "continent:asia",
+      "sourceRefs": [
+        "unesco-great-wall-438",
+        "commons-great-wall"
+      ]
+    },
+    {
+      "id": "relation:landmark-ha-long-bay:located-in:continent-asia",
+      "sourceId": "landmark:ha-long-bay",
+      "relationType": "located_in",
+      "targetId": "continent:asia",
+      "sourceRefs": [
+        "unesco-ha-long-672",
+        "commons-ha-long-bay"
+      ]
+    },
+    {
+      "id": "relation:landmark-iguazu-falls:located-in:continent-south-america",
+      "sourceId": "landmark:iguazu-falls",
+      "relationType": "located_in",
+      "targetId": "continent:south-america",
+      "sourceRefs": [
+        "unesco-iguazu-303",
+        "commons-iguazu-falls"
+      ]
+    },
+    {
+      "id": "relation:landmark-leaning-tower-of-pisa:located-in:continent-europe",
+      "sourceId": "landmark:leaning-tower-of-pisa",
+      "relationType": "located_in",
+      "targetId": "continent:europe",
+      "sourceRefs": [
+        "unesco-pisa-395",
+        "commons-pisa"
+      ]
+    },
+    {
+      "id": "relation:landmark-machu-picchu:located-in:continent-south-america",
+      "sourceId": "landmark:machu-picchu",
+      "relationType": "located_in",
+      "targetId": "continent:south-america",
+      "sourceRefs": [
+        "unesco-machu-picchu-274",
+        "commons-machu-picchu"
       ]
     },
     {
@@ -51536,6 +53218,26 @@
       ]
     },
     {
+      "id": "relation:landmark-moai-rapa-nui:located-in:continent-oceania",
+      "sourceId": "landmark:moai-rapa-nui",
+      "relationType": "located_in",
+      "targetId": "continent:oceania",
+      "sourceRefs": [
+        "unesco-rapa-nui-715",
+        "commons-moai"
+      ]
+    },
+    {
+      "id": "relation:landmark-mount-everest:located-in:continent-asia",
+      "sourceId": "landmark:mount-everest",
+      "relationType": "located_in",
+      "targetId": "continent:asia",
+      "sourceRefs": [
+        "unesco-sagarmatha-120",
+        "commons-everest"
+      ]
+    },
+    {
       "id": "relation:landmark-mount-fuji:located-in:continent-asia",
       "sourceId": "landmark:mount-fuji",
       "relationType": "located_in",
@@ -51543,6 +53245,76 @@
       "sourceRefs": [
         "unesco-fuji-1418",
         "commons-mount-fuji"
+      ]
+    },
+    {
+      "id": "relation:landmark-neuschwanstein:located-in:continent-europe",
+      "sourceId": "landmark:neuschwanstein",
+      "relationType": "located_in",
+      "targetId": "continent:europe",
+      "sourceRefs": [
+        "neuschwanstein-official",
+        "commons-neuschwanstein"
+      ]
+    },
+    {
+      "id": "relation:landmark-niagara-falls:located-in:continent-north-america",
+      "sourceId": "landmark:niagara-falls",
+      "relationType": "located_in",
+      "targetId": "continent:north-america",
+      "sourceRefs": [
+        "niagara-parks-official",
+        "commons-niagara-falls"
+      ]
+    },
+    {
+      "id": "relation:landmark-pamukkale:located-in:continent-asia",
+      "sourceId": "landmark:pamukkale",
+      "relationType": "located_in",
+      "targetId": "continent:asia",
+      "sourceRefs": [
+        "unesco-pamukkale-485",
+        "commons-pamukkale"
+      ]
+    },
+    {
+      "id": "relation:landmark-perito-moreno-glacier:located-in:continent-south-america",
+      "sourceId": "landmark:perito-moreno-glacier",
+      "relationType": "located_in",
+      "targetId": "continent:south-america",
+      "sourceRefs": [
+        "argentina-los-glaciares",
+        "commons-perito-moreno"
+      ]
+    },
+    {
+      "id": "relation:landmark-petra:located-in:continent-asia",
+      "sourceId": "landmark:petra",
+      "relationType": "located_in",
+      "targetId": "continent:asia",
+      "sourceRefs": [
+        "unesco-petra-326",
+        "commons-petra"
+      ]
+    },
+    {
+      "id": "relation:landmark-sagrada-familia:located-in:continent-europe",
+      "sourceId": "landmark:sagrada-familia",
+      "relationType": "located_in",
+      "targetId": "continent:europe",
+      "sourceRefs": [
+        "sagrada-familia-official",
+        "commons-sagrada-familia"
+      ]
+    },
+    {
+      "id": "relation:landmark-salar-de-uyuni:located-in:continent-south-america",
+      "sourceId": "landmark:salar-de-uyuni",
+      "relationType": "located_in",
+      "targetId": "continent:south-america",
+      "sourceRefs": [
+        "nasa-salar-uyuni",
+        "commons-salar-de-uyuni"
       ]
     },
     {
@@ -51556,6 +53328,16 @@
       ]
     },
     {
+      "id": "relation:landmark-stonehenge:located-in:continent-europe",
+      "sourceId": "landmark:stonehenge",
+      "relationType": "located_in",
+      "targetId": "continent:europe",
+      "sourceRefs": [
+        "unesco-stonehenge-373",
+        "commons-stonehenge"
+      ]
+    },
+    {
       "id": "relation:landmark-sydney-opera-house:located-in:continent-oceania",
       "sourceId": "landmark:sydney-opera-house",
       "relationType": "located_in",
@@ -51566,6 +53348,16 @@
       ]
     },
     {
+      "id": "relation:landmark-table-mountain:located-in:continent-africa",
+      "sourceId": "landmark:table-mountain",
+      "relationType": "located_in",
+      "targetId": "continent:africa",
+      "sourceRefs": [
+        "sanparks-table-mountain",
+        "commons-table-mountain"
+      ]
+    },
+    {
       "id": "relation:landmark-taj-mahal:located-in:continent-asia",
       "sourceId": "landmark:taj-mahal",
       "relationType": "located_in",
@@ -51573,6 +53365,26 @@
       "sourceRefs": [
         "unesco-taj-mahal-252",
         "commons-taj-mahal"
+      ]
+    },
+    {
+      "id": "relation:landmark-torres-del-paine:located-in:continent-south-america",
+      "sourceId": "landmark:torres-del-paine",
+      "relationType": "located_in",
+      "targetId": "continent:south-america",
+      "sourceRefs": [
+        "conaf-torres-del-paine",
+        "commons-torres-del-paine"
+      ]
+    },
+    {
+      "id": "relation:landmark-tower-bridge:located-in:continent-europe",
+      "sourceId": "landmark:tower-bridge",
+      "relationType": "located_in",
+      "targetId": "continent:europe",
+      "sourceRefs": [
+        "tower-bridge-official",
+        "commons-tower-bridge"
       ]
     },
     {
@@ -51593,6 +53405,26 @@
       "sourceRefs": [
         "unesco-victoria-falls-509",
         "commons-victoria-falls"
+      ]
+    },
+    {
+      "id": "relation:landmark-wulingyuan:located-in:continent-asia",
+      "sourceId": "landmark:wulingyuan",
+      "relationType": "located_in",
+      "targetId": "continent:asia",
+      "sourceRefs": [
+        "unesco-wulingyuan-640",
+        "commons-wulingyuan"
+      ]
+    },
+    {
+      "id": "relation:landmark-yosemite-half-dome:located-in:continent-north-america",
+      "sourceId": "landmark:yosemite-half-dome",
+      "relationType": "located_in",
+      "targetId": "continent:north-america",
+      "sourceRefs": [
+        "nps-yosemite-half-dome",
+        "commons-yosemite-half-dome"
       ]
     },
     {
@@ -57717,6 +59549,50 @@
       ]
     },
     {
+      "id": "fact:landmark-angkor-wat:landmark-country",
+      "entityId": "landmark:angkor-wat",
+      "factTypeId": "fact-type:landmark-country",
+      "value": "Kambodscha",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-angkor-668"
+      ]
+    },
+    {
+      "id": "fact:landmark-angkor-wat:landmark-distinction",
+      "entityId": "landmark:angkor-wat",
+      "factTypeId": "fact-type:landmark-distinction",
+      "value": "Der rund 400 Quadratkilometer große Archäologische Park enthält Angkor Wat sowie viele weitere Hauptstädte und Tempel aus dem 9. bis 15. Jahrhundert.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-angkor-668"
+      ]
+    },
+    {
+      "id": "fact:landmark-angkor-wat:landmark-fun-fact",
+      "entityId": "landmark:angkor-wat",
+      "factTypeId": "fact-type:landmark-fun-fact",
+      "value": "Angkor war über Jahrhunderte das Zentrum des Khmer-Reichs und umfasst neben Tempeln auch Wasserbecken, Deiche und Kanäle.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-angkor-668"
+      ]
+    },
+    {
+      "id": "fact:landmark-angkor-wat:landmark-place",
+      "entityId": "landmark:angkor-wat",
+      "factTypeId": "fact-type:landmark-place",
+      "value": "Siem Reap",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-angkor-668"
+      ]
+    },
+    {
       "id": "fact:landmark-brandenburg-gate:landmark-country",
       "entityId": "landmark:brandenburg-gate",
       "factTypeId": "fact-type:landmark-country",
@@ -57758,6 +59634,94 @@
       "method": "curated-official-location-and-distinction-v1",
       "sourceRefs": [
         "berlin-brandenburg-gate"
+      ]
+    },
+    {
+      "id": "fact:landmark-chichen-itza:landmark-country",
+      "entityId": "landmark:chichen-itza",
+      "factTypeId": "fact-type:landmark-country",
+      "value": "Mexiko",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-chichen-itza-483"
+      ]
+    },
+    {
+      "id": "fact:landmark-chichen-itza:landmark-distinction",
+      "entityId": "landmark:chichen-itza",
+      "factTypeId": "fact-type:landmark-distinction",
+      "value": "Die Stufenpyramide El Castillo, der Kriegertempel und das Observatorium El Caracol gehören zu den bekanntesten Bauten der Anlage.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-chichen-itza-483"
+      ]
+    },
+    {
+      "id": "fact:landmark-chichen-itza:landmark-fun-fact",
+      "entityId": "landmark:chichen-itza",
+      "factTypeId": "fact-type:landmark-fun-fact",
+      "value": "In der Stadt verschmolzen Traditionen der Maya mit Einflüssen der Tolteken aus Zentralmexiko.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-chichen-itza-483"
+      ]
+    },
+    {
+      "id": "fact:landmark-chichen-itza:landmark-place",
+      "entityId": "landmark:chichen-itza",
+      "factTypeId": "fact-type:landmark-place",
+      "value": "Yucatán (Ausgangsort: Valladolid)",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-chichen-itza-483"
+      ]
+    },
+    {
+      "id": "fact:landmark-christ-the-redeemer:landmark-country",
+      "entityId": "landmark:christ-the-redeemer",
+      "factTypeId": "fact-type:landmark-country",
+      "value": "Brasilien",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-rio-1100"
+      ]
+    },
+    {
+      "id": "fact:landmark-christ-the-redeemer:landmark-distinction",
+      "entityId": "landmark:christ-the-redeemer",
+      "factTypeId": "fact-type:landmark-distinction",
+      "value": "Das 1931 vollendete Art-déco-Monument ist zu einem weltweiten Symbol für Rio de Janeiro geworden.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-rio-1100"
+      ]
+    },
+    {
+      "id": "fact:landmark-christ-the-redeemer:landmark-fun-fact",
+      "entityId": "landmark:christ-the-redeemer",
+      "factTypeId": "fact-type:landmark-fun-fact",
+      "value": "Die Statue steht auf dem Corcovado und ist aus vielen Teilen der Stadt zwischen Bergen und Bucht zu sehen.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-rio-1100"
+      ]
+    },
+    {
+      "id": "fact:landmark-christ-the-redeemer:landmark-place",
+      "entityId": "landmark:christ-the-redeemer",
+      "factTypeId": "fact-type:landmark-place",
+      "value": "Rio de Janeiro",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-rio-1100"
       ]
     },
     {
@@ -57849,6 +59813,138 @@
       ]
     },
     {
+      "id": "fact:landmark-giants-causeway:landmark-country",
+      "entityId": "landmark:giants-causeway",
+      "factTypeId": "fact-type:landmark-country",
+      "value": "Vereinigtes Königreich",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-giants-causeway-369"
+      ]
+    },
+    {
+      "id": "fact:landmark-giants-causeway:landmark-distinction",
+      "entityId": "landmark:giants-causeway",
+      "factTypeId": "fact-type:landmark-distinction",
+      "value": "Rund 40.000 meist sechseckige Basaltsäulen entstanden durch vulkanische Aktivität vor etwa 50 bis 60 Millionen Jahren.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-giants-causeway-369"
+      ]
+    },
+    {
+      "id": "fact:landmark-giants-causeway:landmark-fun-fact",
+      "entityId": "landmark:giants-causeway",
+      "factTypeId": "fact-type:landmark-fun-fact",
+      "value": "Eine irische Legende deutet die Steine als Weg, den der Riese Fionn mac Cumhaill bis nach Schottland gebaut habe.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-giants-causeway-369"
+      ]
+    },
+    {
+      "id": "fact:landmark-giants-causeway:landmark-place",
+      "entityId": "landmark:giants-causeway",
+      "factTypeId": "fact-type:landmark-place",
+      "value": "Nordirland (nächster Ort: Bushmills)",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-giants-causeway-369"
+      ]
+    },
+    {
+      "id": "fact:landmark-giza-pyramids:landmark-country",
+      "entityId": "landmark:giza-pyramids",
+      "factTypeId": "fact-type:landmark-country",
+      "value": "Ägypten",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-memphis-86"
+      ]
+    },
+    {
+      "id": "fact:landmark-giza-pyramids:landmark-distinction",
+      "entityId": "landmark:giza-pyramids",
+      "factTypeId": "fact-type:landmark-distinction",
+      "value": "Die Cheops-Pyramide ist das einzige weitgehend erhaltene der Sieben Weltwunder der Antike.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-memphis-86"
+      ]
+    },
+    {
+      "id": "fact:landmark-giza-pyramids:landmark-fun-fact",
+      "entityId": "landmark:giza-pyramids",
+      "factTypeId": "fact-type:landmark-fun-fact",
+      "value": "Zum Pyramidenfeld gehören neben den drei großen Pyramiden auch Tempel, Gräber und die Große Sphinx.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-memphis-86"
+      ]
+    },
+    {
+      "id": "fact:landmark-giza-pyramids:landmark-place",
+      "entityId": "landmark:giza-pyramids",
+      "factTypeId": "fact-type:landmark-place",
+      "value": "Gizeh bei Kairo",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-memphis-86"
+      ]
+    },
+    {
+      "id": "fact:landmark-golden-gate-bridge:landmark-country",
+      "entityId": "landmark:golden-gate-bridge",
+      "factTypeId": "fact-type:landmark-country",
+      "value": "Vereinigte Staaten",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "golden-gate-official"
+      ]
+    },
+    {
+      "id": "fact:landmark-golden-gate-bridge:landmark-distinction",
+      "entityId": "landmark:golden-gate-bridge",
+      "factTypeId": "fact-type:landmark-distinction",
+      "value": "Die 1937 eröffnete Hängebrücke besitzt eine 1.280 Meter lange Hauptspannweite zwischen ihren beiden Türmen.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "golden-gate-official"
+      ]
+    },
+    {
+      "id": "fact:landmark-golden-gate-bridge:landmark-fun-fact",
+      "entityId": "landmark:golden-gate-bridge",
+      "factTypeId": "fact-type:landmark-fun-fact",
+      "value": "Die beiden Hauptkabel enthalten zusammen rund 129.000 Kilometer verzinkten Stahldraht.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "golden-gate-official"
+      ]
+    },
+    {
+      "id": "fact:landmark-golden-gate-bridge:landmark-place",
+      "entityId": "landmark:golden-gate-bridge",
+      "factTypeId": "fact-type:landmark-place",
+      "value": "San Francisco",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "golden-gate-official"
+      ]
+    },
+    {
       "id": "fact:landmark-grand-canyon:landmark-country",
       "entityId": "landmark:grand-canyon",
       "factTypeId": "fact-type:landmark-country",
@@ -57890,6 +59986,314 @@
       "method": "curated-official-location-and-distinction-v1",
       "sourceRefs": [
         "unesco-grand-canyon-75"
+      ]
+    },
+    {
+      "id": "fact:landmark-grand-prismatic-spring:landmark-country",
+      "entityId": "landmark:grand-prismatic-spring",
+      "factTypeId": "fact-type:landmark-country",
+      "value": "Vereinigte Staaten",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "nps-grand-prismatic"
+      ]
+    },
+    {
+      "id": "fact:landmark-grand-prismatic-spring:landmark-distinction",
+      "entityId": "landmark:grand-prismatic-spring",
+      "factTypeId": "fact-type:landmark-distinction",
+      "value": "Mit ungefähr 113 Metern Durchmesser ist sie die größte heiße Quelle im Yellowstone-Nationalpark.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "nps-grand-prismatic"
+      ]
+    },
+    {
+      "id": "fact:landmark-grand-prismatic-spring:landmark-fun-fact",
+      "entityId": "landmark:grand-prismatic-spring",
+      "factTypeId": "fact-type:landmark-fun-fact",
+      "value": "Mikroorganismen, die verschiedene Temperaturbereiche bevorzugen, erzeugen die gelben, orangen und roten Farbringe am Rand.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "nps-grand-prismatic"
+      ]
+    },
+    {
+      "id": "fact:landmark-grand-prismatic-spring:landmark-place",
+      "entityId": "landmark:grand-prismatic-spring",
+      "factTypeId": "fact-type:landmark-place",
+      "value": "Yellowstone-Nationalpark, Wyoming",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "nps-grand-prismatic"
+      ]
+    },
+    {
+      "id": "fact:landmark-great-barrier-reef:landmark-country",
+      "entityId": "landmark:great-barrier-reef",
+      "factTypeId": "fact-type:landmark-country",
+      "value": "Australien",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-great-barrier-reef-154"
+      ]
+    },
+    {
+      "id": "fact:landmark-great-barrier-reef:landmark-distinction",
+      "entityId": "landmark:great-barrier-reef",
+      "factTypeId": "fact-type:landmark-distinction",
+      "value": "Es ist das weltweit größte Korallenriff-Ökosystem und erstreckt sich entlang der Nordostküste Australiens.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-great-barrier-reef-154"
+      ]
+    },
+    {
+      "id": "fact:landmark-great-barrier-reef:landmark-fun-fact",
+      "entityId": "landmark:great-barrier-reef",
+      "factTypeId": "fact-type:landmark-fun-fact",
+      "value": "Das Riffsystem beherbergt rund 400 Korallenarten und etwa 1.500 Fischarten.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-great-barrier-reef-154"
+      ]
+    },
+    {
+      "id": "fact:landmark-great-barrier-reef:landmark-place",
+      "entityId": "landmark:great-barrier-reef",
+      "factTypeId": "fact-type:landmark-place",
+      "value": "Queensland (Ausgangsort: Cairns)",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-great-barrier-reef-154"
+      ]
+    },
+    {
+      "id": "fact:landmark-great-wall-of-china:landmark-country",
+      "entityId": "landmark:great-wall-of-china",
+      "factTypeId": "fact-type:landmark-country",
+      "value": "China",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-great-wall-438"
+      ]
+    },
+    {
+      "id": "fact:landmark-great-wall-of-china:landmark-distinction",
+      "entityId": "landmark:great-wall-of-china",
+      "factTypeId": "fact-type:landmark-distinction",
+      "value": "Mit allen erhaltenen Abschnitten und Verzweigungen umfasst das Mauersystem laut UNESCO mehr als 20.000 Kilometer.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-great-wall-438"
+      ]
+    },
+    {
+      "id": "fact:landmark-great-wall-of-china:landmark-fun-fact",
+      "entityId": "landmark:great-wall-of-china",
+      "factTypeId": "fact-type:landmark-fun-fact",
+      "value": "Die Mauer wurde vom 3. Jahrhundert v. Chr. bis ins 17. Jahrhundert über viele Dynastien hinweg ausgebaut.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-great-wall-438"
+      ]
+    },
+    {
+      "id": "fact:landmark-great-wall-of-china:landmark-place",
+      "entityId": "landmark:great-wall-of-china",
+      "factTypeId": "fact-type:landmark-place",
+      "value": "Mutianyu bei Peking",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-great-wall-438"
+      ]
+    },
+    {
+      "id": "fact:landmark-ha-long-bay:landmark-country",
+      "entityId": "landmark:ha-long-bay",
+      "factTypeId": "fact-type:landmark-country",
+      "value": "Vietnam",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-ha-long-672"
+      ]
+    },
+    {
+      "id": "fact:landmark-ha-long-bay:landmark-distinction",
+      "entityId": "landmark:ha-long-bay",
+      "factTypeId": "fact-type:landmark-distinction",
+      "value": "Die Bucht ist für ihre zahllosen bewachsenen Kalksteininseln und ihre vom Meer geformte Karstlandschaft berühmt.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-ha-long-672"
+      ]
+    },
+    {
+      "id": "fact:landmark-ha-long-bay:landmark-fun-fact",
+      "entityId": "landmark:ha-long-bay",
+      "factTypeId": "fact-type:landmark-fun-fact",
+      "value": "Seit der Erweiterung 2023 umfasst das Welterbe Hạ-Long-Bucht–Cát-Bà-Archipel 1.133 Inseln und Inselchen.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-ha-long-672"
+      ]
+    },
+    {
+      "id": "fact:landmark-ha-long-bay:landmark-place",
+      "entityId": "landmark:ha-long-bay",
+      "factTypeId": "fact-type:landmark-place",
+      "value": "Hạ Long",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-ha-long-672"
+      ]
+    },
+    {
+      "id": "fact:landmark-iguazu-falls:landmark-country",
+      "entityId": "landmark:iguazu-falls",
+      "factTypeId": "fact-type:landmark-country",
+      "value": "Argentinien und Brasilien",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-iguazu-303"
+      ]
+    },
+    {
+      "id": "fact:landmark-iguazu-falls:landmark-distinction",
+      "entityId": "landmark:iguazu-falls",
+      "factTypeId": "fact-type:landmark-distinction",
+      "value": "Die fast drei Kilometer breite Kaskadenlandschaft gehört zu den größten und eindrucksvollsten Wasserfallsystemen der Erde.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-iguazu-303"
+      ]
+    },
+    {
+      "id": "fact:landmark-iguazu-falls:landmark-fun-fact",
+      "entityId": "landmark:iguazu-falls",
+      "factTypeId": "fact-type:landmark-fun-fact",
+      "value": "Das Wasser stürzt nicht über eine einzige Kante, sondern über ein weit verzweigtes System zahlreicher einzelner Fälle.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-iguazu-303"
+      ]
+    },
+    {
+      "id": "fact:landmark-iguazu-falls:landmark-place",
+      "entityId": "landmark:iguazu-falls",
+      "factTypeId": "fact-type:landmark-place",
+      "value": "Puerto Iguazú / Foz do Iguaçu",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-iguazu-303"
+      ]
+    },
+    {
+      "id": "fact:landmark-leaning-tower-of-pisa:landmark-country",
+      "entityId": "landmark:leaning-tower-of-pisa",
+      "factTypeId": "fact-type:landmark-country",
+      "value": "Italien",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-pisa-395"
+      ]
+    },
+    {
+      "id": "fact:landmark-leaning-tower-of-pisa:landmark-distinction",
+      "entityId": "landmark:leaning-tower-of-pisa",
+      "factTypeId": "fact-type:landmark-distinction",
+      "value": "Seine berühmte Neigung entstand bereits während der langen Bauzeit auf nachgiebigem Untergrund.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-pisa-395"
+      ]
+    },
+    {
+      "id": "fact:landmark-leaning-tower-of-pisa:landmark-fun-fact",
+      "entityId": "landmark:leaning-tower-of-pisa",
+      "factTypeId": "fact-type:landmark-fun-fact",
+      "value": "Der freistehende Glockenturm gehört zusammen mit Dom, Baptisterium und Camposanto zum Ensemble der Piazza dei Miracoli.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-pisa-395"
+      ]
+    },
+    {
+      "id": "fact:landmark-leaning-tower-of-pisa:landmark-place",
+      "entityId": "landmark:leaning-tower-of-pisa",
+      "factTypeId": "fact-type:landmark-place",
+      "value": "Pisa",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-pisa-395"
+      ]
+    },
+    {
+      "id": "fact:landmark-machu-picchu:landmark-country",
+      "entityId": "landmark:machu-picchu",
+      "factTypeId": "fact-type:landmark-country",
+      "value": "Peru",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-machu-picchu-274"
+      ]
+    },
+    {
+      "id": "fact:landmark-machu-picchu:landmark-distinction",
+      "entityId": "landmark:machu-picchu",
+      "factTypeId": "fact-type:landmark-distinction",
+      "value": "Die Zitadelle liegt auf rund 2.430 Metern Höhe und gilt als bedeutendstes erhaltenes Zeugnis der Inka-Zivilisation.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-machu-picchu-274"
+      ]
+    },
+    {
+      "id": "fact:landmark-machu-picchu:landmark-fun-fact",
+      "entityId": "landmark:machu-picchu",
+      "factTypeId": "fact-type:landmark-fun-fact",
+      "value": "Die Inkastadt liegt dort, wo die peruanischen Anden in das obere Amazonasbecken übergehen.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-machu-picchu-274"
+      ]
+    },
+    {
+      "id": "fact:landmark-machu-picchu:landmark-place",
+      "entityId": "landmark:machu-picchu",
+      "factTypeId": "fact-type:landmark-place",
+      "value": "Region Cusco (Ausgangsort: Aguas Calientes)",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-machu-picchu-274"
       ]
     },
     {
@@ -57937,6 +60341,94 @@
       ]
     },
     {
+      "id": "fact:landmark-moai-rapa-nui:landmark-country",
+      "entityId": "landmark:moai-rapa-nui",
+      "factTypeId": "fact-type:landmark-country",
+      "value": "Chile",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-rapa-nui-715"
+      ]
+    },
+    {
+      "id": "fact:landmark-moai-rapa-nui:landmark-distinction",
+      "entityId": "landmark:moai-rapa-nui",
+      "factTypeId": "fact-type:landmark-distinction",
+      "value": "Ahu Tongariki ist die größte restaurierte Plattform der Insel und trägt 15 aufgerichtete Moai.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-rapa-nui-715"
+      ]
+    },
+    {
+      "id": "fact:landmark-moai-rapa-nui:landmark-fun-fact",
+      "entityId": "landmark:moai-rapa-nui",
+      "factTypeId": "fact-type:landmark-fun-fact",
+      "value": "Die polynesische Gesellschaft von Rapa Nui schuf zwischen dem 10. und 16. Jahrhundert monumentale Steinfiguren und Zeremonialplattformen.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-rapa-nui-715"
+      ]
+    },
+    {
+      "id": "fact:landmark-moai-rapa-nui:landmark-place",
+      "entityId": "landmark:moai-rapa-nui",
+      "factTypeId": "fact-type:landmark-place",
+      "value": "Rapa Nui / Osterinsel (Ausgangsort: Hanga Roa)",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-rapa-nui-715"
+      ]
+    },
+    {
+      "id": "fact:landmark-mount-everest:landmark-country",
+      "entityId": "landmark:mount-everest",
+      "factTypeId": "fact-type:landmark-country",
+      "value": "Nepal und China",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-sagarmatha-120"
+      ]
+    },
+    {
+      "id": "fact:landmark-mount-everest:landmark-distinction",
+      "entityId": "landmark:mount-everest",
+      "factTypeId": "fact-type:landmark-distinction",
+      "value": "Der Mount Everest bildet den höchsten Punkt der Erdoberfläche über dem Meeresspiegel.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-sagarmatha-120"
+      ]
+    },
+    {
+      "id": "fact:landmark-mount-everest:landmark-fun-fact",
+      "entityId": "landmark:mount-everest",
+      "factTypeId": "fact-type:landmark-fun-fact",
+      "value": "Im nepalesischen Sagarmatha-Nationalpark liegen neben dem Everest auch Gletscher und Siedlungen der Sherpa.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-sagarmatha-120"
+      ]
+    },
+    {
+      "id": "fact:landmark-mount-everest:landmark-place",
+      "entityId": "landmark:mount-everest",
+      "factTypeId": "fact-type:landmark-place",
+      "value": "Himalaya (Ausgangsorte: Lukla / Rongbuk)",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-sagarmatha-120"
+      ]
+    },
+    {
       "id": "fact:landmark-mount-fuji:landmark-country",
       "entityId": "landmark:mount-fuji",
       "factTypeId": "fact-type:landmark-country",
@@ -57978,6 +60470,314 @@
       "method": "curated-official-location-and-distinction-v1",
       "sourceRefs": [
         "unesco-fuji-1418"
+      ]
+    },
+    {
+      "id": "fact:landmark-neuschwanstein:landmark-country",
+      "entityId": "landmark:neuschwanstein",
+      "factTypeId": "fact-type:landmark-country",
+      "value": "Deutschland",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "neuschwanstein-official"
+      ]
+    },
+    {
+      "id": "fact:landmark-neuschwanstein:landmark-distinction",
+      "entityId": "landmark:neuschwanstein",
+      "factTypeId": "fact-type:landmark-distinction",
+      "value": "Hinter der mittelalterlich wirkenden Fassade steckten moderne Technik wie Zentralheizung, fließendes Wasser, Telefone und ein Speiseaufzug.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "neuschwanstein-official"
+      ]
+    },
+    {
+      "id": "fact:landmark-neuschwanstein:landmark-fun-fact",
+      "entityId": "landmark:neuschwanstein",
+      "factTypeId": "fact-type:landmark-fun-fact",
+      "value": "Nur sieben Wochen nach dem Tod König Ludwigs II. im Jahr 1886 wurde sein privater Rückzugsort für Besucher geöffnet.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "neuschwanstein-official"
+      ]
+    },
+    {
+      "id": "fact:landmark-neuschwanstein:landmark-place",
+      "entityId": "landmark:neuschwanstein",
+      "factTypeId": "fact-type:landmark-place",
+      "value": "Schwangau",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "neuschwanstein-official"
+      ]
+    },
+    {
+      "id": "fact:landmark-niagara-falls:landmark-country",
+      "entityId": "landmark:niagara-falls",
+      "factTypeId": "fact-type:landmark-country",
+      "value": "Kanada und Vereinigte Staaten",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "niagara-parks-official"
+      ]
+    },
+    {
+      "id": "fact:landmark-niagara-falls:landmark-distinction",
+      "entityId": "landmark:niagara-falls",
+      "factTypeId": "fact-type:landmark-distinction",
+      "value": "Das Wasser des Niagara River verbindet Eriesee und Ontariosee; der breite Horseshoe-Fall führt den größten Anteil des Wassers.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "niagara-parks-official"
+      ]
+    },
+    {
+      "id": "fact:landmark-niagara-falls:landmark-fun-fact",
+      "entityId": "landmark:niagara-falls",
+      "factTypeId": "fact-type:landmark-fun-fact",
+      "value": "Die Niagarafälle bestehen aus Horseshoe Falls, American Falls und Bridal Veil Falls.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "niagara-parks-official"
+      ]
+    },
+    {
+      "id": "fact:landmark-niagara-falls:landmark-place",
+      "entityId": "landmark:niagara-falls",
+      "factTypeId": "fact-type:landmark-place",
+      "value": "Niagara Falls, Ontario / Niagara Falls, New York",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "niagara-parks-official"
+      ]
+    },
+    {
+      "id": "fact:landmark-pamukkale:landmark-country",
+      "entityId": "landmark:pamukkale",
+      "factTypeId": "fact-type:landmark-country",
+      "value": "Türkei",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-pamukkale-485"
+      ]
+    },
+    {
+      "id": "fact:landmark-pamukkale:landmark-distinction",
+      "entityId": "landmark:pamukkale",
+      "factTypeId": "fact-type:landmark-distinction",
+      "value": "Kalziumreiches Thermalwasser formte die leuchtend weißen Travertinterrassen und natürlichen Becken.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-pamukkale-485"
+      ]
+    },
+    {
+      "id": "fact:landmark-pamukkale:landmark-fun-fact",
+      "entityId": "landmark:pamukkale",
+      "factTypeId": "fact-type:landmark-fun-fact",
+      "value": "Schon in der Antike entstand oberhalb der warmen Quellen die Kurstadt Hierapolis.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-pamukkale-485"
+      ]
+    },
+    {
+      "id": "fact:landmark-pamukkale:landmark-place",
+      "entityId": "landmark:pamukkale",
+      "factTypeId": "fact-type:landmark-place",
+      "value": "Provinz Denizli",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-pamukkale-485"
+      ]
+    },
+    {
+      "id": "fact:landmark-perito-moreno-glacier:landmark-country",
+      "entityId": "landmark:perito-moreno-glacier",
+      "factTypeId": "fact-type:landmark-country",
+      "value": "Argentinien",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "argentina-los-glaciares"
+      ]
+    },
+    {
+      "id": "fact:landmark-perito-moreno-glacier:landmark-distinction",
+      "entityId": "landmark:perito-moreno-glacier",
+      "factTypeId": "fact-type:landmark-distinction",
+      "value": "Der leicht zugängliche Gletscher ist einer der bekanntesten Eisströme des südpatagonischen Eisfelds.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "argentina-los-glaciares"
+      ]
+    },
+    {
+      "id": "fact:landmark-perito-moreno-glacier:landmark-fun-fact",
+      "entityId": "landmark:perito-moreno-glacier",
+      "factTypeId": "fact-type:landmark-fun-fact",
+      "value": "Sein periodisches Aufbrechen sorgt dafür, dass große Eisstücke und zeitweise sogar natürliche Eisbrücken spektakulär einstürzen.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "argentina-los-glaciares"
+      ]
+    },
+    {
+      "id": "fact:landmark-perito-moreno-glacier:landmark-place",
+      "entityId": "landmark:perito-moreno-glacier",
+      "factTypeId": "fact-type:landmark-place",
+      "value": "Nationalpark Los Glaciares (Ausgangsort: El Calafate)",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "argentina-los-glaciares"
+      ]
+    },
+    {
+      "id": "fact:landmark-petra:landmark-country",
+      "entityId": "landmark:petra",
+      "factTypeId": "fact-type:landmark-country",
+      "value": "Jordanien",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-petra-326"
+      ]
+    },
+    {
+      "id": "fact:landmark-petra:landmark-distinction",
+      "entityId": "landmark:petra",
+      "factTypeId": "fact-type:landmark-distinction",
+      "value": "Die nabatäische Stadt ist teils gebaut und teils direkt aus dem rötlichen Sandstein herausgemeißelt.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-petra-326"
+      ]
+    },
+    {
+      "id": "fact:landmark-petra:landmark-fun-fact",
+      "entityId": "landmark:petra",
+      "factTypeId": "fact-type:landmark-fun-fact",
+      "value": "Petra war ein wichtiger Knotenpunkt für Karawanen zwischen Arabien, Ägypten und dem Mittelmeerraum.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-petra-326"
+      ]
+    },
+    {
+      "id": "fact:landmark-petra:landmark-place",
+      "entityId": "landmark:petra",
+      "factTypeId": "fact-type:landmark-place",
+      "value": "Wadi Musa",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-petra-326"
+      ]
+    },
+    {
+      "id": "fact:landmark-sagrada-familia:landmark-country",
+      "entityId": "landmark:sagrada-familia",
+      "factTypeId": "fact-type:landmark-country",
+      "value": "Spanien",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "sagrada-familia-official"
+      ]
+    },
+    {
+      "id": "fact:landmark-sagrada-familia:landmark-distinction",
+      "entityId": "landmark:sagrada-familia",
+      "factTypeId": "fact-type:landmark-distinction",
+      "value": "Antoni Gaudí prägte den außergewöhnlichen Entwurf; mehr als 140 Jahre nach Baubeginn wurde 2026 der äußere Abschluss des zentralen Jesus-Turms vollendet.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "sagrada-familia-official"
+      ]
+    },
+    {
+      "id": "fact:landmark-sagrada-familia:landmark-fun-fact",
+      "entityId": "landmark:sagrada-familia",
+      "factTypeId": "fact-type:landmark-fun-fact",
+      "value": "Seit der Grundsteinlegung 1882 haben bereits fünf Generationen in Barcelona den Bau der Basilika miterlebt.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "sagrada-familia-official"
+      ]
+    },
+    {
+      "id": "fact:landmark-sagrada-familia:landmark-place",
+      "entityId": "landmark:sagrada-familia",
+      "factTypeId": "fact-type:landmark-place",
+      "value": "Barcelona",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "sagrada-familia-official"
+      ]
+    },
+    {
+      "id": "fact:landmark-salar-de-uyuni:landmark-country",
+      "entityId": "landmark:salar-de-uyuni",
+      "factTypeId": "fact-type:landmark-country",
+      "value": "Bolivien",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "nasa-salar-uyuni"
+      ]
+    },
+    {
+      "id": "fact:landmark-salar-de-uyuni:landmark-distinction",
+      "entityId": "landmark:salar-de-uyuni",
+      "factTypeId": "fact-type:landmark-distinction",
+      "value": "Der Salar de Uyuni ist die größte Salzpfanne der Erde.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "nasa-salar-uyuni"
+      ]
+    },
+    {
+      "id": "fact:landmark-salar-de-uyuni:landmark-fun-fact",
+      "entityId": "landmark:salar-de-uyuni",
+      "factTypeId": "fact-type:landmark-fun-fact",
+      "value": "In der Regenzeit kann eine dünne Wasserschicht die extrem ebene Salzfläche in einen riesigen Spiegel verwandeln.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "nasa-salar-uyuni"
+      ]
+    },
+    {
+      "id": "fact:landmark-salar-de-uyuni:landmark-place",
+      "entityId": "landmark:salar-de-uyuni",
+      "factTypeId": "fact-type:landmark-place",
+      "value": "Uyuni",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "nasa-salar-uyuni"
       ]
     },
     {
@@ -58025,6 +60825,50 @@
       ]
     },
     {
+      "id": "fact:landmark-stonehenge:landmark-country",
+      "entityId": "landmark:stonehenge",
+      "factTypeId": "fact-type:landmark-country",
+      "value": "Vereinigtes Königreich",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-stonehenge-373"
+      ]
+    },
+    {
+      "id": "fact:landmark-stonehenge:landmark-distinction",
+      "entityId": "landmark:stonehenge",
+      "factTypeId": "fact-type:landmark-distinction",
+      "value": "Stonehenge ist der architektonisch anspruchsvollste prähistorische Steinkreis der Welt.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-stonehenge-373"
+      ]
+    },
+    {
+      "id": "fact:landmark-stonehenge:landmark-fun-fact",
+      "entityId": "landmark:stonehenge",
+      "factTypeId": "fact-type:landmark-fun-fact",
+      "value": "Die Achse des Steinkreises ist auf den Sonnenaufgang zur Sommersonnenwende und den Sonnenuntergang zur Wintersonnenwende ausgerichtet.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-stonehenge-373"
+      ]
+    },
+    {
+      "id": "fact:landmark-stonehenge:landmark-place",
+      "entityId": "landmark:stonehenge",
+      "factTypeId": "fact-type:landmark-place",
+      "value": "Wiltshire (nächster Ort: Amesbury)",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-stonehenge-373"
+      ]
+    },
+    {
       "id": "fact:landmark-sydney-opera-house:landmark-country",
       "entityId": "landmark:sydney-opera-house",
       "factTypeId": "fact-type:landmark-country",
@@ -58069,6 +60913,50 @@
       ]
     },
     {
+      "id": "fact:landmark-table-mountain:landmark-country",
+      "entityId": "landmark:table-mountain",
+      "factTypeId": "fact-type:landmark-country",
+      "value": "Südafrika",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "sanparks-table-mountain"
+      ]
+    },
+    {
+      "id": "fact:landmark-table-mountain:landmark-distinction",
+      "entityId": "landmark:table-mountain",
+      "factTypeId": "fact-type:landmark-distinction",
+      "value": "Sein langes, auffällig flaches Gipfelplateau bildet die unverwechselbare Kulisse von Kapstadt.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "sanparks-table-mountain"
+      ]
+    },
+    {
+      "id": "fact:landmark-table-mountain:landmark-fun-fact",
+      "entityId": "landmark:table-mountain",
+      "factTypeId": "fact-type:landmark-fun-fact",
+      "value": "Der Berg gehört zu einem Schutzgebiet mit außergewöhnlich hoher Pflanzenvielfalt im Kap-Florenreich.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "sanparks-table-mountain"
+      ]
+    },
+    {
+      "id": "fact:landmark-table-mountain:landmark-place",
+      "entityId": "landmark:table-mountain",
+      "factTypeId": "fact-type:landmark-place",
+      "value": "Kapstadt",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "sanparks-table-mountain"
+      ]
+    },
+    {
       "id": "fact:landmark-taj-mahal:landmark-country",
       "entityId": "landmark:taj-mahal",
       "factTypeId": "fact-type:landmark-country",
@@ -58110,6 +60998,94 @@
       "method": "curated-official-location-and-distinction-v1",
       "sourceRefs": [
         "unesco-taj-mahal-252"
+      ]
+    },
+    {
+      "id": "fact:landmark-torres-del-paine:landmark-country",
+      "entityId": "landmark:torres-del-paine",
+      "factTypeId": "fact-type:landmark-country",
+      "value": "Chile",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "conaf-torres-del-paine"
+      ]
+    },
+    {
+      "id": "fact:landmark-torres-del-paine:landmark-distinction",
+      "entityId": "landmark:torres-del-paine",
+      "factTypeId": "fact-type:landmark-distinction",
+      "value": "Las Torres sind das Wahrzeichen des gleichnamigen Nationalparks im chilenischen Teil Patagoniens.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "conaf-torres-del-paine"
+      ]
+    },
+    {
+      "id": "fact:landmark-torres-del-paine:landmark-fun-fact",
+      "entityId": "landmark:torres-del-paine",
+      "factTypeId": "fact-type:landmark-fun-fact",
+      "value": "Die drei Granittürme wurden durch Gletscher und Verwitterung aus dem Paine-Massiv herausgeformt.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "conaf-torres-del-paine"
+      ]
+    },
+    {
+      "id": "fact:landmark-torres-del-paine:landmark-place",
+      "entityId": "landmark:torres-del-paine",
+      "factTypeId": "fact-type:landmark-place",
+      "value": "Patagonien (Ausgangsort: Puerto Natales)",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "conaf-torres-del-paine"
+      ]
+    },
+    {
+      "id": "fact:landmark-tower-bridge:landmark-country",
+      "entityId": "landmark:tower-bridge",
+      "factTypeId": "fact-type:landmark-country",
+      "value": "Vereinigtes Königreich",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "tower-bridge-official"
+      ]
+    },
+    {
+      "id": "fact:landmark-tower-bridge:landmark-distinction",
+      "entityId": "landmark:tower-bridge",
+      "factTypeId": "fact-type:landmark-distinction",
+      "value": "Die 1894 eröffnete Klapp- und Hängebrücke wurde gebaut, um Straßenverkehr und den Zugang zu den damaligen Londoner Docks zu verbinden.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "tower-bridge-official"
+      ]
+    },
+    {
+      "id": "fact:landmark-tower-bridge:landmark-fun-fact",
+      "entityId": "landmark:tower-bridge",
+      "factTypeId": "fact-type:landmark-fun-fact",
+      "value": "Die beweglichen Fahrbahnteile werden bis heute angehoben, damit hohe Schiffe die Themse passieren können.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "tower-bridge-official"
+      ]
+    },
+    {
+      "id": "fact:landmark-tower-bridge:landmark-place",
+      "entityId": "landmark:tower-bridge",
+      "factTypeId": "fact-type:landmark-place",
+      "value": "London",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "tower-bridge-official"
       ]
     },
     {
@@ -58198,6 +61174,94 @@
       "method": "curated-official-location-and-distinction-v1",
       "sourceRefs": [
         "unesco-victoria-falls-509"
+      ]
+    },
+    {
+      "id": "fact:landmark-wulingyuan:landmark-country",
+      "entityId": "landmark:wulingyuan",
+      "factTypeId": "fact-type:landmark-country",
+      "value": "China",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-wulingyuan-640"
+      ]
+    },
+    {
+      "id": "fact:landmark-wulingyuan:landmark-distinction",
+      "entityId": "landmark:wulingyuan",
+      "factTypeId": "fact-type:landmark-distinction",
+      "value": "Das Wulingyuan-Gebiet wird von mehr als 3.000 Quarzsandsteinpfeilern geprägt, viele davon über 200 Meter hoch.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-wulingyuan-640"
+      ]
+    },
+    {
+      "id": "fact:landmark-wulingyuan:landmark-fun-fact",
+      "entityId": "landmark:wulingyuan",
+      "factTypeId": "fact-type:landmark-fun-fact",
+      "value": "Nebel und Vegetation lassen die schmalen Felstürme oft wie schwebende Inseln erscheinen.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-wulingyuan-640"
+      ]
+    },
+    {
+      "id": "fact:landmark-wulingyuan:landmark-place",
+      "entityId": "landmark:wulingyuan",
+      "factTypeId": "fact-type:landmark-place",
+      "value": "Zhangjiajie, Provinz Hunan",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "unesco-wulingyuan-640"
+      ]
+    },
+    {
+      "id": "fact:landmark-yosemite-half-dome:landmark-country",
+      "entityId": "landmark:yosemite-half-dome",
+      "factTypeId": "fact-type:landmark-country",
+      "value": "Vereinigte Staaten",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "nps-yosemite-half-dome"
+      ]
+    },
+    {
+      "id": "fact:landmark-yosemite-half-dome:landmark-distinction",
+      "entityId": "landmark:yosemite-half-dome",
+      "factTypeId": "fact-type:landmark-distinction",
+      "value": "Half Dome erhebt sich fast 1.500 Meter über dem Talboden und ist das bekannteste Felsmotiv des Yosemite-Nationalparks.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "nps-yosemite-half-dome"
+      ]
+    },
+    {
+      "id": "fact:landmark-yosemite-half-dome:landmark-fun-fact",
+      "entityId": "landmark:yosemite-half-dome",
+      "factTypeId": "fact-type:landmark-fun-fact",
+      "value": "Gletscher formten das Yosemite Valley, während der widerstandsfähige Granit des Half Dome als markante Kuppel stehen blieb.",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "nps-yosemite-half-dome"
+      ]
+    },
+    {
+      "id": "fact:landmark-yosemite-half-dome:landmark-place",
+      "entityId": "landmark:yosemite-half-dome",
+      "factTypeId": "fact-type:landmark-place",
+      "value": "Yosemite Valley, Kalifornien",
+      "asOf": "2026-08-09",
+      "method": "curated-official-location-and-distinction-v1",
+      "sourceRefs": [
+        "nps-yosemite-half-dome"
       ]
     },
     {

@@ -1869,9 +1869,12 @@ svg {
 
 .visual-asset--landmark {
   display: block;
-  width: min(100%, 46rem);
-  height: clamp(13rem, 28vh, 20rem);
-  object-fit: cover;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: clamp(13rem, 28vh, 20rem);
+  object-fit: contain;
+  background: var(--color-surface-strong);
   border-radius: 1.25rem;
   box-shadow: 0 1.25rem 3rem rgba(10, 35, 28, 0.18);
 }
@@ -3159,7 +3162,8 @@ svg {
   }
 
   .visual-asset--landmark {
-    height: clamp(20rem, 52vh, 30rem);
+    height: auto;
+    max-height: 30rem;
   }
 
   .visual-question-layout--landmark .visual-prompt-panel {

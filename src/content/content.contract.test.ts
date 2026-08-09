@@ -135,7 +135,7 @@ describe("Phase-2 content contract", () => {
 
   it("contains every versioned country visual, constellation chart and landmark photo", () => {
     expect(visualAssetIndexJson.datasetVersion).toBe(datasetJson.version);
-    expect(visualAssetIndexJson.assets).toHaveLength(414);
+    expect(visualAssetIndexJson.assets).toHaveLength(442);
     expect(
       visualAssetIndexJson.assets.filter((asset) => asset.kind === "flag")
     ).toHaveLength(195);
@@ -153,10 +153,10 @@ describe("Phase-2 content contract", () => {
       visualAssetIndexJson.assets.filter(
         (asset) => asset.kind === "landmark_photo"
       )
-    ).toHaveLength(12);
+    ).toHaveLength(40);
     expect(
       new Set(visualAssetIndexJson.assets.map((asset) => asset.key)).size
-    ).toBe(414);
+    ).toBe(442);
 
     for (const asset of visualAssetIndexJson.assets) {
       const file = readFileSync(new URL(`../../public/${asset.path}`, import.meta.url));
@@ -179,9 +179,9 @@ describe("Phase-2 content contract", () => {
     if (!parsed.success) throw new Error(parsed.issues.join("\n"));
     const repository = createContentRepository(parsed.data);
     const landmarks = repository.getEntitiesByType("landmark");
-    expect(landmarks).toHaveLength(12);
+    expect(landmarks).toHaveLength(40);
     expect(qualityJson.checks).toMatchObject({
-      landmarkEntityCount: 12,
+      landmarkEntityCount: 40,
       landmarkImagesPinnedAndSourced: true
     });
     expect(
@@ -295,7 +295,7 @@ describe("Phase-2 content contract", () => {
     const repository = createContentRepository(parsed.data);
     const questions = repository.getEntitiesByType("knowledge_question");
 
-    expect(parsed.data.facts).toHaveLength(546);
+    expect(parsed.data.facts).toHaveLength(658);
     expect(parsed.data.compiledKnowledgeQuestions).toHaveLength(62);
     expect(questions).toHaveLength(62);
     expect(qualityJson.checks).toMatchObject({

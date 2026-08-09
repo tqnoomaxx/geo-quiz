@@ -391,12 +391,12 @@ Sichtung aller zwölf vereinfachten Linienbilder bleibt redaktionelle QA.
   Besonderheit sowie Fakten- und Bildquelle zeigen.
 - [x] Welt- und Kontinent-Scope, 6/10/alle sowie Lernen, Üben und Prüfung über
   die bestehenden Regeln anbieten; keine Wiederholung innerhalb einer Runde.
-- [ ] Motivauswahl und deutsche Formulierungen redaktionell gegenprüfen und
-  den Pool anschließend kuratiert erweitern.
+- [x] Motivauswahl, deutsche Formulierungen und eindeutige Commons-Fotos
+  redaktionell prüfen; Pool auf 40 Motive erweitern.
 
-**Wahrzeichen-Slice technisch erreicht:** Content-Vertrag, lokale Assets,
-Generator- und Browserfluss sind abgedeckt. Die redaktionelle Bild- und
-Textsichtung bleibt vor einer größeren Erweiterung offen.
+**Wahrzeichen-Slice erreicht:** Content-Vertrag, 40 redaktionell geprüfte lokale
+Assets, Generator- und Browserfluss sind abgedeckt. Weitere Motive bleiben als
+kuratiertes Dataset-Update möglich.
 
 - Spaced-Repetition-Algorithmus mit Versionierung.
 - Eigene Lernlisten und gezieltes Fehlertraining.

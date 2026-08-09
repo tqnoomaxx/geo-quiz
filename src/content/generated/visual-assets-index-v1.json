@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "datasetVersion": "2026-08-09.phase8-landmarks1",
+  "datasetVersion": "2026-08-09.phase8-landmarks2",
   "builtAt": "2026-08-09T12:00:00.000Z",
   "sources": [
     {
@@ -42,8 +42,8 @@
     {
       "id": "commons-sydney-opera",
       "sourceVersion": "960px-thumbnail-2026-08-09",
-      "url": "https://commons.wikimedia.org/wiki/File:Sydney_(AU),_Opera_House_--_2019_--_3054.jpg",
-      "license": "CC BY-SA 4.0; Dietmar Rabich"
+      "url": "https://commons.wikimedia.org/wiki/File:Sydney_Opera_House_-_Dec_2008.jpg",
+      "license": "CC BY-SA 3.0; Diliff"
     },
     {
       "id": "commons-brandenburg-gate",
@@ -78,8 +78,8 @@
     {
       "id": "commons-uluru",
       "sourceVersion": "960px-thumbnail-2026-08-09",
-      "url": "https://commons.wikimedia.org/wiki/File:Petermann_Ranges_(AU),_Uluru-Kata_Tjuta_National_Park,_Uluru,_Kuniya_Walk_--_2019_--_3636.jpg",
-      "license": "CC BY-SA 4.0; Dietmar Rabich"
+      "url": "https://commons.wikimedia.org/wiki/File:Ulu%E1%B9%9Fu_(Ayers_Rock),_Sunset.jpg",
+      "license": "CC0; Weyf"
     },
     {
       "id": "commons-matterhorn",
@@ -90,8 +90,176 @@
     {
       "id": "commons-mount-fuji",
       "sourceVersion": "960px-thumbnail-2026-08-09",
-      "url": "https://commons.wikimedia.org/wiki/File:Fujikawaguchiko_view_of_Mt._Fuji.jpg",
-      "license": "CC0; Harperawl"
+      "url": "https://commons.wikimedia.org/wiki/File:Mount_Fuji_from_Lake_Kawaguchi_20170206.jpg",
+      "license": "CC BY-SA 4.0; Suicasmo"
+    },
+    {
+      "id": "commons-great-wall",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Great_Wall_of_China_July_2006.JPG",
+      "license": "CC0; Velatrix"
+    },
+    {
+      "id": "commons-machu-picchu",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Machu_Picchu,_Per%C3%BA,_2015-07-30,_DD_47.JPG",
+      "license": "CC BY-SA 4.0; Diego Delso"
+    },
+    {
+      "id": "commons-christ-redeemer",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Christ_the_Redeemer_-_Cristo_Redentor_-_Rio.jpg",
+      "license": "CC BY-SA 3.0 DE; Arne Müseler"
+    },
+    {
+      "id": "commons-giza-pyramids",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:All_Gizah_Pyramids.jpg",
+      "license": "CC BY-SA 2.0; Ricardo Liberato"
+    },
+    {
+      "id": "commons-petra",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Petra_,_Al-Khazneh_2.jpg",
+      "license": "CC BY-SA 3.0; Faraheed"
+    },
+    {
+      "id": "commons-sagrada-familia",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Temple_Expiatori_de_la_Sagrada_Familia.jpg",
+      "license": "CC BY-SA 2.0; Victoriano Javier Tornel García"
+    },
+    {
+      "id": "commons-golden-gate-bridge",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Golden_Gate_Bridge_as_seen_from_Marshall%E2%80%99s_Beach,_March_2018.jpg",
+      "license": "CC BY-SA 4.0; Frank Schulenburg"
+    },
+    {
+      "id": "commons-tower-bridge",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Tower_Bridge_London_Dusk_Feb_2006.jpg",
+      "license": "CC BY-SA 3.0; Diliff"
+    },
+    {
+      "id": "commons-neuschwanstein",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Neuschwanstein_Castle_2024-02.jpg",
+      "license": "CC0; Wilfredor"
+    },
+    {
+      "id": "commons-stonehenge",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Stonehenge,_Condado_de_Wiltshire,_Inglaterra,_2014-08-12,_DD_18.JPG",
+      "license": "CC BY-SA 4.0; Diego Delso"
+    },
+    {
+      "id": "commons-moai",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Ahu_Tongariki.jpg",
+      "license": "CC BY-SA 3.0; Rivi"
+    },
+    {
+      "id": "commons-angkor-wat",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Angkor_Wat_with_its_reflection_(cropped).jpg",
+      "license": "CC BY-SA 4.0; Satdeep Gill"
+    },
+    {
+      "id": "commons-pisa",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:The_Leaning_Tower_of_Pisa_SB.jpeg",
+      "license": "CC BY-SA 3.0; Saffron Blaze"
+    },
+    {
+      "id": "commons-chichen-itza",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Chichen_Itza_3.jpg",
+      "license": "CC BY-SA 4.0; Daniel Schwen"
+    },
+    {
+      "id": "commons-niagara-falls",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Panorama_of_Niagara_Falls_October_2024.jpg",
+      "license": "CC0; TheWxResearcher"
+    },
+    {
+      "id": "commons-everest",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg",
+      "license": "CC BY-SA 2.5; Luca Galuzzi"
+    },
+    {
+      "id": "commons-great-barrier-reef",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Aerial_View_of_Great_Barrier_Reef_(Ank_Kumar)_02.jpg",
+      "license": "CC BY-SA 4.0; Ank Kumar"
+    },
+    {
+      "id": "commons-salar-de-uyuni",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Salar_de_Uyuni,_Bolivia,_2016-02-04,_DD_10-12_HDR.JPG",
+      "license": "CC BY-SA 4.0; Diego Delso"
+    },
+    {
+      "id": "commons-table-mountain",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Cape_Town_(ZA),_Table_Mountain_--_2024_--_3437.jpg",
+      "license": "CC BY-SA 4.0; Dietmar Rabich"
+    },
+    {
+      "id": "commons-iguazu-falls",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Iguazu_Falls_Panorama_2009.jpg",
+      "license": "CC BY-SA 4.0; Mariordo"
+    },
+    {
+      "id": "commons-yosemite-half-dome",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Half_Dome_from_Glacier_Point,_Yosemite_NP_-_Diliff.jpg",
+      "license": "CC BY-SA 3.0; Diliff"
+    },
+    {
+      "id": "commons-torres-del-paine",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Las_Torres,_Torres_del_Paine,_Chile.jpg",
+      "license": "CC BY-SA 4.0; Aakerueh"
+    },
+    {
+      "id": "commons-wulingyuan",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:1_zhangjiajie_huangshizhai_wulingyuan_panorama_2012.jpg",
+      "license": "CC BY-SA 4.0; chensiyuan"
+    },
+    {
+      "id": "commons-giants-causeway",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:County_Antrim_-_Giant%27s_Causeway_-_Tops_of_Basalt_Columns_-_geograph.org.uk_-_3987884.jpg",
+      "license": "CC BY-SA 2.0; Suzanne Mischyshyn"
+    },
+    {
+      "id": "commons-ha-long-bay",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Ha_Long_Bay,_Vietnam,_View_from_above.jpg",
+      "license": "CC BY 4.0; Vyacheslav Argenberg"
+    },
+    {
+      "id": "commons-perito-moreno",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Perito_Moreno_Glacier_panorama.jpg",
+      "license": "CC BY-SA 4.0; Makelelecba"
+    },
+    {
+      "id": "commons-pamukkale",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Pamukkale_02.jpg",
+      "license": "CC BY-SA 3.0; Bernard Gagnon"
+    },
+    {
+      "id": "commons-grand-prismatic",
+      "sourceVersion": "960px-thumbnail-2026-08-09",
+      "url": "https://commons.wikimedia.org/wiki/File:Grand_prismatic_spring.jpg",
+      "license": "Public domain; Jim Peaco, National Park Service"
     }
   ],
   "assets": [
@@ -4126,6 +4294,16 @@
       "path": "assets/visual/v1/landmarks/angel-falls.jpg"
     },
     {
+      "key": "visual:landmark_photo:landmark:angkor-wat",
+      "entityId": "landmark:angkor-wat",
+      "kind": "landmark_photo",
+      "mediaType": "image/jpeg",
+      "sha256": "6c7c48e72b0c88b2367816885dfcb6784f2d16e94286bc6ad08b447348ec3c50",
+      "bytes": 129875,
+      "sourceRef": "commons-angkor-wat",
+      "path": "assets/visual/v1/landmarks/angkor-wat.jpg"
+    },
+    {
       "key": "visual:landmark_photo:landmark:brandenburg-gate",
       "entityId": "landmark:brandenburg-gate",
       "kind": "landmark_photo",
@@ -4134,6 +4312,26 @@
       "bytes": 133208,
       "sourceRef": "commons-brandenburg-gate",
       "path": "assets/visual/v1/landmarks/brandenburg-gate.jpg"
+    },
+    {
+      "key": "visual:landmark_photo:landmark:chichen-itza",
+      "entityId": "landmark:chichen-itza",
+      "kind": "landmark_photo",
+      "mediaType": "image/jpeg",
+      "sha256": "8462a823246de57f1541b0057de050f268d8f122f61b838d9658ef9dfdf5a7f8",
+      "bytes": 133184,
+      "sourceRef": "commons-chichen-itza",
+      "path": "assets/visual/v1/landmarks/chichen-itza.jpg"
+    },
+    {
+      "key": "visual:landmark_photo:landmark:christ-the-redeemer",
+      "entityId": "landmark:christ-the-redeemer",
+      "kind": "landmark_photo",
+      "mediaType": "image/jpeg",
+      "sha256": "984fa8cdc3ceab91a2e413b0e8009bee7a326abde0dc18ca383fb0d7567bf930",
+      "bytes": 212396,
+      "sourceRef": "commons-christ-redeemer",
+      "path": "assets/visual/v1/landmarks/christ-the-redeemer.jpg"
     },
     {
       "key": "visual:landmark_photo:landmark:colosseum",
@@ -4156,6 +4354,36 @@
       "path": "assets/visual/v1/landmarks/eiffel-tower.jpg"
     },
     {
+      "key": "visual:landmark_photo:landmark:giants-causeway",
+      "entityId": "landmark:giants-causeway",
+      "kind": "landmark_photo",
+      "mediaType": "image/jpeg",
+      "sha256": "9f92d5fe9bcab7f830dd7586a3108caf606a701e5050d7cbd82158221729b323",
+      "bytes": 407425,
+      "sourceRef": "commons-giants-causeway",
+      "path": "assets/visual/v1/landmarks/giants-causeway.jpg"
+    },
+    {
+      "key": "visual:landmark_photo:landmark:giza-pyramids",
+      "entityId": "landmark:giza-pyramids",
+      "kind": "landmark_photo",
+      "mediaType": "image/jpeg",
+      "sha256": "b583339b52e48fddd24d465b54e791bb1933dc85fb14d14a1986db67d9849e8c",
+      "bytes": 149512,
+      "sourceRef": "commons-giza-pyramids",
+      "path": "assets/visual/v1/landmarks/giza-pyramids.jpg"
+    },
+    {
+      "key": "visual:landmark_photo:landmark:golden-gate-bridge",
+      "entityId": "landmark:golden-gate-bridge",
+      "kind": "landmark_photo",
+      "mediaType": "image/jpeg",
+      "sha256": "181cbb46b144a6c41d439be30b542881fe7c62c65e850775f6ae493b59bee204",
+      "bytes": 145138,
+      "sourceRef": "commons-golden-gate-bridge",
+      "path": "assets/visual/v1/landmarks/golden-gate-bridge.jpg"
+    },
+    {
       "key": "visual:landmark_photo:landmark:grand-canyon",
       "entityId": "landmark:grand-canyon",
       "kind": "landmark_photo",
@@ -4164,6 +4392,76 @@
       "bytes": 171634,
       "sourceRef": "commons-grand-canyon",
       "path": "assets/visual/v1/landmarks/grand-canyon.jpg"
+    },
+    {
+      "key": "visual:landmark_photo:landmark:grand-prismatic-spring",
+      "entityId": "landmark:grand-prismatic-spring",
+      "kind": "landmark_photo",
+      "mediaType": "image/jpeg",
+      "sha256": "12203dc50444893cae251d064c65d65b4ccbefcb01076703dc4ea1e7887dd1fe",
+      "bytes": 177708,
+      "sourceRef": "commons-grand-prismatic",
+      "path": "assets/visual/v1/landmarks/grand-prismatic-spring.jpg"
+    },
+    {
+      "key": "visual:landmark_photo:landmark:great-barrier-reef",
+      "entityId": "landmark:great-barrier-reef",
+      "kind": "landmark_photo",
+      "mediaType": "image/jpeg",
+      "sha256": "ab20e811e10f8d5859a32b4148783e607ec8ab04176d593292a6f6b2bc68a68f",
+      "bytes": 202465,
+      "sourceRef": "commons-great-barrier-reef",
+      "path": "assets/visual/v1/landmarks/great-barrier-reef.jpg"
+    },
+    {
+      "key": "visual:landmark_photo:landmark:great-wall-of-china",
+      "entityId": "landmark:great-wall-of-china",
+      "kind": "landmark_photo",
+      "mediaType": "image/jpeg",
+      "sha256": "bf8b419eac6cd68ce23f2fadff92b029291ba8b5c09c6ee063337ee84665d808",
+      "bytes": 247766,
+      "sourceRef": "commons-great-wall",
+      "path": "assets/visual/v1/landmarks/great-wall-of-china.jpg"
+    },
+    {
+      "key": "visual:landmark_photo:landmark:ha-long-bay",
+      "entityId": "landmark:ha-long-bay",
+      "kind": "landmark_photo",
+      "mediaType": "image/jpeg",
+      "sha256": "71335c01d0f01dab16c1c0b3e57ac039651acc78659142a6dfc13dbd3d8bc6b5",
+      "bytes": 100300,
+      "sourceRef": "commons-ha-long-bay",
+      "path": "assets/visual/v1/landmarks/ha-long-bay.jpg"
+    },
+    {
+      "key": "visual:landmark_photo:landmark:iguazu-falls",
+      "entityId": "landmark:iguazu-falls",
+      "kind": "landmark_photo",
+      "mediaType": "image/jpeg",
+      "sha256": "bd8c821c5236877a49fb40677298d4265184bce757ccde92014a0e48ca877ec1",
+      "bytes": 102245,
+      "sourceRef": "commons-iguazu-falls",
+      "path": "assets/visual/v1/landmarks/iguazu-falls.jpg"
+    },
+    {
+      "key": "visual:landmark_photo:landmark:leaning-tower-of-pisa",
+      "entityId": "landmark:leaning-tower-of-pisa",
+      "kind": "landmark_photo",
+      "mediaType": "image/jpeg",
+      "sha256": "0f4d6d8e71141e45c6413885a9a6f6459478781bfa1bef4c35f5b52a9f619f41",
+      "bytes": 370640,
+      "sourceRef": "commons-pisa",
+      "path": "assets/visual/v1/landmarks/leaning-tower-of-pisa.jpg"
+    },
+    {
+      "key": "visual:landmark_photo:landmark:machu-picchu",
+      "entityId": "landmark:machu-picchu",
+      "kind": "landmark_photo",
+      "mediaType": "image/jpeg",
+      "sha256": "44278939b54cd9c43048bc83b48b24d966f1ef0f9561a1082c44046735810d3b",
+      "bytes": 207136,
+      "sourceRef": "commons-machu-picchu",
+      "path": "assets/visual/v1/landmarks/machu-picchu.jpg"
     },
     {
       "key": "visual:landmark_photo:landmark:matterhorn",
@@ -4176,14 +4474,104 @@
       "path": "assets/visual/v1/landmarks/matterhorn.jpg"
     },
     {
+      "key": "visual:landmark_photo:landmark:moai-rapa-nui",
+      "entityId": "landmark:moai-rapa-nui",
+      "kind": "landmark_photo",
+      "mediaType": "image/jpeg",
+      "sha256": "840bccfb52d4b988ee29a8112c8172b2852026b4e63e6661e8d7e899a4f8eb65",
+      "bytes": 181613,
+      "sourceRef": "commons-moai",
+      "path": "assets/visual/v1/landmarks/moai-rapa-nui.jpg"
+    },
+    {
+      "key": "visual:landmark_photo:landmark:mount-everest",
+      "entityId": "landmark:mount-everest",
+      "kind": "landmark_photo",
+      "mediaType": "image/jpeg",
+      "sha256": "4d3211e40987402aa9af1aeb237145e2bbc59ddfa4aff5c305e950c1cbdb14bf",
+      "bytes": 206568,
+      "sourceRef": "commons-everest",
+      "path": "assets/visual/v1/landmarks/mount-everest.jpg"
+    },
+    {
       "key": "visual:landmark_photo:landmark:mount-fuji",
       "entityId": "landmark:mount-fuji",
       "kind": "landmark_photo",
       "mediaType": "image/jpeg",
-      "sha256": "05609d88aa7014173f9cbe1024852736fc3c88f9f7189e2d43a1007dd3d4b1d0",
-      "bytes": 213587,
+      "sha256": "2ce1d2a6f608ffdfa8ef703ab41352ae9970ae2021fb0e7ebd1f8c45ec02f777",
+      "bytes": 125484,
       "sourceRef": "commons-mount-fuji",
       "path": "assets/visual/v1/landmarks/mount-fuji.jpg"
+    },
+    {
+      "key": "visual:landmark_photo:landmark:neuschwanstein",
+      "entityId": "landmark:neuschwanstein",
+      "kind": "landmark_photo",
+      "mediaType": "image/jpeg",
+      "sha256": "e9d7dd3b7580ecc5a2156dee1204d52cbb33c3027ef73b446e402f1956cdd814",
+      "bytes": 193548,
+      "sourceRef": "commons-neuschwanstein",
+      "path": "assets/visual/v1/landmarks/neuschwanstein.jpg"
+    },
+    {
+      "key": "visual:landmark_photo:landmark:niagara-falls",
+      "entityId": "landmark:niagara-falls",
+      "kind": "landmark_photo",
+      "mediaType": "image/jpeg",
+      "sha256": "e37e2f3aa893e794c418f5b841d6a2da1b6fbe89121cab52141b77c30d280bde",
+      "bytes": 141825,
+      "sourceRef": "commons-niagara-falls",
+      "path": "assets/visual/v1/landmarks/niagara-falls.jpg"
+    },
+    {
+      "key": "visual:landmark_photo:landmark:pamukkale",
+      "entityId": "landmark:pamukkale",
+      "kind": "landmark_photo",
+      "mediaType": "image/jpeg",
+      "sha256": "c250f43acc1bfce5553775e3d3b984f6225c56612abf99772335d8884633257e",
+      "bytes": 260626,
+      "sourceRef": "commons-pamukkale",
+      "path": "assets/visual/v1/landmarks/pamukkale.jpg"
+    },
+    {
+      "key": "visual:landmark_photo:landmark:perito-moreno-glacier",
+      "entityId": "landmark:perito-moreno-glacier",
+      "kind": "landmark_photo",
+      "mediaType": "image/jpeg",
+      "sha256": "d895a60f3901e24376d3cfa17a2c6b25b8043b9e15f2effafe74f257a9389345",
+      "bytes": 117305,
+      "sourceRef": "commons-perito-moreno",
+      "path": "assets/visual/v1/landmarks/perito-moreno-glacier.jpg"
+    },
+    {
+      "key": "visual:landmark_photo:landmark:petra",
+      "entityId": "landmark:petra",
+      "kind": "landmark_photo",
+      "mediaType": "image/jpeg",
+      "sha256": "7e88f8e39a1a994933a5c79012fe88ca90d441d01837b27787a3cf05b2b06ec9",
+      "bytes": 348903,
+      "sourceRef": "commons-petra",
+      "path": "assets/visual/v1/landmarks/petra.jpg"
+    },
+    {
+      "key": "visual:landmark_photo:landmark:sagrada-familia",
+      "entityId": "landmark:sagrada-familia",
+      "kind": "landmark_photo",
+      "mediaType": "image/jpeg",
+      "sha256": "4a8658649580adc0900991071d983606f03c114c5e8d0b134aee195d7e5465c3",
+      "bytes": 256889,
+      "sourceRef": "commons-sagrada-familia",
+      "path": "assets/visual/v1/landmarks/sagrada-familia.jpg"
+    },
+    {
+      "key": "visual:landmark_photo:landmark:salar-de-uyuni",
+      "entityId": "landmark:salar-de-uyuni",
+      "kind": "landmark_photo",
+      "mediaType": "image/jpeg",
+      "sha256": "a6b10bcc8a3534e2657bf2ae370c621ed0fa95023ff56f928a5bca2ccff32837",
+      "bytes": 75148,
+      "sourceRef": "commons-salar-de-uyuni",
+      "path": "assets/visual/v1/landmarks/salar-de-uyuni.jpg"
     },
     {
       "key": "visual:landmark_photo:landmark:statue-of-liberty",
@@ -4196,14 +4584,34 @@
       "path": "assets/visual/v1/landmarks/statue-of-liberty.jpg"
     },
     {
+      "key": "visual:landmark_photo:landmark:stonehenge",
+      "entityId": "landmark:stonehenge",
+      "kind": "landmark_photo",
+      "mediaType": "image/jpeg",
+      "sha256": "9638a72802819edd92b496ca5b768653a41a041e38c4567777e7704bd08c276a",
+      "bytes": 153159,
+      "sourceRef": "commons-stonehenge",
+      "path": "assets/visual/v1/landmarks/stonehenge.jpg"
+    },
+    {
       "key": "visual:landmark_photo:landmark:sydney-opera-house",
       "entityId": "landmark:sydney-opera-house",
       "kind": "landmark_photo",
       "mediaType": "image/jpeg",
-      "sha256": "89d73f4c5a9bc2cc1c6a2c98172ab101f72351e5ee54e53c85cf6559c2acf98f",
-      "bytes": 107412,
+      "sha256": "8a1c7c8e2cbd264824cb2c80b24d530bbcdc8f6331805fd690c71791ca036ad3",
+      "bytes": 122785,
       "sourceRef": "commons-sydney-opera",
       "path": "assets/visual/v1/landmarks/sydney-opera-house.jpg"
+    },
+    {
+      "key": "visual:landmark_photo:landmark:table-mountain",
+      "entityId": "landmark:table-mountain",
+      "kind": "landmark_photo",
+      "mediaType": "image/jpeg",
+      "sha256": "36b4cc88046157537a48f468a4961e33aa1a40ea35ca03ceef71eda6c0ddf5dc",
+      "bytes": 166732,
+      "sourceRef": "commons-table-mountain",
+      "path": "assets/visual/v1/landmarks/table-mountain.jpg"
     },
     {
       "key": "visual:landmark_photo:landmark:taj-mahal",
@@ -4216,12 +4624,32 @@
       "path": "assets/visual/v1/landmarks/taj-mahal.jpg"
     },
     {
+      "key": "visual:landmark_photo:landmark:torres-del-paine",
+      "entityId": "landmark:torres-del-paine",
+      "kind": "landmark_photo",
+      "mediaType": "image/jpeg",
+      "sha256": "59725ff6ae229ca2d600efa6a39f005d4d19232adb4a14574c561f59b6131f7a",
+      "bytes": 190139,
+      "sourceRef": "commons-torres-del-paine",
+      "path": "assets/visual/v1/landmarks/torres-del-paine.jpg"
+    },
+    {
+      "key": "visual:landmark_photo:landmark:tower-bridge",
+      "entityId": "landmark:tower-bridge",
+      "kind": "landmark_photo",
+      "mediaType": "image/jpeg",
+      "sha256": "f47dc4928c01c342c806cccf3fe196be90ddb525606756003f0cca9f9e748f5a",
+      "bytes": 84044,
+      "sourceRef": "commons-tower-bridge",
+      "path": "assets/visual/v1/landmarks/tower-bridge.jpg"
+    },
+    {
       "key": "visual:landmark_photo:landmark:uluru",
       "entityId": "landmark:uluru",
       "kind": "landmark_photo",
       "mediaType": "image/jpeg",
-      "sha256": "61af15aacde0c49a7cbc5ffb402a383302c387fa3a3126f2150a4e565fea79dc",
-      "bytes": 181746,
+      "sha256": "16fe3825a743df628e159a922fca6c21d0224a86b00a2e42ad40ee4520a2b78e",
+      "bytes": 157015,
       "sourceRef": "commons-uluru",
       "path": "assets/visual/v1/landmarks/uluru.jpg"
     },
@@ -4234,6 +4662,26 @@
       "bytes": 86285,
       "sourceRef": "commons-victoria-falls",
       "path": "assets/visual/v1/landmarks/victoria-falls.jpg"
+    },
+    {
+      "key": "visual:landmark_photo:landmark:wulingyuan",
+      "entityId": "landmark:wulingyuan",
+      "kind": "landmark_photo",
+      "mediaType": "image/jpeg",
+      "sha256": "abf7e6640422abe89e923228befcd51f71fc72cffb4b3964045fd59c729828d5",
+      "bytes": 192999,
+      "sourceRef": "commons-wulingyuan",
+      "path": "assets/visual/v1/landmarks/wulingyuan.jpg"
+    },
+    {
+      "key": "visual:landmark_photo:landmark:yosemite-half-dome",
+      "entityId": "landmark:yosemite-half-dome",
+      "kind": "landmark_photo",
+      "mediaType": "image/jpeg",
+      "sha256": "05d4377824636ff2ca60cdf8e7522b5709465e0dcf99f8bad951168bb68a5532",
+      "bytes": 177647,
+      "sourceRef": "commons-yosemite-half-dome",
+      "path": "assets/visual/v1/landmarks/yosemite-half-dome.jpg"
     }
   ]
 }

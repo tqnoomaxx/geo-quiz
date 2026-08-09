@@ -1,6 +1,6 @@
 {
   "datasetId": "geo-core-mvp",
-  "version": "2026-08-09.phase8-landmarks1",
+  "version": "2026-08-09.phase8-landmarks2",
   "checks": {
     "schemaValid": true,
     "uniqueEntityIds": true,
@@ -74,10 +74,10 @@
       "798"
     ],
     "knowledgeFactCount": 498,
-    "landmarkFactCount": 48,
+    "landmarkFactCount": 160,
     "knowledgeTemplateCount": 62,
     "compiledKnowledgeQuestionCount": 62,
-    "landmarkEntityCount": 12,
+    "landmarkEntityCount": 40,
     "landmarkImagesPinnedAndSourced": true,
     "knowledgeQuestionsUniqueAndSourced": true,
     "knowledgeComparisonsMethodConsistent": true,
