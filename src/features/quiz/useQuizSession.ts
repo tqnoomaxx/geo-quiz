@@ -22,7 +22,10 @@ import {
 } from "../../engine/session/session";
 import { getSessionRepository } from "../../persistence/sessionRepository";
 import { preloadQuestionAssets } from "./questionAssets";
-import { consumeQuizSessionRequest } from "./sessionIntent";
+import {
+  clearQuizSessionRequest,
+  consumeQuizSessionRequest
+} from "./sessionIntent";
 
 const contentRepository = createContentRepository(geoDataset);
 
@@ -174,6 +177,9 @@ export function useQuizSession() {
         );
         return;
       }
+
+      if (cancelled) return;
+      if (requestedDefinition) clearQuizSessionRequest();
 
       sessionRef.current = created;
       setSession(created);

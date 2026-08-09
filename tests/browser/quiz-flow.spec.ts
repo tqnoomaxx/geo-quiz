@@ -905,12 +905,12 @@ test("recognizes a landmark photo and reveals place, fun fact and attribution", 
     mode: "name",
     region: "world",
     questionCount: "all",
-    expectedTotal: 12
+    expectedTotal: 40
   });
 
   const prepared = await activeSession(page);
-  expect(prepared.questions).toHaveLength(12);
-  expect(new Set(prepared.questions.map((question: BrowserQuestion) => question.subjectId)).size).toBe(12);
+  expect(prepared.questions).toHaveLength(40);
+  expect(new Set(prepared.questions.map((question: BrowserQuestion) => question.subjectId)).size).toBe(40);
   await expect(page.locator(".visual-asset--landmark")).toBeVisible();
   await expect
     .poll(() =>

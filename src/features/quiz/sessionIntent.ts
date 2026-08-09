@@ -18,12 +18,9 @@ export function requestQuizSession(definition: QuizRoundDefinition) {
 
 export function consumeQuizSessionRequest() {
   let requested = inMemoryDefinition;
-  inMemoryDefinition = undefined;
 
   try {
     const stored = window.sessionStorage.getItem(QUIZ_SESSION_INTENT_KEY);
-    window.sessionStorage.removeItem(QUIZ_SESSION_INTENT_KEY);
-
     if (!requested && stored) {
       requested = JSON.parse(stored) as QuizRoundDefinition;
     }
@@ -32,4 +29,14 @@ export function consumeQuizSessionRequest() {
   }
 
   return requested;
+}
+
+export function clearQuizSessionRequest() {
+  inMemoryDefinition = undefined;
+
+  try {
+    window.sessionStorage.removeItem(QUIZ_SESSION_INTENT_KEY);
+  } catch {
+    // Der In-Memory-Wert ist bereits entfernt.
+  }
 }
